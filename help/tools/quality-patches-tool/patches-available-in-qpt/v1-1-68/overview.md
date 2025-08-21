@@ -3,6 +3,7 @@ title: 'Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68'
 description: This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.68.
 feature: Tools and External Services
 role: Admin, Developer
+exl-id: 74094036-cb1b-419f-b287-ca24d351a448
 ---
 # Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68
 
@@ -14,14 +15,14 @@ QPT v1.1.68 includes the following patches:
 1. **ACSD-62415**: Adobe Commerce backend loads categories very slowly.
 1. **ACSD-65938**: Gift card emails were sent even when the invoice creation failed.
 1. **ACSD-66072**: Related products are not returned via GraphQL on the Product Detail Page due to an internal server error when [!UICONTROL Related Products Rule] is configured.
-1. **ACSD-66082**: Can't update a product's swatch image through product import.
+1. **ACSD-66082**: Cannot update the swatch image of a product through product import.
 1. **ACSD-66179**: Canceling an invoice with the "Not Capture" payment type results in a 404 error page.
-1. **ACSD-66233**: Admin users couldn't add products to categories due to Add Product popup not loading.
+1. **ACSD-66233**: Admins unable to add products due to unresponsive product list popup.
 1. **ACSD-66506**: Backend error occurred when previously assigned products of a Shared Catalog were deleted and new ones assigned.
 1. **ACSD-66865**: Saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products.
 1. **ACSD-66889**: Error during inventory reindex in CLI.
 1. **ACSD-66963**: EstimateTotals mutation returns null for discounts when a discount code is applied to a cart with virtual products.
 1. **ACSD-66965**: Print option on Requisition List page causes an error.
-1. **ACSD-67039**: Customer records were not saved due to validation of the rp_token system attribute.
+1. **ACSD-67039**: Customer records were not saved due to validation of the `rp_token` system attribute.
 
 Use the menu on the left to navigate to a specific patch page.

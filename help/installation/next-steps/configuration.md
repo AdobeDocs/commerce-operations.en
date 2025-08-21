@@ -20,7 +20,7 @@ For more information about cron, including how to remove a crontab and run cron 
 
 After installation, we recommend the following:
 
-*  Make sure that your file ownership and permissions are set properly
+*  Make sure that your file ownership and permissions are set [properly](../prerequisites/file-system/configure-permissions.md)
 *  We strongly recommend [changing the default Admin URI](../tutorials/admin-uri.md) from `admin` to something else
 *  Make sure the [`X-Frame-Option` HTTP header](../../configuration/security/xframe-options.md) is set properly.
 *  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
