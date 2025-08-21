@@ -1,6 +1,6 @@
 ---
 title: 'ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views'
-description: Apply the ACP2E-3731 patch to fix the Adobe Commerce resolves an issue where product exports with visibility filter set to [!UICONTROL Catalog, Search] included incorrect rows in multi-store setups due to store-scoped attribute variations.
+description: Apply the ACP2E-3731 patch to fix the Adobe Commerce where product exports with the visibility filter set to [!UICONTROL Catalog, Search] include incorrect rows in multi-store setups due to store-scoped attribute variations.
 feature: Data Import/Export
 role: Admin, Developer
 type: Troubleshooting
@@ -26,16 +26,16 @@ The ACP2E-3731 patch fixes the issue where product exports with *[!UICONTROL Cat
 
 ## Issue
 
-Product exports with visibility filter set to *[!UICONTROL Catalog, Search]* included incorrect rows in multi-store setups due to store-scoped attribute variations.
+Product exports include incorrect rows when the visibility filter is set to *[!UICONTROL Catalog, Search]* in multi-store setups due to store-scoped attribute variations.
 
 <u>Steps to reproduce</u>:
 
-1. In the Admin panel, go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* **[!UICONTROL All Stores]** to create an additional website, store, and store view.
+1. In the Admin panel, go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** to create an additional website, store, and store view.
 1. Go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* **[!UICONTROL Attribute Set]**. Click **[!UICONTROL Add Attribute Set]** to create an attribute. Set **[!UICONTROL Based On]** to *Default*.
 1. Create a product and assign it to both the main website and the secondary website.
 1. Set a text value for the newly created attribute with **[!UICONTROL Scope]** set to *All Store Views*.
 1. Change the scope to the secondary store view and update the attribute with a different value.
-1. Change the scope to the default store view and the secondary store view. Then, set the product visibility to *Not Visible Individually*.
+1. Change the scope to the default store view and the secondary store view, then set the product visibility to *Not Visible Individually*.
 1. Go to **[!UICONTROL System]** > **[!UICONTROL Export]**, and select *Products* from the dropdown menu.
 1. Set a filter where **[!UICONTROL Visibility]** = *[!UICONTROL Catalog, Search]*, and click **[!UICONTROL Continue]**.
 1. Run the following command to process the export:
