@@ -35,10 +35,10 @@ Companies grid loads slowly for admin users with restricted website access.
     * Main Website (created during installation)
     * Website 2 with Store 2 → View 2
     * Website 3 with Store 3 → View 3
-1. Create the ***Admins in Scope*** user role:
-    * Scope: only two stores: ***Main Website*** + ***Website 3/Store 3***.
-    * Resources: only ***Dashboard*** + ***Companies***.
-1. Create an admin user with a role ***Admins in Scope***, e.g. adminscope.
+1. Create the **[!UICONTROL Admins in Scope]** user role:
+    * Scope: only two stores: *Main Website* + *Website 3/Store 3*.
+    * Resources: only *Dashboard* + *Companies*.
+1. Create an admin user with a role **[!UICONTROL Admins in Scope]**, e.g. **adminscope**.
 1. Generate specific distributed customer and company data:
    1. ****Customers assigned to websites****
       
