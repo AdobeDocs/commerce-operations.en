@@ -14,14 +14,12 @@ New features, feature updates, cloud infrastructure, and extensibility updates a
 
 - ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
 
-- ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
+- ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
 - ![Extensibility icon](../assets/icons/brackets.svg) [**Extensibility**](https://developer.adobe.com/commerce/extensibility/)—New developer tools and services for out-of-process extensibility delivered independently from patch releases. For example, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.
 
 The following list provides the dates for scheduled feature, cloud infrastructure, and extensibility releases (dates are subject to change):
 
-- August 13, 2024
-- October 8, 2024
 - February 11, 2025
 - April 8, 2025
 - June 10, 2025
@@ -30,7 +28,7 @@ The following list provides the dates for scheduled feature, cloud infrastructur
 
 >[!NOTE]
 >
->Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continuously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
+>Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continuously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://business.adobe.com/products/magento/magento-commerce.html) to learn more about the latest features.
 
 ## Patches
 
@@ -49,14 +47,6 @@ The following table provides the dates for scheduled patch releases (dates are s
 </thead>
 <tbody>
   <tr>
-  <tr>
-    <td>August 13, 2024</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
-  </tr>
-  <tr>
-    <td>October 8, 2024</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta patch</a>: 2.4.8-beta1<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
-  </tr>
   <tr>
     <td>February 11, 2025</td>
     <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta patch</a>: 2.4.8-beta2<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: for 2.4.7, 2.4.6, 2.4.5, and 2.4.4</td>
