@@ -4,8 +4,8 @@ description: Apply the ACSD-66139 patch to fix the Adobe Commerce issue where, w
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
 ---
-
 # ACSD-66139: GraphQL order fails with 'UNDEFINED' error for inactive cart
 
 The ACSD-66139 patch fixes the issue where, when placing an order for a non-existent or inactive cart, GraphQL returns an *UNDEFINED* error code instead of a specific one when error messages are translated. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66139. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
