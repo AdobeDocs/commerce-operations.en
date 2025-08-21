@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-66865: Saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products
 
-The ACSD-66865 patch fixes the issue where saving a **[!UICONTROL Catalog Price Rule]** invalidated indexers and provides alternative to reindex only affected products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66865. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-66865 patch fixes the issue where saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66865. Please note that this issue was fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -26,24 +26,24 @@ The ACSD-66865 patch fixes the issue where saving a **[!UICONTROL Catalog Price 
 
 ## Issue
 
-Saving **[!UICONTROL Catalog Price Rule]** causes all indexers to be invalidated, triggering full reindexes instead of reindexing only affected products.
+Saving a **[!UICONTROL Catalog Price Rule]** causes all indexers to be invalidated, triggering full reindexes instead of reindexing only affected products.
 
 <u>Steps to reproduce</u>:
 
-1. Ensure cron isn't running and all indexers are set to update on schedule (except customer_grid which can update on save)
+1. Ensure cron isn't running and all indexers are set to update on schedule (except `customer_grid` which can update on save).
 2. Run a full manual reindex using the command: `php bin/magento indexer:reindex`.
-3. Verify all indexes show status **[!UICONTROL Ready]** with 0 items in the backlog.
-4. Create an active catalog price rule for a single product (for example, using a SKU condition).
+3. Verify all indexes show status *[!UICONTROL Ready]* with *0* items in the backlog.
+4. On the Admin sidebar, go to **[!UICONTROL Marketing]** > *[!UICONTROL Promotions]* > **[!UICONTROL Catalog Price Rule]**. Create an active catalog price rule for a single product (for example, using a *SKU* condition).
 5. Run the command: `php bin/magento indexer:status` to check indexer status.
 6. Observe that multiple indexes are marked as **[!UICONTROL Reindex Required]** even though only one product is affected.
 
 <u>Expected results</u>:
 
-Only affected product data is identified, and a partial reindex is triggered instead of a full reindex across all indexers.
+Only the affected product data is identified, and a partial reindex is triggered instead of a full reindex across all indexers.
 
 <u>Actual results</u>:
 
-Full reindex is triggered for all indexers, even when only a single product is affected by the **[!UICONTROL Catalog Price Rule]**.
+A full reindex is triggered for all indexers, even when only a single product is affected by the **[!UICONTROL Catalog Price Rule]**.
 
 ## Apply the patch
 
