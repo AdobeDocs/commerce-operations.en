@@ -819,6 +819,7 @@ feature: Configuration
            - [ACP2E-3918: Checkout failure for company customers using in-store pickup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
         - v1.1.67 {#v1-1-67}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+           - [ACSD-66139: GraphQL order fails with UNDEFINED error for inactive cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66139-graphql-order-fails-with-undefined-error-for-inactive-cart.md)
            - [ACSD-66301: Moving products from an order to the cart in Commerce Admin results in a quantity mismatch](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch.md)
            - [AC-14984: SSL connection issue with php-amqplib/php-amqplib ^3.2.0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14984-ssl-connection-issue-with-php-amqplib-php-amqplib-3-2.md)
            - [ACSD-66118: Updating [!UICONTROL Store View] code clears [!UICONTROL Design Configuration] settings if configuration cache isn’t refreshed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66118-updating-store-view-code-clears-design-configuration-settings-if-configuration-cache-isn-t-refreshed.md)
@@ -830,6 +831,9 @@ feature: Configuration
         - v1.1.68 {#v1-1-68}
            - [ACSD-66072: GraphQL fails to return related products on the Product Detail Page due to an internal server error during [!UICONTROL Related Products Rule] configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md) 
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
+           - [ACSD-66965: [!UICONTROL Print] option on [!UICONTROL Requisition List] page causes an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66965-print-option-on-requisition-list-page-causes-an-error.md)
+           - [ACSD-66865: Saving a [!UICONTROL Catalog Price Rule] invalidates indexers and provides an alternative to reindex only affected products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66865-saving-catalog-price-rules-invalidates-indexers-and-provides-an-alternative-to-reindex-only-affected-products.md)
+           - [ACSD-65938: Gift card emails sent even when the invoice creation failed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-65938-gift-card-emails-were-sent-even-when-the-invoice-creation-failed.md)
            - [ACSD-62146: Selected billing address disappears on checkout payment page](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62146-selected-billing-address-disappears-on-checkout-payment-page.md)
            - [ACSD-67039: Customer records weren't saved due to rp_token system attribute validation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-67039-customer-records-were-not-saved-due-to-validation-of-the-rp-token-system-attribute.md)
            - [ACSD-66179: Canceling an invoice with the [!UICONTROL Not Capture] payment type results in a 404 error page](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66179-canceling-an-invoice-with-the-not-capture-payment-type-results-in-a-404-error-page.md)
@@ -838,6 +842,9 @@ feature: Configuration
         - v1.1.69 {#v1-1-69}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
            - [ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3731-product-exports-with-catalog-search-visibility-include-records-from-other-store-views.md)
+           - [ACSD-66153: page returns 500 due to incorrect layout structure being cached](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66153-page-returns-500-due-to-incorrect-layout-structure-being-cached.md)
+           - [ACSD-57477: Sales rule processing slows performance on cart-related requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-57477-sales-rule-processing-slows-performance-on-cart-related-requests.md)
+           - [ACSD-65983: Error occurs when reconfiguring bundled product quote in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-65983-error-occurs-when-reconfiguring-bundled-product-quote-in-admin.md)
            - [ACP2E-3964: Configurable child products with video not listed via REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3964-configurable-child-products-with-video-not-listed-via-rest-api.md)
            - [ACP2E-3977: [!UICONTROL Cap Reward Points Balance At] field cannot be left empty](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3977-cap-reward-points-balance-at-cannot-be-left-empty.md)
            - [ACSD-56226: READ queries return outdated data with synchronous_replication enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-56226-read-queries-return-outdated-data-with-synchronous-replication-enabled.md)

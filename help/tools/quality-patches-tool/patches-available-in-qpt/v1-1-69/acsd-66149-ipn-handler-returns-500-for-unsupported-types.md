@@ -3,11 +3,12 @@ title: 'ACSD-66149: IPN handler returns *500* for unsupported types'
 description: Apply the ACSD-66149 patch to fix the Adobe Commerce issue where the IPN handler does not ignore unsupported or unknown IPN types, causing the issue not to be logged, interrupting the process, and also returning a 500 error.
 feature: Payments
 role: Admin, Developer
+type: Troubleshooting
 exl-id: d4794e24-1b6b-4bb5-b54c-9a248fa5f3bd
 ---
 # ACSD-66149: IPN handler returns *500* for unsupported types
 
-The ACSD-66149 patch fixes the issue where the IPN (Instant Payment Notification) handler returns a *500* error for unsupported or unknown IPN types. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66149. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66149 patch fixes the issue where the IPN (Instant Payment Notification) handler returns a 500 error for unsupported or unknown IPN types. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66149. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -29,7 +30,7 @@ The issue is the IPN handler returns a *500* error for unsupported or unknown IP
 
 <u>Steps to reproduce</u>:
 
-1. Create a custom module that will emulate all kinds of unknown IPN types from PayPal.
+1. Create a custom module that emulates all kinds of unknown IPN types from PayPal.
 1. Create at least one product.
 1. Configure PayPal Express with your own credentials.
 1. Place an order with Paypal Express.
