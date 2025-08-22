@@ -44,7 +44,7 @@ Orders fail with the *Cannot acquire a lock* error when coupons with special cha
 
 1. Create a cart rule with a coupon using the coupon code format: *BIT/123456*.
 1. Create a simple product.
-1. Add the product to cart and apply the coupon code.
+1. Add the product to the cart and apply the coupon code.
 1. Proceed to checkout and place the order.
 
 <u>Expected results</u>:
