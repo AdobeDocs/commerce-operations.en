@@ -6,7 +6,7 @@ This project includes several Rake tasks to automate various aspects of the work
 
 ### `render`
 
-Renders the templated files in the `_jekyll/templates` directory with data from `_jekyll/_data/`. The result will be found in the `help/includes/templated` directory. This task automatically maintains include relationships and timestamps before rendering.
+Renders the templated files in the `_jekyll/templates` directory with data from `_jekyll/_data/`. The result will be found in the `help/includes/templated` directory. This task automatically maintains include relationships and timestamps after rendering.
 
 **Usage:**
 
