@@ -124,8 +124,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Fixed AWS [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
-    for Adobe Commerce v2.4.5-p14.
+- description: 'Fixed AWS [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for Adobe Commerce v2.4.5-p14.<br/>_Credit: [mustdobetter](https://github.com/mustdobetter)_.'
   versions: ''
   type: technical
   date: August 18, 2025
