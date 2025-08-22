@@ -30,7 +30,7 @@ When running the inventory indexer, the process throws a deprecation warning and
 
 <u>Steps to reproduce</u>:
 
-1. Run the inventory indexer using the CLI command:
+1. Run the inventory reindex using the CLI command:
 
     ```
     php bin/magento indexer:reindex inventory
