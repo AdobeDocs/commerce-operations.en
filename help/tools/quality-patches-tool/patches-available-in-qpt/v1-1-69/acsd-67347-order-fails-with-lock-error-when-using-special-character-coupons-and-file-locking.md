@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-67347: Order fails with "Cannot acquire a lock" error when using coupon codes'
-description: Apply the ACSD-67347 patch to the Adobe Commerce issue where orders fail with a “Cannot acquire a lock” error when coupon codes contain special characters (e.g., BIT/123456) and file locking is enabled.
+description: Apply the ACSD-67347 patch to the Adobe Commerce issue where orders fail with a “Cannot acquire a lock” error when coupon codes contain special characters (for example, BIT/123456) and file locking is enabled.
 feature: Checkout, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
