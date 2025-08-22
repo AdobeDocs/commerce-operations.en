@@ -31,9 +31,9 @@ The missing join table name in the original fetching table causes SQL errors in 
 <u>Steps to reproduce</u>:
 
 01. Install a 2.4-develop instance.
-02. Create an order.
+02. Create a new order.
 03. Install a custom module with an SQL extension.
-04. Navigate to the **[!UICONTROL Sales Order Grid]** in the backend.
+04. Navigate to **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 05. Apply the **[!UICONTROL Purchase Date]** filter and wait for the result.
 06. Apply **[!UICONTROL Product SKU]** filter.
 
