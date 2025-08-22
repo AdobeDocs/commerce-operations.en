@@ -53,7 +53,7 @@ Orders are placed successfully because there are no restrictions on creating cou
 
 <u>Actual results</u>:
 
-Order cannot be placed. Showing error: Cannot acquire lock.
+The order cannot be placed. The following error appears: *Cannot acquire lock.*
 
 ```
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
