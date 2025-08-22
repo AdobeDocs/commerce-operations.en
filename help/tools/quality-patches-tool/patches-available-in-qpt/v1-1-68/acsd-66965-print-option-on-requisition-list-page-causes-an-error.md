@@ -4,8 +4,8 @@ description: Apply the ACSD-66965 patch to fix an issue in Adobe Commerce where 
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
+exl-id: ccd0920a-074c-4851-a45a-09c43b04fe64
 ---
-
 # ACSD-66965: **[!UICONTROL Print]** option on **[!UICONTROL Requisition List]** page causes an error
 
 The ACSD-66965 patch fixes the issue where the **[!UICONTROL Print]** option on the **[!UICONTROL Requisition List]** page causes an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66965. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
