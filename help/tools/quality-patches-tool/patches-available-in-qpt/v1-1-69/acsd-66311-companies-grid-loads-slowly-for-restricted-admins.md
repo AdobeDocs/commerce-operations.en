@@ -57,7 +57,7 @@ Companies grid loads slowly for admin users with restricted website access.
             GROUP BY website_id; 
        ```
        
-   1. ****Customers assigned to companies****
+   1. **Customers assigned to companies**
 
       | Number of customers | Number of companies |
       |---------------------|---------------------|
