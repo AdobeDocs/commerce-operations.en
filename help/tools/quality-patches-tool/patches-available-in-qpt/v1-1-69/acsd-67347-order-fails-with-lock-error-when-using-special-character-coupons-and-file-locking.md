@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-67347: Order fails with *Cannot acquire a lock* error when using coupon codes
 
-The ACSD-67347 patch fixes the issue where orders fail with a *Cannot acquire a lock* error when coupon codes contain special characters (e.g., BIT/123456) and file locking is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67347. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-67347 patch fixes the issue where orders fail with a *Cannot acquire a lock* error when coupon codes contain special characters (for example, BIT/123456) and file locking is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67347. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
