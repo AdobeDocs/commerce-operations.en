@@ -175,3 +175,5 @@ To verify the configuration settings:
    The value of the **Default Email Domain** field is displayed as follows. This is a system-specific setting.
 
    ![Check settings in the production system](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

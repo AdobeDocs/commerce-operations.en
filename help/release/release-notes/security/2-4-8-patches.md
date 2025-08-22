@@ -46,3 +46,5 @@ This release includes the following highlights:
 The fixes for CVE-2025-47110 and VULN-31547 are also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
 
 >[!ENDSHADEBOX]
+
+<!-- Last updated from includes: 2025-05-28 17:01:56 -->
