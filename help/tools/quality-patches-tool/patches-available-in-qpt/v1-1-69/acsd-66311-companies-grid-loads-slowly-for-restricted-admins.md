@@ -30,7 +30,7 @@ Companies grid loads slowly for admin users with restricted website access.
 
 <u>Steps to reproduce</u>:
 
-1. Install Adobe Commerce with B2B features.
+1. Install Adobe Commerce with **[!UICONTROL B2B features]**.
 1. Create 2 extra websites with stores and views:
     * Main Website (created during installation)
     * Website 2 with Store 2 → View 2
