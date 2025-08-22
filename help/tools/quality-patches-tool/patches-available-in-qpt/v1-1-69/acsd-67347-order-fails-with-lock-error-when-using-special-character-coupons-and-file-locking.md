@@ -49,7 +49,7 @@ Orders fail with the *Cannot acquire a lock* error when coupons with special cha
 
 <u>Expected results</u>:
 
-Orders are placed because there are no restrictions on creating coupon codes.
+Orders are placed successfully because there are no restrictions on creating coupon codes.
 
 <u>Actual results</u>:
 
