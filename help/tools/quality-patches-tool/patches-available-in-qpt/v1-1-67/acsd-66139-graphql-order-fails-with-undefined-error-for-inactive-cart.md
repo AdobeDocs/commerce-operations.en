@@ -36,10 +36,11 @@ GraphQL returns an *UNDEFINED* error code instead of a specific one when placing
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-1. Create a store view in the Admin panel. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]**. Click **[!UICONTROL Create Store View]** and for **[!UICONTROL Code]**, enter the code `test`.
+1. In the Admin panel, go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** > **[!UICONTROL Create Store View]** to create a store view.
+1. Set **[!UICONTROL Code]** to *test*.
 1. Assign `german` language to the newly created store view.
 1. Run `setup:upgrade` and `setup:static-content:deploy -f`.
-1. Run the following GraphQL query with header 'Store:test':
+1. Run the following GraphQL query with header `Store:test`:
 
 ```
 mutation {
