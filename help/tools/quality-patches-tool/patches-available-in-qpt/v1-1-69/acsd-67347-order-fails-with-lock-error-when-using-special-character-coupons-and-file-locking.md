@@ -26,7 +26,7 @@ The ACSD-67347 patch fixes the issue where orders fail with a *Cannot acquire a 
 
 ## Issue
 
-Orders fail with the *Cannot acquire a lock* error when coupons with special characters are used and file locking is enabled
+Orders fail with the *Cannot acquire a lock* error when coupons with special characters are used and file locking is enabled.
 
 <u>Steps to reproduce</u>:
 
