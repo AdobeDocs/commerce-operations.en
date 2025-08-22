@@ -4,8 +4,8 @@ description: Apply the ACSD-66889 patch to fix the Adobe Commerce issue that tri
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 289bd211-99f5-489e-9005-58c711ef128e
 ---
-
 # ACSD-66889: Error during inventory reindex in CLI
 
 The ACSD-66889 patch fixes the error that occurs when running the inventory indexer. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66889.
