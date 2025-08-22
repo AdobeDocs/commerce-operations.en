@@ -39,7 +39,7 @@ GraphQL returns an *UNDEFINED* error code instead of a specific one when placing
 1. Create a store view in the Admin panel. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]**. Click **[!UICONTROL Create Store View]** and for **[!UICONTROL Code]**, enter the code `test`.
 1. Assign `german` language to the newly created store view.
 1. Run `setup:upgrade` and `setup:static-content:deploy -f`.
-1. Run the following GraphQL query with header 'Store:test':
+1. Run the following GraphQL query with header `Store:test`:
 
 ```
 mutation {
