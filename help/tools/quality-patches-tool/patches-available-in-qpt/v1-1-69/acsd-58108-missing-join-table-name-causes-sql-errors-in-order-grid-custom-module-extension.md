@@ -1,14 +1,14 @@
 ---
-title: 'ACSD-58108: Missing join table name causes SQL errors in order grid custom module extension'
-description: Apply the ACSD-58108 patch to fix the Adobe Commerce addFilterToMap function is not working for certain columns when after joining the [sales_order_item] table to the order grid, resulting in an error while filtering.
-The joining table name was missing in the original fetching table, which created an issue with the custom module extension SQL of order grid.
+title: 'ACSD-58108: SQL errors occur in order grid custom module extension due to missing join table name'
+description: Apply the ACSD-58108 patch to fix the Adobe Commerce issue where a missing join table name in the order grid custom module extension causes SQL errors when filtering certain columns.
 feature: Orders, System
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-58108: Missing join table name causes SQL errors in order grid custom module extension
+# ACSD-58108: SQL errors occur in order grid custom module extension due to missing join table name
 
-The ACSD-58108 patch fixes the issue where the missing joining table name in the original fetching table caused errors with custom module extension SQL in the order grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-58108. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.5.0.
+The ACSD-58108 patch fixes the issue where a missing join table name in the order grid custom module extension causes SQL errors when filtering certain columns. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-58108. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.5.0.
 
 ## Affected products and versions
 
@@ -26,24 +26,24 @@ The ACSD-58108 patch fixes the issue where the missing joining table name in the
 
 ## Issue
 
-Issue where the missing joining table name in the original fetching table caused errors with custom module extension SQL in the order grid.
+The missing join table name in the original fetching table causes SQL errors in the order grid when using a custom module extension. This issue occurs because the `addFilterToMap` function does not work for certain columns after joining the **[!UICONTROL sales_order_item]** table, resulting in errors while filtering.
 
 <u>Steps to reproduce</u>:
 
-01. Install 2.4-develop instance.
+01. Install a 2.4-develop instance.
 02. Create an order.
-03. Install a custom module with SQL extension.
-04. Go to the sales order grid in the backend.
-05. Apply [ Purchase Date ] filter and wait for the result.
-06. Apply [ Product SKU ] filter.
+03. Install a custom module with an SQL extension.
+04. Navigate to the **[!UICONTROL Sales Order Grid]** in the backend.
+05. Apply the **[!UICONTROL Purchase Date]** filter and wait for the result.
+06. Apply **[!UICONTROL Product SKU]** filter.
 
 <u>Expected results</u>:
 
-No errors should occur when filtering orders from the order grid.
+Filtering orders in the order grid works without errors.
 
 <u>Actual results</u>:
 
-An error occurs while filtering orders from the order grid.
+An error occurs when applying filters in the order grid.
 
 ## Apply the patch
 
