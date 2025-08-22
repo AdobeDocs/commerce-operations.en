@@ -40,7 +40,7 @@ Companies grid loads slowly for admin users with restricted website access.
     * Resources: only *Dashboard* + *Companies*.
 1. Create an admin user with a role **[!UICONTROL Admins in Scope]**, for example, **adminscope**.
 1. Generate specific distributed customer and company data:
-   1. ****Customers assigned to websites****
+   1. **Customers assigned to websites**
       
       | Website ID | Number of customers |
       |------------|---------------------|
