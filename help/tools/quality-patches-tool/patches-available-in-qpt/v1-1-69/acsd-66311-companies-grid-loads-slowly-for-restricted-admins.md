@@ -31,10 +31,10 @@ Companies grid loads slowly for admin users with restricted website access.
 <u>Steps to reproduce</u>:
 
 1. Install Adobe Commerce with **[!UICONTROL B2B features]**.
-1. Create 2 extra websites with stores and views:
+1. Create 2 extra websites (in addition to Main website) with stores/views:
     * Main Website (created during installation)
-    * Website 2 with Store 2 → View 2
-    * Website 3 with Store 3 → View 3
+    * Website 2 → Store 2 → StoreView 2
+    * Website 3 → Store 3 → StoreView 3
 1. Create the **[!UICONTROL Admins in Scope]** user role:
     * Scope: only two stores: *Main Website* + *Website 3/Store 3*.
     * Resources: only *Dashboard* + *Companies*.
