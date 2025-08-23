@@ -42,7 +42,7 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
    * Category is 23
   ```
 
-1. Install Sample data
+1. Install Sample data.
 1. Add the following products to the cart in the specified order: 
     * Wayfarer Messenger Bag
     * Olivia 1/4 Zip Light Jacket
