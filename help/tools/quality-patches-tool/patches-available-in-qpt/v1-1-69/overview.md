@@ -27,6 +27,6 @@ QPT v1.1.69 includes the following patches:
 1. **ACSD-66404**: Cron job fails to clear changelog tables due to [!DNL Galera Cluster] transaction size limits.
 1. **ACSD-66952**: Cache clears on each PLP or cart visit when a target rule is set.
 1. **ACSD-67264**: Bundle and downloadable product page layouts inconsistent across devices.
-1. **ACSD-67347**: Order fails with lock error when using special character coupons and file locking.
+1. **ACSD-67347**: Order fails with Cannot acquire a lock when using coupon codes.
 
 Use the menu on the left to navigate to a specific patch page.
