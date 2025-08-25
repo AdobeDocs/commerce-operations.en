@@ -56,3 +56,5 @@ These best practices are organized by implementation phase so you can find the r
 </table>
 
 {{$include /help/_includes/templated/whats-new-bp.md}}
+
+<!-- Last updated from includes: 2025-01-06 16:29:49 -->
