@@ -33,94 +33,94 @@ The `estimateTotals` mutation returns *null* for discounts when a discount code 
 1. Create a cart containing only virtual products.
 1. Apply a discount code:
 
-```
-mutation {
-  estimateTotals(
-		input: {
-			cart_id: "cart_id",
-			address: {
-				country_code: US,
-				postcode: "12345"
-				region: {
-					region_code: "TX"
-				}
-			},
-			shipping_method: {
-				carrier_code: "{$shipping}",
-				method_code: "{$shipping}"
-			}
-  	}
-	) {
-    cart {
-      prices {
-        discounts {
-					amount {
-						value
-						currency
-					}
-					label
-					coupon {
-						code
-					}
-					applied_to
-					type
-				}
+    ```
+    mutation {
+      estimateTotals(
+        input: {
+          cart_id: "cart_id",
+          address: {
+            country_code: US,
+            postcode: "78732",
+            region: {
+              region_code: "TX"
+            }
+          },
+          shipping_method: {
+            carrier_code: "{$shipping}",
+            method_code: "{$shipping}"
+          }
+        }
+      ) {
+        cart {
+          prices {
+            discounts {
+              amount {
+                value
+                currency
+              }
+              label
+              coupon {
+                code
+              }
+              applied_to
+              type
+            }
+          }
+        }
       }
     }
-  }
-}
-```
+    ```
 
 <u>Expected results</u>:
 
 Discount information is included for carts containing only virtual products.
 
-```
-{
-    "data": {
+    ```
+    {
+      "data": {
         "estimateTotals": {
-            "cart": {
-                "prices": {
-                    "discounts": [
-                        {
-                            "amount": {
-                                "value": 100.5,
-                                "currency": "USD"
-                            },
-                            "label": "A second discount code for testing",
-                            "coupon": {
-                                "code": "discount123"
-                            },
-                            "applied_to": "ITEM",
-                            "type": null
-                        }
-                    ]
+          "cart": {
+            "prices": {
+              "discounts": [
+                {
+                  "amount": {
+                    "value": 100.5,
+                    "currency": "USD"
+                  },
+                  "label": "A second discount code for testing",
+                  "coupon": {
+                    "code": "z3r0c00l"
+                  },
+                  "applied_to": "ITEM",
+                  "type": null
                 }
+              ]
             }
+          }
         }
-    },
-    "extensions": {}
-}
-```
+      },
+      "extensions": {}
+    }
+    ```
 
 <u>Actual results</u>:
 
 Discount information returns as *null* for carts with only virtual products.
 
-```
-{
-    "data": {
+    ```
+    {
+      "data": {
         "estimateTotals": {
-            "cart": {
-                "prices": {
-                    "discounts": null
-                }
+          "cart": {
+            "prices": {
+              "discounts": null
             }
+          }
         }
-    },
-    "extensions": {}
-}
-```
+      },
+      "extensions": {}
+    }
+    ```
 
 ## Apply the patch
 
