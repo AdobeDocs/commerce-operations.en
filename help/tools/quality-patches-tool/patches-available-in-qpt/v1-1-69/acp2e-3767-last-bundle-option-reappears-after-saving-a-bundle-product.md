@@ -1,13 +1,14 @@
 ---
-title: 'ACP2E-3767: Last bundle option reappears after saving a bundle product'
+title: 'ACP2E-3767: Last bundle option reappears after saving bundle product'
 description: Apply the ACP2E-3767 patch to fix the Adobe Commerce issue where the last bundle option in a bundle product could not be removed.
 feature: Products, Catalog Management
 role: Admin, Developer
+type: Troubleshooting 
 ---
 
-# ACP2E-3767: Last bundle option reappears after saving a bundle product
+# ACP2E-3767: Last bundle option reappears after saving bundle product
 
-The ACP2E-3767 patch fixes the issue where the last bundle option is restored upon saving a bundle product. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3767. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACP2E-3767 patch fixes the issue where the last bundle option reappears after saving the bundle product. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3767. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,28 +26,28 @@ The ACP2E-3767 patch fixes the issue where the last bundle option is restored up
 
 ## Issue
 
-Issue where the last bundle option is restored upon saving a bundle product.
+Saving a bundle product restores the last bundle option.
 
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Simple Product]** from the dropdown.
-1. Fill out the required data and save.
+1. Enter required data and save.
 1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Bundle Product]** from the dropdown.
-1. Fill out the required data.
-1. In Bundle Items, click Add Option.
-1. Give any title to the newly created option and click Add Products To Option.
-1. Select the previously created simple product and click Add Selected Products.
-1. Save the bundle product.
-1. Remove the bundle option and save again.
+1. Enter required data.
+1. In Bundle Items, click **[!UICONTROL Add Option]**.
+1. Enter a title to the new option and click **[!UICONTROL Add Products to Option]**.
+1. Select the simple product you created earlier and click **[!UICONTROL Add Selected Products]**.
+1. Save bundle.
+1. Remove bundle option and save.
 
 <u>Expected results</u>:
 
 1. The bundle option is removed successfully.
-1. A message is displayed if removal is not allowed.
+1. A message is displayed if removal isn’t allowed.
 
 <u>Actual results</u>:
 
-1. The bundle option is not removed.
+1. The bundle option remains active.
 1. No error or notification is shown.
 
 ## Apply the patch
