@@ -26,7 +26,7 @@ The ACSD-58131 patch fixes the issue where the old media gallery fails to render
 
 ## Issue
 
-The issue occurs when a 0-byte image is placed in the media gallery directory, causing the old media gallery to fail rendering any images. The updated system now skips invalid 0-byte files, displays valid images as expected, and logs a warning for each incorrect file.
+When a 0-byte image is placed in the media gallery directory, the old media gallery fails to render any images. The updated system now skips invalid 0-byte files, displays valid images as expected, and logs a warning for each invalid file.
 
 ```
 [2024-05-02T14:00:39.616459+00:00] report.WARNING: The image empty2.jpg is invalid and cannot be displayed in the gallery. [] []
@@ -52,7 +52,7 @@ The media gallery remains functional even if a 0-byte image (or any other file) 
 
 <u>Actual results</u>:
 
-The media gallery fails to load any images from the wysiwyg directory due to a critical error logged in `var/log/system.log`:
+The media gallery fails to load any images from the `wysiwyg` directory due to a critical error logged in `var/log/system.log`:
 
 ```
 [2024-03-22T05:00:55.100934+00:00] report.CRITICAL: Exception: Notice: getimagesizefromstring(): Error reading from ! in /app/project/vendor/magento/module-cms/Model/Wysiwyg/Images/Storage.php on line 426 in /app/project/vendor/magento/framework/App/ErrorHandler.php:62
