@@ -36,19 +36,19 @@ The issue occurs when a 0-byte image is placed in the media gallery directory, c
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Media Gallery]**.
 1. Set **[!UICONTROL Enable Old Media Gallery]** to *Yes*.
-1. Place few images in the `pub/media/wysiwyg directory`.
+1. Place a few images in the `pub/media/wysiwyg` directory.
 1. Create a 0-byte image in the same directory using `touch pub/media/wysiwyg/empty_image.png`.
-1. Add an image from the `wysiwyg` directory via Page Builder under any content (for example, CMS Block).
+1. Add an image from the `wysiwyg` directory via Page Builder under any content (for example, a CMS Block):
     1. Create a New Block
-    1. Edit the content section using Page Builder
-    1. Drag a **[!UICONTROL Layout]** > **[!UICONTROL Row]**.
-    1. Drag a **[!UICONTROL Media]** > **[!UICONTROL Image]** into the row.
+    1. Edit the content section using Page Builder.
+    1. Under **[!UICONTROL Layout]**, drag a new **[!UICONTROL Row]** to the stage.
+    1.  Expand **[!UICONTROL Media]** and drag an **[!UICONTROL Image]** placeholder into the row.
     1. Click **[!UICONTROL Select from Gallery]**.
     1. Select the `wysiwyg` directory if it’s not selected by default.
 
 <u>Expected results</u>:
 
-The media gallery should remain functional even if a 0-byte image (or any other file) exists.
+The media gallery remains functional even if a 0-byte image (or any other file) exists.
 
 <u>Actual results</u>:
 
