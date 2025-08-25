@@ -4,8 +4,8 @@ description: Apply the ACSD-66506 patch to fix the Adobe Commerce issue where th
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
+exl-id: db08c58b-7e14-4bd8-af85-8f63aba9051b
 ---
-
 # ACSD-66506: Backend error occurs after deleting and reassigning Shared Catalog products
 
 The ACSD-66506 patch fixes the issue where the backend throws the error *The product that was requested doesn't exist. Verify the product and try again* after deleting previously assigned products and assigning new ones to a Shared Catalog. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66506. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.

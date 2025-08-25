@@ -4,8 +4,8 @@ description: Apply the ACSD-66963 patch to fix the Adobe Commerce issue where `e
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
+exl-id: b62e48f5-a9d6-456a-97e7-96f740d8e927
 ---
-
 # ACSD-66963: `estimateTotals` mutation returns null for discounts on virtual products
 
 The ACSD-66963 patch fixes the issue where `estimateTotals` returns *null* for discounts when a discount code is applied to a cart with only virtual products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66963. Please note that this issue was fixed in Adobe Commerce 2.4.8.
