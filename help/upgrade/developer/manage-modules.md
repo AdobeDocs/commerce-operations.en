@@ -64,3 +64,5 @@ Wait while Composer updates dependencies and installs the module.
    ```bash
    composer update
    ```
+
+<!-- Last updated from includes: 2022-09-08 16:00:49 -->
