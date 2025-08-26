@@ -4,8 +4,8 @@ description: Apply the ACSD-66311 patch to fix the Adobe Commerce issue where co
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
 ---
-
 # ACSD-66311: Companies grid loads slowly for restricted admin users
 
 The ACSD-66311 patch fixes the issue where the companies grid loads slowly for admin users with restricted website access. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66311. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
