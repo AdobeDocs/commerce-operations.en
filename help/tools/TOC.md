@@ -831,6 +831,7 @@ feature: Configuration
         - v1.1.68 {#v1-1-68}
            - [ACSD-66072: GraphQL fails to return related products on the Product Detail Page due to an internal server error during [!UICONTROL Related Products Rule] configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md) 
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
+           - [ACSD-58131: Old media gallery fails to load images due to 0-byte image file](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-old-media-gallery-fails-to-load-images-due-to-0-byte-image-file.md)
            - [ACSD-66963: estimateTotals mutation returns null for discounts on virtual products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66963-estimatetotals-mutation-returns-null-for-discounts-on-virtual-products.md)
            - [ACSD-66506: Backend error occurs after deleting and reassigning Shared Catalog products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66506-backend-error-occurs-after-deleting-and-reassigning-shared-catalog-products.md)
            - [ACSD-66889: Error during inventory reindex in CLI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66889-error-during-inventory-reindex-in-cli.md)
