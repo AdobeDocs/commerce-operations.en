@@ -41,14 +41,13 @@ Companies grid loads slowly for admin users with restricted website access.
 1. Create an admin user with a role **[!UICONTROL Admins in Scope]**, for example, **adminscope**.
 1. Generate specific distributed customer and company data:
    1. **Customers assigned to websites**
-      
+
       | Website ID | Number of customers |
       |------------|---------------------|
       | 1          | 600,000             |
       | 2          | 1,500               |
       | 3          | 500                 |
 
-      
    1. Run the following query to verify the distribution:
 
        ```
@@ -56,7 +55,7 @@ Companies grid loads slowly for admin users with restricted website access.
             FROM customer_entity 
             GROUP BY website_id; 
        ```
-       
+
    1. **Customers assigned to companies**
 
       | Number of customers | Number of companies |
@@ -70,9 +69,9 @@ Companies grid loads slowly for admin users with restricted website access.
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-            SELECT company_id, COUNT(customer_id) AS customer_count
-            FROM company_advanced_customer_entity
-            GROUP BY company_id
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
             ) AS subquery
             GROUP BY customer_count
             ORDER BY customer_count; 
