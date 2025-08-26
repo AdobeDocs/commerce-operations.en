@@ -87,6 +87,7 @@ desc 'Render the templated files.
   Renders the templated files in the "_jekyll/templates" directory. The result will be found in the "help/includes/templated" directory.'
 task :render do
   sh '_scripts/render'
+  Rake::Task['includes:maintain_all'].invoke
 end
 
 desc 'Optimize images in modified uncommitted files. For other images, use "path" such as "rake image_optim path=../path/to/dir/or/file".'

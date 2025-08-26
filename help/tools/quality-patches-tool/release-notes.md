@@ -16,6 +16,28 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue in 2.4.8 storefront where, after switching stores, the page is served from cache and doesn't reflect the selected store.
+* **ACP2E-3731** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where product exports with **[!UICONTROL Catalog, Search]** visibility incorrectly include records from other store views in multi-store environments.
+* **ACP2E-3767** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the last bundle option in a bundle product can not be removed.
+* **ACP2E-3964** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixed the issue where child products of configurable products could not be listed via the REST API when a video was set in the gallery.
+* **ACP2E-3977** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where the **[!UICONTROL Cap Reward Points Balance At]** field can't be empty when [!UICONTROL Rewards Points Balance Redemption Threshold] is set, causing a validation error.
+* **ACP2E-4050** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where cart price rules fail to apply correctly for multi-shipping products when bundle product is used and sub-select conditions are used with free shipping is enabled.
+* **ACSD-56226** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where READ queries at the slave node return outdated data when the `synchronous_replication` flag is enabled.
+* **ACSD-57477** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where sales rule processing causes slow performance on cart-related requests.
+* **ACSD-58108** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where the missing joining table name in the original fetching table caused errors with custom module extension SQL in the order grid.
+* **ACSD-65983** (for Adobe Commerce >=2.4.6-p10 <2.4.9) - Fixes the issue where reconfiguring a bundled product quote in the Admin backend throws an error.
+* **ACSD-66149** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the IPN handler returns a *500* error for unsupported or unknown IPN types.
+* **ACSD-66153** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where a page returns a *500* error due to an incorrect layout structure being cached.
+* **ACSD-66302** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where wishlist items are incorrectly filtered by store ID instead of being filtered by website.
+* **ACSD-66311** (for Adobe Commerce >=2.4.6-p9 <2.4.9) - Fixes the issue where the Companies grid loads slowly for admin users with restricted websites access.
+* **ACSD-66404** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the cron job fails to clear changelog tables, causing [!DNL Galera Cluster] crashes when handling large amounts of data.
+* **ACSD-66952** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where cache is cleared on each PLP or Cart visit, causing performance overhead when a target rule is set.
+* **ACSD-67264** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where bundle and downloadable product page layouts are inconsistent across devices.
+* **ACSD-67347** (for Adobe Commerce and Magento Open Source >=2.4.5-p11 <2.4.6) - Fixes the issue where order fails with *Cannot acquire a lock* error when coupons with special characters are used and file locking is enabled.
+* Replaced patches: **ACP2E-3841**
+
 ## v1.1.68 {#v1-1-68}
 
 * **ACSD-58131** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected.
