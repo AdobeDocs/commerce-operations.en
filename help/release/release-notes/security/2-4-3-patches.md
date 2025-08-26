@@ -79,3 +79,5 @@ This release includes the following hotfix, and all hotfixes that have been rele
 **Recent penetration test vulnerabilities** have been fixed in this release. <!-- MC-42431-->
 
 The unsupported source expression `unsafe-inline` has been removed from the Content Security Policy `frame-ancestors` directive. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
+
+<!-- Last updated from includes: 2025-05-28 17:01:56 -->
