@@ -39,7 +39,7 @@ When a 0-byte image is placed in the media gallery directory, the old media gall
 1. Place a few images in the `pub/media/wysiwyg` directory.
 1. Create a 0-byte image in the same directory using `touch pub/media/wysiwyg/empty_image.png`.
 1. Add an image from the `wysiwyg` directory via Page Builder under any content (for example, a CMS Block):
-    1. Create a New Block
+    1. Create a new block. Go to **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Blocks]** and click **[!UICONTROL Add New Block]**.
     1. Edit the content section using Page Builder.
     1. Under **[!UICONTROL Layout]**, drag a new **[!UICONTROL Row]** to the stage.
     1.  Expand **[!UICONTROL Media]** and drag an **[!UICONTROL Image]** placeholder into the row.
