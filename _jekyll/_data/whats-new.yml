@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Aug 26 20:32:09 2025
+updated: Tue Aug 26 22:35:51 2025
 entries:
 - description: Added the [detailed description of the issue fixed by the ACSD-58131
     patch in the QPT 1.1.68 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-old-media-gallery-fails-to-load-images-due-to-0-byte-image-file).
@@ -40,6 +40,17 @@ entries:
   labels:
   - new-topic
   - qpt
+- description: Changed OpenSearch Cloud from v2.19 to v2 in [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for Commerce on Cloud.
+  versions: ''
+  type: technical
+  date: August 26, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1557
+  merge_commit: 0e674515e117a99d987f5c7e19f7d61c6e85cd10
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
 - description: Added the [detailed description of the issue fixed by the ACSD-66963
     patch in the QPT 1.1.68 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66963-estimatetotals-mutation-returns-null-for-discounts-on-virtual-products).
   versions: ''
