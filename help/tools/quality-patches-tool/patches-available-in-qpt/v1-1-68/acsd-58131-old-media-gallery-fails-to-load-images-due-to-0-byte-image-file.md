@@ -4,8 +4,8 @@ description: Apply the ACSD-58131 patch to fix the Adobe Commerce issue where th
 feature: Media
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 8fdca43d-b79f-4036-8694-de6fa1417a52
 ---
-
 # ACSD-58131: Old media gallery fails to load images due to 0-byte image file
 
 The ACSD-58131 patch fixes the issue where the old media gallery fails to render images when a 0-byte image is present in the directory. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-58131. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.5.0.
