@@ -1,11 +1,11 @@
 ---
 metadata:
-  last_updated: '2025-08-26 20:32:18'
+  last_updated: '2025-08-26 16:53:00'
   description: Index of main files and their included files for automatic timestamp
     updates
   total_relationships: 57
   auto_discovered: true
-  discovery_date: '2025-08-26 20:32:18'
+  discovery_date: '2025-08-26 16:53:00'
 relationships:
   installation/advanced.md:
   - "/help/_includes/cli-consumers.md"
