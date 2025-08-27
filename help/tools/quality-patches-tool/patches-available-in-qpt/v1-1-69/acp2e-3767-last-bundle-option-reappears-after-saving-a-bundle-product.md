@@ -26,7 +26,7 @@ The ACP2E-3767 patch fixes the issue where the last bundle option reappears afte
 
 ## Issue
 
-Saving a bundle product restores the last bundle option.
+The last bundle option in a bundle product can't be removed.
 
 <u>Steps to reproduce</u>:
 
