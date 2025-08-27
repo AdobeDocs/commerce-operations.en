@@ -1,12 +1,12 @@
 ---
-title: 'ACP2E-3767: Last bundle option reappears after saving bundle product'
+title: 'ACP2E-3767: Last bundle option reappears after saving a bundle product'
 description: Apply the ACP2E-3767 patch to fix the Adobe Commerce issue where the last bundle option in a bundle product could not be removed.
 feature: Products, Catalog Management
 role: Admin, Developer
 type: Troubleshooting 
 ---
 
-# ACP2E-3767: Last bundle option reappears after saving bundle product
+# ACP2E-3767: Last bundle option reappears after saving a bundle product
 
 The ACP2E-3767 patch fixes the issue where the last bundle option reappears after saving the bundle product. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3767. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
@@ -35,10 +35,10 @@ Saving a bundle product restores the last bundle option.
 1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Bundle Product]** from the dropdown.
 1. Enter required data.
 1. In Bundle Items, click **[!UICONTROL Add Option]**.
-1. Enter a title to the new option and click **[!UICONTROL Add Products to Option]**.
-1. Select the simple product you created earlier and click **[!UICONTROL Add Selected Products]**.
-1. Save bundle.
-1. Remove bundle option and save.
+1. Add a title to the new option, then click **[!UICONTROL Add Products to Option]**.
+1. Select the previously created simple product, then **[!UICONTROL Add Selected Products]**.
+1. Save bundle product.
+1. Remove the bundle option and save.
 
 <u>Expected results</u>:
 
