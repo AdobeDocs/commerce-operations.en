@@ -1,5 +1,5 @@
 #
-# Copyright 2024 Adobe All Rights Reserved.
+# Copyright 2025 Adobe All Rights Reserved.
 # NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
 # The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
 # Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Adobe.
@@ -7,17 +7,32 @@
 
 # frozen_string_literal: true
 
+# Adobe Docs Rake Tasks
+# This file contains common requires and shared functionality for Adobe documentation repositories
+# Source: commerce-operations.en repository (most up-to-date)
+
+# Common requires for all rake tasks
 require 'yaml'
 require 'colorator'
 require 'date'
 require 'json'
+require 'tzinfo'
 
-desc 'Generate data for a news digest at Best Practices.
+# Note: Individual namespace tasks have been moved to separate files:
+# - includes.rake: Include management tasks
+# - images.rake: Image management tasks  
+# - whatsnew.rake: What's new tasks
+# - utility.rake: Utility tasks
+#
+# Rake automatically loads all .rake files in this directory
+
+# What's New Task
+desc 'Generate data for a news digest.
       Default timeframe is since last update.
       For other period, use "since" argument, such as, rake whatsnew since="jul 4"'
-task :whatsnew_bp do
+task :whatsnew do
   since = ENV['since']
-  current_file = '_data/whats-new-bp.yml'
+  current_file = '_data/whats-new.yml'
   generated_file = 'tmp/whats-new.yml'
   current_data = YAML.load_file current_file
   last_update = current_data['updated']
@@ -26,17 +41,17 @@ task :whatsnew_bp do
   # Generate tmp/whats-new.yml
   report =
     if since.nil? || since.empty?
-      `TZ='America/Chicago' bundle exec whatsup_github since '#{last_update}' --config .whatsup-bp.yml`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{last_update}'`
     elsif since.is_a? String
-      `TZ='America/Chicago' bundle exec whatsup_github since '#{since}' --config .whatsup-bp.yml`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{since}'`
     else
       abort 'The "since" argument must be a string. Example: "jul 4"'
     end
 
   # Merge generated tmp/whats-new.yml with existing src/_data/whats-new.yml
   generated_data = YAML.load_file generated_file
-  current_data['updated'] = generated_data['updated']
   current_data['entries'] = [] if current_data['entries'].nil?
+  current_data['updated'] = generated_data['updated']
   current_data['entries'].prepend(generated_data['entries']).flatten!
   current_data['entries'].uniq! { |entry| entry['link'] }
 
@@ -47,21 +62,10 @@ task :whatsnew_bp do
   puts report
 end
 
-desc 'Get released versions. Requires GitHub CLI.
-  Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.'
-task :get_released_versions do
-  Dir.mkdir('tmp') unless Dir.exist?('tmp')
-  releases_json = `gh release list --repo=magento/magento2 --limit 10 --json tagName,publishedAt`
-  releases = JSON.parse(releases_json)
-  File.write('tmp/core-release.txt', JSON.pretty_generate(releases))
-  puts "Find results in ".green + "tmp/core-release.txt".blue
-end
-
-desc 'Get the date of the first merge into a branch. Requires GitHub CLI.
-  Example: rake first_merge_date base=develop.'
-task :first_merge_date do
-  base_branch = ENV['base'] || abort('ERROR: Please provide the base branch.'.red)
-  merged_at=`gh pr list --search 'is:pr is:merged base:#{base_branch} sort:merged_at' --limit 1 --json mergedAt --jq '.[0].mergedAt'`
-  date_only = DateTime.parse(merged_at).strftime('%Y-%m-%d')
-  puts "The first merge date for a PR in the branch #{base_branch.magenta} is #{date_only.green}"
+# Utility Tasks
+desc 'Render the templated files.
+  Renders the templated files in the "_jekyll/templates" directory. The result will be found in the "help/includes/templated" directory.'
+task :render do
+  sh '_scripts/render'
+  Rake::Task['includes:maintain_all'].invoke
 end
