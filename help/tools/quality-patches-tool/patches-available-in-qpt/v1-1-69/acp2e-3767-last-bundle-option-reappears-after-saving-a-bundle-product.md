@@ -30,13 +30,13 @@ Saving a bundle product restores the last bundle option.
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Simple Product]** from the dropdown.
+1. Go to [!UICONTROL Catalog] > [UICONTROL Products] > [!UICONTROL Add Product]. Select [!UICONTROL Simple Product] from the dropdown.
 1. Enter required data and save.
-1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Bundle Product]** from the dropdown.
+1. Go to [!UICONTROL Catalog] > [UICONTROL Products] > [!UICONTROL Add Product]. Select [!UICONTROL Bundle Product] from the dropdown.
 1. Enter required data.
-1. In Bundle Items, click **[!UICONTROL Add Option]**.
-1. Add a title to the new option, then click **[!UICONTROL Add Products to Option]**.
-1. Select the previously created simple product, then **[!UICONTROL Add Selected Products]**.
+1. In Bundle Items, click [!UICONTROL Add Option].
+1. Add a title to the new option, then click [!UICONTROL Add Products to Option].
+1. Select the previously created simple product, then [!UICONTROL Add Selected Products].
 1. Save bundle product.
 1. Remove the bundle option and save.
 
