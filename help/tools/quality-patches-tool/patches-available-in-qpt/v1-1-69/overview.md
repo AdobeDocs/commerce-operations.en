@@ -11,7 +11,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.69 includes the following patches:
 1. **AC-15223**: Storefront page shows cached content after switching stores.
 1. **ACP2E-3731**: Product exports with **[!UICONTROL Catalog, Search]** visibility include records from other store views.
-1. **[ACP2E-3767](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3767-last-bundle-option-reappears-after-saving-a-bundle-product.md)**: Last bundle option reappears after saving a bundle product.
+1. **ACP2E-3767**: Last bundle option reappears after saving a bundle product.
 1. **ACP2E-3964**: Configurable child products with video not listed via REST API.
 1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** can't be left empty.
 1. **ACP2E-4050**: Cart price rules fail for multi-shipping with bundle products and free shipping.
