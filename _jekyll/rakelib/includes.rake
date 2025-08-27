@@ -1,3 +1,5 @@
+require 'tzinfo'
+
 namespace :includes do
   desc 'Maintain include-relationships.yml by discovering include relationships in markdown files.'
   task :maintain_relationships do
@@ -15,11 +17,11 @@ namespace :includes do
     # Initialize new relationships structure
     new_relationships = {
       'metadata' => {
-        'last_updated' => Time.now.strftime('%Y-%m-%d %H:%M:%S'),
+        'last_updated' => TZInfo::Timezone.get('America/Chicago').now.strftime('%Y-%m-%d %H:%M:%S %Z'),
         'description' => 'Index of main files and their included files for automatic timestamp updates',
         'total_relationships' => 0,
         'auto_discovered' => true,
-        'discovery_date' => Time.now.strftime('%Y-%m-%d %H:%M:%S')
+        'discovery_date' => TZInfo::Timezone.get('America/Chicago').now.strftime('%Y-%m-%d %H:%M:%S %Z')
       },
       'relationships' => {}
     }

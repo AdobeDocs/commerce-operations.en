@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Aug 26 22:35:51 2025
+updated: Wed Aug 27 10:24:57 2025
 entries:
 - description: Added the [detailed description of the issue fixed by the ACSD-58131
     patch in the QPT 1.1.68 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-old-media-gallery-fails-to-load-images-due-to-0-byte-image-file).
