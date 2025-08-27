@@ -37,7 +37,7 @@ The last bundle option in a bundle product can't be removed.
 1. Select **[!UICONTROL Bundle Product]** from the dropdown.
 1. Enter required data.
 1. In Bundle Items, click [!UICONTROL Add Option].
-1. Add a title to the new option, then click [!UICONTROL Add Products to Option].
+1. Add a title to the new option, then click **[!UICONTROL Add Products to Option]**.
 1. Select the previously created simple product, then [!UICONTROL Add Selected Products].
 1. Save bundle product.
 1. Remove the bundle option and save.
