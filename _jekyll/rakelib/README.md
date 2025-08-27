@@ -4,15 +4,30 @@ This directory contains rake task definitions organized by functionality. Rake a
 
 ## File Organization
 
+### `adobe-docs-tasks.rake`
+
+Contains common requires, shared functionality, and non-namespaced tasks for Adobe Commerce on Experience League documentation repository rake tasks:
+
+- `whatsnew` - Generate data for news digest (default: since last update)
+- `render` - Render templated files and maintain includes
+
 ### `includes.rake`
 
-Contains all include-related rake tasks under the `:includes` namespace:
+Contains include management tasks organized in the `:includes` namespace:
 
-- `includes:maintain_relationships` - Discover and maintain include relationships
+- `includes:maintain_relationships` - Discover and maintain include relationships in markdown files
 - `includes:maintain_timestamps` - Add/update timestamps based on include file changes
 - `includes:maintain_all` - Run both operations in sequence
+- `includes:unused` - Find unused include files
 
-## How It Works
+### `images.rake`
+
+Contains image management tasks organized in the `:images` namespace:
+
+- `images:optimize` - Optimize images in modified uncommitted files
+- `images:unused` - Find unused images in the project
+
+## How it works
 
 Rake automatically discovers and loads any `.rake` files in the `rakelib/` directory. This allows us to:
 
@@ -21,7 +36,7 @@ Rake automatically discovers and loads any `.rake` files in the `rakelib/` direc
 3. **Easily add new task groups** - Just create new `.rake` files
 4. **Maintain separation of concerns** - Each file handles a specific domain
 
-## Adding New Task Groups
+## Adding new task groups
 
 To add a new group of related tasks:
 
@@ -30,7 +45,7 @@ To add a new group of related tasks:
 3. Define your tasks within the namespace
 4. Rake will automatically load them
 
-## Example Structure
+## Example structure
 
 ```ruby
 namespace :your_namespace do
