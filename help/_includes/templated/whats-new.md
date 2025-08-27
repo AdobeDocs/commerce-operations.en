@@ -39,6 +39,14 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9c835576da836d78bef7797b2f3e308e32a1a716">commit</a></td>
     </tr>
+    <tr>
+      <td><p>Changed OpenSearch Cloud from v2.19 to v2 in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a> for Commerce on Cloud.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e674515e117a99d987f5c7e19f7d61c6e85cd10">commit</a></td>
+    </tr>
   </tbody>
 </table>
 
