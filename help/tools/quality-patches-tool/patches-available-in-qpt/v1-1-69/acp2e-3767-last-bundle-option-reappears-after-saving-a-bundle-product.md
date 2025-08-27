@@ -30,7 +30,7 @@ Saving a bundle product restores the last bundle option.
 
 <u>Steps to reproduce</u>:
 
-1. Go to [!UICONTROL Catalog] > [!UICONTROL Products] > [!UICONTROL Add Product].
+1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add Product]**.
 1. Select [!UICONTROL simple Product] from the dropdown.
 1. Enter required data and save.
 1. Go to [!UICONTROL Catalog] > [UICONTROL Products] > [!UICONTROL Add Product].
