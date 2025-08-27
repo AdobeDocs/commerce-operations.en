@@ -31,7 +31,7 @@ The last bundle option in a bundle product can't be removed.
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add Product]**.
-1. Select [!UICONTROL simple Product] from the dropdown.
+1. Select **[!UICONTROL Simple Product]** from the dropdown.
 1. Enter required data and save.
 1. Go to [!UICONTROL Catalog] > [UICONTROL Products] > [!UICONTROL Add Product].
 1. Select [!UICONTROL Bundle Product] from the dropdown.
