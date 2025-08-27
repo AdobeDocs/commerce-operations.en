@@ -27,9 +27,9 @@ task :whatsnew do
   # Generate tmp/whats-new.yml
   report =
     if since.nil? || since.empty?
-      `bundle exec whatsup_github since '#{last_update}'`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{last_update}'`
     elsif since.is_a? String
-      `bundle exec whatsup_github since '#{since}'`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{since}'`
     else
       abort 'The "since" argument must be a string. Example: "jul 4"'
     end
@@ -62,9 +62,9 @@ task :whatsnew_bp do
   # Generate tmp/whats-new.yml
   report =
     if since.nil? || since.empty?
-      `bundle exec whatsup_github since '#{last_update}' --config .whatsup-bp.yml`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{last_update}' --config .whatsup-bp.yml`
     elsif since.is_a? String
-      `bundle exec whatsup_github since '#{since}' --config .whatsup-bp.yml`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{since}' --config .whatsup-bp.yml`
     else
       abort 'The "since" argument must be a string. Example: "jul 4"'
     end
