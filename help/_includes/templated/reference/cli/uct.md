@@ -5,7 +5,7 @@
 
 
 <!-- The template to render with above values -->
-**Version**: 3.0.23
+**Version**: 3.0.24
 
 This reference contains 9 commands available through the `bin/uct` command-line tool.
 The initial list is auto generated using the `bin/uct list` command at Adobe Commerce.
