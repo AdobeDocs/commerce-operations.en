@@ -4,8 +4,8 @@ description: Apply the ACSD-58108 patch to fix the Adobe Commerce issue where a 
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
 ---
-
 # ACSD-58108: SQL errors occur in order grid custom module extension due to missing join table name
 
 The ACSD-58108 patch fixes the issue where a missing join table name in the order grid custom module extension causes SQL errors when filtering certain columns. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-58108. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.5.0.
