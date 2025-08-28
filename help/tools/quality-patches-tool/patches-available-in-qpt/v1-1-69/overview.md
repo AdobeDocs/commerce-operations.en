@@ -20,7 +20,7 @@ QPT v1.1.69 includes the following patches:
 1. **ACP2E-4050**: Cart price rules fail for multi-shipping with bundle products and free shipping.
 1. **ACSD-56226**: READ queries return outdated data with `synchronous_replication` enabled.
 1. **ACSD-57477**: Sales rule processing slows performance on cart-related requests.
-1. **ACSD-58108**: Missing join table name causes SQL errors in order grid custom module extension.
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: Missing join table name causes SQL errors in order grid custom module extension.
 1. **ACSD-65983**: Error occurs when reconfiguring bundled product quote in Admin.
 1. **ACSD-66149**: IPN handler returns 500 for unsupported types.
 1. **ACSD-66153**: Page returns 500 error due to cached incorrect layout structure.
