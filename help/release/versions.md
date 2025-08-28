@@ -21,3 +21,5 @@ Adobe offers a one-year support extension at no additional cost for Adobe Commer
 >- For pricing, see [Adobe Commerce pricing](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
+
+<!-- Last updated from includes: 2025-08-12 14:32:02 -->
