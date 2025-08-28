@@ -82,8 +82,12 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 ## Isolated patch
 
-Isolated patchescContain a standalone fix that is included in the latest security-only patch or an upcoming security-only patch, which is being released separately for quicker implementation.
+Isolated patches are security fixes released independently from a full security patch to allow for faster implementation. Each isolated patch addresses a specific security problem and is either included in the latest or an upcoming full security patch. Details about the issue are provided in the related security bulletin, which links to a Knowledge Base (KB) article containing the fix details, how to apply the patch, and additional information.
+
+See the [Security Center](https://helpx.adobe.com/security/products/magento.html) to find the latest security updates available for Adobe Commerce.
 
 ## Custom patch
 
 Created by non-Adobe personnel to fix an issue or modify the Adobe Commerce code for various reasons. Custom patches are delivered through the [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+
+<!-- Last updated from includes: 2025-05-28 16:37:31 -->
