@@ -3,9 +3,9 @@ title: 'ACP2E-3767: Last bundle option reappears after saving a bundle product'
 description: Apply the ACP2E-3767 patch to fix the Adobe Commerce issue where the last bundle option in a bundle product could not be removed.
 feature: Products, Catalog Management
 role: Admin, Developer
-type: Troubleshooting 
+type: Troubleshooting
+exl-id: 8c0645e3-47ab-4604-a9db-b070c3779e78
 ---
-
 # ACP2E-3767: Last bundle option reappears after saving a bundle product
 
 The ACP2E-3767 patch fixes the issue where the last bundle option reappears after saving the bundle product. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3767. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
