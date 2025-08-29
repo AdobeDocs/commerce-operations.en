@@ -31,16 +31,16 @@ Wishlist items are incorrectly filtered by store ID instead of by website.
 <u>Steps to reproduce</u>:
 
 1. Create a simple product.
-2. Create an additional storeview.
-3. In Admin, go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Wish List]** > **[!UICONTROL General Options]**, and set **[!UICONTROL Enable Multiple Wish Lists]** to `Yes`.
-4. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** > **[!UICONTROL Url Options]**, and set **[!UICONTROL Add Store Code to Urls]** to `Yes`.
-5. Create a customer account.
-6. Use a [!DNL GraphQL] request to retrieve the customer auth token.
-7. Login as the customer.
-8. Select the **[!UICONTROL Default Store View]** and add the product to the wishlist.
-9. Switch store view to *test*.
-10. Confirm that the product still appears in the wishlist (correct behavior).
-11. Execute the following [!DNL GraphQL] query:
+1. Create an additional storeview.
+1. In Admin, go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Wish List]** > **[!UICONTROL General Options]**, and set **[!UICONTROL Enable Multiple Wish Lists]** to `Yes`.
+1. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** > **[!UICONTROL Url Options]**, and set **[!UICONTROL Add Store Code to Urls]** to `Yes`.
+1. Create a customer account.
+1. Use a [!DNL GraphQL] request to retrieve the customer auth token.
+1. Login as the customer.
+1. Select the **[!UICONTROL Default Store View]** and add the product to the wishlist.
+1. Switch store view to *test*.
+1. Confirm that the product still appears in the wishlist (correct behavior).
+1. Execute the following [!DNL GraphQL] query:
 
 ```
 {
@@ -64,8 +64,8 @@ Wishlist items are incorrectly filtered by store ID instead of by website.
 }
 ```
 
-12. Perform the query on the default store – the product appears as expected.
-13. Perform the same query on the test store – the product does not appear.
+1. Perform the query on the default store – the product appears as expected.
+1. Perform the same query on the test store – the product does not appear.
 
 <u>Expected results</u>:
 
