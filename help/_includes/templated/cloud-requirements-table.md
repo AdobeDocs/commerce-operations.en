@@ -55,15 +55,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6.1
-      </td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
           8
@@ -158,18 +149,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
           8
@@ -229,7 +208,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2
@@ -359,33 +338,6 @@
       </td>
       <td>
           3.12
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -510,7 +462,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2
@@ -718,48 +670,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
           7.2
@@ -919,7 +829,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2
@@ -1157,54 +1067,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
           7.2
@@ -1380,7 +1242,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2

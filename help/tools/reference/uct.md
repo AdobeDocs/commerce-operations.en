@@ -8,3 +8,5 @@ recommendations: noDisplay, noCatalog
 # bin/uct (Upgrade Compatibility Tool)
 
 {{$include /help/_includes/templated/reference/cli/uct.md}}
+
+<!-- Last updated from includes: 2025-08-22 21:08:49 -->

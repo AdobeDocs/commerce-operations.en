@@ -300,3 +300,5 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 >[!TIP]
 >
 >If you have one user account to access the application server, see [set a umask](../next-steps/set-umask.md). This type of setup is typical for shared hosting.
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->
