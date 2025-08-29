@@ -4,8 +4,8 @@ description: Apply the ACSD-66302 patch to fix the Adobe Commerce issue where wi
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
+exl-id: c1a9eadc-0321-4f5c-ba82-533286a1f24f
 ---
-
 # ACSD-66302: Wishlist items filtered by store ID instead of website
 
 The ACSD-66302 patch fixes the issue where wishlist items being filtered by store ID instead of website in [!DNL GraphQL] requests. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66302. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
