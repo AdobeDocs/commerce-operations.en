@@ -36,8 +36,8 @@ Wishlist items are incorrectly filtered by store ID instead of by website.
 4. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** > **[!UICONTROL Url Options]**, and set **[!UICONTROL Add Store Code to Urls]** to `Yes`.
 5. Create a customer account.
 6. Use a [!DNL GraphQL] request to retrieve the customer auth token.
-7. login as the customer.
-8. Select the **[!UICONTROL Default Store View** and add the product to the wishlist.
+7. Login as the customer.
+8. Select the **[!UICONTROL Default Store View]** and add the product to the wishlist.
 9. Switch store view to *test*.
 10. Confirm that the product still appears in the wishlist (correct behavior).
 11. Execute the following [!DNL GraphQL] query:
