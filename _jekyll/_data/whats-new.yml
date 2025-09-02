@@ -2,8 +2,44 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Wed Aug 27 10:24:57 2025
+updated: Mon Sep 1 21:22:28 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-66302
+    patch in the QPT 1.1.69 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66302-wishlist-items-filtered-by-store-id-instead-of-website).
+  versions: ''
+  type: new-topic, qpt
+  date: August 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1537
+  merge_commit: f1b1900962def8d52a03ffb0907ff12444d9be12
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACP2E-3767
+    patch in the QPT 1.1.69 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3767-last-bundle-option-reappears-after-saving-a-bundle-product).
+  versions: ''
+  type: new-topic, qpt
+  date: August 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1527
+  merge_commit: e429e13ef37b1808dd2b9fb75d63f44a003787b7
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-58108
+    patch in the QPT 1.1.69 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension).
+  versions: ''
+  type: new-topic, qpt
+  date: August 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1533
+  merge_commit: 19f6e978f63d36c04f7f716a982caa06afca325e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-58131
     patch in the QPT 1.1.68 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-old-media-gallery-fails-to-load-images-due-to-0-byte-image-file).
   versions: ''
