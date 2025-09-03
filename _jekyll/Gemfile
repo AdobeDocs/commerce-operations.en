@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'rake'
-gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', branch: 'main'
+gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', tag: 'v1.2.0'
 gem 'faraday-retry'
 gem 'image_optim'
 gem 'image_optim_pack'
