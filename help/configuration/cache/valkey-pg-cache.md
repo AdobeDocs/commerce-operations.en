@@ -25,10 +25,10 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 >[!NOTE]
 >
->Starting with **Adobe Commerce 2.4.9**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
+>Starting with **Adobe Commerce 2.4.9-alpha2**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
 
 ```bash
-bin/magento setup:config:set --session-save=valkey --session-save-redis-<parameter_name>=<parameter_value>...
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
 ```
 
 | Command-line parameter          | Value     | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                                | Default value |
@@ -48,7 +48,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-serve
 
 >[!NOTE]
 >
->Starting with **Adobe Commerce 2.4.9**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
+>Starting with **Adobe Commerce 2.4.9-alpha2**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
@@ -70,7 +70,7 @@ With the following parameters:
 
 >[!NOTE]
 >
->Starting with **Adobe Commerce 2.4.9**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
+>Starting with **Adobe Commerce 2.4.9-alpha2**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -93,7 +93,7 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.
 
 >[!NOTE]
 >
->Starting with **Adobe Commerce 2.4.9**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
+>Starting with **Adobe Commerce 2.4.9-alpha2**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
