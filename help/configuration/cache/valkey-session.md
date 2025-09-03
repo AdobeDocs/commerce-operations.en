@@ -26,7 +26,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 
 >[!NOTE]
 >
->Starting with **Adobe Commerce 2.4.9-alpha2**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
+>Starting with **Adobe Commerce 2.4.9-alpha2**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. The following example shows the Valkey-specific command.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -67,7 +67,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 
 >[!NOTE]
 >
->Starting with **Adobe Commerce 2.4.9**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. Please refer below command and specify Valkey-specific value.
+>Starting with **Adobe Commerce 2.4.9**, **Valkey** has officially replaced Redis in CLI tooling due to changes in licensing. Valkey is a fork of Redis and maintains near-identical functionality. For **versions 2.4.8 and earlier**, the CLI commands used to configure Valkey remain the same as those for Redis, ensuring seamless backward compatibility and simplifying migration or dual-environment support. The following example shows the Valkey-specific command.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
