@@ -32,7 +32,7 @@
         {{ item.type | replace: "-", " " | capitalize }}
       </td>
       {%- if item.link contains "git.corp" %}
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/{{ item.merge_commit }}">commit</a></td>
+      <td><a href="https://github.com/{{ site.repo }}/commit/{{ item.merge_commit }}">commit</a></td>
       {%- else %}
       <td><a href="{{ item.link }}">pull request</a></td>
       {%- endif %}
