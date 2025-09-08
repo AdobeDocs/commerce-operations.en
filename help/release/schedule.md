@@ -6,7 +6,7 @@ exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 
 # Patch release schedule
 
-Adobe continually strives to find the right balance between making product upgrades simple and predictable while delivering improvements and new features to early adopters faster (see [versioning policy](versioning-policy.md)).
+Adobe continually strives to find the right balance between making product upgrades simple and predictable while delivering improvements to early adopters faster (see [versioning policy](versioning-policy.md)).
 
 The purpose of this schedule is to provide dates for when Adobe plans to announce the release of [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant.
 
