@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 3, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Clarified that while Valkey is supported, Valkey-specific <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">CLI commands</a> are only available starting from Adobe Commerce 2.4.9.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74a275ef14ae865923a279a56563d98127f1b21c">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 29, 2025
 
 <table style="table-layout:auto;">
