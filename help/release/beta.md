@@ -22,7 +22,7 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
-### Cloud Automation Patch Service (Private beta)
+### Cloud Automation Patch Service (Private Beta)
 
 The Cloud Automation Patch Service automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
 
@@ -31,7 +31,7 @@ This new service will be available as a beta in October 2025. It provides a stre
 The beta includes the following features:
 
 - **Automate patch installation**: Simplify and automate the process of patching critical vulnerabilities across environments.
-- **Minimize risk**: Minimize the risk of site outages with post-deployment health check and rollback capabilities.
+- **Minimize risk**: Prevent site outages with post-deployment health check and rollback capabilities.
 - **Provide transparency**: View detailed audit logs for patching actions, testing results, and user activities.
 
 To participate in this beta, send an email request to [smiverma@adobe.com](mailto:smiverma@adobe.com).
