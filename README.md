@@ -124,10 +124,10 @@ To update templated content:
 1. Generate templated content and write the output to the `help/_includes/templated` directory.
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command.
+   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command. The rake tasks are provided by the `adobe-comdox-exl-rake-tasks` gem for better maintainability across Adobe Commerce documentation repositories.
 
 1. Navigate back to the `root` directory.
 
@@ -157,3 +157,12 @@ To update templated content:
    ```
 
 See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles), [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.
+
+## Available rake tasks
+
+This repository uses rake tasks provided by the `adobe-comdox-exl-rake-tasks` gem. To see all available tasks, run:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
