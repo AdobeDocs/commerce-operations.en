@@ -522,7 +522,7 @@ These files can be inspected with any tool you use to view XML or JSON that show
 
 ## Configuring alternativeHeaders for Client IP Detection
 
-Default support is provided for a default configuration for the `x-forwarded-for` header in `app/etc/di.xml`, allowing the platform to correctly retrieve the client IP address in most standard proxy and CDN setups.
+By default, GraphQL Application Server supports a standard configuration for the `x-forwarded-for` header defined in the `app/etc/di.xml` file, enabling accurate retrieval of the client IP address in typical proxy and CDN environments.
 
 If you need to support additional or custom headers (such as `x-client-ip`, `fastly-client-ip`, or `x-real-ip`), you can extend or override the `alternativeHeaders` argument in your `app/etc/di.xml` file. This is only necessary if your environment uses headers other than `x-forwarded-for` to pass the client IP address.
 
@@ -543,5 +543,6 @@ For example, to add support for other headers, update your `app/etc/di.xml` as f
 
 You can add, remove, or reorder the headers as needed to ensure that the client IP is retrieved from the correct source for your setup.
 
-> **Note:**
-> If you are using Adobe Commerce Cloud with the Fastly CDN module, this configuration is handled automatically and no manual changes are required. Manual configuration is only necessary for custom CDN, proxy, or non-standard header setups.
+> [!NOTE]
+>
+>If you are using Adobe Commerce Cloud with the Fastly CDN module, this configuration is handled automatically and no manual changes are required. Manual configuration is only necessary for custom CDN, proxy, or non-standard header setups.
