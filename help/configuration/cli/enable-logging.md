@@ -48,6 +48,23 @@ By default, Commerce writes to the debug log (`<install_directory>/var/log/debug
 
 By default, Commerce writes database activity logs to the `<install-dir>/var/debug/db.log` file.
 
+### Query logging storage location
+
+When database logging is enabled, Commerce stores query logs in the following location:
+
+- **Query log file**: `<install-directory>/var/debug/db.log`
+- **Log directory**: `<install-directory>/var/debug/`
+
+The query log contains:
+- SQL queries executed by the application
+- Query execution times
+- Query parameters and bindings
+- Database connection information
+
+>[!NOTE]
+>
+>The query log file can grow large quickly in high-traffic environments. Monitor disk space and consider implementing log rotation or periodic cleanup of the query log file.
+
 ### To enable database logging
 
 1. Use the `dev:query-log` command to enable or disable database logging.
@@ -65,6 +82,24 @@ By default, Commerce writes database activity logs to the `<install-dir>/var/deb
    ```bash
    bin/magento cache:flush
    ```
+
+### To view query logs
+
+You can view the query logs using standard file viewing commands:
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Cron logging
 
