@@ -543,6 +543,6 @@ For example, to add support for other headers, update your `app/etc/di.xml` as f
 
 You can add, remove, or reorder the headers as needed to ensure that the client IP is retrieved from the correct source for your setup.
 
-> [!NOTE]
+>[!NOTE]
 >
 >If you are using Adobe Commerce Cloud with the Fastly CDN module, this configuration is handled automatically and no manual changes are required. Manual configuration is only necessary for custom CDN, proxy, or non-standard header setups.
