@@ -519,3 +519,30 @@ These files can be inspected with any tool you use to view XML or JSON that show
 >[!NOTE]
 >
 >`--state-monitor` is not compatible with PHP versions `8.3.0` - `8.3.4` due to a bug in the PHP garbage collector. If you are using PHP 8.3, you must upgrade to `8.3.5` or newer to use this feature.
+
+## Configuring alternativeHeaders for Client IP Detection
+
+By default, GraphQL Application Server supports a standard configuration for the `x-forwarded-for` header defined in the `app/etc/di.xml` file, enabling accurate retrieval of the client IP address in typical proxy and CDN environments.
+
+If you need to support additional or custom headers (such as `x-client-ip`, `fastly-client-ip`, or `x-real-ip`), you can extend or override the `alternativeHeaders` argument in your `app/etc/di.xml` file. This is only necessary if your environment uses headers other than `x-forwarded-for` to pass the client IP address.
+
+For example, to add support for other headers, update your `app/etc/di.xml` as follows:
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+You can add, remove, or reorder the headers as needed to ensure that the client IP is retrieved from the correct source for your setup.
+
+>[!NOTE]
+>
+>If you are using Adobe Commerce Cloud with the Fastly CDN module, this configuration is handled automatically and no manual changes are required. Manual configuration is only necessary for custom CDN, proxy, or non-standard header setups.
