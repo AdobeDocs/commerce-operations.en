@@ -2,8 +2,30 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 5 15:40:34 2025
+updated: Fri Sep 12 15:40:38 2025
 entries:
+- description: Added an [important disclaimer](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches)
+    that applying official Adobe patches with the custom patch method is not supported.
+  versions: ''
+  type: major-update
+  date: September 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1572
+  merge_commit: 1149839754bd04443b65f4054167f4f0c8292169
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.70 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: September 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1570
+  merge_commit: 5abd6de938fb57de4de419ce2e8689dbd3f7f567
+  contributor: gorbivsk
+  membership:
+  labels:
+  - major-update
 - description: Clarified that while Valkey is supported, Valkey-specific [CLI commands](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache)
     are only available starting from Adobe Commerce 2.4.9.
   versions: ''
