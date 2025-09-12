@@ -894,7 +894,7 @@ See [tenant ID](#tenant-id).
 _Term attributes:_
 
 * _Field: cloud_
-* _Synonyms: instance ID_
+* _Synonyms: tenant ID_
 
 ### interception
 
