@@ -889,7 +889,7 @@ _Term attributes:_
 
 _noun_
 
-See [instance ID](#tenant-id)
+See [tenant ID](#tenant-id).
 
 _Term attributes:_
 
