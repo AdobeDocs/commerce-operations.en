@@ -24,7 +24,7 @@ Transitioning request handling logic to an application-level event loop appears 
 
 ## Advantages
 
-GraphQL Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests. Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, GraphQL request response time can be reduced by up to 30%.
+GraphQL Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests. Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, you can reduce GraphQL request response time by up to 30%.
 
 ## System requirements
 
@@ -32,8 +32,22 @@ Running GraphQL Application Server requires the following:
 
 * Commerce version 2.4.7+
 * PHP 8.2 or higher
-* Swoole PHP extension v5+ installed
 * Adequate RAM and CPU based on the expected load
+* Swoole PHP extension v5+ (see project-specific requirements below)
+
+### Cloud projects
+
+Adobe Commerce on cloud infrastructure projects include the Swoole extension by default. You can [enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) it in the `runtime` property of the `.magento.app.yaml` file. For example:
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### On-premises projects
+
+You must manually [install and configure](#install-and-configure-swoole) the Swoole PHP extension for on-premises projects.
 
 ## Enable and deploy on cloud infrastructure
 
@@ -255,7 +269,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 >[!NOTE]
 >
->Ensure that all custom settings in your root `.magento.app.yaml` file are appropriately migrated to the `application-server/.magento/.magento.app.yaml` file. After the `application-server/.magento/.magento.app.yaml` file is added to your project, you should maintain it in addition to the root `.magento.app.yaml` file. For example, if you need to [configure the RabbitMQ service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add the same configuration to `application-server/.magento/.magento.app.yaml` as well.
+>Ensure that all custom settings in your root `.magento.app.yaml` file are appropriately migrated to the `application-server/.magento/.magento.app.yaml` file. After the `application-server/.magento/.magento.app.yaml` file is added to your project, you should maintain it in addition to the root `.magento.app.yaml` file. For example, if you need to [configure the RabbitMQ service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) you should add the same configuration to `application-server/.magento/.magento.app.yaml` as well.
 
 ### Verify enablement on cloud projects
 
@@ -410,7 +424,7 @@ Additional ways to confirm that GraphQL Application Server is running include:
 
 ### Confirm that GraphQL requests are being processed
 
-GraphQL Application Server adds the `X-Backend` response header with the value `graphql_server` to each request that it processes. To check if a whether the GraphQL Application Server has handled a request, check for this response header.
+GraphQL Application Server adds the `X-Backend` response header with the value `graphql_server` to each request that it processes. To check if the GraphQL Application Server has handled a request, check for this response header.
 
 ### Confirm extension and customization compatibility
 
@@ -469,7 +483,7 @@ This test is designed to detect state changes in service objects that the `Objec
 
 #### GraphQlStateTest failures and potential remediation
 
-* **Cannot add, skip, or filter a list**. If you see an error about adding, skipping, or filtering a list, consider whether you can refactor the class in a backward-compatible way to use the factories of service classes that have mutable state.
+* **Cannot add, skip, or filter a list**. If you get this error, try to refactor your class to use factories for service classes with mutable state.
 
 * **Class exhibits a mutable state**. If the class itself exhibits a mutable state, try to rewrite your code to circumvent this state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object to its initial constructed state.
 
@@ -491,7 +505,7 @@ The `ResetAfterRequestTest` looks for all classes that implement `ResetAfterRequ
 
 ### Functional Testing
 
-while deploying the GraphQL Application Server, extension developers should execute WebAPI functional tests and any custom automated or manual functional tests for GraphQL. These functional tests help developers identify potential errors or compatibility issues.
+While deploying the GraphQL Application Server, extension developers should execute WebAPI functional tests and any custom automated or manual functional tests for GraphQL. These functional tests help developers identify potential errors or compatibility issues.
 
 #### State Monitor Mode
 

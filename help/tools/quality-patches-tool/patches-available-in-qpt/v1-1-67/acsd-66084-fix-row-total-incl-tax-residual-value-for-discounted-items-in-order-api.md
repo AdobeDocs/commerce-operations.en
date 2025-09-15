@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-66084: `row_total_incl_tax` returns near-zero residual value instead of 0.00 for fully discounted items in the order API response'
+title: 'ACSD-66084: `row_total_incl_tax` returns near-zero instead of 0.00 for fully discounted items in order API'
 description: Apply the ACSD-66084 patch to fix the Adobe Commerce issue where `row_total_incl_tax` returned as a near-zero residual value instead of 0.00 for fully discounted items in the order API response.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
 ---
-# ACSD-66084: `row_total_incl_tax` returns near-zero residual value instead of 0.00 for fully discounted items in the order API response
+# ACSD-66084: `row_total_incl_tax` returns near-zero instead of 0.00 for fully discounted items in order API
 
 The ACSD-66084 patch fixes the issue where `row_total_incl_tax` is returned as a near-zero residual value in the order API response instead of 0.00 for fully discounted items. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66084. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
