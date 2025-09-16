@@ -288,6 +288,22 @@ When lazyfree is enabled, Redis offloads memory reclamation to background thread
 >
 >Because freeing occurs in the background, memory used by deleted/expired/evicted keys remains allocated until background threads complete the work. If your Redis is already under tight memory pressure, test cautiously and consider reducing memory pressure first (for example, disabling Block cache for specific cases and separating cache and session Redis instances as described above).
 
+## Enable Redis multithreaded I/O
+To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads/writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+```
+io-threads-do-reads yes
+io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
+```
+
+>[!NOTE]
+>
+>I/O threads parallelize client I/O and parsing only. Redis command execution remains single-threaded.
+
+>[!WARNING]
+>
+>Enabling I/O threads can increase CPU usage and does not benefit every workload. Start with a conservative value and benchmark. If latency rises or CPU saturates, reduce `io-threads` or disable reads in I/O threads.
+
+
 ## Additional information
 
 - [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
