@@ -303,6 +303,23 @@ io-threads 8 # choose a value lower than the number of CPU cores (check with npr
 >
 >Enabling I/O threads can increase CPU usage and does not benefit every workload. Start with a conservative value and benchmark. If latency rises or CPU saturates, reduce `io-threads` or disable reads in I/O threads.
 
+## Increase Redis client timeouts and retries
+Raise the cache client’s tolerance to transient saturation by adjusting the backend options in `.magento.env.yaml`:
+```
+stage:
+  deploy:
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            read_timeout: 10
+            connect_retries: 5
+````
+These settings increase client tolerance to brief congestion on Redis by extending the reply wait window and retrying connection setup. This can reduce intermittent “cannot connect to localhost:6370” and read-timeout errors during short spikes.
+>[!NOTE]
+>
+>They are not a fix for persistent overload.
 
 ## Additional information
 
