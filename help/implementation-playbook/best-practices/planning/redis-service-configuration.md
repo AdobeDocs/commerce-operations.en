@@ -270,6 +270,24 @@ stage:
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
 
+## Enable Redis asynchronous freeing (lazyfree)
+To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the following Redis configuration be applied to your environment(s):
+```
+lazyfree-lazy-eviction yes
+lazyfree-lazy-expire yes
+lazyfree-lazy-server-del yes
+replica-lazy-flush yes
+lazyfree-lazy-user-del yes
+```
+When lazyfree is enabled, Redis offloads memory reclamation to background threads for evictions, expirations, server-initiated deletes, user deletes, and replica dataset flushes. This reduces main-thread blocking and can lower request latency.
+>[!NOTE]
+>
+>`lazyfree-lazy-user-del yes` makes the `DEL` command behave like `UNLINK`, i.e., it unlinks keys immediately and frees their memory asynchronously.
+
+>[!WARNING]
+>
+>Because freeing occurs in the background, memory used by deleted/expired/evicted keys remains allocated until background threads complete the work. If your Redis is already under tight memory pressure, test cautiously and consider reducing memory pressure first (for example, disabling Block cache for specific cases and separating cache and session Redis instances as described above).
+
 ## Additional information
 
 - [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
