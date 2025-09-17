@@ -5,7 +5,12 @@ exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
 ---
 # Message queues overview
 
-The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the [consumers](consumers.md) that will receive the messages asynchronously. The MQF uses [[!DNL RabbitMQ]](https://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the [consumers](consumers.md) that will receive the messages asynchronously. The MQF supports multiple messaging brokers:
+
+- **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - The primary messaging broker, which provides a scalable platform for sending and receiving messages. It includes a mechanism for storing undelivered messages and is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - An alternative messaging broker that uses the STOMP (Simple Text Oriented Messaging Protocol) for reliable and scalable messaging.
+
+## RabbitMQ (AMQP)
 
 The following diagram illustrates the Message Queue Framework:
 
@@ -21,4 +26,35 @@ The following diagram illustrates the Message Queue Framework:
 
 - A consumer receives messages. It knows which queue to consume. It can map processors of the message to a specific queue.
 
-A basic message queue system can also be set up without using [!DNL RabbitMQ]. In this system, a MySQL adapter stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. [!DNL RabbitMQ] should be used whenever possible.
+## Apache ActiveMQ Artemis (STOMP)
+
+As an alternative to RabbitMQ, Adobe Commerce also supports [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) as a messaging broker using the STOMP (Simple Text Oriented Messaging Protocol).
+
+The following diagram illustrates the STOMP Framework with ActiveMQ Artemis:
+
+![STOMP Framework](../../assets/configuration/stomp-framework.png)
+
+### STOMP Framework components
+
+- A **publisher** is a component that sends messages to a destination (queue or topic). It knows which destination to publish to and the format of the messages it sends.
+
+- A **destination** in STOMP serves a similar role to exchanges in AMQP, receiving messages from publishers and routing them. STOMP uses direct destination addressing with a hierarchical naming pattern using dots: for example, `customer.created` or `inventory.updated`.
+
+   Adobe Commerce uses **ANYCAST** addressing mode for STOMP destinations, which provides point-to-point message delivery. In ANYCAST mode, messages are delivered to only one consumer from a pool of available consumers, enabling load balancing and work distribution across multiple consumer instances.
+
+- A **queue** is a buffer that stores messages. With ANYCAST addressing, the queue ensures messages are delivered to only one consumer, even when multiple consumers are connected to the same destination.
+
+- A **consumer** receives messages from destinations. It knows which destination to subscribe to and can process messages with different acknowledgment modes (auto, client, or client-individual).
+
+## MySQL adapter (fallback)
+
+A basic message queue system can also be set up without using external message brokers. In this system, a MySQL adapter stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. External message brokers like [!DNL RabbitMQ] or Apache ActiveMQ Artemis should be used whenever possible for production environments.
+
+## Related information
+
+For installation and configuration instructions:
+
+- [Install and configure RabbitMQ](../../installation/prerequisites/rabbitmq.md)
+- [Install and configure ActiveMQ Artemis](../../installation/prerequisites/activemq.md)
+- [Manage message queues](manage-message-queues.md)
+- [Message queue consumers](consumers.md)
