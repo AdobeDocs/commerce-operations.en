@@ -7,6 +7,10 @@ exl-id: b4e8c9f2-7d3a-4e5f-9c8b-1a2b3c4d5e6f
 
 Adobe Commerce also supports the ActiveMQ Artemis open-source message broker through the STOMP protocol. It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations.
 
+>[!NOTE]
+>
+>ActiveMQ Artemis was introduced in Adobe Commerce 2.4.6 and later versions.
+
 Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other. Nor do they need to communicate with the message queue at the same time. When a sender places a message in a queue, it is stored until the recipient receives them.
 
 The message queue system must be established before you install Adobe Commerce. The basic sequence is:
