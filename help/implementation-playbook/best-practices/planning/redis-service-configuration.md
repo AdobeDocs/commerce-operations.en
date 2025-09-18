@@ -120,7 +120,7 @@ For on-premises installations, see [Redis preload feature](../../../configuratio
 
 Reduce lock waiting times and enhance performance—especially when dealing with numerous Blocks and Cache keys—by using an outdated cache while generating a new cache in parallel. Enable stale cache and define cache types in the `config.php` configuration file (cloud only):
 
-```
+```php
 'cache' => [
         'frontend' => [
             'stale_cache_enabled' => [
@@ -271,7 +271,9 @@ stage:
 ```
 
 ## Enable Redis asynchronous freeing (lazyfree)
+
 To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the following Redis configuration be applied to your environment(s):
+
 ```
 lazyfree-lazy-eviction yes
 lazyfree-lazy-expire yes
@@ -279,7 +281,9 @@ lazyfree-lazy-server-del yes
 replica-lazy-flush yes
 lazyfree-lazy-user-del yes
 ```
+
 When lazyfree is enabled, Redis offloads memory reclamation to background threads for evictions, expirations, server-initiated deletes, user deletes, and replica dataset flushes. This reduces main-thread blocking and can lower request latency.
+
 >[!NOTE]
 >
 >The `lazyfree-lazy-user-del yes` option makes the `DEL` command behave like `UNLINK`, which unlinks keys immediately and frees their memory asynchronously.
@@ -289,7 +293,9 @@ When lazyfree is enabled, Redis offloads memory reclamation to background thread
 >Because freeing occurs in the background, memory used by deleted/expired/evicted keys remains allocated until background threads complete the work. If your Redis is already under tight memory pressure, test cautiously and consider reducing memory pressure first (for example, disabling Block cache for specific cases and separating cache and session Redis instances as described above).
 
 ## Enable Redis multithreaded I/O
+
 To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads/writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+
 ```
 io-threads-do-reads yes
 io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
@@ -304,8 +310,10 @@ io-threads 8 # choose a value lower than the number of CPU cores (check with npr
 >Enabling I/O threads can increase CPU usage and does not benefit every workload. Start with a conservative value and benchmark. If latency rises or CPU saturates, reduce `io-threads` or disable reads in I/O threads.
 
 ## Increase Redis client timeouts and retries
-Raise the cache client’s tolerance to transient saturation by adjusting the backend options in `.magento.env.yaml`:
-```
+
+Raise the cache client's tolerance to transient saturation by adjusting the backend options in `.magento.env.yaml`:
+
+```yaml
 stage:
   deploy:
     CACHE_CONFIGURATION:
@@ -315,8 +323,10 @@ stage:
           backend_options:
             read_timeout: 10
             connect_retries: 5
-````
+```
+
 These settings increase client tolerance to brief congestion on Redis by extending the reply wait window and retrying connection setup. This can reduce intermittent `cannot connect to localhost:6370` and read-timeout errors during short spikes.
+
 >[!NOTE]
 >
 >They are not a fix for persistent overload.
