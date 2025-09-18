@@ -282,7 +282,7 @@ lazyfree-lazy-user-del yes
 When lazyfree is enabled, Redis offloads memory reclamation to background threads for evictions, expirations, server-initiated deletes, user deletes, and replica dataset flushes. This reduces main-thread blocking and can lower request latency.
 >[!NOTE]
 >
->`lazyfree-lazy-user-del yes` makes the `DEL` command behave like `UNLINK`, i.e., it unlinks keys immediately and frees their memory asynchronously.
+>The `lazyfree-lazy-user-del yes` option makes the `DEL` command behave like `UNLINK`, which unlinks keys immediately and frees their memory asynchronously.
 
 >[!WARNING]
 >
@@ -316,7 +316,7 @@ stage:
             read_timeout: 10
             connect_retries: 5
 ````
-These settings increase client tolerance to brief congestion on Redis by extending the reply wait window and retrying connection setup. This can reduce intermittent “cannot connect to localhost:6370” and read-timeout errors during short spikes.
+These settings increase client tolerance to brief congestion on Redis by extending the reply wait window and retrying connection setup. This can reduce intermittent `cannot connect to localhost:6370` and read-timeout errors during short spikes.
 >[!NOTE]
 >
 >They are not a fix for persistent overload.
