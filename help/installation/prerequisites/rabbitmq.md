@@ -1,9 +1,9 @@
 ---
-title: Message broker
+title: Message broker (RabbitMQ)
 description: Follow these steps to install and configure required message broker software (such as [!DNL RabbitMQ]) for on-premises installations of Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
 ---
-# Message broker
+# Message broker (RabbitMQ)
 
 Adobe Commerce uses the [!DNL RabbitMQ] open-source message broker. It offers a reliable, highly available, scalable, and portable messaging system.
 
