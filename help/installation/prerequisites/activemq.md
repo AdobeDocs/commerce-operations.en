@@ -1,11 +1,10 @@
 ---
 title: Message broker (ActiveMQ Artemis)
 description: Follow these steps to install and configure Apache ActiveMQ Artemis message broker for on-premises installations of Adobe Commerce.
-exl-id: b4e8c9f2-7d3a-4e5f-9c8b-1a2b3c4d5e6f
 ---
 # Message broker (ActiveMQ Artemis)
 
-Adobe Commerce also supports the ActiveMQ Artemis open-source message broker through the STOMP protocol. It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations.
+Adobe Commerce also supports the ActiveMQ Artemis open-source message broker through the Simple Text Oriented Messaging Protocol (STOMP). It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations.
 
 >[!NOTE]
 >
@@ -20,7 +19,7 @@ The message queue system must be established before you install Adobe Commerce. 
 
 >[!NOTE]
 >
->You can use MySQL or ActiveMQ or [!DNL RabbitMQ] for message queue processing. For details on setting up the message queue system, see [Message queues overview](https://developer.adobe.com/commerce/php/development/components/message-queues/). If you are using the Bulk API with Adobe Commerce, the message queue system configuration defaults to using [!DNL RabbitMQ] as the message broker. See [Start message queue consumers](../../configuration/cli/start-message-queues.md) for more information.
+>You can use MySQL, ActiveMQ, or [!DNL RabbitMQ] for message queue processing. For details on setting up the message queue system, see [Message queues overview](https://developer.adobe.com/commerce/php/development/components/message-queues/). If you are using the Bulk API with Adobe Commerce, the message queue system configuration defaults to using [!DNL RabbitMQ] as the message broker. See [Start message queue consumers](../../configuration/cli/start-message-queues.md) for more information.
 
 >[!TIP]
 >
@@ -31,7 +30,7 @@ The message queue system must be established before you install Adobe Commerce. 
 
 You can install ActiveMQ Artemis using either Docker (recommended for development) or manual installation (recommended for production).
 
-### Option 1: Docker Installation (Recommended for Development)
+### Option 1: Docker Installation (recommended for development)
 
 #### Prerequisites
 
@@ -41,7 +40,7 @@ Ensure Docker is installed and running on your system.
 >
 >For more information about the official ActiveMQ Artemis Docker image, see the [Apache ActiveMQ Artemis Docker Hub page](https://hub.docker.com/r/apache/activemq-artemis).
 
-#### Installation Steps
+#### Installation steps
 
 1. Run ActiveMQ Artemis using the official Docker image:
 
@@ -69,7 +68,7 @@ Ensure Docker is installed and running on your system.
       apache/activemq-artemis:2.42.0
     ```
 
-#### Docker Management Commands
+#### Docker management commands
 
 ```bash
 # Check container status
@@ -88,24 +87,24 @@ docker start artemis
 docker rm artemis
 ```
 
-#### Accessing Services
+#### Accessing services
 
 Once the Docker container is running, you can access:
 
-- **Web Console**: http://localhost:8161/console (default credentials: artemis/artemis)
-- **STOMP Port**: localhost:61613 (for Adobe Commerce connection)
+- **Web console**: http://localhost:8161/console (default credentials: artemis/artemis)
+- **STOMP port**: localhost:61613 (for Adobe Commerce connection)
 
 >[!NOTE]
 >
->The Docker installation is perfect for development and testing. For production, consider using the manual installation with proper security configurations.
+>The Docker installation is recommended for development and testing. For production, consider using the manual installation with proper security configurations.
 
-### Option 2: Manual Installation on Ubuntu/CentOS
+### Option 2: Manual installation on Ubuntu/CentOS
 
 #### Prerequisites
 
 Ensure Java 17 or higher is installed (required for ActiveMQ Artemis 2.42.0+).
 
-### Installation Steps
+### Installation steps
 
 1. Download and install the latest version from the [Apache ActiveMQ Artemis website](https://activemq.apache.org/components/artemis/download/). As of September 2025, the latest stable version is 2.42.0:
 
@@ -117,7 +116,7 @@ Ensure Java 17 or higher is installed (required for ActiveMQ Artemis 2.42.0+).
     sudo rm apache-artemis-2.42.0-bin.tar.gz
     ```
 
-1. Create artemis user and set ownership:
+1. Create the `artemis` user and set ownership:
 
     ```bash
     # Create artemis user and set ownership
@@ -183,7 +182,7 @@ Check `/var/lib/artemis-instance/etc/broker.xml` to ensure STOMP acceptor is con
 </acceptors>
 ```
 
-To enable ssl on stomp you need to add `stomp-ssl` acceptor explicitly. 
+To enable SSL on STOMP you must add the `stomp-ssl` acceptor explicitly. 
 
 ## Install with ActiveMQ Artemis and connect
 
@@ -205,7 +204,7 @@ Where:
 
 ## Connect ActiveMQ Artemis
 
-If you already had Adobe Commerce installed with rabbitmq (amqp) configuration in the `<install_directory>/app/etc/env.php` file and you want to connect it to ActiveMQ, replace `queue` section with stomp so that it is similar to the following:
+If you already have an Adobe Commerce instance with RabbitMQ (AMQP) configuration in the `<install_directory>/app/etc/env.php` file and you want to connect it to ActiveMQ, replace the `queue` section with the STOMP so that it is similar to the following:
 
 ```php
 'queue' =>
@@ -224,13 +223,13 @@ If you already had Adobe Commerce installed with rabbitmq (amqp) configuration i
   ),
 ```
 
-You can also set ActiveMQ configuration values using the `bin/magento setup:config:set` command (remove amqp config if it is exist in app/etc/env.php):
+You can also set ActiveMQ configuration values using the `bin/magento setup:config:set` command (remove the AMQP configuration if it exists in the `app/etc/env.php` file):
 
 ```bash
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
-After the running the command or updating the `<install_directory>/app/etc/env.php` file with STOMP configuration values, run `bin/magento setup:upgrade` to apply the changes and create the required queues in ActiveMQ.
+After running the command or updating the `<install_directory>/app/etc/env.php` file with STOMP configuration values, run `bin/magento setup:upgrade` to apply the changes and create the required queues in ActiveMQ.
 
 ## Configure SSL
 
@@ -277,7 +276,7 @@ To configure support for SSL, edit the `ssl` and `ssl_options` parameters in the
 
 ### Development SSL Configuration
 
-For development environments, you may use relaxed SSL settings:
+For development environments, you can use relaxed SSL settings:
 
 ```php
 'ssl_options' => [
@@ -287,7 +286,7 @@ For development environments, you may use relaxed SSL settings:
 ]
 ```
 
-## Performance Tuning
+## Performance tuning
 
 ActiveMQ Artemis offers several performance tuning options:
 
@@ -308,9 +307,9 @@ ActiveMQ Artemis offers several performance tuning options:
   ),
 ```
 
-## Monitoring and Management
+## Monitoring and management
 
-### Web Console
+### Web console
 
 ActiveMQ Artemis provides a web-based management console accessible at:
 - URL: `http://localhost:8161/console`
@@ -318,16 +317,16 @@ ActiveMQ Artemis provides a web-based management console accessible at:
 
 ## Troubleshooting
 
-### Common Issues
+### Common issues
 
 1. **Connection refused**: Ensure ActiveMQ Artemis is running and the STOMP acceptor is configured.
-1. **Authentication failed**: Check username/password in both broker configuration and env.php.
+1. **Authentication failed**: Check username/password in both broker configuration and the `env.php` file.
 1. **SSL handshake failed**: Verify SSL certificates and configuration.
 
 
 
 
-### Verify STOMP Connection
+### Verify STOMP connection
 
 Test STOMP connection using telnet:
 

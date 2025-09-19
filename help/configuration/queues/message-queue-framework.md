@@ -28,7 +28,7 @@ The following diagram illustrates the Message Queue Framework:
 
 ## Apache ActiveMQ Artemis (STOMP)
 
-As an alternative to RabbitMQ, Adobe Commerce also supports [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) as a messaging broker using the STOMP (Simple Text Oriented Messaging Protocol).
+As an alternative to RabbitMQ, Adobe Commerce also supports [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) as a messaging broker using the Simple Text Oriented Messaging Protocol (STOMP).
 
 >[!NOTE]
 >
