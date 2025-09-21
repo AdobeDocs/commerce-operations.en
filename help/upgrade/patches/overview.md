@@ -45,7 +45,9 @@ Use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/c
 
 ## Custom patches
 
-Sometimes it takes a while for the Adobe Engineering Team to include a bug fix made on GitHub in an Adobe Commerce Composer release. In the meantime, you can create a patch from GitHub and use the [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) plugin to apply it to your Composer-based installation.
+Sometimes it takes a while for the Adobe Engineering Team to include a bug fix made on GitHub in an official Adobe Commerce release. In the meantime, you can create a patch from GitHub and use the [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) plugin to apply it to your Composer-based installation.
+
+{{custom-patches-disclaimer}}
 
 Use the [command line](apply.md#command-line) or [Composer](apply.md#composer) to apply custom patches.
 
