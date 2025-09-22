@@ -4,6 +4,50 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 22, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">guidance</a> for enabling stale cache on cloud via config.php; new sections on Redis lazyfree and multithreaded I/O (requestable via Support); clarified session Redis example; and added client timeout/retry guidance with an explicit overload caveat.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull request</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### September 18, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview">Overview: Quality Patches Tool (QPT) v1.1.70</a>.</p>
+</td>
+      <td>
+        Technical, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/57229680af3064cceee30be653aacf8ec37a5e74">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### September 10, 2025
 
 <table style="table-layout:auto;">
