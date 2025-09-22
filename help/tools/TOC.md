@@ -866,7 +866,7 @@ feature: Configuration
            - [AC-15223: Storefront page shows cached content after switching stores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/ac-15223-storefront-page-shows-cached-content-after-switching-stores.md)
         - v1.1.70 {#v1-1-70}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.70](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview.md)
-           - [ACSD-67166: duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
+           - [ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
