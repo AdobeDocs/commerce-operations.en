@@ -1,11 +1,11 @@
 ---
 metadata:
-  last_updated: 2025-09-12 15:40:46 CDT
+  last_updated: 2025-09-22 16:47:06 CDT
   description: Index of main files and their included files for automatic timestamp
     updates
   total_relationships: 57
   auto_discovered: true
-  discovery_date: 2025-09-12 15:40:46 CDT
+  discovery_date: 2025-09-22 16:47:06 CDT
 relationships:
   installation/advanced.md:
   - "/help/_includes/cli-consumers.md"
@@ -166,6 +166,7 @@ relationships:
   - "/help/_includes/templated/release/fixed-issues/commerce-v2.4.9-alpha2.md"
   - "/help/_includes/templated/release/highlights/hl-commerce-v2.4.9-alpha1.md"
   - "/help/_includes/templated/release/highlights/hl-commerce-v2.4.9-alpha2.md"
+  - "/help/_includes/templated/release/highlights/hl-commerce-v2.4.9-alpha3.md"
   release/release-notes/open-source/2-4-8.md:
   - "/help/_includes/templated/release/fixed-issues/magento-v2.4.8.md"
   release/release-notes/open-source/2-4-9.md:
@@ -173,6 +174,7 @@ relationships:
   - "/help/_includes/templated/release/fixed-issues/magento-v2.4.9-alpha2.md"
   - "/help/_includes/templated/release/highlights/hl-magento-v2.4.9-alpha1.md"
   - "/help/_includes/templated/release/highlights/hl-magento-v2.4.9-alpha2.md"
+  - "/help/_includes/templated/release/highlights/hl-magento-v2.4.9-alpha3.md"
   release/packages/adobe-commerce.md:
   - "/help/_includes/templated/release/packages/adobe-commerce.md"
   release/packages/magento-open-source.md:
