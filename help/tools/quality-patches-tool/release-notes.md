@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.71 {#v1-1-71}
 
-* **ACSD-60624** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where Upload Image doesn't work for empty content in Image, Banner, and Slider sections in PageBuilder.
+* **ACSD-60624** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where **[!UICONTROL Upload Image]** doesn't work for empty content in [!UICONTROL Image], [!UICONTROL Banner], and [!UICONTROL Slider] sections in Page Builder.
 * **ACSD-67089** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the pagination issue in the `inventory/export-stock-salable-qty` API, which incorrectly limits `total_count` to the page size.
 * **ACSD-67093** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where retrieving orders through GraphQL using the date range filter returns incorrect results.
 * **ACSD-67459** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where products with descriptions longer than 65,536 characters cannot be imported.
