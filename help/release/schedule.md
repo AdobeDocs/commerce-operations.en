@@ -10,9 +10,9 @@ Adobe continually strives to find the right balance between making product upgra
 
 The purpose of this schedule is to provide dates for when Adobe plans to announce the release of [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant.
 
-<!-- >[!NOTE]
+>[!NOTE]
 >
->The release schedule for features, cloud infrastructure, and extensibility is available in the [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) release documentation. -->
+>To learn more about new features, cloud infrastructure, and extensibility releases, see the [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) release documentation.
 
 In addition to the scheduled quality, security, and beta patches listed on this page, Adobe provides access to [individual patches](versioning-policy.md#individual-patch) through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md). The tool allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce.
 
