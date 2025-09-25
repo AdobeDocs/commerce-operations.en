@@ -18,16 +18,20 @@ The installation creates a fully functional Adobe Commerce store with both a [cu
 
 ## Merchant responsibilities
 
-Adobe Commerce on-premises is a self-hosted e-commerce platform where merchants are responsible for managing their own infrastructure, including servers, hosting environments, and system maintenance. With this deployment option, Adobe provides support specifically for the core Commerce application. This includes access to product updates and fixes, the release of security patches to address vulnerabilities, and comprehensive documentation to assist merchants in managing and optimizing their self-hosted solutions. Merchants have full control over their environment, allowing for greater customization and flexibility, but they are responsible for ensuring the infrastructure's performance, security, and scalability.
+Adobe Commerce on-premises is a self-hosted e-commerce platform where merchants are responsible for managing their own infrastructure, including servers, hosting environments, and system maintenance. With this deployment option, Adobe provides support specifically for the core Commerce application. Adobe support includes:
 
-Merchant responsibility will include:
+- Access to product updates and fixes
+- Release of security patches to address vulnerabilities
+- Comprehensive documentation to assist merchants in managing and optimizing their self-hosted solutions.
 
-- The design, implementation and configuration, maintenance, troubleshooting and performance testing of all Adobe Commerce On Premise systems.
-  - Servers, operating system, databases, PHP, search, caching, full page cache, and content delivery network. Common themes may include (but not limited to) Nginx/Apache, PHP, MySQL/MariaDB, Redis, Elasticsearch/OpenSearch, RabbitMQ, Varnish, DNS, SSL/TLS certificates, and any CDN used
+Merchants have full control over their environment, allowing for greater customization and flexibility, but are responsible for ensuring the infrastructure's performance, security, and scalability. For example:
+
+- The design, implementation and configuration, maintenance, troubleshooting and performance testing of all Adobe Commerce on premises systems.
+  - Servers, operating system, databases, [!DNL PHP], search, caching, full page cache, and content delivery network. Common themes may include (but not limited to) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates], and any [!DNL CDN] used
 - Capacity planning, auto scaling, clustering, backups, disaster recovery
 - Applying product patches, all product and customer data, design, configuration and setup, application and database upkeep, code deployment, and version upgrades
-- Monitoring & alerting via APM/logging/alerting (e.g., New Relic, Datadog, ELK)
-- Security patching for OS, PHP, database, middleware hardening and updates
+- Monitoring & alerting via APM/logging/alerting (for example, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
+- Security patching for operating system, [!DNL PHP], database, middleware hardening and updates
 
 ## Workflow
 
