@@ -18,13 +18,13 @@ The installation creates a fully functional Adobe Commerce store with both a [cu
 
 ## Merchant responsibilities
 
-Adobe Commerce on-premises is a self-hosted e-commerce platform where merchants are responsible for managing their own infrastructure, including servers, hosting environments, and system maintenance. With this deployment option, Adobe provides support specifically for the core Commerce application. Adobe support includes:
+With Adobe Commerce on-premises, you host and manage your own infrastructure, including servers, hosting environments, and system maintenance. Adobe provides support specifically for the core Commerce application, including:
 
 - Access to product updates and fixes
-- Release of security patches to address vulnerabilities
-- Comprehensive documentation to assist merchants in managing and optimizing their self-hosted solutions.
+- Security patches to address vulnerabilities
+- Comprehensive documentation to assist you with managing and optimizing your self-hosted solution.
 
-Merchants have full control over their environment, allowing for greater customization and flexibility, but are responsible for ensuring the infrastructure's performance, security, and scalability. For example:
+You have full control over your environment, allowing for greater customization and flexibility, but are responsible for ensuring the infrastructure's performance, security, and scalability. For example:
 
 - The design, implementation and configuration, maintenance, troubleshooting and performance testing of all Adobe Commerce on premises systems.
   - Servers, operating system, databases, [!DNL PHP], search, caching, full page cache, and content delivery network. Common themes may include (but not limited to) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates], and any [!DNL CDN] used
