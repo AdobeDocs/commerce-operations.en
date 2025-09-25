@@ -8,6 +8,14 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.6-p13
+
+The Adobe Commerce 2.4.6-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{b2b-patches}}
+
 ## 2.4.6-p12
 
 The Adobe Commerce 2.4.6-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
