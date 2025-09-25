@@ -22,14 +22,14 @@ With Adobe Commerce on-premises, you host and manage your own infrastructure, in
 
 - Access to product updates and fixes
 - Security patches to address vulnerabilities
-- Comprehensive documentation to assist you with managing and optimizing your self-hosted solution.
+- Comprehensive documentation to assist you with managing and optimizing your self-hosted solution
 
-You have full control over your environment, allowing for greater customization and flexibility, but are responsible for ensuring the infrastructure's performance, security, and scalability. For example:
+You have full control over your environment, allowing for greater customization and flexibility, but you are responsible for ensuring the infrastructure's performance, security, and scalability. For example, you are responsible for the following:
 
-- The design, implementation and configuration, maintenance, troubleshooting and performance testing of all Adobe Commerce on premises systems.
-  - Servers, operating system, databases, [!DNL PHP], search, caching, full page cache, and content delivery network. Common themes may include (but not limited to) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates], and any [!DNL CDN] used
+- The design, implementation, configuration, maintenance, troubleshooting and performance testing of all Adobe Commerce on premises systems.
+  - Servers, operating system, databases, [!DNL PHP], search, caching, full page cache, and content delivery network. Common themes may include (but not limited to) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates], and any [!DNL CDN] used.
 - Capacity planning, auto scaling, clustering, backups, disaster recovery
-- Applying product patches, all product and customer data, design, configuration and setup, application and database upkeep, code deployment, and version upgrades
+- All product and customer data, design, configuration and setup, application and database upkeep, code deployment, version upgrades, and patch application
 - Monitoring & alerting via APM/logging/alerting (for example, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
 - Security patching for operating system, [!DNL PHP], database, middleware hardening and updates
 
