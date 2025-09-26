@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 25, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added merchant responsibilities to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview">on-premises</a> installation overview.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/066c51a6e0509bca0382157c45ed1f1c69d7e34b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### September 22, 2025
 
 <table style="table-layout:auto;">
@@ -15,6 +37,14 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166">ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2452e85a417081263d0a224ab73958d09fed1ab1">commit</a></td>
+    </tr>
     <tr>
       <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">guidance</a> for enabling stale cache on cloud via config.php; new sections on Redis lazyfree and multithreaded I/O (requestable via Support); clarified session Redis example; and added client timeout/retry guidance with an explicit overload caveat.</p>
 </td>
@@ -824,28 +854,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/154">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 28, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview">Overview: Quality Patches Tool (QPT) v1.1.67</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/39393ec8ddebce7deb9ab533ff272887d04b28d6">commit</a></td>
     </tr>
   </tbody>
 </table>
