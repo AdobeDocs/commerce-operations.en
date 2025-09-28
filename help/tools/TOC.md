@@ -869,7 +869,7 @@ feature: Configuration
            - [ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
         - v1.1.71 {#v1-1-71}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)   
-           - [ACSD-67603: sitemap generation for products with image inclusion enabled experiences long processing times](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
+           - [ACSD-67603: Sitemap generation long processing times for products with image inclusion enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
