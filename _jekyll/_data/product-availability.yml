@@ -99,15 +99,15 @@ extensions:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes
     support:
       - core: 2.4.8
-        version: 3.3.0+
+        version: 3.4.0
       - core: 2.4.7
-        version: 3.1.1+
+        version: 3.4.0
       - core: 2.4.6
-        version: 2.1.1+
+        version: 3.4.0
       - core: 2.4.5
-        version: 1.0.0+
+        version: 3.4.0
       - core: 2.4.4
-        version: 1.0.0+
+        version: 3.4.0
   Page Builder:
     docs:
       User Guide: https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview
@@ -145,15 +145,15 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes
     support:
       - core: 2.4.8
-        version: 4.3.0
+        version: 4.5.0
       - core: 2.4.7
-        version: 4.3.0
+        version: 4.5.0
       - core: 2.4.6
-        version: 4.3.0
+        version: 4.5.0
       - core: 2.4.5
-        version: 4.3.0
+        version: 4.5.0
       - core: 2.4.4
-        version: 4.3.0
+        version: 4.5.0
   Payment Services:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
@@ -175,12 +175,12 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes
     support:
       - core: 2.4.8
-        version: 6.2.0
+        version: 6.4.0
       - core: 2.4.7
-        version: 6.2.0
+        version: 6.4.0
       - core: 2.4.6
-        version: 6.2.0
+        version: 6.4.0
       - core: 2.4.5
-        version: 6.2.0
+        version: 6.4.0
       - core: 2.4.4
-        version: 6.2.0
+        version: 6.4.0

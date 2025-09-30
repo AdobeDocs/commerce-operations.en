@@ -16,6 +16,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.71 {#v1-1-71}
+
+* **ACSD-60624** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where **[!UICONTROL Upload Image]** doesn't work for empty content in [!UICONTROL Image], [!UICONTROL Banner], and [!UICONTROL Slider] sections in Page Builder.
+* **ACSD-67089** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the pagination issue in the `inventory/export-stock-salable-qty` API, which incorrectly limits `total_count` to the page size.
+* **ACSD-67093** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where retrieving orders through GraphQL using the date range filter returns incorrect results.
+* **ACSD-67459** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where products with descriptions longer than 65,536 characters cannot be imported.
+* **ACSD-67603** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where sitemap generation for products with image inclusion enabled experiences long processing times.
+* **ACSD-67643** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where duplicate entries are created during scheduled updates in environments with a high number of nested categories.
+* **ACSD-67652** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where bundle product status is returned as out-of-stock in GraphQL calls even with child and parent products in stock.
+* **ACSD-67904** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ().
+* Replaced patches: **ACSD-61322**, **ACSD-65848**
+
 ## v1.1.70 {#v1-1-70}
 
 * **AC-15210** (for Adobe Commerce and Magento Open Source >=2.4.6-p3 <2.4.9) - Migrates the USPS integration from the outdated Web Tools APIs to the new RESTful USPS APIs.
