@@ -4,6 +4,50 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 22, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">guidance</a> for enabling stale cache on cloud via config.php; new sections on Redis lazyfree and multithreaded I/O (requestable via Support); clarified session Redis example; and added client timeout/retry guidance with an explicit overload caveat.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull request</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### September 18, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview">Overview: Quality Patches Tool (QPT) v1.1.70</a>.</p>
+</td>
+      <td>
+        Technical, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/57229680af3064cceee30be653aacf8ec37a5e74">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### September 10, 2025
 
 <table style="table-layout:auto;">
@@ -802,36 +846,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         New topic, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/39393ec8ddebce7deb9ab533ff272887d04b28d6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 25, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66041-ireland-ie-postcodes-were-not-searchable-for-pickup-locations-due-to-a-missing-countryid">detailed description of the issue fixed by the ACSD-66041 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/52e0b2f2333047ae7e203422e699292299a8b9f6">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup">detailed description of the issue fixed by the ACP2E-3918 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4c7650bcc4058fde70c798bc151ed98d2308aa65">commit</a></td>
     </tr>
   </tbody>
 </table>
