@@ -871,7 +871,6 @@ feature: Configuration
         - v1.1.71 {#v1-1-71}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)  
            - [ACSD-67904: orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67904.md) 
-           - [ACSD-67652: bundle product status returned as out-of-stock in GraphQL calls with child and parent products in stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67652.md) 
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
