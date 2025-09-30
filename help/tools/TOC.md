@@ -870,7 +870,7 @@ feature: Configuration
            - [ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
         - v1.1.71 {#v1-1-71}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)  
-           - [ACSD-60624: **[!UICONTROL Upload Image]** fails for empty content in [!UICONTROL Image], [!UICONTROL Banner], and [!UICONTROL Slider] sections in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md) 
+           - [ACSD-60624: Upload Image fails for empty content in Image, Banner, and Slider sections in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md) 
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

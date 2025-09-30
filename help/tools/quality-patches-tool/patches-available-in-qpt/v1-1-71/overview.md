@@ -11,7 +11,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.71 includes the following patches:
 
 
-* **ACSD-60624**: **[!UICONTROL Upload Image]** fails for empty content in [!UICONTROL Image], [!UICONTROL Banner], and [!UICONTROL Slider] sections in [!DNL Page Builder]
+* **ACSD-60624**: Upload Image fails for empty content in Image, Banner, and Slider sections in [!DNL Page Builder]
 * **ACSD-67089**: Pagination issue in the `inventory/export-stock-salable-qty` API, which incorrectly limits `total_count` to the page size.
 * **ACSD-67093**: Retrieving orders through [!DNL GraphQL] using the date range filter returns incorrect results.
 * **ACSD-67459**: Products with descriptions longer than 65,536 characters can't be imported.
