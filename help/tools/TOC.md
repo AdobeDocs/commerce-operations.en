@@ -870,7 +870,7 @@ feature: Configuration
            - [ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
         - v1.1.71 {#v1-1-71}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)  
-           - [ACSD-67904: orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67904.md) 
+           - [ACSD-67904: orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md) 
            - [ACSD-67643: Duplicate entries created during scheduled updates in high-nested category environments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)   
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)   
            - [ACSD-67603: Sitemap generation long processing times for products with image inclusion enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
