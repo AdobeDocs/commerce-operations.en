@@ -866,7 +866,7 @@ feature: Configuration
            - [AC-15223: Storefront page shows cached content after switching stores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/ac-15223-storefront-page-shows-cached-content-after-switching-stores.md)
         - v1.1.70 {#v1-1-70}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.70](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview.md)
-           - [ACSD-67102: Category loading is slow or times out with a large number of categories and products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102.md)
+           - [ACSD-67102: Category loading is slow or times out when there is a large number of categories and products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
