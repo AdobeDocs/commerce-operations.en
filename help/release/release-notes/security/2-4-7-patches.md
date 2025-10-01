@@ -11,7 +11,7 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 
 The Adobe Commerce 2.4.7-p8 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
