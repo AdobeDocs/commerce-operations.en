@@ -55,6 +55,8 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 - **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
 
     - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
+
+      >[!NOTE]
         
         - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
 
