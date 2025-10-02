@@ -8,6 +8,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.9-alpha3</th>
       <th>2.4.9-alpha2</th>
       <th>2.4.9-alpha1</th>
     </tr>
@@ -21,9 +22,15 @@
       <td>
           2.8
       </td>
+      <td>
+          2.8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -39,9 +46,15 @@
       <td>
           11.4
       </td>
+      <td>
+          11.4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+          8.4
+      </td>
       <td>
           8.4
       </td>
@@ -57,6 +70,9 @@
       <td>
           8.4, 8.3
       </td>
+      <td>
+          8.4, 8.3
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
@@ -66,9 +82,27 @@
       <td>
           4.1
       </td>
+      <td>
+          4.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
+      <td>
+          2.42
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -84,9 +118,15 @@
       <td>
           7.7
       </td>
+      <td>
+          7.7
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -100,6 +140,9 @@
           1.28
       </td>
       <td>
+          1.28
+      </td>
+      <td>
           1.26
       </td>
     </tr>
@@ -109,11 +152,17 @@
           8.0.mysql_aurora.3.09 or latest available
       </td>
       <td>
+          8.0.mysql_aurora.3.09 or latest available
+      </td>
+      <td>
           8.0.mysql_aurora.3.08 or latest available
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -129,9 +178,15 @@
       <td>
           3.13 or latest available
       </td>
+      <td>
+          3.13 or latest available
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
+      </td>
       <td>
           ElastiCache version 7.1 for Redis OSS (enhanced)
       </td>
@@ -147,6 +202,9 @@
       <td>
           2.19 or latest available
       </td>
+      <td>
+          2.19 or latest available
+      </td>
     </tr>
   </tbody>
 </table>
@@ -155,6 +213,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.8-p3</th>
       <th>2.4.8-p2</th>
       <th>2.4.8-p1</th>
       <th>2.4.8</th>
@@ -172,9 +231,15 @@
       <td>
           2.8
       </td>
+      <td>
+          2.8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -196,9 +261,15 @@
       <td>
           11.4
       </td>
+      <td>
+          11.4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+          8.4
+      </td>
       <td>
           8.4
       </td>
@@ -220,9 +291,15 @@
       <td>
           8.4, 8.3
       </td>
+      <td>
+          8.4, 8.3
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -244,9 +321,15 @@
       <td>
           8
       </td>
+      <td>
+          8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+          7.7
+      </td>
       <td>
           7.7
       </td>
@@ -259,6 +342,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           2.4
       </td>
@@ -275,6 +361,9 @@
           1.28
       </td>
       <td>
+          1.28
+      </td>
+      <td>
           1.26
       </td>
       <td>
@@ -287,6 +376,9 @@
           8.0.mysql_aurora.3.09 or latest available
       </td>
       <td>
+          8.0.mysql_aurora.3.09 or latest available
+      </td>
+      <td>
           8.0.mysql_aurora.3.08 or latest available
       </td>
       <td>
@@ -295,6 +387,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -316,9 +411,15 @@
       <td>
           3.13 or latest available
       </td>
+      <td>
+          3.13 or latest available
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
+      </td>
       <td>
           ElastiCache version 7.1 for Redis OSS (enhanced)
       </td>
@@ -340,6 +441,9 @@
       <td>
           2.19 or latest available
       </td>
+      <td>
+          2.19 or latest available
+      </td>
     </tr>
   </tbody>
 </table>
@@ -348,6 +452,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.7-p8</th>
       <th>2.4.7-p7</th>
       <th>2.4.7-p6</th>
       <th>2.4.7-p5</th>
@@ -361,6 +466,9 @@
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+          2.8
+      </td>
       <td>
           2.8
       </td>
@@ -388,6 +496,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          7.17/8
+      </td>
       <td>
           7.17, 8
       </td>
@@ -425,6 +536,9 @@
           2.19
       </td>
       <td>
+          2.19
+      </td>
+      <td>
           2.12
       </td>
       <td>
@@ -442,6 +556,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10.11
+      </td>
       <td>
           10.11
       </td>
@@ -493,6 +610,9 @@
       <td>
           8.0
       </td>
+      <td>
+          8.0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
@@ -520,9 +640,15 @@
       <td>
           8.3, 8.2
       </td>
+      <td>
+          8.3, 8.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -574,9 +700,15 @@
       <td>
           7.2
       </td>
+      <td>
+          7.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -611,6 +743,9 @@
           7.7
       </td>
       <td>
+          7.7
+      </td>
+      <td>
           7.6
       </td>
       <td>
@@ -631,6 +766,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -662,6 +800,9 @@
           1.28
       </td>
       <td>
+          1.28
+      </td>
+      <td>
           1.26
       </td>
       <td>
@@ -689,6 +830,9 @@
           8.0.mysql_aurora.3.09 or latest available
       </td>
       <td>
+          8.0.mysql_aurora.3.09 or latest available
+      </td>
+      <td>
           8.0.mysql_aurora.3.08 or latest available
       </td>
       <td>
@@ -712,6 +856,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+          --
+      </td>
       <td>
           ✔️
       </td>
@@ -749,6 +896,9 @@
           3.13 or latest available
       </td>
       <td>
+          3.13 or latest available
+      </td>
+      <td>
           3.13
       </td>
       <td>
@@ -766,6 +916,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
+      </td>
       <td>
           ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
       </td>
@@ -793,6 +946,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          2.19 or latest available
+      </td>
       <td>
           2.19 or latest available
       </td>
@@ -825,6 +981,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.6-p13</th>
       <th>2.4.6-p12</th>
       <th>2.4.6-p11</th>
       <th>2.4.6-p10</th>
@@ -882,9 +1039,15 @@
       <td>
           2.2
       </td>
+      <td>
+          2.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          7.17
+      </td>
       <td>
           7.17
       </td>
@@ -937,6 +1100,9 @@
           2.19
       </td>
       <td>
+          2.19
+      </td>
+      <td>
           2.12
       </td>
       <td>
@@ -969,6 +1135,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10.11
+      </td>
       <td>
           10.11
       </td>
@@ -1050,6 +1219,9 @@
       <td>
           8.0
       </td>
+      <td>
+          8.0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
@@ -1092,9 +1264,15 @@
       <td>
           8.2, 8.1
       </td>
+      <td>
+          8.2, 8.1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -1150,6 +1328,9 @@
           7.2
       </td>
       <td>
+          7.2
+      </td>
+      <td>
           7.2, 7.0
       </td>
       <td>
@@ -1179,6 +1360,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -1228,6 +1412,9 @@
           7.7
       </td>
       <td>
+          7.7
+      </td>
+      <td>
           7.6
       </td>
       <td>
@@ -1263,6 +1450,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -1309,6 +1499,9 @@
           1.28
       </td>
       <td>
+          1.28
+      </td>
+      <td>
           1.26
       </td>
       <td>
@@ -1351,6 +1544,9 @@
           8.0.mysql_aurora.3.09 or latest available
       </td>
       <td>
+          8.0.mysql_aurora.3.09 or latest available
+      </td>
+      <td>
           8.0.mysql_aurora.3.08 or latest available
       </td>
       <td>
@@ -1389,6 +1585,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -1441,6 +1640,9 @@
           3.13 or latest available
       </td>
       <td>
+          3.13 or latest available
+      </td>
+      <td>
           3.13
       </td>
       <td>
@@ -1473,6 +1675,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
+      </td>
       <td>
           ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
       </td>
@@ -1525,6 +1730,9 @@
           2.19 or latest available
       </td>
       <td>
+          2.19 or latest available
+      </td>
+      <td>
           1.2
       </td>
       <td>
@@ -1562,6 +1770,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.5-p15</th>
       <th>2.4.5-p14</th>
       <th>2.4.5-p13</th>
       <th>2.4.5-p12</th>
@@ -1627,9 +1836,15 @@
       <td>
           2.2
       </td>
+      <td>
+          2.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          7.17
+      </td>
       <td>
           7.17
       </td>
@@ -1688,6 +1903,9 @@
           2.19
       </td>
       <td>
+          2.19
+      </td>
+      <td>
           1.3.20
       </td>
       <td>
@@ -1726,6 +1944,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10.6
+      </td>
       <td>
           10.6
       </td>
@@ -1819,6 +2040,9 @@
       <td>
           8.0
       </td>
+      <td>
+          8.0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
@@ -1867,9 +2091,15 @@
       <td>
           8.1
       </td>
+      <td>
+          8.1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -1931,6 +2161,9 @@
           7.2
       </td>
       <td>
+          7.2
+      </td>
+      <td>
           7.2, 7.0
       </td>
       <td>
@@ -1966,6 +2199,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -2021,6 +2257,9 @@
           7.7
       </td>
       <td>
+          7.7
+      </td>
+      <td>
           7.6
       </td>
       <td>
@@ -2062,6 +2301,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -2114,6 +2356,9 @@
           1.28
       </td>
       <td>
+          1.28
+      </td>
+      <td>
           1.26
       </td>
       <td>
@@ -2158,6 +2403,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          --
+      </td>
       <td>
           8.0.mysql_aurora.3.09 or latest available
       </td>
@@ -2210,6 +2458,9 @@
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
           ✔️
       </td>
       <td>
@@ -2254,6 +2505,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+          --
+      </td>
       <td>
           3.13 or latest available
       </td>
@@ -2302,6 +2556,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
       </td>
@@ -2390,6 +2647,9 @@
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
           7.9
       </td>
       <td>
@@ -2398,6 +2658,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          --
+      </td>
       <td>
           2.19 or latest available
       </td>
@@ -2451,6 +2714,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.4-p16</th>
       <th>2.4.4-p15</th>
       <th>2.4.4-p14</th>
       <th>2.4.4-p13</th>
@@ -2472,6 +2736,9 @@
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+          2.2
+      </td>
       <td>
           2.2
       </td>
@@ -2563,6 +2830,9 @@
           7.17
       </td>
       <td>
+          7.17
+      </td>
+      <td>
           7.16
       </td>
       <td>
@@ -2574,6 +2844,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2.19
+      </td>
       <td>
           2.19
       </td>
@@ -2625,6 +2898,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10.6
+      </td>
       <td>
           10.6
       </td>
@@ -2724,9 +3000,15 @@
       <td>
           8.0
       </td>
+      <td>
+          8.0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8.1
+      </td>
       <td>
           8.1
       </td>
@@ -2826,9 +3108,15 @@
       <td>
           3.9
       </td>
+      <td>
+          3.9
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+          7.2
+      </td>
       <td>
           7.2
       </td>
@@ -2887,6 +3175,9 @@
           7.7
       </td>
       <td>
+          7.7
+      </td>
+      <td>
           7.6
       </td>
       <td>
@@ -2931,6 +3222,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -2986,6 +3280,9 @@
           1.28
       </td>
       <td>
+          1.28
+      </td>
+      <td>
           1.26
       </td>
       <td>
@@ -3033,6 +3330,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -3088,6 +3388,9 @@
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
           ✔️
       </td>
       <td>
@@ -3139,6 +3442,9 @@
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
           3.9.13
       </td>
       <td>
@@ -3186,6 +3492,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -3277,6 +3586,9 @@
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
           7.9
       </td>
       <td>
@@ -3288,6 +3600,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>

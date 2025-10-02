@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.9-alpha3</th>
       <th>2.4.9-alpha2</th>
       <th>2.4.9-alpha1</th>
     </tr>
@@ -17,9 +18,15 @@
       <td>
           2.8
       </td>
+      <td>
+          2.8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -35,9 +42,15 @@
       <td>
           11.4
       </td>
+      <td>
+          11.4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8.4, 8.3
+      </td>
       <td>
           8.4, 8.3
       </td>
@@ -53,6 +66,21 @@
       <td>
           4.1
       </td>
+      <td>
+          4.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
+      <td>
+          2.42
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
@@ -62,6 +90,21 @@
       <td>
           8
       </td>
+      <td>
+          8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.26
+      </td>
     </tr>
   </tbody>
 </table>
@@ -70,6 +113,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.8-p3</th>
       <th>2.4.8-p2</th>
       <th>2.4.8-p1</th>
       <th>2.4.8</th>
@@ -87,9 +131,15 @@
       <td>
           2.8
       </td>
+      <td>
+          2.8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -111,9 +161,15 @@
       <td>
           11.4
       </td>
+      <td>
+          11.4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -135,9 +191,15 @@
       <td>
           8.4, 8.3
       </td>
+      <td>
+          8.4, 8.3
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -159,6 +221,24 @@
       <td>
           8
       </td>
+      <td>
+          8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
     </tr>
   </tbody>
 </table>
@@ -167,6 +247,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.7-p8</th>
       <th>2.4.7-p7</th>
       <th>2.4.7-p6</th>
       <th>2.4.7-p5</th>
@@ -193,6 +274,9 @@
           2.8
       </td>
       <td>
+          2.8
+      </td>
+      <td>
           2.7
       </td>
       <td>
@@ -207,6 +291,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2.19
+      </td>
       <td>
           2
       </td>
@@ -241,6 +328,9 @@
           10.11
       </td>
       <td>
+          10.11
+      </td>
+      <td>
           10.6
       </td>
       <td>
@@ -261,6 +351,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -312,9 +405,15 @@
       <td>
           8.3, 8.2
       </td>
+      <td>
+          8.3, 8.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -366,6 +465,9 @@
       <td>
           7.2
       </td>
+      <td>
+          7.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
@@ -376,6 +478,9 @@
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -394,6 +499,36 @@
           --
       </td>
     </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -401,6 +536,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.6-p13</th>
       <th>2.4.6-p12</th>
       <th>2.4.6-p11</th>
       <th>2.4.6-p10</th>
@@ -458,9 +594,15 @@
       <td>
           2.2
       </td>
+      <td>
+          2.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2.19
+      </td>
       <td>
           2
       </td>
@@ -510,6 +652,9 @@
           10.11
       </td>
       <td>
+          10.11
+      </td>
+      <td>
           10.6
       </td>
       <td>
@@ -545,6 +690,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -626,9 +774,15 @@
       <td>
           8.2, 8.1
       </td>
+      <td>
+          8.2, 8.1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -687,6 +841,9 @@
           7.2
       </td>
       <td>
+          7.2
+      </td>
+      <td>
           7.0
       </td>
       <td>
@@ -720,6 +877,9 @@
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -753,6 +913,51 @@
           --
       </td>
     </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -760,6 +965,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.5-p15</th>
       <th>2.4.5-p14</th>
       <th>2.4.5-p13</th>
       <th>2.4.5-p12</th>
@@ -825,9 +1031,15 @@
       <td>
           2.2
       </td>
+      <td>
+          2.2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2.19
+      </td>
       <td>
           2
       </td>
@@ -886,6 +1098,9 @@
           10.6
       </td>
       <td>
+          10.6
+      </td>
+      <td>
           10.6, 10.5
       </td>
       <td>
@@ -924,6 +1139,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
+      </td>
       <td>
           --
       </td>
@@ -1017,9 +1235,15 @@
       <td>
           8.1
       </td>
+      <td>
+          8.1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4.1
+      </td>
       <td>
           4.1
       </td>
@@ -1084,6 +1308,9 @@
           7.2
       </td>
       <td>
+          7.2
+      </td>
+      <td>
           7.0
       </td>
       <td>
@@ -1123,6 +1350,9 @@
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -1162,6 +1392,57 @@
           --
       </td>
     </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -1169,6 +1450,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.4-p16</th>
       <th>2.4.4-p15</th>
       <th>2.4.4-p14</th>
       <th>2.4.4-p13</th>
@@ -1230,6 +1512,9 @@
           2.2
       </td>
       <td>
+          2.2
+      </td>
+      <td>
           2.1
       </td>
       <td>
@@ -1241,6 +1526,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2.19
+      </td>
       <td>
           2
       </td>
@@ -1302,6 +1590,9 @@
           10.6
       </td>
       <td>
+          10.6
+      </td>
+      <td>
           10.6, 10.5
       </td>
       <td>
@@ -1343,6 +1634,9 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
+      </td>
       <td>
           9.19.0.309+
       </td>
@@ -1442,9 +1736,15 @@
       <td>
           8.1
       </td>
+      <td>
+          8.1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          3.9
+      </td>
       <td>
           3.9
       </td>
@@ -1512,7 +1812,7 @@
           7.2
       </td>
       <td>
-          7.0
+          7.2
       </td>
       <td>
           7.0
@@ -1521,7 +1821,7 @@
           7.0
       </td>
       <td>
-          6.2
+          7.0
       </td>
       <td>
           6.2
@@ -1543,6 +1843,63 @@
       </td>
       <td>
           6.2
+      </td>
+      <td>
+          6.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.28
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.26
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
+      </td>
+      <td>
+          1.22
       </td>
     </tr>
   </tbody>
