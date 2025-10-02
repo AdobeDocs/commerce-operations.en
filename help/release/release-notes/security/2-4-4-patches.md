@@ -237,4 +237,4 @@ Security improvements for this release improve compliance with the latest securi
 
 **Issue**: Merchants may notice package version downgrade notices during an upgrade from Adobe Commerce 2.4.4 to Adobe Commerce 2.4.4-p1. These messages can be ignored. The discrepancy in package versions results from anomalies during package generation. No product functionality has been affected. See the [Packages downgraded after upgrading from 2.4.4 to 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) Knowledge Base article for a discussion of affected scenarios and workarounds.
 
-<!-- Last updated from includes: 2025-07-24 10:48:00 -->
+<!-- Last updated from includes: 2025-10-02 11:09:59 -->

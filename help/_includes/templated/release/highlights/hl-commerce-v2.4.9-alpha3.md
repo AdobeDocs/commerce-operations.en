@@ -47,9 +47,3 @@ _AC-15133 - [GitHub code contribution](https://github.com/magento/magento2/commi
 Adobe Commerce has introduced a native MVC implementation, replacing the legacy Laminas MVC, to ensure long-term compatibility and stability beyond PHP 8.5. This change strengthens performance, reduces external dependencies, and provides a more future-ready foundation for Commerce
 
 _AC-15160_
-
-### Security
-
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
-
-{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
