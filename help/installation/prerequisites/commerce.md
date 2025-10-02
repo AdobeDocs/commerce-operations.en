@@ -11,7 +11,9 @@ You are among the 240,000 merchants worldwide who put their trust in our eCommer
 
 Check the availability and compatibility of Adobe-authored extensions and Commerce Services for Adobe Commerce and Magento Open Source on our [product availability page](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
->[!NOTE] Adobe Commerce codebases are now exclusively distributed via Composer due to policy changes. Use Composer to download any of the listed Adobe Commerce versions as the codebase is no longer available in the Downloads section due to changes in distribution policy
+>[!NOTE]
+>
+>Adobe Commerce codebases are now exclusively distributed via Composer due to policy changes. Use Composer to download any of the listed Adobe Commerce versions as the codebase is no longer available in the Downloads section.
 >
 >For more information, refer to [Can’t access billing statement and download codebase on Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
