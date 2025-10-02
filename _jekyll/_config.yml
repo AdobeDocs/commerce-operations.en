@@ -1,5 +1,12 @@
+---
+repo: AdobeDocs/commerce-operations.en
+url: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+
 exclude:
   - Rakefile
   - tmp
   - Gemfile
   - Gemfile.lock
+  - rakelib
+  - include-relationships
+  - ReadMe.md

@@ -8,3 +8,5 @@ recommendations: noDisplay, noCatalog
 # Glossary
 
 {{$include /help/_includes/templated/glossary.md}}
+
+<!-- Last updated from includes: 2025-09-12 10:58:44 -->

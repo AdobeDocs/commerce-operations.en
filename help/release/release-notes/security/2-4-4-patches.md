@@ -8,6 +8,14 @@ exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.4-p15
+
+Adobe Commerce 2.4.4-p15 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{b2b-patches}}
+
 ## 2.4.4-p14
 
 Adobe Commerce 2.4.4-p14 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
@@ -216,3 +224,5 @@ Security improvements for this release improve compliance with the latest securi
 **Issue**: Web API and integration tests display this error when run on the 2.4.4-p1 package: `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Workaround**: Install the previous version of Monolog by running the `require monolog/monolog:2.6.0` command. <!-- AC-3651-->
 
 **Issue**: Merchants may notice package version downgrade notices during an upgrade from Adobe Commerce 2.4.4 to Adobe Commerce 2.4.4-p1. These messages can be ignored. The discrepancy in package versions results from anomalies during package generation. No product functionality has been affected. See the [Packages downgraded after upgrading from 2.4.4 to 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) Knowledge Base article for a discussion of affected scenarios and workarounds.
+
+<!-- Last updated from includes: 2025-07-24 10:48:00 -->
