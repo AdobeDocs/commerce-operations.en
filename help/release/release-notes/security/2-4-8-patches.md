@@ -7,6 +7,18 @@ exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.8-p3
+
+The Adobe Commerce 2.4.8-p3 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.8.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
 ## 2.4.8-p2
 
 The Adobe Commerce 2.4.8-p2 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.8.
