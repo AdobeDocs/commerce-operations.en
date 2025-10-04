@@ -1,6 +1,6 @@
 ---
 title: Checkout performance best practices
-description: Learn how to optimize the performance of checkout experiences on your Adobe Commerce site.
+description: Learn about checkout performance best practices in Adobe Commerce. Discover implementation guidance and optimization strategies.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
 ---

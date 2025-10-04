@@ -1,6 +1,6 @@
 ---
 title: On-premises installation overview
-description: Learn about the installation process for on-premises deployments of Adobe Commerce.
+description: Learn about the on-premises installation process for Adobe Commerce. Discover server requirements, setup steps, and deployment best practices.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 ---
 
