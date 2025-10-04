@@ -66,7 +66,7 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 
 1. Find the extension that you want to install and make a note of the component name and version.
 
-   ![Technical details shows the extension's Composer name](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Extension technical details displaying the Composer package name for installation](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
