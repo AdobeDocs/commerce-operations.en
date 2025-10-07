@@ -1,7 +1,6 @@
 ---
 title: Advanced Setup
-description: Learn how to advanced setup for Adobe Commerce. Discover step-by-step
-instructions and configuration requirements.
+description: Learn how to advanced setup for Adobe Commerce. Discover step-by-step instructions and configuration requirements.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
 ---
 # Advanced setup
