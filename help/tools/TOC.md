@@ -874,7 +874,8 @@ feature: Configuration
            - [ACSD-66157: Special price doesn't take effect for websites created in different time zones](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157.md)
            - [ACSD-67102: Category loading is slow or times out when there is a large number of categories and products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102.md)
         - v1.1.71 {#v1-1-71}
-           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md) 
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
+           - [ACSD-67089: inventory/export-stock-salable-qty API returns incorrect total_count when page_size is set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67089.md)
            - [ACSD-67643: Duplicate entries created during scheduled updates in high-nested category environments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)     
            - [ACSD-67603: Sitemap generation long processing times for products with image inclusion enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
            - [ACSD-67652: Bundle product status returned as out-of-stock in GraphQL calls with child and parent products in stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
