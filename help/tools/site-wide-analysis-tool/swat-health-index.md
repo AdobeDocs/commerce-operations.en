@@ -35,7 +35,7 @@ Keep these important limitations in mind:
 
 ## How to use your Health Index score
 
-Use the Health Index as a guidance tool:
+Use the Health Index as guidance for:
 
 - **Continuous improvement**: Strive to improve your score, but don't interpret a lower score as failure.
 - **Prioritize efforts**: Use specific SWAT recommendations to guide your technical work.
