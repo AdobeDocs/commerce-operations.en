@@ -55,7 +55,7 @@ To help you plan and budget for upgrades, you should monitor our [release schedu
 
 - Use the pre-release version to learn about each new release. Pre-release is General Availability code that is available to Adobe Commerce merchants and all partners two weeks before General Availability. If you have multiple stores, use the pre-release on your base store and verify that your custom modules and themes are compatible with it.
 
-- Review the [Upgrade plan checklist](https://support.magento.com/hc/en-us/articles/360057968951) for Adobe Commerce to help you plan for your upgrade.
+- Review the [Upgrade plan checklist](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) for Adobe Commerce to help you plan for your upgrade.
 
 - Plan for upgrades at the beginning of the year. You must book a budget and resources to complete each upgrade. Remember, the upgrade effort might vary significantly from project to project. Use your experiences and knowledge to make a plan as accurate as possible.
 

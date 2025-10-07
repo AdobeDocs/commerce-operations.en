@@ -889,12 +889,12 @@ _Term attributes:_
 
 _noun_
 
-See [instance ID](#tenant-id)
+See [tenant ID](#tenant-id).
 
 _Term attributes:_
 
 * _Field: cloud_
-* _Synonyms: instance ID_
+* _Synonyms: tenant ID_
 
 ### interception
 
@@ -1386,8 +1386,7 @@ _noun_
 
 An Adobe Commerce tenant ID is a unique identifier for your specific Adobe Commerce instance within the Adobe Experience Cloud,
 used to route data and ensure resources are namespaced correctly, especially for integrations and APIs. You can find the tenant ID
-in the access URLs for your Commerce instance, or from the Commerce Cloud Manager instance details. In the context of Commerce
-application interfaces, the tenant ID is also called the instance ID.
+in the access URLs for your Commerce instance, or from the Commerce Cloud Manager instance details.
 
 Learn more:
 

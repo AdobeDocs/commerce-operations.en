@@ -4,7 +4,7 @@ wordClasses:
   - "noun"
 tags:
   - "cloud"
-synonyms: [instance ID]
+synonyms: [tenant ID]
 relatedTerms: []
 definition: |
-  See [instance ID](#tenant-id)
+  See [tenant ID](#tenant-id).
