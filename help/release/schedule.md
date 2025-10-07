@@ -1,6 +1,6 @@
 ---
 title: Release schedule
-description: Learn when Adobe plans to announce the release of new features for Adobe Commerce.
+description: Learn when Adobe plans to announce new features and releases for Adobe Commerce. Discover upcoming patch schedules and feature delivery timelines for better planning.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 ---
 

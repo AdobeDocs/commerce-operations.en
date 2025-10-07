@@ -1,6 +1,6 @@
 ---
 title: Services configuration paths reference
-description: See a list of services configuration values.
+description: Learn about services configuration paths and values in Adobe Commerce Admin settings. Discover Web API, OAuth, and service integration configuration options.
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
 ---
