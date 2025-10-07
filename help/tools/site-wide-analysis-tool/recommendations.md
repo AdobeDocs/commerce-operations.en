@@ -7,7 +7,7 @@ exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
 
 The [!UICONTROL Recommendations page] in the [!DNL Site-Wide Analysis Tool] page provides:
 
-* A [SWAT Health Index Score](#swat-health-index) score to help you monitor and improve your Adobe Commerce site's overall health
+* A [SWAT Health Index Score](#swat-health-index.md) score to help you monitor and improve your Adobe Commerce site's overall health
 * Recommendations list based on best practices to address issues detected on your site. 
 
 Recommendations are sorted by priority from PO to P4, where PO is critical and P4 is low. The findings include description, recommendation, site impact, root cause, scenarios/preconditions, expected result, and tools used.
