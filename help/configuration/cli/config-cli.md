@@ -1,6 +1,6 @@
 ---
 title: Command-line tool
-description: Use the Commerce command-line tool to run installation and configuration tasks.
+description: Learn how to use the Adobe Commerce command-line tool for installation and configuration tasks. Discover CLI commands and administrative functions.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
 ---
 # Command-line tool

@@ -208,7 +208,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2
@@ -462,7 +462,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2
@@ -829,7 +829,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2
@@ -1242,7 +1242,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2.19
+          2
       </td>
       <td>
           2

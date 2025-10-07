@@ -1,6 +1,6 @@
 ---
 title: Advanced [!DNL JavaScript] Bundling
-description: Learn about how JavaScript bundling can reduce the size and frequency of server requests.
+description: Learn about advanced [!DNL javascript] bundling in Adobe Commerce. Discover implementation guidance and optimization strategies.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
 ---
 # Advanced [!DNL JavaScript] bundling

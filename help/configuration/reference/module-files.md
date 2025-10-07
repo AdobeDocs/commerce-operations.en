@@ -1,6 +1,6 @@
 ---
 title: Module configuration files
-description: Learn how to customize a module using configuration types.
+description: Learn how to customize modules using configuration types in Adobe Commerce. Discover configuration file management and module customization best practices.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
 ---
 # Overview of module configuration files

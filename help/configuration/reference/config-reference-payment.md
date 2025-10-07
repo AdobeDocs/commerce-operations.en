@@ -1,6 +1,6 @@
 ---
 title: Payment configuration paths reference
-description: See a list of configurable payment method values.
+description: Learn about payment configuration paths and method values in Adobe Commerce Admin. Discover PayPal, credit card, and payment gateway configuration options.
 feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
 ---

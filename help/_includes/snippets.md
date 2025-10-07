@@ -73,3 +73,9 @@
 ## PHP Process Control {#php-process-control}
 
 Before you can run indexers in parallel mode, you must enable Process Control support (`pcntl`) in PHP. See [Installation](https://www.php.net/manual/en/pcntl.installation.php) in the PHP documentation.
+
+## Custom patches {#custom-patches-disclaimer}
+
+>[!IMPORTANT]
+>
+>Adobe does not support applying official, Adobe-provided patches using this method. Use the following method at your own risk. To apply official patches, use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Always perform comprehensive testing before deploying any custom patch.
