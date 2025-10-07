@@ -1,6 +1,6 @@
 ---
 title: Configure Valkey
-description: Get an overview of Valkey features and start your Valkey configuration.
+description: Learn how to configure Valkey caching for Adobe Commerce performance optimization. Discover features, setup steps, and configuration best practices.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
 ---

@@ -1,6 +1,6 @@
 ---
 title: Translation dictionaries and language packages
-description: Learn how to generate translation dictionaries and build language packages.
+description: Learn how to generate translation dictionaries and build language packages for Adobe Commerce. Discover localization and multilingual store setup.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
 ---
 # Localization

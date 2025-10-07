@@ -1,6 +1,6 @@
 ---
 title: Catalog configuration paths reference
-description: See a list of catalog configuration values.
+description: Learn about catalog configuration paths and values in Adobe Commerce Admin settings. Discover product, category, and catalog management configuration options.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 ---
