@@ -875,7 +875,7 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)  
            - [ACSD-60624: Upload Image fails for empty content in Image, Banner, and Slider sections in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md) 
            - [ACSD-67643: Duplicate entries created during scheduled updates in high-nested category environments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)   
-           - [ACSD-67904: orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)    
+           - [ACSD-67904: Orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)    
            - [ACSD-67603: Sitemap generation long processing times for products with image inclusion enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
