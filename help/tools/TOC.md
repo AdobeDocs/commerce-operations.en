@@ -15,6 +15,7 @@ feature: Configuration
     - [Dashboard](site-wide-analysis-tool/dashboard.md)
     - [Information](site-wide-analysis-tool/information.md)
     - [Recommendations](site-wide-analysis-tool/recommendations.md)
+    - [SWAT Health Index Score](site-wide-analysis-tool/swat-health-index.md)
     - [Exceptions](site-wide-analysis-tool/exceptions.md)
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
