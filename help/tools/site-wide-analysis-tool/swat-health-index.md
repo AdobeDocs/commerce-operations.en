@@ -6,7 +6,7 @@ description: Learn what the Site-Wide Analysis Tool Health Index means for your 
 
 When you download the **[!DNL Recommendations Report]** from the SWAT Dashboard, the PDF includes a **[!DNL Site Wide Analysis Tool Health Index]** score in the **Introduction** section:
 
-![Site Wide Analysis Tool Health Index score in the generated Recommendations Report](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+![Site Wide Analysis Tool Health Index score in the generated Recommendations Report](/help/assets/tools/swat-health-index-scroe.png)
 
 The SWAT Health Index helps you monitor and improve your Adobe Commerce site's overall health. This score is a guidance tool, not an absolute pass-or-fail measure.
 
