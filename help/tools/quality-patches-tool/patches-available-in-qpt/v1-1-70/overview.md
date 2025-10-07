@@ -10,7 +10,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.70 includes the following patches:
 1. **ACSD-67102**: Category loading is slow or times out when there are a large number of categories and products.
-1. **ACSD-66120**: [!DNL GraphQL] shows incorrect discount percentage and base price with tax-inclusive catalog pricing.
+1. **ACSD-66120**: [!DNL GraphQL] displays incorrect discount percentages and base prices when catalog prices include tax.
 1. **ACSD-66157**: Special price doesn't take effect for websites created in different time zones.
 1. **ACSD-67659**: Translated error messages return an *UNDEFINED* code.
 1. **ACSD-67166**: Duplicate `cataloginventory_stock_status` query runs when loading quote on storefront.
