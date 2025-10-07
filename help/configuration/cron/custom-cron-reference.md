@@ -1,6 +1,6 @@
 ---
 title: Custom cron job and cron group reference
-description: Learn to customize crons using cron groups.
+description: Learn how to customize crons using cron groups and crontabs in Adobe Commerce. Discover custom module setup and scheduled task configuration.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 ---
 # Customizing crons reference

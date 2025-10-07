@@ -1,6 +1,6 @@
 ---
 title: Overview of the upgrade process
-description: Learn about how upgrading your Adobe Commerce project helps keep your storefront secure and operating efficiently.
+description: Learn how upgrading your Adobe Commerce project keeps your storefront secure and efficient. Discover best practices for planning and executing successful upgrades.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 ---
 # Overview of the upgrade process

@@ -1,6 +1,6 @@
 ---
 title: Deploy static view files
-description: Learn to write static files to the Commerce file system during production mode.
+description: Learn how to deploy static view files to the Adobe Commerce file system in production mode. Discover deployment commands and optimization techniques.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
 ---
 # Deploy static view files

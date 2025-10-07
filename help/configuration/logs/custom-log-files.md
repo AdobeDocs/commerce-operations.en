@@ -1,6 +1,6 @@
 ---
 title: Write to custom log file
-description: Learn to set up custom log files.
+description: Learn how to create and configure custom log files in Adobe Commerce. Discover logger handlers and custom logging implementation.
 feature: Configuration, Logs
 badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0

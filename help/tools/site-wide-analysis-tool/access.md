@@ -1,11 +1,11 @@
 ---
 title: How to access [!DNL Site-Wide Analysis Tool]
-description: Learn how to access the [!DNL Site-Wide Analysis Tool]
+description: Learn how to access the Site-Wide Analysis Tool dashboard from your Adobe Commerce Admin Panel. Discover user permissions and role requirements.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
 ---
 # How to Access the [!DNL Site-Wide Analysis Tool]
 
-You can access the [!DNL Site-Wide Analysis Tool] dashboard from your store's [!UICONTROL Admin Panel].  
+You can access the [!DNL Site-Wide Analysis Tool] dashboard from your store's [!UICONTROL Admin Panel].
 
 The [!DNL Site-Wide Analysis Tool] service is available in [production mode](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) for [!UICONTROL Admin] users with permission to access user [role resources](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
