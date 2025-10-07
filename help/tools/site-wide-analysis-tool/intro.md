@@ -36,7 +36,7 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
         
 - **Information** - Provides customer contact information and a summary of current tickets, with detailed information about each installed Adobe Commerce product.
 
-- **Recommendations** - Provides a [SWAT Health Index Score](#swat-health-index) to track site health and lists recommendations based on best practices to address issues detected on your site:
+- **Recommendations** - Provides a [SWAT Health Index Score](#swat-health-index.md) to track site health and lists recommendations based on best practices to address issues detected on your site:
   - For changes that require an infrastructure update, submit a support request.
   - For changes that require an application update, make the changes yourself. 
   - For changes that require manual intervention such as a [code deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow), ask your system administrator or developers for help.
