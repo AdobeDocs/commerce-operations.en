@@ -1,6 +1,6 @@
 ---
 title: Sales configuration paths reference
-description: See a list of sales configuration values.
+description: Learn about sales configuration paths and variable names in Adobe Commerce. Discover Admin settings for checkout, shipping, and taxes.
 feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
 ---
