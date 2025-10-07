@@ -1,6 +1,6 @@
 ---
 title: GraphQL Application Server
-description: Follow these instructions for enabling the GraphQL Application Server in your Adobe Commerce deployment.
+description: Learn about graphql application server in Adobe Commerce. Discover implementation guidance and optimization strategies.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 ---
 

@@ -33,7 +33,7 @@ The tax rate is applied twice when the **Enable Cross Border Trade** is used.
 1. Enable **Company**, **Shared Catalog**, and **Quote**
 1. Configure taxes according to the screenshot. Make sure you enable **Cross Border Trade**.
 
-    ![tax settings](/help/assets/tools/tax_settings_1.png){width="700"}
+    ![Tax configuration settings page showing cross-border trade options and rate calculations](/help/assets/tools/tax_settings_1.png){width="700"}
 
 1. Create a tax rate for Germany (10%).
 1. Create a tax rule to apply the tax rate.
