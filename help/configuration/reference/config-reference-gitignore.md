@@ -1,6 +1,6 @@
 ---
 title: .gitignore reference
-description: See how to add a file that is included in the ignore list.
+description: Learn how to add files to the .gitignore list for Adobe Commerce projects. Discover version control management and file exclusion best practices.
 exl-id: 7c53b50a-7bdf-433b-bebb-0129f792a1a4
 ---
 # .gitignore reference

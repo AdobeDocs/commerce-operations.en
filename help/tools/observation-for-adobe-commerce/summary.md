@@ -26,19 +26,19 @@ If you look at the **[!UICONTROL Transaction Overview]** frame above, there were
 
 ## [!UICONTROL 404 page errors frame]
 
-![404 page errors frame](../../assets/tools/404-page-errors.jpg)
+![404 error monitoring dashboard showing page not found incidents over time](../../assets/tools/404-page-errors.jpg)
 
 The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors for a selected timeframe.
 
 ## [!UICONTROL % of Storage Free frame]
 
-![percent of Storage Free frame](../../assets/tools/percent-of-storage-free.jpg)
+![Storage utilization chart displaying available disk space percentage](../../assets/tools/percent-of-storage-free.jpg)
 
 The **[!UICONTROL % of Storage Free]** frame displays the average percent free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, the frame shows the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![percent of system memory that is free frame](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![System memory usage chart showing available RAM percentage](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 The **% of system memory that is free** frame displays, by node, the amount of system memory that is free on each node.
 
@@ -56,7 +56,7 @@ The aggregate of all environments and nodes is displayed in the **[!UICONTROL CP
 
 ## [!UICONTROL Alerts during timeframe]
 
-![alerts during timeframe](../../assets/tools/alerts-during-timeframe.jpg)
+![Alert notifications dashboard showing incidents within selected time period](../../assets/tools/alerts-during-timeframe.jpg)
 
 The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Adobe Commerce support.
 
@@ -133,7 +133,7 @@ The **[!UICONTROL API Calls by IP]** frame helps identify heavy traffic against 
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![api calls by ip details by url](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![API request analysis showing calls grouped by IP address and endpoint URL](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 The **[!UICONTROL API Calls by IP, details by URL]** frame provides details of heavy traffic against the APIs and details of the URLs making the requests.
 
@@ -326,13 +326,13 @@ The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache sta
 
 ## [!UICONTROL Page Rendering]
 
-![page rendering](../../assets/tools/page-rendering.jpg)
+![Page performance metrics showing rendering time analysis](../../assets/tools/page-rendering.jpg)
 
 The **[!UICONTROL Page Rendering]** frame displays the current week's average page rendering duration from the page view source of [!DNL New Relic] compared to the prior week during the same time period.
 
 ## [!UICONTROL Page loading detail]
 
-![page loading detail](../../assets/tools/page-loading-detail.png)
+![Detailed page loading performance breakdown showing load time components](../../assets/tools/page-loading-detail.png)
 
 The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details the meanings of these facets. Here is the query that is run for this frame:
 

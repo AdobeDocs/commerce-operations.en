@@ -1,6 +1,6 @@
 ---
 title: Final verification
-description: Verify that your Varnish configuration is set up properly to work with the Adobe Commerce application.
+description: Learn how to perform final verification of your Varnish configuration with Adobe Commerce. Discover testing steps and troubleshooting techniques.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 ---

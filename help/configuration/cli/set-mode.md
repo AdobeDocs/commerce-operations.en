@@ -1,6 +1,6 @@
 ---
 title: Set the operation mode
-description: Read about setting the Adobe Commerce operation modes.
+description: Learn how to set Adobe Commerce operation modes between developer and production. Discover mode switching commands and security implications.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 ---
 # Set the operation mode
@@ -29,8 +29,8 @@ pub/static
 
 Exceptions:
 
--  `.htaccess` files are not removed
--  `pub/static` contains a file that specifies the version of static content; this file is not removed
+- `.htaccess` files are not removed
+- `pub/static` contains a file that specifies the version of static content; this file is not removed
 
 >[!INFO]
 >
@@ -54,7 +54,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 where:
 
--  **`{mode}`** can be either `default`, `developer`, or `production`
+- **`{mode}`** can be either `default`, `developer`, or `production`
 
 ## Change modes
 
@@ -66,9 +66,9 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 where:
 
--  **`{mode}`** is required; it can be either `developer` or `production`
+- **`{mode}`** is required; it can be either `developer` or `production`
 
--  **`--skip-compilation`** is an optional parameter you can use to skip [code compilation](../cli/code-compiler.md) when you change to production mode.
+- **`--skip-compilation`** is an optional parameter you can use to skip [code compilation](../cli/code-compiler.md) when you change to production mode.
 
 Examples follow.
 
