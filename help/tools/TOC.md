@@ -874,7 +874,6 @@ feature: Configuration
            - [ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
            - [ACSD-67659: Translated error messages return an UNDEFINED error code](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67659.md)
            - [ACSD-66157: Special price doesn't take effect for websites created in different time zones](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157.md)
-           - [ACSD-67102: Category loading is slow or times out when there is a large number of categories and products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102.md)
         - v1.1.71 {#v1-1-71}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
            - [ACSD-67089: inventory/export-stock-salable-qty API returns incorrect total_count when page_size is set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67089.md)
