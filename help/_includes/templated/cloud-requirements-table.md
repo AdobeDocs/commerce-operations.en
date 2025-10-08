@@ -71,9 +71,9 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
       <td>
-          2.42
+          2
       </td>
       <td>
           --
@@ -208,6 +208,21 @@
       </td>
       <td>
           4.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
       </td>
     </tr>
     <tr>
@@ -437,6 +452,36 @@
       </td>
       <td>
           3.12
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
       </td>
     </tr>
     <tr>
@@ -821,6 +866,51 @@
       </td>
       <td>
           3.11, 3.9
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
       </td>
     </tr>
     <tr>

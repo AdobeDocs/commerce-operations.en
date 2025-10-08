@@ -8,7 +8,7 @@
 #     <Service Name>: <Service Version>, <Service Version 2>
 #     <Service Name> Cloud: <Service Version>, <Service Version 2>
 2.4.9-alpha3:
-  ActiveMQ: '2.42'
+  ActiveMQ Artemis: '2'
   AWS Aurora (MySQL): '8.0.mysql_aurora.3.09 or latest available'
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: '3.13 or latest available'
@@ -54,7 +54,7 @@
   Valkey: '8'
   Varnish: '7.7'
 2.4.8-p3:
-  Active MQ: '2.42'
+  ActiveMQ Artemis: '2'
   AWS Aurora (MySQL): '8.0.mysql_aurora.3.09 or latest available'
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: '3.13 or latest available'
@@ -121,7 +121,7 @@
   Valkey: '8'
   Varnish: '7.6'
 2.4.7-p8:
-  Active MQ: '2.42'
+  ActiveMQ Artemis: '2'
   AWS Aurora (MySQL): 8.0.mysql_aurora.3.09 or latest available
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: 3.13 or latest available
@@ -293,7 +293,7 @@
   AWS ElastiCache: Redis 7.0
   AWS OpenSearch: '2.11'
 2.4.6-p13:
-  Active MQ: '2.42'
+  ActiveMQ Artemis: '2'
   AWS Aurora (MySQL): 8.0.mysql_aurora.3.09 or latest available
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: 3.13 or latest available
