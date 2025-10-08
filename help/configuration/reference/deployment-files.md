@@ -1,6 +1,6 @@
 ---
 title: Configuration files for deployment
-description: Understand how the configuration files work for installing the Commerce application.
+description: Learn how configuration files work for Adobe Commerce application deployment. Discover shared and system-specific configuration management best practices.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
 ---

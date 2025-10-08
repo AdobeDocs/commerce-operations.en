@@ -1,6 +1,6 @@
 ---
 title: System requirements
-description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce releases.
+description: Learn about software dependencies and system requirements for Adobe Commerce. Discover tested configurations to ensure compatibility with your deployment environment.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
