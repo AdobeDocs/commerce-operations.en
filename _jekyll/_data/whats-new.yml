@@ -2,8 +2,59 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 26 15:42:20 2025
+updated: Fri Oct 3 15:46:13 2025
 entries:
+- description: 'Added detailed description of the QPT 1.1.70 fix for [ACSD-67102:
+    Category loading takes a considerable amount of time or causes a timeout when
+    a large number of categories and products are involved](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 1, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1585
+  merge_commit: efba61458168e0ec9ee9d7382450e36df1bf7bef
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67904:
+    orders can''t be placed if the city name contains digits (0–9), ampersand (&),
+    period (.), or parentheses ().](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904).'
+  versions: ''
+  type: new-topic, qpt
+  date: September 30, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1603
+  merge_commit: b50722d5b966c5a343ba315df65ec5622129ab1c
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67643:
+    Duplicate entries created during scheduled updates in high-nested category environments](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643).'
+  versions: ''
+  type: new-topic, qpt
+  date: September 30, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1605
+  merge_commit: 04fa9c306c1fbc2db018bcc9f5420dfb8eb6f8e9
+  contributor: glo51235
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67603:
+    Sitemap generation for products with image inclusion enabled experiences long
+    processing times](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603).'
+  versions: ''
+  type: new-topic, qpt
+  date: September 30, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1606
+  merge_commit: 5318c070e4e6686964daae770d20e740272ba1bb
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added merchant responsibilities to the [on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
     installation overview.
   versions: ''
