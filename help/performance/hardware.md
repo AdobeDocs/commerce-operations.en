@@ -1,6 +1,6 @@
 ---
 title: Hardware Recommendations
-description: Review a list of recommended hardware related to optimal performance of Adobe Commerce deployments.
+description: Learn about hardware recommendations for optimal Adobe Commerce performance. Discover CPU, memory, and storage requirements for production deployments.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
 ---
@@ -24,11 +24,11 @@ Magento has differing PHP memory requirements, based on how your system is deplo
 
 Scenarios and expected PHP memory requirements:
 
-*  Webnode serving only storefront pages: 256 MB
-*  Webnode serving admin pages with a large catalog: 1 GB
-*  [!DNL Commerce] cron indexing a site with a large catalog: >256 MB (See [advanced-setup](../performance/advanced-setup.md) to tune for optimal performance.)
-*  [!DNL Commerce] compile and deploy of static assets: 756 MB
-*  [!DNL Commerce] performance toolkit profile generation: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
+* Webnode serving only storefront pages: 256 MB
+* Webnode serving admin pages with a large catalog: 1 GB
+* [!DNL Commerce] cron indexing a site with a large catalog: >256 MB (See [advanced-setup](../performance/advanced-setup.md) to tune for optimal performance.)
+* [!DNL Commerce] compile and deploy of static assets: 756 MB
+* [!DNL Commerce] performance toolkit profile generation: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
 
 ### [!DNL MySQL]
 
@@ -38,9 +38,9 @@ The [!DNL Commerce] database (as well as any other database) is sensitive to the
 
 If you are deploying multiple [!DNL Commerce] and using Redis or [!DNL Varnish] for your caches, please keep the following principles in mind:
 
-*  [!DNL Varnish] full page cache memory invalidation is effective, recommend enough memory allocated to [!DNL Varnish] to hold your most popular pages in memory
-*  Session cache is a good candidate to configure for a separate instance of Redis.  Memory configuration for this cache type should consider the site's cart abandonment strategy and how long a session should expect to remain in the cache
-*  Redis should have enough memory allocated to hold all other caches in memory for optimal performance.  Block cache will be the key factor in determining the amount of memory to configure.  Block cache grows relative to number of pages on a site (number of skus x number of store views)
+* [!DNL Varnish] full page cache memory invalidation is effective, recommend enough memory allocated to [!DNL Varnish] to hold your most popular pages in memory
+* Session cache is a good candidate to configure for a separate instance of Redis.  Memory configuration for this cache type should consider the site's cart abandonment strategy and how long a session should expect to remain in the cache
+* Redis should have enough memory allocated to hold all other caches in memory for optimal performance.  Block cache will be the key factor in determining the amount of memory to configure.  Block cache grows relative to number of pages on a site (number of skus x number of store views)
 
 ## Network bandwidth
 

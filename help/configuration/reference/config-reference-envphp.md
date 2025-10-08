@@ -1,6 +1,6 @@
 ---
 title: env.php reference
-description: See a list of values for the env.php file.
+description: Learn about env.php file configuration values and sections in Adobe Commerce. Discover environment settings and configuration options.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 ---
 # env.php reference

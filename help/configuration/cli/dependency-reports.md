@@ -1,6 +1,6 @@
 ---
 title: Dependency reports
-description: Create reports that show the totals for module, circular, and framework dependencies.
+description: Learn how to create dependency reports showing module, circular, and framework dependencies in Adobe Commerce. Discover analysis and reporting tools.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
 ---
 # Dependency reports
@@ -9,9 +9,9 @@ exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
 
 You can run the following types of reports:
 
--  **Module dependencies**: Shows the total number of dependencies between modules and whether the dependencies are hard or soft.
--  **Circular dependencies**: Shows the total number of dependency chains and the number and list of circular dependencies for each module.
--  **Framework dependencies**: Shows the total number of dependencies on the Commerce framework by module (including the total number of framework entries for each library).
+- **Module dependencies**: Shows the total number of dependencies between modules and whether the dependencies are hard or soft.
+- **Circular dependencies**: Shows the total number of dependency chains and the number and list of circular dependencies for each module.
+- **Framework dependencies**: Shows the total number of dependencies on the Commerce framework by module (including the total number of framework entries for each library).
 
 A dependency in a comment is also a dependency.
 
