@@ -1,6 +1,6 @@
 ---
 title: Create symlinks to LESS files
-description: Learn how to create symlinks to LESS files.
+description: Learn how to create symlinks to LESS files for Adobe Commerce development. Discover stylesheet linking and development workflow optimization.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
 ---
 # Create symlinks to LESS files

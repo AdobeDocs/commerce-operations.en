@@ -1,6 +1,6 @@
 ---
 title: Implementation Playbook
-description: Learn about best practices for planning, developing, launcing, and maintaining for your Adobe Commerce project.
+description: Learn about best practices for planning, developing, launching, and maintaining your Adobe Commerce project. Discover methodologies for successful implementation across all project types.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 ---

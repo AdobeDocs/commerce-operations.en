@@ -1,6 +1,6 @@
 ---
 title: Configure and use Varnish
-description: Understand how Varnish stores files and improves HTTP traffic.
+description: Learn how to configure and use Varnish caching for Adobe Commerce. Discover HTTP acceleration, file storage, and performance optimization techniques.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 ---

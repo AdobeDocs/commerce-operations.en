@@ -1,6 +1,6 @@
 ---
 title: Override configuration settings
-description: Learn how to use environment variables to override configuration settings.
+description: Learn how to use environment variables to override Adobe Commerce configuration settings. Discover configuration management and deployment best practices.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
 ---
 # Override configuration settings

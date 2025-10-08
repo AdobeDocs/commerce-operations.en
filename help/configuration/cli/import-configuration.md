@@ -1,6 +1,6 @@
 ---
 title: Import data from configuration files
-description: Import Adobe Commerce configuration settings from configuration files.
+description: Learn how to import Adobe Commerce configuration settings from configuration files. Discover pipeline deployment and database import processes.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
 ---
 # Import configuration settings

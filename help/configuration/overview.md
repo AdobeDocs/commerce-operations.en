@@ -1,6 +1,6 @@
 ---
 title: Configuration guide overview
-description: Learn about all the configurable features and services for your Adobe Commerce application.
+description: Learn about configurable features and services for your Adobe Commerce application. Discover how to manage deployment, caching, security, and other critical settings.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 ---
 # Configuration guide
