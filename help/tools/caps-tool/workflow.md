@@ -2,6 +2,7 @@
 title: How [!DNL Cloud Automated Patching Service (CAPS)] workflow works
 description: Learn about the [!DNL Cloud Automated Patching Service (CAPS)] workflow process, including terminology, workflow phases, and operations for automated patch management.
 hide: yes
+hidefromtoc: yes
 ---
 # How the [!DNL Cloud Automated Patching Service (CAPS)] workflow works
 
