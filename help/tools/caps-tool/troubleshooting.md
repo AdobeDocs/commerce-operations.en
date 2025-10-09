@@ -12,10 +12,10 @@ When using [!DNL CAPS] for patch operations, you can encounter error messages an
 
 ### If patch operation fails
 
-* **Check the operation status** to understand which stage failed
-* **Review error messages** for specific failure reasons
-* **Examine error logs** for technical details
-* **Follow the solutions** provided in this guide
+* Check the operation status to understand which stage failed
+* Review error messages for specific failure reasons
+* Examine error logs for technical details
+* Follow the solutions provided in this guide
 
 ### Patch operations duration
 
@@ -34,17 +34,11 @@ For most environments, the following timeline describes how long patch operation
 
 ## Common success messages
 
-### "Job completed successfully"
+* **"Job completed successfully"** - The patch was successfully applied/reverted without any issues.
 
-**What it means:** The patch was successfully applied/reverted without any issues.
+* **"Patch has been applied"** - You're trying to apply a patch that's already been applied. The system detected the patch is already present in your environment. No action is needed.
 
-### "Patch has been applied"
-
-**What it means:** You're trying to apply a patch that's already been applied. The system detected the patch is already present in your environment. No action is needed.
-
-### "Patch has been reverted"
-
-**What it means:** You're trying to revert a patch that's already been reverted. The system detected the patch is not currently applied. No action is needed.
+* **"Patch has been reverted"** - You're trying to revert a patch that's already been reverted. The system detected the patch is not currently applied. No action is needed.
 
 ## Common error messages and solutions
 
@@ -93,10 +87,13 @@ For most environments, the following timeline describes how long patch operation
 
 **Solutions:**
 
-* **Enable maintenance mode** for your production store
-* **Disable cron jobs** in your production environment
-* **Verify both conditions** are met before retrying
-* **Important:** [!DNL CAPS] does not automatically enable maintenance mode or disable cron jobs - these must be done externally by you
+* Enable maintenance mode for your production store
+* Disable cron jobs in your production environment
+* Verify both conditions are met before retrying
+
+>[!IMPORTANT]
+>
+> [!DNL CAPS] does not automatically enable maintenance mode or disable cron jobs - these must be done externally by you
 
 #### "Patch has been applied, but failed health check. Please consider reverting"
 
@@ -184,7 +181,7 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 
 ## Getting help
 
-### When to contact support
+**When to contact support:**
 
 Contact Adobe Commerce Cloud support when:
 
@@ -194,7 +191,7 @@ Contact Adobe Commerce Cloud support when:
 * Health checks fail but the cause isn't apparent
 * You need help with environment synchronization issues
 
-### Information to provide
+**Information to provide:**
 
 When contacting support, provide:
 

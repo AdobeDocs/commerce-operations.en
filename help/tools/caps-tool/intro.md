@@ -15,7 +15,7 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 * **UI Interface**
   * Real-time patch availability and status display for specific project and environment combinations
   * Comprehensive audit logs showing progress, errors, and relevant messages
-  * **[!UICONTROL Patch Management Dashboard]** for:
+  * [!UICONTROL Patch Management Dashboard] for:
     * Viewing available patches
     * Applying patches with one-click operation
     * Reverting previously applied patches

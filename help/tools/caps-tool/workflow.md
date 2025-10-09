@@ -23,9 +23,9 @@ This topic provides a high-level overview of how patch operations work using [!D
 
 [!DNL CAPS] supports two main *operations* for managing patches in your Adobe Commerce Cloud environment:
 
-* **Apply Operation**: adds patch changes to your codebase through a safe, validated process. Patches are applied by placing patch files in the 'm2-hotfixes' folder.
+* **Apply operation** - adds patch changes to your codebase through a safe, validated process. Patches are applied by placing patch files in the 'm2-hotfixes' folder.
 
-* **Revert Operation**: removes previously applied patches from your codebase by removing patch files from the 'm2-hotfixes' folder.
+* **Revert operation** - removes previously applied patches from your codebase by removing patch files from the 'm2-hotfixes' folder.
 
 >[!IMPORTANT]
 >
@@ -35,9 +35,9 @@ This topic provides a high-level overview of how patch operations work using [!D
 
 The [!DNL CAPS] workflow uses three *phases* that are always executed in this order to ensure that patches are applied safely and reliably:
 
-* **Preliminary Check**: validates patch compatibility and environment readiness.
-* **Patching**: applies or reverts the patch in an integration environment.
-* **Validation**: validates the patch application and performs health checks.
+* **Preliminary check** - validates patch compatibility and environment readiness.
+* **Patching** - applies or reverts the patch in an integration environment.
+* **Validation** - validates the patch application and performs health checks.
 
 ## Phase details
 
@@ -47,15 +47,15 @@ The Preliminary Check phase validates that the patch can be safely applied to yo
 
 **What happens:**
 
-* **Production Environment Safeguards** (Production environments only):
+* **Production environment safeguards** (Production environments only):
   * Checks if store is in maintenance mode
   * Verifies cron jobs are disabled
   * Blocks patching if conditions are not met
   * Displays confirmation dialog if conditions are met
-* **Patch Validation**: verifies the patch file is valid and compatible
-* **Environment Assessment**: checks environment readiness and resources
-* **Conflict Detection**: identifies potential conflicts with existing code
-* **Dependency Check**: validates Adobe Commerce version compatibility
+* **Patch validation** - verifies the patch file is valid and compatible
+* **Environment assessment** - checks environment readiness and resources
+* **Conflict detection** - identifies potential conflicts with existing code
+* **Dependency check** - validates Adobe Commerce version compatibility
 
 ### Phase 2: Patching
 
@@ -63,52 +63,52 @@ The Patching phase applies or reverts the patch in a temporary integration envir
 
 This approach provides:
 
-* **Safety** by keeping your target environment untouched until the patch is validated
-* **Testing** in a real environment before affecting production  
-* **Rollback capability** if issues are detected
-* **Isolation** for each patch operation
+* **Safety** - keeps your target environment untouched until the patch is validated
+* **Testing** - in a real environment before affecting production  
+* **Rollback capability** - if issues are detected
+* **Isolation** - for each patch operation
 
 #### Stage 2a: Integration environment creation
 
-**Branch Creation**: [!DNL CAPS] creates a temporary integration environment branch named `{target-environment}-CAPS-{patch-id}`
+**Branch creation** - [!DNL CAPS] creates a temporary integration environment branch named `{target-environment}-CAPS-{patch-id}`
 
-**Environment Setup**: The integration environment is created as a child of your target environment
+**Environment setup** - The integration environment is created as a child of your target environment
 
-**Code Synchronization**: The integration environment inherits the exact state of your target environment
+**Code synchronization** - The integration environment inherits the exact state of your target environment
 
-**Resource Requirements**: [!DNL CAPS] creates a temporary environment using the codebase from your target environment. According to Adobe Commerce Cloud documentation, each environment (including integration environments) has separate storage allocation based on your contracted storage plan. The amount of storage you contracted represents the total storage for each environment. In most cases, you will not face any issues with resource limitations. If you encounter any error with resource limitations, please check your application size and your contracted storage in your plan.
+**Resource requirements** - [!DNL CAPS] creates a temporary environment using the codebase from your target environment. According to Adobe Commerce Cloud documentation, each environment (including integration environments) has separate storage allocation based on your contracted storage plan. The amount of storage you contracted represents the total storage for each environment. In most cases, you will not face any issues with resource limitations. If you encounter any error with resource limitations, please check your application size and your contracted storage in your plan.
 
 #### Stage 2b: Patch application in integration environment
 
-**Safe Testing**: The patch is applied to the integration environment, not directly to your target environment
+**Safe testing** - The patch is applied to the integration environment, not directly to your target environment
 
-**File Management**: Patch files are placed in the `m2-hotfixes/` directory
+**File management** - Patch files are placed in the `m2-hotfixes/` directory
 
-**Git Operations**: Changes are committed and pushed to the integration environment branch
+**Git operations** - Changes are committed and pushed to the integration environment branch
 
-**Environment Activation**: The integration environment is activated to deploy the patched code
+**Environment activation** - The integration environment is activated to deploy the patched code
 
 #### Stage 2c: Merge back to target environment
 
-**Environment Checkout**: [!DNL CAPS] checks out your target environment locally
+**Environment checkout** - [!DNL CAPS] checks out your target environment locally
 
-**Merge Operation**: The integration environment branch is merged into the target environment
+**Merge operation** - The integration environment branch is merged into the target environment
 
-**Conflict Resolution**: If any conflicts occur, they are resolved automatically when possible
+**Conflict resolution** - If any conflicts occur, they are resolved automatically when possible
 
-**Deployment**: The merged changes are deployed to your target environment
+**Deployment** - The merged changes are deployed to your target environment
 
-**Verification**: [!DNL CAPS] verifies that the merge was successful and the environments are in sync
+**Verification** - [!DNL CAPS] verifies that the merge was successful and the environments are in sync
 
-**Environment Cleanup**: The temporary integration environment is deleted to free up resources
+**Environment cleanup** - The temporary integration environment is deleted to free up resources
 
 ## Integration environment lifecycle
 
 Integration environments have a specific lifecycle during the patching stage:
 
-* **Creation**: Created at the start of the patching stage
-* **Active Period**: Remain active during patch application and testing
-* **Cleanup**: Automatically deleted after successful merge or if the operation fails
+* **Creation** - Created at the start of the patching stage
+* **Active period** - Remain active during patch application and testing
+* **Cleanup** - Automatically deleted after successful merge or if the operation fails
 
 ### Phase 3: Validation
 
@@ -116,23 +116,23 @@ The Validation phase ensures the patched application works correctly and perform
 
 **What happens:**
 
-* **Application Health Check**: verifies the application starts and runs properly
-* **Cleanup**: removes temporary environment, updates logs, notifies completion
+* **Application health check** - verifies the application starts and runs properly
+* **Cleanup** - removes temporary environment, updates logs, notifies completion
 
 ## Success indicators
 
-**Apply Operation:**
+**Apply operation:**
 
-* **"Job completed successfully"** - Patch applied without issues
-* **"Patch has been applied"** - Patch was already present (no action needed)
+* "Job completed successfully" - Patch applied without issues
+* "Patch has been applied" - Patch was already present (no action needed)
 * Patch file successfully placed in 'm2-hotfixes' folder
 * All validation checks pass
 * Application health checks successful
 
-**Revert Operation:**
+**Revert operation:**
 
-* **"Job completed successfully"** - Patch reverted without issues
-* **"Patch has been reverted"** - Patch was already reverted (no action needed)
+* "Job completed successfully" - Patch reverted without issues
+* "Patch has been reverted" - Patch was already reverted (no action needed)
 * Patch file successfully removed from 'm2-hotfixes' folder
 * All validation checks pass
 * Application health checks successful
@@ -145,7 +145,7 @@ The Validation phase ensures the patched application works correctly and perform
 
 Before applying patches to production environments, [!DNL CAPS] checks for two critical conditions:
 
-* **Maintenance Mode** - The store must be in maintenance mode
-* **Cron Jobs Disabled** - Cron jobs must be disabled
+* **Maintenance mode** - The store must be in maintenance mode
+* **Cron jobs disabled** - Cron jobs must be disabled
 
 If either condition is not met, the patch application is blocked and the user is notified.

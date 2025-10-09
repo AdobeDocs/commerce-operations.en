@@ -16,26 +16,24 @@ Following best practices is essential for successful and safe patch operations w
 
 Before applying patches, ensure your environment is properly prepared:
 
-* Adobe Commerce Cloud Account
+* **Adobe Commerce Cloud Account**
   * Active Adobe Commerce Cloud subscription
   * Valid Adobe Commerce license
   * Repository access credentials configured
   * Project and environment permissions
 
-#### Environment resources
+* **Environment resources**
+  * Available environment slots for temporary testing
+  * Sufficient storage, CPU, and memory resources
+  * Network access to Adobe repositories
+  * Stable parent environment for synchronization
 
-* Available environment slots for temporary testing
-* Sufficient storage, CPU, and memory resources
-* Network access to Adobe repositories
-* Stable parent environment for synchronization
-
-#### Production environment preparation (for production patching)
-
-* Maintenance mode can be enabled
-* Cron jobs can be disabled
-* Maintenance window procedures established
-* Rollback procedures documented
-* Stakeholder communication plan ready
+* **Production environment preparation** (for production patching)
+  * Maintenance mode can be enabled
+  * Cron jobs can be disabled
+  * Maintenance window procedures established
+  * Rollback procedures documented
+  * Stakeholder communication plan ready
 
 ## Patch application best practices
 
@@ -45,27 +43,27 @@ Before applying patches, ensure your environment is properly prepared:
 
 **Choose the right time for patch application:**
 
-* **Low-Traffic Periods**
+* **Low-traffic periods**
   * Schedule patches during off-peak hours
   * Avoid applying patches during high-traffic events
   * Plan for potential downtime during validation
 
-* **Production Environment Considerations**
-  * **Maintenance Windows** - Schedule production patches during planned maintenance windows
-  * **Customer Communication** - Notify customers about maintenance mode and expected downtime
-  * **Team Coordination** - Ensure all team members are aware of the maintenance schedule
-  * **Rollback Preparation** - Have team members available for immediate rollback if needed
+* **Production environment considerations**
+  * **Maintenance windows** - Schedule production patches during planned maintenance windows
+  * **Customer communication** - Notify customers about maintenance mode and expected downtime
+  * **Team coordination** - Ensure all team members are aware of the maintenance schedule
+  * **Rollback preparation** - Have team members available for immediate rollback if needed
 
 ### Monitoring and validation
 
 **During patch operations:**
 
-* **Monitor Progress**
+* **Monitor progress**
   * Watch the operation status in real-time
   * Pay attention to any warnings or errors
   * Do not interrupt the process once started
 
-* **Validate Results**
+* **Validate results**
   * Test critical functionality after successful application
   * Check performance metrics for any degradation
   * Verify security measures remain intact
@@ -78,17 +76,17 @@ Before applying patches, ensure your environment is properly prepared:
 
 **After successful patch application:**
 
-* **Functional Testing**
+* **Functional testing**
   * Test all critical business processes
   * Verify checkout and payment flows
   * Check admin panel functionality
 
-* **Performance Monitoring**
+* **Performance monitoring**
   * Monitor page load times
   * Check database performance
   * Watch for any resource usage spikes
 
-* **Security Validation**
+* **Security validation**
   * Verify security features are working
   * Check for any new security vulnerabilities
   * Test authentication and authorization
@@ -101,18 +99,18 @@ Before applying patches, ensure your environment is properly prepared:
 
 **Always test patches before production deployment:**
 
-* **Test Environment Setup**
+* **Test environment setup**
   * Use staging or integration environments for testing
   * Ensure test environment mirrors production configuration
   * Test with production-like data when possible
 
-* **Comprehensive Testing**
+* **Comprehensive testing**
   * Test all critical business processes
   * Verify checkout and payment flows
   * Check admin panel functionality
   * Test any custom integrations
 
-* **Performance Testing**
+* **Performance testing**
   * Monitor performance impact of patches
   * Check for any performance degradation
   * Verify resource usage remains acceptable
@@ -121,17 +119,17 @@ Before applying patches, ensure your environment is properly prepared:
 
 **Minimize risks during production patching:**
 
-* **Communication Plan**
+* **Communication plan**
   * Notify customers about maintenance windows
   * Keep stakeholders informed of progress
   * Have escalation procedures ready
 
-* **Rollback Strategy**
+* **Rollback strategy**
   * Know how to quickly revert patches if needed
   * Have team members available for immediate response
   * Document rollback procedures
 
-* **Monitoring and Alerting**
+* **Monitoring and alerting**
   * Set up monitoring for post-patch issues
   * Have alerting for critical failures
   * Monitor performance metrics closely
@@ -140,11 +138,11 @@ Before applying patches, ensure your environment is properly prepared:
 
 ### Critical best practices for [!DNL CAPS] success
 
-* **Always test in pre-production** before applying patches to production environments
-* **Enable maintenance mode and disable cron jobs** for production patch operations
-* **Monitor operations closely** and have rollback procedures ready
-* **Document all patch operations** and maintain comprehensive records
-* **Follow proper change management** procedures and get appropriate approvals
-* **Keep environments synchronized** and maintain proper resource allocation
-* **Establish clear support procedures** and maintain team training
-* **Regularly review and improve** your patch management processes
+* Always test in pre-production before applying patches to production environments
+* Enable maintenance mode and disable cron jobs for production patch operations
+* Monitor operations closely and have rollback procedures ready
+* Document all patch operations and maintain comprehensive records
+* Follow proper change management procedures and get appropriate approvals
+* Keep environments synchronized and maintain proper resource allocation
+* Establish clear support procedures and maintain team training
+* Regularly review and improve your patch management processes
