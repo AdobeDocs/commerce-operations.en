@@ -16,5 +16,6 @@ QPT v1.1.70 includes the following patches:
 1. **ACSD-67166**: Duplicate `cataloginventory_stock_status` query runs when loading quote on storefront.
 1. **[ACSD-67030](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030.md)**: Simple products get unassigned from configurable when edited by limited-role admin.
 1. **ACSD-67289**: Regular price fails to display when special price is applied.
+1. **AC-15210**: Migrating the USPS Integration from the Web Tools APIs to the new RESTful USPS APIs.
 
 Use the menu on the left to navigate to a specific patch page.
