@@ -2,8 +2,144 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 3 15:46:13 2025
+updated: Fri Oct 10 17:21:46 2025
 entries:
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67093:
+    Retrieving orders through GraphQL using the date range filter returns incorrect
+    results.](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1615
+  merge_commit: 010f7e7d2b1d35d91fc1ee4406cd02c7c5e2ec1b
+  contributor: glo62268
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Brought back AWS S3 to [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+  versions: ''
+  type: technical
+  date: October 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1636
+  merge_commit: 54562cac43e07dc6ee3bebc09be9bd7e3f1c9743
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.70 fix for [ACSD-67030:
+    Simple products are unassigned from a configurable product when edited by a limited
+    role admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1590
+  merge_commit: dcbdb38e0888e62830582b7a287199b1b21628ae
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.70 fix for [ACSD-66120:
+    GraphQL incorrectly displayed discount percentages and base prices when catalog
+    prices were configured to include tax](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66120).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1586
+  merge_commit: 863b0ea697df3a7f035677cea3a37b1f90b694a1
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67652:
+    Bundle product status returned as out-of-stock in GraphQL calls with child and
+    parent products in stock](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1607
+  merge_commit: 7930485bd1a09d177b2c321212f74f945dc20b6e
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-60624:
+    [!UICONTROL Upload Image] fails for empty content in [!UICONTROL Image], [!UICONTROL
+    Banner], and [!UICONTROL Slider] sections in [!DNL Page Builder]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1608
+  merge_commit: c0eb160525869da07939581b23db533a2ef81db6
+  contributor: glo42770
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67459:
+    Unable to import products with descriptions longer than 65,536 characters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1614
+  merge_commit: 8313dee9b74bae8d373f72bd0db44de0027ff1c8
+  contributor: glo16024
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67089:
+    inventory/export-stock-salable-qty API returns incorrect total_count when page_size
+    is set](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67089).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1626
+  merge_commit: 85ff2106651b19805e757ebceb9d2bbd33715649
+  contributor: glo53002
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added information about the [SWAT Health Index Score](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/swat-health-index)
+    to the Site Wide Analysis Tool Guide.
+  versions: ''
+  type: new-topic
+  date: October 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1631
+  merge_commit: 4b85c5d7de94a9513a760563d0392ede3a9f09ac
+  contributor: meker
+  membership:
+  labels:
+  - new-topic
+  - feedback
+- description: 'Added detailed description of the QPT 1.1.70 fix for [ACSD-66157:
+    Special price doesn''t take effect for websites created in different time zones](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1587
+  merge_commit: 44cfa2da6e294da1c36e74eb965611ef1b171592
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.70 fix for [ACSD-67659:
+    Translated error messages return an UNDEFINED error code](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67659).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1588
+  merge_commit: 9c7607698b9003035276d88bd5ca47ef2f052e89
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.70 fix for [ACSD-67102:
     Category loading takes a considerable amount of time or causes a timeout when
     a large number of categories and products are involved](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102).'
