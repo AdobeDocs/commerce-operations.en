@@ -39,7 +39,7 @@ The beta includes the following features:
 - **Automate patch installation**: Simplify and automate the process of patching critical vulnerabilities across environments.
 - **Minimize risk**: Prevent site outages with post-deployment health check and rollback capabilities.
 
-To participate in this beta, send an email request to [smiverma@adobe.com](mailto:smiverma@adobe.com).
+To participate in this beta, To participate in this beta, please sign up using this [form](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Enhanced search capabilities for Live Search (Public Beta)
 
