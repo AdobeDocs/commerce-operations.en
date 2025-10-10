@@ -28,9 +28,9 @@ The Cloud Automation Patch Service automates the process of applying isolated se
 
 In October 2025, the beta release of the Cloud Automation Patch Service will be added to the [Site-Wide Analysis tool dashboard](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). This service supports Commerce project administrators with a streamlined patching workflow that includes:
 
- * Automated patch installation
- * Rollback recovery
- * Post-deployment verification.
+ - Automated patch installation
+ - Rollback recovery
+ - Post-deployment verification.
 
 The service ensures that you can maintain secure, stable, and updated environments with minimal manual effort and risk.
 
