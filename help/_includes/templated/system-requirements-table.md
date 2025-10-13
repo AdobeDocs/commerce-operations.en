@@ -164,7 +164,7 @@
           ✔️
       </td>
       <td>
-          --
+          ✔️
       </td>
       <td>
           ✔️
@@ -406,7 +406,7 @@
           ✔️
       </td>
       <td>
-          --
+          ✔️
       </td>
       <td>
           ✔️
@@ -902,7 +902,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
-          --
+          ✔️
       </td>
       <td>
           ✔️
@@ -1679,7 +1679,7 @@
           ✔️
       </td>
       <td>
-          --
+          ✔️
       </td>
       <td>
           ✔️
@@ -2545,10 +2545,10 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
-          ✔️
+          --
       </td>
       <td>
-          --
+          ✔️
       </td>
       <td>
           ✔️
