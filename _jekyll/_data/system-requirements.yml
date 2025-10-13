@@ -13,6 +13,7 @@
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
+  AWS S3: ✔️
   Composer: '2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
@@ -27,6 +28,7 @@
   AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced)
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
+  AWS S3: ✔️
   Composer: '2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
@@ -59,6 +61,7 @@
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
+  AWS S3: ✔️
   Composer: '2.8'
   ElasticSearch: '8'
   MariaDB: '11.4'
@@ -75,6 +78,7 @@
   AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced)
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
+  AWS S3: ✔️
   Composer: '2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
@@ -126,6 +130,7 @@
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
+  AWS S3: ✔️
   Composer: '2.8'
   Elasticsearch: '7.17/8'
   MariaDB: '10.11'
@@ -298,6 +303,7 @@
   AWS ElastiCache: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
+  AWS S3: ✔️
   Composer: '2.2'
   Elasticsearch: '7.17'
   MariaDB: '10.11'
@@ -315,6 +321,7 @@
   AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
+  AWS S3: ✔️
   Composer: '2.2'
   Elasticsearch: '7.17'
   MariaDB: '10.11'
@@ -575,6 +582,7 @@
   AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
+  AWS S3: ✔️
   Composer: '2.2'
   Elasticsearch: '7.17'
   MariaDB: '10.6'
