@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Cloud Automated Patching Service (CAPS)] Troubleshooting Guide'
-description: Troubleshoot common issues and error messages in [!DNL Cloud Automated Patching Service (CAPS)]
+title: '[!DNL Cloud Automation Patching Service (CAPS)] Troubleshooting Guide'
+description: Troubleshoot common issues and error messages in [!DNL Cloud Automation Patching Service (CAPS)]
 hide: yes
 hidefromtoc: yes
 ---
-# [!DNL Cloud Automated Patching Service (CAPS)] troubleshooting guide
+# [!DNL Cloud Automation Patching Service (CAPS)] troubleshooting guide
 
 When using [!DNL CAPS] for patch operations, you can encounter error messages and issues that can prevent successful patch application or reversion. This guide provides solutions for the most common problems.
 

@@ -1,10 +1,10 @@
 ---
-title: How to access [!DNL Cloud Automated Patching Service (CAPS)]
-description: Learn how to access and use [!DNL Cloud Automated Patching Service (CAPS)]
+title: How to access [!DNL Cloud Automation Patching Service (CAPS)]
+description: Learn how to access and use [!DNL Cloud Automation Patching Service (CAPS)]
 hide: yes
 hidefromtoc: yes
 ---
-# How to access [!DNL Cloud Automated Patching Service (CAPS)]
+# How to access [!DNL Cloud Automation Patching Service (CAPS)]
 
 ## Prerequisites
 

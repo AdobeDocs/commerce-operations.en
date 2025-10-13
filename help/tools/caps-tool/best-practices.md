@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Cloud Automated Patching Service (CAPS)] Best Practices Guide'
-description: Learn best practices for using [!DNL Cloud Automated Patching Service (CAPS)] effectively and safely
+title: '[!DNL Cloud Automation Patching Service (CAPS)] Best Practices Guide'
+description: Learn best practices for using [!DNL Cloud Automation Patching Service (CAPS)] effectively and safely
 hide: yes
 hidefromtoc: yes
 ---
-# [!DNL Cloud Automated Patching Service (CAPS)] best practices guide
+# [!DNL Cloud Automation Patching Service (CAPS)] best practices guide
 
 Following best practices is essential for successful and safe patch operations with [!DNL CAPS]. This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
 
