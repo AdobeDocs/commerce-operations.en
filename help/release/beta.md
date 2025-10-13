@@ -41,7 +41,7 @@ The beta includes the following features:
 
 >[!NOTE]
 >
->Since the Cloud Automation Patch Service applies isolated security patches automatically, you must have the [Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
+>Since the Cloud Automation Patch Service applies isolated security patches automatically, you must have the [Contributor or Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
 
 To participate in this beta, complete and submit the [Cloud Automation Patch Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
