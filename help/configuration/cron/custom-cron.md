@@ -1,6 +1,6 @@
 ---
 title: Cron jobs
-description: Learn about cron groups and creating a custom cron job.
+description: Learn about cron groups and how to create custom cron jobs in Adobe Commerce. Discover scheduled task setup and cron group configuration.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
 ---
 # Cron jobs

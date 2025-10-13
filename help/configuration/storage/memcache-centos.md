@@ -1,6 +1,6 @@
 ---
 title: Set up memcached on CentOS
-description: Install and configure memcached on CentOS.
+description: Learn how to install and configure memcached on CentOS for Adobe Commerce caching. Discover setup instructions and optimization tips.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
 ---

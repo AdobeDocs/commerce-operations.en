@@ -1,6 +1,6 @@
 ---
 title: Set up memcached on Ubuntu
-description: Install and configure memcached on Ubuntu.
+description: Learn how to install and configure memcached on Ubuntu for Adobe Commerce caching. Discover setup instructions and optimization tips.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 ---

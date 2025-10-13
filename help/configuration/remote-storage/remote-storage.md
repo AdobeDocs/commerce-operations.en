@@ -6,7 +6,7 @@ exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 ---
 # Configure Remote Storage
 
-The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3. 
+The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3.
 
 By default, the Adobe Commerce application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
 
@@ -28,7 +28,7 @@ Enabling remote storage might affect your established development experience. Fo
 >
 >- The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service. See [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md) for guidance implementing remote storage for cloud projects.
 
-![schema image](../../assets/configuration/remote-storage-schema.png)
+![Remote storage configuration schema diagram illustrating the relationship between local and cloud storage](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote storage options
 

@@ -1,6 +1,6 @@
 ---
 title: L2 cache configuration
-description: Learn to configure the L2 cache.
+description: Learn how to configure L2 cache for Adobe Commerce performance optimization. Discover setup steps and network traffic reduction techniques.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 ---

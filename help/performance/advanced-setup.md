@@ -1,6 +1,6 @@
 ---
 title: Advanced Setup
-description: Review best practices and recommendations for large enterprise systems designed to process large volumes of data.
+description: Learn how to advanced setup for Adobe Commerce. Discover step-by-step instructions and configuration requirements.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
 ---
 # Advanced setup

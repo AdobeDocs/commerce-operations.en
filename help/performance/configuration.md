@@ -1,6 +1,6 @@
 ---
 title: Configuration Best Practices
-description: Optimize the response time of your Adobe Commerce deployment using these best practices.
+description: Learn about configuration best practices to optimize Adobe Commerce performance. Discover settings and tools to improve response time and throughput.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
