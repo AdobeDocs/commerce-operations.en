@@ -20,6 +20,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
 
+>[!NOTE]
+>
+>Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+
 ## 2.4.5-p14
 
 The Adobe Commerce 2.4.5-p14 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
