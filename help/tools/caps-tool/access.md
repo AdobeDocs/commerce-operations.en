@@ -30,13 +30,13 @@ If you do not see any projects in the [!DNL CAPS] user interface, you need to re
 
 ## Accessing [!DNL CAPS]
 
-You can access CAPS via Site-Wide Analysis Tool at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Under the Patching Automation tab, you can select your project and environment.
+The CAPS tool is available from the Site-Wide Analysis Tool dashboard at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Under the Patching Automation tab, you can select your project and environment.
 
-1. Navigate to Site-Wide Analysis Tool at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/)
-1. Click on the Patching Automation tab in the interface
-1. Select your project and environment where you want to apply patches
-1. Review available patches and their compatibility status
-1. Select patches for application or reversion
+1. Navigate to Site-Wide Analysis Tool at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
+1. Click on the [!UICONTROL Patching Automation] tab in the interface.
+1. Select the project and environment where you want to apply patches.
+1. Review available patches and their compatibility status.
+1. Select patches to apply or revert.
 
 ## Production environment access
 
