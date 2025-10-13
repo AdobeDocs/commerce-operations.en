@@ -22,11 +22,11 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
-### Cloud Automation Patch Service (Private Beta)
+### Cloud Automation Patching Service (Private Beta)
 
-The Cloud Automation Patch Service automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
+The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
 
-In October 2025, the beta release of the Cloud Automation Patch Service will be added to the [Site-Wide Analysis tool dashboard](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). This service supports Commerce project administrators with a streamlined patching workflow that includes:
+In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). This service supports Commerce project administrators with a streamlined patching workflow that includes:
 
 - Automated patch installation
 - Rollback recovery
@@ -41,9 +41,9 @@ The beta includes the following features:
 
 >[!NOTE]
 >
->Since the Cloud Automation Patch Service applies isolated security patches automatically, you must have the [Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
+>Since the Cloud Automation Patching Service applies isolated security patches automatically, you must have the [Contributor or Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
 
-To participate in this beta, complete and submit the [Cloud Automation Patch Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
+To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Enhanced search capabilities for Live Search (Public Beta)
 
