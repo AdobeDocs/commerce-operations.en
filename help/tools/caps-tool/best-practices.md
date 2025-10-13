@@ -6,7 +6,7 @@ hidefromtoc: yes
 ---
 # [!DNL Cloud Automation Patching Service (CAPS)] best practices guide
 
-Following best practices is essential for successful and safe patch operations with [!DNL Cloud Automation Patching Service]( [!DNL CAPS]. This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
+Following best practices is essential for successful and safe patch operations with [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
 
 ## Pre-Patch Best Practices
 
