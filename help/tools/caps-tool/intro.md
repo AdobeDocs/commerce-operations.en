@@ -10,6 +10,13 @@ hidefromtoc: yes
 
 This guide is designed for Adobe Commerce Cloud merchants and partners who want to streamline their patching process, reduce the risk of patch-related issues, improve their environment's security and stability, and automate routine patch operations.
 
+## [!DNL CAPS] topics
+
+* **[How to access](access.md)**
+* **[Workflow](workflow.md)**
+* **[Best practices](best-practices.md)**
+* **[Troubleshooting](troubleshooting.md)**
+
 ## Tool overview
 
 * **UI Interface**

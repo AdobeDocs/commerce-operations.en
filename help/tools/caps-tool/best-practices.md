@@ -146,3 +146,10 @@ Before applying patches, ensure your environment is properly prepared:
 * Keep environments synchronized and maintain proper resource allocation
 * Establish clear support procedures and maintain team training
 * Regularly review and improve your patch management processes
+
+## Related topics
+
+* [CAPS introduction](intro.md)
+* [How to access](access.md)
+* [Workflow](workflow.md)
+* [Troubleshooting](troubleshooting.md)

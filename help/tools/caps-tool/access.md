@@ -49,3 +49,10 @@ For production environments, additional safeguards apply:
 >[!IMPORTANT]
 >
 >Production environment patching requires proper preparation and safeguards to prevent accidental disruptions.
+
+## Related topics
+
+* [CAPS introduction](intro.md)
+* [Workflow](workflow.md)
+* [Best practices](best-practices.md)
+* [Troubleshooting](troubleshooting.md)

@@ -149,3 +149,10 @@ Before applying patches to production environments, [!DNL CAPS] checks for two c
 * **Cron jobs disabled** - Cron jobs must be disabled
 
 If either condition is not met, the patch application is blocked and the user is notified.
+
+## Related topics
+
+* [CAPS introduction](intro.md)
+* [How to access](access.md)
+* [Best practices](best-practices.md)
+* [Troubleshooting](troubleshooting.md)

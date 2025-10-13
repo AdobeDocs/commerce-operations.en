@@ -214,3 +214,7 @@ For more detailed technical information:
 
 * [Adobe Commerce Cloud documentation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview.html)
 * [Adobe Commerce Installation Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview.html)
+* [CAPS introduction](intro.md)
+* [How to access](access.md)
+* [Workflow](workflow.md)
+* [Best practices](best-practices.md)
