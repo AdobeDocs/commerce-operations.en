@@ -8,6 +8,18 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.6-p13
+
+The Adobe Commerce 2.4.6-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
 ## 2.4.6-p12
 
 The Adobe Commerce 2.4.6-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
@@ -220,4 +232,4 @@ Platform upgrades for this release improve compliance with the latest security b
 
   This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). For details, see the [B2B release notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
 
-<!-- Last updated from includes: 2025-07-24 10:48:00 -->
+<!-- Last updated from includes: 2025-10-06 13:12:34 -->
