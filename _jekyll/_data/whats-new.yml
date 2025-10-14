@@ -2,8 +2,45 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 10 17:21:46 2025
+updated: Tue Oct 14 13:05:55 2025
 entries:
+- description: Add October 2025 releases to [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+  versions: ''
+  type: technical
+  date: October 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1643
+  merge_commit: c36220a51fcf83a0bc048b0e7e44871a7232fb0f
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'October 2025 release:<br/>- Added release notes for the October 2025
+    security patches: [2.4.8-p3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p3),
+    [2.4.7-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p8),
+    [2.4.6-p13](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p13),
+    [2.4.5-p15](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p15),
+    [2.4.4-p16](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p16).<br/>-
+    Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for 2.4.9-alpha3, 2.4.8-p3, 2.4.7-p8, 2.4.6-p13, 2.4.5-p15, 2.4.4-p16.<br/>- Added
+    release notes to cover highlights and fixed issues introduced in v2.4.9-alpha3
+    for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9).<br/>-
+    Added a description of the Cloud Automation Patch Service to [Adobe Commerce beta
+    releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).<br/>-
+    Updated the [release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for 2026.<br/>- Added detailed instructions for [installing and configuring](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/activemq)
+    the ActiveMQ (Artemis) message broker for on-premises deployments.<br/>- Added
+    _Configuring alternativeHeaders for Client IP Detection_ to [GraphQL Application
+    Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server).'
+  versions: ''
+  type: major-update
+  date: October 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1580
+  merge_commit: c6215859ec6fdf691d76e3f601b50dffe80366ad
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
 - description: 'Added detailed description of the QPT 1.1.71 fix for [ACSD-67093:
     Retrieving orders through GraphQL using the date range filter returns incorrect
     results.](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093).'

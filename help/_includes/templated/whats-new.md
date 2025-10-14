@@ -4,6 +4,36 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 14, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Add October 2025 releases to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Released versions</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c36220a51fcf83a0bc048b0e7e44871a7232fb0f">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>October 2025 release:<br />- Added release notes for the October 2025 security patches: <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p3">2.4.8-p3</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p8">2.4.7-p8</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p13">2.4.6-p13</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p15">2.4.5-p15</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p16">2.4.4-p16</a>.<br />- Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a> for 2.4.9-alpha3, 2.4.8-p3, 2.4.7-p8, 2.4.6-p13, 2.4.5-p15, 2.4.4-p16.<br />- Added release notes to cover highlights and fixed issues introduced in v2.4.9-alpha3 for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source</a>.<br />- Added a description of the Cloud Automation Patch Service to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">Adobe Commerce beta releases</a>.<br />- Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">release schedule</a> for 2026.<br />- Added detailed instructions for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/activemq">installing and configuring</a> the ActiveMQ (Artemis) message broker for on-premises deployments.<br />- Added <em>Configuring alternativeHeaders for Client IP Detection</em> to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server">GraphQL Application Server</a>.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6215859ec6fdf691d76e3f601b50dffe80366ad">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 9, 2025
 
 <table style="table-layout:auto;">
