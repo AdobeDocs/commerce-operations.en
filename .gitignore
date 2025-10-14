@@ -6,3 +6,5 @@ template.md
 _site
 tmp
 Gemfile.lock
+
+.cursor
