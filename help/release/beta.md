@@ -12,7 +12,7 @@ Adobe Commerce beta programs are a way for merchants to get access to prerelease
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 ## Benefits of participating
 
@@ -22,9 +22,32 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
+### Cloud Automation Patching Service (Private Beta)
+
+The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
+
+In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). This service supports Commerce project administrators with a streamlined patching workflow that includes:
+
+- Automated patch installation
+- Rollback recovery
+- Post-deployment verification.
+
+The service ensures that you can maintain secure, stable, and updated environments with minimal manual effort and risk.
+
+The beta includes the following features:
+
+- **Automate patch installation**: Simplify and automate the process of patching critical vulnerabilities across environments.
+- **Minimize risk**: Prevent site outages with post-deployment health check and rollback capabilities.
+
+>[!NOTE]
+>
+>Since the Cloud Automation Patching Service applies isolated security patches automatically, you must have the [Contributor or Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
+
+To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
+
 ### Enhanced search capabilities for Live Search (Public Beta)
 
-This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
 
 - **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
   
@@ -41,8 +64,10 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 - **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
 
     - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
-        
-        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+
+      >[!NOTE]
+      >
+      >This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 

@@ -8,10 +8,22 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.5-p15
+
+The Adobe Commerce 2.4.5-p15 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
 
 >[!NOTE]
 >
 >Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
 
 ## 2.4.5-p14
 
@@ -207,4 +219,4 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 One of the security bug fixes included the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2025-07-24 10:48:00 -->
+<!-- Last updated from includes: 2025-10-06 13:12:34 -->
