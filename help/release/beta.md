@@ -22,6 +22,18 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
+### Semantic Search: Smarter, Context-Aware Shopping Experiences (Private Beta)
+
+Semantic search is an ecommerce search technology that understands the *meaning* behind a shopper's query—not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, semantic search interprets intent and context to deliver more relevant results.
+
+Semantic search addresses a major limitation of traditional search: zero-result pages that occur when shoppers use words that do not exist in the catalog. Semantic search overcomes this by using AI-powered techniques to match queries with product data in a shared semantic space. For example, semantic search recognizes that "running shoes" and "jogging sneakers" refer to the same product. It maps user queries and product data into a semantic space, allowing for:
+
+- Synonym recognition
+- Contextual relevance
+- Intelligent handling of vague, misspelled, or compound queries
+
+To request an invitation to the beta program, send an email to: [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
+
 ### Cloud Automation Patching Service (Private Beta)
 
 The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
