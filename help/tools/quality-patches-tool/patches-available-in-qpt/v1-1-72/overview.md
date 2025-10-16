@@ -23,6 +23,6 @@ QPT v1.1.72 includes the following patches:
 1. **ACSD-68118**: `customerCart` GraphQL query returns product attribute values that don't reflect the store header, causing inconsistent localization.
 1. **ACSD-68092**: Bundle product options are lost after multiple saves due to improper synchronization between scheduled updates and base product data.
 1. **ACSD-67424**: `updated_at` value in the `GET /carts/search` [!DNL REST] API response doesn't match the value shown in the **[!UICONTROL Admin panel]** when using Negotiable Quotes.
-1. **ACSD-67187**: Admin users restricted to non-default websites see the error, *"*Please create at least a public shared catalog to proceed*, and can't access the **[!UICONTROL Add New Company]** button on the Company grid.
+1. **[ACSD-67187](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67187.md)**: Admin users restricted to non-default websites see the error, *"*Please create at least a public shared catalog to proceed*, and can't access the **[!UICONTROL Add New Company]** button on the Company grid.
 
 Use the menu on the left to navigate to a specific patch page.
