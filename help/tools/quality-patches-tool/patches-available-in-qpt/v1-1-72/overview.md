@@ -16,7 +16,6 @@ QPT v1.1.72 includes the following patches:
 1. **ACSD-66807**: Report_viewed_product_index table shows an incorrect count of product page views.
 1. **ACSD-67383**: Login as Customer with two company admin accounts in the same session causes a "No such entity with cartId" error.
 1. **ACSD-67518**: Advanced reporting generates duplicated header rows when the row count exceeds the batch size.
-1. **ACSD-67594**: Shipping address validation in the REST API does not follow the attribute configuration set in the Admin backend.
 1. **ACSD-67639**: Creating a credit memo fails for bundle products with Dynamic Price set to No.
 1. **ACSD-67696**: Media_gallery entries do not return in the Cart GraphQL product node after a cache flush.
 1. **ACSD-67946**: Cart updates show duplicate error banners.
