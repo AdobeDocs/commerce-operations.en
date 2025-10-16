@@ -11,7 +11,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.72 includes the following patches:
 1. **ACSD-68040**: Frontend search page experiences performance degradation on [!DNL MariaDB] 10.6 and 11.4 with many historical search requests.
-1. **[ACSD-67941](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67941.md)**: GraphQL requests with unknown filter names cause PHP exception logs.
+1. **ACSD-67941**: GraphQL requests with unknown filter names cause PHP exception logs.
 1. **ACSD-68064**: Creating scheduled updates results in duplicate entries in environments with a high number of nested categories.
 1. **ACSD-66807**: `report_viewed_product_index` table shows an incorrect count of product page views.
 1. **ACSD-67383**: Login as Customer with two company admin accounts in the same session causes a *No such entity with cartId* error.
