@@ -18,7 +18,7 @@ QPT v1.1.72 includes the following patches:
 1. **ACSD-67518**: Advanced reporting generates duplicated header rows when the row count exceeds the batch size.
 1. **ACSD-67639**: Creating a credit memo fails for bundle products with **[!UICONTROL Dynamic Price]** set to *No*.
 1. **ACSD-67696**: `media_gallery` entries don't return in the Cart GraphQL product node after a cache flush.
-1. **ACSD-67946**: Cart updates show duplicate error banners.
+1. **[ACSD-67946](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)**: Cart updates show duplicate error banners.
 1. **ACSD-68011**: Non-existent SKUs can be assigned to a shared catalog via the `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API.
 1. **ACSD-68118**: `customerCart` GraphQL query returns product attribute values that don't reflect the store header, causing inconsistent localization.
 1. **ACSD-68092**: Bundle product options are lost after multiple saves due to improper synchronization between scheduled updates and base product data.
