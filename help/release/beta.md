@@ -24,15 +24,16 @@ See the following sections for a list of active beta programs.
 
 ### Semantic Search: Smarter, Context-Aware Shopping Experiences (Private Beta)
 
-Semantic search is an ecommerce search technology that understands the *meaning* behind a shopper's query—not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, semantic search interprets intent and context to deliver more relevant results.
+Semantic search is an e-commerce search technology that understands the *meaning* behind a shopper's query, not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, this AI-powered approach interprets intent using natural language processing (NLP) and context to deliver more relevant results.
 
-Semantic search addresses a major limitation of traditional search: zero-result pages that occur when shoppers use words that do not exist in the catalog. Semantic search overcomes this by using AI-powered techniques to match queries with product data in a shared semantic space. For example, semantic search recognizes that "running shoes" and "jogging sneakers" refer to the same product. It maps user queries and product data into a semantic space, allowing for:
+This technology addresses a major limitation of traditional search: zero-result pages that occur when shoppers use words that do not exist in the catalog. By using AI-powered techniques, it maps user queries and product data into a shared semantic space. For example, the system recognizes that "running shoes" and "jogging sneakers" refer to the same type of product, enabling:
 
 - Synonym recognition
 - Contextual relevance
 - Intelligent handling of vague, misspelled, or compound queries
+- Understanding of natural, conversational language
 
-To request an invitation to the beta program, send an email to: [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
+To request an invitation to the beta program, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
 
 ### Cloud Automation Patching Service (Private Beta)
 
