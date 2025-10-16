@@ -18,20 +18,20 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.72 {#v1-1-72}
 
-* **ACSD-68040** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the frontend search page experiences performance degradation on MariaDB 10.6 and 11.4 with many historical search requests.
+* **ACSD-68040** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the frontend search page performance degrades on [!DNL MariaDB] 10.6 and 11.4 with many historical search requests.
 * **ACSD-67941** (for Adobe Commerce and Magento Open Source >=2.4.7-p1 <2.4.8) - Fixes the issue where GraphQL requests with unknown filter names cause PHP exception logs.
 * **ACSD-68064** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where creating scheduled updates results in duplicate entries in environments with a high number of nested categories.
-* **ACSD-66807** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the report_viewed_product_index table shows an incorrect count of product page views.
-* **ACSD-67383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where using Login as Customer with two company admin accounts in the same session causes a "No such entity with cartId" error.
+* **ACSD-66807** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the `report_viewed_product_index` table shows an incorrect count of product page views.
+* **ACSD-67383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where using **[!UICONTROL Login as Customer]** with two company admin accounts in the same session causes a *No such entity with cartId* error.
 * **ACSD-67518** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where advanced reporting generates duplicated header rows when the row count exceeds the batch size.
-* **ACSD-67639** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where creating a credit memo fails for bundle products with Dynamic Price set to No.
-* **ACSD-67696** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where media_gallery entries do not return in the Cart GraphQL product node after a cache flush.
+* **ACSD-67639** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where creating a credit memo fails for bundle products with the **[!UICONTROL Dynamic Price]** set to *No*.
+* **ACSD-67696** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where `media_gallery` entries don't return in the Cart GraphQL product node after a cache flush.
 * **ACSD-67946** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where cart updates show duplicate error banners.
-* **ACSD-68011** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where non-existent SKUs can be assigned to a shared catalog via the /V1/sharedCatalog/:id/assignProducts REST API.
-* **ACSD-68118** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where the customerCart GraphQL query returns product attribute values that do not reflect the store header, causing inconsistent localization.
-* **ACSD-68092** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where bundle product options are lost after multiple saves due to improper synchronization between scheduled updates and base product data.
-* **ACSD-67424** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the updated_at value in the GET /carts/search REST API response does not match the value shown in the Admin Panel when using Negotiable Quotes.
-* **ACSD-67187** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where admin users restricted to non-default websites see the error "Please create at least a public shared catalog to proceed" and cannot access the "Add New Company" button on the Company grid.
+* **ACSD-68011** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where non-existent SKUs can be assigned to a shared catalog via the `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API.
+* **ACSD-68118** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where the `customerCart` GraphQL query returns product attribute values that don't reflect the store header, causing inconsistent localization.
+* **ACSD-68092** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where bundle product options are lost after multiple saves, due to improper synchronization between scheduled updates and base product data.
+* **ACSD-67424** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the `updated_at` value in the `GET /carts/search` [!DNL REST] API response doesn't match the value shown in the **[!UICONTROL Admin panel]** when using Negotiable Quotes.
+* **ACSD-67187** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where admin users restricted to non-default websites see the error, *Please create at least a public shared catalog to proceed*, and can't access the **[!UICONTROL Add New Company]** button on the Company grid.
 * Versions updated: **ACSD-49737**, **ACSD-53750**, **ACSD-51819**, **ACSD-55566**, **ACSD-62965**, **ACSD-63323**, **ACSD-63406**, **ACSD-66139**, **ACSD-66404**, **ACSD-67659**, **ACSD-66301**
 * Replaced patches: **ACSD-62577**, **ACSD-63325**, **ACSD-67102**
 
