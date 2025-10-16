@@ -22,7 +22,7 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
-### Semantic Search: Smarter, Context-Aware Shopping Experiences (Private Beta)
+### Semantic Search: smarter, context-aware shopping experiences (private beta)
 
 Semantic search is an e-commerce search technology that understands the *meaning* behind a shopper's query, not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, this AI-powered approach interprets intent using natural language processing (NLP) and context to deliver more relevant results.
 
