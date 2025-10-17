@@ -2,8 +2,19 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Oct 14 13:05:55 2025
+updated: Fri Oct 17 15:52:00 2025
 entries:
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.72](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 16, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1648
+  merge_commit: dd387dc4942177c4032df4053059c0620b607df4
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Add October 2025 releases to [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
   versions: ''
   type: technical
