@@ -166,11 +166,19 @@ All database configurations are available in this node.
 
 ## default_connection
 
-Defines the default connection for message queues. The value can be `db`, `amqp`, or a custom queue system like `redismq`. If you specify any value other than `db`, the message queue software must be installed and configured first. Otherwise, messages will not be processed correctly.
+Defines the default connection for message queues. The value can be `db`, `amqp`, `stomp`, or a custom queue system like `redismq`. If you specify any value other than `db`, the message queue software must be installed and configured first. Otherwise, messages will not be processed correctly.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+For STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -227,13 +235,13 @@ Learn more about [application Modes](../cli/set-mode.md).
 
 ## queue
 
-Message queue configurations are available in this node.
+Message queue configurations are available in this node. You can configure RabbitMQ (AMQP) or ActiveMQ Artemis (STOMP) as your message broker.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```

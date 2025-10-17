@@ -55,15 +55,6 @@ Pre-General Availability releases of Adobe Commerce features are made publicly a
 
 Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Beta releases. Customers should not rely on the correct functioning or performance of Beta releases or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at a customer's own risk.
 
-## Features, cloud infrastructure, and extensibility release
-
-Cloud infrastructure and feature releases contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include, but are not limited to:
-
-- Updates to cloud hosting services and infrastructure
-- B2B
-- SaaS products (Catalog Service, Data Connection, Product Recommendations, and Live Search)
-- Extensibility technology (Admin UI SDK, API Mesh, App Builder Starter Kits, Eventing, and Webhooks)
-
 ## Hotfix
 
 Hotfixes are patches that contain high-impact security or quality fixes, such as fixes to zero-day vulnerabilities, that affect many merchants. Adobe releases hotfixes (as needed) for supported Adobe Commerce versions when critical security or quality issues affect them. Hotfixes are published to the [Known Issues section](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) of the Knowledge Base. These fixes are included in the next planned patch release.
@@ -80,9 +71,9 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 >
 >Individual patches do not contain backward-incompatible changes.
 
-## Isolated patch
+## Isolated security fixes
 
-Isolated patches are security fixes released independently from a full security patch to allow for faster implementation. Each isolated patch addresses a specific security problem and is either included in the latest or an upcoming full security patch. Details about the issue are provided in the related security bulletin, which links to a Knowledge Base (KB) article containing the fix details, how to apply the patch, and additional information.
+Isolated patches are non-cumulative security fixes released independently from a full security patch to allow for faster implementation. Each isolated security fix addresses a specific security problem and is either included in the latest or an upcoming full security patch. Details about the issue are provided in the related security bulletin, which links to a Knowledge Base (KB) article containing the fix details, how to apply the fix, and additional information.
 
 See the [Security Center](https://helpx.adobe.com/security/products/magento.html) to find the latest security updates available for Adobe Commerce.
 
@@ -90,4 +81,4 @@ See the [Security Center](https://helpx.adobe.com/security/products/magento.html
 
 Created by non-Adobe personnel to fix an issue or modify the Adobe Commerce code for various reasons. Custom patches are delivered through the [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
 
-<!-- Last updated from includes: 2025-05-28 16:37:31 -->
+<!-- Last updated from includes: 2025-10-09 22:53:22 -->
