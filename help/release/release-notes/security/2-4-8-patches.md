@@ -21,11 +21,11 @@ This release includes the following highlights:
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
 
-{{#oct-2025-backports}}
+{{oct-2025-backports}}
 
 * The REST API response for order details now contains correct values for `base_row_total` and `row_total` attributes in case when several same items were ordered<!--ACP2E-3874-->
 
-* Fixed an error in `Magento\Framework\Mail\EmailMessage` where `getBodyText()` attempted to call a non-existent `getTextBody()` method on `Symfony\Component\Mime\Message`, ensuring compatibility with Magento 2.4.8-p2 and `magento/framework` 103.0.8-p2.
+* Fixed an error in `Magento\Framework\Mail\EmailMessage` where `getBodyText()` attempted to call a non-existent `getTextBody()` method on `Symfony\Component\Mime\Message`, ensuring compatibility with Magento 2.4.8-p2 and `magento/framework` 103.0.8-p2. <!--AC-15446-->
 
 
 ## 2.4.8-p2
