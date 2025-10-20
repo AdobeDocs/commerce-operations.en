@@ -86,7 +86,7 @@ Before you can run indexers in parallel mode, you must enable Process Control su
 
 * **Migrate from TinyMCE to Hugerte.org**
 
-  Due to the end of support for TinyMCE 5 and 6 and licensing incompatibilities with TinyMCE 7, The current implementation of Adobe Commerce WYSIWYG editor is migrated from TinyMCE to the open-source HugeRTE editor (https://hugerte.org/).
+  Due to the end of support for TinyMCE 5 and 6 and licensing incompatibilities with TinyMCE 7, The current implementation of Adobe Commerce WYSIWYG editor is migrated from TinyMCE to the open-source [HugeRTE editor](https://hugerte.org/).
 
   This migration ensures Adobe Commerce remains compliant with open-source licensing, avoids known TinyMCE 6 vulnerabilities, and delivers a modern, supported editing experience for merchants and developers.
 
