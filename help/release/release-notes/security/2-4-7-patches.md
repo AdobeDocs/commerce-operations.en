@@ -15,9 +15,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{b2b-patches}}
 
-### Highlights
+This release includes the following highlights:
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
+{{#oct-2025-backports}}
 
 ## 2.4.7-p7
 
