@@ -893,7 +893,7 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-           - [ACSD-68118: [!UICONTROL customerCart] [!DNL GraphQL] query returns incorrect product attribute values for store view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118.md)
+           - [ACSD-68118: customerCart [!DNL GraphQL] query returns incorrect product attribute values for store view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
