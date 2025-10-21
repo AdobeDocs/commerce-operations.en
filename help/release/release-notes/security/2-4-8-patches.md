@@ -25,7 +25,7 @@ This release includes the following highlights:
 
 * Fix for -AC-15446: Fixed an error in `Magento\Framework\Mail\EmailMessage` where `getBodyText()` attempted to call a non-existent `getTextBody()` method on `Symfony\Component\Mime\Message`, ensuring compatibility with Magento 2.4.8-p2 and `magento/framework` 103.0.8-p2.
 
-{{oct-2025-backports}}<!--AC-15446-->
+{{oct-2025-backports}}
 
 ## 2.4.8-p2
 
