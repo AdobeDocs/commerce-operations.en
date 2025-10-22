@@ -17,7 +17,15 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
+This release includes the following highlights:
+
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
+* Fix for ACP2E-3874: The REST API response for order details now contains correct values for `base_row_total` and `row_total` attributes in case when several same items were ordered.
+
+* Fix for -AC-15446: Fixed an error in `Magento\Framework\Mail\EmailMessage` where `getBodyText()` attempted to call a non-existent `getTextBody()` method on `Symfony\Component\Mime\Message`, ensuring compatibility with Magento 2.4.8-p2 and `magento/framework` 103.0.8-p2.
+
+{{oct-2025-backports}}
 
 ## 2.4.8-p2
 
