@@ -893,6 +893,7 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+           - [ACSD-68011: Non-existent SKUs assigned to shared catalog via /V1/sharedCatalog/:id/assignProducts API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68011.md)
            - [ACSD-68092: Bundle product options are lost after multiple saves](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68092.md)
            - [ACSD-67187: Admin users restricted to non-default websites get "Please create at least a public shared catalog to proceed" error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67187.md)
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
