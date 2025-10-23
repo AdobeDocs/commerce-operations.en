@@ -94,7 +94,7 @@ Key Enhancements:
 * Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
 * New Admin Fields:
   * Gateway REST URL (based on mode: Development or Live)
-  * Client ID &amp;amp; Secret
+  * Client ID &amp; Secret
   * Account Type, Account Number
   * CRID, MID, Mailer Identification Code
   * AES/ITN for international shipments
