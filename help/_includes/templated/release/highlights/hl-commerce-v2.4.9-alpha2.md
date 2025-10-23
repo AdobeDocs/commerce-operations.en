@@ -85,7 +85,7 @@ _AC-14610_
 
 #### Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs
 
-To comply with USPS's announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs.
+To comply with USPS&apos;s announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs.
 
 Key Enhancements:
 
@@ -94,7 +94,7 @@ Key Enhancements:
 * Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
 * New Admin Fields:
   * Gateway REST URL (based on mode: Development or Live)
-  * Client ID &amp; Secret
+  * Client ID &amp;amp; Secret
   * Account Type, Account Number
   * CRID, MID, Mailer Identification Code
   * AES/ITN for international shipments

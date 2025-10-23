@@ -1,17 +1,20 @@
 Issue key,Summary,Custom field (External Issue URL),Custom field (Release Note),Custom field (Git Pull Request),Components,is_magento
 AC-11846,Add support for OpenSearch 3,"","Adobe Commerce 2.4.9 is now fully compatible with  OpenSearch 3.x. This update enables merchants to benefit from improved performance, security, and long-term support while maintaining backward compatibility with OpenSearch 2.x.","",Framework,true
-AC-13257,Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs,"","To comply with USPS’s announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs. 
+AC-13257,Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs,"","To comply with USPS's announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs.
+
 Key Enhancements:
-- Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
-- Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
-- Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
-- New Admin Fields:
-Gateway REST URL (based on mode: Development or Live)
-Client ID & Secret
-Account Type, Account Number
-CRID, MID, Mailer Identification Code
-AES/ITN for international shipments
-REST-specific allowed shipping methods
+
+* Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
+* Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
+* Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
+* New Admin Fields:
+  * Gateway REST URL (based on mode: Development or Live)
+  * Client ID &amp; Secret
+  * Account Type, Account Number
+  * CRID, MID, Mailer Identification Code
+  * AES/ITN for international shipments
+  * REST-specific allowed shipping methods
+
 This migration ensures Adobe Commerce remains compliant with USPS standards, improves system reliability, and future-proofs shipping integrations for merchants.","",Shipping,true
 AC-14104,Update Nginx version from 1.26 to 1.28,"","The Nginx version used in development and testing environments across all the currently supported version of Adobe Commerce is updated from 1.26 to 1.28, aligning with the latest stable  Nginx release available.
 PR-level testing now runs against Nginx 1.28 confirming full compatibility and support for all the Adobe Commerce versions.","",Framework,true
