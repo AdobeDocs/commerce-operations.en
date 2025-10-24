@@ -36,6 +36,10 @@ If you upgrade from 2.3 to 2.4.6-p13, run the following command to install the `
 composer require magento/inventory-composer-installer
 ```
 
+#### Checkout page fails to load static.min.js and mixins.min.js
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
+
 ## 2.4.6-p12
 
 The Adobe Commerce 2.4.6-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
