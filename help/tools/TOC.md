@@ -893,6 +893,7 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+           - [ACSD-67518: [!DNL Advanced Reporting] generates duplicate header rows when the row count exceeds the batch size](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67518.md)
            - [ACSD-67941: GraphQL requests with unknown filter names cause PHP exception logs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67941.md)
            - [ACSD-68011: Non-existent SKUs assigned to shared catalog via /V1/sharedCatalog/:id/assignProducts API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68011.md)
            - [ACSD-68092: Bundle product options are lost after multiple saves](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68092.md)
