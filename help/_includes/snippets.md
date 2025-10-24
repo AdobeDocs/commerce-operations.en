@@ -93,4 +93,3 @@ Before you can run indexers in parallel mode, you must enable Process Control su
 * **Added support for Apache ActiveMQ Artemis  STOMP protocol**
 
   Added support for the ActiveMQ Artemis open-source message broker through the Simple Text Oriented Messaging Protocol (STOMP). It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations. See [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in the *Commerce Configuration Guide*.
-

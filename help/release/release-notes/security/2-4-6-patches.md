@@ -24,6 +24,18 @@ This release includes the following highlights:
 
 {{oct-2025-backports}}
 
+### Known issues
+
+#### Inventory Composer Installer package missing
+
+This version does not include the `magento/inventory-composer-installer` package, which is required for smooth upgrade from older minor versions with backward-incompatible changes.
+
+If you upgrade from 2.3 to 2.4.6-p13, run the following command to install the `magento/inventory-composer-installer` package before upgrading:
+
+```bash
+composer require magento/inventory-composer-installer
+```
+
 ## 2.4.6-p12
 
 The Adobe Commerce 2.4.6-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
@@ -236,4 +248,4 @@ Platform upgrades for this release improve compliance with the latest security b
 
   This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). For details, see the [B2B release notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
 
-<!-- Last updated from includes: 2025-10-06 13:12:34 -->
+<!-- Last updated from includes: 2025-10-22 11:16:25 -->
