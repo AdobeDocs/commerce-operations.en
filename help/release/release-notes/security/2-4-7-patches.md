@@ -15,9 +15,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{b2b-patches}}
 
-### Highlights
+This release includes the following highlights:
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
+{{oct-2025-backports}}
 
 ## 2.4.7-p7
 
@@ -141,4 +143,4 @@ This release includes the following highlights:
 
 Adobe Commerce 2.4.7-p1 resolves an issue introduced in the scope of the UPS integration migration from SOAP to REST API. This issue affected customers who ship outside of the US and prevented them from using the Metric System/SI measurements of kilograms and centimeters for packages to create shipments with UPS. See the [UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) knowledge base article for details.
 
-<!-- Last updated from includes: 2025-10-06 13:12:34 -->
+<!-- Last updated from includes: 2025-10-22 11:16:25 -->

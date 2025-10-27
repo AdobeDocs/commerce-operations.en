@@ -23,6 +23,8 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in t
 * ACL resources have been added to the Inventory.
 * Inventory template security has been enhanced.
 
+
+
 ## Adobe Commerce 2.4.3-p2
 
 The Adobe Commerce 2.4.3-p2 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements that improve compliance with the latest security best practices.
