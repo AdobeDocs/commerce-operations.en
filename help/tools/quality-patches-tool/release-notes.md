@@ -18,13 +18,13 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.73 {#v1-1-73}
 
-* **ACSD-67171** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where B2B users see an Access Denied page when their session expired or was removed during checkout.
+* **ACSD-67171** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where B2B users see an *[!UICONTROL Access Denied]* page when their session expired or was removed during checkout.
 * **ACSD-67908** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where JS files fail to merge properly in multi-store setups.
 * **ACSD-68190** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount.
-* **ACSD-68206** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the error when using the GraphQL Application server with the Rate Limiting feature with PHP Redis extension installed.
-* **ACSD-68356** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixed the issue where a GraphQL cart query returned an incorrect discount amount for virtual quotes.
-* **ACSD-68391** (for Adobe Commerce >=2.4.6-p10 <2.4.9) - Fixes the issue where category-related permissions were not correctly applied in Quick Order and Requisition Lists.
-* **ACSD-68400** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes an issue where the virtual gift card quantity was not accurately reflected in the inventory reservation table.
+* **ACSD-68206** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the error when using the GraphQL Application server with the **[!UICONTROL Rate Limiting]** feature with the [!DNL PHP Redis] extension installed.
+* **ACSD-68356** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where a GraphQL cart query returned an incorrect discount amount for virtual quotes.
+* **ACSD-68391** (for Adobe Commerce >=2.4.6-p10 <2.4.9) - Fixes the issue where category-related permissions were not correctly applied in **[!UCONTROL Quick Order]** and **[!UICONTROL Requisition Lists]**.
+* **ACSD-68400** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the virtual gift card quantity was not accurately reflected in the inventory reservation table.
 
 ## v1.1.72 {#v1-1-72}
 
