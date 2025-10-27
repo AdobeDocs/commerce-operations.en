@@ -85,7 +85,8 @@ _AC-14610_
 
 #### Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs
 
-To comply with USPS's announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs.
+To comply with USPS&apos;s announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs.
+
 Key Enhancements:
 
 * Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
