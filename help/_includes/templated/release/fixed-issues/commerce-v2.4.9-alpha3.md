@@ -34,9 +34,9 @@ Fixed pagination issue in inventory export stock salable quantity API where tota
 
 _ACP2E-4086 - [GitHub code contribution](https://github.com/magento/inventory/commit/5632fb5e)_
 
-#### Attacker could use POST request using REST API and can send RCE payload
+#### Validation issue with custom option IDs in cart item REST APIs
 
-REST APIs V1/guest-carts/&lt;cartId&gt;/items/ and V1/carts/mine/items/ now validates &quot;product_options.extension_attributes.custom_options.*.option_id&quot; to be valid option_id in the cart item SKU. Previously, such option was processed and saved in the database without any validation.
+REST APIs V1/guest-carts/&lt;cartId&gt;/items/ and V1/carts/mine/items/ now validate &quot;product_options.extension_attributes.custom_options.*.option_id&quot; to ensure it references a valid option_id for the cart item SKU. Previously, this parameter was processed and saved in the database without validation.
 
 _ACP2E-4138 - [GitHub code contribution](https://github.com/magento/magento2/commit/a1c57b2e)_
 

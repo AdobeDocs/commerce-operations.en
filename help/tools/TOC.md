@@ -894,6 +894,7 @@ feature: Configuration
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
            - [ACSD-68118: customerCart [!DNL GraphQL] query returns incorrect product attribute values for store view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118.md)
+           - [ACSD-68040: Frontend search page slows down on [!DNL MariaDB] 10.6 with large history](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040.md)
            - [ACSD-67639: Creating a credit memo fails for bundle products with Dynamic Price set to No](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639.md)
            - [ACSD-67518: [!DNL Advanced Reporting] generates duplicate header rows when the row count exceeds the batch size](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67518.md)
            - [ACSD-67941: GraphQL requests with unknown filter names cause PHP exception logs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67941.md)
