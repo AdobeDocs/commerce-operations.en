@@ -4,6 +4,178 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 27, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639: Creating a credit memo fails for bundle products with Dynamic Price set to No</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5cc38314016206465e8464f1adf48c3e2229dc6f">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 24, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67518">ACSD-67518: Advanced reporting generates duplicated header rows when the row count exceeds the batch size</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74ef092cff9a7cff8cc606857d2a41f1462214bf">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67941">ACSD-67941: GraphQL requests with unknown filter names cause PHP exception logs</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8774711858d8392cc1e4e92bab95e0f4b1619fa0">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added a known issue to release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p13">2.4.6‑p13</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p3">2.4.8‑p3</a> security patches.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf96bbcf380380fc09bc36fbc37ba1a559da89fc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 23, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68011">ACSD-68011: Non-existent SKUs can be assigned to a shared catalog via the /V1/sharedCatalog/:id/assignProducts REST API</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6901eb0aaeb2c820884624cb89e123b0eb9b518b">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Add an important note on the <code class="language-plaintext highlighter-rouge">magento/inventory-composer-installer</code> package requirement for 2.3 to 2.4.6-p13 upgrade:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p13">Release notes for 2.4.6-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade">Perform an upgrade</a></p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5f74ace95aaf447ee71c2751d8a99bda21882016">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 22, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696">ACSD-67696: Media_gallery entries do not return in the Cart GraphQL product node after a cache flush</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07110e373c6ca1a758edc22a0b992eb637b15646">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67187">ACSD-67187: Admin users restricted to non-default websites get <em>Please create at least a public shared catalog to proceed</em> error</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dfd30f5190919b6226aab09d2990a2b3c36fd31">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68092">ACSD-68092: Bundle product options are lost after multiple saves</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6cd9d5ced8d41294fb93452607a319b606bc659">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 20, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated security patch release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p3</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p8</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p13</a> to include patches for the TinyMCE to Hugerte.org migration and added support for Apache ActiveMQ Artemis STOMP protocol.<br /><em>Credit: <a href="https://github.com/hostep">hostep</a></em></p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2696da0e6df98ba90fe0aeb2dc84c54006794128">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 17, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI reference</a> to version 3.0.25.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/87cda9f5a9bcccffb1569a405e74ecdac496fa1a">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 16, 2025
 
 <table style="table-layout:auto;">
