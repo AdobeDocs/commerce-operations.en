@@ -893,6 +893,7 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+           - [ACSD-68064: Duplicate entries created during scheduled updates in environments with deeply nested categories](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
            - [ACSD-67946: Cart update shows duplicate error banners](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
            - [ACSD-68118: customerCart [!DNL GraphQL] query returns incorrect product attribute values for store view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118.md)
            - [ACSD-66807: report_viewed_product_index table shows an incorrect count of product page views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807.md)
