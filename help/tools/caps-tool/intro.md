@@ -43,6 +43,12 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 
 [!DNL CAPS] is fully integrated with Adobe Commerce Cloud infrastructure and works seamlessly with your existing cloud environments. It leverages cloud-native features for optimal performance, provides detailed logging and monitoring, and integrates with Adobe Commerce Cloud support tools.
 
+## Video Tutorial
+
+Learn about the Adobe Cloud Automated Parching Service and how this tool helps users quickly find and apply security patches. Learn how to access it through the SWAT dashboard, choose your project and environment, and apply patches with one click.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+
 ## Common use cases
 
 * **Security patches** - Quickly apply critical security updates
