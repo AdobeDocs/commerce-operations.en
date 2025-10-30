@@ -45,7 +45,7 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 
 ## Video Tutorial
 
-Learn about the Adobe Cloud Automated Parching Service and how this tool helps users quickly find and apply security patches. Learn how to access it through the SWAT dashboard, choose your project and environment, and apply patches with one click.
+Learn about the Adobe Cloud Automated Parching Service and how this tool helps users quickly find and apply security patches. The following video covers how access it through the SWAT dashboard, choose your project and environment, and apply patches with one click.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
