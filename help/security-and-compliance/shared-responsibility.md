@@ -739,9 +739,9 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of ElasticSearch| R |   |
-| Configuration of default ElasticSearch settings| R |   |
-| Submit a service request to install an ElasticSearch version compatible with the installed Adobe Commerce version |  | R |
+| Availability of ElasticSearch/OpenSearch| R |   |
+| Configuration of default ElasticSearch/OpenSearch settings| R |   |
+| Submit a service request to install an ElasticSearch/OpenSearch version compatible with the installed Adobe Commerce version |  | R |
 
 {style="table-layout:auto"}
 
@@ -785,6 +785,11 @@ Merchants are responsible for synchronizing data between environments.
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On Premises, or non-Adobe Commerce<br>(API, Data quality and formatting, merchant network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | R  |
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database configuration)| R |   |
 
+>![NOTE]
+>Merchants are required to use the most recent version of Live Search, Product Recommendations, and Payment Services to ensure the highest stability, functionality, and eligibility for support.
+>Support cannot be provided for outdated versions, and upgrading ensures you benefit from the latest enhancements and bug fixes.
+>For details on supported versions, please refer to the [Product Availability Matrix for Commerce Services. ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
+
 {style="table-layout:auto"}
 
 #### Product Recommendations
@@ -792,6 +797,7 @@ Merchants are responsible for synchronizing data between environments.
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Product Recommendations service| R |   |
+| Upgrading of Product Recommendations modules|   | R |
 
 {style="table-layout:auto"}
 
@@ -800,6 +806,7 @@ Merchants are responsible for synchronizing data between environments.
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Live Search service| R |   |
+| Upgrading of Live Search modules |   | R |
 
 {style="table-layout:auto"}
 
@@ -814,6 +821,15 @@ Merchants are responsible for synchronizing data between environments.
 | Core AEM EDS implementation (Commerce Boilerplate) | R |   |
 | Custom AEM EDS implementation |  | R  |
 | Any other custom storefront implementation |  | R  |
+
+{style="table-layout:auto"}
+
+#### Payment Services
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Payments Service | R |   |
+| Upgrading of Payments modules |   | R |
 
 {style="table-layout:auto"}
 
