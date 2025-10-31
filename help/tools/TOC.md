@@ -893,6 +893,7 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+           - [ACSD-67424: updated_at value in GET /carts/search REST API response doesn't match value in [!UICONTROL Admin Panel] for [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
            - [ACSD-67383: Error when logging in as a Customer with two company admin accounts in the same session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
            - [ACSD-68064: Duplicate entries created during scheduled updates in environments with deeply nested categories](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
            - [ACSD-67946: Cart update shows duplicate error banners](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
