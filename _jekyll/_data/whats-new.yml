@@ -2,8 +2,120 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Oct 27 14:10:21 2025
+updated: Fri Oct 31 15:51:52 2025
 entries:
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-67424:
+    Updated_at value in the GET /carts/search REST API response does not match the
+    value shown in the Admin Panel when using Negotiable Quotes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 31, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1661
+  merge_commit: b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-67383:
+    Login as Customer with two company admin accounts in the same session causes a
+    "No such entity with cartId" error](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 31, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1653
+  merge_commit: a4f44a710c2f05ab7137887e195260038f339fa4
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.73](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 30, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1681
+  merge_commit: 4fac29d6dd0199fb2b66c9a18af3c7cd87ee35f0
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-68064:
+    Creating scheduled updates results in duplicate entries in environments with a
+    high number of nested categories](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1651
+  merge_commit: b8d4046ce9ea0d085cc11f5631d04a8b3adb3239
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-67946:
+    Cart updates show duplicate error banners](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1657
+  merge_commit: b93098a018cfe1e95c980eb4fc54315ed743b0bd
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added a known issue to security patch release notes for [2.4.4-p16](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p16),
+    [2.4.5-p15](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p15),
+    and [2.4.7-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p8).
+  versions: ''
+  type: technical
+  date: October 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1679
+  merge_commit: 75f1f064ad96b6b4a0091be5ead9ef6ba5534355
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-68040:
+    Frontend search page experiences performance degradation on MariaDB 10.6 and 11.4
+    with many historical search requests](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1649
+  merge_commit: 6dff1447a89c083fb8bd867281d20462cc843baa
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-68118:
+    CustomerCart GraphQL query returns product attribute values that do not reflect
+    the store header, causing inconsistent localization](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1659
+  merge_commit: 7dec696f3d87d91902a166314199cf3b6c161f85
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-66807:
+    Report_viewed_product_index table shows an incorrect count of product page views](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1652
+  merge_commit: 3da4e0b51b02dffaf1e9a069d85b0ff135c33b79
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.72 fix for [ACSD-67639:
     Creating a credit memo fails for bundle products with Dynamic Price set to No](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639).'
   versions: ''
