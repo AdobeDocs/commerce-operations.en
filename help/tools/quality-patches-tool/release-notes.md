@@ -16,6 +16,11 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.74 {#v1-1-74}
+
+* **AC-15867** (for Adobe Commerce and Magento Open Source 2.4.8-p3 || 2.4.7-p8 || 2.4.6-p13 || 2.4.5-p15 || 2.4.4-p16) - Fix to ensure that static.min.js and mixins.min.js are correctly loaded when CSP and SRI are enabled along with JS bundling and minification.
+* Versions updated: **ACSD-49737**, **ACSD-57003-V2**
+
 ## v1.1.73 {#v1-1-73}
 
 * **ACSD-67171** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where B2B users see an *[!UICONTROL Access Denied]* page when their session expired or was removed during checkout.
