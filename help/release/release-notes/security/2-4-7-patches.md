@@ -21,6 +21,12 @@ This release includes the following highlights:
 
 {{oct-2025-backports}}
 
+### Known issues
+
+#### Checkout page fails to load static.min.js and mixins.min.js
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
+
 ## 2.4.7-p7
 
 The Adobe Commerce 2.4.7-p7 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
