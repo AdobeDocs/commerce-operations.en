@@ -739,9 +739,9 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of ElasticSearch| R |   |
-| Configuration of default ElasticSearch settings| R |   |
-| Submit a service request to install an ElasticSearch version compatible with the installed Adobe Commerce version |  | R |
+| Availability of ElasticSearch or OpenSearch| R |   |
+| Configuration of default ElasticSearch or OpenSearch settings| R |   |
+| Submit a service request to install an ElasticSearch or OpenSearch version compatible with the installed Adobe Commerce version |  | R |
 
 {style="table-layout:auto"}
 
@@ -787,11 +787,17 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
+>![NOTE]
+>Merchants are required to use the most recent version of Live Search, Product Recommendations, and Payment Services to ensure the highest stability, functionality, and eligibility for support.
+>Adobe does not support outdated versions and upgrading ensures that you benefit from the latest enhancements and bug fixes.
+>For details on supported versions, see the [Product Availability Matrix for Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+
 #### Product Recommendations
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Product Recommendations service| R |   |
+| Upgrading Product Recommendations modules|   | R |
 
 {style="table-layout:auto"}
 
@@ -800,6 +806,7 @@ Merchants are responsible for synchronizing data between environments.
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Live Search service| R |   |
+| Upgrading Live Search modules |   | R |
 
 {style="table-layout:auto"}
 
@@ -814,6 +821,15 @@ Merchants are responsible for synchronizing data between environments.
 | Core AEM EDS implementation (Commerce Boilerplate) | R |   |
 | Custom AEM EDS implementation |  | R  |
 | Any other custom storefront implementation |  | R  |
+
+{style="table-layout:auto"}
+
+#### Payment Services
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Payments Service | R |   |
+| Upgrading Payments modules |   | R |
 
 {style="table-layout:auto"}
 
