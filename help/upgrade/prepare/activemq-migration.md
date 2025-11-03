@@ -1,8 +1,7 @@
 ---
 title: Migrate from RabbitMQ to ActiveMQ
 description: Learn about replacing the message queue broker used for on-premises installations of Adobe Commerce.
-feature: Upgrade, Message Queue
-exl-id: migrate-rabbitmq-activemq
+feature: Services, Configuration
 ---
 # Migrating to ActiveMQ
 
@@ -21,7 +20,9 @@ Before starting the migration, ensure the following:
 
 ## Migration path
 
-The steps to migrate to ActiveMQ are straightforward but require ensuring all pending messages are processed before switching brokers. These steps assume that Adobe Commerce is the only application using the message queue broker.
+Migrating to ActiveMQ is a straightforward process, but it’s essential to ensure that all pending messages are processed before switching brokers.
+
+These migration instructions assume that Adobe Commerce is the sole application utilizing the message queue broker.
 
 ### Step 1: Place the site in Maintenance Mode
 
@@ -151,19 +152,19 @@ cp app/etc/env.php app/etc/env.php.backup.rabbitmq
 
 You can uninstall RabbitMQ if it is not required anymore.
 
-### Step 8: Install and configure ActiveMQ in adobe commerce
+### Step 8: Install and configure ActiveMQ in Adobe Commerce
 
 [Install and configure ActiveMQ](../../installation/prerequisites/activemq.md) and perform related tasks, such as configuring the STOMP protocol and verifying the connection.
 
 ### Step 9: Reinstall cron jobs
 
-Once testing is successful, reinstall cron jobs:
+After testing completes successfully, reinstall cron jobs:
 
 ```bash
 bin/magento cron:install
 ```
 
-Verify cron jobs are scheduled:
+Verify that cron jobs are scheduled:
 
 ```bash
 crontab -l
@@ -177,7 +178,7 @@ After verifying everything is working correctly, disable maintenance mode:
 bin/magento maintenance:disable
 ```
 
-Verify maintenance mode is disabled:
+Verify that maintenance mode is disabled:
 
 ```bash
 bin/magento maintenance:status
@@ -185,12 +186,12 @@ bin/magento maintenance:status
 
 ### Step 11: Monitor the system
 
-Monitor your system for 24-48 hours after migration to ensure all queue operations are functioning correctly:
+Monitor your system for 24-48 hours after migration to ensure that all queue operations are functioning correctly:
 
-- Check ActiveMQ Web Console regularly for message throughput
+- Check the ActiveMQ Web Console regularly for message throughput
 - Monitor application logs for queue-related errors
-- Verify async operations (config saves, exports, etc.) are working
-- Check cron logs to ensure consumers are running
+- Verify that async operations (config saves, exports, and so on) are working
+- Check cron logs to ensure that consumers are running
 
 ```bash
 # Monitor system logs for queue activity
