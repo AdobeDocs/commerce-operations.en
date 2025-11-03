@@ -739,7 +739,7 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of ElasticSearch/OpenSearch| R |   |
+| Availability of ElasticSearch or OpenSearch| R |   |
 | Configuration of default ElasticSearch/OpenSearch settings| R |   |
 | Submit a service request to install an ElasticSearch/OpenSearch version compatible with the installed Adobe Commerce version |  | R |
 
