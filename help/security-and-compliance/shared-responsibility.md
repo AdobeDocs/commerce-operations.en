@@ -785,12 +785,12 @@ Merchants are responsible for synchronizing data between environments.
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On Premises, or non-Adobe Commerce<br>(API, Data quality and formatting, merchant network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | R  |
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database configuration)| R |   |
 
+{style="table-layout:auto"}
+
 >![NOTE]
 >Merchants are required to use the most recent version of Live Search, Product Recommendations, and Payment Services to ensure the highest stability, functionality, and eligibility for support.
 >Adobe does not support outdated versions and upgrading ensures that you benefit from the latest enhancements and bug fixes.
 >For details on supported versions, see the [Product Availability Matrix for Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
-
-{style="table-layout:auto"}
 
 #### Product Recommendations
 
