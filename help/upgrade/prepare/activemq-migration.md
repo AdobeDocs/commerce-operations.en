@@ -7,7 +7,7 @@ feature: Services, Configuration
 
 ActiveMQ (Apache ActiveMQ Artemis) is a high-performance, multi-protocol message broker that provides an alternative to RabbitMQ for handling message queues in Adobe Commerce.
 
-As of 2.4.9-alpha3, 2.4.8-p3, 2.4.7-p8, and 2.4.6-p13, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
+As of 2.4.9, 2.4.8-p3, 2.4.7-p8, and 2.4.6-p13, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
 
 ## Before you begin
 
@@ -73,52 +73,48 @@ rabbitmqctl list_queues name messages messages_ready messages_unacknowledged con
 
 If messages are pending in any queues, process them before proceeding.
 
-#### List available consumers through the following command
+1. Get the list of available consumers:
 
-```bash
-bin/magento queue:consumers:list
-```
+   ```bash
+   bin/magento queue:consumers:list
+   ```
 
-#### Process consumers by two ways
+1. Process consumers as a group, or by individual message queue:
 
-##### Option 1: Process all consumers through the following cron command
+   - **Process consumers as a group**
 
-```bash
-bin/magento cron:run --group=consumers
-```
+     ```bash
+     bin/magento cron:run --group=consumers
+     ```
 
->[!NOTE]
->
->If cron is already running in your system, you do not need to run `bin/magento cron:run --group=consumers` manually. Instead, verify that messages are getting processed by checking the message counts using the commands from Step 2.
+     >[!NOTE]
+     >
+     >If cron is already running in your system, you do not need to run `bin/magento cron:run --group=consumers` manually. Instead, verify that messages are getting processed by checking the message counts using the commands from Step 2.
 
-Wait for completion and verify message counts again using the commands from Step 2.
+   - **Process a specific message queue**
 
-##### Option 2: Process specific consumers manually
+     ```bash
+     bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
+     ```
 
-If you prefer to process specific queues, run the appropriate consumer using the following command:
+     For example, to process async operations:
 
-```bash
-bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
-```
+     ```bash
+     bin/magento queue:consumers:start async.operations.all --max-messages=1000
+     ```
 
-For example, to process async operations:
+     >[!NOTE]
+     >
+     >The `--max-messages` parameter limits the number of messages to process before the consumer stops. Adjust this value based on your queue size.
 
-```bash
-bin/magento queue:consumers:start async.operations.all --max-messages=1000
-```
+   - **Monitor message processing**
 
->[!NOTE]
->
->The `--max-messages` parameter limits the number of messages to process before the consumer stops. Adjust this value based on your queue size.
+     Continuously check message counts until all queues are empty:
 
-#### Monitor message processing
-
-Continuously check message counts until all queues are empty:
-
-```bash
-# Check every few seconds until 0 messages remain
-watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
-```
+     ```bash
+     # Check every few seconds until 0 messages remain
+     watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
+     ```
 
 ### Step 4: Verify that all messages are processed
 
@@ -166,7 +162,7 @@ You can uninstall RabbitMQ if it is not required anymore.
 
 ### Step 8: Install and configure ActiveMQ in Adobe Commerce
 
-See the [installation and configuration guide](../../installation/prerequisites/activemq.md) and perform related tasks, such as configuring the STOMP protocol and verifying the connection.
+To complete ActiveMQ installation and configuration tasks such as configuring the STOMP protocol and verifying the connection, see the [Installation and Configuration Guide](../../installation/prerequisites/activemq.md).
 
 ### Step 9: Reinstall cron jobs
 
