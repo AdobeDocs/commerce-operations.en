@@ -26,17 +26,17 @@ These migration instructions assume that Adobe Commerce is the sole application 
 
 ### Step 1: Place the site in Maintenance Mode
 
-Place the site in [Maintenance Mode](../../installation/tutorials/maintenance-mode.md):
+1. Place the site in [Maintenance Mode](../../installation/tutorials/maintenance-mode.md):
 
-```bash
-bin/magento maintenance:enable
-```
+   ```bash
+   bin/magento maintenance:enable
+   ```
 
-Verify maintenance mode is enabled:
+1. Verify maintenance mode is enabled:
 
-```bash
-bin/magento maintenance:status
-```
+   ```bash
+   bin/magento maintenance:status
+   ```
 
 ### Step 2: Check RabbitMQ message counts
 
@@ -49,25 +49,25 @@ Before proceeding, verify that all messages in RabbitMQ have been processed. Use
 1. Navigate to the **Queues** tab
 1. Verify all queues show **0 messages**
 
-![RabbitMQ Management Dashboard](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![RabbitMQ Management Dashboard](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
 #### Method B: Using rabbitmqctl command line
 
-Check all queues and their message counts:
+1. Check all queues and their message counts:
 
-```bash
-rabbitmqctl list_queues name messages consumers
-```
+   ```bash
+   rabbitmqctl list_queues name messages consumers
+   ```
 
-<img src="../../assets/upgrade-guide/rabbitmqctl.png" alt="RabbitMQ CLI Output" width="500" />
+   <img src="../../assets/upgrade-guide/rabbitmqctl.png" alt="RabbitMQ CLI Output" width="500" />
 
-Check detailed queue information:
+1. Check detailed queue information:
 
-```bash
-rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
-```
+   ```bash
+   rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
+   ```
 
-<img src="../../assets/upgrade-guide/rabbitmqctl_detailed.png" alt="RabbitMQ CLI Detailed Output" width="500" />
+   <img src="../../assets/upgrade-guide/rabbitmqctl_detailed.png" alt="RabbitMQ CLI Detailed Output" width="500" />
 
 ### Step 3: Process pending messages
 
@@ -126,27 +126,27 @@ Before proceeding to the next step, ensure **all queues show 0 messages**. Run t
 
 ### Step 5: Stop consumers and cron jobs
 
-Stop all running message queue consumers:
+1. Stop all running message queue consumers:
 
-```bash
-# If using supervisor
-supervisorctl stop all
+   ```bash
+   # If using supervisor
+   supervisorctl stop all
 
-# Or manually kill consumer processes
-pkill -f "queue:consumers:start"
-```
+   # Or manually kill consumer processes
+   pkill -f "queue:consumers:start"
+   ```
 
-Disable cron jobs:
+1. Disable cron jobs:
 
-```bash
-bin/magento cron:remove
-```
+   ```bash
+   bin/magento cron:remove
+   ```
 
-Verify cron jobs are removed:
+1. Verify cron jobs are removed:
 
-```bash
-crontab -l
-```
+   ```bash
+   crontab -l
+   ```
 
 ### Step 6: Backup current configuration
 
@@ -166,31 +166,31 @@ To complete ActiveMQ installation and configuration tasks such as configuring th
 
 ### Step 9: Reinstall cron jobs
 
-After testing completes successfully, reinstall cron jobs:
+1. After testing completes successfully, reinstall cron jobs:
 
-```bash
-bin/magento cron:install
-```
+   ```bash
+   bin/magento cron:install
+   ```
 
-Verify that cron jobs are scheduled:
+1. Verify that cron jobs are scheduled:
 
-```bash
-crontab -l
-```
+   ```bash
+   crontab -l
+   ```
 
 ### Step 10: Disable Maintenance Mode
 
-After verifying everything is working correctly, disable maintenance mode:
+1. After verifying everything is working correctly, disable maintenance mode:
 
-```bash
-bin/magento maintenance:disable
-```
+   ```bash
+   bin/magento maintenance:disable
+   ```
 
-Verify that maintenance mode is disabled:
+1. Verify that maintenance mode is disabled:
 
-```bash
-bin/magento maintenance:status
-```
+   ```bash
+   bin/magento maintenance:status
+   ```
 
 ### Step 11: Monitor the system
 
