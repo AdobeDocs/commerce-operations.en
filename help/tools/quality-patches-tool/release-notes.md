@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.74 {#v1-1-74}
 
-* **AC-15867** (for Adobe Commerce and Magento Open Source 2.4.8-p3 || 2.4.7-p8 || 2.4.6-p13 || 2.4.5-p15 || 2.4.4-p16) - Fix to ensure that static.min.js and mixins.min.js are correctly loaded when CSP and SRI are enabled along with JS bundling and minification.
+* **AC-15867** (for Adobe Commerce and Magento Open Source 2.4.8-p3 || 2.4.7-p8 || 2.4.6-p13 || 2.4.5-p15 || 2.4.4-p16) - Fixes the issue where `static.min.js` and `mixins.min.js` are not correctly loaded when CSP and SRI are enabled along with JS bundling and minification.
 * Versions updated: **ACSD-49737**, **ACSD-57003-V2**
 
 ## v1.1.73 {#v1-1-73}
