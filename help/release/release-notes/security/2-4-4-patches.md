@@ -24,6 +24,12 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 >
 >Extended support security patches for 2.4.4 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
+### Known issues
+
+#### Checkout page fails to load static.min.js and mixins.min.js
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
+
 ## 2.4.4-p15
 
 Adobe Commerce 2.4.4-p15 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
@@ -224,7 +230,7 @@ The Adobe Commerce 2.4.4-p1 security release provides fixes for vulnerabilities 
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb22-38.html).t
 
-### Apply `AC-3022.patch` to continue offering DHL as a shipping carrier
+### Apply AC-3022.patch to continue offering DHL as a shipping carrier
 
 DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in the near future. Adobe Commerce 2.4.4 and earlier versions that support the DHL integration support only version 6.0. Merchants deploying these releases should apply `AC-3022.patch` at their earliest convenience to continue offering DHL as a shipping carrier. See the [Apply a patch to continue offering DHL as a shipping carrier](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base article for information about downloading and installing the patch.
 

@@ -893,6 +893,13 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+           - [ACSD-67424: updated_at value in GET /carts/search REST API response doesn't match value in [!UICONTROL Admin Panel] for [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+           - [ACSD-67383: Error when logging in as a Customer with two company admin accounts in the same session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
+           - [ACSD-68064: Duplicate entries created during scheduled updates in environments with deeply nested categories](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
+           - [ACSD-67946: Cart update shows duplicate error banners](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
+           - [ACSD-68118: customerCart [!DNL GraphQL] query returns incorrect product attribute values for store view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118.md)
+           - [ACSD-66807: report_viewed_product_index table shows an incorrect count of product page views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807.md)
+           - [ACSD-68040: Frontend search page slows down on [!DNL MariaDB] 10.6 with large history](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040.md)
            - [ACSD-67639: Creating a credit memo fails for bundle products with Dynamic Price set to No](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639.md)
            - [ACSD-67518: [!DNL Advanced Reporting] generates duplicate header rows when the row count exceeds the batch size](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67518.md)
            - [ACSD-67941: GraphQL requests with unknown filter names cause PHP exception logs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67941.md)
@@ -900,6 +907,8 @@ feature: Configuration
            - [ACSD-68092: Bundle product options are lost after multiple saves](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68092.md)
            - [ACSD-67187: Admin users restricted to non-default websites get "Please create at least a public shared catalog to proceed" error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67187.md)
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
+        - v1.1.73 {#v1-1-73}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
