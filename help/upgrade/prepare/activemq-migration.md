@@ -108,7 +108,7 @@ Continuously check message counts until all queues are empty:
 watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
 ```
 
-### Step 4: Verify all messages are processed
+### Step 4: Verify that all messages are processed
 
 Before proceeding to the next step, ensure **all queues show 0 messages**. Run the verification commands from Step 2 again.
 
