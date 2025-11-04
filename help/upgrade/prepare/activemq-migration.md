@@ -7,7 +7,7 @@ feature: Services, Configuration
 
 ActiveMQ (Apache ActiveMQ Artemis) is a high-performance, multi-protocol message broker that provides an alternative to RabbitMQ for handling message queues in Adobe Commerce.
 
-As of 2.4.9, 2.4.8-p3, 2.4.7-p8, and 2.4.6-p13, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
+As of 2.4.9-alpha3, 2.4.8-p3, 2.4.7-p8, and 2.4.6-p13, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
 
 ## Before you begin
 
@@ -49,6 +49,8 @@ Before proceeding, verify that all messages in RabbitMQ have been processed. Use
 1. Navigate to the **Queues** tab
 1. Verify all queues show **0 messages**
 
+![RabbitMQ Management Dashboard](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+
 #### Method B: Using rabbitmqctl command line
 
 Check all queues and their message counts:
@@ -57,31 +59,41 @@ Check all queues and their message counts:
 rabbitmqctl list_queues name messages consumers
 ```
 
+<img src="../../assets/upgrade-guide/rabbitmqctl.png" alt="RabbitMQ CLI Output" width="500" />
+
 Check detailed queue information:
 
 ```bash
 rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
 ```
 
+<img src="../../assets/upgrade-guide/rabbitmqctl_detailed.png" alt="RabbitMQ CLI Detailed Output" width="500" />
+
 ### Step 3: Process pending messages
 
 If messages are pending in any queues, process them before proceeding.
 
-#### List available consumers
+#### List available consumers through the following command
 
 ```bash
 bin/magento queue:consumers:list
 ```
 
-#### Process all consumers via cron
+#### Process consumers by two ways
+
+##### Option 1: Process all consumers through the following cron command
 
 ```bash
 bin/magento cron:run --group=consumers
 ```
 
+>[!NOTE]
+>
+>If cron is already running in your system, you do not need to run `bin/magento cron:run --group=consumers` manually. Instead, verify that messages are getting processed by checking the message counts using the commands from Step 2.
+
 Wait for completion and verify message counts again using the commands from Step 2.
 
-#### Process specific consumers manually
+##### Option 2: Process specific consumers manually
 
 If you prefer to process specific queues, run the appropriate consumer using the following command:
 
@@ -154,7 +166,7 @@ You can uninstall RabbitMQ if it is not required anymore.
 
 ### Step 8: Install and configure ActiveMQ in Adobe Commerce
 
-[Install and configure ActiveMQ](../../installation/prerequisites/activemq.md) and perform related tasks, such as configuring the STOMP protocol and verifying the connection.
+See the [installation and configuration guide](../../installation/prerequisites/activemq.md) and perform related tasks, such as configuring the STOMP protocol and verifying the connection.
 
 ### Step 9: Reinstall cron jobs
 
