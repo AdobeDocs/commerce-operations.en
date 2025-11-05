@@ -28,4 +28,6 @@ Beginning January 2026, Adobe Commerce will move to a monthly patch release sche
 
 See the following image for details:
 
-![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.svg)
+<!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
+
+![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.png)

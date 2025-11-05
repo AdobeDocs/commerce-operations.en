@@ -251,7 +251,7 @@ The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in th
 
 ![redis synchronization from log](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) is an open source (BSD licensed) in-memory data structure store used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [[!DNL Redis] synchronization](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with the synchronization (more data to keep synchronized).
+[[!DNL Redis]](https://redis.io/about/) is an open source (BSD licensed) in-memory data structure store used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [[!DNL Redis] synchronization](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with the synchronization (more data to keep synchronized).
 
 **[!DNL Redis] errors and messages:**
 
