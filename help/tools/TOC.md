@@ -907,7 +907,7 @@ feature: Configuration
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
-           - [ACSD-68391: Category-related permissions not applied in **[!UICONTROL Quick Order]** and **[!UICONTROL Requisition Lists]**](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
+           - [ACSD-68391: Category-related permissions not applied in [!UICONTROL Quick Order] and [!UICONTROL Requisition Lists]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
