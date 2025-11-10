@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### November 10, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated version numbers for the Catalog Service for Adobe Commerce to 1.42 in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">product availability services</a> documentation.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/845612eaff717c9760dd322cc0391450a93b5192">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 31, 2025
 
 <table style="table-layout:auto;">
