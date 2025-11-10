@@ -907,7 +907,7 @@ feature: Configuration
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
-           - [ACSD-68206: fixes the error when using the GraphQL Application server with the Rate Limiting feature with PHP Redis extension installed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
+           - [ACSD-68206: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
