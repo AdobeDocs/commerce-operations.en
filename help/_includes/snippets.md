@@ -109,4 +109,4 @@ After recent CSP/SRI changes, the checkout page does not load static.min.js and 
 
 **Hotfix**:
 
-A hotfix addressing this issue will be released as soon as possible. Please monitor this release notes page for updates.
+A hotfix is available. See [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) in the Knowledge Base for patch details.
