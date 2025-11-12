@@ -1,6 +1,6 @@
 ---
 title: Install Varnish
-description: See advice about installing Varnish.
+description: Learn about Varnish installation requirements for Adobe Commerce caching. Discover installation resources and setup guidance.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
 ---

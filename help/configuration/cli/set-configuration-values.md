@@ -1,6 +1,6 @@
 ---
 title: Set configuration values
-description: Learn how to set configuration values and change values that are locked in the Admin.
+description: Learn how to set configuration values and change locked Admin values in Adobe Commerce. Discover advanced configuration commands and techniques.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
 ---
 # Set configuration values

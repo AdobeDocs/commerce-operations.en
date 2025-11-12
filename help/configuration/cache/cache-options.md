@@ -1,6 +1,6 @@
 ---
 title: Cache options
-description: Configure access to low-level cache storage.
+description: Learn about low-level cache options and storage configuration in Adobe Commerce. Discover frontend, backend, and storage setup for Redis and databases.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 ---

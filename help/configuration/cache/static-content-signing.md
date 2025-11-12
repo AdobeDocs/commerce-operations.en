@@ -1,6 +1,6 @@
 ---
 title: Static content cache
-description: Gain an understanding of static content signing and how to enable or disable the feature.
+description: Learn about static content cache signing and performance optimization in Adobe Commerce. Discover how to enable, disable, and configure caching features.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 ---

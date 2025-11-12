@@ -1,6 +1,6 @@
 ---
 title: Configure caching
-description: Learn about caching and how to configure cache mechanisms for the Adobe Commerce application.
+description: Learn about caching mechanisms and configuration options for Adobe Commerce applications. Discover alternatives to default file system caching.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 ---
