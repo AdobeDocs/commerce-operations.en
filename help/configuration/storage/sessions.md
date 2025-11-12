@@ -1,6 +1,6 @@
 ---
 title: Session storage location
-description: Learn where the session files are stored.
+description: Learn about session storage locations and file management in Adobe Commerce. Discover storage logic and configuration options.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 ---

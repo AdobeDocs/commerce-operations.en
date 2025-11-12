@@ -1,6 +1,6 @@
 ---
 title: Quick start on-premises installation
-description: Follow these steps to install Adobe Commerce on infrastructure that you own.
+description: Learn how to install Adobe Commerce on your own infrastructure using Composer. Discover quick start steps and configuration requirements.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
 # Quick start on-premises installation
@@ -9,11 +9,11 @@ The instructions on this page describe how to install Adobe Commerce on self-hos
 
 Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce components and their dependencies. Using Composer to get the Adobe Commerce metapackage provides the following advantages:
 
--  Reuse third-party libraries without bundling them with source code
--  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
--  Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) standards
--  Repackage Magento Open Source with other components
--  Use the Adobe Commerce software in a production environment
+- Reuse third-party libraries without bundling them with source code
+- Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
+- Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) standards
+- Repackage Magento Open Source with other components
+- Use the Adobe Commerce software in a production environment
 
 >[!NOTE]
 >
@@ -23,9 +23,9 @@ Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce compone
 
 Before you continue, you must do the following:
 
--  Complete all [prerequisite tasks](system-requirements.md).
--  [Install Composer](https://getcomposer.org/download/).
--  Get [authentication keys](prerequisites/authentication-keys.md) to the Adobe Commerce Composer repository.
+- Complete all [prerequisite tasks](system-requirements.md).
+- [Install Composer](https://getcomposer.org/download/).
+- Get [authentication keys](prerequisites/authentication-keys.md) to the Adobe Commerce Composer repository.
 
 ## Log in as file system owner
 

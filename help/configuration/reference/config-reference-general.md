@@ -1,6 +1,6 @@
 ---
 title: General configuration paths reference
-description: See a list of general and advanced configuration values.
+description: Learn about general and advanced configuration paths and values for Adobe Commerce. Discover system, security, and administrative configuration options.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 ---

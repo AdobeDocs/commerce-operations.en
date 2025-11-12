@@ -88,11 +88,11 @@
       </tr>
       <tr>
           <td>Data Connection</td>
-          <td>3.3.0+</td>
-          <td>3.1.1+</td>
-          <td>2.1.1+</td>
-          <td>1.0.0+</td>
-          <td>1.0.0+</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Release Notes</a><br/>
