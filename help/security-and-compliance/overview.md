@@ -1,6 +1,6 @@
 ---
 title: Security and compliance
-description: Learn about security, privacy, and industry compliance resources for your Adobe Commerce project.
+description: Learn about security, privacy, and compliance resources for your Adobe Commerce project. Discover how to maintain secure environments and meet regulatory requirements.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
 ---
 # Security and compliance

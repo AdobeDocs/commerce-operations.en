@@ -1,6 +1,6 @@
 ---
 title: Sensitive and system-specific paths
-description: See a list of system-specific and sensitive configuration values.
+description: Learn about sensitive and system-specific configuration paths for Adobe Commerce. Discover secure configuration and environment variable management.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
 ---

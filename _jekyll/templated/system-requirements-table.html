@@ -12,7 +12,7 @@
 {%- for minor_version in grouped_requirements %}
 {%- assign requirements = minor_version.items %}
 
-{%- assign dependencies = "Composer,Elasticsearch,OpenSearch,MariaDB,MySQL,PHP,RabbitMQ,ActiveMQ,Redis,Valkey,Varnish,Apache,nginx,AWS Aurora (MySQL),AWS S3,AWS MQ,AWS ElastiCache,AWS Elasticsearch,AWS OpenSearch" | split: "," %}
+{%- assign dependencies = "Composer,Elasticsearch,OpenSearch,MariaDB,MySQL,PHP,RabbitMQ,ActiveMQ Artemis,Redis,Valkey,Varnish,Apache,nginx,AWS Aurora (MySQL),AWS S3,AWS MQ,AWS ElastiCache,AWS Elasticsearch,AWS OpenSearch" | split: "," %}
 
 <table style="table-layout:auto">
   <thead>

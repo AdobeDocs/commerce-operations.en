@@ -1,6 +1,6 @@
 ---
 title: config.php reference
-description: See a list of values in the config.php file.
+description: Learn about config.php file values and sections for Adobe Commerce configuration. Discover modules, scopes, system settings, and deployment best practices.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 ---
 # config.php reference

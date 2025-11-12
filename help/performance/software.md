@@ -1,23 +1,25 @@
 ---
 title: Software Recommendations
-description: Review a list of recommended software related to optimal performance of Adobe Commerce deployments.
+description: Learn about software requirements and recommendations for Adobe Commerce. Discover supported versions and configuration best practices for production.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
+
+
 ---
 # Software recommendations
 
 We require the following software for production instances of [!DNL Commerce]:
 
-*  [PHP](../installation/system-requirements.md)
-*  Nginx and [PHP-FPM](https://php-fpm.org/)
-*  [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
-*  [[!DNL Elasticsearch] or OpenSearch](../installation/prerequisites/search-engine/overview.md)
+* [PHP](../installation/system-requirements.md)
+* Nginx and [PHP-FPM](https://php-fpm.org/)
+* [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
+* [[!DNL Elasticsearch] or OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 For multi-server deployments, or for merchants planning on scaling their business, we recommend the following:
 
-*  [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
-*  [Redis](../configuration/cache/redis-session.md) for sessions (from 2.0.6+)
-*  A separate Redis instance as your [default cache](../configuration/cache/redis-pg-cache.md) (do not use this instance for page cache)
+* [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
+* [Redis](../configuration/cache/redis-session.md) for sessions (from 2.0.6+)
+* A separate Redis instance as your [default cache](../configuration/cache/redis-pg-cache.md) (do not use this instance for page cache)
 
 See [system requirements](../installation/system-requirements.md) for information about supported versions of each type of software.
 
@@ -170,9 +172,9 @@ apc.enabled = 1
 
 Magento fully supports the Nginx and Apache web servers. [!DNL Commerce] provides sample recommended configuration files in the  `<magento_home>/nginx.conf.sample` (Nginx) and  `<magento_home>.htaccess.sample` (Apache) files.  The Nginx sample contains settings for better performance and is designed so that little reconfiguration is required. Some of the main configuration best practices defined in the sample file include:
 
-*  Settings for caching static content in a browser
-*  Memory and execution time settings for PHP
-*  Content compression settings
+* Settings for caching static content in a browser
+* Memory and execution time settings for PHP
+* Content compression settings
 
 You should also configure the number of threads for input request processing, as listed below:
 
@@ -203,9 +205,9 @@ Install [!DNL Varnish] on a separate server in front of the web tier. It should 
 
 [!DNL Commerce] distributes a sample configuration file for [!DNL Varnish] (versions 4 and 5) that contains all recommended settings for performance. Among them the most critical in terms of performance are:
 
-*  **Backend health check** polls the [!DNL Commerce] server to determine whether it is responding in a timely manner.
-*  **Grace mode** allows you to instruct [!DNL Varnish] to keep an object in cache beyond its Time to Live (TTL) period and serve this stale content if [!DNL Commerce] is not healthy or if fresh content hasn't been fetched yet.
-*  **Saint mode** blacklists unhealthy [!DNL Commerce] servers for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using [!DNL Varnish] as a load balancer.
+* **Backend health check** polls the [!DNL Commerce] server to determine whether it is responding in a timely manner.
+* **Grace mode** allows you to instruct [!DNL Varnish] to keep an object in cache beyond its Time to Live (TTL) period and serve this stale content if [!DNL Commerce] is not healthy or if fresh content hasn't been fetched yet.
+* **Saint mode** blacklists unhealthy [!DNL Commerce] servers for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using [!DNL Varnish] as a load balancer.
 
 See [Advanced [!DNL Varnish] configuration](../configuration/cache/config-varnish-advanced.md) for more information about implementing these features.
 

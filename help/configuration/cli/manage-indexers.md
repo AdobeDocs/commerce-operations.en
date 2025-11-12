@@ -1,6 +1,6 @@
 ---
 title: Manage the indexers
-description: See examples of how to view and manage Commerce indexers.
+description: Learn how to view and manage Adobe Commerce indexers using command-line tools. Discover indexer commands, status checking, and reindexing techniques.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 ---
 # Manage the indexers

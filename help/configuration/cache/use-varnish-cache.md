@@ -1,6 +1,6 @@
 ---
 title: Cache clearing with Varnish
-description: Learn how cache clearing works with Varnish and how to use it as a web-caching accelerator for the Adobe Commerce application.
+description: Learn how cache clearing works with Varnish web-caching accelerator for Adobe Commerce. Discover cache management and optimization techniques.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
 ---

@@ -1,6 +1,6 @@
 ---
 title: Enable logging
-description: Learn how to enable and disable types of logging.
+description: Learn how to enable and disable different types of logging in Adobe Commerce. Discover logging configuration and management techniques.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
 ---
