@@ -10,7 +10,7 @@ By default, Adobe Commerce supports image resizing on the application side. Howe
 
 The following diagram shows how Nginx retrieves, resizes, and stores images in the cache. Resizing is determined by the parameters included in the URL, such as height and width.
 
-![image resize](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![Nginx configuration for remote storage image resizing showing server block settings](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

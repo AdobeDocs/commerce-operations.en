@@ -4,6 +4,7 @@ description: Apply the ACSD-61799 patch to fix the Adobe Commerce issue where th
 feature: Price Rules
 role: Admin, Developer
 exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
+type: Troubleshooting
 ---
 # ACSD-61799: Incorrect total discount calculation with multiple fixed discount cart rules applied to quote
 

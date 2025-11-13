@@ -25,7 +25,7 @@ The following table shows the version support for each extension relative to the
 
 ## Commerce Services
 
-[Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) are a suite of Adobe-hosted features that provide robust functionality and fast response times, in conjunction with your Commerce instance.
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) are a suite of Adobe-hosted features that provide robust functionality and fast response times, in conjunction with your Commerce instance.
 
 It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
 
@@ -37,3 +37,5 @@ It is recommended that merchants use the most recent version of a service to ens
 The following table shows the version support for each service relative to the Adobe Commerce version.
 
 {{$include /help/_includes/templated/product-availability-services.md}}
+
+<!-- Last updated from includes: 2025-11-10 09:48:28 -->

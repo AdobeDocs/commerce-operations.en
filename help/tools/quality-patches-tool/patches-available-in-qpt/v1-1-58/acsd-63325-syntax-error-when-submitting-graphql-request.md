@@ -4,6 +4,7 @@ description: Apply the ACSD-63325 patch to fix the Adobe Commerce issue where a 
 feature: GraphQL
 Role: Admin, Developer
 exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
+type: Troubleshooting
 ---
 # ACSD-63325: "Syntax Error: Unexpected < EOF >" error when submitting empty [!DNL GraphQL] request
 

@@ -10,4 +10,8 @@ Security patch releases can also include compliance-related changes that are req
 
 Each security patch release is based on the prior full patch release. It contains quality and security fixes from prior patch release and security fixes created between the prior full patch release and the security patch release.
 
-For instructions on downloading and applying security patches, see [Peform and upgrade](../../installation/composer.md#example---security-patch) in the _Upgrade Guide_.
+For instructions on downloading and applying security patches, see [How to obtain and apply security patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in the _Adobe Commerce Knowledgebase_.
+
+>[!NOTE]
+>
+>Extended support security patches for 2.4.4 and 2.4.5 are available to Adobe Commerce customers only and not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).

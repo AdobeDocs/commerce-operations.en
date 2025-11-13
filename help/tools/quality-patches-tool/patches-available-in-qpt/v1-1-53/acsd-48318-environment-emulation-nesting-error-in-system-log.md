@@ -4,6 +4,7 @@ description: Apply the ACSD-48318 patch to fix the Adobe Commerce issue where an
 feature: System, Orders
 role: Admin, Developer
 exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
+type: Troubleshooting
 ---
 # ACSD-48318: Environment emulation nesting error in `system.log`
 

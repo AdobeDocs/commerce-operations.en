@@ -35,6 +35,10 @@ feature: Configuration
         + [Configure Redis](cache/config-redis.md)
         + [Use Redis for default cache](cache/redis-pg-cache.md)
         + [Use Redis for session storage](cache/redis-session.md)
+    + Valkey {#valkey}
+        + [Configure Valkey](cache/config-valkey.md)
+        + [Use Valkey for default cache](cache/valkey-pg-cache.md)
+        + [Use Valkey for session storage](cache/valkey-session.md)
     + Varnish {#varnish}
         + [Varnish overview](cache/config-varnish.md)
         + [Install Varnish](cache/config-varnish-install.md)

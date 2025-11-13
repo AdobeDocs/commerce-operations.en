@@ -4,6 +4,7 @@ description: This article provides an overview of [!DNL Quality Patches Tool] (Q
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
+type: Troubleshooting
 ---
 # Patches available in QPT tool overview
 
@@ -26,7 +27,7 @@ It allows you to:
 
 Here's an example of the status table you can get to view the available patches:
 
-![Magento_patches_list](/help/assets/tools/status_table.png)
+![Quality Patches Tool status table showing available patches and their installation status](/help/assets/tools/status_table.png)
 
 The tool is aimed to enable you to self-serve with patches for issues you might experience with Adobe Commerce, or easily apply patches suggested by Adobe Commerce support.
 

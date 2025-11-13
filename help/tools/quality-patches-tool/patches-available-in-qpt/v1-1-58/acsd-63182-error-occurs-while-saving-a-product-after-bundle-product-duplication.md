@@ -4,6 +4,7 @@ description: Apply the ACSD-63182 patch to fix the Adobe Commerce issue where an
 feature: Inventory, Catalog Management
 Role: Admin, Developer
 exl-id: 2c664c89-e00e-40a8-9127-8c3f36c5bab9
+type: Troubleshooting
 ---
 # ACSD-63182: Error occurs while saving a product after bundle product duplication
 

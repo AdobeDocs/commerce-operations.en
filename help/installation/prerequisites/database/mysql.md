@@ -195,3 +195,5 @@ To configure a MySQL database instance:
 >For Adobe Commerce on cloud infrastructure projects, the `explicit_defaults_for_timestamp` setting for MySQL (MariaDB) defaults to _OFF_.
 
 {{$include /help/_includes/maria-db-config.md}}
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

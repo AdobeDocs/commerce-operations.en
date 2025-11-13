@@ -1,17 +1,23 @@
 ---
 title: System requirements
-description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce releases.
+description: Learn about software dependencies and system requirements for Adobe Commerce. Discover tested configurations to ensure compatibility with your deployment environment.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
 
 The following summarizes software dependencies and services tested for Adobe Commerce.
 
-There are some differences in the dependencies for Commerce on Cloud infrastructure. Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
+There are some differences in the dependencies for Commerce on Cloud. Service version and compatibility support for Adobe Commerce on Cloud is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1 is supported for 2.4.4 Adobe Commerce on Cloud.
+
+>[!NOTE]
+>
+>The system requirements apply to released versions of Adobe Commerce only. Beta or early access versions are not included. See the [release notes](../release/release-notes/overview.md) to learn more about the latest released versions of Adobe Commerce.
 
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
 Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
+
+To ensure a smooth upgrade process and prevent deployment failures, Adobe recommends upgrading RabbitMQ versions incrementally. For example, when upgrading from version 3.8 to 4.1, you should first upgrade from 3.8 to 3.9, then from 3.9 to 3.10, and so on. Only after reaching version 3.13 should you proceed with the upgrade to version 4.1.
 
 >[!BEGINTABS]
 
@@ -54,7 +60,7 @@ For Cloud configuration guidance, see [PHP settings](https://experienceleague.ad
 
 It is recommended that you verify that [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. The `opcache` extension is installed by default in the Commerce on Cloud infrastructure.
 
-For on-premesis, verify that PHP OPcache it is installed, see [PHP settings](prerequisites/php-settings.md). Or for specific guidance on performance settings, see the software recommendations for [PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in the _Performance Best Practices_ guide.
+For on-premises, verify that PHP OPcache is installed, see [PHP settings](prerequisites/php-settings.md). Or for specific guidance on performance settings, see the software recommendations for [PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in the _Performance Best Practices_ guide.
 
 If you must install OPcache separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -119,7 +125,9 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 ### Operating systems (Linux x86-64)
 
-Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar. Microsoft Windows and macOS are not supported.
+Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar.
+
+Microsoft Windows and macOS are **not** supported.
 
 Adobe Commerce requires the following system tools for some operations:
 
@@ -150,3 +158,6 @@ For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.ado
 >[!NOTE]
 >
 >There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in the _Commerce Support Knowledge Base_.
+
+
+<!-- Last updated from includes: 2025-10-10 11:54:17 -->

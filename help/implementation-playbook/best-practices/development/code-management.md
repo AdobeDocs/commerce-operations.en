@@ -109,3 +109,5 @@ This topic is designed to help you decide whether to use Git or Composer to dist
 1. **Start with Git, then move to Composer**
 
    Make the choice for a code management approach at the start of your project. Switching from Git to Composer or conversely, with ongoing development is cumbersome and could lead to code loss and or revision history loss.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

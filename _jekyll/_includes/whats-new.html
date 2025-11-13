@@ -6,9 +6,11 @@
 {%- assign date_this_days_ago = "now" | date: "%s" | minus: this_days_ago %}
 {%- assign entries = whatsnew.entries | sort_by: "date"%}
 {%- assign group_by_date = entries | group_by: "date" %}
+{%- assign has_recent_entries = false %}
 {%- for date_group in group_by_date %}
 {%- assign entry_date_int = date_group.name | date: "%s" | abs %}
 {%- if entry_date_int > date_this_days_ago %}
+{%- assign has_recent_entries = true %}
 
 ### {{ date_group.name }}
 
@@ -28,11 +30,13 @@
       {%- if item.membership == false and item.link contains "github.com" -%}
       <p><i>Community contribution by {{ item.contributor }}</i></p>
       {%- endif -%}</td>
-      <td>{{ item.type }}</td>
+      <td>
+        {{ item.type | replace: "-", " " | capitalize }}
+      </td>
       {%- if item.link contains "git.corp" %}
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/{{ item.merge_commit }}">{{ item.merge_commit | slice: 0, 6 }}</a> (commit)</td>
+      <td><a href="https://github.com/{{ site.repo }}/commit/{{ item.merge_commit }}">commit</a></td>
       {%- else %}
-      <td><a href="{{ item.link }}">{{ item.link | split: "/" | last }}</a> (pull request)</td>
+      <td><a href="{{ item.link }}">pull request</a></td>
       {%- endif %}
     </tr>
   {%- endfor %}
@@ -41,3 +45,8 @@
 
 {%- endif %}
 {%- endfor %}
+
+{%- unless has_recent_entries %}
+
+__No significant documentation updates so far.__
+{%- endunless %}
