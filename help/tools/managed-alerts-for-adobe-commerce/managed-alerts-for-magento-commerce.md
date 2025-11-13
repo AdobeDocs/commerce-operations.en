@@ -48,4 +48,4 @@ See below in the table for links to the KB articles providing troubleshooting st
 
 ## Review alert thresholds set for managed alerts
 
-You can review the alert thresholds configured for managed alerts from your New Relic account. For instructions, see [Monitor performance with managed alerts](investigate-performance.md#monitor-performance-with-managed-alerts).
+You can review the alert thresholds configured for managed alerts from your New Relic account. For instructions, see [Monitor performance with managed alerts](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).
