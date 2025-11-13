@@ -1,6 +1,6 @@
 ---
 title: Cache types
-description: Associate cache frontends with cache types.
+description: Learn how to associate cache frontends with cache types in Adobe Commerce. Discover cache configuration and management techniques.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 ---

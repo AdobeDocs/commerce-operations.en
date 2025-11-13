@@ -3,10 +3,12 @@ title: 'ACSD-54264: Error when customer tries to check out with negotiable quote
 description: Apply the ACSD-54264 patch to fix the Adobe Commerce issue where an error message "You cannot update the requested attribute. Row ID:store_id" appears when a customer tries to check out with a negotiable quote from another store view.
 feature: B2B, Checkout
 role: Admin, Developer
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+type: Troubleshooting
 ---
 # ACSD-54264: Error appears when customer tries to check out with negotiable quote
 
-The ACSD-54264 patch fixes the issue where an error message *You cannot update the requested attribute. Row ID: store_id* appears when a customer tries to check out with a negotiable quote from another store view. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.42 is installed. The patch ID is ACSD-54264. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-54264 patch fixes the issue where an error message *You cannot update the requested attribute. Row ID: store_id* appears when a customer tries to check out with a negotiable quote from another store view. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.42 is installed. The patch ID is ACSD-54264. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -66,7 +68,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

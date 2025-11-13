@@ -3,10 +3,12 @@ title: 'ACSD-56158: Wrong tax value in GraphQL response when multiple tax rules 
 description: Apply the ACSD-56158 patch to fix the Adobe Commerce issue where the tax value rendering in the GraphQL response is incorrect when multiple tax rules are applied to the cart.
 feature: GraphQL, Taxes
 role: Admin, Developer
+exl-id: dc22861c-cd41-402f-be37-d02c02b59433
+type: Troubleshooting
 ---
 # ACSD-56158: Wrong tax value in GraphQL response when multiple tax rules applied to cart
 
-The ACSD-56158 patch fixes the issue where the tax value rendering in the GraphQL response is incorrect when multiple tax rules are applied to the cart. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 is installed. The patch ID is ACSD-56158. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-56158 patch fixes the issue where the tax value rendering in the GraphQL response is incorrect when multiple tax rules are applied to the cart. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.44 is installed. The patch ID is ACSD-56158. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -203,7 +205,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

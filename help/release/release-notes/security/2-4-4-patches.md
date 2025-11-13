@@ -6,7 +6,83 @@ exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 
 # Release notes for Adobe Commerce 2.4.4 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.4-p16
+
+Adobe Commerce 2.4.4-p16 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
+>[!NOTE]
+>
+>Extended support security patches for 2.4.4 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+### Known issues
+
+#### Checkout page fails to load static.min.js and mixins.min.js
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
+
+## 2.4.4-p15
+
+Adobe Commerce 2.4.4-p15 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{b2b-patches}}
+
+## 2.4.4-p14
+
+Adobe Commerce 2.4.4-p14 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+* **API performance enhancement**—Resolves performance degradation in bulk asynchronous web API endpoints that were introduced after the previous security patch.<!-- AC-14078 -->
+
+* **CMS Blocks access fix**—Resolves an issue where Admin users with restricted permissions (such as merchandising-only access) were unable to view the [!UICONTROL CMS Blocks] listing page. 
+
+  Previously, these users encountered an error due to missing configuration parameters after installing previous security patches.<!-- AC-14087 -->
+
+* **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
+
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
+
+## 2.4.4-p13
+
+The Adobe Commerce 2.4.4-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-04.md}}
+
+## 2.4.4-p12
+
+The Adobe Commerce 2.4.4-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
 
 ## 2.4.4-p11
 
@@ -18,7 +94,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ## 2.4.4-p10
 
@@ -28,11 +104,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.4-p9
 
@@ -42,7 +118,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply hotfix for CVE-2024-34102
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### Platform upgrades
 
@@ -50,7 +126,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
@@ -140,7 +216,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## 2.4.4-p2
 
-The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The **Require email confirmation if email has been changed** configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
+The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
@@ -154,7 +230,7 @@ The Adobe Commerce 2.4.4-p1 security release provides fixes for vulnerabilities 
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb22-38.html).t
 
-### Apply `AC-3022.patch` to continue offering DHL as a shipping carrier
+### Apply AC-3022.patch to continue offering DHL as a shipping carrier
 
 DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in the near future. Adobe Commerce 2.4.4 and earlier versions that support the DHL integration support only version 6.0. Merchants deploying these releases should apply `AC-3022.patch` at their earliest convenience to continue offering DHL as a shipping carrier. See the [Apply a patch to continue offering DHL as a shipping carrier](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base article for information about downloading and installing the patch.
 
@@ -170,3 +246,5 @@ Security improvements for this release improve compliance with the latest securi
 **Issue**: Web API and integration tests display this error when run on the 2.4.4-p1 package: `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Workaround**: Install the previous version of Monolog by running the `require monolog/monolog:2.6.0` command. <!-- AC-3651-->
 
 **Issue**: Merchants may notice package version downgrade notices during an upgrade from Adobe Commerce 2.4.4 to Adobe Commerce 2.4.4-p1. These messages can be ignored. The discrepancy in package versions results from anomalies during package generation. No product functionality has been affected. See the [Packages downgraded after upgrading from 2.4.4 to 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) Knowledge Base article for a discussion of affected scenarios and workarounds.
+
+<!-- Last updated from includes: 2025-10-22 11:16:25 -->

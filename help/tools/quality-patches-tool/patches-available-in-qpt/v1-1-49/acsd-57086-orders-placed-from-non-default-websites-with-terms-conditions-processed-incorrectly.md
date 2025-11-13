@@ -3,10 +3,12 @@ title: 'ACSD-57086: Orders from non-default websites with terms and conditions e
 description: Apply the ACSD-57086 patch to fix the Adobe Commerce issue where orders placed from non-default websites with terms and conditions enabled are not processed correctly.
 feature: Orders
 role: Admin, Developer
+exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
+type: Troubleshooting
 ---
 # ACSD-57086: Orders from non-default websites with terms and conditions enabled are processed incorrectly
 
-The ACSD-57086 patch fixes the issue where orders placed from non-default websites with terms and conditions enabled are not processed correctly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49 is installed. The patch ID is ACSD-57086. Please note that this issue was fixed in Adobe Commerce 2.4.7.
+The ACSD-57086 patch fixes the issue where orders placed from non-default websites with terms and conditions enabled are not processed correctly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49 is installed. The patch ID is ACSD-57086. Please note that this issue was fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -90,7 +92,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

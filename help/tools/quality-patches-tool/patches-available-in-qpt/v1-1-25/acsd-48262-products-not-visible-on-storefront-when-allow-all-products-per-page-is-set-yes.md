@@ -3,10 +3,12 @@ title: 'ACSD-48262: products not visible on storefront when [!UICONTROL Allow Al
 description: Apply the ACSD-48262 patch to fix the Adobe Commerce issue where products are not visible on the storefront when the [!UICONTROL Allow All Products Per Page] setting is set to [!UICONTROL Yes].
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
+exl-id: 733ac476-5c3c-4cbe-88b7-f436d15f1c7d
+type: Troubleshooting
 ---
 # ACSD-48262: products not visible on storefront when [!UICONTROL Allow All Products Per Page] is set *[!UICONTROL Yes]*
 
-The ACSD-48262 patch fixes the issue where products are not visible on the storefront when the [!UICONTROL Allow All Products Per Page] setting is set to *[!UICONTROL Yes]*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.25 is installed. The patch ID is ACSD-48262. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-48262 patch fixes the issue where products are not visible on the storefront when the [!UICONTROL Allow All Products Per Page] setting is set to *[!UICONTROL Yes]*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25 is installed. The patch ID is ACSD-48262. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -55,7 +57,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

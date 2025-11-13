@@ -3,10 +3,16 @@ title: 'ACSD-50368: Customers group_id is ignored when a customer is created via
 description: Apply the ACSD-50368 patch to fix the Adobe Commerce issue where the customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API.
 feature: REST
 role: Admin
+exl-id: 1ca78717-2144-4410-a398-764864ee182f
+type: Troubleshooting
 ---
 # ACSD-50368: Customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API
 
-The ACSD-50368 patch fixes the issue where customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33 is installed. The patch ID is ACSD-50368. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7. 
+>[!NOTE]
+>
+>The ACSD-50368 patch is partially deprecated, as this issue is addressed by the mandatory security patch [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) for versions above 2.4.4.
+
+The ACSD-50368 patch fixes the issue where customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33 is installed. The patch ID is ACSD-50368. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7. 
 
 ## Affected products and versions
 
@@ -16,7 +22,7 @@ The ACSD-50368 patch fixes the issue where customers group_id is ignored when a 
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.3 - 2.4.4-p4
+* Adobe Commerce (all deployment methods) 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -120,7 +126,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

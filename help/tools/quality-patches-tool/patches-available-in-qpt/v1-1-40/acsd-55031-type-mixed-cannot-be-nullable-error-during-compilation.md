@@ -3,10 +3,12 @@ title: 'ACSD-55031: `Type "mixed" cannot be nullable` error during compilation'
 description: Apply the ACSD-55031 patch to fix the Adobe Commerce issue where the  the *Type "mixed" cannot be nullable* error during compilation after installing a custom extension.
 feature: Extensions
 role: Admin, Developer
+exl-id: 770d35aa-7ce2-4517-b393-b7c623c9f779
+type: Troubleshooting
 ---
 # ACSD-55031: `Type "mixed" cannot be nullable` error during compilation
 
-The ACSD-55031 patch fixes the issue where the `Type "mixed" cannot be nullable` error during compilation after installing a custom extension. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 is installed. The patch ID is ACSD-55031. Please note that the issue was fixed in Adobe Commerce 2.4.6.
+The ACSD-55031 patch fixes the issue where the `Type "mixed" cannot be nullable` error during compilation after installing a custom extension. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 is installed. The patch ID is ACSD-55031. Please note that the issue was fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -54,7 +56,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

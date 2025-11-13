@@ -118,37 +118,44 @@ For on-premises installations, see [Redis preload feature](../../../configuratio
 
 ## Enable stale cache
 
-Reduce lock waiting times and enhance performance—especially when dealing with numerous Blocks and Cache keys—by using an outdated cache while generating a new cache in parallel. Enable stale cache and define cache types in the `.magento.env.yaml` configuration file:
+Reduce lock waiting times and enhance performance—especially when dealing with numerous Blocks and Cache keys—by using an outdated cache while generating a new cache in parallel. Enable stale cache and define cache types in the `config.php` configuration file (cloud only):
 
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      default:
-        backend_options:
-          use_stale_cache: false
-      stale_cache_enabled:
-        backend_options:
-          use_stale_cache: true
-      type:
-        default:
-          frontend: "default"
-        layout:
-          frontend: "stale_cache_enabled"
-        block_html:
-          frontend: "stale_cache_enabled"
-        reflection:
-          frontend: "stale_cache_enabled"
-        config_integration:
-          frontend: "stale_cache_enabled"
-        config_integration_api:
-          frontend: "stale_cache_enabled"
-        full_page:
-          frontend: "stale_cache_enabled"
-        translate:
-          frontend: "stale_cache_enabled"
+```php
+'cache' => [
+        'frontend' => [
+            'stale_cache_enabled' => [
+                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+                'backend_options' => [
+                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                    'remote_backend_options' => [
+                        'persistent' => 0,
+                        'server' => 'localhost',
+                        'database' => '4',
+                        'port' => '6370',
+                        'password' => ''
+                    ],
+                    'local_backend' => 'Cm_Cache_Backend_File',
+                    'local_backend_options' => [
+                        'cache_dir' => '/dev/shm/'
+                    ],
+                    'use_stale_cache' => true,
+                ],
+                'frontend_options' => [
+                    'write_control' => false,
+                ],
+            ]
+        ],
+        'type' => [
+            'default' => ['frontend' => 'default'],
+            'layout' => ['frontend' => 'stale_cache_enabled'],
+            'block_html' => ['frontend' => 'stale_cache_enabled'],
+            'reflection' => ['frontend' => 'stale_cache_enabled'],
+            'config_integration' => ['frontend' => 'stale_cache_enabled'],
+            'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+            'full_page' => ['frontend' => 'stale_cache_enabled'],
+            'translate' => ['frontend' => 'stale_cache_enabled']
+        ],
+    ]
 ```
 
 >[!NOTE]
@@ -204,15 +211,18 @@ Separating the Redis cache from Redis session allows you to manage the cache and
 
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
+   >[!IMPORTANT]
+   >
+   >Configure the redis session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` redis session service definition.
+
    >[!NOTE]
+   >
    >`disable_locking` must be set to `1`.
-   >   
 
    ```yaml
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
@@ -259,6 +269,67 @@ stage:
             compress_threshold: 20480     # don't compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
+
+## Enable Redis asynchronous freeing (lazyfree)
+
+To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the following Redis configuration be applied to your environment(s):
+
+```
+lazyfree-lazy-eviction yes
+lazyfree-lazy-expire yes
+lazyfree-lazy-server-del yes
+replica-lazy-flush yes
+lazyfree-lazy-user-del yes
+```
+
+When lazyfree is enabled, Redis offloads memory reclamation to background threads for evictions, expirations, server-initiated deletes, user deletes, and replica dataset flushes. This reduces main-thread blocking and can lower request latency.
+
+>[!NOTE]
+>
+>The `lazyfree-lazy-user-del yes` option makes the `DEL` command behave like `UNLINK`, which unlinks keys immediately and frees their memory asynchronously.
+
+>[!WARNING]
+>
+>Because freeing occurs in the background, memory used by deleted/expired/evicted keys remains allocated until background threads complete the work. If your Redis is already under tight memory pressure, test cautiously and consider reducing memory pressure first (for example, disabling Block cache for specific cases and separating cache and session Redis instances as described above).
+
+## Enable Redis multithreaded I/O
+
+To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads/writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+
+```
+io-threads-do-reads yes
+io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
+```
+
+>[!NOTE]
+>
+>I/O threads parallelize client I/O and parsing only. Redis command execution remains single-threaded.
+
+>[!WARNING]
+>
+>Enabling I/O threads can increase CPU usage and does not benefit every workload. Start with a conservative value and benchmark. If latency rises or CPU saturates, reduce `io-threads` or disable reads in I/O threads.
+
+## Increase Redis client timeouts and retries
+
+Raise the cache client's tolerance to transient saturation by adjusting the backend options in `.magento.env.yaml`:
+
+```yaml
+stage:
+  deploy:
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            read_timeout: 10
+            connect_retries: 5
+```
+
+These settings increase client tolerance to brief congestion on Redis by extending the reply wait window and retrying connection setup. This can reduce intermittent `cannot connect to localhost:6370` and read-timeout errors during short spikes.
+
+>[!NOTE]
+>
+>They are not a fix for persistent overload.
 
 ## Additional information
 

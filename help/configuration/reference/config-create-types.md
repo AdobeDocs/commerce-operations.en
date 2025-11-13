@@ -1,6 +1,6 @@
 ---
 title: Configuration types
-description: Create or extend configuration types.
+description: Learn how to create and extend configuration types in Adobe Commerce. Discover module configuration and customization techniques.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
 ---
 # Configuration types
@@ -85,8 +85,8 @@ To create a configuration type:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All Rights Reserved.
  */
 
 namespace Vendor\ModuleName\Model\Config;

@@ -3,10 +3,12 @@ title: 'ACSD-47054: Preview content slow as all stores reindex'
 description: Apply the ACSD-47054 patch to fix the Adobe Commerce issue where the preview page is slow to load due to the reindex of all stores.
 feature: Page Content
 role: Admin, Developer
+exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
+type: Troubleshooting
 ---
 # ACSD-47054: Preview content slow as all stores reindex
 
-The ACSD-47054 patch fixes the issue where a preview of the content staging takes longer to load when there are many stores. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.37 is installed. The patch ID is ACSD-47054. Please note that the issue was fixed in Adobe Commerce 2.4.6.
+The ACSD-47054 patch fixes the issue where a preview of the content staging takes longer to load when there are many stores. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.37 is installed. The patch ID is ACSD-47054. Please note that the issue was fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -53,7 +55,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

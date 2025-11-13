@@ -1,23 +1,16 @@
-{%- assign current_month = "today" | date: "%m" %}
-{%- if current_month == "01" %}
-{%- assign n_years = 2 %}
-{%- assign n_months = 1 %}
-{%- else %}
-{%- assign n_years = 1 %}
-{%- assign n_months = 2 %}
-{%- endif %}
-
 ## {{ whatsnew.title }}
 
 {{ whatsnew.description }}
 
-{%- assign entries = whatsnew.entries %}
-{%- assign grouped_by_year = entries | group_by_exp: "entry", "entry.date | date: '%Y'" %}
-{%- for year_group in grouped_by_year limit:n_years %}
-{%- assign grouped_by_month = year_group.items | group_by_exp: "entry", "entry.date | date: '%B'" %}
-{%- for month_group in grouped_by_month limit:n_months %}
-{%- assign grouped_by_date = month_group.items | group_by: "date" %}
-{%- for date_group in grouped_by_date %}
+{%- assign this_days_ago = 60 | times: 86400 %}
+{%- assign date_this_days_ago = "now" | date: "%s" | minus: this_days_ago %}
+{%- assign entries = whatsnew.entries | sort_by: "date"%}
+{%- assign group_by_date = entries | group_by: "date" %}
+{%- assign has_recent_entries = false %}
+{%- for date_group in group_by_date %}
+{%- assign entry_date_int = date_group.name | date: "%s" | abs %}
+{%- if entry_date_int > date_this_days_ago %}
+{%- assign has_recent_entries = true %}
 
 ### {{ date_group.name }}
 
@@ -37,16 +30,23 @@
       {%- if item.membership == false and item.link contains "github.com" -%}
       <p><i>Community contribution by {{ item.contributor }}</i></p>
       {%- endif -%}</td>
-      <td>{{ item.type }}</td>
+      <td>
+        {{ item.type | replace: "-", " " | capitalize }}
+      </td>
       {%- if item.link contains "git.corp" %}
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/{{ item.merge_commit }}">{{ item.merge_commit | slice: 0, 6 }}</a> (commit)</td>
+      <td><a href="https://github.com/{{ site.repo }}/commit/{{ item.merge_commit }}">commit</a></td>
       {%- else %}
-      <td><a href="{{ item.link }}">{{ item.link | split: "/" | last }}</a> (pull request)</td>
+      <td><a href="{{ item.link }}">pull request</a></td>
       {%- endif %}
     </tr>
   {%- endfor %}
   </tbody>
 </table>
-{%- endfor %}<!-- date_group -->
-{%- endfor %}<!-- month_group -->
-{%- endfor %}<!-- year_group -->
+
+{%- endif %}
+{%- endfor %}
+
+{%- unless has_recent_entries %}
+
+__No significant documentation updates so far.__
+{%- endunless %}

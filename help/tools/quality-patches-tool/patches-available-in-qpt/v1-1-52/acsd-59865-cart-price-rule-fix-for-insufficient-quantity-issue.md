@@ -1,12 +1,14 @@
 ---
-title: "ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity"
+title: 'ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity'
 description: Apply the ACSD-59865 patch to fix the Adobe Commerce issue where the *Discount quantity step* value in *Fixed amount discount,* *Percent of product price discount,* and *Buy X get Y* [!UICONTROL Cart Price Rules] no longer cancels the action of previous rules.
 feature: Price Rules
 role: Admin, Developer
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
+type: Troubleshooting
 ---
 # ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity
 
-The ACSD-59865 patch fixes the issue where the *[!UICONTROL Discount quantity step]* value in *[!UICONTROL Fixed amount discount],* *[!UICONTROL Percent of product price discount],* and *[!UICONTROL Buy X get Y]* [!UICONTROL Cart Price Rules] no longer cancels the action of previous rules. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59865. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-59865 patch fixes the issue where the *[!UICONTROL Discount quantity step]* value in *[!UICONTROL Fixed amount discount],* *[!UICONTROL Percent of product price discount],* and *[!UICONTROL Buy X get Y]* [!UICONTROL Cart Price Rules] no longer cancels the action of previous rules. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59865. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -75,7 +77,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

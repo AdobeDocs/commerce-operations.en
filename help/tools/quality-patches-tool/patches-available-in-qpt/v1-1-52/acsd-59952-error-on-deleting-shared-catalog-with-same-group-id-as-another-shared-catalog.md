@@ -1,13 +1,14 @@
 ---
-title: "ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog"
+title: 'ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog'
 description: Apply the ACSD-59952 patch to fix the Adobe Commerce issue where an error is thrown when deleting a shared catalog with the same `customer_group_id` as another shared catalog.
 feature: B2B, REST
 role: Admin, Developer
+exl-id: 11cba2e6-dd62-4063-a38c-b98ea70a72e9
+type: Troubleshooting
 ---
-
 # ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog
 
-The ACSD-59952 patch fixes the error thrown when deleting shared catalogs with the same `customer_group_id` as another shared catalog. It further prevents users from creating such shared catalogs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59952. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-59952 patch fixes the error thrown when deleting shared catalogs with the same `customer_group_id` as another shared catalog. It further prevents users from creating such shared catalogs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59952. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -77,7 +78,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

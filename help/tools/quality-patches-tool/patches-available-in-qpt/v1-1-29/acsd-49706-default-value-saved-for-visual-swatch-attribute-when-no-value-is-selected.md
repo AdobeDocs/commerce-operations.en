@@ -3,10 +3,12 @@ title: 'ACSD-49706: Default value saved for visual swatch attribute when no valu
 description: Apply the ACSD-49706 patch to fix the Adobe Commerce issue where a default value is saved for a visual swatch attribute when no value is selected.
 feature: Admin Workspace, Attributes
 role: Admin
+exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+type: Troubleshooting
 ---
 # ACSD-49706: Default value saved for visual swatch attribute when no value is selected
 
-The ACSD-49706 patch fixes the issue where a default value is saved for a visual swatch attribute when no value is selected. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.29 is installed. The patch ID is ACSD-49706. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-49706 patch fixes the issue where a default value is saved for a visual swatch attribute when no value is selected. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.29 is installed. The patch ID is ACSD-49706. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -66,7 +68,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -3,10 +3,16 @@ title: "ACSD-55100: [!DNL GraphQL] doesn't return products beyond 10k in search 
 description: Apply the ACSD-55100 patch to fix the Adobe Commerce issue where the GraphQL does not return products beyond *10k* in the search results.
 feature: GraphQL, Products, Search
 role: Admin, Developer
+exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
+type: Troubleshooting
 ---
 # ACSD-55100: [!DNL GraphQL] doesn't return products beyond 10k in search results
 
-The ACSD-55100 patch fixes the issue where [!DNL GraphQL] does not return products beyond *10k* in the search results. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 is installed. The patch ID is ACSD-55100. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7. 
+>[!NOTE]
+>
+>An updated patch ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) has been released to resolve the same issue for versions 2.4.6 - 2.4.6-p8. For more details, see [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
+
+The ACSD-55100 patch fixes the issue where [!DNL GraphQL] does not return products beyond *10k* in the search results. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.46 is installed. The patch ID is ACSD-55100. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
 
 ## Affected products and versions
 
@@ -119,7 +125,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -3,10 +3,12 @@ title: 'ACSD-53118: Cart rules with coupon not working properly'
 description: Apply the ACSD-53118 patch to fix the Adobe Commerce issue where the cart price rule is applied using a coupon code while the product in the cart has an empty matching attribute.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
+exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
+type: Troubleshooting
 ---
 # ACSD-53118: Cart rules with coupon not working properly
 
-The ACSD-53118 patch fixes the issue where the cart price rule is applied using a coupon code while the product in the cart has an empty matching attribute. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.41 is installed. The patch ID is ACSD-53118. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-53118 patch fixes the issue where the cart price rule is applied using a coupon code while the product in the cart has an empty matching attribute. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.41 is installed. The patch ID is ACSD-53118. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -56,7 +58,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -3,10 +3,12 @@ title: 'ACSD-53636: Regular price is not displayed on [!UICONTROL Product Listin
 description: Apply the ACSD-53636 patch to fix the Adobe Commerce issue where the regular price is not displayed on *[!UICONTROL Product Listing]* pages for configurable products that have child products with special prices.
 feature: Catalog Management, Products
 role: Admin, Developer
+exl-id: e6d66ae4-2c21-466a-b03c-a1f486e7fa29
+type: Troubleshooting
 ---
 # ACSD-53636: Regular price is not displayed on *[!UICONTROL Product Listing]* page
 
-The ACSD-53636 patch fixes the issue where the regular price is not displayed on *[!UICONTROL Product Listing]* pages for configurable products that have child products with special prices. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 is installed. The patch ID is ACSD-53636. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-53636 patch fixes the issue where the regular price is not displayed on *[!UICONTROL Product Listing]* pages for configurable products that have child products with special prices. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43 is installed. The patch ID is ACSD-53636. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -52,7 +54,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

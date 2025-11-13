@@ -1,12 +1,14 @@
 ---
-title: "ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap"
+title: 'ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap'
 description: Apply the ACSD-61322 patch to fix the Adobe Commerce issue where products/categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General) group are still included in the XML Sitemap.
 feature: Site Navigation, B2B
 role: Admin, Developer
+exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
+type: Troubleshooting
 ---
 # ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap
 
-The ACSD-61322 patch fixes the issue where products/categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General) group are still included in the XML Sitemap. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-61322. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61322 patch fixes the issue where products/categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General) group are still included in the XML Sitemap. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-61322. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -59,7 +61,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

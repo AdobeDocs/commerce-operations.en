@@ -3,6 +3,8 @@ title: 'ACSD-54418: Fixed discount amount incorrectly added to child product of 
 description: Apply the ACSD-54418 patch to fix the Adobe Commerce issue where the fixed discount amount is incorrectly applied to each child product of the dynamically priced bundle.
 feature: Shopping Cart
 role: Admin, Developer
+exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
+type: Troubleshooting
 ---
 # ACSD-54418: Fixed discount amount incorrectly added to child product of dynamically priced bundle.
 
@@ -53,7 +55,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

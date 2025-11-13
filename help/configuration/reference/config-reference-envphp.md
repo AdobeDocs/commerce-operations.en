@@ -1,6 +1,6 @@
 ---
 title: env.php reference
-description: See a list of values for the env.php file.
+description: Learn about env.php file configuration values and sections in Adobe Commerce. Discover environment settings and configuration options.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 ---
 # env.php reference
@@ -166,11 +166,19 @@ All database configurations are available in this node.
 
 ## default_connection
 
-Defines the default connection for message queues. The value can be `db`, `amqp`, or a custom queue system like `redismq`. If you specify any value other than `db`, the message queue software must be installed and configured first. Otherwise, messages will not be processed correctly.
+Defines the default connection for message queues. The value can be `db`, `amqp`, `stomp`, or a custom queue system like `redismq`. If you specify any value other than `db`, the message queue software must be installed and configured first. Otherwise, messages will not be processed correctly.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+For STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -227,13 +235,13 @@ Learn more about [application Modes](../cli/set-mode.md).
 
 ## queue
 
-Message queue configurations are available in this node.
+Message queue configurations are available in this node. You can configure RabbitMQ (AMQP) or ActiveMQ Artemis (STOMP) as your message broker.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
@@ -294,3 +302,80 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Add variables to file configuration
+
+You can set or override every configuration option (variable with value) with operating system (OS)-level environment variables.
+
+The `env.php` configuration is stored in an array with nested levels. To convert a nested array path to a string for OS environment variables, concatenate each key in the path with double underscore characters `__`, uppercased, and prefixed with `MAGENTO_DC_`.
+
+For example, let's convert the session save handler from `env.php` configuration to an OS environment variable.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+Concatenated with `__` and uppercased keys will become `SESSION__SAVE`.
+
+Then, we prefix it with `MAGENTO_DC_` to get the resulting OS environment variable name `MAGENTO_DC_SESSION__SAVE`.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+As another example, let's convert a scalar `env.php` configuration option path.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>While the variable name should be uppercased, the value is case sensitive and should be preserved as documented.
+
+We simply uppercase it and prefix with `MAGENTO_DC_` to receive the final OS environment variable name `MAGENTO_DC_X-FRAME-OPTIONS`.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Note that `env.php` content will have priority over the OS environment variables.
+
+## Override file configuration with variables
+
+To override the existing `env.php` configuration options with an OS environment variable, the array element of the configuration must be JSON encoded and set as a value of the `MAGENTO_DC__OVERRIDE` OS variable.
+
+When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the corresponding values in the `env.php` file and reads the configuration directly from the environment variable. The values in the `env.php` file remain unchanged but are ignored for the overridden configuration sections.
+
+>[!IMPORTANT]
+>
+>The `MAGENTO_DC__OVERRIDE` variable completely bypasses the specified configuration sections in the `env.php` file. This behavior is different from individual `MAGENTO_DC_` variables, which have lower priority than values in the `env.php` file.
+
+If you need to override multiple configuration options, assemble them all in a single array before JSON encoding.
+
+For example, let's override the following `env.php` configurations:
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+The JSON encoded text of the above array would be
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+Now, set it as the value of the `MAGENTO_DC__OVERRIDE` OS variable.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Ensure the JSON encoded array is properly quoted and/or escaped if needed, to prevent the OS from corrupting the encoded string.

@@ -1,8 +1,10 @@
 ---
-title: "ACSD-60584: Access token created for one website is allowed to access information on other websites"
+title: 'ACSD-60584: Access token created for one website is allowed to access information on other websites'
 description: Apply the ACSD-60584 patch to fix the issue where the access token created for the user on one website is allowed to access or change customer information on other websites.
 feature: Customers, GraphQL
 role: Admin, Developer
+exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
+type: Troubleshooting
 ---
 # ACSD-60584: Access token created for one website is allowed to access information on other websites
 
@@ -54,7 +56,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

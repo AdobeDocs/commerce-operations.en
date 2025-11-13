@@ -3,6 +3,8 @@ title: 'ACSD-51431: Indexer status is *[!UICONTROL Working]* even though there a
 description: Apply the ACSD-51431 patch to fix the Adobe Commerce issue where the indexer status is *[!UICONTROL Working]* even though there are no entries in the changelog.
 feature: Logs, Price Indexer
 role: Admin
+exl-id: c87c059b-f435-468d-a7fe-e6786fdba1f8
+type: Troubleshooting
 ---
 # ACSD-51431: Indexer status is *[!UICONTROL Working]* even though there are no entries in the changelog
 
@@ -52,7 +54,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

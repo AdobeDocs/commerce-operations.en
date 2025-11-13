@@ -3,6 +3,8 @@ title: "ACSD-52041: Page Builder rendering doesn't release locks"
 description: Apply the ACSD-52041 patch to fix the Adobe Commerce issue where the Page Builder renders for five seconds without releasing locks.
 feature: Page Builder
 role: Admin, Developer
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+type: Troubleshooting
 ---
 # ACSD-52041: Page Builder rendering doesn't release locks
 
@@ -48,14 +50,14 @@ Error in console: ``Page Builder was rendering for 5 seconds without releasing l
 
 To apply individual patches for versions **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4, and 2.4.6 - 2.4.6-p2**, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

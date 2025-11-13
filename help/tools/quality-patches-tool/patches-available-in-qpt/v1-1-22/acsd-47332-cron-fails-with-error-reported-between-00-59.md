@@ -3,10 +3,12 @@ title: 'ACSD-47332: cron fails with error reported only between 00:00 to 00:59 U
 description: Apply the ACSD-47332 patch to fix the Adobe Commerce issue where cron fails with an error that is reported only when it is running between 00:00 to 00:59 UTC.
 feature: Configuration
 role: Admin
+exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
+type: Troubleshooting
 ---
 # ACSD-47332: cron fails with error reported only when running between 00:00 to 00:59 UTC
 
-The ACSD-47332 patch fixes the issue where cron fails with an error that is reported only when it is running between 00:00 to 00:59 UTC. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.22 is installed. The patch ID is ACSD-47332. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-47332 patch fixes the issue where cron fails with an error that is reported only when it is running between 00:00 to 00:59 UTC. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 is installed. The patch ID is ACSD-47332. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -56,7 +58,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

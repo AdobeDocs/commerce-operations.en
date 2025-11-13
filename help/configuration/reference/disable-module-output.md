@@ -1,6 +1,6 @@
 ---
 title: Disable module output
-description: Learn how to disable module output.
+description: Learn how to disable module output in Adobe Commerce without removing dependencies. Discover configuration steps and use cases.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
 ---
 # Disable module output
@@ -95,4 +95,7 @@ The procedure for disabling module output on a single instance of Commerce is ea
    ```
 
 In this example, output for the `Magento_Review` module has been disabled and customers can no longer review products.
-To re-enable output, set the value to `0`.
+
+### Re-enable module output
+
+To re-enable output, set the value for the module to `0`, or remove the line/module from the `config.php` file.

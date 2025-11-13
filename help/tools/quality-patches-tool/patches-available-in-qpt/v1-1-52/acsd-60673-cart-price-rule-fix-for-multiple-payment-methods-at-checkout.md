@@ -1,12 +1,14 @@
 ---
-title: "ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout"
+title: 'ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout'
 description: Apply the ACSD-60673 patch to fix the Adobe Commerce issue where the discounts from a [!UICONTROL Cart Price Rule] that use a payment method condition are not always listed in the totals.
 feature: Price Rules
 role: Admin, Developer
+exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
+type: Troubleshooting
 ---
 # ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout
 
-The ACSD-60673 patch fixes the issue where the discounts from a [!UICONTROL Cart Price Rule] that use a payment method condition are not always listed in the totals. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-60673. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60673 patch fixes the issue where the discounts from a [!UICONTROL Cart Price Rule] that use a payment method condition are not always listed in the totals. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-60673. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -65,7 +67,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

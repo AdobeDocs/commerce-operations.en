@@ -3,6 +3,8 @@ title: 'ACSD-53728: Product EAV indexer takes a long time to complete'
 description: Apply the ACSD-53728 patch to fix the Adobe Commerce issue where the product EAV indexer is taking a long time to complete.
 feature: Products, Attributes
 role: Admin, Developer
+exl-id: 6cf3e401-ec28-4f80-b628-d1584f771c45
+type: Troubleshooting
 ---
 # ACSD-53728: Product EAV indexer takes a long time to complete
 
@@ -52,7 +54,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

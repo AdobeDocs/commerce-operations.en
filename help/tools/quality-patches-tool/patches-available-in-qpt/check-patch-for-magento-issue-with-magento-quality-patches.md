@@ -3,6 +3,8 @@ title: Check patch for Adobe Commerce issue with Quality Patches Tool
 description: This article provides an overview of Quality Patches Tool (QPT) and links to resources explaining how to use it.
 feature: Tools and External Services
 role: Admin
+exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
+type: Troubleshooting
 ---
 # Check patch for Adobe Commerce issue with Quality Patches Tool
 
@@ -25,7 +27,7 @@ It allows you to:
 
 Here's an example of the status table you can get to view the available patches:
 
-![Magento_patches_list](/help/assets/tools/status_table.png)
+![Quality Patches Tool status table showing available patches and their installation status](/help/assets/tools/status_table.png)
 
 The tool is aimed to enable you to self-serve with patches for issues you might experience with Adobe Commerce, or easily apply patches suggested by Adobe Commerce support.
 

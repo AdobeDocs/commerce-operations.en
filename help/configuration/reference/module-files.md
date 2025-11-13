@@ -1,6 +1,6 @@
 ---
 title: Module configuration files
-description: Learn how to customize a module using configuration types.
+description: Learn how to customize modules using configuration types in Adobe Commerce. Discover configuration file management and module customization best practices.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
 ---
 # Overview of module configuration files
@@ -75,7 +75,7 @@ The following table shows each configuration type and the Commerce configuration
 | --- | --- | --- | --- |
 | `address_formats.xml`|Address format declaration|primary, global|[\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml`|[Access Control List](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml)|global|[\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml`|[Advanced reporting]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/)|primary, global|[\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml`|[Advanced reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/)|primary, global|[\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml`|Cache type declaration|primary, global|[\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml`|Catalog attributes configuration|global|[\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` and `env.php`|[Deployment configuration](../reference/deployment-files.md)|These files are readable/writeable by the internal config processor.|Has no object, cannot be customized|

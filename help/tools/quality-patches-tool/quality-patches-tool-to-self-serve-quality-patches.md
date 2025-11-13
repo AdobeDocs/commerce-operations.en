@@ -1,8 +1,9 @@
 ---
-title: "[!DNL Quality Patches Tool]: A self-service tool for quality patches"
-description: "[!DNL Quality Patches Tool] allows you to apply, revert, and view general information about quality patches available for your installed version of Adobe Commerce (both on-premises and on cloud infrastructure) or Magento Open Source."
+title: '[!DNL Quality Patches Tool]: A self-service tool for quality patches'
+description: '[!DNL Quality Patches Tool] allows you to apply, revert, and view general information about quality patches available for your installed version of Adobe Commerce (both on-premises and on cloud infrastructure) or Magento Open Source.'
 feature: Tools and External Services
 role: Admin
+exl-id: a83d3834-841d-4b90-b40a-fda985a85452
 ---
 # [!DNL Quality Patches Tool]: A self-service tool for quality patches
 

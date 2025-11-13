@@ -1,8 +1,10 @@
 ---
-title: "ACSD-59366: Delete teams with deactivated users not visible in the team list"
+title: 'ACSD-59366: Delete teams with deactivated users not visible in the team list'
 description: Apply the ACSD-59366 patch to fix the Adobe Commerce issue where an error occurs when you attempt deleting a team that contains deactivated users who are not visible in the team list.
 feature: GraphQL, Companies
 role: Admin, Developer
+exl-id: 406d2242-38f9-4852-b311-0ee57c4a7c26
+type: Troubleshooting
 ---
 # ACSD-59366: Delete teams with deactivated users not visible in the team list
 
@@ -58,5 +60,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
-

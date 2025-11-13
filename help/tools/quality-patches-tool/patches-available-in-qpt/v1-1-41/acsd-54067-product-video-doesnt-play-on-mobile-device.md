@@ -3,10 +3,12 @@ title: 'ACSD-54067: Product video does not play on mobile device'
 description: Apply the ACSD-54067 patch to fix the Adobe Commerce issue where a product video doesn't play on a mobile device.
 feature: Media, Products
 role: Admin, Developer
+exl-id: 023e7cf7-c344-4e86-850d-741b85df87a9
+type: Troubleshooting
 ---
 # ACSD-54067: Product video doesn't play on a mobile device
 
-The ACSD-54067 patch fixes the issue where a product video doesn't play on a mobile device. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.41 is installed. The patch ID is ACSD-54067. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-54067 patch fixes the issue where a product video doesn't play on a mobile device. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.41 is installed. The patch ID is ACSD-54067. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -56,7 +58,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

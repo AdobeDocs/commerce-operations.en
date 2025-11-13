@@ -1,6 +1,6 @@
 ---
 title: Run unit tests
-description: Run unit tests defined in the Adobe Commerce code base.
+description: Learn how to run unit tests defined in the Adobe Commerce codebase. Discover testing commands, execution options, and result reporting.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 ---
 # Run unit tests

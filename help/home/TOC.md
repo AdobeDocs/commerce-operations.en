@@ -8,11 +8,9 @@ feature: Configuration, Best Practices, Install, Integration, Security, Release 
 
 - [Operational Guides Home](home.md)
 - [Release Information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
-- [Performance](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
-- [Security and Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Implementation Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
-- [Operational Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [Commerce at Scale](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Security and Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [Performance](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
 - [Installation (on-premises)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)

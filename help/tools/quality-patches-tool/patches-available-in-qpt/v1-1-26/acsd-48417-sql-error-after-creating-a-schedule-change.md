@@ -3,10 +3,12 @@ title: 'ACSD-48417: SQL error after creating a schedule change'
 description: Apply the ACSD-48417 patch to fix the Adobe Commerce issue where an SQL error appears after creating a schedule change for a product and saving another product.
 feature: Storage
 role: Admin
+exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
+type: Troubleshooting
 ---
 # ACSD-48417: SQL error after creating a schedule change
 
-The ACSD-48417 patch fixes the issue where an SQL error appears after creating a schedule change for a product and saving another product. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.26 is installed. The patch ID is ACSD-48417. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-48417 patch fixes the issue where an SQL error appears after creating a schedule change for a product and saving another product. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.26 is installed. The patch ID is ACSD-48417. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -72,7 +74,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

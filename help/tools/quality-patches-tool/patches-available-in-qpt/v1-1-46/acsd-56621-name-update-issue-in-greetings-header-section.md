@@ -3,10 +3,12 @@ title: 'ACSD-56621: Updated names not displayed in greetings header for company 
 description: Apply the ACSD-56621 patch to fix the Adobe Commerce issue where the updated first name and last name of the company admin user are not reflected in the greetings header section.
 feature: Companies, B2B, User Account
 role: Admin, Developer
+exl-id: 739c1c8c-e079-4ad7-be97-7c60b0347e12
+type: Troubleshooting
 ---
 # ACSD-56621: Updated names not displayed in greetings header for company admin user
 
-The ACSD-56621 patch fixes the issue where the updated first name and last name of the company admin user are not reflected in the greetings header section. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 is installed. The patch ID is ACSD-56621. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-56621 patch fixes the issue where the updated first name and last name of the company admin user are not reflected in the greetings header section. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.46 is installed. The patch ID is ACSD-56621. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -54,7 +56,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

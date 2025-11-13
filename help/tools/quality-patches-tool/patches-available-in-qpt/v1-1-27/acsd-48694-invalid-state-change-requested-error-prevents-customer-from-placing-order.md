@@ -3,10 +3,12 @@ title: 'ACSD-48694: Invalid state change requested error prevents customer from 
 description: Apply the ACSD-48694 patch to fix the Adobe Commerce issue where the error *Invalid state change requested* prevents a customer from placing an order.
 feature: Admin Workspace, Orders
 role: Admin
+exl-id: 6b9fa474-1d9d-411d-bbca-ce7463cfeb0d
+type: Troubleshooting
 ---
 # ACSD-48694: *Invalid state change requested* error prevents customer from placing order
 
-The ACSD-48694 patch fixes the issue where the error *Invalid state change requested* prevents a customer from placing an order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 is installed. The patch ID is ACSD-48694. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-48694 patch fixes the issue where the error *Invalid state change requested* prevents a customer from placing an order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.27 is installed. The patch ID is ACSD-48694. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -59,7 +61,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

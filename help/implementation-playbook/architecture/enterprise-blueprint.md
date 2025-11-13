@@ -35,11 +35,14 @@ See the following cloud foundation technical details:
 
 Adobe Commerce integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
-[Data Connection](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
+[Data Connection](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
 
 >[!NOTE]
 >
->See [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more technical detail.
+>See the following reosurces for more information:
+>
+>- [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more technical detail.
+>- See [Personalizing the Customer Experience](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integration with third-party systems
@@ -57,15 +60,20 @@ Adobe provides the following developer tools for building integrations and custo
 - [**Events**](https://developer.adobe.com/commerce/extensibility/events/)—Use custom event triggers to interact with other extensible development tools.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to automatically trigger interactions between Commerce and third-party systems.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/)—Accelerate your backoffice integrations with reference integrations, onboarding scripts, and a standardized architecture.
+
+>[!NOTE]
+>
+>See [The Modern Approach: Effective Extensibility in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Storefront services
 
 Adobe provides a rich set of intelligent, composable merchandizing services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
-- [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-- [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-- [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
-- [Payment Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+- [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
+- [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
+- [Payment Services](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Headless storefront
 

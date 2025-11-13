@@ -1,6 +1,6 @@
 ---
 title: Catalog configuration paths reference
-description: See a list of catalog configuration values.
+description: Learn about catalog configuration paths and values in Adobe Commerce Admin settings. Discover product, category, and catalog management configuration options.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 ---
@@ -144,6 +144,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 {style="table-layout:auto"}
 
 ## Visual Merchandiser paths
+
+[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **Visual Merchandiser**.
 

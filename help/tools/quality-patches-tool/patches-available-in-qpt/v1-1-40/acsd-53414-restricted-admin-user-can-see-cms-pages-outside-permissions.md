@@ -3,10 +3,12 @@ title: 'ACSD-53414: Restricted admin users can see CMS pages outside their permi
 description: Apply the ACSD-53414 patch to fix the Adobe Commerce issue where a restricted admin user can see CMS pages outside of their permissions scope.
 feature: CMS
 role: Admin, Developer
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+type: Troubleshooting
 ---
 # ACSD-53414: Restricted admin users can see CMS pages outside their permissions scope
 
-The ACSD-53414 patch fixes the issue where a restricted admin user can see CMS pages outside their permissions scope. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 is installed. The patch ID is ACSD-53414. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-53414 patch fixes the issue where a restricted admin user can see CMS pages outside their permissions scope. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 is installed. The patch ID is ACSD-53414. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -58,7 +60,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -3,6 +3,8 @@ title: "ACSD-51845: Can't update subsequent products with tier prices & differen
 description: Apply the ACSD-51845 patch to fix the Adobe Commerce issue where you can't update subsequent products with tier prices and different attribute sets via asynchronous bulk [!DNL REST API].
 feature: REST, Products
 role: Admin
+exl-id: 83d97946-83da-4c1b-8f2a-21a64ee84e93
+type: Troubleshooting
 ---
 # ACSD-51845: Can't update subsequent products with tier prices & different attribute sets via asynch bulk [!DNL API]
 
@@ -55,7 +57,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

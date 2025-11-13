@@ -3,10 +3,12 @@ title: 'ACSD-54983: Company user UID with GraphQL not available with inactive us
 description: Apply the ACSD-54983 patch to fix the Adobe Commerce issue where it's not possible to get the company user UID with GraphQL request when the user status is set to inactive.
 feature: GraphQL
 role: Admin, Developer
+exl-id: b188270f-5454-41c9-8370-f4c396095297
+type: Troubleshooting
 ---
 # ACSD-54983: Company user UID with GraphQL not available with inactive user
 
-The ACSD-54983 patch fixes the issue where it's not possible to get the company user UID with GraphQL request when the user status is set to inactive. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 is installed. The patch ID is ACSD-54983. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-54983 patch fixes the issue where it's not possible to get the company user UID with GraphQL request when the user status is set to inactive. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43 is installed. The patch ID is ACSD-54983. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -56,7 +58,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

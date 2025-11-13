@@ -1,6 +1,6 @@
 ---
 title: Customers configuration paths reference
-description: See a list of customers configuration values.
+description: Learn about customer configuration paths and values in Adobe Commerce Admin settings. Discover newsletter, account management, and customer service options.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
 ---

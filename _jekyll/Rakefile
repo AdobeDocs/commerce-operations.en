@@ -1,5 +1,4 @@
 #
-# ADOBE CONFIDENTIAL
 # Copyright 2024 Adobe All Rights Reserved.
 # NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
 # The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
@@ -8,43 +7,11 @@
 
 # frozen_string_literal: true
 
+require 'adobe-comdox-exl-rake-tasks'
 require 'yaml'
 require 'colorator'
-
-desc 'Generate data for a news digest.
-      Default timeframe is since last update.
-      For other period, use "since" argument, such as, rake whatsnew since="jul 4"'
-task :whatsnew do
-  since = ENV['since']
-  current_file = '_data/whats-new.yml'
-  generated_file = 'tmp/whats-new.yml'
-  current_data = YAML.load_file current_file
-  last_update = current_data['updated']
-  print 'Generating data for the What\'s New digest: $ '.magenta
-
-  # Generate tmp/whats-new.yml
-  report =
-    if since.nil? || since.empty?
-      `bundle exec whatsup_github since '#{last_update}'`
-    elsif since.is_a? String
-      `bundle exec whatsup_github since '#{since}'`
-    else
-      abort 'The "since" argument must be a string. Example: "jul 4"'
-    end
-
-  # Merge generated tmp/whats-new.yml with existing src/_data/whats-new.yml
-  generated_data = YAML.load_file generated_file
-  current_data['entries'] = [] if current_data['entries'].nil?
-  current_data['updated'] = generated_data['updated']
-  current_data['entries'].prepend(generated_data['entries']).flatten!
-  current_data['entries'].uniq! { |entry| entry['link'] }
-
-  puts "Writing updates to #{current_file}"
-  File.write current_file, current_data.to_yaml
-
-  abort report if report.include? 'MISSING whatsnew'
-  puts report
-end
+require 'date'
+require 'json'
 
 desc 'Generate data for a news digest at Best Practices.
       Default timeframe is since last update.
@@ -60,9 +27,9 @@ task :whatsnew_bp do
   # Generate tmp/whats-new.yml
   report =
     if since.nil? || since.empty?
-      `bundle exec whatsup_github since '#{last_update}' --config .whatsup-bp.yml`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{last_update}' --config .whatsup-bp.yml`
     elsif since.is_a? String
-      `bundle exec whatsup_github since '#{since}' --config .whatsup-bp.yml`
+      `TZ='America/Chicago' bundle exec whatsup_github since '#{since}' --config .whatsup-bp.yml`
     else
       abort 'The "since" argument must be a string. Example: "jul 4"'
     end
@@ -81,42 +48,21 @@ task :whatsnew_bp do
   puts report
 end
 
-desc 'Render the templated files.
-  Renders the templated files in the "_jekyll/templates" directory. The result will be found in the "help/includes/templated" directory.'
-task :render do
-  sh '_scripts/render'
+desc 'Get released versions. Requires GitHub CLI.
+  Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.'
+task :get_released_versions do
+  Dir.mkdir('tmp') unless Dir.exist?('tmp')
+  releases_json = `gh release list --repo=magento/magento2 --limit 10 --json tagName,publishedAt`
+  releases = JSON.parse(releases_json)
+  File.write('tmp/core-release.txt', JSON.pretty_generate(releases))
+  puts "Find results in ".green + "tmp/core-release.txt".blue
 end
 
-desc 'Optimize images in modified uncommitted files. For other images, use "path" such as "rake image_optim path=../path/to/dir/or/file".'
-task :image_optim do
-  puts
-  puts 'Checking images ...'.magenta
-  path = ENV['path']
-
-  unless path
-    puts 'Looking in uncommitted files ...'.blue
-    modified_files = `git ls-files --modified --others --exclude-standard -- ..`.split("\n")
-    deleted_files = `git ls-files --deleted -- ..`.split("\n")
-    image_files_to_check = (modified_files - deleted_files).select do |file|
-      File.extname(file) =~ /\.(png|jpg|jpeg|gif)/i
-    end
-
-    next puts 'No images to check.'.magenta if image_files_to_check.empty?
-
-    path = image_files_to_check.join(' ')
-  end
-
-  system "bundle exec image_optim --recursive --no-svgo #{path}"
-end
-
-desc 'Generate an Azure regions map.
-  Place the input data file in _jekyll/tmp/azure-regions.json.
-  The result will be found in _jekyll/tmp/azure-regions.svg.
-  Note, you need Python, PyGMT, and pdf2svg installed.'
-task :azure_regions do
-  puts 'Generating Azure regions map in PDF: $ '.magenta
-  puts 'Note, you need python, pygmt, and pdf2svg installed.'.blue
-  sh 'python _scripts/azure_regions.py'
-  puts 'Converting PDF to SVG: $ '.magenta
-  sh 'pdf2svg tmp/azure-regions.pdf tmp/azure-regions.svg'
+desc 'Get the date of the first merge into a branch. Requires GitHub CLI.
+  Example: rake first_merge_date base=develop.'
+task :first_merge_date do
+  base_branch = ENV['base'] || abort('ERROR: Please provide the base branch.'.red)
+  merged_at=`gh pr list --search 'is:pr is:merged base:#{base_branch} sort:merged_at' --limit 1 --json mergedAt --jq '.[0].mergedAt'`
+  date_only = DateTime.parse(merged_at).strftime('%Y-%m-%d')
+  puts "The first merge date for a PR in the branch #{base_branch.magenta} is #{date_only.green}"
 end

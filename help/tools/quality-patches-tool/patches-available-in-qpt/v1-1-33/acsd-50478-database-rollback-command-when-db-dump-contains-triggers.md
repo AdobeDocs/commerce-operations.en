@@ -1,10 +1,12 @@
 ---
 title: 'ACSD-50478: JS issue for rollback action in backups grid and database rollback command'
 description: Apply the ACSD-50478 patch to fix the JS issue for the rollback action in the backups grid and the database rollback command for a case when the DB dump contains triggers and a *delimiter* SQL command.
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+type: Troubleshooting
 ---
 # ACSD-50478: JS issue for rollback action in backups grid and database rollback command
 
-The ACSD-50478 patch fixes the JS issue for the rollback action in the backups grid and the database rollback command for a case when the DB dump contains triggers and a *delimiter* SQL command. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33 is installed. The patch ID is ACSD-50478. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-50478 patch fixes the JS issue for the rollback action in the backups grid and the database rollback command for a case when the DB dump contains triggers and a *delimiter* SQL command. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33 is installed. The patch ID is ACSD-50478. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -71,7 +73,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -1,6 +1,6 @@
 ---
 title: Checkout performance best practices
-description: Learn how to optimize the performance of checkout experiences on your Adobe Commerce site.
+description: Learn about checkout performance best practices in Adobe Commerce. Discover implementation guidance and optimization strategies.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
 ---
@@ -9,7 +9,7 @@ exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
 
 The [checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) process in Adobe Commerce is a critical aspect of the storefront experience. It relies on the built-in [cart](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) and [checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) capabilities.
 
-Performance is key in maintaining a good user experience. Review the [performance benchmark summary](../implementation-playbook/infrastructure/performance/benchmarks.md) to learn more about performance expectations. You can optimize checkout performance by configuring the following options for **high-throughput order processing**:
+Performance is key in maintaining a good user experience. You can optimize checkout performance by configuring the following options for **high-throughput order processing**:
 
 - [AsyncOrder](#asynchronous-order-placement)—Asynchronously processes orders using a queue.
 - [Deferred Total Calculation](#deferred-total-calculation)—Defer calculations for order totals until checkout begins.

@@ -3,10 +3,12 @@ title: 'ACSD-48234: catalog search result incorrect category item count when [!U
 description: Apply the ACSD-48234 patch to fix the Adobe Commerce issue where the catalog search result shows an incorrect category item count when the [!UICONTROL Display Out of Stock Products] option is enabled.
 feature: Admin Workspace, Categories, Catalog Management, Orders, Products, Search
 role: Admin
+exl-id: c177f12d-2db5-48e2-8f88-ff589cea4dd4
+type: Troubleshooting
 ---
 # ACSD-48234: catalog search result shows incorrect category item count **[!UICONTROL Display Out of Stock Products]** enabled
 
-The ACSD-48234 patch solves the issue where the catalog search result shows an incorrect category item count when the **[!UICONTROL Display Out of Stock Products]** option is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.25 is installed. The patch ID is ACSD-48234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-48234 patch solves the issue where the catalog search result shows an incorrect category item count when the **[!UICONTROL Display Out of Stock Products]** option is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25 is installed. The patch ID is ACSD-48234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 
 ## Affected products and versions
@@ -57,7 +59,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

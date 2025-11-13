@@ -1,12 +1,14 @@
 ---
 title: 'MDVA-40609: Disabled products data absent in cataloginventory_stock_status table'
-description: The MDVA-40609 patch solves the issue where the disabled products data is not shown in the `cataloginventory_stock_status` index table leading to displaying incorrect product quantities. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-40609. Please note that the issue was fixed in Adobe Commerce 2.4.3.
+description: The MDVA-40609 patch solves the issue where the disabled products data is not shown in the `cataloginventory_stock_status` index table leading to displaying incorrect product quantities. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-40609. Please note that the issue was fixed in Adobe Commerce 2.4.3.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
+exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
+type: Troubleshooting
 ---
 # MDVA-40609: Disabled products data absent in cataloginventory_stock_status table
 
-The MDVA-40609 patch solves the issue where the disabled products data is not shown in the `cataloginventory_stock_status` index table leading to displaying incorrect product quantities. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-40609. Please note that the issue was fixed in Adobe Commerce 2.4.3.
+The MDVA-40609 patch solves the issue where the disabled products data is not shown in the `cataloginventory_stock_status` index table leading to displaying incorrect product quantities. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-40609. Please note that the issue was fixed in Adobe Commerce 2.4.3.
 
 ## Affected products and versions
 
@@ -20,7 +22,7 @@ The MDVA-40609 patch solves the issue where the disabled products data is not sh
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new Quality Patches Tool releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Use the patch ID as a search keyword to locate the patch.
+>The patch might become applicable to other versions with new Quality Patches Tool releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
 
@@ -59,7 +61,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
 
 For info about other patches available in QPT, refer to the [Patches available in QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) section.

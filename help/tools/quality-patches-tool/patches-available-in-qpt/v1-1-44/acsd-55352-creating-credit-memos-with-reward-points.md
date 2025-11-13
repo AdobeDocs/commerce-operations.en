@@ -3,10 +3,12 @@ title: 'ACSD-55352: Creating credit memos with reward points'
 description: Apply the ACSD-55352 patch to fix the Adobe Commerce issue where after creating a partial credit memo with customer reward points, the order status changes to *closed* and credit memo options disappear from the admin order page.
 feature: Checkout, Orders
 role: Admin, Developer
+exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+type: Troubleshooting
 ---
 # ACSD-55352: Creating credit memos with reward points
 
-The ACSD-55352 patch fixes the issue where after creating a partial credit memo with customer reward points, the order status changes to *closed* and credit memo options disappear from the admin order page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 is installed. The patch ID is ACSD-55352. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-55352 patch fixes the issue where after creating a partial credit memo with customer reward points, the order status changes to *closed* and credit memo options disappear from the admin order page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.44 is installed. The patch ID is ACSD-55352. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -71,7 +73,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

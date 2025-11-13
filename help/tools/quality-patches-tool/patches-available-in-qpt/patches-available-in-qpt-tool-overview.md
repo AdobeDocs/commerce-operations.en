@@ -3,6 +3,8 @@ title: Patches available in QPT tool overview
 description: This article provides an overview of [!DNL Quality Patches Tool] (QPT) and links to resources explaining how to use it.
 feature: Support, Tools and External Services
 role: Admin
+exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
+type: Troubleshooting
 ---
 # Patches available in QPT tool overview
 
@@ -25,7 +27,7 @@ It allows you to:
 
 Here's an example of the status table you can get to view the available patches:
 
-![Magento_patches_list](/help/assets/tools/status_table.png)
+![Quality Patches Tool status table showing available patches and their installation status](/help/assets/tools/status_table.png)
 
 The tool is aimed to enable you to self-serve with patches for issues you might experience with Adobe Commerce, or easily apply patches suggested by Adobe Commerce support.
 
@@ -44,7 +46,7 @@ The installation and usage commands are different for Adobe Commerce on-premises
 
 ### How to install and use QPT for Adobe Commerce on-premises
 
-Please refer to [Commerce > Tools > Usage](/help/tools/quality-patches-tool/usage.md) in our developer documentation for details on how to install and use QPT for applying and reverting patches.
+Please refer to [Commerce > Tools > Usage](../usage.md) in our developer documentation for details on how to install and use QPT for applying and reverting patches.
 
 ### How to install and use QPT for Adobe Commerce on cloud infrastructure
 

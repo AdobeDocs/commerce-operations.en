@@ -1,6 +1,6 @@
 ---
 title: GraphQL Application Server
-description: Follow these instructions for enabling the GraphQL Application Server in your Adobe Commerce deployment.
+description: Learn about graphql application server in Adobe Commerce. Discover implementation guidance and optimization strategies.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 ---
 
@@ -12,7 +12,7 @@ GraphQL Application Server is available for Adobe Commerce only. It is not avail
 
 >[!NOTE]
 >
->GraphQL Application Server is currently not compatible with [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Adobe Commerce on cloud infrastructure customers currently using [!DNL AWS S3] for [remote storage](../configuration/remote-storage/cloud-support.md) cannot use GraphQL Application Server until Adobe releases a hotfix later in 2024.
+>GraphQL Application Server is currently not compatible with [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Adobe Commerce on cloud infrastructure customers currently using [!DNL AWS S3] for [remote storage](../configuration/remote-storage/cloud-support.md) cannot use GraphQL Application Server.
 
 ## Architecture
 
@@ -24,7 +24,7 @@ Transitioning request handling logic to an application-level event loop appears 
 
 ## Advantages
 
-GraphQL Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests. Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, GraphQL request response time can be reduced by up to 30%.
+GraphQL Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests. Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, you can reduce GraphQL request response time by up to 30%.
 
 ## System requirements
 
@@ -32,8 +32,22 @@ Running GraphQL Application Server requires the following:
 
 * Commerce version 2.4.7+
 * PHP 8.2 or higher
-* Swoole PHP extension v5+ installed
 * Adequate RAM and CPU based on the expected load
+* Swoole PHP extension v5+ (see project-specific requirements below)
+
+### Cloud projects
+
+Adobe Commerce on cloud infrastructure projects include the Swoole extension by default. You can [enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) it in the `runtime` property of the `.magento.app.yaml` file. For example:
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### On-premises projects
+
+You must manually [install and configure](#install-and-configure-swoole) the Swoole PHP extension for on-premises projects.
 
 ## Enable and deploy on cloud infrastructure
 
@@ -96,7 +110,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. Deploy Adobe Commerce on cloud infrastructure using the cloud template from the [2.4.7-appserver branch](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Ensure that all your Commerce customizations and extensions are compatible with GraphQL Application Server.
-1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
+1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Console.
 1. Clone your Commerce Cloud project.
 1. Rename `application-server/.magento/.magento.app.yaml.sample` to `application-server/.magento/.magento.app.yaml` and adjust settings in .magento.app.yaml if needed.
 1. Uncomment the following route's configuration in the `project_root/.magento/routes.yaml` file to redirect `/graphql` traffic to GraphQL Application Server.
@@ -108,29 +122,154 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
    ```
 
+1. Uncomment the `files` section in the `.magento/services.yaml` file.
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. Uncomment the `TEMPORARY SHARED MOUNTS` part of the mounts configuration in the `.magento.app.yaml` file.
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. Add updated files to the git index:
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. Commit your changes:
+1. Commit your changes and push them to trigger a deployment:
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. Use SSH to log in to the remote cloud environment (_not_ the `application-server` app):
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. Sync the data from the local mounts to the shared mounts:
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. Comment out the `DEFAULT MOUNTS` and the `TEMPORARY SHARED MOUNTS` parts of the mounts configuration in the `.magento.app.yaml` file.
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. Uncomment the `OLD LOCAL MOUNTS` and the `SHARED MOUNTS` parts of the mounts configuration in the `.magento.app.yaml` file.
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. Add the updated file to the git index, commit changes, and push to trigger a deployment:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. Ensure files from `*_old` directories are present in the actual directories.
+
+1. Cleanup old local mounts:
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. Comment out the `OLD LOCAL MOUNTS` part of the mounts configuration in the `.magento.app.yaml` file.
+
+    ```yaml
+    #"var_old": "shared:files/var"
+    #"app/etc_old": "shared:files/etc"
+    #"pub/media_old": "shared:files/media"
+    #"pub/static_old": "shared:files/static"
+    ```
+
+1. Add the updated file to the git index, commit changes, and push to trigger a deployment:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
->Ensure that all custom settings in your root `.magento.app.yaml` file are appropriately migrated to the `application-server/.magento/.magento.app.yaml` file. After the `application-server/.magento/.magento.app.yaml` file is added to your project, you should maintain it in addition to the root `.magento.app.yaml` file. For example, if you need to [configure the RabbitMQ service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add the same configuration to `application-server/.magento/.magento.app.yaml` as well.
-
-### Deploy Starter projects
-
-After completing the enablement [steps](#before-you-begin-a-cloud-starter-deployment), push changes to your Git repository to deploy GraphQL Application Server:
-
-```bash
-git push
-```
+>Ensure that all custom settings in your root `.magento.app.yaml` file are appropriately migrated to the `application-server/.magento/.magento.app.yaml` file. After the `application-server/.magento/.magento.app.yaml` file is added to your project, you should maintain it in addition to the root `.magento.app.yaml` file. For example, if you need to [configure the RabbitMQ service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) you should add the same configuration to `application-server/.magento/.magento.app.yaml` as well.
 
 ### Verify enablement on cloud projects
 
@@ -285,7 +424,7 @@ Additional ways to confirm that GraphQL Application Server is running include:
 
 ### Confirm that GraphQL requests are being processed
 
-GraphQL Application Server adds the `X-Backend` response header with the value `graphql_server` to each request that it processes. To check if a whether the GraphQL Application Server has handled a request, check for this response header.
+GraphQL Application Server adds the `X-Backend` response header with the value `graphql_server` to each request that it processes. To check if the GraphQL Application Server has handled a request, check for this response header.
 
 ### Confirm extension and customization compatibility
 
@@ -344,7 +483,7 @@ This test is designed to detect state changes in service objects that the `Objec
 
 #### GraphQlStateTest failures and potential remediation
 
-* **Cannot add, skip, or filter a list**. If you see an error about adding, skipping, or filtering a list, consider whether you can refactor the class in a backward-compatible way to use the factories of service classes that have mutable state.
+* **Cannot add, skip, or filter a list**. If you get this error, try to refactor your class to use factories for service classes with mutable state.
 
 * **Class exhibits a mutable state**. If the class itself exhibits a mutable state, try to rewrite your code to circumvent this state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object to its initial constructed state.
 
@@ -366,7 +505,7 @@ The `ResetAfterRequestTest` looks for all classes that implement `ResetAfterRequ
 
 ### Functional Testing
 
-while deploying the GraphQL Application Server, extension developers should execute WebAPI functional tests and any custom automated or manual functional tests for GraphQL. These functional tests help developers identify potential errors or compatibility issues.
+While deploying the GraphQL Application Server, extension developers should execute WebAPI functional tests and any custom automated or manual functional tests for GraphQL. These functional tests help developers identify potential errors or compatibility issues.
 
 #### State Monitor Mode
 
@@ -394,3 +533,30 @@ These files can be inspected with any tool you use to view XML or JSON that show
 >[!NOTE]
 >
 >`--state-monitor` is not compatible with PHP versions `8.3.0` - `8.3.4` due to a bug in the PHP garbage collector. If you are using PHP 8.3, you must upgrade to `8.3.5` or newer to use this feature.
+
+## Configuring alternativeHeaders for Client IP Detection
+
+By default, GraphQL Application Server supports a standard configuration for the `x-forwarded-for` header defined in the `app/etc/di.xml` file, enabling accurate retrieval of the client IP address in typical proxy and CDN environments.
+
+If you need to support additional or custom headers (such as `x-client-ip`, `fastly-client-ip`, or `x-real-ip`), you can extend or override the `alternativeHeaders` argument in your `app/etc/di.xml` file. This is only necessary if your environment uses headers other than `x-forwarded-for` to pass the client IP address.
+
+For example, to add support for other headers, update your `app/etc/di.xml` as follows:
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+You can add, remove, or reorder the headers as needed to ensure that the client IP is retrieved from the correct source for your setup.
+
+>[!NOTE]
+>
+>If you are using Adobe Commerce Cloud with the Fastly CDN module, this configuration is handled automatically and no manual changes are required. Manual configuration is only necessary for custom CDN, proxy, or non-standard header setups.

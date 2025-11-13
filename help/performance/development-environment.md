@@ -1,6 +1,6 @@
 ---
 title: Development Environment Recommendations
-description: Learn about performance recommendations for setting up your local Adobe Commerce development environment.
+description: Learn about development environment recommendations in Adobe Commerce. Discover implementation guidance and optimization strategies.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 ---
 # Development environment recommendations

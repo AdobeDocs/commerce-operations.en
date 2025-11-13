@@ -3,10 +3,12 @@ title: 'ACSD-59280: `ReflectionUnionType::getName()` error in 2.4.4-pX installat
 description: Apply the ACSD-59280 patch to fix the Adobe Commerce issue where the `call to undefined method ReflectionUnionType::getName()` error occurs during the installation of 2.4.4-pX versions.
 feature: Install, Upgrade
 role: Admin, Developer
+exl-id: 5a47dad4-4490-4e3d-93f2-9b176fb144d9
+type: Troubleshooting
 ---
 # ACSD-59280: `ReflectionUnionType::getName()` error in 2.4.4-pX installations
 
-The ACSD-59280 patch fixes the issue where the `call to undefined method ReflectionUnionType::getName()` error occurs during the installation of 2.4.4-pX versions. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 is installed. The patch ID is ACSD-59280. Please note that the issue was fixed in Adobe Commerce 2.4.5.
+The ACSD-59280 patch fixes the issue where the `call to undefined method ReflectionUnionType::getName()` error occurs during the installation of 2.4.4-pX versions. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.50 is installed. The patch ID is ACSD-59280. Please note that the issue was fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
@@ -51,7 +53,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -3,10 +3,12 @@ title: "ACSD-49042: Product with infinite backorder can't be ordered from storef
 description: Apply the ACSD-49042 patch to fix the Adobe Commerce issue where a product with infinite backorder cannot be ordered from the storefront.
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
+exl-id: b94d06c0-806a-40be-bcd4-d6b8e5e474c3
+type: Troubleshooting
 ---
 # ACSD-49042: Product with infinite backorder can't be ordered from storefront
 
-The ACSD-49042 patch fixes the issue where a product with infinite backorder cannot be ordered from the storefront. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 is installed. The patch ID is ACSD-49042. Please note that the issue was fixed in Adobe Commerce 2.4.5.
+The ACSD-49042 patch fixes the issue where a product with infinite backorder cannot be ordered from the storefront. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.27 is installed. The patch ID is ACSD-49042. Please note that the issue was fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
@@ -57,7 +59,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

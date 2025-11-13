@@ -1,6 +1,6 @@
 ---
 title: Run the support utilities
-description: Troubleshoot your Commerce project using the built-in support utility.
+description: Learn how to run support utilities to troubleshoot your Adobe Commerce project. Discover built-in diagnostic and support tools.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 ---
 # Run the support utilities

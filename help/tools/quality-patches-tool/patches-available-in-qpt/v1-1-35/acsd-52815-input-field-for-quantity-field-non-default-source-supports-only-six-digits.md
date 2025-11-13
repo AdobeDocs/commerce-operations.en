@@ -3,6 +3,8 @@ title: 'ACSD-52815: Input field for quantity field of non-default source support
 description: Apply the ACSD-52815 patch to fix the Adobe Commerce performance issue where the input field for the quantity field of a non-default source supports only up to 6 digits, unlike 8 for a default stock.
 feature: Inventory, Products
 role: Admin
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+type: Troubleshooting
 ---
 # ACSD-52815: Input field for quantity field of non-default source supports only up to 6 digits
 
@@ -53,7 +55,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

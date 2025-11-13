@@ -3,6 +3,8 @@ title: 'ACSD-51574: Image not updated on frontend when replaced with another ima
 description: Apply the ACSD-51574 patch to fix the Adobe Commerce issue where the image is not updated on the frontend after replacing it with another image.
 feature: Configuration
 role: Admin
+exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
+type: Troubleshooting
 ---
 # ACSD-51574: Image not updated on frontend when replaced with another image 
 
@@ -55,7 +57,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

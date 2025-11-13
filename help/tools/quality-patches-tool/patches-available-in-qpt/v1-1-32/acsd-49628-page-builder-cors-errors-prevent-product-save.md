@@ -3,6 +3,8 @@ title: 'ACSD-49628: [!DNL Page Builder] CORS errors prevent product save'
 description: Apply the ACSD-49628 patch to fix the Adobe Commerce issue where the [!DNL Page Builder] CORS errors prevent product save.
 feature: Categories, Page Builder, Products
 role: Admin
+exl-id: 5bceddfa-5fbf-4ebe-a233-de7720764849
+type: Troubleshooting
 ---
 # ACSD-49628: [!DNL Page Builder] CORS errors prevent product save
 
@@ -59,7 +61,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

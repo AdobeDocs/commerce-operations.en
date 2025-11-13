@@ -138,6 +138,21 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 |`--amqp-ssl`|Indicates whether to connect to [!DNL RabbitMQ]. The default is `false`. See [!DNL RabbitMQ] for information about setting up SSL for [!DNL RabbitMQ].|No|
 |`--consumers-wait-for-messages`|Should consumers wait for a message from the queue? 1 - Yes, 0 - No|No|
 
+**ActiveMQ Artemis configuration options:**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis was introduced in Adobe Commerce 2.4.6 and later versions.
+
+|Name|Value|Required?|
+|--- |--- |--- |
+|`--stomp-host`|Do not use the `--stomp` options unless you have already set up an installation of ActiveMQ Artemis. See ActiveMQ Artemis installation for more information about installing and configuring ActiveMQ Artemis.<br><br>The hostname where ActiveMQ Artemis is installed.|No|
+|`--stomp-port`|The port to use to connect to ActiveMQ Artemis. The default is 61613.|No|
+|`--stomp-user`|The username for connecting to ActiveMQ Artemis. Do not use the default user `artemis`.|No|
+|`--stomp-password`|The password for connecting to ActiveMQ Artemis. Do not use the default password `artemis`.|No|
+|`--stomp-ssl`|Indicates whether to connect to ActiveMQ Artemis using SSL. The default is `false`. See ActiveMQ Artemis for information about setting up SSL for ActiveMQ Artemis.|No|
+|`--consumers-wait-for-messages`|Should consumers wait for a message from the queue? 1 - Yes, 0 - No|No|
+
 **Remote storage options:**
 
 | Name| Description | Required? |
@@ -297,6 +312,27 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
+#### Example 4—Install with ActiveMQ Artemis
+
+The following example shows how to install Adobe Commerce with ActiveMQ Artemis as the message broker:
+
+```bash
+magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
+--elasticsearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>ActiveMQ Artemis installation requires Adobe Commerce 2.4.6 or later.
+
 >[!TIP]
 >
 >If you have one user account to access the application server, see [set a umask](../next-steps/set-umask.md). This type of setup is typical for shared hosting.
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->
