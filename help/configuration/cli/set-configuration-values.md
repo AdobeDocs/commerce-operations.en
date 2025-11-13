@@ -118,19 +118,19 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **To set sensitive configuration values**:
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 The following table describes the `set` command parameters:
 
-| Parameter | Description |
-| --- | --- |
-| `--scope` | The scope of the configuration. The possible values are `default`, `website`, or `store`. The default is `default`. |
-| `--scope-code` | The scope code of configuration (website code or store view code) |
-| `-e or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. |
-| `-c or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options. |
-| `path` | _Required_. The configuration path |
-| `value` | _Required_. The value of the configuration |
+| Parameter | Description                                                                                                                                                                                                                                                                                                          |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `--scope` | The scope of the configuration. The possible values are `default`, `website`, or `store`. The default is `default`.                                                                                                                                                                                                  |
+| `--scope-code` | The scope code of configuration (website code or store view code)                                                                                                                                                                                                                                                    |
+| `-e or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file.                                                                                                                 |
+| `-c or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options.                              |
+| `path` | _Required_. The configuration path                                                                                                                                                                                                                                                                                   |
+| `value` | _Required_. The value of the configuration. Although it can be passed as a separate argument in a CLI command, Adobe recommends that you don't specify it in the original command. Instead, run the command without the value, and then enter the value when prompted. Using this method prevents writing  writing sensitive access values to bash_history, which is the safest way to set the config.|
 
 >[!INFO]
 >
