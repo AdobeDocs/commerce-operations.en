@@ -1,6 +1,6 @@
 ---
 title: Override configuration settings
-description: Learn how to use environment variables to override configuration settings.
+description: Learn how to use environment variables to override Adobe Commerce configuration settings. Discover configuration management and deployment best practices.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
 ---
 # Override configuration settings
@@ -56,8 +56,8 @@ The general format of system settings variable names follows:
    For more information about scopes, see:
 
   - [Step 1: Find the website or store view scope value](#step-1-find-the-website-or-store-view-scope-value)
-  - [Commerce User Guide topic on scope](https://docs.magento.com/user-guide/configuration/scope.html)
-  - [Scope quick reference](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+  - [Commerce User Guide topic on scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Scope quick reference](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` is the configuration path with double underscore characters substituted for `/`. For more information, see [Step 2: Set system variables](#step-2-set-global-website-or-store-view-variables).
 

@@ -10,4 +10,4 @@ relatedTerms: []
 definition: |
   A retail business with a permanent physical location, as opposed to businesses that function virtually or solely through the internet.
 
-  For [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) and [Order Management](https://omsdocs.magento.com/getting-started/terminology/), this store is a source for tracking product quantities, shipping orders, and supporting in-store pickup.
+  For [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) and [Order Management](#oms), this store is a source for tracking product quantities, shipping orders, and supporting in-store pickup.

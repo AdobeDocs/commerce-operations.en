@@ -12,7 +12,7 @@ Adobe Commerce beta programs are a way for merchants to get access to prerelease
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 ## Benefits of participating
 
@@ -22,25 +22,46 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
-### Experience Manager Assets Integration for Commerce (Private Beta)
+### Semantic Search: smarter, context-aware shopping experiences (private beta)
 
-The Experience Manager Assets Integration for Commerce enables efficient management and delivery of a large volume of product images from Experience Manager Assets to Adobe Commerce with low or no operational effort required.
+Semantic search is an e-commerce search technology that understands the *meaning* behind a shopper's query, not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, this AI-powered approach interprets intent using natural language processing (NLP) and context to deliver more relevant results.
 
-Key features:
+This technology addresses a major limitation of traditional search: zero-result pages that occur when shoppers use words that do not exist in the catalog. By using AI-powered techniques, it maps user queries and product data into a shared semantic space. For example, the system recognizes that "running shoes" and "jogging sneakers" refer to the same type of product, enabling:
 
-- Plug and play integration–Provide an Adobe powered, out of the box, integration between Experience Manager Assets and Adobe Commerce to empower merchants to focus on what matters most, with reduced operational costs and improved efficiency.
+- Synonym recognition
+- Contextual relevance
+- Intelligent handling of vague, misspelled, or compound queries
+- Understanding of natural, conversational language
 
-- Personalize product images at scale–Use Experience Manager Assets to generate millions of product variations for personalized Commerce experiences with easy UI based editing tools, generative content creation using Adobe Firefly, and assigned asset workflows to ensure brand consistency. Once you are happy with the assets, seamlessly deliver them to your Commerce storefronts using the Experience Manager Assets Integration.
+To request an invitation to the beta program, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
 
-- Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the Experience Manager Assets repository and the Commerce catalog.
+### Cloud Automation Patching Service (Private Beta)
 
-- Flexible matching strategy–The integration includes default asset matching algorithms based on product SKUs that synchronize images between AEM Assets and Commerce, and it's extensible using Adobe Developer App Builder. Work with your solution partner to build a custom asset matching strategy on top of the integration to accommodate any asset management repository structure.
+The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
 
-To participate in the beta, send an email request to [Shaun McCran](mailto:mccran@adobe.com).
+In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). This service supports Commerce project administrators with a streamlined patching workflow that includes:
+
+- Automated patch installation
+- Rollback recovery
+- Post-deployment verification.
+
+The service ensures that you can maintain secure, stable, and updated environments with minimal manual effort and risk.
+
+The beta includes the following features:
+
+- **Automate patch installation**: Simplify and automate the process of patching critical vulnerabilities across environments.
+- **Minimize risk**: Prevent site outages with post-deployment health check and rollback capabilities.
+
+>[!NOTE]
+>
+>Since the Cloud Automation Patching Service applies isolated security patches automatically, you must have the [Contributor or Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
+
+To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
+
 - Real-time visibility into inventory levels and accurate delivery dates for your customers.
 - Automated sourcing for orders based on configurable rules, so you can optimize your fulfillment network and inventory.
 - A universal view of orders across channels from a single dashboard so your support teams can deliver exceptional service and identify and handle exceptions quickly.
@@ -48,49 +69,43 @@ This integration accelerator for IBM Sterling Order Management enables Adobe Com
 
 To participate in this beta, send an email request to [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Data Connection & Audience Activation (Public Beta)
+### Adobe Commerce Foundation (Public Alpha/Beta)
 
-Expanded data sharing between Adobe Commerce & Adobe Experience Platform to drive more powerful personalized experiences. This capability enables merchants to:
-- Share Commerce customer profiles
-- Create custom attributes
-- Get Commerce insights in Real-Time CDP and Adobe Journey Optimizer
-- Support multiple datasets and datastreams
+Each Adobe Commerce Foundation alpha and beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
-To participate in this beta, send an email request to [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Adobe Commerce Foundation (Public Beta)
-
-Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
-
--  Latest security fixes
--  Performance improvements
--  GraphQL improvements
--  General quality bug fixes
--  Community contributions
--  Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Latest security fixes
+- Performance improvements
+- GraphQL improvements
+- General quality bug fixes
+- Community contributions
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Naming convention and schedule
 
-Adobe typically releases beta patches twice a year.
+Adobe typically releases alpha and beta patches several times a year.
+
+Alpha release packages have a `-alphaX` suffix. For example, the Adobe Commerce 2.4.7 alpha release packages use the following naming convention:
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
--  `2.4.7-beta1`
--  `2.4.7-beta2`
+- `2.4.7-beta1`
+- `2.4.7-beta2`
 
-See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
+See the [release schedule](schedule.md) for the list of upcoming public alpha and beta release dates.
 
+#### Release access
 
-#### Beta release access
-
-Adobe Commerce beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
+Adobe Commerce alpha and beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is available on [GitHub](https://github.com/magento/magento2).
 
 See [Composer installation quick start](../installation/composer.md) for more details.
 
 #### Issue reporting
 
-Adobe does not provide the standard Adobe Support Service for beta releases.
+Adobe does not provide the standard Adobe Support Service for alpha and beta releases.
 
-To submit feedback related to beta releases, follow our [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
+To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
 
-Our internal teams will monitor all critical issues reported against the latest beta release and prioritize them to be resolved prior to the GA release date.
+Adobe monitors all critical issues reported against the latest alpha or beta release and prioritizes them to be resolved prior to the GA release date.

@@ -1,6 +1,6 @@
 ---
 title: Deployment strategies for static view files
-description: Read about deployment strategies for the Commerce application.
+description: Learn about deployment strategies for static view files in Adobe Commerce applications. Discover optimal deployment methods for different use cases.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 ---

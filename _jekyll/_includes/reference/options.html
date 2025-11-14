@@ -1,0 +1,24 @@
+{% assign opt = option[1] -%}
+{% if opt.shortcut contains '-' -%}
+#### `{{ opt.name }}`, `{{ opt.shortcut }}`
+{% else -%}
+#### `{{ opt.name }}`
+{% endif %}
+{{ opt.description | strip_html | replace: '|', '\|' }}
+
+{% unless opt.default == nil -%}
+{% if opt.default == false or opt.default == empty and opt.default != '' -%}
+- Default: `{{ opt.default | inspect }}`
+{% else -%}
+- Default: `{{ opt.default }}`
+{% endif -%}
+{% endunless -%}
+{% if opt.is_value_required -%}
+- Requires a value
+{% elsif opt.accept_value and opt.is_multiple -%}
+- Accepts multiple values
+{% elsif opt.accept_value and opt.is_multiple == false -%}
+- Accepts a value
+{% else -%}
+- Does not accept a value
+{% endif %}

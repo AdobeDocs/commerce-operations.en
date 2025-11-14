@@ -18,9 +18,7 @@ You can apply patches using any of the following methods:
 
 ## Composer
 
->[!IMPORTANT]
->
->To apply official quality patches, use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Always perform comprehensive testing before deploying any custom patch.
+{{custom-patches-disclaimer}}
 
 To apply a custom patch using Composer:
 

@@ -7,56 +7,8 @@ mini-toc-levels: 3
 # Implementation Playbook {#implementation-playbook}
 
 - [Overview](overview.md)
-- Commerce {#intro}
-  - [About Adobe Commerce](intro/about-commerce.md)
-  - [Principles of platform development](intro/platform-development.md)
-- Project scope {#project-scope}
-  - [Knowledge is power](project-scope/knowledge.md)
-  - [Key stakeholders](project-scope/key-stakeholders.md)
-  - [Process and timeline](project-scope/process-timeline.md)
-  - [Deliverables](project-scope/deliverables.md)
-  - [Requirement checklists](project-scope/requirement-checklists.md)
-- Development {#development}
-  - [Platform tools](development/platform-tools.md)
-  - [Project management tools](development/project-management-tools.md)
-  - [Project implementation methodology](development/delivery.md)
-  - [Quality control](development/quality-control.md)
-- Planning and governance {#planning}
-  - [Delivery and planning approach](planning/delivery.md)
-  - [Responsibility and ownership](planning/ownership.md)
-  - [Project governance](planning/governance.md)
 - Architecture and integrations {#architecture}
   - [Enterprise reference](architecture/enterprise-blueprint.md)
-  - Global reference architecture {#global-reference-architecture}
-    - [Overview](architecture/global-reference/overview.md)
-    - [Examples](architecture/global-reference/examples.md)
-    - Composer development {#composer}
-      - [Overview](architecture/global-reference/composer/overview.md)
-      - [Project structure](architecture/global-reference/composer/project-structure.md)
-      - [Tips and tricks](architecture/global-reference/composer/tips-and-tricks.md)
-- Infrastructure and deployment {#infrastructure}
-  - [Overview](infrastructure/overview.md)
-  - Self Hosting {#self-hosting}
-    - [Overview](infrastructure/self-hosting/overview.md)
-    - [On-premises infrastructure](infrastructure/self-hosting/on-premises.md)    
-    - [Security concepts](infrastructure/self-hosting/security-concepts.md)
-    - [Monitoring telemetry and tools](infrastructure/self-hosting/monitoring-tools.md)
-    - [Disaster recovery ideas](infrastructure/self-hosting/disaster-recovery-ideas.md)
-    - [Performance tips](infrastructure/self-hosting/performance-tips.md)
-  - Cloud infrastructure {#cloud}
-    - [Overview](infrastructure/cloud/overview.md)
-    - [Regions](infrastructure/cloud/regions.md)
-    - [Technologies](infrastructure/cloud/technology.md)
-    - [Security and compliance](infrastructure/cloud/security.md)
-  - Performance optimization {#performance}
-    - [Typical issues](infrastructure/performance/optimization.md)
-    - [Benchmarks](infrastructure/performance/benchmarks.md)
-    - [Recommendations](infrastructure/performance/recommendations.md)
-- Launch readiness {#launch}
-  - [Overview](launch/overview.md)
-  - [Pre-launch steps](launch/pre-launch-steps.md)
-  - [Launch steps](launch/launch-steps.md)
-  - [Post-launch steps](launch/post-launch-steps.md)
 - Maintenance and support {#maintenance}
   - [Overview](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
@@ -70,6 +22,7 @@ mini-toc-levels: 3
     - [Database configuration for cloud deployments​](best-practices/planning/database-on-cloud.md)
     - [MySQL configuration](best-practices/planning/mysql-configuration.md)
     - [Redis service configuration](best-practices/planning/redis-service-configuration.md)
+    - [Valkey service configuration](best-practices/planning/valkey-service-configuration.md)
     - [OPcache memory size](best-practices/planning/opcache-memory-size.md)
     - [Realpath cache size](best-practices/planning/realpath-cache-size.md)
     - [Extensions](best-practices/planning/extensions.md)
@@ -97,6 +50,7 @@ mini-toc-levels: 3
     - [Secure your site and infrastructure](best-practices/launch/security-best-practices.md)
   - Maintenance {#maintenance}
     - [Overview](best-practices/maintenance/overview.md)
+    - [Post-launch support](best-practices/maintenance/post-launch.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)
     - [Optimize backend performance](best-practices/maintenance/backend-performance.md)
     - [Indexer configuration](best-practices/maintenance/indexer-configuration.md)
@@ -108,4 +62,5 @@ mini-toc-levels: 3
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
     - [Upgrade prerequisites for MariaDB](best-practices/maintenance/mariadb-upgrade.md)
+- [Glossary](glossary.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

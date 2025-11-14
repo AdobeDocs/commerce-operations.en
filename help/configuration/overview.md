@@ -1,6 +1,6 @@
 ---
 title: Configuration guide overview
-description: Learn about all the configurable features and services for your Adobe Commerce application.
+description: Learn about configurable features and services for your Adobe Commerce application. Discover how to manage deployment, caching, security, and other critical settings.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 ---
 # Configuration guide
@@ -19,7 +19,7 @@ The _Configuration_ guide provides reference material and limited guidance for m
 
 ## Commerce Admin configuration
 
-There are corresponding topics in the [Commerce User Guide](https://docs.magento.com/user-guide/stores/configuration.html) that can help you to understand field descriptions for every configuration setting in the Commerce Admin.
+There are corresponding topics in the [Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) that can help you to understand field descriptions for every configuration setting in the Commerce Admin.
 
 ## Cloud configuration
 

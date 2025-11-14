@@ -1,6 +1,6 @@
 ---
 title: Code compiler
-description: Learn how to run the code compiler from the command line.
+description: Learn how to run the Adobe Commerce code compiler from the command line. Discover compilation processes and optimization techniques.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 ---
 # Code compiler

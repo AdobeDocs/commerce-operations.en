@@ -1,6 +1,6 @@
 ---
 title: Session storage location
-description: Learn where the session files are stored.
+description: Learn about session storage locations and file management in Adobe Commerce. Discover storage logic and configuration options.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 ---
@@ -35,7 +35,7 @@ As a user with `root` privileges, open your `php.ini` file and search for the va
 
 ## Manage session size
 
-See the [Session management](https://docs.magento.com/user-guide/stores/security-session-management.html) in the _User guide_.
+See the [Session management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in the _User guide_.
 
 ## Garbage collection configuration
 

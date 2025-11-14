@@ -9,7 +9,13 @@ You are among the 240,000 merchants worldwide who put their trust in our eCommer
 
 ## How to get the software
 
-Check the availability of exciting new features and releases and learn how you can get them on our [product availability page](https://devdocs.magento.com/release/availability.html).
+Check the availability and compatibility of Adobe-authored extensions and Commerce Services for Adobe Commerce and Magento Open Source on our [product availability page](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+
+>[!NOTE]
+>
+>Adobe Commerce codebases are now exclusively distributed via Composer due to policy changes. Use Composer to download any of the listed Adobe Commerce versions as the codebase is no longer available in the Downloads section.
+>
+>For more information, refer to [Can’t access billing statement and download codebase on Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consult the following table for getting started with installing Adobe Commerce.
 

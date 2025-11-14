@@ -6,17 +6,29 @@ exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 ---
 # Configure Remote Storage
 
-The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the Adobe Commerce application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
+The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3.
+
+By default, the Adobe Commerce application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
+
+>[!BEGINSHADEBOX]
+
+You cannot have both remote storage _and_ database storage enabled at the same time. You must disable database storage before enabling remote storage.
+
+```bash
+bin/magento config:set system/media_storage_configuration/media_database 0
+```
+
+Enabling remote storage might affect your established development experience. For example, certain PHP file functions might not work as expected. The usage of Commerce Framework for file operations must be enforced. The list of prohibited PHP native functions is available in the [magento-coding-standard](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) repository.
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
->Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
-
->[!INFO]
+>- Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
->The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service. See [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md) for guidance implementing remote storage for cloud projects.
+>- The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service. See [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md) for guidance implementing remote storage for cloud projects.
 
-![schema image](../../assets/configuration/remote-storage-schema.png)
+![Remote storage configuration schema diagram illustrating the relationship between local and cloud storage](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote storage options
 
@@ -63,18 +75,6 @@ You can install remote storage during an Adobe Commerce installation or add remo
 >
 >For Adobe Commerce on cloud infrastructure, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md).
 
-## Limitations
-
-You cannot have both remote storage and database storage enabled at the same time. Disable database storage if you are using remote storage.
-
-```bash
-bin/magento config:set system/media_storage_configuration/media_database 0
-```
-
-Enabling remote storage might affect your established development experience. For example, certain PHP file functions might not work as expected. The usage of Commerce Framework for file operations must be enforced.
-
-The list of prohibited PHP native functions is available in [magento-coding-standard repository][code-standard].
-
 ## Migrate content
 
 After you enable remote storage for a specific adapter, you can use the CLI to migrate existing _media_ files to the remote storage.
@@ -90,4 +90,3 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

@@ -6,7 +6,111 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 # Release notes for Adobe Commerce 2.4.6 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.6-p13
+
+The Adobe Commerce 2.4.6-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
+{{oct-2025-backports}}
+
+### Known issues
+
+#### Inventory Composer Installer package missing
+
+This version does not include the `magento/inventory-composer-installer` package, which is required for smooth upgrade from older minor versions with backward-incompatible changes.
+
+If you upgrade from 2.3 to 2.4.6-p13, run the following command to install the `magento/inventory-composer-installer` package before upgrading:
+
+```bash
+composer require magento/inventory-composer-installer
+```
+
+#### Checkout page fails to load static.min.js and mixins.min.js
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
+
+## 2.4.6-p12
+
+The Adobe Commerce 2.4.6-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{b2b-patches}}
+
+## 2.4.6-p11
+
+The Adobe Commerce 2.4.6-p11 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+* **MariaDB support**—Added support for MariaDB 10.11.
+
+* **API performance enhancement**—Resolves performance degradation in bulk asynchronous web API endpoints that were introduced after the previous security patch.<!-- AC-14078 -->
+
+* **CMS Blocks access fix**—Resolves an issue where Admin users with restricted permissions (such as merchandising-only access) were unable to view the [!UICONTROL CMS Blocks] listing page. 
+
+  Previously, these users encountered an error due to missing configuration parameters after installing previous security patches.<!-- AC-14087 -->
+
+* **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
+
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
+
+## 2.4.6-p10
+
+The Adobe Commerce 2.4.6-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-04.md}}
+
+## 2.4.6-p9
+
+The Adobe Commerce 2.4.6-p9 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
+
+## 2.4.6-p8
+
+The Adobe Commerce 2.4.6-p8 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
+
+### Hotfixes included in this release
+
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.6-p7
 
@@ -16,11 +120,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.6-p6
 
@@ -32,13 +136,13 @@ For compatibility with Commerce version 2.4.6-p6, merchants that have the Adobe 
 
 ### Apply hotfix for CVE-2024-34102
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 For compatibility with Commerce version 2.4.6-p6, merchants that have the Adobe Commerce B2B extension must upgrade to [B2B version 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.6-p5
 
@@ -147,3 +251,5 @@ Platform upgrades for this release improve compliance with the latest security b
   ```
 
   This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). For details, see the [B2B release notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
+
+<!-- Last updated from includes: 2025-10-22 11:16:25 -->

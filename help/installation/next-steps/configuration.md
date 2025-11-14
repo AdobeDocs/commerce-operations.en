@@ -20,7 +20,7 @@ For more information about cron, including how to remove a crontab and run cron 
 
 After installation, we recommend the following:
 
-*  Make sure that your file ownership and permissions are set properly
+*  Make sure that your file ownership and permissions are set [properly](../prerequisites/file-system/configure-permissions.md)
 *  We strongly recommend [changing the default Admin URI](../tutorials/admin-uri.md) from `admin` to something else
 *  Make sure the [`X-Frame-Option` HTTP header](../../configuration/security/xframe-options.md) is set properly.
 *  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
@@ -52,6 +52,14 @@ For more information, see one of the following:
 *  [HowTo: The ultimate log rotate command tutorial with ten examples](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 *  [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 *  [`logrotate` man page](https://linuxconfig.org/logrotate-8-manual-page)
+
+>[!AVAILABILITY]
+>
+>The following availability information applies to Adobe Commerce on Cloud Infrastructure projects:
+>
+>* Starter environments do not have log rotation.
+>
+>* You cannot configure log rotation on Pro Integration environments. You must implement a custom solution/script and [configure your cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) to run the script as needed.
 
 ### Set up iptables rules to enable various services to communicate
 

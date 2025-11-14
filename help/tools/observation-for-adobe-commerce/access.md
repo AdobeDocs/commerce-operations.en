@@ -8,12 +8,8 @@ feature: Configuration, Observability
 
 To use the [!DNL New Relic Observation for Adobe Commerce] nerdlet, ensure you have access to [!DNL New Relic].
 
-1. Go to the [!UICONTROL Okta] home page (for internal Adobe users only).
-1. Select the [!UICONTROL New Relic applet] (for internal Adobe users only).
+[New Relic account management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
-    ![New Relic applet](../../assets/tools/observation-for-adobe-commerce/new-relic-applet.jpeg)
+Then from the [!DNL New Relic] home page, select the Apps menu item.
 
-1. Authenticate through [!UICONTROL Okta] (for internal Adobe users only).
-1. From the [!DNL New Relic] home page, select the Apps menu item.
-
-    ![New Relic home page](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
+![New Relic home page](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

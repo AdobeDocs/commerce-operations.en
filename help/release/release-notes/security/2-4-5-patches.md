@@ -6,7 +6,99 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 # Release notes for Adobe Commerce 2.4.5 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.5-p15
+
+The Adobe Commerce 2.4.5-p15 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
+>[!NOTE]
+>
+>Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+### Known issues
+
+#### Checkout page fails to load static.min.js and mixins.min.js
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
+
+## 2.4.5-p14
+
+The Adobe Commerce 2.4.5-p14 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{b2b-patches}}
+
+## 2.4.5-p13
+
+The Adobe Commerce 2.4.5-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+* **API performance enhancement**—Resolves performance degradation in bulk asynchronous web API endpoints that were introduced after the previous security patch.<!-- AC-14078 -->
+
+* **CMS Blocks access fix**—Resolves an issue where Admin users with restricted permissions (such as merchandising-only access) were unable to view the [!UICONTROL CMS Blocks] listing page. 
+
+  Previously, these users encountered an error due to missing configuration parameters after installing previous security patches.<!-- AC-14087 -->
+
+* **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
+
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
+
+## 2.4.5-p12
+
+The Adobe Commerce 2.4.5-p12 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-04.md}}
+
+## 2.4.5-p11
+
+The Adobe Commerce 2.4.5-p11 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
+
+## 2.4.5-p10
+
+The Adobe Commerce 2.4.5-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
+
+### Hotfixes included in this release
+
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.5-p9
 
@@ -16,11 +108,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.5-p8
 
@@ -30,7 +122,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply hotfix for CVE-2024-34102
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### Platform upgrades
 
@@ -38,7 +130,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.5-p7
 
@@ -92,7 +184,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply hotfix for CVE-2022-31160
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6) Knowledge Base article.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) Knowledge Base article.
 
 ## 2.4.5-p3
 
@@ -102,7 +194,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply hotfix for CVE-2022-31160
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6) Knowledge Base article.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) Knowledge Base article.
 
 ### Highlights
 
@@ -130,4 +222,6 @@ The Adobe Commerce 2.4.5-p1 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
-One of the security bug fixes included the creation of a new configuration setting. The **Require email confirmation if email has been changed** configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
+One of the security bug fixes included the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
+
+<!-- Last updated from includes: 2025-10-22 11:16:25 -->

@@ -1,6 +1,6 @@
 ---
 title: Run the support utilities
-description: Troubleshoot your Commerce project using the built-in support utility.
+description: Learn how to run support utilities to troubleshoot your Adobe Commerce project. Discover built-in diagnostic and support tools.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 ---
 # Run the support utilities
@@ -9,7 +9,7 @@ exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 
 {{file-system-owner}}
 
-The Adobe Commerce Support utilities—also referred to as the [Data Collector](https://docs.magento.com/user-guide/system/support-data-collector.html)—enable users to gather troubleshooting information about your system that can be used by our Support team.
+The Adobe Commerce Support utilities—also referred to as the [Data Collector](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector)—enable users to gather troubleshooting information about your system that can be used by our Support team.
 
 Adobe Commerce uses these backups, also referred to as _dumps_,to analyze issues that require access to your code. A typical scenario follows:
 

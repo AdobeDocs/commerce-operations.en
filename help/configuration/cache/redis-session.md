@@ -1,6 +1,6 @@
 ---
 title: Use Redis for session storage
-description: Learn how to configure Redis for session storage.
+description: Learn how to configure Redis for session storage in Adobe Commerce. Discover command-line setup, configuration options, and performance optimization techniques.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 ---
@@ -63,11 +63,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 Commerce adds lines similar to the following to `<magento_root>app/etc/env.php`:
 
 ```php
-    'session' =>
-    array (
-      'save' => 'redis',
-      'redis' =>
-      array (
+'session' => [
+    'save' => 'redis',
+    'redis' => [
         'host' => '127.0.0.1',
         'port' => '6379',
         'password' => '',
@@ -85,9 +83,9 @@ Commerce adds lines similar to the following to `<magento_root>app/etc/env.php`:
         'bot_lifetime' => '7200',
         'disable_locking' => '0',
         'min_lifetime' => '60',
-        'max_lifetime' => '2592000'
-      )
-    ),
+        'max_lifetime' => '2592000',
+    ],
+],
 ```
 
 >[!INFO]

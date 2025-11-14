@@ -1,6 +1,6 @@
 ---
 title: Configuration files for deployment
-description: Understand how the configuration files work for installing the Commerce application.
+description: Learn how configuration files work for Adobe Commerce application deployment. Discover shared and system-specific configuration management best practices.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
 ---
@@ -45,7 +45,7 @@ The `config.php` file contains a list of installed modules. Adobe Commerce provi
 Examples:
 
 - Uninstall components: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Check status of components: [`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
+- Check status of components: [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - Enable or disable components: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

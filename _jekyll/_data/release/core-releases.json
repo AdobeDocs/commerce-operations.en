@@ -1,6 +1,80 @@
 {
+    "2.4.9-alpha": {
+        "releases": [
+            {
+                "publishedAt":"2025-10-14T14:05:11Z",
+                "tagName":"2.4.9-alpha3",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha3"
+            },
+            {
+                "publishedAt":"2025-08-12T14:10:04Z",
+                "tagName":"2.4.9-alpha2",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha2"
+            },
+            {
+                "publishedAt":"2025-06-10T14:13:07Z",
+                "tagName":"2.4.9-alpha1",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha1"
+            }
+        ]
+    },
+    "2.4.8": {
+        "releases": [
+            {
+                "publishedAt":"2025-10-14T14:03:58Z",
+                "tagName":"2.4.8-p3",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p3"
+            },
+            {
+                "publishedAt":"2025-08-12T14:09:09Z",
+                "tagName":"2.4.8-p2",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p2"
+            },
+            {
+                "publishedAt":"2025-06-10T14:13:07Z",
+                "tagName":"2.4.8-p1",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1"
+            },
+            {
+                "publishedAt":"2025-04-08T14:07:43Z",
+                "tagName":"2.4.8",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"
+            }
+        ],
+        "end-of-support": "2028-04-11"
+    },
     "2.4.7": {
         "releases": [
+            {
+                "publishedAt":"2025-10-14T14:02:08Z",
+                "tagName":"2.4.7-p8",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p8"
+            },
+            {
+                "publishedAt":"2025-08-12T14:07:23Z",
+                "tagName":"2.4.7-p7",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p7"
+            },
+            {
+                "publishedAt":"2025-06-10T14:12:06Z",
+                "tagName":"2.4.7-p6",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p6"
+            },
+            {
+                "publishedAt":"2025-04-08T14:06:06Z",
+                "tagName":"2.4.7-p5",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5"
+            },
+            {
+                "publishedAt":"2025-02-11T15:10:29Z",
+                "tagName":"2.4.7-p4",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4"
+            },
+            {
+                "publishedAt":"2024-10-08T14:03:23Z",
+                "tagName":"2.4.7-p3",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p3"
+            },
             {
                 "publishedAt":"2024-08-13T14:05:10Z",
                 "tagName":"2.4.7-p2",
@@ -20,6 +94,36 @@
     },
     "2.4.6": {
         "releases": [
+            {
+                "publishedAt":"2025-10-14T14:00:43Z",
+                "tagName":"2.4.6-p13",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p13"
+            },
+            {
+                "publishedAt":"2025-08-12T14:03:25Z",
+                "tagName":"2.4.6-p12",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p12"
+            },
+            {
+                "publishedAt":"2025-06-10T14:11:17Z",
+                "tagName":"2.4.6-p11",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p11"
+            },
+            {
+                "publishedAt":"2025-04-08T14:04:53Z",
+                "tagName":"2.4.6-p10",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10"
+            },
+            {   "publishedAt":"2025-02-11T15:08:27Z",
+                "tagName":"2.4.6-p9",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9"
+
+            },
+            {
+                "publishedAt":"2024-10-08T14:05:58Z",
+                "tagName":"2.4.6-p8",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p8"
+            },
             {
                 "publishedAt":"2024-08-13T14:04:05Z",
                 "tagName":"2.4.6-p7",
@@ -61,10 +165,40 @@
                 "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-6"
             }
         ],
-        "end-of-support": "2026-03-14"
+        "end-of-support": "2026-08-11"
     },
     "2.4.5": {
         "releases": [
+            {
+                "publishedAt":"2025-10-14",
+                "tagName":"2.4.5-p15",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p15"
+            },
+            {
+                "publishedAt":"2025-08-12T14:02:02Z",
+                "tagName":"2.4.5-p14",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p14"
+            },
+            {
+                "publishedAt":"2025-06-10T14:10:03Z",
+                "tagName":"2.4.5-p13",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13"
+            },
+            {
+                "publishedAt":"2025-04-08T14:03:56Z",
+                "tagName":"2.4.5-p12",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12"
+            },
+            {
+                "publishedAt":"2025-02-11T15:07:25Z",
+                "tagName":"2.4.5-p11",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11"
+            },
+            {
+                "publishedAt":"2024-10-08T14:04:47Z",
+                "tagName":"2.4.5-p10",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p10"
+            },
             {
                 "publishedAt":"2024-08-13T14:02:58Z",
                 "tagName":"2.4.5-p9",
@@ -118,10 +252,40 @@
                 "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5"
             }
         ],
-        "end-of-support": "2025-08-09"
+        "end-of-support": "2025-08-12",
+        "end-of-extended-support": "2026-08-11"
     },
     "2.4.4": {
         "releases": [
+            {
+                "publishedAt":"2025-10-14",
+                "tagName":"2.4.4-p16",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p16"
+            },
+            {
+                "publishedAt":"2025-08-12",
+                "tagName":"2.4.4-p15",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p15"
+            },
+            {
+                "publishedAt":"2025-06-05T14:35:08Z",
+                "tagName":"2.4.4-p14",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p14"
+            },
+            {
+                "publishedAt":"2025-04-08T14:02:44Z",
+                "tagName":"2.4.4-p13",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13"
+            },
+            {   "publishedAt":"2025-02-11T15:05:16Z",
+                "tagName":"2.4.4-p12",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12"
+            },
+            {
+                "publishedAt":"2024-10-08T14:03:23Z",
+                "tagName":"2.4.4-p11",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p11"
+            },
             {
                 "publishedAt":"2024-08-13T14:01:42Z",
                 "tagName":"2.4.4-p10",
@@ -179,7 +343,8 @@
                 "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-4"
             }
         ],
-        "end-of-support": "2025-04-24"
+        "end-of-support": "2025-04-12",
+        "end-of-extended-support": "2026-04-14"
     },
     "2.4.0-2.4.3": {
         "releases": [
@@ -242,28 +407,23 @@
         "releases": [
             {
                 "publishedAt":"2022-08-09T12:08:32Z",
-                "tagName":"2.3.7-p4",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html"
+                "tagName":"2.3.7-p4"
             },
             {
                 "publishedAt": "2022-04-12T14:08:47Z",
-                "tagName": "2.3.7-p3",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p3.html"
+                "tagName": "2.3.7-p3"
             },
             {
                 "publishedAt": "2021-10-12T14:41:22Z",
-                "tagName": "2.3.7-p2",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html"
+                "tagName": "2.3.7-p2"
             },
             {
                 "publishedAt": "2021-08-10T16:44:05Z",
-                "tagName": "2.3.7-p1",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p1.html"
+                "tagName": "2.3.7-p1"
             },
             {
                 "publishedAt":"2021-05-11T15:16:04Z",
-                "tagName":"2.3.7",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html"
+                "tagName":"2.3.7"
             },
             {
                 "publishedAt":"2021-02-09T18:05:03Z",
@@ -271,8 +431,7 @@
             },
             {
                 "publishedAt":"2020-10-15T14:20:33Z",
-                "tagName":"2.3.6",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html"
+                "tagName":"2.3.6"
             },
             {
                 "publishedAt":"2020-07-28T14:49:50Z",
@@ -288,8 +447,7 @@
             },
             {
                 "publishedAt":"2020-04-28T14:36:19Z",
-                "tagName":"2.3.5",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html"
+                "tagName":"2.3.5"
             },
             {
                 "publishedAt":"2020-01-28T16:03:47Z",
@@ -297,8 +455,7 @@
             },
             {
                 "publishedAt":"2020-01-28T16:34:02Z",
-                "tagName":"2.3.4",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html"
+                "tagName":"2.3.4"
             },
             {
                 "publishedAt":"2019-10-09T01:49:34Z",
@@ -306,24 +463,19 @@
             },
             {
                 "publishedAt":"2019-10-08T14:19:13Z",
-                "tagName":"2.3.3",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html"
-
+                "tagName":"2.3.3"
             },
             {
                 "publishedAt":"2019-06-25T14:13:00Z",
-                "tagName":"2.3.2",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html"
+                "tagName":"2.3.2"
             },
             {
                 "publishedAt":"2019-03-26T14:43:59Z",
-                "tagName":"2.3.1",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html"
+                "tagName":"2.3.1"
             },
             {
                 "publishedAt":"2018-11-28T17:55:38Z",
-                "tagName":"2.3.0",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html"
+                "tagName":"2.3.0"
             }
         ],
         "end-of-support": "2022-09-08"

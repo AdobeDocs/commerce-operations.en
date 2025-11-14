@@ -9,6 +9,8 @@ Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offerin
 
 This shared model enables merchants to design and implement a highly flexible, customizable, and scalable solution to meet their business requirements while minimizing operational responsibilities and costs.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+
 In general, Adobe is responsible for the following:
 
 - Developing and maintaining secure core application code
@@ -635,7 +637,7 @@ Merchants are responsible for synchronizing data between environments.
 | Custom Adobe Commerce application| |R |
 | Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration| R |   |
 | Setting up New Relic Alerts |     | R |
-| Deploying New Relic agent on PaaS Servers |     | R |
+| Deploying New Relic agent on PaaS Servers |  R   |  |
 
 {style="table-layout:auto"}
 
@@ -737,9 +739,9 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of ElasticSearch| R |   |
-| Configuration of default ElasticSearch settings| R |   |
-| Submit a service request to install an ElasticSearch version compatible with the installed Adobe Commerce version |  | R |
+| Availability of ElasticSearch or OpenSearch| R |   |
+| Configuration of default ElasticSearch or OpenSearch settings| R |   |
+| Submit a service request to install an ElasticSearch or OpenSearch version compatible with the installed Adobe Commerce version |  | R |
 
 {style="table-layout:auto"}
 
@@ -785,11 +787,49 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
+>![NOTE]
+>Merchants are required to use the most recent version of Live Search, Product Recommendations, and Payment Services to ensure the highest stability, functionality, and eligibility for support.
+>Adobe does not support outdated versions and upgrading ensures that you benefit from the latest enhancements and bug fixes.
+>For details on supported versions, see the [Product Availability Matrix for Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+
 #### Product Recommendations
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Product Recommendations service| R |   |
+| Upgrading Product Recommendations modules|   | R |
+
+{style="table-layout:auto"}
+
+#### Live Search
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Live Search service| R |   |
+| Upgrading Live Search modules |   | R |
+
+{style="table-layout:auto"}
+
+#### Quality of storefront events (data collection) to power Product Recommendations and Live Search output
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Core theme (Luma) | R |   |
+| Custom theme |  |  R |
+| Core PWA implementation | R |   |
+| Custom PWA implementation |  | R  |
+| Core AEM EDS implementation (Commerce Boilerplate) | R |   |
+| Custom AEM EDS implementation |  | R  |
+| Any other custom storefront implementation |  | R  |
+
+{style="table-layout:auto"}
+
+#### Payment Services
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Payments Service | R |   |
+| Upgrading Payments modules |   | R |
 
 {style="table-layout:auto"}
 
@@ -835,7 +875,6 @@ Merchants are responsible for synchronizing data between environments.
 | DDOS detection - layer 3-4| R |   |
 | DDOS detection - layer 7 |     | R |
 | DDOS response| R  |   |
-| Configuration of Fastly Extension Rate Limiting and Bot Protection (Limited) |     | R |
 
 {style="table-layout:auto"}
 

@@ -1,6 +1,6 @@
 ---
 title: Configure Redis
-description: Get an overview of Redis features and start your Redis configuration.
+description: Learn how to configure Redis caching for Adobe Commerce performance optimization. Discover features, setup steps, and configuration best practices.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
 ---
@@ -35,7 +35,7 @@ For sessions, Adobe recommends that you enable persistence to copy Redis data to
 
 You can also enable both the RDB and AOF options at the same time. For additional details including the advantages and disadvantages of the persistence options, see the [Redis Persistence documentation](https://redis.io/topics/persistence).
 
-For the cache instance, set up the instance so that it is large enough to store your entire Commerce cache. Size requirements depend on different factors like the number of products and store views. As a starting point, you can use the size of the cache folder on your file system. For example, if the `var/cache` folder on your file system is 5 GB, set up your Redis instance with at least 5 GB to start. Persistence is not required for the cache instance because the Commerce cache can be restored. See [Redis cache guide](https://redis.io/docs/manual/eviction/).
+For the cache instance, set up the instance so that it is large enough to store your entire Commerce cache. Size requirements depend on different factors like the number of products and store views. As a starting point, you can use the size of the cache folder on your file system. For example, if the `var/cache` folder on your file system is 5 GB, set up your Redis instance with at least 5 GB to start. Persistence is not required for the cache instance because the Commerce cache can be restored. See [Redis cache guide](https://redis.io/docs/latest/develop/use/).
 
 For performance tuning, you can enable the following settings for asynchronous deletion. These settings do not change the behavior of Redis.
 

@@ -1,6 +1,6 @@
 ---
 title: Translation dictionaries and language packages
-description: Learn how to generate translation dictionaries and build language packages.
+description: Learn how to generate translation dictionaries and build language packages for Adobe Commerce. Discover localization and multilingual store setup.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
 ---
 # Localization
@@ -278,8 +278,8 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright [first year code created] Adobe
+    * All Rights Reserved.
     */
 
    use Magento\Framework\Component\ComponentRegistrar;
@@ -295,11 +295,10 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-
+   <!--
+   Copyright [first year code created] Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>
@@ -311,7 +310,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
 
 [Translations overview]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [translation dictionary]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configures the translations]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
+[configures the translations]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [Learn more about language packages]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

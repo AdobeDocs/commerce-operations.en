@@ -1,6 +1,6 @@
 ---
 title: Configure a custom cron job and cron group (tutorial)
-description: Use this step-by-step tutorial to create a custom cron job.
+description: Learn how to create custom cron jobs using this step-by-step tutorial for Adobe Commerce. Discover module setup and cron group configuration.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
 ---
 # Configure a custom cron job
