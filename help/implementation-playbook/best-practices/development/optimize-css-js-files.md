@@ -91,7 +91,6 @@ You can also enable this flag from the command line:
 
    ```bash
    php -f bin/magento config:set dev/js/defer_non_critical 1
-   ```
 ## Additional information
 
 - [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
