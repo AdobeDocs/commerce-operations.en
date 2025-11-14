@@ -134,7 +134,7 @@ The following table describes the `set` command parameters:
 
 >[!INFO]
 >
->As of Commerce 2.2.4, the `--lock-env` and `--lock-config` options replace the `--lock` option.
+>As of Commerce 2.2.4, the `--lock-env` and `--lock-config` options replace the `--lock` option. If you use either of these options, the value is written directly to the `app/etc/env.php` or `app/etc/config.php` file and becomes read‑only in the Admin. To import configuration changes from these files into the database, run the `bin/magento app:config:import` command — for example, after manually editing or redeploying the files.
 
 If you enter an incorrect configuration path, this command returns an error
 
