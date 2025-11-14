@@ -79,9 +79,9 @@ You can turn on merging or bundling in the Commerce Admin (merging and bundling 
 
 You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
 
-   ```bash
-   php -f bin/magento config:set dev/js/enable_js_bundling 1
-   ```
+```bash
+php -f bin/magento config:set dev/js/enable_js_bundling 1
+```
 
 ## Defer non-critical head scripts
 
@@ -89,8 +89,10 @@ Automatically defer non-critical Javascripts loaded in the head section automati
 
 You can also enable this flag from the command line:
 
-   ```bash
-   php -f bin/magento config:set dev/js/defer_non_critical 1
+```bash
+php -f bin/magento config:set dev/js/defer_non_critical 1
+```
+  
 ## Additional information
 
 - [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
