@@ -2,8 +2,22 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Wed Nov 12 11:34:14 2025
+updated: Fri Nov 14 15:47:22 2025
 entries:
+- description: Documented a new developer setting to optimize CSS and javascript files.  When
+    enabled, this setting automatically defers non-critical scripts loaded into the
+    header section. For details, see [Optimize resource files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files)
+    in the Implementation Playbook.
+  versions: ''
+  type: technical
+  date: November 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1715
+  merge_commit: 51946bc7f9188e9ae5250304ffbef16f2eef5a2d
+  contributor: aplapana
+  membership:
+  labels:
+  - enhancement
+  - technical
 - description: Added a hotfix for the _Checkout page fails to load static.min.js and
     mixins.min.js_ issue:<br/>- [2.4.8-p3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#known-issues)<br/>-
     [2.4.7-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#known-issues)<br/>-

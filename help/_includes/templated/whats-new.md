@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### November 14, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented a new developer setting to optimize CSS and javascript files.  When enabled, this setting automatically defers non-critical scripts loaded into the header section. For details, see <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files">Optimize resource files</a> in the Implementation Playbook.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/51946bc7f9188e9ae5250304ffbef16f2eef5a2d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### November 12, 2025
 
 <table style="table-layout:auto;">
