@@ -183,7 +183,7 @@ You can use the `--lock-env` option to set configuration values if Commerce is n
 
 >[!INFO]
 >
->The `env.php` file is system specific. You should not transfer it to another system. You can use it to overwrite configuration values from the database. For example, you can take a database dump from another system and overwrite the `base_url` and other values so you do not have to modify the database.
+>The `env.php` file is system specific. Do not transfer it to another system. You can use it to overwrite configuration values from the database. For example, you can take a database dump from another system and overwrite the `base_url` and other values so you do not have to modify the database.
 
 If you use the `--lock-config` option as follows, the configuration value is saved in `<Commerce base dir>/app/etc/config.php`. The field for editing this value in the Admin is disabled.
 
