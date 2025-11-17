@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 14 15:47:22 2025
+updated: Mon Nov 17 14:38:11 2025
 entries:
 - description: Documented a new developer setting to optimize CSS and javascript files.  When
     enabled, this setting automatically defers non-critical scripts loaded into the
@@ -16,8 +16,20 @@ entries:
   contributor: aplapana
   membership:
   labels:
-  - enhancement
   - technical
+- description: Provided more details about  the [Set configuration values](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values)
+  versions: ''
+  type: feedback
+  date: November 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1709
+  merge_commit: 953153fb9fd6727cec8d92b7d4f6279b9d566c91
+  contributor: magedocs
+  membership:
+  labels:
+  - imported
+  - best-practices
+  - devops
+  - feedback
 - description: Added a hotfix for the _Checkout page fails to load static.min.js and
     mixins.min.js_ issue:<br/>- [2.4.8-p3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#known-issues)<br/>-
     [2.4.7-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#known-issues)<br/>-
@@ -36,7 +48,7 @@ entries:
   - release-notes
 - description: Added a note about upgrading UCT in the [CLI documentation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
   versions: ''
-  type: technical
+  type: technical, feedback
   date: November 12, 2025
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1701
   merge_commit: 173a26b3677dcaa2aaf789558780ad3733147d6b
@@ -44,6 +56,23 @@ entries:
   membership:
   labels:
   - technical
+  - feedback
+- description: Updated the `bin/magento setup:config:set` CLI command in the [Configure
+    Valkey default caching](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching)
+    instructions to specify the correct value for the `cache-backend` parameter.
+  versions: ''
+  type: technical, feedback
+  date: November 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1708
+  merge_commit: 5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72
+  contributor: magedocs
+  membership:
+  labels:
+  - imported
+  - editorial
+  - technical
+  - best-practices
+  - devops
   - feedback
 - description: Updated version numbers for the Catalog Service for Adobe Commerce
     to 1.42 in the [product availability services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
