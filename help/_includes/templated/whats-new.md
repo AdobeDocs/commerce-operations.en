@@ -26,6 +26,28 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </tbody>
 </table>
 
+### November 13, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Provided more details about the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Set configuration values</a></p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953153fb9fd6727cec8d92b7d4f6279b9d566c91">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### November 12, 2025
 
 <table style="table-layout:auto;">
@@ -49,9 +71,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><p>Added a note about upgrading UCT in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">CLI documentation</a>.</p>
 </td>
       <td>
-        Technical
+        Technical, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/173a26b3677dcaa2aaf789558780ad3733147d6b">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <code>bin/magento setup:config:set</code> CLI command in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> instructions to specify the correct value for the <code>cache-backend</code> parameter.</p>
+</td>
+      <td>
+        Technical, feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -98,7 +128,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: Login as Customer with two company admin accounts in the same session causes a “No such entity with cartId” error</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: Login as Customer with two company admin accounts in the same session causes a "No such entity with cartId" error</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -556,7 +586,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157">ACSD-66157: Special price doesn’t take effect for websites created in different time zones</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157">ACSD-66157: Special price doesn't take effect for websites created in different time zones</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -608,7 +638,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904">ACSD-67904: orders can’t be placed if the city name contains digits (0–9), ampersand (&amp;), period (.), or parentheses ().</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904">ACSD-67904: orders can't be placed if the city name contains digits (0–9), ampersand (&amp;), period (.), or parentheses ().</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -682,28 +712,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 18, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview">Overview: Quality Patches Tool (QPT) v1.1.70</a>.</p>
-</td>
-      <td>
-        Technical, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/57229680af3064cceee30be653aacf8ec37a5e74">commit</a></td>
     </tr>
   </tbody>
 </table>
