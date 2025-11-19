@@ -10,9 +10,9 @@ type: Troubleshooting
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.74.
 
 QPT v1.1.74 includes the following patches:
-1. **ACSD-68636**: Store owner’s name wasn't correctly shown in gift card email headers in invoices from another store.
-1. **ACSD-68430**: Saving a customer or address failed when it included deleted attribute options from the attribute configuration.
-1. **ACSD-68499**: GraphQL `updateCartItems` mutation returned an incorrect success response when updating quantities that exceeded available stock, resulting in inflated quantities and totals.
-1. **ACSD-68810**: An order is assigned to a created customer on a different website despite **[!UICONTROL Customer Account Sharing]** configuration.
+1. **ACSD-68636**: Fixed the issue where the store owner’s name does not display correctly in gift card email headers for invoices generated from another store.
+1. **ACSD-68430**: Fixed the issue where saving a customer or address fails when the data includes deleted attribute options from the attribute configuration.
+1. **ACSD-68499**: Fixed the issue where the GraphQL `updateCartItems` mutation returns a success response when updating quantities that exceed available stock, causing inflated quantities and totals.
+1. **ACSD-68810**: Fixed the issue where an order assigns to a newly created customer on a different website despite the **[!UICONTROL Customer Account Sharing]** configuration.
 
 Use the menu on the left to navigate to a specific patch page.
