@@ -16,11 +16,11 @@
   <tbody>
       <tr>
           <td>Catalog Service for Adobe Commerce</td>
-          <td>1.42</td>
-          <td>1.42</td>
-          <td>1.42</td>
-          <td>1.42</td>
-          <td>1.42</td>
+          <td>3.3.0</td>
+          <td>3.0.3</td>
+          <td>3.0.3</td>
+          <td>3.0.3</td>
+          <td>3.0.3</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Overview</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Release Notes</a><br/>
@@ -40,7 +40,7 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.12.0 (PHP 8.3)</td>
+          <td>2.13.0 (PHP 8.3)</td>
           <td>2.10.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
