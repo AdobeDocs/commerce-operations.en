@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.74 {#v1-1-74}
 
-* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name was not correctly shown in gift card email headers when the invoice was created from another store.
+* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name is not correctly shown in gift card email headers when the invoice is created from another store.
 * **ACSD-68430** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes an issue where saving a customer or customer address failed if the record included multiple attribute options that had been deleted from the attribute configuration.
 * **ACSD-68499** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where the GraphQL updateCartItems mutation returned an incorrect success response when updating quantities that exceeded available stock, resulting in inflated quantities and totals.
 * **ACSD-68810** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where an order was assigned to a customer created on a different website, despite the Customer Account Sharing configuration.
