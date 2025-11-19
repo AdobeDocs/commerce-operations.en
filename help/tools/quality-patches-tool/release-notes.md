@@ -18,8 +18,12 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.74 {#v1-1-74}
 
-* **AC-15867** (for Adobe Commerce and Magento Open Source 2.4.8-p3 || 2.4.7-p8 || 2.4.6-p13 || 2.4.5-p15 || 2.4.4-p16) - Fixes the issue where `static.min.js` and `mixins.min.js` are not correctly loaded when CSP and SRI are enabled along with JS bundling and minification.
+* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name was not correctly shown in gift card email headers when the invoice was created from another store.
+* **ACSD-68430** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes an issue where saving a customer or customer address failed if the record included multiple attribute options that had been deleted from the attribute configuration.
+* **ACSD-68499** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where the GraphQL updateCartItems mutation returned an incorrect success response when updating quantities that exceeded available stock, resulting in inflated quantities and totals.
+* **ACSD-68810** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where an order was assigned to a customer created on a different website, despite the Customer Account Sharing configuration.
 * Versions updated: **ACSD-49737**, **ACSD-57003-V2**
+* Replaced patches: **ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
