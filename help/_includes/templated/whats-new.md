@@ -4,6 +4,110 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### November 14, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented a new developer setting to optimize CSS and javascript files.  When enabled, this setting automatically defers non-critical scripts loaded into the header section. For details, see <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files">Optimize resource files</a> in the Implementation Playbook.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/51946bc7f9188e9ae5250304ffbef16f2eef5a2d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 13, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Provided more details about the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Set configuration values</a></p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953153fb9fd6727cec8d92b7d4f6279b9d566c91">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 12, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added a hotfix for the <em>Checkout page fails to load static.min.js and mixins.min.js</em> issue:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#known-issues">2.4.8-p3</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#known-issues">2.4.7-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#known-issues">2.4.6-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#known-issues">2.4.5-p15</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#known-issues">2.4.4-p16</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e3d926248e77840a971a6b9c48c7750077e8781">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added a note about upgrading UCT in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">CLI documentation</a>.</p>
+</td>
+      <td>
+        Technical, feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/173a26b3677dcaa2aaf789558780ad3733147d6b">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <code>bin/magento setup:config:set</code> CLI command in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> instructions to specify the correct value for the <code>cache-backend</code> parameter.</p>
+</td>
+      <td>
+        Technical, feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 10, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated version numbers for the Catalog Service for Adobe Commerce to 1.42 in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">product availability services</a> documentation.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/845612eaff717c9760dd322cc0391450a93b5192">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 31, 2025
 
 <table style="table-layout:auto;">
@@ -24,7 +128,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: Login as Customer with two company admin accounts in the same session causes a “No such entity with cartId” error</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.72 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: Login as Customer with two company admin accounts in the same session causes a "No such entity with cartId" error</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -482,7 +586,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157">ACSD-66157: Special price doesn’t take effect for websites created in different time zones</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157">ACSD-66157: Special price doesn't take effect for websites created in different time zones</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -534,7 +638,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904">ACSD-67904: orders can’t be placed if the city name contains digits (0–9), ampersand (&amp;), period (.), or parentheses ().</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904">ACSD-67904: orders can't be placed if the city name contains digits (0–9), ampersand (&amp;), period (.), or parentheses ().</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -608,94 +712,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 18, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview">Overview: Quality Patches Tool (QPT) v1.1.70</a>.</p>
-</td>
-      <td>
-        Technical, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/57229680af3064cceee30be653aacf8ec37a5e74">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 10, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added an <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches">important disclaimer</a> that applying official Adobe patches with the custom patch method is not supported.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1149839754bd04443b65f4054167f4f0c8292169">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 8, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.70 Quality Patches Tool (QPT) package release.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5abd6de938fb57de4de419ce2e8689dbd3f7f567">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 3, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Clarified that while Valkey is supported, Valkey-specific <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">CLI commands</a> are only available starting from Adobe Commerce 2.4.9.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74a275ef14ae865923a279a56563d98127f1b21c">commit</a></td>
     </tr>
   </tbody>
 </table>

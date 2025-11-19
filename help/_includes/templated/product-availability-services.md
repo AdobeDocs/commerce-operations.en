@@ -16,11 +16,11 @@
   <tbody>
       <tr>
           <td>Catalog Service for Adobe Commerce</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
+          <td>1.42</td>
+          <td>1.42</td>
+          <td>1.42</td>
+          <td>1.42</td>
+          <td>1.42</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Overview</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Release Notes</a><br/>

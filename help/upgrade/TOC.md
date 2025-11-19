@@ -18,6 +18,7 @@ topic: Administration, Commerce, Development, Upgrade
   - [Review platform changes](prepare/platform-changes.md)
   - [Complete upgrade prerequisites](prepare/prerequisites.md)
   - [Migrate from Elasticsearch to OpenSearch](prepare/opensearch-migration.md)
+  - [Migrate from RabbitMQ to ActiveMQ](prepare/activemq-migration.md)
   - [Understand upgrade scope](prepare/scope.md)
 - Implementation {#implementation}
   - [Perform an upgrade](implementation/perform-upgrade.md)
