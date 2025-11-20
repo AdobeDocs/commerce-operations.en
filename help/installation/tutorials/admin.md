@@ -32,14 +32,14 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 
 Where the following table defines parameters and values:
 
-|Name|Value|Required?|
-|--- |--- |--- |
-|`--admin-firstname`|Administrator user's first name.|Yes|
-|`--admin-lastname`|Administrator user's last name.|Yes|
-|`--admin-email`|Administrator user's e-mail address.|Yes|
-|`--admin-user`|Administrator username.|Yes|
-|`--admin-password`|Administrator user password. The password must be at least 7 characters in length and must include at least one alphabetic and at least one numeric character. <br><br>We recommend a longer, more complex password. If the password string contains special characters that require literal interpretation (such as backslashes or spaces), enclose the password in single quotations.|Yes|
-|`--magento-init-params`|Add to any command to customize application initialization parameters<br/><br/>For example: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`|No|
+|Name| Value                                                                                                                                                                                                                                                                                                                                                                                   |Required?|
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
+|`--admin-firstname`| Administrator user's first name.                                                                                                                                                                                                                                                                                                                                                        |Yes|
+|`--admin-lastname`| Administrator user's last name.                                                                                                                                                                                                                                                                                                                                                         |Yes|
+|`--admin-email`| Administrator user's e-mail address.                                                                                                                                                                                                                                                                                                                                                    |Yes|
+|`--admin-user`| Administrator username.                                                                                                                                                                                                                                                                                                                                                                 |Yes|
+|`--admin-password`| Administrator user password. The password must be at least 12 characters in length and must include at least one alphabetic and at least one numeric character. <br><br>Adobe recommends specifying a longer, more complex password. If the password string contains special characters that require literal interpretation (such as backslashes or spaces), enclose the password in single quotations. |Yes|
+|`--magento-init-params`| Add to any command to customize application initialization parameters<br/><br/>For example: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`                                                                                                                                                                                      |No|
 
 Example of usage:
 

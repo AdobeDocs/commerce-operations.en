@@ -15,12 +15,12 @@
   </thead>
   <tbody>
       <tr>
-          <td>Catalog Service for Adobe Commerce</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
+          <td>Catalog Service</td>
+          <td>3.3.0</td>
+          <td>3.0.3</td>
+          <td>3.0.3</td>
+          <td>3.0.3</td>
+          <td>3.0.3</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Overview</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Release Notes</a><br/>
@@ -28,11 +28,11 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Release Notes</a><br/>
@@ -40,7 +40,7 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.12.0 (PHP 8.3)</td>
+          <td>2.13.0 (PHP 8.3)</td>
           <td>2.10.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
@@ -52,11 +52,11 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Release Notes</a><br/>
