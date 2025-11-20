@@ -14,8 +14,8 @@ QPT v1.1.73 includes the following patches:
 1. **ACSD-67908**: Fixed the issue where JS files fail to merge properly in multi-store setups.
 1. **ACSD-68190**: Fixed the issue where discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount.
 1. **ACSD-68206**: Fixed the error when using the GraphQL Application server with the **[!UICONTROL Rate Limiting]** feature with PHP [!DNL Redis] extension installed.
-1. **ACSD-68356**: Fixed the issue where a GraphQL cart query returned an incorrect discount amount for virtual quotes.
 1. **ACSD-68391**: Category-related permissions not applied in **[!UICONTROL Quick Order]** and **[!UICONTROL Requisition Lists]**.
+1. **ACSD-68356**: [!DNL GraphQL] cart query returns incorrect discount amount for virtual quotes.
 1. **ACSD-68400**: Fixed an issue where the virtual gift card quantity wasn't accurately reflected in the **[!UICONTROL Inventory reservation table]**.
 
 Use the menu on the left to navigate to a specific patch page.
