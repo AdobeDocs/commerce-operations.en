@@ -911,7 +911,7 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
         - v1.1.74 {#v1-1-74}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.74](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview.md)
-           - [ACSD-68636: store owner’s name was not correctly shown in gift card email headers when the invoice was created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
+           - [ACSD-68636: Store owner’s name not shown correctly in gift card email headers when invoice created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
