@@ -124,7 +124,7 @@ extensions:
       - core: 2.4.4
         version: 1.7.1
 services:
-  Catalog Service for Adobe Commerce:
+  Catalog Service:
     docs:
       Overview: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes
