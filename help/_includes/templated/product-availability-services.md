@@ -15,7 +15,7 @@
   </thead>
   <tbody>
       <tr>
-          <td>Catalog Service for Adobe Commerce</td>
+          <td>Catalog Service</td>
           <td>3.3.0</td>
           <td>3.0.3</td>
           <td>3.0.3</td>
