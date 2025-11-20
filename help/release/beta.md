@@ -71,7 +71,7 @@ To participate in this beta, send an email request to [sbieber@adobe.com](mailto
 
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
-Each Adobe Commerce Foundation alpha and beta releases include all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
+Each Adobe Commerce Foundation alpha and beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
 - Latest security fixes
 - Performance improvements
