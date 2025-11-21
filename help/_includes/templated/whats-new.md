@@ -24,7 +24,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/26bcf4a962ae8b9c044cab7ac9904b3044653560">commit</a></td>
     </tr>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">Commerce Services Product Availability information</a> for the following products:<br />- Payment Services version 2.13 compatible with 2.4.8+<br />- Corrected the Catalog Services version reflect the current supported version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.</p>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">Commerce Services Product Availability information</a> for the following products:<br />- Payment Services version 2.13 compatible with 2.4.8+<br />- Corrected the Catalog Services version to reflect the current supported version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.</p>
 </td>
       <td>
         Technical

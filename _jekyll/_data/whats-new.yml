@@ -18,7 +18,7 @@ entries:
   - qpt
 - description: Updated the [Commerce Services Product Availability information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
     for the following products:<br/>- Payment Services version 2.13 compatible with
-    2.4.8+<br/>- Corrected the Catalog Services version reflect the current supported
+    2.4.8+<br/>- Corrected the Catalog Services version to reflect the current supported
     version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.
   versions: ''
   type: technical
