@@ -16,6 +16,15 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name is not correctly shown in gift card email headers when the invoice is created from another store.
+* **ACSD-68430** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes an issue where saving a customer or customer address fails if the record includes multiple attribute options that have been deleted from the attribute configuration.
+* **ACSD-68499** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where the GraphQL `updateCartItems` mutation returns an incorrect success response when updating quantities that exceed available stock, causing inflated quantities and totals.
+* **ACSD-68810** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where an order is assigned to a customer created on a different website, despite the **[!UICONTROL Customer Account Sharing]** configuration.
+* Versions updated: **ACSD-49737**, **ACSD-57003-V2**
+* Replaced patches: **ACSD-61969**
+
 ## v1.1.73 {#v1-1-73}
 
 * **ACSD-67171** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where B2B users see an *[!UICONTROL Access Denied]* page when their session expired or was removed during checkout.
