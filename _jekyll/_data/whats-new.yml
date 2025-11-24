@@ -2,8 +2,45 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Nov 17 14:38:11 2025
+updated: Fri Nov 21 15:43:53 2025
 entries:
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68356:
+    A GraphQL cart query returned an incorrect discount amount for virtual quotes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 20, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1686
+  merge_commit: 26bcf4a962ae8b9c044cab7ac9904b3044653560
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Updated the [Commerce Services Product Availability information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
+    for the following products:<br/>- Payment Services version 2.13 compatible with
+    2.4.8+<br/>- Corrected the Catalog Services version to reflect the current supported
+    version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.
+  versions: ''
+  type: technical
+  date: November 20, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1724
+  merge_commit: 0524b985f3174834e9d51cb9542a412349039993
+  contributor: meker
+  membership:
+  labels:
+  - technical
+  - release-notes
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.74](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 19, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1719
+  merge_commit: 5d110524ff0c84b7f54c11963858d9f0afc9c285
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Documented a new developer setting to optimize CSS and javascript files.  When
     enabled, this setting automatically defers non-critical scripts loaded into the
     header section. For details, see [Optimize resource files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files)

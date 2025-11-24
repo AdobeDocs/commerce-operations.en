@@ -124,21 +124,21 @@ extensions:
       - core: 2.4.4
         version: 1.7.1
 services:
-  Catalog Service for Adobe Commerce:
+  Catalog Service:
     docs:
       Overview: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes
     support:
       - core: 2.4.8
-        version: 1.42
+        version: 3.3.0
       - core: 2.4.7
-        version: 1.42
+        version: 3.0.3
       - core: 2.4.6
-        version: 1.42
+        version: 3.0.3
       - core: 2.4.5
-        version: 1.42
+        version: 3.0.3
       - core: 2.4.4
-        version: 1.42
+        version: 3.0.3
   Live Search:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
@@ -160,7 +160,7 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes
     support:
       - core: 2.4.8
-        version: 2.12.0 (PHP 8.3)
+        version: 2.13.0 (PHP 8.3)
       - core: 2.4.7
         version: 2.10.0 (PHP 8.3)
       - core: 2.4.6
