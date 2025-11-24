@@ -16,6 +16,7 @@ labels:
   optional:
     - technical
     - qpt
+    - feedback
 
 # Format of output file
 output_format:
