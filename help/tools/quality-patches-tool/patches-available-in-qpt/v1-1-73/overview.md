@@ -13,6 +13,7 @@ QPT v1.1.73 includes the following patches:
 1. **ACSD-67171**: Expired [!DNL B2B] session during checkout redirects to Access Denied page instead of login
 1. **ACSD-67908**: Fixed the issue where JS files fail to merge properly in multi-store setups.
 1. **ACSD-68190**: Fixed the issue where discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount.
+1. **ACSD-68206**: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension.
 1. **ACSD-68206**: Fixed the error when using the GraphQL Application server with the **[!UICONTROL Rate Limiting]** feature with PHP [!DNL Redis] extension installed.
 1. **ACSD-68356**: [!DNL GraphQL] cart query returns incorrect discount amount for virtual quotes.
 1. **ACSD-68391**: Fixed the issue where category-related permissions were not correctly applied in **[!UICONTROL Quick Order]** and **[!UICONTROL Requisition Lists]**.
