@@ -911,7 +911,7 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
         - v1.1.74 {#v1-1-74}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.74](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview.md)
-           - [ACSD-68499: [DNL! GraphQL] `updateCartItems` mutation returns success for quantities beyond available stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499.md)
+           - [ACSD-68499: [DNL! GraphQL] updateCartItems mutation returns success for quantities beyond available stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
