@@ -85,7 +85,7 @@ You can also enable Adobe Commerce built-in bundling (basic bundling) from the c
 
 ## Defer non-critical head scripts
 
-Non-critical Javascripts loaded in the head section can automatically be defered by enabling this setting: [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
+Automatically defer non-critical Javascripts loaded in the head section by enabling the `defer non-critical-headscripts` setting from the Commerce Admin ([!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**]).
 
 You can also enable this flag from the command line:
 
