@@ -909,6 +909,7 @@ feature: Configuration
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
+           - [ACSD-67908: JavaScript files fail to merge correctly in multi-store setups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)
            - [ACSD-68206: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
            - [ACSD-67171: Expired [!DNL B2B] session during checkout redirects to Access Denied page instead of login](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67171.md)
            - [ACSD-68400: the virtual gift card quantity was not accurately reflected in the inventory reservation table](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400.md)
