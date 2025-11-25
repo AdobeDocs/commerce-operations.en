@@ -61,5 +61,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 Use your authentication keys to:
 
 *  [Get the metapackage (integrators, packagers)](../composer.md)
-*  [Clone the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) (contributing developers only)
+*  [Clone the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) (contributing developers only)
 *  [Upgrade and manage modules](../../upgrade/modules/upgrade.md)

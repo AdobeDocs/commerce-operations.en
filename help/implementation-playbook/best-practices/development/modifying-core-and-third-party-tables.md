@@ -48,7 +48,7 @@ Two examples of storage locations are database tables and [!DNL Redis]. The key 
 
 As a developer, it is vital to always consider using tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables. With this approach, you expose your data through an API. Then, you add a data source to your App Builder configuration. Using GraphQL Mesh, you can combine those data sources and produce a single response as mentioned in [legacy data](#legacy-data).
 
-For additional details on GraphQL mesh, see [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+For additional details on GraphQL mesh, see [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modifying a core table or third-party table
 

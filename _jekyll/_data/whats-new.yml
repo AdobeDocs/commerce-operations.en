@@ -412,7 +412,7 @@ entries:
     Added a description of the Cloud Automation Patch Service to [Adobe Commerce beta
     releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).<br/>-
     Updated the [release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
-    for 2026.<br/>- Added detailed instructions for [installing and configuring](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/activemq)
+    for 2026.<br/>- Added detailed instructions for [installing and configuring](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/message-brokers/activemq)
     the ActiveMQ (Artemis) message broker for on-premises deployments.<br/>- Added
     _Configuring alternativeHeaders for Client IP Detection_ to [GraphQL Application
     Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server).'
@@ -5172,7 +5172,7 @@ entries:
   - major-update
   - 2.4.6
 - description: Updated the [Product Compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-    table with the latest releases from [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=en).
+    table with the latest releases from [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html).
   versions: 2.4.5
   type: major-update
   date: February 23, 2023
@@ -5573,7 +5573,7 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added descriptions to each category on the [recommended reading](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=en)
+- description: Added descriptions to each category on the [recommended reading](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html)
     page.
   versions: ''
   type: major-update
@@ -5595,7 +5595,7 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Updated the images in the [recommended upgrade paths](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en)
+- description: Updated the images in the [recommended upgrade paths](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html)
     topic.
   versions: ''
   type: major-update
@@ -5606,7 +5606,7 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added a new [home page](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=en)
+- description: Added a new [home page](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
     for all Adobe Commerce and Magento Open Source operational guides.
   versions: ''
   type: new-topic
