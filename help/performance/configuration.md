@@ -95,7 +95,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 >[!INFO]
 >
->See [CSS and Javascript file optimization on Adobe Commerce on cloud infrastructure and Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044482152) in the Adobe Commerce Help Center_ for more information about optimizing CSS and Javascript.
+>See [Optimize resource files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) for more information about optimizing CSS and Javascript.
 
 ### Bundling tips
 

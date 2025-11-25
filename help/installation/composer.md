@@ -17,7 +17,7 @@ Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce compone
 
 >[!NOTE]
 >
->Developers contributing to Magento Open Source should use the [git-based](https://developer.adobe.com/commerce/contributor/guides/install/) installation method.
+>Developers contributing to Magento Open Source should use the [git-based](https://developer.adobe.com/commerce/contributor/guides/install) installation method.
 
 ## Prerequisites
 

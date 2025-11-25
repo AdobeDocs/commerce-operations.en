@@ -41,10 +41,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-If you're currently in the `develop` branch, you must change to a [released branch](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) before you continue.
+If you're currently in the `develop` branch, you must change to a [released branch](https://developer.adobe.com/commerce/contributor/guides/install/change-version) before you continue.
 
 If you haven't installed the Adobe Commerce software yet, [install it now](../../installation/prerequisites/commerce.md).
-If you're cloning the GitHub repository, make sure you check out a release tag as discussed in [(Contributor) Clone the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+If you're cloning the GitHub repository, make sure you check out a release tag as discussed in [(Contributor) Clone the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository).
 
 ## Find released versions of [!DNL Data Migration Tool]
 
@@ -59,8 +59,8 @@ You may install the [!DNL Data Migration Tool] from:
 
 Before installing, make sure you have:
 
--  Completed all tasks mentioned in the [Preconditions](prerequisites.md) section
--  [Verified the version](install.md#check-your-version) of the Magento 2 software
+- Completed all tasks mentioned in the [Preconditions](prerequisites.md) section
+- [Verified the version](install.md#check-your-version) of the Magento 2 software
 
 ### Install from `repo.magento.com`
 

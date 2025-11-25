@@ -9,7 +9,7 @@ Adobe Commerce also supports the ActiveMQ Artemis open-source message broker thr
 
 >[!NOTE]
 >
->ActiveMQ Artemis was introduced in Adobe Commerce 2.4.6 and later versions. For details on installing ActiveMQ Artemis in Adobe Commerce on cloud infrastructure projects, see [Set up ActiveMQ service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemqsee) in the *Commerce on Cloud Guide*.
+>ActiveMQ Artemis was introduced in Adobe Commerce 2.4.6 and later versions. For details on installing ActiveMQ Artemis in Adobe Commerce on cloud infrastructure projects, see [Set up ActiveMQ service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) in the *Commerce on Cloud Guide*.
 
 Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other. Nor do they need to communicate with the message queue at the same time. When a sender places a message in a queue, it is stored until the recipient receives them.
 
