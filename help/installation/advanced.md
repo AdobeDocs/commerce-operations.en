@@ -7,7 +7,7 @@ exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 
 >[!TIP]
 >
->Lost? Need a helping hand? Try our [Quick start install](composer.md) or [Contributor install](https://developer.adobe.com/commerce/contributor/guides/install) guides.
+>Lost? Need a helping hand? Try our [Quick start install](composer.md) or [Contributor install](https://developer.adobe.com/commerce/contributor/guides/install/) guides.
 
 >[!NOTE]
 >
