@@ -916,6 +916,8 @@ feature: Configuration
            - [ACSD-68356: [!DNL GraphQL] cart query returns incorrect discount amount for virtual quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356.md)
         - v1.1.74 {#v1-1-74}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.74](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview.md)
+           - [ACSD-68810: Order assigned to customer created on different website despite Customer Account Sharing configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68810.md)
+           - [ACSD-68430: Saving a customer or address fails if the record contains multiple deleted attribute options](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68430.md)
            - [ACSD-68636: Store owner name missing in gift card email headers when invoice is created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
