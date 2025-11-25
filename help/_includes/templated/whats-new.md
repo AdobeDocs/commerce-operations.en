@@ -4,6 +4,102 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### November 20, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356">ACSD-68356: A GraphQL cart query returned an incorrect discount amount for virtual quotes</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/26bcf4a962ae8b9c044cab7ac9904b3044653560">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">Commerce Services Product Availability information</a> for the following products:<br />- Payment Services version 2.13 compatible with 2.4.8+<br />- Corrected the Catalog Services version to reflect the current supported version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0524b985f3174834e9d51cb9542a412349039993">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 19, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview">Overview: Quality Patches Tool (QPT) v1.1.74</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d110524ff0c84b7f54c11963858d9f0afc9c285">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 14, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented a new developer setting to optimize CSS and javascript files.  When enabled, this setting automatically defers non-critical scripts loaded into the header section. For details, see <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files">Optimize resource files</a> in the Implementation Playbook.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/51946bc7f9188e9ae5250304ffbef16f2eef5a2d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 13, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Provided more details about  the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Set configuration values</a></p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953153fb9fd6727cec8d92b7d4f6279b9d566c91">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### November 12, 2025
 
 <table style="table-layout:auto;">
@@ -27,9 +123,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><p>Added a note about upgrading UCT in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">CLI documentation</a>.</p>
 </td>
       <td>
-        Technical
+        Technical, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/173a26b3677dcaa2aaf789558780ad3733147d6b">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI command in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> instructions to specify the correct value for the <code class="language-plaintext highlighter-rouge">cache-backend</code> parameter.</p>
+</td>
+      <td>
+        Technical, feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -630,58 +734,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/066c51a6e0509bca0382157c45ed1f1c69d7e34b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 22, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166">ACSD-67166: Duplicate execution of the cataloginventory_stock_status query when loading a quote on the storefront</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2452e85a417081263d0a224ab73958d09fed1ab1">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">guidance</a> for enabling stale cache on cloud via config.php; new sections on Redis lazyfree and multithreaded I/O (requestable via Support); clarified session Redis example; and added client timeout/retry guidance with an explicit overload caveat.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 18, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview">Overview: Quality Patches Tool (QPT) v1.1.70</a>.</p>
-</td>
-      <td>
-        Technical, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/57229680af3064cceee30be653aacf8ec37a5e74">commit</a></td>
     </tr>
   </tbody>
 </table>
