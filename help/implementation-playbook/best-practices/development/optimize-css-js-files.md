@@ -83,6 +83,16 @@ You can also enable Adobe Commerce built-in bundling (basic bundling) from the c
    php -f bin/magento config:set dev/js/enable_js_bundling 1
    ```
 
+## Defer non-critical head scripts
+
+Automatically defer non-critical Javascripts loaded in the head section by enabling the `defer non-critical-headscripts` setting from the Commerce Admin ([!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**]).
+
+You can also enable this flag from the command line:
+
+   ```bash
+   php -f bin/magento config:set dev/js/defer_non_critical 1
+   ```
+
 ## Additional information
 
 - [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
