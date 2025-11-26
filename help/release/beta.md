@@ -106,6 +106,6 @@ See [Composer installation quick start](../installation/composer.md) for more de
 
 Adobe does not provide the standard Adobe Support Service for alpha and beta releases.
 
-To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
+To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions) on [GitHub](https://github.com/magento/magento2).
 
 Adobe monitors all critical issues reported against the latest alpha or beta release and prioritizes them to be resolved prior to the GA release date.

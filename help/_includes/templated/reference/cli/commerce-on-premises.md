@@ -13,11 +13,13 @@ The initial list is auto generated using the `bin/magento list` command at Adobe
 
 ## General
 
-Use the ["Add CLI commands"](https://developer.adobe.com/commerce/php/development/cli-commands) guide to add a custom CLI command.
+Use the ["Add CLI commands"](https://developer.adobe.com/commerce/php/development/cli-commands/) guide to add a custom CLI command.
 
 You can call `bin/magento` CLI commands using shortcuts instead of the full command name. For example, you can call `bin/magento setup:upgrade` using `bin/magento s:up`, `bin/magento s:upg`. See [shortcut syntax](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) to understand how to use shortcuts with any CLI command.
 
-This reference documentation is generated from the application source code. To change the documentation, you should open a pull request for the corresponding command in the relevant [codebase](https://github.com/magento) repository. See [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) for more information.
+This reference documentation is generated from the application source code. To change the documentation, you should open
+a pull request for the corresponding command in the relevant [codebase](https://github.com/magento) repository. See
+[Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions) for more information.
 
 ### Global options
 

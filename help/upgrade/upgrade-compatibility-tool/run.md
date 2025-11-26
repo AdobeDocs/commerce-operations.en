@@ -150,7 +150,7 @@ The `bin/uct core:code:changes` command checks if there is a vanilla instance in
 
 You can run an [!DNL Upgrade Compatibility Tool] command with the `--vanilla-dir` option to specify the Adobe Commerce vanilla installation directory.
 
-See the [Deploy vanilla instance](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) topic for more information.
+See the [Deploy vanilla instance](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) topic for more information.
 
 ## Use the `refactor` command
 

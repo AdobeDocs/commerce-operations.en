@@ -18,7 +18,9 @@ Learn more about the tool in [Overview](/help/upgrade/upgrade-compatibility-tool
 >
 >The `composer update` command does not work for upgrading this tool—you must [download and install the latest version](/help/upgrade/upgrade-compatibility-tool/run.md).
 
-This reference documentation is generated from the application source code. To change the documentation, you should open a pull request for the corresponding command in the relevant [codebase](https://github.com/magento) repository. See [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) for more information.
+This reference documentation is generated from the application source code. To change the documentation, you should open
+a pull request for the corresponding command in the relevant [codebase](https://github.com/magento) repository. See
+[Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions) for more information.
 
 ### Global options
 
