@@ -19,7 +19,7 @@ You can call `bin/magento` CLI commands using shortcuts instead of the full comm
 
 This reference documentation is generated from the application source code. To change the documentation, you should open
 a pull request for the corresponding command in the relevant [codebase](https://github.com/magento) repository. See
-[Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions) for more information.
+[Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) for more information.
 
 ### Global options
 
