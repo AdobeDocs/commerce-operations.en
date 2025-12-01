@@ -2,8 +2,124 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 21 15:43:53 2025
+updated: Fri Nov 28 15:40:10 2025
 entries:
+- description: Updated the [Managed alerts for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
+    topic to include information about how to review threshold values for current
+    alerts using New Relic.
+  versions: ''
+  type: feedback
+  date: November 25, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1729
+  merge_commit: 4700a933b0a8c80311418b11f53b47adfaf10af6
+  contributor: meker
+  membership:
+  labels:
+  - maintenance
+  - feedback
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68391:
+    Category-related permissions were not correctly applied in Quick Order and Requisition
+    Lists](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 25, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1687
+  merge_commit: 163fe566cbf1e56dcb5b6193bc856471e62513ff
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-67908:
+    JS files fail to merge properly in multi-store setups](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 25, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1683
+  merge_commit: a87d38586badc8d4a9255dc4b89c2fe31ce4d956
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68206:
+    Fixes the error when using the GraphQL Application server with the Rate Limiting
+    feature with PHP Redis extension installed](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1685
+  merge_commit: 506ecc383f924af3b972265d9202a3d4af9aa61e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68400:
+    The virtual gift card quantity was not accurately reflected in the inventory reservation
+    table](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1688
+  merge_commit: 1c0a0a6fdf843c56422335227247c27fcd43594a
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-67171:
+    B2B users see an Access Denied page when their session expired or was removed
+    during checkout](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67171).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1682
+  merge_commit: ce0e4d4d9aa6ddaf487b5e1a66252115fe605c8c
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.74 fix for [ACSD-68636:
+    Store owner’s name was not correctly shown in gift card email headers when the
+    invoice was created from another store](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1720
+  merge_commit: 367b7f6a8d5d78212be1cd527af06cb2719d3634
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.74 fix for [ACSD-68430:
+    Saving a customer or customer address failed if the record included multiple attribute
+    options that had been deleted from the attribute configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68430).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1721
+  merge_commit: 9efdb9547d5c066f6487cb89293e68f27041a6bb
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.74 fix for [ACSD-68810:
+    Order assigned to customer created on different website despite Customer Account
+    Sharing configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68810).'
+  versions: ''
+  type: new-topic, qpt
+  date: November 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1723
+  merge_commit: c8d442f9a5d3bf1f2bdd245f66eaf77b8168b9e8
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68356:
     A GraphQL cart query returned an incorrect discount amount for virtual quotes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356).'
   versions: ''
