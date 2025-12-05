@@ -51,7 +51,7 @@ Generate new [authentication keys](prerequisites/authentication-keys.md) (or cop
    
 Download using [Composer](prerequisites/commerce.md) (recommended) or clone from GitHub for development contributions.
 
-If you want to contribute to the Magento Open Source codebase or customize the application, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) the GitHub repository. This method requires familiarity with both GitHub and Composer.
+If you want to contribute to the Magento Open Source codebase or customize the application, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) the GitHub repository. This method requires familiarity with both GitHub and Composer.
 
 ### Install the application
    

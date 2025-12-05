@@ -110,5 +110,5 @@ Again, replace `www.example.com` with your website's domain and set `-P` to the 
 
 >[!NOTE]
 >
->- Adobe Commerce on cloud infrastructure projects can offload product image resizing to the Fastly service. See [Deep image optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) in the _Cloud Guide_.
+>- Adobe Commerce on cloud infrastructure projects can offload product image resizing to the Fastly service. See [Deep image optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization) in the _Cloud Guide_.
 >- If you use the remote storage module, you can also try offloading image resizing to nginx. See [Configure image resizing for remote storage](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) in the _Configuration Guide_.

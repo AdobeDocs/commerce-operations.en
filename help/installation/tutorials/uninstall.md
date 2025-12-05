@@ -11,15 +11,15 @@ Before you use these commands, you must [install the application](../tutorials/i
 
 To update the application:
 
-*  If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](../../upgrade/overview.md).
-*  If you are a contributing developer (that is, you used `git clone`), see [Update the application](../../upgrade/developer/git-installs.md).
+* If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](../../upgrade/overview.md).
+* If you are a contributing developer (that is, you used `git clone`), see [Update the application](../../upgrade/developer/git-installs.md).
 
 ## Reinstall the application
 
 The way you reinstall the application from the command line depends on your role:
 
-*  If you installed the software from an archive or if you used 'composer-create-project', see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-*  If you're a contributing developer (that is, you started using `git clone`), see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* If you installed the software from an archive or if you used 'composer-create-project', see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
+* If you're a contributing developer (that is, you started using `git clone`), see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Uninstall the application
 
@@ -53,4 +53,4 @@ bin/magento setup:upgrade --keep-generated
 
 ## Install the application
 
-*  [Install using the command line](../advanced.md)
+* [Install using the command line](../advanced.md)

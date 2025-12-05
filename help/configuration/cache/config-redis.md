@@ -17,7 +17,7 @@ Redis features include:
 Installing and configuring the Redis software is beyond the scope of this guide. Consult resources such as:
 
 - [Download Redis page](https://redis.io/download)
-- [Redis quick start](https://redis.io/docs/getting-started/)
+- [Redis quick start](https://redis.io/docs/latest/)
 - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [Redis documentation page](https://redis.io/docs)
 

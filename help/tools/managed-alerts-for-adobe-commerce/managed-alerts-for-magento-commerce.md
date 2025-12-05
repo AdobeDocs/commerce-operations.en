@@ -45,3 +45,7 @@ See below in the table for links to the KB articles providing troubleshooting st
 | Warning & Critical |     |        |      |       | ✅       |              | [Managed alerts on Adobe Commerce: MariaDB alerts](managed-alerts-on-magento-commerce-mariadb-alerts.md)|
 | Warning  |     |        |      |       |         | ✅          | [Managed alerts on Adobe Commerce: [!DNL Redis] memory warning alert](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)|
 | Critical |     |        |      |       |         | ✅          | [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)|
+
+## Review alert thresholds set for managed alerts
+
+You can review the alert thresholds configured for managed alerts from your New Relic account. For instructions, see [Monitor performance with managed alerts](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).

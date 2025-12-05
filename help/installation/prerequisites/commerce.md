@@ -15,7 +15,7 @@ Check the availability and compatibility of Adobe-authored extensions and Commer
 >
 >Adobe Commerce codebases are now exclusively distributed via Composer due to policy changes. Use Composer to download any of the listed Adobe Commerce versions as the codebase is no longer available in the Downloads section.
 >
->For more information, refer to [Can’t access billing statement and download codebase on Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>For more information, refer to [Can't access billing statement and download codebase on Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consult the following table for getting started with installing Adobe Commerce.
 
@@ -47,7 +47,7 @@ Consult the following table for getting started with installing Adobe Commerce.
             <li>Installs the application using <a href="../advanced.md">command line</a>.</li>
             <li>Upgrades the application using <a href="../../upgrade/developer/git-installs.md">Composer and Git commands</a>.</li>
             <li>Customizes code under the <code>app/code</code> directory.</li></ol></td>
-        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clone the GitHub repository</a></p></td>
+        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository">Clone the GitHub repository</a></p></td>
     </tr>
     </tbody>
 </table>
