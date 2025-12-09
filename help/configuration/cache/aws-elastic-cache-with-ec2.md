@@ -4,9 +4,7 @@ description: For Commerce instances hosted on EC2, learn how use AWS ElastiCache
 feature: Configuration, Cache
 ---
 
-As of Commerce 2.4.3, instances hosted on Amazon EC2 can use an AWS ElastiCache in place of a local Redis instance.
-
-## Using AWS ElastiCache with your EC2 instance
+# Using AWS ElastiCache with your EC2 instance
 
 As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache in place of a local Redis instance.
 
@@ -14,7 +12,7 @@ As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache 
 >
 >This section only works for Commerce instances running on Amazon EC2 VPCs. It does not work for on-premises installations.
 
-### Configure a Redis cluster
+## Configure a Redis cluster
 
 After [setting up a Redis cluster on AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), configure the EC2 instance to use the ElastiCache.
 
@@ -60,7 +58,7 @@ To configure Commerce to use Redis for session storage:
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
-### Verify connectivity
+## Verify connectivity
 
 **To verify that Commerce is talking to ElastiCache**:
 
