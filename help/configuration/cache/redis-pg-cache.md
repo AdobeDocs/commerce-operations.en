@@ -183,6 +183,7 @@ Since this option is a flag, you cannot disable it with a command. You must manu
         'allow_parallel_generation' => false
     ],
 ```
+
 ## Verify the Redis connection
 
 To verify that Redis and Commerce are working together, log in to the server running Redis, open a terminal, and use the Redis monitor command or the ping command.
