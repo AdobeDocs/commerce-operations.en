@@ -1,10 +1,10 @@
 ---
-title: Redis with AWS ElastiCache
+title: Configure Redis with AWS ElastiCache
 description: For Commerce instances hosted on EC2, learn how use AWS ElastiCache in place of a local Redis instance. Discover command-line setup, configuration options, and validation techniques.
 feature: Configuration, Cache
 ---
 
-# Using AWS ElastiCache with your EC2 instance
+# Configure Redis with AWS ElastiCache
 
 As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache in place of a local Redis instance.
 
