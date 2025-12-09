@@ -70,9 +70,9 @@ The following example enables Redis page caching, sets the host to `127.0.0.1`, 
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
-## Results
+## Review Commerce environment configuration
 
-As a result of the two example commands, Commerce adds lines similar to the following to `<Commerce-install-dir>app/etc/env.php`:
+Running the commands to configure Redis caching, updates the Commerce environment configuration (`<Commerce-install-dir>app/etc/env.php`):
 
 ```php
 'cache' => [
@@ -97,6 +97,93 @@ As a result of the two example commands, Commerce adds lines similar to the foll
     ]
 ],
 ```
+
+## Configure additional caching options
+
+This section describes how to enable optional configuration settings that are disabled by default. 
+
+### Redis preload feature
+
+Since Commerce stores configuration data in the Redis cache, we can preload data that is reused between pages. To find keys that must be preloaded, analyze data that is transferred from Redis to Commerce. We suggest preloading data that is loaded on every page, such as `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+
+Redis uses the `pipeline` in order to composite load requests. Keys should include the database prefix; for example, if database prefix is `061_`, preload key looks like: `061_SYSTEM_DEFAULT`
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => '061_',
+            'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'password' => '',
+                'compress_data' => '1',
+                'compression_lib' => '',
+                'preload_keys' => [
+                    '061_EAV_ENTITY_TYPES',
+                    '061_GLOBAL_PLUGIN_LIST',
+                    '061_DB_IS_UP_TO_DATE',
+                    '061_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => '061_'
+        ]
+    ]
+]
+```
+
+In case you are using the preload feature with the L2 cache, do not forget to add the `:hash` suffix to your keys, since L2 cache only transfers the hash of the data, not the data itself:
+
+```php
+'preload_keys' => [
+    '061_EAV_ENTITY_TYPES:hash',
+    '061_GLOBAL_PLUGIN_LIST:hash',
+    '061_DB_IS_UP_TO_DATE:hash',
+    '061_SYSTEM_DEFAULT:hash',
+],
+```
+
+#### Parallel generation
+
+Starting with the 2.4.0 release, eliminate waiting for locks by enabling the `allow_parallel_generation` option.
+
+This option is disabled by default, and Adoe recommends disabling it until you have a large number of configurations or blocks.
+
+**To enable parallel generation**:
+
+```bash
+bin/magento setup:config:set --allow-parallel-generation
+```
+
+Since this option is a flag, you cannot disable it with a command. You must manually set the configuration value to `false`:
+
+```php
+    'cache' => [
+        'frontend' => [
+            'default' => [
+                'id_prefix' => 'b0b_',
+                'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis',
+                'backend_options' => [
+                    'server' => 'redis',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                    'compression_lib' => ''
+                ]
+            ],
+            'page_cache' => [
+                'id_prefix' => 'b0b_'
+            ]
+        ],
+        'allow_parallel_generation' => false
+    ],
+```
+
 
 ## Using AWS ElastiCache with your EC2 instance
 
@@ -166,106 +253,8 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 1. Open a page in the Commerce UI.
 1. Verify the [cache output](#verify-redis-connection) in your terminal.
 
-## New Redis cache implementation
 
-As of Commerce 2.3.5, it is recommended to use the extended Redis cache implementation: `\Magento\Framework\Cache\Backend\Redis`.
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379'
-            ],
-        ],
-],
-```
-
-## Redis preload feature
-
-Since Commerce stores configuration data in the Redis cache, we can preload data that is reused between pages. To find keys that must be preloaded, analyze data that is transferred from Redis to Commerce. We suggest preloading data that is loaded on every page, such as `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
-
-Redis uses the `pipeline` in order to composite load requests. Keys should include the database prefix; for example, if database prefix is `061_`, preload key looks like: `061_SYSTEM_DEFAULT`
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'id_prefix' => '061_',
-            'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis',
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '0',
-                'port' => '6379',
-                'password' => '',
-                'compress_data' => '1',
-                'compression_lib' => '',
-                'preload_keys' => [
-                    '061_EAV_ENTITY_TYPES',
-                    '061_GLOBAL_PLUGIN_LIST',
-                    '061_DB_IS_UP_TO_DATE',
-                    '061_SYSTEM_DEFAULT',
-                ],
-            ]
-        ],
-        'page_cache' => [
-            'id_prefix' => '061_'
-        ]
-    ]
-]
-```
-
-In case you are using the preload feature with the L2 cache, do not forget to add the `:hash` suffix to your keys, since L2 cache only transfers the hash of the data, not the data itself:
-
-```php
-'preload_keys' => [
-    '061_EAV_ENTITY_TYPES:hash',
-    '061_GLOBAL_PLUGIN_LIST:hash',
-    '061_DB_IS_UP_TO_DATE:hash',
-    '061_SYSTEM_DEFAULT:hash',
-],
-```
-
-## Parallel generation
-
-Starting with the 2.4.0 release, we introduced the `allow_parallel_generation` option for the users that want to eliminate waitings for locks.
-It is disabled by default, and we recommend disabling it until you have excessive configurations and/or blocks.
-
-**To enable parallel generation**:
-
-```bash
-bin/magento setup:config:set --allow-parallel-generation
-```
-
-Since it is a flag, you cannot disable it with a command. You must manually set the configuration value to `false`:
-
-```php
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'id_prefix' => 'b0b_',
-                'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis',
-                'backend_options' => [
-                    'server' => 'redis',
-                    'database' => '0',
-                    'port' => '6379',
-                    'password' => '',
-                    'compress_data' => '1',
-                    'compression_lib' => ''
-                ]
-            ],
-            'page_cache' => [
-                'id_prefix' => 'b0b_'
-            ]
-        ],
-        'allow_parallel_generation' => false
-    ],
-```
-
-## Verify Redis connection
+## Verify the Redis connection
 
 To verify that Redis and Commerce are working together, log in to the server running Redis, open a terminal, and use the Redis monitor command or the ping command.
 
