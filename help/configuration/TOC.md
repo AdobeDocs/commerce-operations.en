@@ -35,6 +35,7 @@ feature: Configuration
         + [Configure Redis](cache/config-redis.md)
         + [Use Redis for default cache](cache/redis-pg-cache.md)
         + [Use Redis for session storage](cache/redis-session.md)
+        + [Use AWS Elasticache for EC2 instances](cache/redis-aws-elasticache.md)
     + Valkey {#valkey}
         + [Configure Valkey](cache/config-valkey.md)
         + [Use Valkey for default cache](cache/valkey-pg-cache.md)
