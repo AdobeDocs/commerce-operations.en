@@ -8,7 +8,7 @@ exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
 The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the [consumers](consumers.md) that will receive the messages asynchronously. The MQF supports multiple messaging brokers:
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - The primary messaging broker, which provides a scalable platform for sending and receiving messages. It includes a mechanism for storing undelivered messages and is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - An alternative messaging broker that uses the STOMP (Simple Text Oriented Messaging Protocol) for reliable and scalable messaging. Introduced in Adobe Commerce 2.4.6 and later versions.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - An alternative messaging broker that uses the STOMP (Simple Text Oriented Messaging Protocol) for reliable and scalable messaging. Introduced in Adobe Commerce 2.4.5 and later versions.
 
 ## RabbitMQ (AMQP)
 
@@ -32,7 +32,7 @@ As an alternative to RabbitMQ, Adobe Commerce also supports [Apache ActiveMQ Art
 
 >[!NOTE]
 >
->ActiveMQ Artemis was introduced in Adobe Commerce 2.4.6 and later versions.
+>ActiveMQ Artemis was introduced in Adobe Commerce 2.4.5 and later versions.
 
 The following diagram illustrates the STOMP Framework with ActiveMQ Artemis:
 
