@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### December 9, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.74 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499">ACSD-68499: GraphQL updateCartItems mutation returned an incorrect success response when updating quantities that exceeded available stock, resulting in inflated quantities and totals</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08198cca757b3a3a86febc4ec41259b6c2727367">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### November 25, 2025
 
 <table style="table-layout:auto;">
@@ -608,120 +630,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6215859ec6fdf691d76e3f601b50dffe80366ad">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### October 9, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093">ACSD-67093: Retrieving orders through GraphQL using the date range filter returns incorrect results.</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/010f7e7d2b1d35d91fc1ee4406cd02c7c5e2ec1b">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Brought back AWS S3 to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a>.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/54562cac43e07dc6ee3bebc09be9bd7e3f1c9743">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### October 8, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030">ACSD-67030: Simple products are unassigned from a configurable product when edited by a limited role admin</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dcbdb38e0888e62830582b7a287199b1b21628ae">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### October 7, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.70 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66120">ACSD-66120: GraphQL incorrectly displayed discount percentages and base prices when catalog prices were configured to include tax</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/863b0ea697df3a7f035677cea3a37b1f90b694a1">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652">ACSD-67652: Bundle product status returned as out-of-stock in GraphQL calls with child and parent products in stock</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7930485bd1a09d177b2c321212f74f945dc20b6e">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624">ACSD-60624: [!UICONTROL Upload Image] fails for empty content in [!UICONTROL Image], [!UICONTROL Banner], and [!UICONTROL Slider] sections in [!DNL Page Builder]</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0eb160525869da07939581b23db533a2ef81db6">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459">ACSD-67459: Unable to import products with descriptions longer than 65,536 characters</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8313dee9b74bae8d373f72bd0db44de0027ff1c8">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.71 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67089">ACSD-67089: inventory/export-stock-salable-qty API returns incorrect total_count when page_size is set</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/85ff2106651b19805e757ebceb9d2bbd33715649">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added information about the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/swat-health-index">SWAT Health Index Score</a> to the Site Wide Analysis Tool Guide.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4b85c5d7de94a9513a760563d0392ede3a9f09ac">commit</a></td>
     </tr>
   </tbody>
 </table>
