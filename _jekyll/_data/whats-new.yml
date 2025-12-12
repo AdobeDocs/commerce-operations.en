@@ -2,8 +2,22 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Dec 5 15:42:52 2025
+updated: Fri Dec 12 15:41:23 2025
 entries:
+- description: 'Added detailed description of the QPT 1.1.74 fix for [ACSD-68499:
+    GraphQL updateCartItems mutation returned an incorrect success response when updating
+    quantities that exceeded available stock, resulting in inflated quantities and
+    totals](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499).'
+  versions: ''
+  type: new-topic, qpt
+  date: December 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1722
+  merge_commit: '08198cca757b3a3a86febc4ec41259b6c2727367'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Updated the [Managed alerts for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
     topic to include information about how to review threshold values for current
     alerts using New Relic.
