@@ -70,4 +70,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Open a page in the Commerce UI.
-1. Verify the [cache output](#verify-redis-connection) in your terminal.
+1. Verify the [cache output](#verify-the-redis-connection) in your terminal.
