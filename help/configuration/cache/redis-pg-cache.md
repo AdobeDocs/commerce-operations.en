@@ -10,6 +10,10 @@ Commerce provides command-line options to configure the Redis page and default c
 
 You must [install Redis](config-redis.md#install-redis) before continuing.
 
+>[!NOTE]
+>
+>For Commerce instances hosted on EC2, you can use AWS ElastiCache in place of a local Redis instance. See [Configure Elasticache for EC2 instances](redis-elasticache-for-ec2.md).
+
 ## Configure Redis default caching
 
 Run the `setup:config:set` command and specify parameters that specific to Redis default caching.
