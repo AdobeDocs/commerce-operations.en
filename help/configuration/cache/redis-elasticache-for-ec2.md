@@ -12,12 +12,11 @@ As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache 
 >
 >This section is applicable only for Commerce instances running on Amazon EC2 VPCs. It does not work for on-premises installations.
 
-## Configure a Redis cluster
+## Prerequisites
 
-After [setting up a Redis cluster on AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), configure the EC2 instance to use the ElastiCache.
-
-1. [Create an ElastiCache Cluster](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) in the same region and VPC of the EC2 instance.
-1. Verify the connection.
+- **Create a Redis OSS serverless cache**—From the AWS Management Console, create the Redis cache in the same region and VPC of the EC2 instance. For instructions, see the [AWS Elasticache documentation](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html.
+  
+- **Verify the connection to your EC2 Commerce instance**
 
    - Open an SSH connection to your EC2 instance
    - On the EC2 instance, install the Redis client:
