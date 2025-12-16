@@ -153,7 +153,7 @@ In case you are using the preload feature with the L2 cache, do not forget to ad
 
 ### Parallel generation
 
-Starting with the 2.4.0 release, eliminate waiting for locks by enabling the `allow_parallel_generation` option.
+Eliminate waiting for locks by enabling the `allow_parallel_generation` option.
 
 This option is disabled by default, and Adobe recommends disabling it until you have a large number of configurations or blocks.
 
