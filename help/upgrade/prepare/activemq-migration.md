@@ -7,7 +7,7 @@ feature: Services, Configuration
 
 ActiveMQ (Apache ActiveMQ Artemis) is a high-performance, multi-protocol message broker that provides an alternative to RabbitMQ for handling message queues in Adobe Commerce.
 
-As of 2.4.8-p3, 2.4.7-p8, and 2.4.6-p13, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
+As of 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 and 2.4.5-p16, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
 
 ## Before you begin
 

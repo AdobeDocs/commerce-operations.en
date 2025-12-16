@@ -142,7 +142,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 >[!NOTE]
 >
->ActiveMQ Artemis was introduced in Adobe Commerce 2.4.6 and later versions.
+>ActiveMQ Artemis was introduced in Adobe Commerce 2.4.5 and later versions.
 
 |Name|Value|Required?|
 |--- |--- |--- |
@@ -329,7 +329,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->ActiveMQ Artemis installation requires Adobe Commerce 2.4.6 or later.
+>ActiveMQ Artemis installation requires Adobe Commerce 2.4.5 or later.
 
 >[!TIP]
 >
