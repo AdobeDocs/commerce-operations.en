@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 2 15:47:25 2026
+updated: Mon Jan 5 14:19:26 2026
 entries:
 - description: 'Added detailed description of the QPT 1.1.74 fix for [ACSD-68499:
     GraphQL updateCartItems mutation returned an incorrect success response when updating
