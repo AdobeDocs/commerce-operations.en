@@ -1,10 +1,10 @@
+# Copyright 2024 Adobe. All rights reserved.
+# Licensed under the MIT License. See license.md for details.
+
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'rake'
-gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', tag: 'v1.2.0'
+gem 'adobe-comdox-exl-rake-tasks', git: 'https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks', tag: 'v0.3.0'
 gem 'faraday-retry'
-gem 'image_optim_pack'
-gem 'adobe-comdox-exl-rake-tasks', git: 'https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks', tag: 'v0.2.0'
+gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', tag: 'v1.2.0'

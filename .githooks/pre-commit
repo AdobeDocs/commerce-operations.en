@@ -1,33 +1,32 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Copyright 2024 Adobe All Rights Reserved.
-# NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
-# The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
-# Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Adobe.
+# Copyright 2025 Adobe. All rights reserved.
+# Licensed under the MIT License. See license.md for details.
 
 # Pre-commit hook for image optimization
 # This hook automatically optimizes images before they are committed
 
 require 'fileutils'
+require 'shellwords'
 
 # Get the directory where this hook is located
 hook_dir = File.dirname(__FILE__)
 project_root = File.expand_path('..', hook_dir)
 
-# Change to project root
 Dir.chdir(project_root)
 
-# Check if we're in the right directory (should contain _jekyll folder)
 unless Dir.exist?('_jekyll')
-  puts "Error: Could not find _jekyll directory. Make sure you're in the right project."
+  puts "Error: Could not find _jekyll directory."
   exit 1
 end
 
 # Get staged image files
 staged_files = `git diff --cached --name-only --diff-filter=ACM`.split("\n")
+exit 1 if $?.exitstatus != 0
+
 image_extensions = %w[.png .jpg .jpeg .gif .svg]
-staged_images = staged_files.select { |file| image_extensions.include?(File.extname(file).downcase) }
+staged_images = staged_files.select { |f| image_extensions.include?(File.extname(f).downcase) }
 
 if staged_images.empty?
   puts "No images staged for commit. Skipping image optimization."
@@ -36,31 +35,22 @@ end
 
 puts "Found #{staged_images.length} staged image(s). Running optimization..."
 
-# Change to _jekyll directory to use bundle
-Dir.chdir('_jekyll')
-
-# Run image optimization on staged images
-staged_images.each do |image_path|
-  # Ensure the image path is relative to _jekyll directory
-  relative_path = image_path.start_with?('_jekyll/') ? image_path[8..] : "../#{image_path}"
-
-  puts "Optimizing: #{image_path}"
-
-  # Run image_optim on the specific file
-  result = system("bundle exec image_optim --no-svgo '#{relative_path}'")
-
-  unless result
-    puts "Warning: Failed to optimize #{image_path}"
-  end
+# Build paths relative to _jekyll directory
+relative_paths = staged_images.map do |path|
+  path.start_with?('_jekyll/') ? path[8..] : "../#{path}"
 end
 
-# Add optimized images back to staging area
+# Run optimization on all images at once
+Dir.chdir('_jekyll')
+paths_arg = relative_paths.map { |p| Shellwords.escape(p) }.join(' ')
+result = system("bundle exec rake images:optimize path=\"#{paths_arg}\"")
+
+puts "Warning: Some images failed to optimize" unless result
+
+# Re-stage optimized images
 Dir.chdir(project_root)
 staged_images.each do |image_path|
-  if File.exist?(image_path)
-    system("git add '#{image_path}'")
-    puts "Re-staged optimized image: #{image_path}"
-  end
+  system("git add #{Shellwords.escape(image_path)}") if File.exist?(image_path)
 end
 
 puts "Image optimization complete!"

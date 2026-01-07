@@ -77,6 +77,32 @@ Generates an Azure regions map. The input data file should be placed in `_jekyll
 rake azure_regions
 ```
 
+### `get_released_versions`
+
+Gets the last 10 released versions from the `magento/magento2` repository. Requires [GitHub CLI](https://cli.github.com/) to be installed and authenticated.
+
+**Usage:**
+
+```sh
+rake get_released_versions
+```
+
+**Output:** Generates `tmp/core-release.txt` with release tag names and dates.
+
+### `first_merge_date`
+
+Gets the date of the first merge into a specified branch. Requires [GitHub CLI](https://cli.github.com/) to be installed and authenticated.
+
+**Usage:**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**Arguments:**
+
+- `base` (required): The target branch name to check for merges.
+
 ### `includes:maintain_relationships`
 
 Discovers and updates the `include-relationships.yml` file by scanning all markdown files in the `help` directory for include statements using the pattern `{{$include /help/_includes/filename.md}}`. This task automatically maintains the relationships between main content files and their included files.
@@ -208,7 +234,8 @@ Main content files use the following syntax to include other files:
 ## Prerequisites
 
 - Ruby and Bundler installed.
-- Required gems specified in the Gemfile.
+- Required gems specified in the Gemfile (core dependencies are provided by `adobe-comdox-exl-rake-tasks`).
+- [GitHub CLI](https://cli.github.com/) for the `get_released_versions` and `first_merge_date` tasks.
 - Python, [PyGMT](https://www.pygmt.org/latest/install.html), and [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) for the `azure_regions` task.
 
 ## Setup
