@@ -20,4 +20,3 @@ gifsicle: true         # Enable gifsicle for GIF optimization
 nice: 10               # Process priority (lower = higher priority)
 threads: 4             # Number of threads to use
 verbose: false         # Reduce output verbosity in pre-commit hook
-
