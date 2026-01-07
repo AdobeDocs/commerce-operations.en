@@ -1,0 +1,22 @@
+# Image optimization configuration for pre-commit hook
+# This file configures the image_optim gem settings
+
+# PNG optimization
+pngout: false          # Disable pngout (requires external binary)
+svgo: false            # Disable SVG optimization (can break some SVGs)
+advpng: true           # Enable advpng for PNG compression
+optipng: true          # Enable optipng for PNG compression
+pngquant: true         # Enable pngquant for PNG compression
+
+# JPEG optimization
+jhead: true            # Enable jhead for JPEG metadata cleanup
+jpegoptim: true        # Enable jpegoptim for JPEG compression
+jpegtran: true         # Enable jpegtran for JPEG optimization
+
+# GIF optimization
+gifsicle: true         # Enable gifsicle for GIF optimization
+
+# General settings
+nice: 10               # Process priority (lower = higher priority)
+threads: 4             # Number of threads to use
+verbose: false         # Reduce output verbosity in pre-commit hook
