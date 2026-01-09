@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### January 9, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added Composer 2.9 as a supported version for Adobe Commerce 2.4.9, 2.4.8, and 2.4.7 in the <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">System requirements</a> documentation.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/018a833063a139a59906630b03d03dd827157bdf">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### December 9, 2025
 
 <table style="table-layout:auto;">
@@ -256,28 +278,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Technical, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### November 10, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated version numbers for the Catalog Service for Adobe Commerce to 1.42 in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">product availability services</a> documentation.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/845612eaff717c9760dd322cc0391450a93b5192">commit</a></td>
     </tr>
   </tbody>
 </table>
