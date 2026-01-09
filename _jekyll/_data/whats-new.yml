@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Jan 5 14:19:26 2026
+updated: Fri Jan 9 16:14:40 2026
 entries:
+- description: Added Composer 2.9 as a supported version for Adobe Commerce 2.4.9,
+    2.4.8, and 2.4.7 in the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    documentation.
+  versions: ''
+  type: technical
+  date: January 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1747
+  merge_commit: '018a833063a139a59906630b03d03dd827157bdf'
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
 - description: 'Added detailed description of the QPT 1.1.74 fix for [ACSD-68499:
     GraphQL updateCartItems mutation returned an incorrect success response when updating
     quantities that exceeded available stock, resulting in inflated quantities and
