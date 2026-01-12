@@ -7,7 +7,7 @@ feature: Services, Configuration
 
 ActiveMQ (Apache ActiveMQ Artemis) is a high-performance, multi-protocol message broker that provides an alternative to RabbitMQ for handling message queues in Adobe Commerce.
 
-As of 2.4.9, 2.4.8-p3, 2.4.7-p8, and 2.4.6-p13, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
+As of 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 and 2.4.5-p16, Adobe Commerce supports ActiveMQ as a message queue broker. This provides additional flexibility for on-premises installations to choose between RabbitMQ and ActiveMQ based on their infrastructure requirements and expertise.
 
 ## Before you begin
 
@@ -26,17 +26,17 @@ These migration instructions assume that Adobe Commerce is the sole application 
 
 ### Step 1: Place the site in Maintenance Mode
 
-Place the site in [Maintenance Mode](../../installation/tutorials/maintenance-mode.md):
+1. Place the site in [Maintenance Mode](../../installation/tutorials/maintenance-mode.md):
 
-```bash
-bin/magento maintenance:enable
-```
+   ```bash
+   bin/magento maintenance:enable
+   ```
 
-Verify maintenance mode is enabled:
+1. Verify maintenance mode is enabled:
 
-```bash
-bin/magento maintenance:status
-```
+   ```bash
+   bin/magento maintenance:status
+   ```
 
 ### Step 2: Check RabbitMQ message counts
 
@@ -49,64 +49,72 @@ Before proceeding, verify that all messages in RabbitMQ have been processed. Use
 1. Navigate to the **Queues** tab
 1. Verify all queues show **0 messages**
 
+   ![RabbitMQ Management Dashboard](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+
 #### Method B: Using rabbitmqctl command line
 
-Check all queues and their message counts:
+1. Check all queues and their message counts:
 
-```bash
-rabbitmqctl list_queues name messages consumers
-```
+   ```bash
+   rabbitmqctl list_queues name messages consumers
+   ```
 
-Check detailed queue information:
+   <img src="../../assets/upgrade-guide/rabbitmqctl.png" alt="RabbitMQ CLI Output" width="500" />
 
-```bash
-rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
-```
+1. Check detailed queue information:
+
+   ```bash
+   rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
+   ```
+
+   <img src="../../assets/upgrade-guide/rabbitmqctl_detailed.png" alt="RabbitMQ CLI Detailed Output" width="500" />
 
 ### Step 3: Process pending messages
 
 If messages are pending in any queues, process them before proceeding.
 
-#### List available consumers
+1. Get the list of available consumers:
 
-```bash
-bin/magento queue:consumers:list
-```
+   ```bash
+   bin/magento queue:consumers:list
+   ```
 
-#### Process all consumers via cron
+1. Process consumers as a group, or by individual message queue:
 
-```bash
-bin/magento cron:run --group=consumers
-```
+   - **Process consumers as a group**
 
-Wait for completion and verify message counts again using the commands from Step 2.
+     ```bash
+     bin/magento cron:run --group=consumers
+     ```
 
-#### Process specific consumers manually
+     >[!NOTE]
+     >
+     >If cron is already running in your system, you do not need to run `bin/magento cron:run --group=consumers` manually. Instead, verify that messages are getting processed by checking the message counts using the commands from Step 2.
 
-If you prefer to process specific queues, run the appropriate consumer using the following command:
+   - **Process a specific message queue**
 
-```bash
-bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
-```
+     ```bash
+     bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
+     ```
 
-For example, to process async operations:
+     For example, to process async operations:
 
-```bash
-bin/magento queue:consumers:start async.operations.all --max-messages=1000
-```
+     ```bash
+     bin/magento queue:consumers:start async.operations.all --max-messages=1000
+     ```
 
->[!NOTE]
->
->The `--max-messages` parameter limits the number of messages to process before the consumer stops. Adjust this value based on your queue size.
+     >[!NOTE]
+     >
+     >The `--max-messages` parameter limits the number of messages to process before the consumer stops. Adjust this value based on your queue size.
 
-#### Monitor message processing
+   - **Monitor message processing**
 
-Continuously check message counts until all queues are empty:
+     Continuously check message counts until all queues are empty:
 
-```bash
-# Check every few seconds until 0 messages remain
-watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
-```
+     ```bash
+     # Check every few seconds until 0 messages remain
+     watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
+     ```
 
 ### Step 4: Verify that all messages are processed
 
@@ -118,27 +126,27 @@ Before proceeding to the next step, ensure **all queues show 0 messages**. Run t
 
 ### Step 5: Stop consumers and cron jobs
 
-Stop all running message queue consumers:
+1. Stop all running message queue consumers:
 
-```bash
-# If using supervisor
-supervisorctl stop all
+   ```bash
+   # If using supervisor
+   supervisorctl stop all
 
-# Or manually kill consumer processes
-pkill -f "queue:consumers:start"
-```
+   # Or manually kill consumer processes
+   pkill -f "queue:consumers:start"
+   ```
 
-Disable cron jobs:
+1. Disable cron jobs:
 
-```bash
-bin/magento cron:remove
-```
+   ```bash
+   bin/magento cron:remove
+   ```
 
-Verify cron jobs are removed:
+1. Verify cron jobs are removed:
 
-```bash
-crontab -l
-```
+   ```bash
+   crontab -l
+   ```
 
 ### Step 6: Backup current configuration
 
@@ -154,35 +162,35 @@ You can uninstall RabbitMQ if it is not required anymore.
 
 ### Step 8: Install and configure ActiveMQ in Adobe Commerce
 
-[Install and configure ActiveMQ](../../installation/prerequisites/activemq.md) and perform related tasks, such as configuring the STOMP protocol and verifying the connection.
+To complete ActiveMQ installation and configuration tasks such as configuring the STOMP protocol and verifying the connection, see the [Installation and Configuration Guide](../../installation/prerequisites/activemq.md).
 
 ### Step 9: Reinstall cron jobs
 
-After testing completes successfully, reinstall cron jobs:
+1. After testing completes successfully, reinstall cron jobs:
 
-```bash
-bin/magento cron:install
-```
+   ```bash
+   bin/magento cron:install
+   ```
 
-Verify that cron jobs are scheduled:
+1. Verify that cron jobs are scheduled:
 
-```bash
-crontab -l
-```
+   ```bash
+   crontab -l
+   ```
 
 ### Step 10: Disable Maintenance Mode
 
-After verifying everything is working correctly, disable maintenance mode:
+1. After verifying everything is working correctly, disable maintenance mode:
 
-```bash
-bin/magento maintenance:disable
-```
+   ```bash
+   bin/magento maintenance:disable
+   ```
 
-Verify that maintenance mode is disabled:
+1. Verify that maintenance mode is disabled:
 
-```bash
-bin/magento maintenance:status
-```
+   ```bash
+   bin/magento maintenance:status
+   ```
 
 ### Step 11: Monitor the system
 

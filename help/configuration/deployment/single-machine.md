@@ -87,4 +87,4 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 <!-- link definitions -->
 
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

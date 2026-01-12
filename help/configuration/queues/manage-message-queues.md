@@ -80,6 +80,6 @@ Edit the `/app/etc/env.php` file to configure the cron job `consumers_runner`.
 
     >[!NOTE]
     >
-    >ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.6 and later versions.
+    >ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.5 and later versions.
 
 See [Start message queue consumers](../cli/start-message-queues.md).

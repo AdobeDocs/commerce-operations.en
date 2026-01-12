@@ -127,7 +127,7 @@ To update templated content:
    bundle exec rake render
    ```
 
-   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command. The rake tasks are provided by the `adobe-comdox-exl-rake-tasks` gem for better maintainability across Adobe Commerce documentation repositories.
+   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command. Core rake tasks and dependencies (Jekyll, Rake, image optimization) are provided by the `adobe-comdox-exl-rake-tasks` gem for better maintainability across Adobe Commerce documentation repositories. Custom tasks specific to this repository are implemented in the `Rakefile`.
 
 1. Navigate back to the `root` directory.
 

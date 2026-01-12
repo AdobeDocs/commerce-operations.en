@@ -30,11 +30,11 @@ If there is not enough information provided in a request, the team requests addi
 
 **Create or update content**–Content creation work is completed following the process documented in the [Adobe Experience League Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Depending on the request, work can include converting new content to markdown, creating a topic, or updating an existing topic.
 
-**Content review, approval, and publication**–Content is reviewed and edited during topic creation or update using [GitHub pull requests](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). All content must go through editorial review. Technical review is optional and depends on the content. If no technical review is necessary, the process continues with an editorial review only. This process can take several iterations until the content is approved.
+**Content review, approval, and publication**–Content is reviewed and edited during topic creation or update using [GitHub pull requests](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html#pull-requests). All content must go through editorial review. Technical review is optional and depends on the content. If no technical review is necessary, the process continues with an editorial review only. This process can take several iterations until the content is approved.
 
 After an article is approved, the pull request can be merged to the production branch. Merging should be done by the author. After a topic is merged, it can be published to production immediately using a manual process, or automatically the next time the publishing job runs. Publishing jobs typically run every two hours.
 
-**New content notification**–Adobe will provide a *What's New* section on the [Best Practices overview](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) topic to keep users informed about recently published or updated topics. Adobe will also promote new Best Practices content using existing channels, such as marketing and internal communications.
+**New content notification**–Adobe will provide a *What's New* section on the [Best Practices overview](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html) topic to keep users informed about recently published or updated topics. Adobe will also promote new Best Practices content using existing channels, such as marketing and internal communications.
 
 ## Backlog & Kanban Board
 

@@ -58,11 +58,11 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
         <p>Keep your storefront secure and operating efficiently. Prepare for your Adobe Commerce upgrade by reviewing Adobe's extensive technical documentation.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Recommended upgrade paths</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Technical Upgrade Workshop recording</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html">2.4 Technical Upgrade Workshop recording</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Accessing pre-releases</a></li>
             <li><a href="../../release/beta.md">Beta releases overview</a></li>
-            <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Backward incompatible development</a></li>
-            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward incompatible changes</a></li>
+            <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">Backward incompatible development</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes">Backward incompatible changes</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Upgrade Plan Checklist</a></li>
             <li><a href="../prepare/best-practices.md">Upgrade Best Practices</a></li>
             <li><a href="../../release/product-availability.md">Software availability</a></li>
@@ -71,7 +71,7 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
       <td><strong>Storefront Experience</strong>
         <p>Learn about the latest storefront technology that you can use to build unique experiences for your customers.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio">PWA Studio</a></li>
             <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Upgrading PWA Studio</a></li>
           </ul>
       </td>

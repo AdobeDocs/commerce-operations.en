@@ -77,9 +77,9 @@ Refer to [MySQL](../database/mysql.md) for more information.
 
 There are several ways to download Adobe Commerce, including:
 
-*  [Get the Composer metapackage](../../composer.md)
+* [Get the Composer metapackage](../../composer.md)
 
-*  [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 This example shows a Composer-based installation using the command line.
 
@@ -357,9 +357,9 @@ Refer to [MySQL](..//database/mysql.md) for more information.
 
 There are several ways to download the Adobe Commerce, including:
 
-*  [Get the Composer metapackage](../../composer.md)
+* [Get the Composer metapackage](../../composer.md)
 
-*  [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 This example shows a Composer-based installation using the command line.
 

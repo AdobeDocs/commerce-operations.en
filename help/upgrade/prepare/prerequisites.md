@@ -438,4 +438,4 @@ To install the plugin:
    composer update
    ```
 
-<!-- Last updated from includes: 2024-02-12 09:51:27 -->
+<!-- Last updated from includes: 2025-11-25 11:39:51 -->

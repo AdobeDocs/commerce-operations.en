@@ -11,19 +11,19 @@ If you're not a contributing developer, choose one of the other options displaye
 
 Contributing developers can use this method of installing sample data *only* if the following is true:
 
-*  You use Magento Open Source
-*  You [cloned the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* You use Magento Open Source
+* You [cloned the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
->You can use sample data with either the `develop` branch (more current) or a released branch (such as `2.4` (more stable)). We recommend you use a released branch because it's more stable. If you're contributing code to the repository and you need the most recent code, use the `develop` branch. Regardless of the branch you choose, you must [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) the corresponding branch of the Magento Open Source GitHub repository. For example, sample data for the `develop` branch can be used *only* with the Magento Open Source `develop` branch.
+>You can use sample data with either the `develop` branch (more current) or a released branch (such as `2.4` (more stable)). We recommend you use a released branch because it's more stable. If you're contributing code to the repository and you need the most recent code, use the `develop` branch. Regardless of the branch you choose, you must [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) the corresponding branch of the Magento Open Source GitHub repository. For example, sample data for the `develop` branch can be used *only* with the Magento Open Source `develop` branch.
 
 ## Clone the sample data repository
 
 This section discusses how to install sample data by cloning the sample data repository. You can clone the sample data repository in any of the following ways:
 
-*  Clone with the [SSH protocol](#clone-with-ssh)
-*  Clone with the [HTTPS protocol](#clone-with-https)
+* Clone with the [SSH protocol](#clone-with-ssh)
+* Clone with the [HTTPS protocol](#clone-with-https)
 
 ### Clone with SSH
 
@@ -166,9 +166,9 @@ To set file system permissions and ownership on the sample data repository:
 
    Typical examples:
 
-   *  CentOS: `chown -R :apache .`
+   * CentOS: `chown -R :apache .`
 
-   *  Ubuntu: `chown -R :www-data .`
+   * Ubuntu: `chown -R :www-data .`
 
 1. Set permissions:
 
