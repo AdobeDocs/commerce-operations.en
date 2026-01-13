@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.75 {#v1-1-75}
 
-* **ACSD-68289** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Full-text search now returns matching products if the minimum match condition is met across all searchable fields collectively, rather than requiring the condition to be satisfied by a single field.
+* **ACSD-68289** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where full-text search now returns matching products if the minimum match condition is met across all searchable fields collectively, rather than requiring the condition to be satisfied by a single field.
 * **ACSD-68359** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where selecting a store during checkout using [!UICONTROL Pick in Store] no longer fails due to long URLs when many products are in the cart. Previously, this triggered a *414 error* caused by excessively long URLs generated during store selection, preventing customers from completing checkout.
 * **ACSD-68451** (for Adobe Commerce, B2B >=1.5.2-p1 <1.5.3) - Fixes an issue for multiple websites where a company admin logs in on one website, creates an unrelated company on another website, but is erroneously linked to that unrelated company.
 * **ACSD-68490** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the [!UICONTROL Add New Attribute] button is visible for a restricted admin user during configurable product creation.
