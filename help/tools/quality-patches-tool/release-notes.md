@@ -26,7 +26,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-68573** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixed the issue when category permissions weren't being applied properly to customer wishlist items. After the fix, wishlist items are now properly displayed and paginated in both the web and GraphQL.
 * **ACSD-68615** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixed the issue when the Inventory reservation compensation CLI showed an exception if the processed combination had a missing order ID.
 * **ACSD-68793** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes an issue where valid products were incorrectly rejected when assigning them to a shared catalog.
-* **ACSD-68925** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - After the fix, responses for GraphQL requests are aligned with the GraphQL over HTTP specs. A 4XX response code is returned when it's impossible to parse the request, the request isn't authorized, or there's another general problem with the request. If the request is parsed and can be processed, a 200 response code will be returned.
+* **ACSD-68925** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where responses for GraphQL requests are now aligned with the GraphQL over HTTP specs. A 4XX response code is returned when the request cannot be parsed, is unauthorized, or encounters a general problem. If the request is parsed and can be processed, a 200 response code is returned.
 * Versions updated: **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
 * Replaced patches: **ACSD-62577**, **ACSD-68011**
 
