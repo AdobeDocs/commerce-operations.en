@@ -17,13 +17,13 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
     </tr>
     <tr>
@@ -223,16 +223,16 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
     </tr>
     <tr>
@@ -482,31 +482,31 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.8
+          2.9
       </td>
       <td>
-          2.9, 2.7
+          2.9
       </td>
       <td>
-          2.9, 2.7
+          2.9
       </td>
       <td>
-          2.9, 2.7
+          2.9
       </td>
       <td>
-          2.9, 2.7
+          2.9
       </td>
     </tr>
     <tr>
