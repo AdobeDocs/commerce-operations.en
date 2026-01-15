@@ -2,8 +2,33 @@
 title: What's new in implementation best practices
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Sep 1 21:22:30 2025
+updated: Mon Jan 5 14:39:05 2026
 entries:
+- description: Provided more details about  the [Set configuration values](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values).
+  versions: ''
+  type: best-practices
+  date: November 13, 2025
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/147
+  merge_commit: bed299c13804812044242ec04e3ecf1147ad30f6
+  contributor: rostilos
+  membership:
+  labels:
+  - best-practices
+  - feedback
+- description: Updated the `bin/magento setup:config:set` CLI command in the [Configure
+    Valkey default caching](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching)
+    instructions to specify the correct value for the `cache-backend` parameter.
+  versions: ''
+  type: best-practices
+  date: November 12, 2025
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/159
+  merge_commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
+  contributor: asrar7787
+  membership:
+  labels:
+  - technical
+  - best-practices
+  - feedback
 - description: Added best practice for [upgrading MariaDB](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html)
     to 10.5.1 and later.
   versions: ''

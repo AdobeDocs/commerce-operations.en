@@ -23,9 +23,9 @@ After installation, we recommend the following:
 *  Make sure that your file ownership and permissions are set [properly](../prerequisites/file-system/configure-permissions.md)
 *  We strongly recommend [changing the default Admin URI](../tutorials/admin-uri.md) from `admin` to something else
 *  Make sure the [`X-Frame-Option` HTTP header](../../configuration/security/xframe-options.md) is set properly.
-*  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+*  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
-If you installed by [cloning the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), make sure that when you deploy the application, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
+If you installed by [cloning the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository), make sure that when you deploy the application, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
 
 ## Enable Apache server rewrites
 

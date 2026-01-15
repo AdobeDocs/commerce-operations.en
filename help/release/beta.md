@@ -71,7 +71,7 @@ To participate in this beta, send an email request to [sbieber@adobe.com](mailto
 
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
-Each Adobe Commerce Foundation alpha and beta releases include all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
+Each Adobe Commerce Foundation alpha and beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
 - Latest security fixes
 - Performance improvements
@@ -106,6 +106,6 @@ See [Composer installation quick start](../installation/composer.md) for more de
 
 Adobe does not provide the standard Adobe Support Service for alpha and beta releases.
 
-To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
+To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions) on [GitHub](https://github.com/magento/magento2).
 
 Adobe monitors all critical issues reported against the latest alpha or beta release and prioritizes them to be resolved prior to the GA release date.

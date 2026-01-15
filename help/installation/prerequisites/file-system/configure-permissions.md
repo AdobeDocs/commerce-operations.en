@@ -18,12 +18,12 @@ To set permissions before you install the application:
 1. Log in to your application server.
 1. Use a file manager application provided by your shared hosting provider to verify that write permissions are set on the following directories:
 
-   *  `vendor` (Composer or compressed archive installation)
-   *  `app/etc`
-   *  `pub/static`
-   *  `var`
-   *  `generated`
-   *  Any other static resources
+   * `vendor` (Composer or compressed archive installation)
+   * `app/etc`
+   * `pub/static`
+   * `var`
+   * `generated`
+   * Any other static resources
 
 1. If you have command-line access, enter the following commands in the order shown:
 
@@ -51,8 +51,8 @@ To set permissions before you install the application:
 
 1. If you have not already done so, get the application in one of the following ways:
 
-   *  [Composer metapackage](../../composer.md)
-   *  [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [Composer metapackage](../../composer.md)
+   * [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. After you have set file system ownership and permissions, [install the application](../../advanced.md)
 
@@ -68,12 +68,12 @@ To set ownership and permissions for a two-user system:
 
 Complete the following tasks in the order shown:
 
-*  [About the shared group](#about-the-shared-group)
-*  [Create the file system owner and give the user a strong password](#create-the-file-system-owner-and-give-the-user-a-strong-password)
-*  [Find the web server user's group](#find-the-web-server-user-group)
-*  [Put the file system owner in the web server group](#put-the-file-system-owner-in-the-web-server-group)
-*  [Get the software](#get-the-software)
-*  [Set ownership and permissions for the shared group](#set-ownership-and-permissions-for-the-shared-group)
+* [About the shared group](#about-the-shared-group)
+* [Create the file system owner and give the user a strong password](#create-the-file-system-owner-and-give-the-user-a-strong-password)
+* [Find the web server user's group](#find-the-web-server-user-group)
+* [Put the file system owner in the web server group](#put-the-file-system-owner-in-the-web-server-group)
+* [Get the software](#get-the-software)
+* [Set ownership and permissions for the shared group](#set-ownership-and-permissions-for-the-shared-group)
 
 ### About the shared group
 
@@ -125,7 +125,7 @@ sudo passwd magento_user
 
 To find the web server user's group:
 
-*  CentOS:
+* CentOS:
 
    ```bash
    grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
@@ -139,7 +139,7 @@ To find the web server user's group:
 
 Typically, the user and group name are both `apache`.
 
-*  Ubuntu: `ps aux | grep apache` to find the Apache user, then `groups <apache user>` to find the group.
+* Ubuntu: `ps aux | grep apache` to find the Apache user, then `groups <apache user>` to find the group.
 
 Typically, the username and the group name are both `www-data`.
 
@@ -147,8 +147,8 @@ Typically, the username and the group name are both `www-data`.
 
 To put the file system owner in the web server's primary group (assuming the typical Apache group name for CentOS and Ubuntu), enter the following command as a user with `root` privileges:
 
-*  CentOS: `usermod -a -G apache <username>`
-*  Ubuntu: `usermod -a -G www-data <username>`
+* CentOS: `usermod -a -G apache <username>`
+* Ubuntu: `usermod -a -G www-data <username>`
 
 >[!NOTE]
 >
@@ -178,15 +178,15 @@ magento_user : magento_user apache
 
 To complete the task, restart the web server:
 
-*  Ubuntu: `service apache2 restart`
-*  CentOS: `service httpd restart`
+* Ubuntu: `service apache2 restart`
+* CentOS: `service httpd restart`
 
 ### Get the software
 
 If you have not already done so, get the software in one of the following ways:
 
-*  [Composer metapackage](../../composer.md)
-*  [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Composer metapackage](../../composer.md)
+* [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Set ownership and permissions for the shared group
 
@@ -231,8 +231,8 @@ cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media
 
 After you've performed the other tasks in this topic, enter one of the following commands to switch to that user:
 
-*  Ubuntu: `su <username>`
-*  CentOS: `su - <username>`
+* Ubuntu: `su <username>`
+* CentOS: `su - <username>`
 
 For example,
 

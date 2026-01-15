@@ -95,7 +95,7 @@ bundle exec rake images:optimize path=../path/to/images
 
 ## Configuration
 
-The hooks use the configuration file `_jekyll/.image_optim` to customize optimization settings:
+The hooks use the configuration file `_jekyll/.image_optim.yml` to customize optimization settings:
 
 - **PNG**: Uses `advpng`, `optipng`, and `pngquant`
 - **JPEG**: Uses `jhead`, `jpegoptim`, and `jpegtran`
@@ -113,12 +113,12 @@ The hooks use the configuration file `_jekyll/.image_optim` to customize optimiz
 ### Optimization failures
 
 - Verify `bundle install` has been run in the `_jekyll` directory
-- Check that `image_optim` and `image_optim_pack` gems are installed
-- Review the `.image_optim` configuration file
+- Check that the `adobe-comdox-exl-rake-tasks` gem is installed (provides `image_optim`)
+- Review the `.image_optim.yml` configuration file
 
 ### Performance issues
 
-- Adjust thread count in `_jekyll/.image_optim`
+- Adjust thread count in `_jekyll/.image_optim.yml`
 - Set `DEBUG=1` environment variable for detailed error information
 
 ## How it works

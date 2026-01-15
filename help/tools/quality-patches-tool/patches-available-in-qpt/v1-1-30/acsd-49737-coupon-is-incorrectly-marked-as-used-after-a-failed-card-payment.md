@@ -31,7 +31,7 @@ The coupon is incorrectly marked as *used* after a failed card payment.
 <u>Prerequisites</u>:
 
 1. Configure the **[!UICONTROL Braintree sandbox payment]** method.
-1. Make sure the [*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html?lang=en) consumer is set up and running.
+1. Make sure the [*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html) consumer is set up and running.
 
 <u>Steps to reproduce</u>:
 

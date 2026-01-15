@@ -16,6 +16,29 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where full-text search now returns matching products if the minimum match condition is met across all searchable fields collectively, rather than requiring the condition to be satisfied by a single field.
+* **ACSD-68359** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where selecting a store during checkout using [!UICONTROL Pick in Store] no longer fails due to long URLs when many products are in the cart. Previously, this triggered a *414 error* caused by excessively long URLs generated during store selection, preventing customers from completing checkout.
+* **ACSD-68451** (for Adobe Commerce, B2B >=1.5.2-p1 <1.5.3) - Fixes an issue for multiple websites where a company admin logs in on one website, creates an unrelated company on another website, but is erroneously linked to that unrelated company.
+* **ACSD-68490** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the [!UICONTROL Add New Attribute] button is visible for a restricted admin user during configurable product creation.
+* **ACSD-68517** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes a form resubmission error on Catalog and Catalog Search pages.
+* **ACSD-68573** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where category permissions were not applied properly to customer wishlist items. After the fix, wishlist items are properly displayed and paginated in both the web and GraphQL.
+* **ACSD-68615** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the inventory reservation compensation CLI showed an exception if the processed combination had a missing order ID.
+* **ACSD-68793** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes an issue where valid products were incorrectly rejected when assigning them to a shared catalog.
+* **ACSD-68925** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where responses for GraphQL requests are now aligned with the GraphQL over HTTP specs. A 4XX response code is returned when the request cannot be parsed, is unauthorized, or encounters a general problem. If the request is parsed and can be processed, a 200 response code is returned.
+* Versions updated: **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
+* Replaced patches: **ACSD-62577**, **ACSD-68011**
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name is not correctly shown in gift card email headers when the invoice is created from another store.
+* **ACSD-68430** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes an issue where saving a customer or customer address fails if the record includes multiple attribute options that have been deleted from the attribute configuration.
+* **ACSD-68499** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where the GraphQL `updateCartItems` mutation returns an incorrect success response when updating quantities that exceed available stock, causing inflated quantities and totals.
+* **ACSD-68810** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where an order is assigned to a customer created on a different website, despite the **[!UICONTROL Customer Account Sharing]** configuration.
+* Versions updated: **ACSD-49737**, **ACSD-57003-V2**
+* Replaced patches: **ACSD-61969**
+
 ## v1.1.73 {#v1-1-73}
 
 * **ACSD-67171** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where B2B users see an *[!UICONTROL Access Denied]* page when their session expired or was removed during checkout.

@@ -79,7 +79,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-For more details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+For more details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. For more information, see [Use Valkey for default cache](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in the _Configuration Guide_.
 
@@ -147,11 +147,11 @@ stage:
 
 >[!NOTE]
 >
->In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
+>In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because those projects use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 For configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
 
-During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)

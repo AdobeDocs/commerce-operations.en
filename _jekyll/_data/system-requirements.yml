@@ -14,7 +14,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.28'
@@ -29,7 +29,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.28'
@@ -45,7 +45,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.26'
@@ -62,7 +62,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   ElasticSearch: '8'
   MariaDB: '11.4'
   MySQL: '8.4'
@@ -79,7 +79,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.28'
@@ -95,7 +95,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
   New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
@@ -113,7 +113,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   MariaDB: '11.4'
   MySQL: '8.4'
   New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
@@ -131,7 +131,7 @@
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   Elasticsearch: '7.17/8'
   MariaDB: '10.11'
   MySQL: '8.0'
@@ -149,7 +149,7 @@
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   Elasticsearch: '7.17, 8'
   MariaDB: '10.11'
   MySQL: '8.0'
@@ -168,7 +168,7 @@
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.17 or latest available
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   Elasticsearch: '7.17, 8'
   MariaDB: '10.11'
   MySQL: '8.0'
@@ -188,7 +188,7 @@
   AWS MQ: 3.13 or latest available
   AWS OpenSearch: 2.19 or latest available
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   Elasticsearch: '7.17,8.17'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -207,7 +207,7 @@
   AWS MQ: '3.13'
   AWS OpenSearch: '2.11'
   AWS S3: ✔️
-  Composer: '2.8'
+  Composer: '2.9, 2.8'
   Elasticsearch: '8.16'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -226,7 +226,7 @@
   AWS MQ: '3.11.20'
   AWS OpenSearch: '2.11'
   AWS S3: ✔️
-  Composer: '2.7'
+  Composer: '2.9, 2.7'
   Elasticsearch: '8.11'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -245,7 +245,7 @@
   AWS MQ: '3.11.20'
   AWS OpenSearch: '2.11'
   AWS S3: ✔️
-  Composer: '2.7'
+  Composer: '2.9, 2.7'
   Elasticsearch: '8.11'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -264,7 +264,7 @@
   AWS MQ: '3.11.20'
   AWS OpenSearch: '2.11'
   AWS S3: ✔️
-  Composer: '2.7'
+  Composer: '2.9, 2.7'
   Elasticsearch: '8.11'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -278,7 +278,7 @@
   Redis: '7.2'
   Varnish: '7.5'
 2.4.7:
-  Composer: '2.7'
+  Composer: '2.9, 2.7'
   Elasticsearch: '8.11'
   OpenSearch: '2.12'
   OpenSearch Cloud: '2'

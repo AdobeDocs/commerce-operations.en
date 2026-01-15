@@ -893,6 +893,8 @@ feature: Configuration
            - [ACSD-67459: Unable to import products with descriptions longer than 65,536 characters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
         - v1.1.72 {#v1-1-72}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+           - [ACSD-67424: updated_at value in GET /carts/search REST API response doesn't match value in [!UICONTROL Admin Panel] for [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+           - [ACSD-67383: Error when logging in as a Customer with two company admin accounts in the same session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
            - [ACSD-68064: Duplicate entries created during scheduled updates in environments with deeply nested categories](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
            - [ACSD-67946: Cart update shows duplicate error banners](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
            - [ACSD-68118: customerCart [!DNL GraphQL] query returns incorrect product attribute values for store view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118.md)
@@ -908,6 +910,18 @@ feature: Configuration
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
            - [ACSD-68190: discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
+           - [ACSD-68391: Category-related permissions not applied in [!UICONTROL Quick Order] and [!UICONTROL Requisition Lists]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
+           - [ACSD-67908: JavaScript files fail to merge correctly in multi-store setups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)
+           - [ACSD-68206: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
+           - [ACSD-67171: Expired [!DNL B2B] session during checkout redirects to Access Denied page instead of login](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67171.md)
+           - [ACSD-68400: the virtual gift card quantity was not accurately reflected in the inventory reservation table](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400.md)
+           - [ACSD-68356: [!DNL GraphQL] cart query returns incorrect discount amount for virtual quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356.md)
+        - v1.1.74 {#v1-1-74}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.74](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview.md)
+           - [ACSD-68499: GraphQL updateCartItems mutation returns success for quantities beyond available stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499.md)
+           - [ACSD-68810: Order assigned to customer created on different website despite Customer Account Sharing configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68810.md)
+           - [ACSD-68430: Saving a customer or address fails if the record contains multiple deleted attribute options](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68430.md)
+           - [ACSD-68636: Store owner name missing in gift card email headers when invoice is created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
