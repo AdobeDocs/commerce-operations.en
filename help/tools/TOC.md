@@ -826,6 +826,7 @@ feature: Configuration
            - [ACP2E-3918: Checkout failure for company customers using in-store pickup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
         - v1.1.67 {#v1-1-67}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+           - [ACSD-65935: customerOrders GraphQL query returned an internal server error when a product was deleted](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted.md)
            - [ACSD-66139: GraphQL order fails with UNDEFINED error for inactive cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66139-graphql-order-fails-with-undefined-error-for-inactive-cart.md)
            - [ACSD-66301: Moving products from an order to the cart in Commerce Admin results in a quantity mismatch](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch.md)
            - [AC-14984: SSL connection issue with php-amqplib/php-amqplib ^3.2.0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14984-ssl-connection-issue-with-php-amqplib-php-amqplib-3-2.md)
@@ -909,6 +910,7 @@ feature: Configuration
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
+           - [ACSD-68190: discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
            - [ACSD-68391: Category-related permissions not applied in [!UICONTROL Quick Order] and [!UICONTROL Requisition Lists]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
            - [ACSD-67908: JavaScript files fail to merge correctly in multi-store setups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)
            - [ACSD-68206: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
