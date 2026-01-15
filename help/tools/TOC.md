@@ -909,6 +909,7 @@ feature: Configuration
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
+           - [ACSD-68190: discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
            - [ACSD-68391: Category-related permissions not applied in [!UICONTROL Quick Order] and [!UICONTROL Requisition Lists]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
            - [ACSD-67908: JavaScript files fail to merge correctly in multi-store setups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)
            - [ACSD-68206: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
