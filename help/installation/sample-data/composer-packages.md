@@ -59,3 +59,5 @@ If the error displays, change to your application installation directory and run
 ## Complete the sample data installation
 
 {{$include /help/_includes/sample-data-complete.md}}
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

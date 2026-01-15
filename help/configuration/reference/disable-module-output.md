@@ -1,6 +1,6 @@
 ---
 title: Disable module output
-description: Learn how to disable module output.
+description: Learn how to disable module output in Adobe Commerce without removing dependencies. Discover configuration steps and use cases.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
 ---
 # Disable module output

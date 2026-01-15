@@ -1,6 +1,6 @@
 ---
 title: Manage the cache
-description: Manage cache types and view cache status from the command line using the Commerce CLI
+description: Learn how to manage cache types and view cache status using Adobe Commerce CLI commands. Discover cache management and optimization techniques.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 ---
 # Manage the cache
@@ -14,7 +14,7 @@ You can use the Adobe Commerce cache management system to improve the performanc
 >[!NOTE]
 >
 >
->Commece site administrators can manage the cache from the Admin using the Cache Management System tool. See [Cache Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in the _Admin Systems Guide_.
+>Commerce site administrators can manage the cache from the Admin using the Cache Management System tool. See [Cache Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in the _Admin Systems Guide_.
 
 
 ## View the cache status

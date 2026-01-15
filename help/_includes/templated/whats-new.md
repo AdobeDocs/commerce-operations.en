@@ -1,10 +1,10 @@
 # What's new template
 
-## What's New
+## What's new
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
-### August 4, 2025
+### January 9, 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -16,129 +16,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries">detailed description of the issue fixed by the ACSD-66434 patch in the QPT 1.1.67 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/05318ff4ce4ee13b0220098aa45baeb9ac9f9889">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 1, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Clarified <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility">shared responsibility</a> for storefront data collection.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/154">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 28, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview">Overview: Quality Patches Tool (QPT) v1.1.67</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/39393ec8ddebce7deb9ab533ff272887d04b28d6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 25, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66041-ireland-ie-postcodes-were-not-searchable-for-pickup-locations-due-to-a-missing-countryid">detailed description of the issue fixed by the ACSD-66041 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/52e0b2f2333047ae7e203422e699292299a8b9f6">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup">detailed description of the issue fixed by the ACP2E-3918 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4c7650bcc4058fde70c798bc151ed98d2308aa65">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 24, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65848-categories-in-admin-are-loading-very-slow">detailed description of the issue fixed by the ACSD-65848 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/39806b93bb81a8ea9da73075effd9a219a1b6188">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65913-opensearch-threw-an-illegal-argument-exception-for-categories-with-products-having-the-same-price">detailed description of the issue fixed by the ACSD-65913 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edefc780462fe9cf05e1b12d657c450393f15a2b">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added a highlight about the TinyMCE version downgrade from 7 to 6.8.5 in the February 2025 security patch release notes.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a></p>
+      <td><p>Added Composer 2.9 as a supported version for Adobe Commerce 2.4.9, 2.4.8, and 2.4.7 in the <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">System requirements</a> documentation.</p>
 </td>
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0e4de35cf4af2548d602c68ed309d161e8488c3">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/018a833063a139a59906630b03d03dd827157bdf">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### July 23, 2025
+### December 9, 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -150,25 +38,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65750-graphql-route-query-returned-products-out-of-order-in-page-builder-products-content-types">detailed description of the issue fixed by the ACSD-65750 patch in the QPT 1.1.66 release</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.74 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499">ACSD-68499: GraphQL updateCartItems mutation returned an incorrect success response when updating quantities that exceeded available stock, resulting in inflated quantities and totals</a>.</p>
 </td>
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c853f485dc07be20020e28ba81a4f9bef517966e">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added more guidance to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview">on-premises installation overview</a> to help users understand what they’re about to learn and set expectations.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e7af8c03c56a72a5a2af6a9b49d20651fd2452a">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08198cca757b3a3a86febc4ec41259b6c2727367">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### July 22, 2025
+### November 25, 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -180,17 +60,33 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request">detailed description of the issue fixed by the ACSD-65777 patch in the QPT 1.1.66 release</a>.</p>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce">Managed alerts for Adobe Commerce</a> topic to include information about how to review threshold values for current alerts using New Relic.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4700a933b0a8c80311418b11f53b47adfaf10af6">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391">ACSD-68391: Category-related permissions were not correctly applied in Quick Order and Requisition Lists</a>.</p>
 </td>
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b3bd37c346db10a233be1f8a121c734e8b322068">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/163fe566cbf1e56dcb5b6193bc856471e62513ff">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908">ACSD-67908: JS files fail to merge properly in multi-store setups</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a87d38586badc8d4a9255dc4b89c2fe31ce4d956">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### July 18, 2025
+### November 24, 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -202,25 +98,87 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts">detailed description of the issue fixed by the ACSD-66212 patch in the QPT 1.1.66 release</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206">ACSD-68206: Fixes the error when using the GraphQL Application server with the Rate Limiting feature with PHP Redis extension installed</a>.</p>
 </td>
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/994a951e0ede7bb850685f33217ab028f044b61c">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/506ecc383f924af3b972265d9202a3d4af9aa61e">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added new <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">Redis configuration</a> options (<code class="language-plaintext highlighter-rouge">--cache-backend-redis-use-lua</code> and <code class="language-plaintext highlighter-rouge">--cache-backend-redis-use-lua-on-gc</code>).</p>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400">ACSD-68400: The virtual gift card quantity was not accurately reflected in the inventory reservation table</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1c0a0a6fdf843c56422335227247c27fcd43594a">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67171">ACSD-67171: B2B users see an Access Denied page when their session expired or was removed during checkout</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce0e4d4d9aa6ddaf487b5e1a66252115fe605c8c">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.74 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636">ACSD-68636: Store owner’s name was not correctly shown in gift card email headers when the invoice was created from another store</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/367b7f6a8d5d78212be1cd527af06cb2719d3634">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.74 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68430">ACSD-68430: Saving a customer or customer address failed if the record included multiple attribute options that had been deleted from the attribute configuration</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9efdb9547d5c066f6487cb89293e68f27041a6bb">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.74 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68810">ACSD-68810: Order assigned to customer created on different website despite Customer Account Sharing configuration</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c8d442f9a5d3bf1f2bdd245f66eaf77b8168b9e8">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 20, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356">ACSD-68356: A GraphQL cart query returned an incorrect discount amount for virtual quotes</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/26bcf4a962ae8b9c044cab7ac9904b3044653560">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">Commerce Services Product Availability information</a> for the following products:<br />- Payment Services version 2.13 compatible with 2.4.8+<br />- Corrected the Catalog Services version to reflect the current supported version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.</p>
 </td>
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/34d672617737c857a9489b4394d13ab244cf9abe">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0524b985f3174834e9d51cb9542a412349039993">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### July 11, 2025
+### November 19, 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -232,33 +190,39 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries">detailed description of the issue fixed by the ACSD-64118 patch in the QPT 1.1.65 release</a>.</p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview">Overview: Quality Patches Tool (QPT) v1.1.74</a>.</p>
 </td>
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c99a084b9be2dfe8e600f1f0080cd117deed5bf4">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d110524ff0c84b7f54c11963858d9f0afc9c285">commit</a></td>
     </tr>
+  </tbody>
+</table>
+
+### November 14, 2025
+
+<table style="table-layout:auto;">
+  <thead>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page">detailed description of the issue fixed by the ACSD-65331 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edcf1cfbc38b38159ec2777e99bc698754e7ae97">commit</a></td>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
-      <td><p>Clarified the default mode for the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration">Customer Grid indexer</a>, which changed in 2.4.8.</p>
+      <td><p>Documented a new developer setting to optimize CSS and javascript files.  When enabled, this setting automatically defers non-critical scripts loaded into the header section. For details, see <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files">Optimize resource files</a> in the Implementation Playbook.</p>
 </td>
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/76483e33f2259df65df6c1d6f5a0baf372c16965">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/51946bc7f9188e9ae5250304ffbef16f2eef5a2d">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### July 10, 2025
+### November 13, 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -270,17 +234,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities">detailed description of the issue fixed by the ACSD-65775 patch in the QPT 1.1.66 release</a>.</p>
+      <td><p>Provided more details about  the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Set configuration values</a></p>
 </td>
       <td>
-        New topic, qpt
+        Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b6c4c0432e81fc6a91c205d0d8829074e30a9457">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953153fb9fd6727cec8d92b7d4f6279b9d566c91">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### July 9, 2025
+### November 12, 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -292,244 +256,28 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added additional information about <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server">enabling the Application Server</a> for Adobe Commerce on Cloud Starter projects. In particular, it adds steps for syncing stored data to the shared mount.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db41694a0b50d9517783dcb3a64fcaf60b18e1db">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 4, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi">detailed description of the issue fixed by the ACP2E-3789 patch in the QPT 1.1.66 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6b0d4c07efc18f5abfba406e60bdad0f039e6b1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 27, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.67 Quality Patches Tool (QPT) package release.</p>
+      <td><p>Added a hotfix for the <em>Checkout page fails to load static.min.js and mixins.min.js</em> issue:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#known-issues">2.4.8-p3</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#known-issues">2.4.7-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#known-issues">2.4.6-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#known-issues">2.4.5-p15</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#known-issues">2.4.4-p16</a>.</p>
 </td>
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9c37702371b990a90fba735b90fe2f95a85c3c78">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e3d926248e77840a971a6b9c48c7750077e8781">commit</a></td>
     </tr>
-  </tbody>
-</table>
-
-### June 24, 2025
-
-<table style="table-layout:auto;">
-  <thead>
     <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview">Overview</a> for the Quality Patches Tool (QPT) v1.1.66.</p>
+      <td><p>Added a note about upgrading UCT in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">CLI documentation</a>.</p>
 </td>
       <td>
-        New topic, qpt
+        Technical, feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/715656a5f97b8c45395cb84b09b8b621133c07b1">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/173a26b3677dcaa2aaf789558780ad3733147d6b">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added instructions for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey">configuring Valkey</a> for Adobe Commerce.</p>
+      <td><p>Updated the <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI command in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> instructions to specify the correct value for the <code class="language-plaintext highlighter-rouge">cache-backend</code> parameter.</p>
 </td>
       <td>
-        New topic
+        Technical, feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b57376c4edec06bf0f1565b64e0966ed81a66962">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 23, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup">detailed description of the issue fixed by the ACP2E-3753 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e81c1572972796e9d74b75c0e9f044c0c49825a0">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65254-email-notification-not-sent-after-updating-customer-email-via-updatecustomeremail-graphql-mutation">detailed description of the issue fixed by the ACSD-65254 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e62ff4d749749586e49c451f54314442f43abb1">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow">detailed description of the issue fixed by the ACSD-64813 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b979fda8b4d453aff404d309d11b23f2de23250a">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart">detailed description of the issue fixed by the ACSD-65822 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/947cb293173b35f6a256c5cf3827fb96d1cc7e73">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">guidance</a> for incrementally upgrading RabbitMQ for on-premises projects.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6f7d205e5e9899eead6a8f21b499522ca5e14443">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 17, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views">detailed description of the issue fixed by the ACSD-65202 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6394375ae83265780fc4caf2433adc7959781618">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 16, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails">detailed description of the issue fixed by the ACSD-66093 patch in the QPT 1.1.65 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/69bf5e6d1e98e18d0402a39d910d90c13eb15b3d">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added details about <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#adobe-commerce-foundation-public-beta">alpha releases</a> for Adobe Commerce Foundation.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9f7fb2a4f564f89091c831e03c88c818d688d08f">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 11, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview">description of the issues fixed by the patches available in the QPT 1.1.65 release</a></p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7a41e648e7fa62a48db7faa065013c1c84b1fb3c">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 10, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published release notes for the June 2025 security patches and 2.4.9-alpha1 patch:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd58c1fe597258ee1f4514acfb08e71bee1c848">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a> for the June 2025 patch release.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/71ddfd423cbf8b1bb76155a9f1d67e90f46c5c46">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72">commit</a></td>
     </tr>
   </tbody>
 </table>

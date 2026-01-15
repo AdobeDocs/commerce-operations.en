@@ -37,3 +37,5 @@ It is recommended that merchants use the most recent version of a service to ens
 The following table shows the version support for each service relative to the Adobe Commerce version.
 
 {{$include /help/_includes/templated/product-availability-services.md}}
+
+<!-- Last updated from includes: 2025-11-20 09:36:15 -->

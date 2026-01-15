@@ -2,7 +2,7 @@
 
 | Contributing community member | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
-| hostep | [magento/magento2#34873](https://github.com/magento/magento2/pull/34873) |  [magento/magento-beta#47](https://github.com/magento/magento-beta/issues/47) |
+| hostep | [magento/magento2#34873](https://github.com/magento/magento2/pull/34873) |  magento/magento-beta#47|
 | hostep | [magento/magento2#34555](https://github.com/magento/magento2/pull/34555) |  [bitExpert/phpstan-magento#152](https://github.com/bitExpert/phpstan-magento/issues/152) |
 | kate-kyzyma | [magento/magento2#34491](https://github.com/magento/magento2/pull/34491) |  [magento/magento2#34579](https://github.com/magento/magento2/issues/34579) |
 | kate-kyzyma | [magento/magento2#34470](https://github.com/magento/magento2/pull/34470) |  [magento/magento2#34490](https://github.com/magento/magento2/issues/34490) |

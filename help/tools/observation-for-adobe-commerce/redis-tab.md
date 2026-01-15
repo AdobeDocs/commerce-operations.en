@@ -14,9 +14,9 @@ The **[!UICONTROL Redis Node summary]** is inclusive of all nodes in an environm
 
 ## [!UICONTROL Redis node detail]
 
-![Redis node detail](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![Redis server performance metrics and node configuration details](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
-The **[!UICONTROL Redis node detail]** frame indicates the environment, [!DNL Redis] role, software version, and node size. 
+The **[!UICONTROL Redis node detail]** frame indicates the environment, [!DNL Redis] role, software version, and node size.
 
 ## [!UICONTROL Redis node roles timeline]
 

@@ -437,3 +437,5 @@ To install the plugin:
    ```bash
    composer update
    ```
+
+<!-- Last updated from includes: 2025-11-25 11:39:51 -->

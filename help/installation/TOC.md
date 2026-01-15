@@ -25,7 +25,9 @@ feature: Install
         - [Configure Nginx](prerequisites/search-engine/configure-nginx.md)
         - [Configure Apache](prerequisites/search-engine/configure-apache.md)
     - [PHP](prerequisites/php-settings.md)
-    - [Message broker](prerequisites/rabbitmq.md)
+    - Message brokers {#message-brokers}
+        - [Rabbit MQ](prerequisites/rabbitmq.md) 
+        - [Active MQ](prerequisites/activemq.md)
     - [Security](prerequisites/security.md)
     - [Authentication keys](prerequisites/authentication-keys.md)
     - [Adobe Commerce](prerequisites/commerce.md)

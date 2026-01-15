@@ -1,6 +1,6 @@
 ---
 title: Common commands
-description: View a sampling of common Commerce CLI commands and usage.
+description: Learn about common Adobe Commerce CLI commands and their usage examples. Discover essential command-line tools for development and administration.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
 ---
 # Common commands

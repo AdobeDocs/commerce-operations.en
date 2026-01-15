@@ -1,6 +1,6 @@
 ---
 title: Configuration Best Practices
-description: Optimize the response time of your Adobe Commerce deployment using these best practices.
+description: Learn about configuration best practices to optimize Adobe Commerce performance. Discover settings and tools to improve response time and throughput.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
@@ -95,7 +95,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 >[!INFO]
 >
->See [CSS and Javascript file optimization on Adobe Commerce on cloud infrastructure and Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044482152) in the Adobe Commerce Help Center_ for more information about optimizing CSS and Javascript.
+>See [Optimize resource files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) for more information about optimizing CSS and Javascript.
 
 ### Bundling tips
 

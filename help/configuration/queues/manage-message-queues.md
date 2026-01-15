@@ -5,7 +5,7 @@ exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 ---
 # Manage message queues
 
-You can manage message queues from the command line using cron jobs or an external process manager to ensure that consumers are retrieving messages.
+You can manage message queues from the command line using cron jobs or an external process manager to ensure that consumers are retrieving messages. This applies to all supported message brokers including RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP), and MySQL adapter.
 
 ## Process management
 
@@ -72,10 +72,14 @@ Edit the `/app/etc/env.php` file to configure the cron job `consumers_runner`.
 
    >[!INFO]
    >
-   >It is not recommended to run multiple consumers on a MySQL-operated queue. See [Change message queue from MySQL to AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) for more information.
+   >It is not recommended to run multiple consumers on a MySQL-operated queue. See [Change message queue from MySQL to external brokers](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers) for more information about switching to AMQP (RabbitMQ) or STOMP (ActiveMQ Artemis).
 
    >[!INFO]
    >
    >If your Adobe Commerce store is hosted on the Cloud platform, use the [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) to configure how consumers process messages from the message queue.
+
+    >[!NOTE]
+    >
+    >ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.5 and later versions.
 
 See [Start message queue consumers](../cli/start-message-queues.md).

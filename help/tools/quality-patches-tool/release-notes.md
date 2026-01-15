@@ -16,6 +16,107 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where full-text search now returns matching products if the minimum match condition is met across all searchable fields collectively, rather than requiring the condition to be satisfied by a single field.
+* **ACSD-68359** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where selecting a store during checkout using [!UICONTROL Pick in Store] no longer fails due to long URLs when many products are in the cart. Previously, this triggered a *414 error* caused by excessively long URLs generated during store selection, preventing customers from completing checkout.
+* **ACSD-68451** (for Adobe Commerce, B2B >=1.5.2-p1 <1.5.3) - Fixes an issue for multiple websites where a company admin logs in on one website, creates an unrelated company on another website, but is erroneously linked to that unrelated company.
+* **ACSD-68490** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the [!UICONTROL Add New Attribute] button is visible for a restricted admin user during configurable product creation.
+* **ACSD-68517** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes a form resubmission error on Catalog and Catalog Search pages.
+* **ACSD-68573** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where category permissions were not applied properly to customer wishlist items. After the fix, wishlist items are properly displayed and paginated in both the web and GraphQL.
+* **ACSD-68615** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the inventory reservation compensation CLI showed an exception if the processed combination had a missing order ID.
+* **ACSD-68793** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes an issue where valid products were incorrectly rejected when assigning them to a shared catalog.
+* **ACSD-68925** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where responses for GraphQL requests are now aligned with the GraphQL over HTTP specs. A 4XX response code is returned when the request cannot be parsed, is unauthorized, or encounters a general problem. If the request is parsed and can be processed, a 200 response code is returned.
+* Versions updated: **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
+* Replaced patches: **ACSD-62577**, **ACSD-68011**
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name is not correctly shown in gift card email headers when the invoice is created from another store.
+* **ACSD-68430** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes an issue where saving a customer or customer address fails if the record includes multiple attribute options that have been deleted from the attribute configuration.
+* **ACSD-68499** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where the GraphQL `updateCartItems` mutation returns an incorrect success response when updating quantities that exceed available stock, causing inflated quantities and totals.
+* **ACSD-68810** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where an order is assigned to a customer created on a different website, despite the **[!UICONTROL Customer Account Sharing]** configuration.
+* Versions updated: **ACSD-49737**, **ACSD-57003-V2**
+* Replaced patches: **ACSD-61969**
+
+## v1.1.73 {#v1-1-73}
+
+* **ACSD-67171** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where B2B users see an *[!UICONTROL Access Denied]* page when their session expired or was removed during checkout.
+* **ACSD-67908** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where JS files fail to merge properly in multi-store setups.
+* **ACSD-68190** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount.
+* **ACSD-68206** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the error when using the GraphQL Application server with the **[!UICONTROL Rate Limiting]** feature with the [!DNL PHP Redis] extension installed.
+* **ACSD-68356** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where a GraphQL cart query returned an incorrect discount amount for virtual quotes.
+* **ACSD-68391** (for Adobe Commerce >=2.4.6-p10 <2.4.9) - Fixes the issue where category-related permissions were not correctly applied in **[!UICONTROL Quick Order]** and **[!UICONTROL Requisition Lists]**.
+* **ACSD-68400** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the virtual gift card quantity was not accurately reflected in the inventory reservation table.
+
+## v1.1.72 {#v1-1-72}
+
+* **ACSD-68040** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the frontend search page performance degrades on [!DNL MariaDB] 10.6 and 11.4 with many historical search requests.
+* **ACSD-67941** (for Adobe Commerce and Magento Open Source >=2.4.7-p1 <2.4.8) - Fixes the issue where GraphQL requests with unknown filter names cause PHP exception logs.
+* **ACSD-68064** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where creating scheduled updates results in duplicate entries in environments with a high number of nested categories.
+* **ACSD-66807** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the `report_viewed_product_index` table shows an incorrect count of product page views.
+* **ACSD-67383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where using **[!UICONTROL Login as Customer]** with two company admin accounts in the same session causes a *No such entity with cartId* error.
+* **ACSD-67518** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where advanced reporting generates duplicated header rows when the row count exceeds the batch size.
+* **ACSD-67639** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where creating a credit memo fails for bundle products with the **[!UICONTROL Dynamic Price]** set to *No*.
+* **ACSD-67696** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where `media_gallery` entries don't return in the Cart GraphQL product node after a cache flush.
+* **ACSD-67946** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where cart updates show duplicate error banners.
+* **ACSD-68011** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where non-existent SKUs can be assigned to a shared catalog via the `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API.
+* **ACSD-68118** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where the `customerCart` GraphQL query returns product attribute values that don't reflect the store header, causing inconsistent localization.
+* **ACSD-68092** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where bundle product options are lost after multiple saves, due to improper synchronization between scheduled updates and base product data.
+* **ACSD-67424** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the `updated_at` value in the `GET /carts/search` [!DNL REST] API response doesn't match the value shown in the **[!UICONTROL Admin panel]** when using Negotiable Quotes.
+* **ACSD-67187** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where admin users restricted to non-default websites see the error, *Please create at least a public shared catalog to proceed*, and can't access the **[!UICONTROL Add New Company]** button on the Company grid.
+* Versions updated: **ACSD-49737**, **ACSD-53750**, **ACSD-51819**, **ACSD-55566**, **ACSD-62965**, **ACSD-63323**, **ACSD-63406**, **ACSD-66139**, **ACSD-66404**, **ACSD-67659**, **ACSD-66301**
+* Replaced patches: **ACSD-62577**, **ACSD-63325**, **ACSD-67102**
+
+## v1.1.71 {#v1-1-71}
+
+* **ACSD-60624** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where **[!UICONTROL Upload Image]** doesn't work for empty content in [!UICONTROL Image], [!UICONTROL Banner], and [!UICONTROL Slider] sections in Page Builder.
+* **ACSD-67089** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the pagination issue in the `inventory/export-stock-salable-qty` API, which incorrectly limits `total_count` to the page size.
+* **ACSD-67093** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where retrieving orders through GraphQL using the date range filter returns incorrect results.
+* **ACSD-67459** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where products with descriptions longer than 65,536 characters cannot be imported.
+* **ACSD-67603** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where sitemap generation for products with image inclusion enabled experiences long processing times.
+* **ACSD-67643** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where duplicate entries are created during scheduled updates in environments with a high number of nested categories.
+* **ACSD-67652** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where bundle product status is returned as out-of-stock in GraphQL calls even with child and parent products in stock.
+* **ACSD-67904** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where orders can't be placed if the city name contains digits (0–9), ampersand (&), period (.), or parentheses ().
+* Replaced patches: **ACSD-61322**, **ACSD-65848**
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210** (for Adobe Commerce and Magento Open Source >=2.4.6-p3 <2.4.9) - Migrates the USPS integration from the outdated Web Tools APIs to the new RESTful USPS APIs.
+* **ACSD-67102** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the Adobe Commerce backend loads **[!UICONTROL Categories]** very slowly.
+* **ACSD-66120** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where [!DNL GraphQL] incorrectly displays discount percentages and base prices when catalog prices are configured to include tax.
+* **ACSD-66157** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where the special price doesn't take effect for websites created in different time zones.
+* **ACSD-67659** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where translated error messages return an UNDEFINED error code.
+* **ACSD-67166** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the `cataloginventory_stock_status` query executes multiple times when loading a quote on the storefront, causing redundant database calls.
+* **ACSD-67289** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the regular price doesn't display when a special price is applied.
+* **ACSD-67686** (for Adobe Commerce and Magento Open Source >=2.4.4-p15 <2.4.5 || >=2.4.5-p14 <2.4.6 || >=2.4.6-p12 <2.4.7) - Fixes the issue where a `Syntax Error: Unexpected <EOF>` error occurs when submitting an empty [!DNL GraphQL] request.
+* **ACSD-67250** (for Adobe Commerce >=2.4.7-p4 <2.4.8) - Fixes the issue where the **[!UICONTROL Shared Catalog]** save operation updates all items instead of only affected ones, improving performance by eliminating unnecessary operations.
+* **ACSD-67030** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where simple products are unassigned from a configurable product when edited by a limited role admin.
+* Versions updated: **ACSD-54095**, **ACSD-51636**, **ACSD-51739**, **ACSD-66093**
+* Replaced patches: **ACSD-62415**
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue in 2.4.8 storefront where, after switching stores, the page is served from cache and doesn't reflect the selected store.
+* **ACP2E-3731** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where product exports with **[!UICONTROL Catalog, Search]** visibility incorrectly include records from other store views in multi-store environments.
+* **ACP2E-3767** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the last bundle option in a bundle product can not be removed.
+* **ACP2E-3964** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixed the issue where child products of configurable products could not be listed via the REST API when a video was set in the gallery.
+* **ACP2E-3977** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where the **[!UICONTROL Cap Reward Points Balance At]** field can't be empty when [!UICONTROL Rewards Points Balance Redemption Threshold] is set, causing a validation error.
+* **ACP2E-4050** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where cart price rules fail to apply correctly for multi-shipping products when bundle product is used and sub-select conditions are used with free shipping is enabled.
+* **ACSD-56226** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where READ queries at the slave node return outdated data when the `synchronous_replication` flag is enabled.
+* **ACSD-57477** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where sales rule processing causes slow performance on cart-related requests.
+* **ACSD-58108** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where the missing joining table name in the original fetching table caused errors with custom module extension SQL in the order grid.
+* **ACSD-65983** (for Adobe Commerce >=2.4.6-p10 <2.4.9) - Fixes the issue where reconfiguring a bundled product quote in the Admin backend throws an error.
+* **ACSD-66149** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the IPN handler returns a *500* error for unsupported or unknown IPN types.
+* **ACSD-66153** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where a page returns a *500* error due to an incorrect layout structure being cached.
+* **ACSD-66302** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where wishlist items are incorrectly filtered by store ID instead of being filtered by website.
+* **ACSD-66311** (for Adobe Commerce >=2.4.6-p9 <2.4.9) - Fixes the issue where the Companies grid loads slowly for admin users with restricted websites access.
+* **ACSD-66404** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the cron job fails to clear changelog tables, causing [!DNL Galera Cluster] crashes when handling large amounts of data.
+* **ACSD-66952** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where cache is cleared on each PLP or Cart visit, causing performance overhead when a target rule is set.
+* **ACSD-67264** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where bundle and downloadable product page layouts are inconsistent across devices.
+* **ACSD-67347** (for Adobe Commerce and Magento Open Source >=2.4.5-p11 <2.4.6) - Fixes the issue where order fails with *Cannot acquire a lock* error when coupons with special characters are used and file locking is enabled.
+* Replaced patches: **ACP2E-3841**
+
 ## v1.1.68 {#v1-1-68}
 
 * **ACSD-58131** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected.

@@ -1,0 +1,57 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Copyright 2025 Adobe. All rights reserved.
+# Licensed under the MIT License. See license.md for details.
+
+# Pre-commit hook for image optimization
+# This hook automatically optimizes images before they are committed
+
+require 'fileutils'
+require 'shellwords'
+
+# Get the directory where this hook is located
+hook_dir = File.dirname(__FILE__)
+project_root = File.expand_path('..', hook_dir)
+
+Dir.chdir(project_root)
+
+unless Dir.exist?('_jekyll')
+  puts "Error: Could not find _jekyll directory."
+  exit 1
+end
+
+# Get staged image files
+staged_files = `git diff --cached --name-only --diff-filter=ACM`.split("\n")
+exit 1 if $?.exitstatus != 0
+
+image_extensions = %w[.png .jpg .jpeg .gif .svg]
+staged_images = staged_files.select { |f| image_extensions.include?(File.extname(f).downcase) }
+
+if staged_images.empty?
+  puts "No images staged for commit. Skipping image optimization."
+  exit 0
+end
+
+puts "Found #{staged_images.length} staged image(s). Running optimization..."
+
+# Build paths relative to _jekyll directory
+relative_paths = staged_images.map do |path|
+  path.start_with?('_jekyll/') ? path[8..] : "../#{path}"
+end
+
+# Run optimization on all images at once
+Dir.chdir('_jekyll')
+paths_arg = relative_paths.map { |p| Shellwords.escape(p) }.join(' ')
+result = system("bundle exec rake images:optimize path=\"#{paths_arg}\"")
+
+puts "Warning: Some images failed to optimize" unless result
+
+# Re-stage optimized images
+Dir.chdir(project_root)
+staged_images.each do |image_path|
+  system("git add #{Shellwords.escape(image_path)}") if File.exist?(image_path)
+end
+
+puts "Image optimization complete!"
+exit 0

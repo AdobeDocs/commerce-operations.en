@@ -1,6 +1,6 @@
 ---
 title: Export configuration settings
-description: Export Adobe Commerce configuration settings to configuration files, also known as config dump.
+description: Learn how to export Adobe Commerce configuration settings to files using config dump. Discover pipeline deployment and configuration management.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
 ---
 # Export configuration settings

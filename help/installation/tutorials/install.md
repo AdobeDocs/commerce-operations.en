@@ -7,15 +7,15 @@ exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 
 Before you begin, complete the following steps:
 
-*  Verify that your system meets the requirements discussed in the [system requirements](../system-requirements.md).
+* Verify that your system meets the requirements discussed in the [system requirements](../system-requirements.md).
 
-*  Complete all [prerequisite](../prerequisites/overview.md) tasks.
+* Complete all [prerequisite](../prerequisites/overview.md) tasks.
 
-*  Complete the first installation steps. See [Your install or upgrade path](../overview.md).
+* Complete the first installation steps. See [Your install or upgrade path](../overview.md).
 
-*  After you log in to the application server, [switch to the file system owner](../prerequisites/file-system/overview.md).
+* After you log in to the application server, [switch to the file system owner](../prerequisites/file-system/overview.md).
 
-*  Review the [Get started with the command-line installation](../composer.md) overview.
+* Review the [Get started with the command-line installation](../composer.md) overview.
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ Before you begin, complete the following steps:
 
 You can run the installer multiple times with different options to complete installation tasks like the following:
 
-*  Install in phases—For example, after you configure your web server for Secure Sockets Layer (SSL), you can run the installer again to set SSL options.
+* Install in phases—For example, after you configure your web server for Secure Sockets Layer (SSL), you can run the installer again to set SSL options.
 
-*  Correct mistakes in previous installations.
+* Correct mistakes in previous installations.
 
-*  Install the application in a different database instance.
+* Install the application in a different database instance.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ You can run the following commands to find values for some required arguments:
 
 >[!NOTE]
 >
->If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+>If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Install from the command line
 
@@ -117,14 +117,14 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 |Name|Value|Required?|
 |--- |--- |--- |
-`--search-engine` | The version of the search engine. Possible values are `elasticsearch7`, `elasticsearch6`, and `elasticsearch5`. The default is `elasticsearch7`. If you have installed OpenSearch as your search engine, specify the value `elasticsearch7`. Elasticsearch 5 has been deprecated and is not recommended. | No
-`--elasticsearch-host` | The host name or IP address where the search engine is running. The default is `localhost`. | No
-`--elasticsearch-port` | The port for incoming HTTP requests. The default is `9200`. | No
-`--elasticsearch-index-prefix` | A prefix that identifies the search index. The default is `magento2`. | No
-`--elasticsearch-timeout` | The number of seconds before the system times out. The default is `15`. | No
-`--elasticsearch-enable-auth` | Enables authentication on the search engine server. The default is `false`. | No
-`--elasticsearch-username` | The user ID to authenticate  | No, unless authentication is enabled
-`--elasticsearch-password` | The password to authenticate | No, unless authentication is enabled
+|`--search-engine` | The version of the search engine. Possible values are `elasticsearch7`, `elasticsearch6`, and `elasticsearch5`. The default is `elasticsearch7`. If you have installed OpenSearch as your search engine, specify the value `elasticsearch7`. Elasticsearch 5 has been deprecated and is not recommended. | No |
+|`--elasticsearch-host` | The host name or IP address where the search engine is running. The default is `localhost`. | No |
+|`--elasticsearch-port` | The port for incoming HTTP requests. The default is `9200`. | No |
+|`--elasticsearch-index-prefix` | A prefix that identifies the search index. The default is `magento2`. | No |
+|`--elasticsearch-timeout` | The number of seconds before the system times out. The default is `15`. | No |
+|`--elasticsearch-enable-auth` | Enables authentication on the search engine server. The default is `false`. | No |
+|`--elasticsearch-username` | The user ID to authenticate  | No, unless authentication is enabled |
+|`--elasticsearch-password` | The password to authenticate | No, unless authentication is enabled |
 
 **[!DNL RabbitMQ] configuration options:**
 
@@ -136,6 +136,21 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 |`--amqp-password`|The password for connecting to [!DNL RabbitMQ]. Do not use the default password `guest`.|No|
 |`--amqp-virtualhost`|The virtual host for connecting to [!DNL RabbitMQ]. The default is `/`.|No|
 |`--amqp-ssl`|Indicates whether to connect to [!DNL RabbitMQ]. The default is `false`. See [!DNL RabbitMQ] for information about setting up SSL for [!DNL RabbitMQ].|No|
+|`--consumers-wait-for-messages`|Should consumers wait for a message from the queue? 1 - Yes, 0 - No|No|
+
+**ActiveMQ Artemis configuration options:**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis was introduced in Adobe Commerce 2.4.5 and later versions.
+
+|Name|Value|Required?|
+|--- |--- |--- |
+|`--stomp-host`|Do not use the `--stomp` options unless you have already set up an installation of ActiveMQ Artemis. See ActiveMQ Artemis installation for more information about installing and configuring ActiveMQ Artemis.<br><br>The hostname where ActiveMQ Artemis is installed.|No|
+|`--stomp-port`|The port to use to connect to ActiveMQ Artemis. The default is 61613.|No|
+|`--stomp-user`|The username for connecting to ActiveMQ Artemis. Do not use the default user `artemis`.|No|
+|`--stomp-password`|The password for connecting to ActiveMQ Artemis. Do not use the default password `artemis`.|No|
+|`--stomp-ssl`|Indicates whether to connect to ActiveMQ Artemis using SSL. The default is `false`. See ActiveMQ Artemis for information about setting up SSL for ActiveMQ Artemis.|No|
 |`--consumers-wait-for-messages`|Should consumers wait for a message from the queue? 1 - Yes, 0 - No|No|
 
 **Remote storage options:**
@@ -179,26 +194,26 @@ The following examples show the commands to install Adobe Commerce locally with 
 
 The following example installs the application with the following options:
 
-*  The application is installed in the `magento2` directory relative to the web server docroot on `localhost` and the path to the Admin is `admin`; therefore:
+* The application is installed in the `magento2` directory relative to the web server docroot on `localhost` and the path to the Admin is `admin`; therefore:
 
    Your storefront URL is `http://127.0.0.1`
 
-*  The database server is on the same host as the web server.
+* The database server is on the same host as the web server.
 
    The database name is `magento`, and the username and password are both `magento`
 
-*  Uses server rewrites
+* Uses server rewrites
 
-*  The administrator has the following properties:
+* The administrator has the following properties:
 
-    *  First and last names are `Commerce User`
-    *  Username is `admin` and the password is `admin123`
-    *  E-mail address is `user@example.com`
+    * First and last names are `Commerce User`
+    * Username is `admin` and the password is `admin123`
+    * E-mail address is `user@example.com`
 
-*  Default language is `en_US` (U.S. English)
-*  Default currency is U.S. dollars
-*  Default time zone is U.S. Central (America/Chicago)
-*  Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
+* Default language is `en_US` (U.S. English)
+* Default currency is U.S. dollars
+* Default time zone is U.S. Central (America/Chicago)
+* Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -249,28 +264,28 @@ After installation you can create an admin user using the `admin:user:create` co
 
 The following example installs the application with the following options:
 
-*  The Magapplication is installed in the `magento2` directory relative to the web server docroot on `localhost` and the path to the Admin is `admin`; therefore:
+* The Magapplication is installed in the `magento2` directory relative to the web server docroot on `localhost` and the path to the Admin is `admin`; therefore:
 
    Your storefront URL is `http://127.0.0.1`
 
-*  The database server is on the same host as the web server.
+* The database server is on the same host as the web server.
 
    The database name is `magento`, and the username and password are both `magento`
 
-*  The administrator has the following properties:
+* The administrator has the following properties:
 
-    *  First and last names are `Commerce User`
-    *  Username is `admin` and the password is `admin123`
-    *  E-mail address is `user@example.com`
+    * First and last names are `Commerce User`
+    * Username is `admin` and the password is `admin123`
+    * E-mail address is `user@example.com`
 
-*  Default language is `en_US` (U.S. English)
-*  Default currency is U.S. dollars
-*  Default time zone is U.S. Central (America/Chicago)
-*  The installer first cleans up the database before installing the tables and schema
-*  You use a `ORD$` sales order increment prefix (since it contains a special character [`$`], the value must be enclosed in double quotes)
-*  Session data is saved in the database
-*  Uses server rewrites
-*  Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
+* Default language is `en_US` (U.S. English)
+* Default currency is U.S. dollars
+* Default time zone is U.S. Central (America/Chicago)
+* The installer first cleans up the database before installing the tables and schema
+* You use a `ORD$` sales order increment prefix (since it contains a special character [`$`], the value must be enclosed in double quotes)
+* Session data is saved in the database
+* Uses server rewrites
+* Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -297,6 +312,27 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
+#### Example 4—Install with ActiveMQ Artemis
+
+The following example shows how to install Adobe Commerce with ActiveMQ Artemis as the message broker:
+
+```bash
+magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
+--elasticsearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>ActiveMQ Artemis installation requires Adobe Commerce 2.4.5 or later.
+
 >[!TIP]
 >
 >If you have one user account to access the application server, see [set a umask](../next-steps/set-umask.md). This type of setup is typical for shared hosting.
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->

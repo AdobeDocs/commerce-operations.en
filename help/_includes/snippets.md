@@ -73,3 +73,40 @@
 ## PHP Process Control {#php-process-control}
 
 Before you can run indexers in parallel mode, you must enable Process Control support (`pcntl`) in PHP. See [Installation](https://www.php.net/manual/en/pcntl.installation.php) in the PHP documentation.
+
+## Custom patches {#custom-patches-disclaimer}
+
+>[!IMPORTANT]
+>
+>Adobe does not support applying official, Adobe-provided patches using this method. Use the following method at your own risk. To apply official patches, use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Always perform comprehensive testing before deploying any custom patch.
+
+## October 2025 security patch backports {#oct-2025-backports}
+
+<!--These fixes were backported to 2.4.8-pe, 2.4.7-p8, and 2.4.6-p13-->
+
+* **Migrate from TinyMCE to Hugerte.org**
+
+  Due to the end of support for TinyMCE 5 and 6 and licensing incompatibilities with TinyMCE 7, The current implementation of Adobe Commerce WYSIWYG editor is migrated from TinyMCE to the open-source [HugeRTE editor](https://hugerte.org/).
+
+  This migration ensures Adobe Commerce remains compliant with open-source licensing, avoids known TinyMCE 6 vulnerabilities, and delivers a modern, supported editing experience for merchants and developers.
+
+* **Added support for Apache ActiveMQ Artemis  STOMP protocol**
+
+  Added support for the ActiveMQ Artemis open-source message broker through the Simple Text Oriented Messaging Protocol (STOMP). It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations. See [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in the *Commerce Configuration Guide*.
+
+## Checkout page fails to load static.min.js and mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
+
+After recent CSP/SRI changes, the checkout page does not load static.min.js and mixins.min.js when JavaScript bundling and minification are both enabled in production mode. As a result, RequireJS mixins do not run, and checkout Knockout templates fail to resolve (for example, `"Failed to load the 'Magento_Checkout/shipping' template requested by 'checkout.steps.shipping-step.shippingAddress'"`).
+
+**Workaround**:
+
+* Disable JavaScript bundling; or
+* If you keep JavaScript bundling enabled, disable JavaScript minification.
+
+>[!IMPORTANT]
+>
+>Do not disable CSP or remove SRI protections in production. Any plugin-level bypass should only be used as a last resort for a hotfix and must be reviewed by the Security team.
+
+**Hotfix**:
+
+A hotfix is available. See [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) in the Knowledge Base for patch details.

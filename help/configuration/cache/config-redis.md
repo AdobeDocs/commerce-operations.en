@@ -1,6 +1,6 @@
 ---
 title: Configure Redis
-description: Get an overview of Redis features and start your Redis configuration.
+description: Learn how to configure Redis caching for Adobe Commerce performance optimization. Discover features, setup steps, and configuration best practices.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
 ---
@@ -17,7 +17,7 @@ Redis features include:
 Installing and configuring the Redis software is beyond the scope of this guide. Consult resources such as:
 
 - [Download Redis page](https://redis.io/download)
-- [Redis quick start](https://redis.io/docs/getting-started/)
+- [Redis quick start](https://redis.io/docs/latest/)
 - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [Redis documentation page](https://redis.io/docs)
 

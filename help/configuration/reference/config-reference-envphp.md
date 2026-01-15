@@ -1,6 +1,6 @@
 ---
 title: env.php reference
-description: See a list of values for the env.php file.
+description: Learn about env.php file configuration values and sections in Adobe Commerce. Discover environment settings and configuration options.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 ---
 # env.php reference
@@ -166,11 +166,19 @@ All database configurations are available in this node.
 
 ## default_connection
 
-Defines the default connection for message queues. The value can be `db`, `amqp`, or a custom queue system like `redismq`. If you specify any value other than `db`, the message queue software must be installed and configured first. Otherwise, messages will not be processed correctly.
+Defines the default connection for message queues. The value can be `db`, `amqp`, `stomp`, or a custom queue system like `redismq`. If you specify any value other than `db`, the message queue software must be installed and configured first. Otherwise, messages will not be processed correctly.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+For STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -227,13 +235,13 @@ Learn more about [application Modes](../cli/set-mode.md).
 
 ## queue
 
-Message queue configurations are available in this node.
+Message queue configurations are available in this node. You can configure RabbitMQ (AMQP) or ActiveMQ Artemis (STOMP) as your message broker.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
@@ -341,6 +349,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Override file configuration with variables
 
 To override the existing `env.php` configuration options with an OS environment variable, the array element of the configuration must be JSON encoded and set as a value of the `MAGENTO_DC__OVERRIDE` OS variable.
+
+When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the corresponding values in the `env.php` file and reads the configuration directly from the environment variable. The values in the `env.php` file remain unchanged but are ignored for the overridden configuration sections.
+
+>[!IMPORTANT]
+>
+>The `MAGENTO_DC__OVERRIDE` variable completely bypasses the specified configuration sections in the `env.php` file. This behavior is different from individual `MAGENTO_DC_` variables, which have lower priority than values in the `env.php` file.
 
 If you need to override multiple configuration options, assemble them all in a single array before JSON encoding.
 
