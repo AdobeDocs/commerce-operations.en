@@ -34,7 +34,7 @@ All submissions should come in the form of pull requests and need to be reviewed
 by project committers. Read [GitHub's pull request documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 for more information on sending pull requests.
 
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
+Lastly, please follow the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) when
 submitting a pull request!
 
 
