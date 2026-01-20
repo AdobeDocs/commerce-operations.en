@@ -50,7 +50,6 @@ Follow these steps to identify and troubleshoot the cause.
     * Try to find a correlation with recently installed third party extensions and the time the issue started.
     * Review extensions which potentially could affect the Adobe Commerce cache and cause the cache to grow quickly. For example, custom layout blocks, overriding cache functionality, and storing large amounts of data in cache.
 
-1. If there is no evidence of misbehaving extensions, [Install latest patches to fix [!DNL Redis] issues for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues).
 1. If the above steps do not help you identify or troubleshoot the source of the issue, consider enabling L2 cache to reduce network traffic between the app and [!DNL Redis]. For general information on what is L2 cache, refer to [L2 caching in the Adobe Commerce application](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache) in the Commerce Configuration Guide. To enable L2 cache for cloud infrastructure, try the following:
 
     * Upgrade ECE Tools if below 2002.1.2 version.
