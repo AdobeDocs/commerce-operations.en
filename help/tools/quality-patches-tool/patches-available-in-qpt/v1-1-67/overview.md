@@ -12,7 +12,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.67 includes the following patches:
 1. **AC-14985**: Error when sending SMTP emails using TLS.
 1. **AC-14984**: SSL connection issue with php-amqplib/php-amqplib ^3.2.0.
-1. **ACSD-65935**: `customerOrders` GraphQL query returned an internal server error when a product was deleted.
+1. **[ACSD-65935](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted.md)**: `customerOrders` GraphQL query returned an internal server error when a product was deleted.
 1. **ACSD-66049**: Non-English storefronts display incorrect pricing due to the ICU library version.
 1. **ACSD-66084**: `row_total_incl_tax` returns near-zero instead of 0.00 for fully discounted items in order API.
 1. **ACSD-66118**: Updating **[!UICONTROL Store View]** code clears **[!UICONTROL Design Configuration]** settings if configuration cache isn’t refreshed.
