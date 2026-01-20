@@ -2,8 +2,58 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 9 16:14:40 2026
+updated: Tue Jan 20 11:40:20 2026
 entries:
+- description: Changed product references from "Adobe Sensei" to "Adobe AI" to reflect
+    Adobe branding updates.
+  versions: ''
+  type: feedback
+  date: January 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1752
+  merge_commit: d45a1ea4357f3f14c5d6133225f0d74dee84c9a9
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+- description: 'Updated Composer dependency in [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements):<br/>-
+    For core versions 2.4.4–2.4.6 (base and patches): updated to v2.2.26.<br/>- For
+    2.4.7+ (base and patches, including 2.4.8 and 2.4.9-alpha versions): updated to
+    v2.9.3.'
+  versions: ''
+  type: technical
+  date: January 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1751
+  merge_commit: 73561ef1228a22a2032fa3ca354c9be52727ebc7
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: Added the [detailed description of the issue fixed by the ACSD-65935
+    patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted).
+  versions: ''
+  type: new-topic, qpt
+  date: January 15, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1479
+  merge_commit: 8921d17196230f97b6f940621e8236c5d85e1b9f
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68190:
+    Discounts don''t apply, applied discounts don''t display correctly in the GraphQL
+    cart view response, and non-coupon discounts are removed on removing a coupon
+    discount](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 15, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1684
+  merge_commit: 26980e4011b7f6d81b13df75c003019d23af8aab
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added Composer 2.9 as a supported version for Adobe Commerce 2.4.9,
     2.4.8, and 2.4.7 in the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
     documentation.
