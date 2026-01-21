@@ -33,7 +33,7 @@ See the following image for details:
 ![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.png)
 
 
-## Release availability
+## Release notification channels
 
 Adobe notifies customers about new patch releases through the following channels:
 
