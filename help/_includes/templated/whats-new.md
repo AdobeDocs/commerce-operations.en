@@ -4,6 +4,66 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### January 20, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Changed product references from “Adobe Sensei” to “Adobe AI” to reflect Adobe branding updates.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d45a1ea4357f3f14c5d6133225f0d74dee84c9a9">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated Composer dependency in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a>:<br />- For core versions 2.4.4–2.4.6 (base and patches): updated to v2.2.26.<br />- For 2.4.7+ (base and patches, including 2.4.8 and 2.4.9-alpha versions): updated to v2.9.3.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/73561ef1228a22a2032fa3ca354c9be52727ebc7">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 15, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">detailed description of the issue fixed by the ACSD-65935 patch in the QPT 1.1.67 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8921d17196230f97b6f940621e8236c5d85e1b9f">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: Discounts don’t apply, applied discounts don’t display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/26980e4011b7f6d81b13df75c003019d23af8aab">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### January 9, 2026
 
 <table style="table-layout:auto;">
@@ -144,140 +204,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         New topic, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c8d442f9a5d3bf1f2bdd245f66eaf77b8168b9e8">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### November 20, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356">ACSD-68356: A GraphQL cart query returned an incorrect discount amount for virtual quotes</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/26bcf4a962ae8b9c044cab7ac9904b3044653560">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">Commerce Services Product Availability information</a> for the following products:<br />- Payment Services version 2.13 compatible with 2.4.8+<br />- Corrected the Catalog Services version to reflect the current supported version. Catalog Service version 3.3.0 is compatible with Commerce 2.4+.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0524b985f3174834e9d51cb9542a412349039993">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### November 19, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview">Overview: Quality Patches Tool (QPT) v1.1.74</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d110524ff0c84b7f54c11963858d9f0afc9c285">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### November 14, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Documented a new developer setting to optimize CSS and javascript files.  When enabled, this setting automatically defers non-critical scripts loaded into the header section. For details, see <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files">Optimize resource files</a> in the Implementation Playbook.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/51946bc7f9188e9ae5250304ffbef16f2eef5a2d">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### November 13, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Provided more details about  the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Set configuration values</a></p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953153fb9fd6727cec8d92b7d4f6279b9d566c91">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### November 12, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added a hotfix for the <em>Checkout page fails to load static.min.js and mixins.min.js</em> issue:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#known-issues">2.4.8-p3</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#known-issues">2.4.7-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#known-issues">2.4.6-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#known-issues">2.4.5-p15</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#known-issues">2.4.4-p16</a>.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e3d926248e77840a971a6b9c48c7750077e8781">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added a note about upgrading UCT in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">CLI documentation</a>.</p>
-</td>
-      <td>
-        Technical, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/173a26b3677dcaa2aaf789558780ad3733147d6b">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated the <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI command in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> instructions to specify the correct value for the <code class="language-plaintext highlighter-rouge">cache-backend</code> parameter.</p>
-</td>
-      <td>
-        Technical, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a4f0a8b2ea0c55d73316d0af1345f98bcfd2a72">commit</a></td>
     </tr>
   </tbody>
 </table>

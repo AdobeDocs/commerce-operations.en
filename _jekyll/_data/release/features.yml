@@ -1,7 +1,7 @@
 areas:
   - name: Maximizing conversion & sales
     features:
-      - name: Live Search powered by Adobe Sensei (B2C & B2B)
+      - name: Live Search powered by Adobe AI (B2C & B2B)
         versions:
           - 2.4
       - name: Seller Assisted Shopping
@@ -10,7 +10,7 @@ areas:
       - name: Channel Manager for Adobe Commerce
         versions:
           - 2.4
-      - name: Product Recommendations powered by Adobe Sensei (B2C & B2B)
+      - name: Product Recommendations powered by Adobe AI (B2C & B2B)
         versions:
           - 2.3
           - 2.4
