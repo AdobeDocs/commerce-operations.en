@@ -31,3 +31,16 @@ See the following image for details:
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
 ![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.png)
+
+
+## Release availability
+
+Adobe notifies customers about new patch releases through the following channels:
+
+- [Adobe Security Bulletins and Advisories](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- Email
+- In-product alerts
+
+>[!NOTE]
+>
+> For release dates for every minor, patch, and security release and dates for the end of regular support, see [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
