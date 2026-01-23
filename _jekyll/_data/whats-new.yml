@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jan 20 11:40:20 2026
+updated: Fri Jan 23 15:45:57 2026
 entries:
+- description: Updated the [Commerce Patch release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    to reflect 2026 release plans.
+  versions: ''
+  type: technical, feedback
+  date: January 22, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1750
+  merge_commit: cfda1cd1584e55a42687ae76f26e7c63c811126d
+  contributor: meker
+  membership:
+  labels:
+  - technical
+  - feedback
 - description: Changed product references from "Adobe Sensei" to "Adobe AI" to reflect
     Adobe branding updates.
   versions: ''
