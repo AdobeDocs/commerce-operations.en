@@ -28,7 +28,7 @@ Contains an array of modules and their states. If module is enabled, value is 1.
 ]
 ```
 
-Learn more about [Modules][].
+Learn more about [Modules](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## scopes
 
@@ -76,7 +76,7 @@ Contains an array of scope configuration values. It has the following subnodes:
 ]
 ```
 
-Learn more about [Commerce Scopes][scopes].
+Learn more about [Commerce Scopes](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## system
 
@@ -114,10 +114,5 @@ Contains an array of values for theme configuration.
 ]
 ```
 
-Learn more about [Themes][].
+Learn more about [Themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/).
 
-<!-- link definitions -->
-
-[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
-[Themes]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

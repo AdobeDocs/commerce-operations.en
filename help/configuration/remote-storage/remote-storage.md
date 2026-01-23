@@ -87,6 +87,3 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 >
 >The sync command only migrates files in the `pub/media` directory, _not_ the import/export files in the `var` directory. See [Scheduled Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) in the _Commerce 2.4 User Guide_.
 
-<!-- link definitions -->
-
-[import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html

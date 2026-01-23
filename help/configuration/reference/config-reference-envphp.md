@@ -26,7 +26,7 @@ The `env.php` file contains the following sections:
 | `resource`                    | Mapping of resource name to a connection                        |
 | `session`                     | Session storage data                                            |
 | `system`                      | Disables the field for editing in the admin                     |
-| `x-frame-options`             | Setting for [x-frame-options][x-frame-options]                  |
+| `x-frame-options`             | Setting for [x-frame-options](../security/xframe-options.md)                  |
 
 ## backend
 
@@ -246,7 +246,7 @@ Message queue configurations are available in this node. You can configure Rabbi
 ]
 ```
 
-Learn more about [Message Queue][message-queue].
+Learn more about [Message Queue](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
 ## resource
 
@@ -299,9 +299,6 @@ Using this node, Commerce locks the configuration values in the `env.php` file a
 
 Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## Add variables to file configuration

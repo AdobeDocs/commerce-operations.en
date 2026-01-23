@@ -5,7 +5,7 @@ exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
 ---
 # Configure a custom cron job
 
-This step-by-step tutorial shows how to create a custom cron job and optionally a cron group in a sample module. You can use a module you already have or you can use a sample module from our [`magento2-samples` repository][samples].
+This step-by-step tutorial shows how to create a custom cron job and optionally a cron group in a sample module. You can use a module you already have or you can use a sample module from our [`magento2-samples` repository](https://github.com/magento/magento2-samples).
 
 Running the cron job results in a row being added to the `cron_schedule` table with the name of the cron job, `custom_cron`.
 
@@ -27,13 +27,13 @@ If you already have a sample module, you can use it; skip this step and the next
 
 1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Change to a directory that is not in your Commerce application root (for example, your home directory).
-1. Clone the [`magento2-samples` repository][samples].
+1. Clone the [`magento2-samples` repository](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   If the command fails with the error `Permission denied (publickey).`, you must [add your SSH public key to GitHub.com][git-ssh].
+   If the command fails with the error `Permission denied (publickey).`, you must [add your SSH public key to GitHub.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 1. Make a directory to which to copy the sample code:
 
@@ -297,7 +297,3 @@ To verify your custom cron group:
 
    ![Your custom cron group](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

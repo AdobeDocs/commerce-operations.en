@@ -61,11 +61,11 @@ To install Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-For additional installation options, see the [Composer installation documentation][composer].
+For additional installation options, see the [Composer installation documentation](https://getcomposer.org/download/).
 
 ### Install PHP
 
-Install PHP on [CentOS][] or [Ubuntu][].
+Install PHP on [CentOS](https://wiki.centos.org/HowTos/php7) or [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html).
 
 ### Set up the build system
 
@@ -128,8 +128,3 @@ To set up the build system:
 
    `<mode>` is required. It can be either `default` or `developer`.
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html

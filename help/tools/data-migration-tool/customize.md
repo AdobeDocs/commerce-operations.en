@@ -6,7 +6,7 @@ topic: Commerce, Migration
 ---
 # Configure the [!DNL Data Migration Tool]
 
-Sometimes the data format and structure created by [extensions](https://marketplace.magento.com/extensions.html) or custom code is different between Magento 1 and Magento 2. Use extension points within the [!DNL Data Migration Tool] to migrate this data. If the data format and structure are the same, the tool can automatically migrate the data without user intervention.
+Sometimes the data format and structure created by [extensions](https://commercemarketplace.adobe.com//extensions.html) or custom code is different between Magento 1 and Magento 2. Use extension points within the [!DNL Data Migration Tool] to migrate this data. If the data format and structure are the same, the tool can automatically migrate the data without user intervention.
 
 During migration, the [Map Step](technical-specification.md#map-step) scans and compares all Magento 1 and Magento 2 tables, including those created by extensions. If the tables are the same, the tool automatically migrates the data. If the tables differ, the tool terminates and notifies the user.
 

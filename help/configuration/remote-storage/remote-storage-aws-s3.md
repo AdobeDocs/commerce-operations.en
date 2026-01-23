@@ -6,7 +6,7 @@ exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
 ---
 # Configure AWS S3 bucket for remote storage
 
-The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage service that offers industry-leading scalability, data availability, security, and performance. The AWS S3 service uses buckets, or containers, for data storage. This configuration requires you to create a _private_ bucket. For Adobe Commerce on cloud infrastructure, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md).
+The [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. The AWS S3 service uses buckets, or containers, for data storage. This configuration requires you to create a _private_ bucket. For Adobe Commerce on cloud infrastructure, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md).
 
 >[!WARNING]
 >
@@ -18,7 +18,7 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
 
 1. Log in to your Amazon S3 dashboard and create a _private_ bucket.
 
-1. Set up [AWS IAM][] roles. Alternatively, generate access and secret keys.
+1. Set up [AWS IAM](https://aws.amazon.com/iam/) roles. Alternatively, generate access and secret keys.
 
 1. Disable the default database storage.
 
@@ -67,7 +67,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Authentication
 
-If you use access and secret keys instead of [AWS IAM][] roles, you must include the [`ngx_aws_auth` Nginx module][ngx repo].
+If you use access and secret keys instead of [AWS IAM](https://aws.amazon.com/iam/) roles, you must include the [`ngx_aws_auth` Nginx module](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Permissions
 
@@ -77,8 +77,3 @@ The S3 integration relies on the ability to generate and store cached images on 
 
 It is highly recommended that you use [!DNL Commerce] file adapter methods in your coding or extension development, regardless of the file storage type. When using S3 for storage, do not use native PHP file I/O operations, such as `copy`, `rename`, or `file_put_contents`, because S3 files are not located within the file system. See [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) for code examples.
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

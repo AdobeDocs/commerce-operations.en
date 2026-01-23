@@ -9,7 +9,7 @@ The `MAGE_DIRS` environment variable enables you to specify custom base director
 
 ## Set MAGE_DIRS
 
-Specify an associative array where keys are constants from [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] and values are absolute paths of directories or their URL paths, respectively.
+Specify an associative array where keys are constants from [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) and values are absolute paths of directories or their URL paths, respectively.
 
 You can set `MAGE_DIRS` in any of the following ways:
 
@@ -44,6 +44,3 @@ You can set `MAGE_DIRS` in any of the following ways:
 
 The preceding example sets paths for `[cache]` and `[media]` directories to `/mnt/nfs/cache` and `/mnt/nfs/media`, respectively.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

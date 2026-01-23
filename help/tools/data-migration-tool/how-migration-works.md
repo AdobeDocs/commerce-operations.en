@@ -71,7 +71,7 @@ We have developed the **Magento 2 [!DNL Data Migration Tool]** to help you effic
 
 ### Extensions and custom code
 
-We have been working hard with the development community to help you use your Magento 1 extensions in Magento 2. Now we are proud to present the [Commerce Marketplace](https://marketplace.magento.com/), where you can download or purchase the latest versions of your favorite extensions.
+We have been working hard with the development community to help you use your Magento 1 extensions in Magento 2. Now we are proud to present the [Commerce Marketplace](https://commercemarketplace.adobe.com//), where you can download or purchase the latest versions of your favorite extensions.
 
 More information on developing extensions for Magento 2 is available in the [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/).
 
