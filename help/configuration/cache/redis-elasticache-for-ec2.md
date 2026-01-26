@@ -14,7 +14,7 @@ As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache 
 
 ## Prerequisites
 
-- **Create a Redis OSS serverless cache**—From the AWS Management Console, create the Redis cache in the same region and VPC of the EC2 instance. For instructions, see the [AWS Elasticache documentation](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html.
+- **Create a Redis OSS serverless cache**—From the AWS Management Console, create the Redis cache in the same region and VPC of the EC2 instance. For instructions, see the [AWS Elasticache documentation](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html).
   
 - **Verify the connection to your EC2 Commerce instance**
 
