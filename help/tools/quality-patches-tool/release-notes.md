@@ -16,6 +16,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.76 {#v1-1-76}
+
+* **ACSD-67091** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the maximum writeset size error to ensure catalog rule product index cleanup by implementing two deletion strategies based on data volume.
+* **ACSD-67370** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes multiple issues where incorrect prices were shown for Bundle products on PDP/PLP and the cart page for multi-currency stores.
+* **ACSD-68410** (for Adobe Commerce, B2B >=1.3.3 <1.5.3) - Fixes an issue where placing an order for a negotiable quote incorrectly adds or merges additional cart lines to the quote. Products are now correctly added to the shopping cart after leaving the last step of negotiable quote checkout.
+* **ACSD-69086** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the cron job fails to clear changelog tables, causing Galera Cluster crashes when handling large amounts of data.
+* **ACSD-69115** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where shopping cart errors were not displayed to the admin user when managing the shopping cart for a customer assigned to a non-default website.
+* **ACSD-69129** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7 || >=2.4.8 <2.4.9) - Fixes an issue where deleting the default base website and using the secondary website as the default resulted in an error when attempting to update the tier price for the secondary website via REST API.
+* **ACSD-69203** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where the Products List widget returned incorrect results when multiple categories were listed in the category condition.
+* **ACSD-69261** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where a cart price rule coupon configured for single use per customer was reused multiple times due to incorrect handling of the `times_used` attribute in partial invoice and remaining quantity cancellation scenarios.
+* **ACSD-69308** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where catalog price rules did not apply when `special_price` was set only at the website level (not at "All Store Views"). After the fix, catalog price rules apply correctly by checking the website's default store first.
+* **ACSD-69319** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes an issue where bundle prices were not indexed properly when child products had stock under custom sources.
+* **ACSD-69325** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes an issue where modifying the SKU case caused the product to appear out-of-stock on the storefront.
+* **ACSD-69331** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes an issue where content creators in the media gallery could not create folders with only the `create_folder` permission. After the fix, they can create folders as expected.
+* **ACSD-69333** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes an issue where SKU changes were allowed for products with an active Scheduled Update. After the fix, SKU changes are prohibited during active updates; saves fail with a clear error, and the admin SKU field is disabled. This prevents MSI inventory inconsistencies caused by SKU changes during staging rollbacks.
+* **ACSD-69541** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where reducing a product's quantity in the admin to less than what already exists in a cart made it impossible to edit the product quantity in that cart via GraphQL.
+* Versions updated: **ACSD-46541**, **ACSD-53750**, **ACSD-66404**
+* Replaced patches: **ACSD-66404**, **ACSD-68499**
+
 ## v1.1.75 {#v1-1-75}
 
 * **ACSD-68289** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where full-text search now returns matching products if the minimum match condition is met across all searchable fields collectively, rather than requiring the condition to be satisfied by a single field.
