@@ -17,7 +17,7 @@ QPT v1.1.75 includes the following patches:
 1. **ACSD-68517**: Fixes a form resubmission error on Catalog and Catalog Search pages.
 1. **ACSD-68573**: Fixes the issue where category permissions weren't applied properly to customer wishlist items. After the fix, wishlist items are properly displayed and paginated in both the web and GraphQL.
 1. **ACSD-68615**: Fixes the issue where the inventory reservation compensation CLI showed an exception if the processed combination had a missing order ID.
-1. **ACSD-68793**: Fixes an issue where valid products were incorrectly rejected when assigning them to a shared catalog.
+1. **[ACSD-68793](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793.md)**: Fixes an issue where valid products were incorrectly rejected when assigning them to a shared catalog.
 1. **ACSD-68925**: Fixes an issue where responses for GraphQL requests are now aligned with the GraphQL over HTTP specs. A 4XX response code is returned when the request can't be parsed, is unauthorized, or encounters a general problem if the request is parsed.
 
 Use the menu on the left to navigate to a specific patch page.
