@@ -925,6 +925,7 @@ feature: Configuration
            - [ACSD-68636: Store owner name missing in gift card email headers when invoice is created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
         - v1.1.75 {#v1-1-75}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
+           - [ACSD-68451: fixes an issue for multiple websites where a company admin logs in on one website, creates an unrelated company on another website, but is erroneously linked to that unrelated company](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
