@@ -925,7 +925,7 @@ feature: Configuration
            - [ACSD-68636: Store owner name missing in gift card email headers when invoice is created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
         - v1.1.75 {#v1-1-75}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
-           - [ACSD-68359: selecting a store during checkout using "Pick in Store" no longer fails due to long URLs when many products are in the cart. Previously, this triggered a 414 error caused by excessively long URLs generated during store sel](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68359.md)
+           - [ACSD-68359: Fixes 414 error when selecting [!UICONTROL Pick in Store] with large carts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68359.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
