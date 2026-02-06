@@ -2,8 +2,45 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 23 15:45:57 2026
+updated: Fri Jan 30 15:46:02 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68615:
+    The inventory reservation compensation CLI showed an exception if the processed
+    combination had a missing order ID](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 29, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1768
+  merge_commit: c73feb1bb1d8e11220482f5ea51fa4427ecee201
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68490:
+    The "Add New Attribute" button is visible for a restricted admin user during configurable
+    product creation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 29, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1765
+  merge_commit: 1a59b4d956a8982b414eba2c8c03bcfc439d4ac4
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.75](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1761
+  merge_commit: 623f2a0ca319827d8afbb7d1f59ba714fb2c553a
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Updated the [Commerce Patch release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
     to reflect 2026 release plans.
   versions: ''
