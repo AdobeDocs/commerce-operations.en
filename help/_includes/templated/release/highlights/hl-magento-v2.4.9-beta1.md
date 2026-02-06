@@ -1,4 +1,4 @@
-# Magento Open Source release notes (v2.4.9-beta1)
+# Magento Open Source highlights (v2.4.9-beta1)
 
 ## Highlights in v2.4.9-beta1
 

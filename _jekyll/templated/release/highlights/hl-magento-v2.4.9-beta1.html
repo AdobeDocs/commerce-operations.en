@@ -4,7 +4,7 @@ product: "Magento Open Source"
 ---
 {%- assign data_path = page.version | replace: ".", "-" | prepend: "v" -%}
 {%- assign fixes = site.data.release.highlights[data_path]  | where: 'is_magento', 'true' -%}
-# {{page.product}} release notes (v{{page.version}})
+# {{page.product}} highlights (v{{page.version}})
 
 ## Highlights in v{{page.version}}
 
