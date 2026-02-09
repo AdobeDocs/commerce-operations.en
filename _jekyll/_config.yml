@@ -10,3 +10,5 @@ exclude:
   - rakelib
   - include-relationships
   - ReadMe.md
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
