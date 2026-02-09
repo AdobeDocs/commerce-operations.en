@@ -18,7 +18,7 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added Database Storage for App Builder (Public Beta) to [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#).
+- description: Added Database Storage for App Builder (Public Beta) to [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
   versions: ''
   type: major-update
   date: February 6, 2026
