@@ -25,7 +25,7 @@ end
 staged_files = `git diff --cached --name-only --diff-filter=ACM`.split("\n")
 exit 1 if $?.exitstatus != 0
 
-image_extensions = %w[.png .jpg .jpeg .gif .svg]
+image_extensions = %w[.png .jpg .jpeg .gif]
 staged_images = staged_files.select { |f| image_extensions.include?(File.extname(f).downcase) }
 
 if staged_images.empty?

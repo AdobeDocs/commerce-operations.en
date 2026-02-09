@@ -30,7 +30,7 @@ See the following image for details:
 
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
-![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.png)
+![2026 Adobe Commerce release calendar](../assets/release/release-calendar.png)
 
 
 ## Release notification channels

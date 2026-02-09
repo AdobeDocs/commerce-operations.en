@@ -926,6 +926,7 @@ feature: Configuration
         - v1.1.75 {#v1-1-75}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
            - [ACSD-68289: No results when minimum match condition is met across all searchable fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289.md)
+           - [ACSD-68451: Company admin links to unrelated company across multiple websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451.md)
            - [ACSD‑68615: Inventory reservation compensation CLI exception on missing order ID](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615.md)
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
