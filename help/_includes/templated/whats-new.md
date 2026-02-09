@@ -24,7 +24,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74e1ed73b9574903f12fa27c2f1198a823c80651">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added Database Storage for App Builder (Public Beta) to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#">Beta releases</a>.</p>
+      <td><p>Added Database Storage for App Builder (Public Beta) to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">Beta releases</a>.</p>
 </td>
       <td>
         Major update
@@ -54,7 +54,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c73feb1bb1d8e11220482f5ea51fa4427ecee201">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.75 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490">ACSD-68490: The “Add New Attribute” button is visible for a restricted admin user during configurable product creation</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.75 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490">ACSD-68490: The "Add New Attribute" button is visible for a restricted admin user during configurable product creation</a>.</p>
 </td>
       <td>
         New topic, qpt
@@ -120,7 +120,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Changed product references from “Adobe Sensei” to “Adobe AI” to reflect Adobe branding updates.</p>
+      <td><p>Changed product references from "Adobe Sensei" to "Adobe AI" to reflect Adobe branding updates.</p>
 </td>
       <td>
         Feedback
@@ -158,7 +158,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8921d17196230f97b6f940621e8236c5d85e1b9f">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: Discounts don’t apply, applied discounts don’t display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.73 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: Discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount</a>.</p>
 </td>
       <td>
         New topic, qpt
