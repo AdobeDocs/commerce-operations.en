@@ -2,8 +2,32 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 30 15:46:02 2026
+updated: Mon Feb 9 13:04:20 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68451:
+    Fixes an issue for multiple websites where a company admin logs in on one website,
+    creates an unrelated company on another website, but is erroneously linked to
+    that unrelated company](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1764
+  merge_commit: 74e1ed73b9574903f12fa27c2f1198a823c80651
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added Database Storage for App Builder (Public Beta) to [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+  versions: ''
+  type: major-update
+  date: February 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1778
+  merge_commit: 7908d56156bd72ef7e36938090befd9dd39e50e5
+  contributor: keharper
+  membership:
+  labels:
+  - major-update
 - description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68615:
     The inventory reservation compensation CLI showed an exception if the processed
     combination had a missing order ID](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615).'
