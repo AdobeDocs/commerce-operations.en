@@ -925,7 +925,7 @@ feature: Configuration
            - [ACSD-68636: Store owner name missing in gift card email headers when invoice is created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
         - v1.1.75 {#v1-1-75}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
-           - [ACSD-68289: No results when minimum match condition is met across all searchable fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289.md)
+           - [ACSD-68289: Full-text search returns no results when minimum match applies across all searchable fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289.md)
            - [ACSD-68451: Company admin links to unrelated company across multiple websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451.md)
            - [ACSD‑68615: Inventory reservation compensation CLI exception on missing order ID](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615.md)
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
