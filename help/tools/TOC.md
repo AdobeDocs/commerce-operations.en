@@ -910,12 +910,12 @@ feature: Configuration
            - [ACSD-67696: media_gallery entries don't return in the Cart GraphQL product node after a cache flush](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
         - v1.1.73 {#v1-1-73}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
-           - [ACSD-68190: discounts don't apply, applied discounts don't display correctly in the GraphQL cart view response, and non-coupon discounts are removed on removing a coupon discount](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
+           - [ACSD-68190: Discounts not applied correctly and removed after coupon removal in GraphQL cart view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
            - [ACSD-68391: Category-related permissions not applied in [!UICONTROL Quick Order] and [!UICONTROL Requisition Lists]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
            - [ACSD-67908: JavaScript files fail to merge correctly in multi-store setups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)
            - [ACSD-68206: [!DNL GraphQL] server fails with rate limiting and PHP Redis extension](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
            - [ACSD-67171: Expired [!DNL B2B] session during checkout redirects to Access Denied page instead of login](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67171.md)
-           - [ACSD-68400: the virtual gift card quantity was not accurately reflected in the inventory reservation table](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400.md)
+           - [ACSD-68400: Virtual gift card quantity is not accurately reflecting in the inventory reservation table](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400.md)
            - [ACSD-68356: [!DNL GraphQL] cart query returns incorrect discount amount for virtual quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356.md)
         - v1.1.74 {#v1-1-74}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.74](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview.md)
@@ -926,6 +926,8 @@ feature: Configuration
         - v1.1.75 {#v1-1-75}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
            - [ACSD‑68793: Valid products are incorrectly rejected during shared catalog assignment](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793.md)
+           - [ACSD-68925: GraphQL responses now follow HTTP specs, returning 4XX for unparseable, unauthorized, or invalid requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68925.md)
+           - [ACSD-68289: Full-text search returns no results when minimum match applies across all searchable fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289.md)
            - [ACSD-68451: Company admin links to unrelated company across multiple websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451.md)
            - [ACSD‑68615: Inventory reservation compensation CLI exception on missing order ID](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615.md)
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
