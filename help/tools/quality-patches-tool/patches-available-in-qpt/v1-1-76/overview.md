@@ -16,7 +16,7 @@ QPT v1.1.76 includes the following patches:
 1. **ACSD-69086**: Fixes the issue where the cron job fails to clear changelog tables, causing [!DNL Galera Cluster] crashes when handling large amounts of data.
 1. **ACSD-69115**: Fixes an issue where shopping cart errors weren't displayed to the admin user when managing the shopping cart for a customer assigned to a non-default website.
 1. **ACSD-69129**: Fixes an issue where deleting the default base website and using the secondary website as the default results in an error when attempting to update the tier price for the secondary website via the [!DNL REST] API.
-1. **ACSD-69203**: Fixes an issue where the Products List widget returned incorrect results when multiple categories were listed in the category condition.
+1. **ACSD-69203**: Fixes an issue where the **[!UICONTROL Products List]** widget returns incorrect results when multiple categories were listed in the category condition.
 1. **ACSD-69261**: Fixes an issue where a cart price rule coupon configured for single use per customer was reused multiple times due to incorrect handling of the `times_used` attribute in partial invoice and remaining quantity cancellation scenarios.
 1. **ACSD-69308**: Fixes an issue where catalog price rules did not apply when `special_price` was set only at the website level (not at **[!UICONTROL All Store Views]**). After the fix, catalog price rules apply correctly by checking the website's default store first.
 1. **ACSD-69319**: Fixes an issue where bundle prices were not indexed properly when child products had stock under custom sources.
