@@ -20,7 +20,7 @@ QPT v1.1.76 includes the following patches:
 1. **ACSD-69261**: Fixes an issue where a cart price rule coupon configured for single use per customer was reused multiple times due to incorrect handling of the `times_used` attribute in partial invoice and remaining quantity cancellation scenarios.
 1. **ACSD-69308**: Fixes an issue where catalog price rules didn't apply when `special_price` was set only at the website level (not at **[!UICONTROL All Store Views]**). After the fix, catalog price rules apply correctly by checking the website's default store first.
 1. **ACSD-69319**: Fixes an issue where bundle prices weren't indexed properly when child products had stock under custom sources.
-1. **ACSD-69325**: Fixes an issue where modifying the SKU case caused the product to appear out-of-stock on the storefront.
+1. **ACSD-69325**: Fixes an issue where modifying the SKU case causes the product to appear out of stock on the storefront.
 1. **ACSD-69331**: Fixes an issue where content creators in the media gallery could not create folders with only the `create_folder` permission. After the fix, they can create folders as expected.
 1. **ACSD-69333**: Fixes an issue where SKU changes were allowed for products with an active scheduled update. After the fix, SKU changes are prohibited during active updates; saves fail with a clear error, and the admin SKU field is disabled. This prevents MSI.
 1. **ACSD-69541**: Fixes an issue where reducing a product's quantity in the admin to less than what already exists in a cart made it impossible to edit the product quantity in that cart via GraphQL.
