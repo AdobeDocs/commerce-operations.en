@@ -18,7 +18,7 @@ QPT v1.1.76 includes the following patches:
 1. **ACSD-69129**: Fixes an issue where deleting the default base website and using the secondary website as the default results in an error when attempting to update the tier price for the secondary website via the [!DNL REST] API.
 1. **ACSD-69203**: Fixes an issue where the **[!UICONTROL Products List]** widget returns incorrect results when multiple categories were listed in the category condition.
 1. **ACSD-69261**: Fixes an issue where a cart price rule coupon configured for single use per customer was reused multiple times due to incorrect handling of the `times_used` attribute in partial invoice and remaining quantity cancellation scenarios.
-1. **ACSD-69308**: Fixes an issue where catalog price rules did not apply when `special_price` was set only at the website level (not at **[!UICONTROL All Store Views]**). After the fix, catalog price rules apply correctly by checking the website's default store first.
+1. **ACSD-69308**: Fixes an issue where catalog price rules didn't apply when `special_price` was set only at the website level (not at **[!UICONTROL All Store Views]**). After the fix, catalog price rules apply correctly by checking the website's default store first.
 1. **ACSD-69319**: Fixes an issue where bundle prices were not indexed properly when child products had stock under custom sources.
 1. **ACSD-69325**: Fixes an issue where modifying the SKU case caused the product to appear out-of-stock on the storefront.
 1. **ACSD-69331**: Fixes an issue where content creators in the media gallery could not create folders with only the `create_folder` permission. After the fix, they can create folders as expected.
