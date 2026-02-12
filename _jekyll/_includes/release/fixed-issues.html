@@ -3,10 +3,10 @@
 ### {{ group.name }}
 {% assign sorted_fixes = group.items | sort: 'Issue key' %}
 {%- for fix in sorted_fixes %}
-#### {{fix['Summary'] | xml_escape }}
+#### {{fix['Summary'] }}
 {%- unless fix['Custom field (Release Note)'] == empty %}
 
-{{fix['Custom field (Release Note)'] | xml_escape}}
+{{fix['Custom field (Release Note)']}}
 {%- endunless -%}
 
 {% capture key %}{{fix['Issue key']}}{% endcapture %}

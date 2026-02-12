@@ -14,7 +14,7 @@ _ACP2E-4358 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 ### Admin UI
 
-#### Add &quot;Actions&quot; menu for the Catalog Price Rules grid in Admin UI
+#### Add "Actions" menu for the Catalog Price Rules grid in Admin UI
 
 Starting with Adobe Commerce 2.4.9, the Catalog Price Rules grid in the Admin now includes an “Actions” menu, allowing merchants to Activate, Deactivate, or Delete multiple catalog price rules at once. This brings catalog price rule management in line with the existing bulk actions available for Cart Price Rules, significantly reducing the time required to manage large rule sets.
 
@@ -306,7 +306,7 @@ Key Enhancements:
  - Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
  - New Admin Fields:
 Gateway REST URL (based on mode: Development or Live)
-Client ID &amp; Secret
+Client ID & Secret
 Account Type, Account Number
 CRID, MID, Mailer Identification Code
 AES/ITN for international shipments
