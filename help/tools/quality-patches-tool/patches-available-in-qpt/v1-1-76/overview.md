@@ -12,7 +12,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.76 includes the following patches:
 1. **ACSD-67091**: Fixes the maximum writeset size error to ensure catalog rule product index cleanup by implementing two deletion strategies based on data volume.
 1. **ACSD-67370**: Fixes multiple issues where incorrect prices were shown for Bundle products on PDP/PLP and the cart page for multi-currency stores.
-1. **ACSD-68410**: Fixes an issue where placing an order for a negotiable quote incorrectly adds or merges additional cart lines to the quote. Products are now correctly added to the shopping cart after leaving the last step of negotiable quote checkout.
+1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: Fixes an issue where placing an order for a negotiable quote incorrectly adds or merges additional cart lines to the quote. Products are now correctly added to the shopping cart after leaving the last step of negotiable quote checkout.
 1. **ACSD-69086**: Fixes the issue where the cron job fails to clear changelog tables, causing [!DNL Galera Cluster] crashes when handling large amounts of data.
 1. **ACSD-69115**: Fixes an issue where shopping cart errors weren't displayed to the admin user when managing the shopping cart for a customer assigned to a non-default website.
 1. **ACSD-69129**: Fixes an issue where deleting the default base website and using the secondary website as the default results in an error when attempting to update the tier price for the secondary website via the [!DNL REST] API.
