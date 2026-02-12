@@ -466,7 +466,7 @@ _ACP2E-3559 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### B2B Login as Customer header still has Magento branding
 
-Earlier the storefront header shows "You are now connected as <customer name> on <store name>" with Magento branding. Which is now fixed and the header shows with ADOBE branding.
+Earlier the storefront header shows "You are now connected as &lt;customer name> on &lt;store name>" with Magento branding. Which is now fixed and the header shows with ADOBE branding.
 
 _AC-13628 - [GitHub code contribution](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -566,7 +566,7 @@ The sales total in the coupon report grid is now accurately calculated by incorp
 
 _ACP2E-3302 - [GitHub code contribution](https://github.com/magento/magento2/commit/d75cff27)_
 
-#### Issues with shared "<project_id>/var/tmp"
+#### Issues with shared "&lt;project_id>/var/tmp"
 
 Analytics DataExport temporary files will use the sys tmp directory, which is more suitable for frequent access and changes. To avoid collisions in case multiple instances are running on the same server, the tmp path was updated to use an instance's unique id
 

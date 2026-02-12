@@ -28,7 +28,7 @@ _AC-14049 - [GitHub issue](https://github.com/magento/magento2/issues/39651) - [
 #### Product Add to Cart issue in Rest API
 
 Fixed issue where products not assigned to a specific website could still be added to cart and purchased.
-Now, an error message is shown: "Product that you are trying to add is not available."
+Now, an error message is shown: “Product that you are trying to add is not available.”
 
 _AC-15054 - [GitHub issue](https://github.com/magento/magento2/issues/40029) - [GitHub code contribution](https://github.com/magento/magento2/commit/f5cc09fc)_
 
@@ -89,7 +89,7 @@ Now, Adobe Commerce returns a "400 Bad Request" response, providing clearer feed
 
 _AC-746 - [GitHub issue](https://github.com/magento/magento2/issues/32784) - [GitHub code contribution](https://github.com/magento/magento2/commit/f1adb44e)_
 
-#### `/orders` (or `/orders/{id}`) endpoint missing "state" and "status" fields
+#### `/orders`(or `/orders/{id}`) endpoint missing "state" and "status" fields
 
 Fixed issue where the `/orders and /orders/{id}` API responses omitted the state and status fields when database values were null.
 Now, both fields are consistently returned in the response, ensuring compliance with API documentation and improving data reliability.
@@ -129,7 +129,7 @@ _ACP2E-4086 - [GitHub code contribution](https://github.com/magento/inventory/co
 
 #### Validation issue with custom option IDs in cart item REST APIs.
 
-REST APIs V1/guest-carts/<cartId>/items/ and V1/carts/mine/items/ now validate "product_options.extension_attributes.custom_options.*.option_id" to ensure it references a valid option_id for the cart item SKU. Previously, this parameter was processed and saved in the database without validation.
+REST APIs V1/guest-carts/&lt;cartId>/items/ and V1/carts/mine/items/ now validate "product_options.extension_attributes.custom_options.*.option_id" to ensure it references a valid option_id for the cart item SKU. Previously, this parameter was processed and saved in the database without validation.
 
 _ACP2E-4138 - [GitHub code contribution](https://github.com/magento/magento2/commit/a1c57b2e)_
 
@@ -268,13 +268,13 @@ _AC-15185 - [GitHub issue](https://github.com/magento/magento2/issues/40076) - [
 
 #### Order Cancellation Modal Title Missing Translation
 
-The system now Fixes a missing translation in the order cancellation modal on the storefront. When a customer clicks the "Cancel" button from the My Account > My Orders page, a modal appears asking for a cancellation reason. However, the modal title was previously hardcoded and not translatable. This change ensures the modal title uses a proper translation method.
+The system now Fixes a missing translation in the order cancellation modal on the storefront. When a customer clicks the “Cancel” button from the My Account > My Orders page, a modal appears asking for a cancellation reason. However, the modal title was previously hardcoded and not translatable. This change ensures the modal title uses a proper translation method.
 
 _AC-15260 - [GitHub issue](https://github.com/magento/magento2/issues/40098) - [GitHub code contribution](https://github.com/magento/magento2/pull/40100)_
 
 #### Issue after login in magento 2.4.8-p1
 
-Fixed issue on Magento 2.4.8-p1 where the "Create an Account" link was still visible on the homepage after login.
+Fixed issue on Magento 2.4.8-p1 where the “Create an Account” link was still visible on the homepage after login.
 Now, the link is correctly hidden after login, consistent with other pages.
 
 _AC-15292 - [GitHub issue](https://github.com/magento/magento2/issues/40120)_
@@ -320,7 +320,7 @@ _ACP2E-4374_
 
 #### [Cloud] No such entity with cartId
 
-Resolved an issue where using Login as Customer with two company admin accounts in the same session caused a "No such entity with cartId" error.
+Resolved an issue where using Login as Customer with two company admin accounts in the same session caused a “No such entity with cartId” error.
 
 _ACP2E-4137 - [GitHub code contribution](https://github.com/magento/magento2/commit/e885088b)_
 
@@ -576,7 +576,7 @@ _ACP2E-4336 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### [CLOUD] Configuration With Dependency Config Editable When Use Default Checked in Store Configuration
 
-Fixed the issue when System Configuration fields could render enabled after page load, despite "Use Default/Website" being checked.
+Fixed the issue when System Configuration fields could render enabled after page load, despite “Use Default/Website” being checked.
 
 _ACP2E-4337 - [GitHub issue](https://mcstaging.pap-store.acer.com) - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
 
@@ -596,7 +596,7 @@ _ACP2E-4399 - [GitHub issue](https://jira.corp.adobe.com/browse/AC-11826) - [Git
 
 #### B2B Login as Customer header still has Magento branding
 
-Earlier the storefront header shows "You are now connected as <customer name> on <store name>" with Magento branding. Which is now fixed and the header shows with ADOBE branding.
+Earlier the storefront header shows "You are now connected as &lt;customer name> on &lt;store name>" with Magento branding. Which is now fixed and the header shows with ADOBE branding.
 
 _AC-14361 - [GitHub code contribution](https://github.com/magento/magento2/commit/fadcfa8b)_
 
@@ -866,7 +866,7 @@ _AC-16096 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Cart price rule Action "Price in cart" condition, applying when It should not
 
-Fixed issue where cart price rules with the "Price in Cart less than" condition were incorrectly applied to ineligible products.
+Fixed issue where cart price rules with the “Price in Cart less than” condition were incorrectly applied to ineligible products.
 Now, coupons are properly validated and rejected when cart item prices do not meet the configured rule conditions.
 
 _AC-6997 - [GitHub issue](https://github.com/magento/magento2/issues/36433) - [GitHub code contribution](https://github.com/magento/magento2/commit/01cee3c3)_
@@ -1072,7 +1072,7 @@ _AC-13373 - [GitHub issue](https://github.com/magento/magento2/issues/39363) - [
 
 #### Special price is not showing correctly for Configurable product's child product (simple product)
 
-Fixed an issue where the special price for a configurable product's child (simple) product was not displayed correctly on the product listing page when "Used in Product Listing" was set to No. Now, the special price is shown properly along with the regular price, ensuring consistent pricing display across product types.
+Fixed an issue where the special price for a configurable product’s child (simple) product was not displayed correctly on the product listing page when “Used in Product Listing” was set to No. Now, the special price is shown properly along with the regular price, ensuring consistent pricing display across product types.
 
 _AC-13594 - [GitHub code contribution](https://github.com/magento/magento2/commit/3cf1a106)_
 
@@ -1089,7 +1089,7 @@ _AC-13671 - [GitHub issue](https://github.com/magento/magento2/issues/39521) - [
 In Magento 2.4.2, changing the price scope via config.php does not properly update the is_global value in catalog_eav_attribute for the price attribute.
 As a result, product prices remain global and cannot be saved per website, even when the price scope is set to website.
 The workaround requires manually updating the is_global column in the database, which is not ideal for production environments.
-This behavior is consistent with Magento's default design, where price scope is either Global or Website, but not per store view.
+This behavior is consistent with Magento’s default design, where price scope is either Global or Website, but not per store view.
 
 _AC-13857 - [GitHub issue](https://github.com/magento/magento2/issues/33559)_
 
@@ -1122,7 +1122,7 @@ _AC-14463 - [GitHub issue](https://github.com/magento/magento2/issues/39817) - [
 #### Wishlist count not displayed on homepage/other pages except wishlist page in customer menu
 
 Fixed issue where the wishlist count appeared as empty parentheses on non-wishlist pages.
-Now, the correct wishlist item count is displayed next to "My Wish List" across all pages.
+Now, the correct wishlist item count is displayed next to “My Wish List” across all pages.
 
 _AC-14607 - [GitHub issue](https://github.com/magento/magento2/issues/39892) - [GitHub code contribution](https://github.com/magento/magento2/commit/a3b1abc2) - [GitHub code contribution](https://github.com/magento/magento2/commit/b3774fbe)_
 
@@ -1135,7 +1135,7 @@ _AC-14847 - [GitHub issue](https://github.com/magento/magento2/issues/39959) - [
 #### URGENT - Cannot add product to bundle when the product to add has customizable options
 
 Fixed issue where products with customizable options could not be added to bundle products.
-Previously, such products were excluded from the "Add Products to Option" list in bundle creation.
+Previously, such products were excluded from the “Add Products to Option” list in bundle creation.
 Now, products with customizable options can be added to bundles without including their custom options, allowing proper stock management.
 This enables bundle creation without duplicating products or affecting inventory levels.
 
@@ -1149,7 +1149,7 @@ _AC-15191 - [GitHub issue](https://github.com/magento/magento2/issues/40079) - [
 
 #### 'As low as' price label is shown for configurable products with single option
 
-Fixed issue where configurable products displayed the price with an incorrect "As low as" label on PDP/PLP.
+Fixed issue where configurable products displayed the price with an incorrect “As low as” label on PDP/PLP.
 Now, the product shows the correct price ($500) without any misleading labels.
 
 _AC-15237 - [GitHub issue](https://github.com/magento/magento2/issues/40104) - [GitHub code contribution](https://github.com/magento/magento2/commit/a3b1abc2)_
@@ -1158,7 +1158,7 @@ _AC-15237 - [GitHub issue](https://github.com/magento/magento2/issues/40104) - [
 
 Corrected the method used in \Magento\Catalog\Ui\DataProvider\Product\Listing\Collector\Url::collect().
 Previously, getAddToCartButton() was incorrectly called instead of getAddToCompareButton().
-This change ensures the correct behavior for rendering the "Add to Compare" button in product listings.
+This change ensures the correct behavior for rendering the “Add to Compare” button in product listings.
 No functional behavior changes are introduced; the update improves developer experience and code correctness.
 
 _AC-15323 - [GitHub issue](https://github.com/magento/magento2/issues/39754) - [GitHub code contribution](https://github.com/magento/magento2/commit/a3b1abc2)_
@@ -1171,7 +1171,7 @@ _AC-15385 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Wrong "As low as" price display for configurable products when FPT is enabled
 
-Confirmed that the incorrect "As low as" price for configurable products when FPT was enabled was caused by tax being applied twice; the fix ensures the final price calculation respects tax configuration and now displays the correct price.
+Confirmed that the incorrect “As low as” price for configurable products when FPT was enabled was caused by tax being applied twice; the fix ensures the final price calculation respects tax configuration and now displays the correct price.
 
 _AC-15718 - [GitHub issue](https://github.com/magento/magento2/issues/40171) - [GitHub code contribution](https://github.com/magento/magento2/commit/a06a4a57)_
 
@@ -1405,7 +1405,7 @@ _AC-12124 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### "Add Products Manually" link should always be visible
 
-Fixed an issue where the "Add Products Manually" link was not visible when creating a configurable product without existing configurations. The link is now always displayed, allowing admins to associate simple products easily without creating dummy configurations.
+Fixed an issue where the “Add Products Manually” link was not visible when creating a configurable product without existing configurations. The link is now always displayed, allowing admins to associate simple products easily without creating dummy configurations.
 
 _AC-13866 - [GitHub issue](https://github.com/magento/magento2/issues/39595) - [GitHub code contribution](https://github.com/magento/magento2/commit/ef666cd9)_
 
@@ -1494,7 +1494,7 @@ _AC-13891 - [GitHub issue](https://github.com/magento/magento2/issues/39604) - [
 
 #### catalogAddToCart Script error when configuring the Product Widget.
 
-Fixed a script error that occurred when configuring the Products widget with "Conditions Combination" in Page Builder. The issue was caused by missing frontend JS files, leading to console errors. After the fix, the widget loads correctly with no console errors.
+Fixed a script error that occurred when configuring the Products widget with “Conditions Combination” in Page Builder. The issue was caused by missing frontend JS files, leading to console errors. After the fix, the widget loads correctly with no console errors.
 
 _AC-13892 - [GitHub code contribution](https://github.com/magento/magento2/commit/528af81a)_
 
@@ -1610,7 +1610,7 @@ _ACP2E-4341 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Products List widget returns incorrect result if multiple categories are listed in category condition
 
-The "Catalog Products List" widget will now display accurate results when multiple categories listed in the condition "Category is one of". Previously, only the first category in the list was processed.
+The “Catalog Products List” widget will now display accurate results when multiple categories listed in the condition "Category is one of". Previously, only the first category in the list was processed.
 
 _ACP2E-4353 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/1c1b3419)_
 
@@ -1870,9 +1870,9 @@ This PR fixes a bug in which multiple concurrent processes spin up to handle the
 
 _AC-14944 - [GitHub issue](https://github.com/magento/magento2/issues/39990) - [GitHub code contribution](https://github.com/magento/magento2/pull/39954)_
 
-#### [Issue] Remove legacy compatibility code for PHP versions < 8.1
+#### [Issue] Remove legacy compatibility code for PHP versions &lt; 8.1
 
-This pull request removes code that was designed to be ran on PHP <8.1.
+This pull request removes code that was designed to be ran on PHP &lt;8.1.
 Also, removed checks for PHP_VERSION_ID contact availability, since it's available in all PHP versions
 
 _AC-14971 - [GitHub issue](https://github.com/magento/magento2/issues/39891) - [GitHub code contribution](https://github.com/magento/magento2/pull/39882)_
@@ -2434,7 +2434,7 @@ _ACP2E-4244 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### updateCartItems GraphQL incorrect error response
 
-Previously, when a graphQL request for an item with insufficient quantity was made, a proper error message with an error code was returned, along with the requested quantity and price calculation, even if the item was not available. After this fix was applied, a proper error message with an error code is now returned, and the item's quantity is set to its old value if it is not available in the response.
+Previously, when a graphQL request for an item with insufficient quantity was made, a proper error message with an error code was returned, along with the requested quantity and price calculation, even if the item was not available. After this fix was applied, a proper error message with an error code is now returned, and the item’s quantity is set to its old value if it is not available in the response.
 
 _ACP2E-4283 - [GitHub code contribution](https://github.com/magento/magento2/commit/cbca0396)_
 
@@ -2572,7 +2572,7 @@ _ACP2E-3728 - [GitHub code contribution](https://github.com/magento/inventory/co
 
 #### No store is available after redirecting to home page and checkout
 
-Previously selected store will now be pre-selected in the "Pick in Store" shipping if the customer navigates to the payment page, then returns to the home page, and finally returns to the checkout page. Previously, after repeatedly returning to the checkout page, the selected store in the "Pick in Store" would be cleared.
+Previously selected store will now be pre-selected in the “Pick in Store” shipping if the customer navigates to the payment page, then returns to the home page, and finally returns to the checkout page. Previously, after repeatedly returning to the checkout page, the selected store in the “Pick in Store” would be cleared.
 
 _ACP2E-3793 - [GitHub code contribution](https://github.com/magento/magento2/commit/a20a6ff2) - [GitHub code contribution](https://github.com/magento/inventory/commit/62c0d79b)_
 
@@ -2621,7 +2621,7 @@ _ACP2E-4233 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### [MSI] Failing MFTF tests related to latest mainline changes.
 
-Before the fix guest customers choosing In-Store Pickup without a shipping address had their billing address auto-filled with the store's address, which couldn't be changed, leading to incorrect invoice details. After the fix billing address is now editable in this scenario, allowing guests to enter their own details. Registered users will see their saved billing address instead of the store's.
+Before the fix guest customers choosing In-Store Pickup without a shipping address had their billing address auto-filled with the store’s address, which couldn’t be changed, leading to incorrect invoice details. After the fix billing address is now editable in this scenario, allowing guests to enter their own details. Registered users will see their saved billing address instead of the store’s.
 
 _ACP2E-4260 - [GitHub code contribution](https://github.com/magento/magento2/commit/ab891304) - [GitHub code contribution](https://github.com/magento/inventory/commit/13e432a6)_
 
@@ -2691,7 +2691,7 @@ _AC-14306 - [GitHub issue](https://github.com/magento/magento2/issues/39647)_
 
 #### Admin orders - unable to search for Will
 
-Fixed an issue where searching for orders by customer name (e.g., "Will") in the Admin orders grid returned no results. After the fix, relevant orders are displayed correctly when filtered by customer name.
+Fixed an issue where searching for orders by customer name (e.g., “Will”) in the Admin orders grid returned no results. After the fix, relevant orders are displayed correctly when filtered by customer name.
 
 _AC-14360 - [GitHub issue](https://github.com/magento/magento2/issues/36596) - [GitHub code contribution](https://github.com/magento/magento2/commit/a8cf637b)_
 
@@ -2756,7 +2756,7 @@ _AC-16059 - [GitHub issue](https://github.com/magento/magento2/issues/40309) - [
 
 #### Unable to create requisition list for product assigned to new website and source
 
-Fixed an issue where requisition lists could not be created for products assigned to a new website and source when "Add Store Code to URLs" was enabled. The problem occurred because the store code was stripped from the API request, causing an unauthorized error. After the fix, the correct store context is preserved and requisition lists are created successfully.
+Fixed an issue where requisition lists could not be created for products assigned to a new website and source when “Add Store Code to URLs” was enabled. The problem occurred because the store code was stripped from the API request, causing an unauthorized error. After the fix, the correct store context is preserved and requisition lists are created successfully.
 
 _AC-16226_
 
@@ -2818,7 +2818,7 @@ _ACP2E-4061 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Store specific sender is not used for gift card emails
 
-Previously, when sending an email template for a gift card after an invoice was created from a different store, the owner's name in the admin configuration settings would not be reflected in the email headers when the customer received the email. After this fix was applied, the email headers now include the appropriate store owner's email information.
+Previously, when sending an email template for a gift card after an invoice was created from a different store, the owner’s name in the admin configuration settings would not be reflected in the email headers when the customer received the email. After this fix was applied, the email headers now include the appropriate store owner’s email information.
 
 _ACP2E-4310_
 
@@ -3030,7 +3030,7 @@ _AC-14945 - [GitHub issue](https://github.com/magento/magento2/issues/39986) - [
 #### Product is being saved even when Special Price From Date is later than To Date using mass action
 
 Fixed issue where products could be saved with an invalid special price date range without validation.
-Now, an error message is shown: "Make sure the To date is later than or the same as the From date."
+Now, an error message is shown: “Make sure the To date is later than or the same as the From date.”
 
 _AC-15252 - [GitHub issue](https://github.com/magento/magento2/issues/40113) - [GitHub code contribution](https://github.com/magento/magento2/commit/36d4d6fb)_
 
@@ -3072,7 +3072,7 @@ _AC-10843 - [GitHub code contribution](https://github.com/magento/inventory/comm
 
 #### 'As low as' label is still displayed for a Configurable Product for the Test case AC-6158
 
-Implemented and verified configurable products (P1–P7) with respective variations and category assignments. Ensured correct storefront price display and "As low as" label behavior for products under Category C.
+Implemented and verified configurable products (P1–P7) with respective variations and category assignments. Ensured correct storefront price display and “As low as” label behavior for products under Category C.
 
 _AC-10847 - [GitHub code contribution](https://github.com/magento/magento2/commit/a3b1abc2)_
 
@@ -3104,7 +3104,7 @@ _AC-13055 - [GitHub issue](https://github.com/magento/magento2/issues/39111) - [
 
 #### Invalid SKU Handling for Linked Products in Magento
 
-Fixed an issue where products with SKU "0" could not be linked as related, up-sell, or cross-sell items due to invalid SKU validation. The update ensures such products can be linked successfully, allowing the product to save without errors.
+Fixed an issue where products with SKU “0” could not be linked as related, up-sell, or cross-sell items due to invalid SKU validation. The update ensures such products can be linked successfully, allowing the product to save without errors.
 
 _AC-13311 - [GitHub issue](https://github.com/magento/magento2/issues/39329) - [GitHub code contribution](https://github.com/magento/magento2/commit/a8cf637b)_
 
@@ -3270,7 +3270,7 @@ _AC-15345 - [GitHub issue](https://github.com/magento/magento2/issues/40146) - [
 
 #### Storefront compare product creates Google SEO error - Links are not crawlable
 
-Resolved an SEO issue where the storefront "Compare Products" link was not crawlable by search engines due to a missing or improperly bound href attribute. The update ensures the link now contains a valid, crawlable URL, improving site discoverability and helping pass Google SEO audits.
+Resolved an SEO issue where the storefront “Compare Products” link was not crawlable by search engines due to a missing or improperly bound href attribute. The update ensures the link now contains a valid, crawlable URL, improving site discoverability and helping pass Google SEO audits.
 
 _AC-15547 - [GitHub issue](https://github.com/magento/magento2/issues/40185) - [GitHub code contribution](https://github.com/magento/magento2/commit/c95ed7d7)_
 
@@ -3340,7 +3340,7 @@ _ACP2E-4285 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Internal Server Error
 
-Magento now successfully adds products to a customer's cart when using the asynchronous REST endpoint POST /rest/default/async/V1/carts/mine/items. Previously, this async "add to cart" request resulted in an Internal Server Error, and Magento logged the following error: Error: Call to a member function setFinalPrice() on null in app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento now successfully adds products to a customer’s cart when using the asynchronous REST endpoint POST /rest/default/async/V1/carts/mine/items. Previously, this async “add to cart” request resulted in an Internal Server Error, and Magento logged the following error: Error: Call to a member function setFinalPrice() on null in app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [GitHub code contribution](https://github.com/magento/magento2/commit/8670a2b4)_
 
@@ -3399,7 +3399,7 @@ _AC-15304 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### When scheduled update for category is deleted, amount of children is not decreased for the parent category
 
-Fixed an issue where deleting a scheduled update for a category did not reduce the parent category's children count, ensuring the count updates correctly when scheduled updates or subcategories are removed.
+Fixed an issue where deleting a scheduled update for a category did not reduce the parent category’s children count, ensuring the count updates correctly when scheduled updates or subcategories are removed.
 
 _AC-15670 - [GitHub code contribution](https://github.com/magento/magento2/commit/ef666cd9)_
 
@@ -3505,7 +3505,7 @@ _ACP2E-4364 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 ### Test framework
 
-#### [Issue] Remove a duplicated <severity> tag from MFTF test AdminSetUpWatermarkForSwatchImageTest
+#### [Issue] Remove a duplicated &lt;severity> tag from MFTF test AdminSetUpWatermarkForSwatchImageTest
 
 The system now only includes a single severity tag in the AdminSetUpWatermarkForSwatchImageTest, improving code clarity and consistency. Previously, this test contained two identical severity tags, which was unnecessary and could lead to confusion.
 

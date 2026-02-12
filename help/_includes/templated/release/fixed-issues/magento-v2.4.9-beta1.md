@@ -89,7 +89,7 @@ Now, Adobe Commerce returns a "400 Bad Request" response, providing clearer feed
 
 _AC-746 - [GitHub issue](https://github.com/magento/magento2/issues/32784) - [GitHub code contribution](https://github.com/magento/magento2/commit/f1adb44e)_
 
-#### `/orders` (or `/orders/{id}`) endpoint missing "state" and "status" fields
+#### `/orders`(or `/orders/{id}`) endpoint missing "state" and "status" fields
 
 Fixed issue where the `/orders and /orders/{id}` API responses omitted the state and status fields when database values were null.
 Now, both fields are consistently returned in the response, ensuring compliance with API documentation and improving data reliability.
@@ -129,7 +129,7 @@ _ACP2E-4086 - [GitHub code contribution](https://github.com/magento/inventory/co
 
 #### Validation issue with custom option IDs in cart item REST APIs.
 
-REST APIs V1/guest-carts/<cartId>/items/ and V1/carts/mine/items/ now validate "product_options.extension_attributes.custom_options.*.option_id" to ensure it references a valid option_id for the cart item SKU. Previously, this parameter was processed and saved in the database without validation.
+REST APIs V1/guest-carts/&lt;cartId>/items/ and V1/carts/mine/items/ now validate "product_options.extension_attributes.custom_options.*.option_id" to ensure it references a valid option_id for the cart item SKU. Previously, this parameter was processed and saved in the database without validation.
 
 _ACP2E-4138 - [GitHub code contribution](https://github.com/magento/magento2/commit/a1c57b2e)_
 
@@ -564,7 +564,7 @@ _ACP2E-4399 - [GitHub issue](https://jira.corp.adobe.com/browse/AC-11826) - [Git
 
 #### B2B Login as Customer header still has Magento branding
 
-Earlier the storefront header shows "You are now connected as <customer name> on <store name>" with Magento branding. Which is now fixed and the header shows with ADOBE branding.
+Earlier the storefront header shows "You are now connected as &lt;customer name> on &lt;store name>" with Magento branding. Which is now fixed and the header shows with ADOBE branding.
 
 _AC-14361 - [GitHub code contribution](https://github.com/magento/magento2/commit/fadcfa8b)_
 
@@ -1701,9 +1701,9 @@ This PR fixes a bug in which multiple concurrent processes spin up to handle the
 
 _AC-14944 - [GitHub issue](https://github.com/magento/magento2/issues/39990) - [GitHub code contribution](https://github.com/magento/magento2/pull/39954)_
 
-#### [Issue] Remove legacy compatibility code for PHP versions < 8.1
+#### [Issue] Remove legacy compatibility code for PHP versions &lt; 8.1
 
-This pull request removes code that was designed to be ran on PHP <8.1.
+This pull request removes code that was designed to be ran on PHP &lt;8.1.
 Also, removed checks for PHP_VERSION_ID contact availability, since it's available in all PHP versions
 
 _AC-14971 - [GitHub issue](https://github.com/magento/magento2/issues/39891) - [GitHub code contribution](https://github.com/magento/magento2/pull/39882)_
@@ -3172,7 +3172,7 @@ _ACP2E-4364 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 ### Test framework
 
-#### [Issue] Remove a duplicated <severity> tag from MFTF test AdminSetUpWatermarkForSwatchImageTest
+#### [Issue] Remove a duplicated &lt;severity> tag from MFTF test AdminSetUpWatermarkForSwatchImageTest
 
 The system now only includes a single severity tag in the AdminSetUpWatermarkForSwatchImageTest, improving code clarity and consistency. Previously, this test contained two identical severity tags, which was unnecessary and could lead to confusion.
 
