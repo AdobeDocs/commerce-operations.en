@@ -2,7 +2,7 @@
 
 ## Fixed issues in v2.4.9-beta1
 
-We have fixed 500 issues in the Magento Open Source 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 501 issues in the Magento Open Source 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -89,7 +89,7 @@ Now, Adobe Commerce returns a "400 Bad Request" response, providing clearer feed
 
 _AC-746 - [GitHub issue](https://github.com/magento/magento2/issues/32784) - [GitHub code contribution](https://github.com/magento/magento2/commit/f1adb44e)_
 
-#### /orders (or /orders/:id) endpoint missing "state" and "status" fields
+#### `/orders`(or `/orders/:id`) endpoint missing "state" and "status" fields
 
 Fixed issue where the `/orders` and `/orders/{id}` API responses omitted the state and status fields when database values were null.
 Now, both fields are consistently returned in the response, ensuring compliance with API documentation and improving data reliability.
@@ -552,13 +552,13 @@ _ACP2E-4337 - [GitHub issue](https://mcstaging.pap-store.acer.com) - [GitHub cod
 
 The admin dashboard order graph will now display immediately without the need for an unnecessary resizing animation.
 
-_ACP2E-4398 - [GitHub issue](https://jira.corp.adobe.com/browse/AC-12300) - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
+_ACP2E-4398 - [GitHub issue](https://github.com/magento/magento2/issues/38860) - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
 
 #### Page Builder Fails to Save Content in Mobile View Due to JS Error (TypeError: Cannot read properties of undefined)
 
 Fixed an issue that prevented saving pages in Page Builder when adding banners in mobile view.
 
-_ACP2E-4399 - [GitHub issue](https://jira.corp.adobe.com/browse/AC-11826) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/bdac5bca)_
+_ACP2E-4399 - [GitHub issue](https://github.com/magento/magento2/issues/38565) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/bdac5bca)_
 
 ### Admin UI, B2B
 
@@ -3195,6 +3195,10 @@ _AC-13305 - [GitHub issue](https://github.com/magento/magento2/issues/39324) - [
 The test case addresses the functionality of the "Email to Friend" form when CAPTCHA is enabled, ensuring that the form submission process works correctly with both incorrect and correct CAPTCHA values.
 
 _AC-13492 - [GitHub issue](https://github.com/magento/magento2/issues/39462) - [GitHub code contribution](https://github.com/magento/magento2/pull/32830)_
+
+#### Hardcoded Fixture Paths Fail in Composer Builds
+
+_AC-16488_
 
 #### [Issue] magento/magento2#: GraphQl mutation. Additional test coverage for customer storeConfig settings.
 

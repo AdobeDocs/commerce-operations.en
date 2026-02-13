@@ -2,7 +2,7 @@
 
 ## Fixed issues in v2.4.9-beta1
 
-We have fixed 556 issues in the Adobe Commerce 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 560 issues in the Adobe Commerce 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -89,7 +89,7 @@ Now, Adobe Commerce returns a "400 Bad Request" response, providing clearer feed
 
 _AC-746 - [GitHub issue](https://github.com/magento/magento2/issues/32784) - [GitHub code contribution](https://github.com/magento/magento2/commit/f1adb44e)_
 
-#### /orders (or /orders/:id) endpoint missing "state" and "status" fields
+#### `/orders`(or `/orders/:id`) endpoint missing "state" and "status" fields
 
 Fixed issue where the `/orders` and `/orders/{id}` API responses omitted the state and status fields when database values were null.
 Now, both fields are consistently returned in the response, ensuring compliance with API documentation and improving data reliability.
@@ -584,13 +584,13 @@ _ACP2E-4337 - [GitHub issue](https://mcstaging.pap-store.acer.com) - [GitHub cod
 
 The admin dashboard order graph will now display immediately without the need for an unnecessary resizing animation.
 
-_ACP2E-4398 - [GitHub issue](https://jira.corp.adobe.com/browse/AC-12300) - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
+_ACP2E-4398 - [GitHub issue](https://github.com/magento/magento2/issues/38860) - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
 
 #### Page Builder Fails to Save Content in Mobile View Due to JS Error (TypeError: Cannot read properties of undefined)
 
 Fixed an issue that prevented saving pages in Page Builder when adding banners in mobile view.
 
-_ACP2E-4399 - [GitHub issue](https://jira.corp.adobe.com/browse/AC-11826) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/bdac5bca)_
+_ACP2E-4399 - [GitHub issue](https://github.com/magento/magento2/issues/38565) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/bdac5bca)_
 
 ### Admin UI, B2B
 
@@ -1186,6 +1186,10 @@ _AC-15833 - [GitHub issue](https://github.com/magento/magento2/issues/40216) - [
 Resolved a caching issue with configurable product galleries by adding a defensive type check to ensure media_gallery_images is always treated as a collection, preventing fatal errors caused by corrupted cache data.
 
 _AC-16066 - [GitHub issue](https://github.com/magento/magento2/issues/33965) - [GitHub code contribution](https://github.com/magento/magento2/commit/3b5ac075)_
+
+#### Dropdown option deletion is not working while creating attribute on product page
+
+_AC-16437_
 
 #### Product page gives error because of url rewrites
 
@@ -2063,6 +2067,10 @@ _AC-16244 - [GitHub issue](https://github.com/magento/magento2/issues/40006) - [
 This PR ensures the $maxAge parameter in the PageCache kernel is strictly typed as an integer to improve type safety and prevent PHPStan/static analysis errors in cache handling.
 
 _AC-16313 - [GitHub issue](https://github.com/magento/magento2/issues/40438) - [GitHub code contribution](https://github.com/magento/magento2/pull/36600)_
+
+#### Fake Modules Require dev/ Directory in Extension Repositories
+
+_AC-16487_
 
 #### Add to cart event : empty prices
 
@@ -3532,6 +3540,14 @@ _AC-13492 - [GitHub issue](https://github.com/magento/magento2/issues/39462) - [
 #### [Cloud Native Service] CNS Build Failure - 2.4.9-beta1-  Integration
 
 _AC-16427_
+
+#### Hardcoded Fixture Paths Fail in Composer Builds
+
+_AC-16488_
+
+#### PHPUnit Config File Mismatch Between PR and Composer Builds
+
+_AC-16501_
 
 #### [Issue] magento/magento2#: GraphQl mutation. Additional test coverage for customer storeConfig settings.
 
