@@ -13,8 +13,8 @@ QPT v1.1.75 includes the following patches:
 1. **ACSD-68289**: Fixes an issue where full-text search now returns matching products if the minimum match condition is met across all searchable fields collectively, rather than requiring the condition to be satisfied by a single field.
 1. **ACSD-68359**: Fixes an issue where selecting a store during checkout using **[!UICONTROL Pick in Store]** no longer fails due to long URLs when many products are in the cart. Previously, this triggered a 414 error caused by excessively long URLs generated during a store sale.
 1. **ACSD-68451**: Fixes an issue for multiple websites where a company admin logs in on one website, creates an unrelated company on another website, but is erroneously linked to that unrelated company.
+1. **ACSD-68517**: Fixes a form resubmission error on **[!UICONTROL Catalog]** and **[!UICONTROL Catalog Search]** pages.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** button visible to restricted admin during configurable product creation.
-1. **ACSD-68517**: Fixes a form resubmission error on Catalog and Catalog Search pages.
 1. **ACSD-68573**: Category permissions were not applied to customer wishlist items, causing incorrect display and pagination on the web storefront and in [!DNL GraphQL].
 1. **ACSD-68615**: Fixes the issue where the inventory reservation compensation CLI showed an exception if the processed combination had a missing order ID.
 1. **ACSD‑68793**: Fixes an issue where valid products were incorrectly rejected when assigning them to a shared catalog.
