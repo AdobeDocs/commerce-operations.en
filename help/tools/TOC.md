@@ -934,7 +934,7 @@ feature: Configuration
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
-           - [ACSD-69129: REST API tier price update fails after deleting the default base website and using the secondary website as default](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)
+           - [ACSD-69129: [!DNL REST] API tier price update fails after deleting the default base website and using the secondary website as default](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
