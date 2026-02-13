@@ -89,9 +89,9 @@ Now, Adobe Commerce returns a "400 Bad Request" response, providing clearer feed
 
 _AC-746 - [GitHub issue](https://github.com/magento/magento2/issues/32784) - [GitHub code contribution](https://github.com/magento/magento2/commit/f1adb44e)_
 
-#### `/orders` (or `/orders/{id}`) endpoint missing "state" and "status" fields
+#### /orders (or /orders/\{id}) endpoint missing "state" and "status" fields
 
-Fixed issue where the `/orders and /orders/{id}` API responses omitted the state and status fields when database values were null.
+Fixed issue where the `/orders` and `/orders/{id}` API responses omitted the state and status fields when database values were null.
 Now, both fields are consistently returned in the response, ensuring compliance with API documentation and improving data reliability.
 
 _AC-9244 - [GitHub issue](https://github.com/magento/magento2/issues/37807) - [GitHub code contribution](https://github.com/magento/magento2/commit/01cee3c3)_

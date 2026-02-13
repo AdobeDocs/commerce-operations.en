@@ -3,7 +3,7 @@
 ### {{ group.name }}
 {% assign sorted_fixes = group.items | sort: 'Issue key' %}
 {%- for fix in sorted_fixes %}
-#### {{fix['Summary'] | replace: "<", "&lt;" }}
+#### {{fix['Summary'] | replace: "<", "&lt;" | replace: "{id", "\{id" }}
 {%- unless fix['Custom field (Release Note)'] == empty %}
 
 {{fix['Custom field (Release Note)'] | replace: "<", "&lt;" }}
