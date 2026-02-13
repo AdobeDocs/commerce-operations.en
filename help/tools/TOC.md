@@ -933,6 +933,8 @@ feature: Configuration
            - [ACSD-68451: Company admin links to unrelated company across multiple websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451.md)
            - [ACSD‑68615: Inventory reservation compensation CLI exception on missing order ID](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615.md)
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
+        - v1.1.76 {#v1-1-76}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
