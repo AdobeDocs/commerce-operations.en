@@ -1242,7 +1242,7 @@ _ACP2E-3704_
 
 #### [Mainline] [CLOUD] Image Resizing consumes over 400GB of disk space
 
-After the fix, the catalog:images:resize command used with --skip_hidden_images flag will not generate image caches for websites where images are not present.
+After the fix, the `catalog:images:resize` command used with `--skip_hidden_images` flag will not generate image caches for websites where images are not present.
 
 _ACP2E-3869 - [GitHub code contribution](https://github.com/magento/magento2/commit/9ad7d277)_
 
@@ -1852,10 +1852,10 @@ The system Magnifier functionality should keep working the way it worked before 
 
 _AC-14722 - [GitHub issue](https://github.com/magento/magento2/issues/36200) - [GitHub code contribution](https://github.com/magento/magento2/pull/39321)_
 
-#### Backport Verbose Mode in setup:db:status CLI command
+#### Backport Verbose Mode in `setup:db:status` CLI command
 
-The setup:db:status CLI command now supports verbose mode.
-Previously, it was difficult to understand database changes required for upgrades. Now, running bin/magento setup:db:status -v provides detailed information about schema and data differences.
+The `setup:db:status` CLI command now supports verbose mode.
+Previously, it was difficult to understand database changes required for upgrades. Now, running `bin/magento setup:db:status -v` provides detailed information about schema and data differences.
 AC-14807
 
 _AC-14807 - [GitHub code contribution](https://github.com/magento/magento2/commit/7bdafaa2)_
