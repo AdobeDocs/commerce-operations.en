@@ -30,6 +30,7 @@ Adobe Commerce requires:
 -  `ext-zip`
 -  `ext-zlib`
 -  `lib-libxml`
+-  `lib-redis`
 
 Magento Open Source requires:
 
@@ -60,3 +61,4 @@ Magento Open Source requires:
 -  `ext-zip`
 -  `ext-zlib`
 -  `lib-libxml`
+-  `lib-redis`
