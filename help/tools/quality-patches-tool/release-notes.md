@@ -16,6 +16,24 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.77 {#v1-1-77}
+
+* **ACSD-63687** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where incorrect prices are displayed because it is not possible to clean Redis cache.
+* **ACSD-68341** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue when X-Magento-Vary cookie sets several times during PDP loading, when multiple customer segments are created at the store.
+* **ACSD-68537** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where checkout performance degraded as the number of customer segments increased.
+* **ACSD-68664** (for Adobe Commerce >=2.4.6 <2.4.9) - Fixes the issue where the scheduled update preview breaks when attempting to preview content for stores with custom domains.
+* **ACSD-68759** (for Adobe Commerce and Magento Open Source >=2.4.4-p2 <2.4.5 || >=2.4.5-p1 <2.4.9) - Fixes the issue where creating a customer account fails when using the Arabic locale and the Date of Birth (DOB) attribute is set to display on the storefront.
+* **ACSD-68892** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue when cacheable pages are not properly stored or served from the Fastly cache, resulting in inconsistent caching behavior and reduced performance.
+* **ACSD-69016** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue when the special price doesn't take effect for websites created in different time zones.
+* **ACSD-69020** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where a configurable product is automatically included in PageBuilder product carousel listings if any of its child products meets the filtering conditions.
+* **ACSD-69237** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the number of entries that can be processed and inserted through the sales_*_async_insert cron jobs is limited to 100 per run.
+* **ACSD-69311** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue with the incorrect tax calculation in credit memos when creating a partial refund from an invoice, if a previous credit memo was created from the order view page.
+* **ACSD-69351** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where gift cards balances and expiration dates are displayed not in accordance to the website scope assigned.
+* **ACSD-69494** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issues with the async refund operations where refund requests with the "is_online" parameter are not processed correctly.
+* Versions updated: **ACSD-67250**
+* Replaced patches: **ACSD-62629**, **ACSD-66157**
+* Deprecated patches: **ACSD-66157**
+
 ## v1.1.76 {#v1-1-76}
 
 * **ACSD-67091** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the maximum writeset size error to ensure catalog rule product index cleanup by implementing two deletion strategies based on data volume.
