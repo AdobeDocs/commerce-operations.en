@@ -45,7 +45,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
       <td>
-          2.42
+          2
       </td>
     </tr>
     <tr>
@@ -222,7 +222,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
       <td>
-          2.42
+          2
       </td>
       <td>
           2
@@ -653,7 +653,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
       <td>
-          2.42
+          2
       </td>
       <td>
           2
@@ -1377,7 +1377,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
       <td>
-          2.42
+          2
       </td>
       <td>
           2
@@ -2310,7 +2310,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
       <td>
-          2.42
+          2
       </td>
       <td>
           --
