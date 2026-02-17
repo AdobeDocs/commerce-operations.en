@@ -1,4 +1,4 @@
-# Adobe Commerce release notes (v2.4.9-beta1)
+# Adobe Commerce highlights (v2.4.9-beta1)
 
 ## Highlights in v2.4.9-beta1
 
@@ -14,9 +14,9 @@ _ACP2E-4358 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 ### Admin UI
 
-#### Add &quot;Actions&quot; menu for the Catalog Price Rules grid in Admin UI
+#### Add "Actions" menu for the Catalog Price Rules grid in Admin UI
 
-Starting with Adobe Commerce 2.4.9, the Catalog Price Rules grid in the Admin now includes an "Actions" menu, allowing merchants to Activate, Deactivate, or Delete multiple catalog price rules at once. This brings catalog price rule management in line with the existing bulk actions available for Cart Price Rules, significantly reducing the time required to manage large rule sets.
+Starting with Adobe Commerce 2.4.9, the Catalog Price Rules grid in the Admin now includes an “Actions” menu, allowing merchants to Activate, Deactivate, or Delete multiple catalog price rules at once. This brings catalog price rule management in line with the existing bulk actions available for Cart Price Rules, significantly reducing the time required to manage large rule sets.
 
 _AC-13916_
 
@@ -48,7 +48,7 @@ _BUNDLE-3464_
 
 #### Pay Upon Invoice
 
-For Adobe Commerce 2.4.9 (Braintree extension), a new local payment method "Pay Upon Invoice" has been added for German buyers. Pay Upon Invoice is a Buy Now, Pay Later (BNPL) option powered by PayPal + Ratepay ("Rechnungskauf mit Ratepay") that lets customers receive goods first and pay the invoice within 30 days, without needing a PayPal account. Because it's not an instant payment, order finalisation is driven by a server-side webhook from PayPal.
+For Adobe Commerce 2.4.9 (Braintree extension), a new local payment method “Pay Upon Invoice” has been added for German buyers. Pay Upon Invoice is a Buy Now, Pay Later (BNPL) option powered by PayPal + Ratepay (“Rechnungskauf mit Ratepay”) that lets customers receive goods first and pay the invoice within 30 days, without needing a PayPal account. Because it’s not an instant payment, order finalisation is driven by a server-side webhook from PayPal.
 
 _BUNDLE-3475_
 
@@ -90,7 +90,7 @@ _BUNDLE-3481_
 
 #### Cardinal Integration Update CSP Policy
 
-For the Braintree extension in Adobe Commerce 2.4.9, the Content Security Policy (CSP) has been updated to support the latest Cardinal (3‑D Secure) integration requirements. This ensures that all Cardinal-hosted scripts, iframes, and related resources used during 3‑D Secure flows are allowed by the browser's CSP, preventing blocked requests and broken challenge/verification experiences.
+For the Braintree extension in Adobe Commerce 2.4.9, the Content Security Policy (CSP) has been updated to support the latest Cardinal (3‑D Secure) integration requirements. This ensures that all Cardinal-hosted scripts, iframes, and related resources used during 3‑D Secure flows are allowed by the browser’s CSP, preventing blocked requests and broken challenge/verification experiences.
 
 _BUNDLE-3485_
 
@@ -183,7 +183,7 @@ _AC-14420 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Add compatibility with the latest Composer version for 2.4.9
 
-Adobe Commerce 2.4.9 remains aligned with Composer's 2.x supported versions while preserving backward compatibility and avoiding build or deployment regressions. At the date of release Adobe Commerce 2.4.9 was tested with Composer versions 2.9.
+Adobe Commerce 2.4.9 remains aligned with Composer’s 2.x supported versions while preserving backward compatibility and avoiding build or deployment regressions. At the date of release Adobe Commerce 2.4.9 was tested with Composer versions 2.9.
 
 _AC-14481_
 
@@ -200,7 +200,7 @@ Adobe Commerce now supports the latest version of Apache ActiveMQ Artemis across
 Compatibility with RabbitMQ 4 is retained to support customers who prefer to stay on the existing MQ service.
 ActiveMQ is now fully supported on Adobe Commerce Cloud, including AWS ActiveMQ for Cloud Native deployments.
 ActiveMQ STOMP configuration supported for queue consumers and publishers.
-This migration ensures Adobe Commerce remains on a supported, stable, and scalable MQ framework, reducing risk from RabbitMQ's unpredictable support lifecycle and improving long-term platform health.
+This migration ensures Adobe Commerce remains on a supported, stable, and scalable MQ framework, reducing risk from RabbitMQ’s unpredictable support lifecycle and improving long-term platform health.
 
 _AC-14558_
 
@@ -232,13 +232,13 @@ _AC-15160_
 
 #### Add official support for Symfony 7.4 LTS and PHP 8.5 in Adobe Commerce 2.4.9
 
-As part of the Adobe Commerce 2.4.9 platform updates, all Symfony dependencies used by the magento/composer package have been updated to the latest Symfony LTS 7.4 versions. This aligns Commerce's Composer tooling with the current Symfony LTS line and removes previous dependency constraints related to older Symfony versions. In addition all custom classes extending Symfony core classes have updated type declarations and method signatures aligned with the latest Symfony requirements before upgrading to Adobe Commerce 2.4.9. This will prevent compatibility issues and ensure a smooth transition to the updated framework components.
+As part of the Adobe Commerce 2.4.9 platform updates, all Symfony dependencies used by the magento/composer package have been updated to the latest Symfony LTS 7.4 versions. This aligns Commerce’s Composer tooling with the current Symfony LTS line and removes previous dependency constraints related to older Symfony versions. In addition all custom classes extending Symfony core classes have updated type declarations and method signatures aligned with the latest Symfony requirements before upgrading to Adobe Commerce 2.4.9. This will prevent compatibility issues and ensure a smooth transition to the updated framework components.
 
 _AC-15170 - [GitHub code contribution](https://github.com/magento/magento2/commit/c127d10b)_
 
 #### Migration New Relic from REST v2 to NerdGraph (GraphQL)
 
-This release enhances the Magento_NewRelicReporting module to support New Relic's NerdGraph (GraphQL) Change Tracking API while fully preserving the existing REST v2 deployment marker integration. The change delivers richer deployment metadata, regional endpoint support (US/EU), and configurability through Admin settings without breaking existing setups.
+This release enhances the Magento_NewRelicReporting module to support New Relic’s NerdGraph (GraphQL) Change Tracking API while fully preserving the existing REST v2 deployment marker integration. The change delivers richer deployment metadata, regional endpoint support (US/EU), and configurability through Admin settings without breaking existing setups.
 
 _AC-15461_
 
@@ -291,7 +291,7 @@ _AC-14078 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Only require one enabled 2FA provider to be configured per user
 
-Admin users are now required to configure only one of the merchant's enabled 2FA providers (for example, Google Authenticator or U2F) to access the Admin panel. Additional enabled providers can be configured later as needed. Previously, when multiple 2FA providers were enabled (e.g., Google Authenticator and U2F), every Admin user was required to configure all enabled providers before they could sign in. This created friction for users who did not have access to all factors (such as a hardware key for U2F).
+Admin users are now required to configure only one of the merchant’s enabled 2FA providers (for example, Google Authenticator or U2F) to access the Admin panel. Additional enabled providers can be configured later as needed. Previously, when multiple 2FA providers were enabled (e.g., Google Authenticator and U2F), every Admin user was required to configure all enabled providers before they could sign in. This created friction for users who did not have access to all factors (such as a hardware key for U2F).
 
 _AC-8253 - [GitHub code contribution](https://github.com/magento/security-package/commit/71e7936b)_
 
@@ -299,22 +299,20 @@ _AC-8253 - [GitHub code contribution](https://github.com/magento/security-packag
 
 #### Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs
 
-To comply with USPS's announced of retirement of the legacy Web Tools APIs, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs.
-
+To comply with USPS’s announced of retirement of the legacy Web Tools APIs, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs. 
 Key Enhancements:
-
-- Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
-- Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
-- Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
-- New Admin Fields:
-  - Gateway REST URL (based on mode: Development or Live)
-  - Client ID &amp; Secret
-  - Account Type, Account Number
-  - CRID, MID, Mailer Identification Code
-  - AES/ITN for international shipments
-  - REST-specific allowed shipping methods
-
+ - Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
+ - Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
+ - Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
+ - New Admin Fields:
+Gateway REST URL (based on mode: Development or Live)
+Client ID & Secret
+Account Type, Account Number
+CRID, MID, Mailer Identification Code
+AES/ITN for international shipments
+REST-specific allowed shipping methods
 This migration ensures Adobe Commerce remains compliant with USPS standards, improves system reliability, and future-proofs shipping integrations for merchants.
+
 _AC-13257_
 
 #### Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs

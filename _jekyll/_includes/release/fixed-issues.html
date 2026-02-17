@@ -1,12 +1,13 @@
 {% assign grouped_fixes = fixes | sort: 'Components' | group_by: 'Components' %}
+{%- assign id_in_braces = '{id}' %}
 {% for group in grouped_fixes %}
 ### {{ group.name }}
 {% assign sorted_fixes = group.items | sort: 'Issue key' %}
 {%- for fix in sorted_fixes %}
-#### {{fix['Summary'] | xml_escape }}
+#### {{fix['Summary'] | replace: "<", "&lt;" | replace: id_in_braces, ":id" }}
 {%- unless fix['Custom field (Release Note)'] == empty %}
 
-{{fix['Custom field (Release Note)'] | xml_escape}}
+{{fix['Custom field (Release Note)'] | replace: "<", "&lt;" }}
 {%- endunless -%}
 
 {% capture key %}{{fix['Issue key']}}{% endcapture %}
