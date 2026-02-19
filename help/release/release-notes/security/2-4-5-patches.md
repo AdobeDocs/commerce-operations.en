@@ -8,6 +8,29 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.5-p16
+
+The Adobe Commerce 2.4.5-p16 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+{{b2b-patches}}
+
+### Highlights
+
+#### [Backport] Migration form RabbitMQ to Apache ActiveMQ
+
+Due to the end-of-support risk associated with RabbitMQ 4, Adobe Commerce has initiated a strategic migration to Apache ActiveMQ Artemis to ensure long-term stability and support for its message queue infrastructure.
+Adobe Commerce 2.4.5 now supports the latest version of Apache ActiveMQ Artemis.
+Compatibility with RabbitMQ 4.1 is retained to support customers who prefer to stay on the existing MQ service.
+ActiveMQ is now fully supported on Adobe Commerce Cloud, including AWS ActiveMQ for Cloud Native deployments.
+
+_AC-15986_
+
+#### Make 2.4.5-p16 compatible with MariaDB 10.11
+
+Adobe Commerce 2.4.5-p16 has been verified for compatibility with MariaDB 10.11, while continuing to fully support MariaDB 10.6. Merchants currently running 2.4.5-px can safely upgrade to 2.4.5-p16 and transition from MariaDB 10.6 to MariaDB 10.11 with confidence.
+
+_AC-16267_
+
 ## 2.4.5-p15
 
 The Adobe Commerce 2.4.5-p15 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.

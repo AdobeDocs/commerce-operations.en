@@ -7,6 +7,31 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.7-p9
+
+The Adobe Commerce 2.4.7-p9 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+{{b2b-patches}}
+
+### Highlights
+
+#### [Backport] Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
+
+The DHL shipping integration in Adobe Commerce 2.4.7 now supports MyDHL REST APIs in addition to the existing DHL Express XML integration.
+This update aligns the built‑in DHL integration with DHL's current, actively supported API stack and prepares merchants for the deprecation of the older XML APIs.
+
+_AC-15458 - [GitHub code contribution](https://github.com/magento/magento2/commit/b14aed13)_
+
+##### Add compatibility with the latest Composer version with adobe commerce 2.4.7
+
+Enhanced Adobe Commerce 2.4.7 to support the latest Composer 2.9.x version while retaining compatibility with existing Composer 2.2 LTS version.
+
+_AC-16294_
+
+#### [Web Tests] Composer Build Failure - 2.4.7-p9
+
+_AC-16526_
+
 ## 2.4.7-p8
 
 The Adobe Commerce 2.4.7-p8 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.

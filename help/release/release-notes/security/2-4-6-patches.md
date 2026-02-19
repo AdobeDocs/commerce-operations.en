@@ -8,6 +8,27 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.6-p14
+
+The Adobe Commerce 2.4.6-p14 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+{{b2b-patches}}
+
+### Highlights
+
+#### Evaluate backporting the fix from Adobe Commerce 2.4.7 to 2.4.6.
+
+In Adobe Commerce 2.4.6 we reviewed the dependency constraints that affected upgrading PHPUnit to versions containing the latest security fixes. As part of this work, we validated that Adobe Commerce 2.4.6 can safely run with newer versions of the sebastian/comparator library required by secure PHPUnit releases. This allows customers on 2.4.6 to update PHPUnit to a secure version by adjusting their Composer constraints (for example, requiring sebastian/comparator:^4.0) without impacting Adobe Commerce functionality or behavior.
+
+_AC-16404 - [GitHub code contribution](https://github.com/magento/magento2/commit/751863e9)_
+
+#### [Backport] Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
+
+The DHL shipping integration in Adobe Commerce 2.4.6 now supports MyDHL REST APIs in addition to the existing DHL Express XML integration.
+This update aligns the built‑in DHL integration with DHL's current, actively supported API stack and prepares merchants for the deprecation of the older XML APIs.
+
+_AC-15853 - [GitHub code contribution](https://github.com/magento/magento2/commit/d54562af)_
+
 ## 2.4.6-p13
 
 The Adobe Commerce 2.4.6-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
