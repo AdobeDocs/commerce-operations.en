@@ -10,6 +10,7 @@ type: Troubleshooting
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.77.
 
 QPT v1.1.77 includes the following patches:
+
 1. **ACSD-63687**: Incorrect prices are displayed due to [!DNL Redis] cache cleanup issues.
 1. **ACSD-68341**: Multiple `X‑Magento‑Vary` cookie updates occur on PDP load.
 1. **ACSD-68537**: Checkout performance degrades with many customer segments.
