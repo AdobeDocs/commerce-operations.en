@@ -938,6 +938,7 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
+           - [ACSD-69494: async refund requests with is_online don't trigger online refunds](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
