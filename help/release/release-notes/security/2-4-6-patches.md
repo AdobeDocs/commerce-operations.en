@@ -20,7 +20,7 @@ The Adobe Commerce 2.4.6-p14 security release provides security bug fixes for vu
 
 In Adobe Commerce 2.4.6 we reviewed the dependency constraints that affected the upgrade of PHPUnit to versions containing the latest security fixes. As part of this work, we validated that Adobe Commerce 2.4.6 can safely run with newer versions of the sebastian/comparator library required by secure PHPUnit releases. This allows customers on 2.4.6 to update PHPUnit to a secure version by adjusting their Composer constraints (for example, requiring `sebastian/comparator:^4.0`) without affecting Adobe Commerce functionality or behavior. _(AC-16404)_
 
-#### [Backport] Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
+#### Migrating DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
 
 The DHL shipping integration now supports MyDHL REST APIs in addition to the existing DHL Express XML integration. This update aligns with DHL's current API stack and prepares for deprecation of the older XML APIs. _(AC-15853)_
 
