@@ -15,22 +15,15 @@ The Adobe Commerce 2.4.8-p4 security release provides security bug fixes for vul
 
 ### Highlights
 
+This release includes the following highlights:
+
 #### [Backport] Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
 
-The DHL shipping integration in Adobe Commerce 2.4.8 now supports MyDHL REST APIs in addition to the existing DHL Express XML integration.
-This update aligns the built‑in DHL integration with DHL's current, actively supported API stack and prepares merchants for the deprecation of the older XML APIs.
+The DHL shipping integration now supports MyDHL REST APIs in addition to the existing DHL Express XML integration. This update aligns with DHL's current API stack and prepares for deprecation of the older XML APIs. _(AC-15457)_
 
-_AC-15457 - [GitHub code contribution](https://github.com/magento/magento2/commit/1fdb3b4a)_
+#### Add compatibility with the latest Composer version
 
-#### Add compatibility with the latest Composer version with adobe commerce 2.4.8
-
-Enhanced Adobe Commerce 2.4.8 to support the latest Composer 2.9.x version while retaining compatibility with existing Composer 2.2 LTS version.
-
-_AC-16293_
-
-#### [Cloud Native Service] CNS Build Failure - 2.4.8-p4 - Web API
-
-_AC-16473_
+Adobe Commerce 2.4.8 has been updated to support Composer 2.9.x while remaining compatible with Composer 2.2 LTS. _(AC-16293)_
 
 ## 2.4.8-p3
 
