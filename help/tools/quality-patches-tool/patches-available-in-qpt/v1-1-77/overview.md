@@ -21,7 +21,7 @@ QPT v1.1.77 includes the following patches:
 1. **ACSD-69020**: Configurable products appear in [!UICONTROL Page Builder] carousels when child products match filters.
 1. **ACSD-69237**: `sales_*_async_insert` cron jobs process only 100 entries per run.
 1. **ACSD-69311**: Incorrect tax calculation in credit memos after partial refunds from invoices.
-1. **ACSD-69351**: Gift card balances and expiration dates displayed across incorrect websites.
+1. **[ACSD-69351](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)**: Gift card balances and expiration dates displayed across incorrect websites.
 1. **ACSD-69494**: Async refund requests with `is_online` don't trigger online refunds.
 
 Use the menu on the left to navigate to a specific patch page.
