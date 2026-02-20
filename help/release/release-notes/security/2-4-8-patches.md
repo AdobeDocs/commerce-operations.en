@@ -17,7 +17,7 @@ The Adobe Commerce 2.4.8-p4 security release provides security bug fixes for vul
 
 This release includes the following highlights:
 
-#### Migrating DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
+#### MyDHL REST API support for DHL shipping integration
 
 The DHL shipping integration now supports MyDHL REST APIs in addition to the existing DHL Express XML integration. This update aligns with DHL's current API stack and prepares for deprecation of the older XML APIs. _(AC-15457)_
 

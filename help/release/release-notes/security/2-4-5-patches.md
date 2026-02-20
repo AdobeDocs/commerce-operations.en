@@ -16,7 +16,9 @@ The Adobe Commerce 2.4.5-p16 security release provides security bug fixes for vu
 
 ### Highlights
 
-#### Introducing compatibility with Apache ActiveMQ
+This release includes the following highlights:
+
+#### Compatibility with Apache ActiveMQ Artemis
 
 Due to the end-of-support risk associated with RabbitMQ 4, Adobe Commerce has initiated a strategic migration to Apache ActiveMQ Artemis to ensure long-term stability and support for its message queue infrastructure.
 Adobe Commerce 2.4.5 now supports the latest version of Apache ActiveMQ Artemis.
