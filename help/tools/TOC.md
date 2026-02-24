@@ -936,6 +936,7 @@ feature: Configuration
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+           - [ACSD-69203: products List widget returns incorrect results when multiple categories are used in the category condition](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
