@@ -3,9 +3,28 @@ title: Adobe Commerce 2.4.7 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 ---
+
 # Release notes for Adobe Commerce 2.4.7 security patches
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.7-p9
+
+The Adobe Commerce 2.4.7-p9 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### MyDHL REST API support for DHL shipping integration
+
+The DHL shipping integration now supports MyDHL REST APIs in addition to the existing DHL Express XML integration. This update aligns with DHL's current API stack and prepares for deprecation of the older XML APIs.
+
+#### Add compatibility with the latest Composer version
+
+Adobe Commerce 2.4.7 has been updated to support Composer 2.9.x while remaining compatible with Composer 2.2 LTS.
 
 ## 2.4.7-p8
 
