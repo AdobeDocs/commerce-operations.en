@@ -937,6 +937,8 @@ feature: Configuration
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
            - [ACSD-69261: Single‑use cart coupon reused due to incorrect times_used handling in partial invoice and cancellation flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)
+        - v1.1.77 {#v1-1-77}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
