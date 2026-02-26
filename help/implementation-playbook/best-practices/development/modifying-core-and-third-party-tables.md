@@ -150,7 +150,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Find large MySQL tables
 
-To identify the large tables, connect to the database as described in the [Connect to the database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) article, and run the following command. Use `project_id` for the production environment. For staging environments, use `[project_id]_stg`, `[project_id]_stg2` etc.
+To identify the large tables, connect to the database as described in the [Connect to the database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) article, and run the following command. Use `project_id` for the production environment. For staging environments, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
@@ -161,4 +161,4 @@ ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC
 LIMIT 10;
 ```
 
-This will display the 10 largest tables. If you need to see more, simply increase the LIMIT number. Without a limit, it will display all existing tables (about 100+). It will also show the size of each table. You can go through the list and identify which tables require attention because of the big size.
+This will display the 10 largest tables. If you need to see more tables, increase the `LIMIT` number. Without a limit, the command will display all existing tables (over 100). It will also show the size of each table. You can review the list and identify which tables require attention based on size.
