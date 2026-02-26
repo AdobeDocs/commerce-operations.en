@@ -936,6 +936,7 @@ feature: Configuration
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+           - [ACSD-69308: catalog price rules did not apply when `special_price` was set only at the website level (not at "All Store Views"). After the fix, catalog price rules apply correctly by checking the website's default store first](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
