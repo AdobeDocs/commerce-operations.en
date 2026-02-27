@@ -12,7 +12,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.77 includes the following patches:
 
 1. **ACSD-63687**: Incorrect prices are displayed due to [!DNL Redis] cache cleanup issues.
-1. **ACSD-68341**: Multiple `X‑Magento‑Vary` cookie updates occur on PDP load.
+1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)**: Multiple `X‑Magento‑Vary` cookie updates occur on PDP load.
 1. **ACSD-68537**: Checkout performance degrades with many customer segments.
 1. **ACSD-68664**: Scheduled update preview has errors on custom store domains.
 1. **ACSD-68759**: Customer account creation error with Arabic locale when Date of Birth is shown.
