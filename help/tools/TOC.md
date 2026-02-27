@@ -938,6 +938,7 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
+           - [ACSD-69494: Async refund requests with "is_online" dont trigger online refunds](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
            - [ACSD-68537: Checkout performance degrades with many customer segments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
            - [ACSD-69311: incorrect tax calculation in credit memos after partial refunds from invoices](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
