@@ -11,7 +11,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.77 includes the following patches:
 
-1. **ACSD-63687**: Incorrect prices are displayed due to [!DNL Redis] cache cleanup issues.
+1. **ACSD-63687**: Fixes an issue where incorrect prices display because [!DNL Redis] cache cleanup fails.
 1. **ACSD-68341**: Multiple `X‑Magento‑Vary` cookie updates occur on PDP load.
 1. **ACSD-68537**: Checkout performance degrades with many customer segments.
 1. **ACSD-68664**: Scheduled update preview has errors on custom store domains.
@@ -23,5 +23,6 @@ QPT v1.1.77 includes the following patches:
 1. **ACSD-69351**: Fixes the issue where gift card balances and expiration dates display across incorrect websites.
 1. **ACSD-69311**: Fixes the incorrect tax calculation in credit memos after partial refunds from invoices.
 1. **ACSD-69494**: Fixes the async refund requests with `is_online` don't trigger online refunds.
+1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Fixes the async refund requests with `is_online` don't trigger online refunds.
 
 Use the menu on the left to navigate to a specific patch page.
