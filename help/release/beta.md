@@ -22,11 +22,53 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
+### Merchandising Rules Globally and per Catalog View (Public Beta)
+
+Adobe Commerce Optimizer introduces the ability to define merchandising rules with flexible scope, allowing merchants to apply rules either across all catalog views or scope them to a specific catalog view. This capability simplifies the management of merchandising rules for merchants operating multiple storefronts, brands, or languages. Catalog View–specific rules allow merchants to tailor search results and merchandising logic for individual channels when they need localized or brand-specific experiences. If catalog view–specific rules exists, they override the global rule for that view, providing precise control while maintaining efficient configuration management.
+
+**Key benefits**
+
+- Define merchandising rules globally across all catalog views.
+- Override rules for specific catalog views when localized experiences are required.
+- Reduce configuration duplication across storefronts.
+- Improve scalability for multi-brand and multi-language commerce implementations.
+
+This capability improves merchandising flexibility and operational efficiency, helping merchants deliver more relevant product discovery experiences at scale. To learn more, see [merchandising rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+
+>[!NOTE]
+>
+>Beta participants will need to recreate any existing merchandising rules to take advantage of the new catalog view scope.
+
+To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
+### Product Recommendations Globally and per Catalog View (Public Beta)
+
+Adobe Commerce Optimizer introduces enhanced control over Product Recommendations configuration, enabling merchants to define recommendation units either globally across all catalog views or specifically for individual catalog views.
+
+This capability simplifies recommendation management for businesses operating multiple storefronts, brands, regions, or languages. Merchants can create a recommendation unit once globally and it will apply to all catalog views, ensuring consistent product discovery strategies across channels. At the same time, catalog view–specific recommendation units allow merchants to tailor experiences for particular storefronts when needed.
+
+Storefront engagement events and recommendation metrics are tracked at the catalog view level, providing more accurate insights into shopper behavior across different storefronts.
+
+**Key benefits**
+
+- Configure product recommendation units globally across all catalog views.
+- Create catalog view–specific recommendations for localized storefront experiences.
+- Reduce duplicated configuration across multi-brand or multi-language storefronts.
+- Gain more precise insights with metrics and events tracked by catalog view.
+
+This enhancement helps merchants deliver more relevant product discovery experiences while simplifying the management of recommendations across complex commerce environments. To learn more, see [recommendations](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/recommendation-performance)
+
+>[!NOTE]
+>
+>Beta participants will need to recreate any existing recommendation units to take advantage of the new catalog view scope.
+
+To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
 ### Database Storage for App Builder (Public Beta)
 
 [Database Storage for App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) is a new managed, document-style datastore built into Adobe Developer App Builder that gives your Commerce apps persistent, queryable storage for structured JSON data. All customers with an App Builder license can provision this feature.
 
-### Semantic Search: smarter, context-aware shopping experiences (private beta)
+### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
 
 Semantic search is an e-commerce search technology that understands the *meaning* behind a shopper's query, not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, this AI-powered approach interprets intent using natural language processing (NLP) and context to deliver more relevant results.
 
