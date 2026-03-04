@@ -2,6 +2,8 @@
 title: Beta releases
 description: Learn about the Adobe Commerce beta releases and how to participate.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Adobe Commerce beta releases
 
@@ -12,7 +14,8 @@ Adobe Commerce beta programs are a way for merchants to get access to prerelease
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>**Legal Disclaimer**<br/>
+>Beta releases include prerelease features and code that may contain defects and are provided “AS IS” without warranty of any kind. Adobe has the sole discretion whether to make beta releases generally available. Adobe has no obligation to maintain, correct, update, change, modify, support (via Adobe Support Services or otherwise), or deliver such beta releases by any specific date. Should a beta release become generally available, it may be subject to additional terms and conditions, including applicable fees. Beta releases are subject to change without notice, including discontinuation. Customers are advised to use caution and not to rely in any way on the uninterrupted or error-free functioning or performance of the beta releases.  Accordingly, any use of the beta releases is entirely at the customer’s own risk. 
 
 ## Benefits of participating
 
