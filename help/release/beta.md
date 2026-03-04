@@ -15,7 +15,7 @@ Adobe Commerce beta programs are a way for merchants to get access to prerelease
 >[!IMPORTANT]
 >
 >**Legal Disclaimer**<br/>
->Beta releases include prerelease features and code that may contain defects and are provided “AS IS” without warranty of any kind. Adobe has the sole discretion whether to make beta releases generally available. Adobe has no obligation to maintain, correct, update, change, modify, support (via Adobe Support Services or otherwise), or deliver such beta releases by any specific date. Should a beta release become generally available, it may be subject to additional terms and conditions, including applicable fees. Beta releases are subject to change without notice, including discontinuation. Customers are advised to use caution and not to rely in any way on the uninterrupted or error-free functioning or performance of the beta releases.  Accordingly, any use of the beta releases is entirely at the customer’s own risk. 
+>Beta releases include prerelease features and code that may contain defects and are provided "AS IS" without warranty of any kind. Adobe has the sole discretion whether to make beta releases generally available. Adobe has no obligation to maintain, correct, update, change, modify, support (via Adobe Support Services or otherwise), or deliver such beta releases by any specific date. Should a beta release become generally available, it may be subject to additional terms and conditions, including applicable fees. Beta releases are subject to change without notice, including discontinuation. Customers are advised to use caution and not to rely in any way on the uninterrupted or error-free functioning or performance of the beta releases.  Accordingly, any use of the beta releases is entirely at the customer's own risk. 
 
 ## Benefits of participating
 
@@ -26,6 +26,8 @@ Getting early access to features that Adobe is developing provides customers and
 See the following sections for a list of active beta programs.
 
 ### Merchandising Rules Globally and per Catalog View (Public Beta)
+
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
 Adobe Commerce Optimizer introduces the ability to define merchandising rules with flexible scope, allowing merchants to apply rules either across all catalog views or scope them to a specific catalog view. This capability simplifies the management of merchandising rules for merchants operating multiple storefronts, brands, or languages. Catalog View–specific rules allow merchants to tailor search results and merchandising logic for individual channels when they need localized or brand-specific experiences. If catalog view–specific rules exists, they override the global rule for that view, providing precise control while maintaining efficient configuration management.
 
@@ -45,6 +47,8 @@ This capability improves merchandising flexibility and operational efficiency, h
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Product Recommendations Globally and per Catalog View (Public Beta)
+
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
 Adobe Commerce Optimizer introduces enhanced control over Product Recommendations configuration, enabling merchants to define recommendation units either globally across all catalog views or specifically for individual catalog views.
 
@@ -73,6 +77,8 @@ To share your feedback as you use this beta feature, send an email to [commerce-
 
 ### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
 
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
+
 Semantic search is an e-commerce search technology that understands the *meaning* behind a shopper's query, not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, this AI-powered approach interprets intent using natural language processing (NLP) and context to deliver more relevant results.
 
 This technology addresses a major limitation of traditional search: zero-result pages that occur when shoppers use words that do not exist in the catalog. By using AI-powered techniques, it maps user queries and product data into a shared semantic space. For example, the system recognizes that "running shoes" and "jogging sneakers" refer to the same type of product, enabling:
@@ -85,6 +91,8 @@ This technology addresses a major limitation of traditional search: zero-result 
 To request an invitation to the beta program, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
 
 ### Cloud Automation Patching Service (Private Beta)
+
+[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 
 The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
 
@@ -109,6 +117,8 @@ To participate in this beta, complete and submit the [Cloud Automation Patching 
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
+[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
 
 - Real-time visibility into inventory levels and accurate delivery dates for your customers.
@@ -119,6 +129,8 @@ This integration accelerator for IBM Sterling Order Management enables Adobe Com
 To participate in this beta, send an email request to [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
 ### Adobe Commerce Foundation (Public Alpha/Beta)
+
+[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 
 Each Adobe Commerce Foundation alpha and beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
