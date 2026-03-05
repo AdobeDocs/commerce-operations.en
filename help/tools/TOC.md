@@ -937,6 +937,7 @@ feature: Configuration
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
            - [ACSD-69129: [!DNL REST] API tier price update fails after deleting the default base website and using the secondary website as default](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)
+           - [ACSD-68410: Negotiable quote checkout includes unintended shopping cart items](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)
            - [ACSD-69333: SKU changes allowed for products with an active Scheduled Update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
