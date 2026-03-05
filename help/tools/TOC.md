@@ -940,6 +940,7 @@ feature: Configuration
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
            - [ACSD-69351: gift card balances and expiration dates displayed across incorrect websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)
+           - [ACSD-68664: Scheduled update preview has errors on custom store domains](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)
            - [ACSD-63687: incorrect prices are displayed due to [!DNL Redis] cache cleanup issues](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687.md)
            - [ACSD-69494: Async refund requests with "is_online" dont trigger online refunds](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
            - [ACSD-68537: Checkout performance degrades with many customer segments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
