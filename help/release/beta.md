@@ -115,19 +115,6 @@ The beta includes the following features:
 
 To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
-### IBM Sterling Order Management System Integration (Private Beta)
-
-[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-
-This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
-
-- Real-time visibility into inventory levels and accurate delivery dates for your customers.
-- Automated sourcing for orders based on configurable rules, so you can optimize your fulfillment network and inventory.
-- A universal view of orders across channels from a single dashboard so your support teams can deliver exceptional service and identify and handle exceptions quickly.
-- A templated return management flow to simplify returns management.
-
-To participate in this beta, send an email request to [sbieber@adobe.com](mailto:sbieber@adobe.com).
-
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
 [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
