@@ -23,6 +23,6 @@ QPT v1.1.76 includes the following patches:
 1. **ACSD-69325**: Fixes an issue where modifying the SKU case causes the product to appear out of stock on the storefront.
 1. **ACSD-69331**: Fixes an issue where content creators in the media gallery couldn't create folders with only the `create_folder` permission. After the fix, they can create folders as expected.
 1. **ACSD-69333**: Fixes an issue where SKU changes were allowed for products with an active scheduled update. After the fix, SKU changes are prohibited during active updates; saves fail with a clear error, and the admin SKU field is disabled. This prevents MSI.
-1. **[ACSD-69541](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)**: Fixes an issue where reducing a product's quantity in the admin to less than what already exists in a cart made it impossible to edit the product quantity in that cart via GraphQL.
+1. **[ACSD-69541](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)**: Fixes an issue where reducing a product's quantity in the [!UICONTROL Admin] to less than the previous quantity in a cart stopped the ability to edit the product quantity in that cart via GraphQL.
 
 Use the menu on the left to navigate to a specific patch page.
