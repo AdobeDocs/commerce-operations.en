@@ -937,6 +937,7 @@ feature: Configuration
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
            - [ACSD-69308: Catalog price rules not applying when "special_price" is set at website level](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
+           - [ACSD-69541: ACSD-69541: Cart item quantity can't be updated via GraphQL after reducing product stock in [!UICONTROL Admin]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)
            - [ACSD-69325: Modifying the SKU case caused the product to appear out-of-stock on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)
            - [ACSD-69129: [!DNL REST] API tier price update fails after deleting the default base website and using the secondary website as default](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)
            - [ACSD-68410: Negotiable quote checkout includes unintended shopping cart items](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)
