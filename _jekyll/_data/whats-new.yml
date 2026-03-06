@@ -2,8 +2,56 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 20 17:47:25 2026
+updated: Fri Feb 27 15:40:29 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69311:
+    Incorrect tax calculation in credit memos after partial refunds from invoices](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1812
+  merge_commit: c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69494:
+    Async refund requests with is_online don''t trigger online refunds](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1814
+  merge_commit: 29a5f90122336bde78ed00e778b43b7c56549eef
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68537:
+    Checkout performance degrades with many customer segments](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1805
+  merge_commit: 70729169b3588f5061f98b555577c2b62215e6f0
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68341:
+    Multiple X‑Magento‑Vary cookie updates occur on PDP load](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 26, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1804
+  merge_commit: 88ae7472fc5ec3c7b422a9a1d568204c42e017bb
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.77](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview).'
   versions: ''
   type: new-topic, qpt
