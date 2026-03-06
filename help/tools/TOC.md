@@ -943,7 +943,6 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
            - [ACSD-69020: configurable products appear in [!DNL Page Builder] carousels when child products match filters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)
            - [ACSD-68892: Inconsistent [!DNL Fastly] caching behavior for cacheable pages](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)
-
            - [ACSD-68664: Scheduled update preview has errors on custom store domains](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)
            - [ACSD-63687: incorrect prices are displayed due to [!DNL Redis] cache cleanup issues](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687.md)
            - [ACSD-69494: Async refund requests with "is_online" dont trigger online refunds](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
