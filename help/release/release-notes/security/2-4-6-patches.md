@@ -8,6 +8,18 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+>[!IMPORTANT]
+>
+>MySQL 8.0 will reach End of Support (EOS) starting April 30, 2026.
+>
+>Following this date Adobe Commerce 2.4.6 will not provide compatibility or
+>support for any MySQL versions released after MySQL 8.0. Adobe will not
+>validate or provide support for newer MySQL major versions on this Adobe
+>Commerce release line.
+>
+>All Adobe Commerce on-premises customers running versions 2.4.6 are strongly
+>advised to migrate their database servers to a compatible MariaDB version.
+
 ## 2.4.6-p14
 
 The Adobe Commerce 2.4.6-p14 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
