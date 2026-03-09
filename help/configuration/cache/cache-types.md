@@ -1,24 +1,28 @@
 ---
-title: Cache types
-description: Learn how to associate cache frontends with cache types in Adobe Commerce. Discover cache configuration and management techniques.
+title: Configure Cache Frontends
+description: Learn how to define cache frontends and associate them with cache types in Adobe Commerce. Discover configuration syntax for env.php and di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 ---
-# Cache types
+# Configure cache frontends
 
-The following steps walk through associating cache frontend with a cache type.
+A cache frontend is an interface between Commerce and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend.
 
-## Step 1: Define a cache frontend
+This is useful when you want to use different cache backends or configurations for different types of cached data. For example, you might want `full_page` caching on a dedicated Redis database while using a separate database for `default` caching.
 
-The Commerce application has a `default` cache frontend that you can use for any [cache type](../cli/manage-cache.md#clean-and-flush-cache-types). This section discusses how to optionally define a cache frontend with a different name, which is preferable if you expect to customize your frontend.
+## Use the default frontend
 
->[!INFO]
->
->To use the `default` cache type, you do not need to modify `env.php` at all; you modify Commerce's global `di.xml`. See [Low-level cache options](cache-options.md).
+Commerce provides a `default` cache frontend that works for all cache types. It extends [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) by implementing the [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) frontend cache.
 
-You must specify a custom cache frontend either `app/etc/env.php` or Commerce's global `app/etc/di.xml`.
+In most cases, you do not need to customize the frontend. You only need to configure the backend. See [Cache backend options](cache-options.md).
 
-The following example shows how to define it in the `env.php` file, which overrides the `di.xml` file:
+## Define a custom cache frontend
+
+The following steps walk through associating a cache frontend with a cache type.
+
+### Step 1: Define a cache frontend and assign cache types
+
+To define a custom cache frontend, add the configuration to `app/etc/env.php` (which overrides `di.xml`):
 
 ```php?start_inline=1
 'cache' => [
@@ -31,8 +35,6 @@ The following example shows how to define it in the `env.php` file, which overri
          <cache type 1> => [
              'frontend' => '<unique frontend id>'
         ],
-    ],
-    'type' => [
          <cache type 2> => [
              'frontend' => '<unique frontend id>'
         ],
@@ -40,11 +42,19 @@ The following example shows how to define it in the `env.php` file, which overri
 ],
 ```
 
-Where `<unique frontend id>` is a unique name to identify your frontend and `<cache options>` are options discussed in the topics specific to each type of caching (database, Redis, and so on).
+Where:
 
-## Step 2: Configure the cache
+- `<unique frontend id>` -- A unique name to identify the frontend (for example, `default`, `page_cache`, `stale_cache_enabled`)
+- `<cache options>` -- Backend type and options for this frontend (see [Cache options](cache-options.md))
+- `<cache type>` -- A Commerce cache type to assign to this frontend (for example, `config`, `layout`, `block_html`, `full_page`)
 
-You can specify frontend and backend cache configuration options in `env.php` or `di.xml`. This task is optional.
+>[!TIP]
+>
+>**Modern Symfony Cache implementation (2.4.9+):** Starting with Commerce 2.4.9, you can use simplified backend types like `redis`, `valkey`, or `file` with the modern Symfony Cache implementation. See [Use Redis for default cache](redis-pg-cache.md) and [Use Valkey for default cache](valkey-pg-cache.md) for details.
+
+### Step 2: Configure frontend and backend options
+
+You can specify frontend and backend cache configuration options in `env.php` or `di.xml`. This task is optional. If you do not specify options, Commerce uses the default frontend and backend settings.
 
 `env.php` example:
 
@@ -61,13 +71,26 @@ You can specify frontend and backend cache configuration options in `env.php` or
 ],
 ```
 
-where
+Where:
 
-- `<frontend_type>` is the low-level frontend cache type. Specify the name of a class that is compatible with `Zend\Cache\Core`.
-  If you omit `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) is used.
+- `<frontend_type>` -- The low-level frontend cache type. Specify a class name compatible with `Zend\Cache\Core`.
+  If omitted, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) is used.
 
-- `<frontend_option>`, `<frontend_option_value>` are the name and value of options the Commerce framework passes as an associative array to the frontend cache upon its creation.
-- `<backend_type>` is the low-level backend cache type. Specify the name of a class that is compatible with `Zend_Cache_Backend` and that implements `Zend_Cache_Backend_Interface`.
-- `<backend_option>` and `<backend_option_value>` are the name and value of options the Commerce framework passes as an associative array to backend cache upon its creation.
+- `<frontend_option>`, `<frontend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the frontend cache on creation.
 
-See the [Laminas documentation](https://docs.laminas.dev/) for the latest Zend information.
+- `<backend_type>` -- The low-level backend cache type. You can specify:
+    - **Modern Symfony Cache (2.4.9+, recommended)**: Simplified names like `redis`, `valkey`, or `file`
+    - **Legacy (Zend-based)**: Full class name compatible with `Zend_Cache_Backend` that implements `Zend_Cache_Backend_Interface`
+
+- `<backend_option>`, `<backend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the backend cache on creation.
+
+>[!NOTE]
+>
+>**Legacy vs Modern implementation:**
+>
+>- **Legacy (Zend-based)**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
+>- **Modern (Symfony Cache)**: `'backend' => 'redis'` (recommended for Commerce 2.4.9+)
+>
+>The modern Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
+
+See the [Laminas documentation](https://docs.laminas.dev/) for Zend-based options, or the modern Symfony Cache guides for [Redis](redis-pg-cache.md) and [Valkey](valkey-pg-cache.md).

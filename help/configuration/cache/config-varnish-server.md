@@ -1,5 +1,5 @@
 ---
-title: Configure web server
+title: Configure Web Server
 description: Learn how to configure your web server to work with Varnish caching for Adobe Commerce. Discover port configuration and setup requirements.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
@@ -135,7 +135,7 @@ If Varnish fails to start as a service, start it from the command line as follow
 
    The following messages display to confirm a successful start:
 
-   ```
+   ```text
    child (29805) Started
    200 0
 
@@ -153,7 +153,7 @@ netstat -tulpn
 
 Look for the following output in particular:
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd

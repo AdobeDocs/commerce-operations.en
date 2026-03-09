@@ -1,6 +1,6 @@
 ---
-title: Use Redis for session storage
-description: Learn how to configure Redis for session storage in Adobe Commerce. Discover command-line setup, configuration options, and performance optimization techniques.
+title: Configure Redis for Session Storage
+description: Learn how to configure Redis for session storage in Adobe Commerce. Discover CLI setup, session parameters, and connection verification techniques.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 ---
@@ -104,7 +104,7 @@ redis-cli monitor
 
 Sample session-storage output:
 
-```
+```terminal
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"

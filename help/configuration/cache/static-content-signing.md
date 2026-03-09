@@ -1,6 +1,6 @@
 ---
-title: Static content cache
-description: Learn about static content cache signing and performance optimization in Adobe Commerce. Discover how to enable, disable, and configure caching features.
+title: Static Content Signing and Browser Cache Invalidation
+description: Learn how static content signing works in Adobe Commerce to invalidate browser cache for static resources. Discover how to enable and configure this feature.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 ---
@@ -31,7 +31,7 @@ Commerce enables this feature by default, and Adobe recommends keeping this feat
 
 The configuration for static content signing is in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **On-Premises only**: This configuration is available if your site is **not** in [Production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **On-Premises only**: This configuration is available if your site is **not** in [Production mode](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: This configuration is hidden because Production mode is strictly enforced; therefore, you must use the command line as shown below.
 
 ![Static Files Settings](../../assets/configuration/static-files-settings.png)

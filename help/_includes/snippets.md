@@ -110,3 +110,10 @@ After recent CSP/SRI changes, the checkout page does not load static.min.js and 
 **Hotfix**:
 
 A hotfix is available. See [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) in the Knowledge Base for patch details.
+
+## Valkey Redis CLI note {#valkey-redis-cli-note}
+
+>[!NOTE]
+>
+>Starting with Adobe Commerce 2.4.9, Valkey officially replaced Redis in CLI tooling. For **versions 2.4.8 and earlier**, use the equivalent [Redis CLI commands](/help/configuration/cache/config-redis.md#set-up-redis-configuration).
+

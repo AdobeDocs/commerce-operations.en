@@ -1,5 +1,5 @@
 ---
-title: Final verification
+title: Final Verification
 description: Learn how to perform final verification of your Varnish configuration with Adobe Commerce. Discover testing steps and troubleshooting techniques.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
@@ -22,7 +22,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Important headers:
 
-```
+```text
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS
