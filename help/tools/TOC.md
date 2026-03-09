@@ -957,6 +957,7 @@ feature: Configuration
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
+    - [Adobe Commerce Beta (on-premises)](reference/commerce-on-premises-beta.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}
     - [Introduction](observation-for-adobe-commerce/intro.md)
