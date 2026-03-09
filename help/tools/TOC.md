@@ -925,6 +925,8 @@ feature: Configuration
            - [ACSD-68636: Store owner name missing in gift card email headers when invoice is created from another store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
         - v1.1.75 {#v1-1-75}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
+           - [ACSD-68359: Fixes 414 error when selecting [!UICONTROL Pick in Store] with large carts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68359.md)
+           - [ACSD-68517: Fixes a form resubmission error on [!UICONTROL Catalog] and [!UICONTROL Catalog Search] pages](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517.md)
            - [ACSD-68573: Category permissions were not applied to customer wishlist items, causing incorrect display and pagination on the web storefront and in GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68573.md)
            - [ACSD‑68793: Valid products are incorrectly rejected during shared catalog assignment](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793.md)
            - [ACSD-68925: GraphQL responses now follow HTTP specs, returning 4XX for unparseable, unauthorized, or invalid requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68925.md)
@@ -935,6 +937,22 @@ feature: Configuration
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
            - [ACSD-67091: Catalog rule product index cleanup fails due to maximum writeset size during large deletions](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)
+           - [ACSD-69308: Catalog price rules not applying when "special_price" is set at website level](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
+           - [ACSD-69541: ACSD-69541: Cart item quantity can't be updated via GraphQL after reducing product stock in [!UICONTROL Admin]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)
+           - [ACSD-69325: Modifying the SKU case caused the product to appear out-of-stock on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)
+           - [ACSD-69129: [!DNL REST] API tier price update fails after deleting the default base website and using the secondary website as default](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)
+           - [ACSD-68410: Negotiable quote checkout includes unintended shopping cart items](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)
+           - [ACSD-69333: SKU changes allowed for products with an active Scheduled Update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)
+        - v1.1.77 {#v1-1-77}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
+           - [ACSD-69020: configurable products appear in [!DNL Page Builder] carousels when child products match filters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)
+           - [ACSD-68892: Inconsistent [!DNL Fastly] caching behavior for cacheable pages](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)
+           - [ACSD-68664: Scheduled update preview has errors on custom store domains](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)
+           - [ACSD-63687: incorrect prices are displayed due to [!DNL Redis] cache cleanup issues](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687.md)
+           - [ACSD-69494: Async refund requests with "is_online" dont trigger online refunds](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
+           - [ACSD-68537: Checkout performance degrades with many customer segments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
+           - [ACSD-69311: incorrect tax calculation in credit memos after partial refunds from invoices](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
+           - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
