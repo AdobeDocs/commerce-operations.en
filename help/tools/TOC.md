@@ -937,6 +937,7 @@ feature: Configuration
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
            - [ACSD-69261: Single‑use cart price rule coupon reused due to incorrect times_used handling in partial invoice and cancellation flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)
+           - [ACSD-67091: Catalog rule product index cleanup fails due to maximum writeset size during large deletions](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)
            - [ACSD-69308: Catalog price rules not applying when "special_price" is set at website level](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
            - [ACSD-69541: ACSD-69541: Cart item quantity can't be updated via GraphQL after reducing product stock in [!UICONTROL Admin]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)
            - [ACSD-69325: Modifying the SKU case caused the product to appear out-of-stock on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)
