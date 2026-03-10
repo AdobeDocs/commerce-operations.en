@@ -20,12 +20,6 @@ As part of continuous security review process, we evaluated the latest major rel
 
 _AC-13209 - [GitHub code contribution](https://github.com/magento/magento2/commit/2bac8114) - [GitHub code contribution](https://github.com/magento/magento2/commit/09b36ebb) - [GitHub code contribution](https://github.com/magento/magento2/commit/33b81f28)_
 
-#### [Part 2] - Update all js library and npm dependency with latest available version
-
-composer version support was up to the composer version 2.2.x only. Now the support extended to 2.4.x version as well.
-
-_AC-13792 - [GitHub code contribution](https://github.com/magento/magento2/commit/19844aa0)_
-
 #### Replace  carlos-mg89/oauth with PHP Native Functions
 
 Replaced the third-party carlos-mg89/oauth library with native PHP OAuth functions to improve security, reduce external dependencies, and enhance platform stability.
