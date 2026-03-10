@@ -527,25 +527,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### January 9, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added Composer 2.9 as a supported version for Adobe Commerce 2.4.9, 2.4.8, and 2.4.7 in the <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">System requirements</a> documentation.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/018a833063a139a59906630b03d03dd827157bdf">commit</a></td>
-    </tr>
-  </tbody>
-</table>
