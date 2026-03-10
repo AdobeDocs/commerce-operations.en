@@ -1226,7 +1226,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          10.11
+          10.11, 10.6
       </td>
       <td>
           10.6
