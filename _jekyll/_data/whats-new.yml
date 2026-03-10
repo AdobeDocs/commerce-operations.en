@@ -2,8 +2,145 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 27 15:40:29 2026
+updated: Fri Mar 6 15:40:13 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69308:
+    Catalog price rules did not apply when `special_price` was set only at the website
+    level (not at "All Store Views"). After the fix, catalog price rules apply correctly
+    by checking the website''s default store first](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1826
+  merge_commit: db07a5d6f991ff36536a4365ee88fa25062dbe43
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69541:
+    Reducing a product''s quantity in the admin to less than what already exists in
+    a cart made it impossible to edit the product quantity in that cart via GraphQL](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1825
+  merge_commit: b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69020:
+    Configurable products appear in Page Builder carousels when child products match
+    filters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1810
+  merge_commit: 5ce526100a22243b91f75b8a52690e529b64b152
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69325:
+    Modifying the SKU case caused the product to appear out-of-stock on the storefront](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1823
+  merge_commit: bceda2e729082e0dc81f7eb81838ca5c5049342d
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    with two new public beta programs: Merchandising Rules globally and per catalog
+    view, and Product Recommendations globally and per catalog view.'
+  versions: ''
+  type: major-update
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1832
+  merge_commit: 5533640a3f0f648162ebfc3609eb4e35fd32f6d7
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69129:
+    REST API tier price update fails after deleting the default base website and using
+    the secondary website as default](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 5, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1793
+  merge_commit: 06d33e9ed08e079365ac6ae6087e4bdf30bbf45e
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-68410:
+    Negotiable quote checkout includes unintended shopping cart items](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 5, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1790
+  merge_commit: 123a0b7c2335fd27d6c8fabbb8a6520af2ac0c76
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68892:
+    Inconsistent Fastly caching behavior for cacheable pages](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 5, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1808
+  merge_commit: d727bea23f1a60b597bb795948eb924e76e869a5
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-63687:
+    Incorrect prices are displayed due to Redis cache cleanup issues](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1803
+  merge_commit: e8a9b37a61119e7604461c83f135a282b15a93ef
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68664:
+    Scheduled update preview has errors on custom store domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1806
+  merge_commit: d0a57180c224fc7d1eba3e4e5b87a87ddb11d88c
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69333:
+    SKU changes allowed for products with an active Scheduled Update](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1824
+  merge_commit: b9ea11e00223a3c4a4cd5be1eca1a3175074124c
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69311:
     Incorrect tax calculation in credit memos after partial refunds from invoices](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311).'
   versions: ''
