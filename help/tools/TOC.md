@@ -936,6 +936,7 @@ feature: Configuration
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+           - [ACSD-67370: Incorrect prices were shown for Bundle products on PDP/PLP and the cart page for multi-currency stores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)
            - [ACSD-69261: Single‑use cart price rule coupon reused due to incorrect times_used handling in partial invoice and cancellation flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)
            - [ACSD-67091: Catalog rule product index cleanup fails due to maximum writeset size during large deletions](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)
            - [ACSD-69308: Catalog price rules not applying when "special_price" is set at website level](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
