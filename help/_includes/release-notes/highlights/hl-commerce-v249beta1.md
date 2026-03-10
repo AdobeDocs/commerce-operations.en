@@ -130,12 +130,6 @@ Adobe Commerce 2.4.9-beta1 adds comprehensive support for Valkey 8.x as a Redis-
 
 _AC-14103, AC-14604_
 
-#### Update Nginx version from 1.26 to 1.28
-
-The Nginx version used in development and testing environments across all currently supported versions of Adobe Commerce is updated to 1.28, aligning with the latest stable Nginx release. PR-level testing now runs against Nginx 1.28, confirming full compatibility and support for all Adobe Commerce versions.
-
-_AC-14104_
-
 #### Apache ActiveMQ Artemis support replaces RabbitMQ
 
 Added support for Apache ActiveMQ Artemis as a strategic alternative to RabbitMQ, driven by end-of-support risks associated with RabbitMQ 4. ActiveMQ Artemis is now fully supported across Commerce release lines 2.4.6 through 2.4.9-beta1, including Adobe Commerce Cloud with AWS ActiveMQ for cloud-native deployments, and supports STOMP configuration for queue consumers and publishers. Existing RabbitMQ 4 installations remain compatible for merchants who prefer to continue using their current message queue service.
@@ -155,12 +149,6 @@ _AC-15615_
 Starting with Adobe Commerce 2.4.9-beta1, PHP 8.2 is no longer supported. The platform now targets PHP 8.3 and later, with core code, dependencies, and tooling updated to run cleanly and reliably on PHP 8.4 and 8.5.
 
 _AC-15758_
-
-#### Expanded Composer 2.x version support
-
-Previously, Composer version support was limited to 2.2.x. Adobe Commerce 2.4.9-beta1 extends this support to include Composer 2.4.x and later releases, broadening compatibility for development and deployment environments.
-
-_AC-13792 - [GitHub code contribution](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### Composer 2.9 compatibility verified
 
@@ -269,12 +257,6 @@ _AC-15461_
   _AC-14420 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
 
 ### Security
-
-#### Comprehensive multisite access control hardening
-
-This update delivers comprehensive hardening of multisite access control lists (ACLs) in the Adobe Commerce Admin, addressing both known and previously unknown permission issues in the multisite access control configuration. Admin users with access to specific websites or stores can no longer view or modify data that belongs to other websites or stores in a multisite deployment.
-
-_AC-11899_
 
 #### CAPTCHA validation now enforced for REST and GraphQL APIs
 
