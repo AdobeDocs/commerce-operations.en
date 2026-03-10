@@ -19,12 +19,19 @@ exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 ## Configure L2 cache
 Configure the L2 cache by setting the `REDIS_BACKEND` or `VALKEY_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
+>[!BEGINTABS]
+
+>[!TAB Redis configuration]
+
 For Redis, use:
 ```yaml
 stage:
   deploy:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
+
+>[!TAB Valkey configuration]
+
 For Valkey, use:
 ```yaml
 stage:
@@ -32,6 +39,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
+>[!ENDTABS]
 
 For environment configuration on Cloud infrastructure, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
 
@@ -43,6 +51,7 @@ For on-premises installations, see [Configure Redis page caching](../../../confi
 
 
 ### L2 cache memory sizing (Adobe Commerce Cloud)
+
 L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Compared with specialized key-value database systems, a temporary file system doesn't have a key eviction policy to control memory usage. 
 
 The lack of memory usage control can cause the L2 cache memory usage to grow over time.
@@ -83,9 +92,12 @@ The usage could vary across different nodes, but it should converge to the same 
 df -h /dev/shm
 ```
 
-
 ## Enable Redis or Valkey slave connection
 Enable replica connection in the `.magento.env.yaml` file to let Magento read cache entries from the replica endpoint while continuing to write to the primary endpoint. This can reduce read load on the primary cache service and improve resilience during short spikes.
+
+>[!BEGINTABS]
+
+>[!TAB Redis configuration]
 
 For Redis, use:
 ```yaml
@@ -93,6 +105,9 @@ stage:
   deploy:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
+
+>[! Valkey configuration]
+
 For Valkey, use:
 ```yaml
 stage:
@@ -100,12 +115,15 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
+>[!ENDTABS]
+
 See [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento:setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
 
 ## Pre-load keys
+
 Magento usually loads cache entries from Redis/Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. The fetched values are then kept in PHP memory for the remainder of that request, reducing repeated round trips to Redis/Valkey and improving bootstrap performance for those keys.
 
 You just need to list the keys for preload in the `.magento.env.yaml` configuration file.
@@ -128,40 +146,70 @@ stage:
 ```
 Optionally, You can get a bigger list of top keys by monitoring active commands on Redis/Valkey:
 
+>[!BEGINTABS]
+
+>[!TAB Redis preload key configuration]
+
 For Redis, run:
+
 ```
 redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
 ```
-For Valkey, run:
-```
-valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
-```
-Press Ctrl+C after 10 seconds and analyse the log with the command below:
-```
+
+After 10 seconds, press **[!UICONTROL Ctrl+C]** and analyse the log with the following command:
+
+```terminal
 cat /tmp/list.keys| grep "HGET"| awk '{print $5}'|sort |uniq -c | sort -nr|head -n50
 ```
-In this log, you will find the list of keys you can preload. To see the content of that key, you can just run:
-For Redis, run:
-```
+
+This log lists the keys you can preload. To see the content of a key, run the following command:
+
+```terminal
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
+
+>[!TAB Valkey preload key configuration]
+
 For Valkey, run:
+
+```terminal
+valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
 ```
+
+After 10 seconds, press **[!UICONTROL Ctrl+C]** and analyse the log with the following command:
+
+```terminal
+cat /tmp/list.keys| grep "HGET"| awk '{print $5}'|sort |uniq -c | sort -nr|head -n50
+```
+
+This log lists the keys you can preload. To see the content of a key, run the following command:
+
+For Valkey, run:
+
+```terminal
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
+>[!ENDTABS]
+
 For on-premises installations, see [Redis preload feature](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in the _Configuration Guide_.
 
-
 ## Enable stale cache
+
 Stale cache is an L2-cache feature of `RemoteSynchronizedCache`. When enabled, Magento can serve an existing local cache value from `/dev/shm` while another process is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
 
 ### How it works
+
 With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When a cache entry is no longer available remotely and another process is already regenerating it, stale cache allows concurrent requests to receive the previous local value instead of waiting until the fresh value is written.
 
 To enable stale cache, configure it in the `.magento.env.yaml` file.
 
+>[!BEGINTABS]
+
+>[!TAB Configure stale cache for Redis]
+
 For Redis:
+
 ```yaml
 stage:
   deploy:
@@ -173,7 +221,11 @@ stage:
           backend_options:
             use_stale_cache: true
 ```
+
+>[!TAB Configure stale cache for Valkey]
+
 For Valkey:
+
 ```yaml
 stage:
   deploy:
@@ -185,6 +237,8 @@ stage:
           backend_options:
             use_stale_cache: true
 ```
+
+>[!ENDTABS]
 
 >[!NOTE]
 >
@@ -201,6 +255,10 @@ For on-premises installations, see [Stale cache options](../../../configuration/
 
 ## Separate cache and session instances
 Separating the cache from session allows you to manage the cache and sessions independently. It prevents cache issues from affecting sessions, which could impact revenue. Each Redis/Valkey instance runs on its own core, which improves performance.
+
+>[!BEGINTABS]
+
+>[!Tab Redis configuration]
 
 1. Update the `.magento/services.yaml` configuration file.
 
@@ -246,25 +304,35 @@ rabbitmq:
 ```
 
 1. Update the `.magento.app.yaml` configuration file.
+ 
+   >[!BEGINTABS]
 
-For Redis, use:
-```yaml
-relationships:
-  database: "mysql:mysql"
-  redis: "redis:redis"
-  redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-  search: "search:elasticsearch"
-  rabbitmq: "rabbitmq:rabbitmq"
-```
-For Valkey, use:
-```yaml
-relationships:
-  database: "mysql:mysql"
-  valkey: "valkey:valkey"
-  valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
-  search: "search:elasticsearch"
-  rabbitmq: "rabbitmq:rabbitmq"
-```
+   >[!TAB Redis configuration]
+
+   For Redis, use:
+   
+   ```yaml
+   relationships:
+     database: "mysql:mysql"
+     redis: "redis:redis"
+     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+     search: "search:elasticsearch"
+     rabbitmq: "rabbitmq:rabbitmq"
+   ```
+
+   >[!TAB Valkey configuration]
+   
+   For Valkey, use:
+
+   ```yaml
+   relationships:
+     database: "mysql:mysql"
+     valkey: "valkey:valkey"
+     valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
+     search: "search:elasticsearch"
+     rabbitmq: "rabbitmq:rabbitmq"
+   ```
+   >[!ENDTABS]
 
 1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request the provisioning of a new Redis or Valkey instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files. This won't cause any downtime, but it requires a deployment to activate the new service.
 
@@ -297,15 +365,24 @@ relationships:
    ```
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis/Valkey cache instance.
-For Redis:
-```bash
-redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-```
-For Valkey:
-```bash
-valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-```
 
+   >[!BEGINTABS]
+
+   >[!TAB Redis configuration]
+   
+   For Redis:
+ 
+   ```terminal
+   redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
+
+   >[!TAB Valkey configuration]
+   
+   For Valkey:
+   
+   ```terminal
+   valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
 
 ## Cache compression
 
@@ -326,7 +403,7 @@ stage:
 ```
 
 
-## Enable Redis/Valkey asynchronous freeing (lazyfree)
+## Enable Redis and Valkey asynchronous freeing (lazyfree)
 
 To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the following Redis/Valkey configuration be applied to your environment(s):
 
@@ -389,7 +466,8 @@ These settings can reduce intermittent connection and read-timeout errors during
 >These settings can help with brief congestion, but they do not fix persistent overload.
 
 
-## Follow a configuration example for Redis with all the Best Practices Recommendations applied:
+## Follow a configuration example for Redis with all the best practices recommendations applied:
+
 ```yaml
 stage:
   deploy:
