@@ -430,7 +430,7 @@ stage:
         default:
           id_prefix: '001_' # any prefix is fine, but keep it consistent.
           backend_options:
-            use_stale_cache: true             # Enables stale cache feature
+            use_stale_cache: true             # Enables stale cache feature for all cache types
             connect_retries: 3                # Number of connection retries
             preload_keys:                     # Preload keys at backend_options level (official Adobe placement)
               - '001_EAV_ENTITY_TYPES:hash'   # Bootstrap: entity types
