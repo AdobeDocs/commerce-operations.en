@@ -3,9 +3,42 @@ title: Adobe Commerce 2.4.7 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 ---
+
 # Release notes for Adobe Commerce 2.4.7 security patches
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+>[!IMPORTANT]
+>
+>MySQL 8.0 will reach End of Support (EOS) starting April 30, 2026.
+>
+>Following this date Adobe Commerce 2.4.7 will not provide compatibility or
+>support for any MySQL versions released after MySQL 8.0. Adobe will not
+>validate or provide support for newer MySQL major versions on this Adobe
+>Commerce release line.
+>
+>All Adobe Commerce on-premises customers running versions 2.4.7 are strongly
+>advised to migrate their database servers to a compatible MariaDB version.
+
+## 2.4.7-p9
+
+The Adobe Commerce 2.4.7-p9 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### MyDHL REST API support for DHL shipping integration
+
+The DHL shipping integration now supports MyDHL REST APIs in addition to the existing DHL Express XML integration. This update aligns with DHL's current API stack and prepares for deprecation of the older XML APIs.
+
+#### Add compatibility with the latest Composer version
+
+Adobe Commerce 2.4.7 has been updated to support Composer 2.9.x while remaining compatible with Composer 2.2 LTS.
 
 ## 2.4.7-p8
 
@@ -149,4 +182,4 @@ This release includes the following highlights:
 
 Adobe Commerce 2.4.7-p1 resolves an issue introduced in the scope of the UPS integration migration from SOAP to REST API. This issue affected customers who ship outside of the US and prevented them from using the Metric System/SI measurements of kilograms and centimeters for packages to create shipments with UPS. See the [UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) knowledge base article for details.
 
-<!-- Last updated from includes: 2025-10-22 11:16:25 -->
+<!-- Last updated from includes: 2026-02-20 15:30:03 -->
