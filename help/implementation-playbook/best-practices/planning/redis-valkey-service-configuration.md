@@ -12,7 +12,7 @@ exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 - Pre-load keys
 - Enable stale cache
 - Separate the cache from the sessions
-- Compress the cache and use `gzip` for higher compression
+- Compress the cache
 - Configuration Example
 
 
