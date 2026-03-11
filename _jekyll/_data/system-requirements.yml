@@ -590,7 +590,7 @@
   ActiveMQ Artemis: '2'
   Composer: '2.2.26+'
   Elasticsearch: '7.17'
-  MariaDB: '10.11'
+  MariaDB: '10.11, 10.6'
   MySQL: '8.0'
   nginx: '1.28'
   OpenSearch: '2.19'
