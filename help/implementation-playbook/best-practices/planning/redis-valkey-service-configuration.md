@@ -7,6 +7,7 @@ exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 ---
 
 # Best practices for Redis service configuration
+
 - Configure L2 cache
 - Enable Redis/Valkey slave connection
 - Pre-load keys
@@ -17,6 +18,7 @@ exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 
 
 ## Configure L2 cache
+
 Configure the L2 cache by setting the `REDIS_BACKEND` or `VALKEY_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
 >[!BEGINTABS]
@@ -24,6 +26,7 @@ Configure the L2 cache by setting the `REDIS_BACKEND` or `VALKEY_BACKEND` deploy
 >[!TAB Redis configuration]
 
 For Redis, use:
+
 ```yaml
 stage:
   deploy:
@@ -33,6 +36,7 @@ stage:
 >[!TAB Valkey configuration]
 
 For Valkey, use:
+
 ```yaml
 stage:
   deploy:
@@ -93,6 +97,7 @@ df -h /dev/shm
 ```
 
 ## Enable Redis or Valkey slave connection
+
 Enable replica connection in the `.magento.env.yaml` file to let Magento read cache entries from the replica endpoint while continuing to write to the primary endpoint. This can reduce read load on the primary cache service and improve resilience during short spikes.
 
 >[!BEGINTABS]
@@ -100,6 +105,7 @@ Enable replica connection in the `.magento.env.yaml` file to let Magento read ca
 >[!TAB Redis configuration]
 
 For Redis, use:
+
 ```yaml
 stage:
   deploy:
@@ -109,6 +115,7 @@ stage:
 >[! Valkey configuration]
 
 For Valkey, use:
+
 ```yaml
 stage:
   deploy:
@@ -144,6 +151,7 @@ stage:
               - '061_DB_IS_UP_TO_DATE:hash'
               - '061_SYSTEM_DEFAULT:hash'
 ```
+
 Optionally, You can get a bigger list of top keys by monitoring active commands on Redis/Valkey:
 
 >[!BEGINTABS]
@@ -402,7 +410,6 @@ stage:
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
 
-
 ## Enable Redis and Valkey asynchronous freeing (lazyfree)
 
 To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the following Redis/Valkey configuration be applied to your environment(s):
@@ -425,7 +432,6 @@ When lazyfree is enabled, Redis offloads memory reclamation to background thread
 >
 >Because freeing occurs in the background, memory used by deleted/expired/evicted keys remains allocated until background threads complete the work. If your Redis is already under tight memory pressure, test cautiously and consider reducing memory pressure first (for example, disabling Block cache for specific cases and separating cache and session Redis instances as described above).
 
-
 ## Enable Redis multithreaded I/O
 
 To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads/writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
@@ -445,6 +451,7 @@ io-threads 8 # choose a value lower than the number of CPU cores (check with npr
 
 
 ## Increase Redis/Valkey client timeouts and retries
+
 Increase the cache client's tolerance to short periods of saturation by adjusting the backend options in `.magento.env.yaml`.
 
 ```yaml
@@ -459,12 +466,12 @@ stage:
             remote_backend_options:
               read_timeout: 10 # Timeout
 ```
+
 These settings can reduce intermittent connection and read-timeout errors during short spikes by retrying connection setup and allowing more time for replies from Redis or Valkey.
 
 >[!NOTE]
 >
 >These settings can help with brief congestion, but they do not fix persistent overload.
-
 
 ## Follow a configuration example for Redis with all the best practices recommendations applied:
 
@@ -492,7 +499,6 @@ stage:
               read_timeout: 10
               retry_reads_on_master: 1        # Required for split architecture
 ```
-
 
 ## Additional information
 - [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
