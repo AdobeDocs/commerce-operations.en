@@ -16,9 +16,9 @@ The purpose of this schedule is to provide dates for when Adobe plans to announc
 
 In addition to the scheduled quality, security, and beta patches listed on this page, Adobe provides access to [individual patches](versioning-policy.md#individual-patch) through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md). The tool allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce.
 
-Adobe Commerce follows a monthly patch release schedule with the following strategy:
+Adobe Commerce patch releases are released based on the following guidelines:
 
-- **Isolated security fixes**—Individual, non-cumulative [security fixes](versioning-policy.md#isolated-patch) may be released monthly and include security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
+- **Isolated security fixes**—Individual, non-cumulative [security fixes](versioning-policy.md#isolated-patch) are released as needed and include security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
 
 - **Security patches**—At minimium, [security patches](versioning-policy.md#security-patch-release) are released annually (May) for all [supported](lifecycle-policy.md) release lines. These patches include all previously released isolated security fixes. Adobe may release additional security patches in November if necessary, but it is not guaranteed.
 
@@ -30,7 +30,7 @@ See the following image for details:
 
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
-![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.png)
+![2026 Adobe Commerce release calendar](../assets/release/release-calendar.png)
 
 
 ## Release notification channels

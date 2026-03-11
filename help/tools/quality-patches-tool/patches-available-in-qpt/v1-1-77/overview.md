@@ -1,0 +1,28 @@
+---
+title: 'Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77'
+description: This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.77.
+feature: Tools and External Services
+role: Admin, Developer
+type: Troubleshooting
+---
+# Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77
+
+This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.77.
+
+QPT v1.1.77 includes the following patches:
+
+1. **ACSD-63687**: Fixes an issue where incorrect prices display because [!DNL Redis] cache cleanup fails.
+1. **ACSD-68341**: Multiple `X‑Magento‑Vary` cookie updates occur on PDP load.
+1. **ACSD-68537**: Checkout performance degrades with many customer segments.
+1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: Scheduled update preview has errors on custom store domains.
+1. **ACSD-68759**: Customer account creation error with Arabic locale when Date of Birth is shown.
+1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Fixes an inconsistent [!DNL Fastly] caching behavior for cacheable pages.
+1. **ACSD-69016**: Special price isn't applied on websites with different time zones.
+1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Fixes an issue where configurable products appear in [!DNL Page Builder] product carousels when child products match filtering conditions.
+1. **ACSD-69237**: `sales_*_async_insert` cron jobs process only 100 entries per run.
+1. **ACSD-69351**: Fixes the issue where gift card balances and expiration dates display across incorrect websites.
+1. **ACSD-69311**: Fixes the incorrect tax calculation in credit memos after partial refunds from invoices.
+1. **ACSD-69494**: Fixes the async refund requests with `is_online` don't trigger online refunds.
+1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Fixes the async refund requests with `is_online` don't trigger online refunds.
+
+Use the menu on the left to navigate to a specific patch page.
