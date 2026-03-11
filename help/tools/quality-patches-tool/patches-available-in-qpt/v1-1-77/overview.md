@@ -16,6 +16,9 @@ QPT v1.1.77 includes the following patches:
 1. **ACSD-68537**: Checkout performance degrades with many customer segments.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: Scheduled update preview has errors on custom store domains.
 1. **ACSD-68759**: Customer account creation error with Arabic locale when Date of Birth is shown.
+1. **ACSD-68892**: Inconsistent [!DNL Fastly] caching behavior for cacheable pages.
+1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: Fixes an issue where special price isn’t applied on websites with different time zones.
+1. **ACSD-69020**: Configurable products appear in [!UICONTROL Page Builder] carousels when child products match filters.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Fixes an inconsistent [!DNL Fastly] caching behavior for cacheable pages.
 1. **ACSD-69016**: Special price isn't applied on websites with different time zones.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Fixes an issue where configurable products appear in [!DNL Page Builder] product carousels when child products match filtering conditions.
