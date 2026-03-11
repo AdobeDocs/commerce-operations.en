@@ -112,7 +112,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
->[! Valkey configuration]
+>[!TAB Valkey configuration]
 
 For Valkey, use:
 
@@ -262,54 +262,61 @@ For on-premises installations, see [Stale cache options](../../../configuration/
 
 
 ## Separate cache and session instances
+
 Separating the cache from session allows you to manage the cache and sessions independently. It prevents cache issues from affecting sessions, which could impact revenue. Each Redis/Valkey instance runs on its own core, which improves performance.
-
->[!BEGINTABS]
-
->[!Tab Redis configuration]
 
 1. Update the `.magento/services.yaml` configuration file.
 
-For Redis, use:
-```yaml
-mysql:
-  type: mysql:10.4
-  disk: 35000
+   >[!BEGINTABS]
 
-redis:
-  type: redis:6.0
+   >[!Tab Redis configuration]
 
-redis-session: # This is for the new Redis instance
-  type: redis:6.0
+   For Redis, use:
 
-search:
-  type: elasticsearch:7.9
-  disk: 5000
+   ```yaml
+   mysql:
+     type: mysql:10.4
+     disk: 35000
 
-rabbitmq:
-  type: rabbitmq:3.8
-  disk: 2048
-```
-For Valkey, use:
-```yaml
-mysql:
-  type: mysql:10.4
-  disk: 35000
+   redis:
+     type: redis:6.0
 
-valkey:
-  type: valkey:8.0
+   redis-session: # This is for the new Redis instance
+     type: redis:6.0
 
-valkey-session: # This is for the new Valkey instance
-  type: valkey:8.0
+   search:
+     type: elasticsearch:7.9
+     disk: 5000
 
-search:
-  type: elasticsearch:7.9
-  disk: 5000
+   rabbitmq:
+     type: rabbitmq:3.8
+     disk: 2048
+   ```
+   >[!TAB Valkey configuration]
+   
+   For Valkey, use:
 
-rabbitmq:
-  type: rabbitmq:3.8
-  disk: 2048
-```
+   ```yaml
+   mysql:
+     type: mysql:10.4
+     disk: 35000
+
+   valkey:
+     type: valkey:8.0
+
+   valkey-session: # This is for the new Valkey instance
+     type: valkey:8.0
+
+   search:
+     type: elasticsearch:7.9
+     disk: 5000
+
+   rabbitmq:
+     type: rabbitmq:3.8
+     disk: 2048
+   ```
+
+   >[!ENDTABS]
 
 1. Update the `.magento.app.yaml` configuration file.
  
@@ -501,5 +508,6 @@ stage:
 ```
 
 ## Additional information
+
 - [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
 - [Use Redis for session storage](../../../configuration/cache/redis-session.md)
