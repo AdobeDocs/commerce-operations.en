@@ -73,7 +73,7 @@ stage:
             cleanup_percentage: 90
 ```
 
-Cache requirements can vary based on project configuration and custom third-party code. The scope of the L2 cache memory sizing allows the L2 cache to operate without too many threshold hits. 
+Cache requirements can vary based on project configuration and custom third-party code. The L2 cache memory sizing scope allows the L2 cache to operate without too many threshold hits.
 Ideally, L2 cache memory usage should stabilize at a certain level below the threshold, just to avoid frequent storage clearing.
 
 You can check L2 cache storage memory usage on each node of the cluster using the following CLI command and looking for the `/dev/shm` line. 
@@ -106,7 +106,7 @@ For Adobe Commerce on-premises installations, configure the new Redis cache impl
 
 
 ## Pre-load keys
-Magento usually loads cache entries from Redis/Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. The fetched values are then kept in PHP memory for the remainder of that request, reducing repeated round trips to Redis/Valkey and improving bootstrap performance for those keys.
+Magento usually loads cache entries from Redis/Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. The fetched values are then kept in PHP memory for the remainder of that request, reducing repeated round-trip to Redis/Valkey and improving bootstrap performance for those keys.
 
 You just need to list the keys for preload in the `.magento.env.yaml` configuration file.
 
@@ -157,7 +157,7 @@ For on-premises installations, see [Redis preload feature](../../../configuratio
 Stale cache is an L2-cache feature of `RemoteSynchronizedCache`. When enabled, Magento can serve an existing local cache value from `/dev/shm` while another process is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
 
 ### How it works
-With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When a cache entry is no longer available remotely and another process is already regenerating it, stale cache allows concurrent requests to receive the previous local value instead of waiting until the fresh value is written.
+With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When a cache entry is no longer available remotely, and another process is already regenerating it, stale cache allows concurrent requests to receive the previous local value instead of waiting until the fresh value is written.
 
 To enable stale cache, configure it in the `.magento.env.yaml` file.
 
@@ -313,7 +313,7 @@ SESSION_CONFIGURATION:
   _merge: true
   redis: # keep 'redis' even if you are using Valkey.
     timeout: 5
-    disable_locking: 1 # true for max performance. If racing conditions happens when server has an excessively high number of simultaneous session activity, set it to false.
+    disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
     bot_first_lifetime: 60
     bot_lifetime: 7200
     max_lifetime: 2592000
@@ -375,7 +375,7 @@ When lazyfree is enabled, Redis offloads memory reclamation to background thread
 
 ## Enable Redis multithreaded I/O
 
-To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads/writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads and writes, as well as command parsing, from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
 
 ```
 io-threads-do-reads yes
@@ -422,7 +422,7 @@ If you are using Valkey instead of Redis, replace `REDIS_USE_SLAVE_CONNECTION` w
 stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
-    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in split architecture
+    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
     REDIS_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
     CACHE_CONFIGURATION:
       _merge: true
@@ -452,7 +452,7 @@ stage:
       redis:
         # port: 6372 # ece-tools should detect the port automatically, but if not, set here.
         timeout: 5
-        disable_locking: 1 # true for max performance. If racing conditions happens when server has an excessively high number of simultaneous session activity, set it to false.
+        disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
         bot_first_lifetime: 60
         bot_lifetime: 7200
         max_lifetime: 2592000
@@ -464,7 +464,7 @@ stage:
 stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
-    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in split architecture
+    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
     REDIS_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
     CACHE_CONFIGURATION:
       _merge: true
@@ -542,7 +542,7 @@ stage:
       redis:
         # port: 6372 # ece-tools should detect the port automatically, but if not, set here.
         timeout: 5
-        disable_locking: 1 # true for max performance. If racing conditions happens when server has an excessively high number of simultaneous session activity, set it to false.
+        disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
         bot_first_lifetime: 60
         bot_lifetime: 7200
         max_lifetime: 2592000
