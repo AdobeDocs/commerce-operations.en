@@ -1,5 +1,5 @@
 ---
-title: Best practices for Redis/Valkey service configuration
+title: Best practices for Redis and Valkey service configuration
 description: Learn how to improve caching performance by using the extended Redis/Valkey cache implementation for Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
@@ -269,7 +269,7 @@ Separating the cache from session allows you to manage the cache and sessions in
 
    >[!BEGINTABS]
 
-   >[!Tab Redis configuration]
+   >[!TAB Redis configuration]
 
    For Redis, use:
 
@@ -292,6 +292,7 @@ Separating the cache from session allows you to manage the cache and sessions in
      type: rabbitmq:3.8
      disk: 2048
    ```
+   
    >[!TAB Valkey configuration]
    
    For Valkey, use:
@@ -346,6 +347,7 @@ Separating the cache from session allows you to manage the cache and sessions in
      valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
      search: "search:elasticsearch"
      rabbitmq: "rabbitmq:rabbitmq"
+   
    ```
    >[!ENDTABS]
 
