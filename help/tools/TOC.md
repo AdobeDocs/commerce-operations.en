@@ -950,6 +950,7 @@ feature: Configuration
         - v1.1.77 {#v1-1-77}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
            - [ACSD-69237: sales_*_async_insert cron jobs process only 100 entries per run](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237.md)
+           - [ACSD-68759: Customer account creation fails with Arabic (Saudi Arabia) locale when [!UICONTROL Date of Birth] is visible on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759.md)
            - [ACSD-69016: special price isn't applied on websites with different time zones](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)
            - [ACSD-69351: gift card balances and expiration dates displayed across incorrect websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)
            - [ACSD-69020: configurable products appear in [!DNL Page Builder] carousels when child products match filters](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)
