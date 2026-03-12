@@ -2,17 +2,204 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Mar 6 15:40:13 2026
+updated: Thu Mar 12 18:40:22 2026
 entries:
-- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69308:
-    Catalog price rules did not apply when `special_price` was set only at the website
-    level (not at "All Store Views"). After the fix, catalog price rules apply correctly
-    by checking the website''s default store first](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308).'
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68759:
+    Customer account creation error with Arabic locale when Date of Birth is shown](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759).'
   versions: ''
   type: new-topic, qpt
-  date: March 6, 2026
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1826
-  merge_commit: db07a5d6f991ff36536a4365ee88fa25062dbe43
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1807
+  merge_commit: d3c2d0ebea67fb376a43a67995f3ce278ceac3ee
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69203:
+    Products List widget returns incorrect results when multiple categories are used
+    in the category condition](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1816
+  merge_commit: 1c435f9cef082a01dbcc160443291e6b7655f009
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69237:
+    Sales__async_insert cron jobs process only 100 entries per run](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1811
+  merge_commit: '0842ba414e45857e36d61c589687718435739efa'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69115:
+    Shopping cart errors not displayed to admin users for customers assigned to non‑default
+    websites](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69115).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1792
+  merge_commit: 9441537126c958bfcc6485e627cbad7efd16128e
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69016:
+    Special price isn''t applied on websites with different time zones](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1809
+  merge_commit: b9788fef5bab2eb33334ef9f62bb52fa7b9f243e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements):
+    MariaDB 10.6 is still supported for 2.4.5-p16.'
+  versions: ''
+  type: technical
+  date: March 11, 2026
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/173
+  merge_commit: 1f408f11955ef3c2bdb0ef9675b9dc6dbf78c0b7
+  contributor: mpchadwick
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69351:
+    Gift card balances and expiration dates displayed across incorrect websites](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1813
+  merge_commit: '092972cf6a0689b886e1729bb195bfc9cea7cb07'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-67370:
+    Incorrect prices were shown for Bundle products on PDP/PLP and the cart page for
+    multi-currency stores](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1821
+  merge_commit: 6be4fb9868ce348b9d7ab911b501807c2e9603a5
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated security patch release notes (2.4.4, 2.4.5, 2.4.6, 2.4.7)
+    to reference [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html):
+    [2.4.4 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches),
+    [2.4.5 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    [2.4.6 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    and [2.4.7 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches).'
+  versions: ''
+  type: technical
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1845
+  merge_commit: aca7de52b79acd844950e792430937795bd23eba
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+  - release-notes
+- description: 'Updated [Upgrade Compatibility Tool CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct)
+    to version 3.0.26: revised command examples and available-version lists for `dbschema:diff`
+    and `upgrade:check`.'
+  versions: ''
+  type: technical
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1846
+  merge_commit: 4fa8705ac5d11e6baf2e9fe250e4fc87a1327116
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'March''26 release:<br/>- Added highlights to the [Adobe Commerce 2.4.9-beta1
+    release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    to summarize significant updates included in the release.<br/>- Added MySQL 8.0
+    End of Support (EOS) notice to security patch release notes for [2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    [2.4.6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    and [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches),
+    advising on-premises customers to migrate to a compatible MariaDB version before
+    April 30, 2026.<br/>- Documented [2.4.4-p17](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p17)
+    security patch release.<br/>- Added [bin/magento (Adobe Commerce on-premises 2.4.9-beta1)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises-beta)
+    CLI reference documenting all available commands, arguments, and options for the
+    2.4.9-beta1 on-premises CLI.<br/>- Updated security patch release notes with new
+    patch versions and highlights: [2.4.5-p16](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    [2.4.6-p14](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    [2.4.7-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches),
+    and [2.4.8-p4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches).<br/>-
+    Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for Adobe Commerce 2.4.9 beta1 (replacing alpha columns with 2.4.9-beta1), refreshed
+    dependency versions (PHP 8.5/8.4, ActiveMQ Artemis, AWS services), and added patch
+    versions 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, 2.4.5-p16, and 2.4.4-p17.<br/>- Updated
+    [Adobe Commerce 2.4.9-beta1 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9-beta1 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9)
+    with fixed-issues content for beta1.<br/>- Updated [Adobe Commerce 2.4.9-beta1
+    release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9-beta1 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9)
+    with beta1 highlights, including framework updates (OpenSearch 3.x, Valkey 8.x,
+    ActiveMQ, Composer, PHP 8.5), security and ACL improvements, shipping (USPS, DHL),
+    Braintree enhancements, and other 2.4.9-beta1 changes.'
+  versions: 2.4.9
+  type: major-update
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1842
+  merge_commit: e4cec53679d038d2324f89478c5495de98a29fb3
+  contributor: shevtsov
+  membership:
+  labels:
+  - major-update
+  - 2.4.9
+  - release-notes
+- description: Updated [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)
+    after March 2026 release.
+  versions: ''
+  type: technical
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1843
+  merge_commit: 9bc44a3ec7199ccb08927caf3d7904611cc7b167
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-67091:
+    Catalog rule product index cleanup fails due to maximum writeset size during large
+    deletions](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1789
+  merge_commit: 520273fb4c1b30e3f8b346f7079062cf9c8b37f3
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69261:
+    Single‑use cart coupon reused due to incorrect times_used handling in partial
+    invoice and cancellation flows](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1795
+  merge_commit: 536364742e2102f8386b3e13503cf2965821f04b
   contributor: barnato
   membership:
   labels:
@@ -26,6 +213,20 @@ entries:
   date: March 6, 2026
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1825
   merge_commit: b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69308:
+    Catalog price rules did not apply when `special_price` was set only at the website
+    level (not at "All Store Views"). After the fix, catalog price rules apply correctly
+    by checking the website''s default store first](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1826
+  merge_commit: db07a5d6f991ff36536a4365ee88fa25062dbe43
   contributor: barnato
   membership:
   labels:
