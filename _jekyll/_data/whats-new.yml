@@ -2,8 +2,19 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Thu Mar 12 18:40:22 2026
+updated: Fri Mar 13 15:40:08 2026
 entries:
+- description: 'Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements):
+    added Elasticsearch to the technology stack table for v2.4.8.'
+  versions: ''
+  type: technical
+  date: March 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1852
+  merge_commit: a9fe1555d9c9d5b27d8fb7fe23a312e8f124d94c
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
 - description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68759:
     Customer account creation error with Arabic locale when Date of Birth is shown](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759).'
   versions: ''
@@ -11,6 +22,18 @@ entries:
   date: March 12, 2026
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1807
   merge_commit: d3c2d0ebea67fb376a43a67995f3ce278ceac3ee
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69237:
+    Sales__async_insert cron jobs process only 100 entries per run](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1811
+  merge_commit: '0842ba414e45857e36d61c589687718435739efa'
   contributor: jmenn
   membership:
   labels:
@@ -25,18 +48,6 @@ entries:
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1816
   merge_commit: 1c435f9cef082a01dbcc160443291e6b7655f009
   contributor: barnato
-  membership:
-  labels:
-  - new-topic
-  - qpt
-- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69237:
-    Sales__async_insert cron jobs process only 100 entries per run](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237).'
-  versions: ''
-  type: new-topic, qpt
-  date: March 12, 2026
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1811
-  merge_commit: '0842ba414e45857e36d61c589687718435739efa'
-  contributor: jmenn
   membership:
   labels:
   - new-topic
