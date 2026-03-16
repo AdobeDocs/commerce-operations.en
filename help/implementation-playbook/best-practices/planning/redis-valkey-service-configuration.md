@@ -348,7 +348,6 @@ Separating the cache from session allows you to manage the cache and sessions in
      search: "search:elasticsearch"
      rabbitmq: "rabbitmq:rabbitmq"
    
-   ```
    >[!ENDTABS]
 
 1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request the provisioning of a new Redis or Valkey instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files. This won't cause any downtime, but it requires a deployment to activate the new service.
