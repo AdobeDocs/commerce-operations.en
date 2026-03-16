@@ -11,9 +11,9 @@ This topic discusses how to set required PHP options.
 
 >[!NOTE]
 >
->The latest version of Adobe Commerce requires a minimum of PHP 8.1. See [system requirements](../system-requirements.md) for all supported versions of PHP.
+>Supported PHP versions vary by Adobe Commerce release. See [system requirements](../system-requirements.md) for the exact PHP versions supported by the release you are installing.
 
-For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in the _Commerce on Cloud Infrastructure_ guide.
+For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in the _Commerce on Cloud Infrastructure_ guide.
 
 ## PHP Process Control
 
@@ -30,10 +30,10 @@ php -v
 If PHP is installed, a message similar to the following displays:
 
 ```
-PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.2, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
+Zend Engine v<matching-version>, Copyright (c) Zend Technologies
+    with Zend OPcache v<matching-version>, Copyright (c), by Zend Technologies
 ```
 
 If PHP is not installed (or requires an upgrade), install it by following the instructions for your Linux distribution.
@@ -59,7 +59,7 @@ To verify installed extensions:
 
 >[!WARNING]
 >
->If you are using PHP 7.4.20, set `pcre.jit=0` in your `php.ini` file. This gets around a PHP [bug](https://bugs.php.net/bug.php?id=81101) that prevents CSS from loading.
+>If you are troubleshooting a legacy environment affected by PHP [bug 81101](https://bugs.php.net/bug.php?id=81101), set `pcre.jit=0` in your `php.ini` file to work around the issue where CSS does not load.
 
 -  Set the system time zone for PHP; otherwise, errors like the following display during the installation and time-related operations like cron might not work:
 
@@ -132,7 +132,7 @@ Use the following guidelines to find it:
    sudo find / -name 'opcache.ini'
    ```
 
--  nginx web server with PHP-FPM: `/etc/php/8.1/fpm/php.ini`
+-  nginx web server with PHP-FPM: `/etc/php/<supported-php-version>/fpm/php.ini`
 
 If you have more than one `opcache.ini`, modify all of them.
 
@@ -184,7 +184,7 @@ To set `opcache.ini` options:
 
    -  `opcache.ini` (CentOS)
    -  `php.ini` (Ubuntu)
-   -  `/etc/php/8.1/fpm/php.ini` (nginx web server (CentOS or Ubuntu))
+   -  `/etc/php/<supported-php-version>/fpm/php.ini` (nginx web server (CentOS or Ubuntu))
 
 1. Locate `opcache.save_comments` and uncomment it if necessary.
 1. Make sure that its value is set to `1`.
@@ -200,9 +200,9 @@ To set `opcache.ini` options:
 See the following Adobe Commerce Support articles for help with troubleshooting PHP problems:
 
 -  [PHP version error or 404 error when accessing Adobe Commerce in a browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
--  [PHP settings errors](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
--  [PHP mcrypt extension not installed properly](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
--  [PHP version readiness check issues](https://support.magento.com/hc/en-us/articles/360033546411)
--  [Common PHP Fatal Errors and solutions](https://support.magento.com/hc/en-us/articles/360030568432)
+-  [PHP settings errors](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+-  [PHP mcrypt extension not installed properly](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
+-  [PHP version readiness check issues](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+-  [Common PHP Fatal Errors and solutions](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->
