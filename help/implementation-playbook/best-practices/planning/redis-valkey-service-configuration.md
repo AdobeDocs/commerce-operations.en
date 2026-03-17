@@ -267,11 +267,11 @@ Separating the cache from session allows you to manage the cache and sessions in
 
 1. Update the `.magento/services.yaml` configuration file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Redis configuration]
+>[!TAB Redis configuration]
 
-   For Redis, use:
+  For Redis, use:
 
    ```yaml
    mysql:
@@ -293,7 +293,7 @@ Separating the cache from session allows you to manage the cache and sessions in
      disk: 2048
    ```
    
-   >[!TAB Valkey configuration]
+>[!TAB Valkey configuration]
    
    For Valkey, use:
 
@@ -317,13 +317,13 @@ Separating the cache from session allows you to manage the cache and sessions in
      disk: 2048
    ```
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Update the `.magento.app.yaml` configuration file.
  
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Redis configuration]
+>[!TAB Redis configuration]
 
    For Redis, use:
    
@@ -349,7 +349,7 @@ Separating the cache from session allows you to manage the cache and sessions in
      rabbitmq: "rabbitmq:rabbitmq"
    ```
    
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request the provisioning of a new Redis or Valkey instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
@@ -385,9 +385,9 @@ Separating the cache from session allows you to manage the cache and sessions in
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis/Valkey cache instance.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Redis configuration]
+>[!TAB Redis configuration]
    
    For Redis:
  
@@ -395,13 +395,15 @@ Separating the cache from session allows you to manage the cache and sessions in
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
    ```
 
-   >[!TAB Valkey configuration]
+>[!TAB Valkey configuration]
    
    For Valkey:
    
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
    ```
+
+>[!ENDTABS]
 
 ## Cache compression
 
