@@ -5,7 +5,7 @@ exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 ---
 # Nginx
 
-Adobe Commerce supports nginx 1.x (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
+Adobe Commerce supports nginx 1.x (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install `php-fpm` for a PHP version supported by the Adobe Commerce release you are installing.
 
 Installation instructions vary based on which operating system that you are using. See [PHP](../php-settings.md) for information.
 
@@ -19,7 +19,7 @@ The following section describes how to install Adobe Commerce 2.x on Ubuntu usin
 sudo apt -y install nginx
 ```
 
-You can also [build nginx from source](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+You can also [build nginx from source](https://nginx.org/en/docs/install.html)
 
 After completing the following sections and installing the application, we will use a sample configuration file to [configure nginx](#configure-nginx).
 
@@ -32,21 +32,21 @@ To install and configure `php-fpm`:
 1. Install `php-fpm` and `php-cli`:
 
    ```bash
-   apt-get -y install php7.2-fpm php7.2-cli
+   apt-get -y install php<supported-php-version>-fpm php<supported-php-version>-cli
    ```
 
    >[!NOTE]
    >
-   >This command installs the latest available version of PHP 7.2.X. See [system requirements](../../system-requirements.md) for supported PHP versions.
+   >Replace `<supported-php-version>` with a PHP minor version listed in [system requirements](../../system-requirements.md) for the Adobe Commerce release you are installing. Use the same value in the file paths, service name, and socket path in the following steps.
 
 1. Open the `php.ini` files in an editor:
 
    ```bash
-   vim /etc/php/7.2/fpm/php.ini
+   vim /etc/php/<supported-php-version>/fpm/php.ini
    ```
 
    ```bash
-   vim /etc/php/7.2/cli/php.ini
+   vim /etc/php/<supported-php-version>/cli/php.ini
    ```
 
 1. Edit both files to match the following lines:
@@ -66,7 +66,7 @@ To install and configure `php-fpm`:
 1. Restart the `php-fpm` service:
 
    ```bash
-   systemctl restart php7.2-fpm
+   systemctl restart php<supported-php-version>-fpm
    ```
 
 ### Install and configure MySQL
@@ -154,11 +154,15 @@ This example shows a Composer-based installation using the command line.
    --currency=USD \
    --timezone=America/Chicago \
    --use-rewrites=1 \
-   --search-engine=elasticsearch7 \
-   --elasticsearch-host=es-host.example.com \
-   --elasticsearch-port=9200
+   --search-engine=<search-engine-value> \
+   --<search-engine-host-parameter>=search-host.example.com \
+   --<search-engine-port-parameter>=9200
 
    ```
+
+   >[!NOTE]
+   >
+   >Use the `--search-engine` value and matching host/port options required by the Adobe Commerce release you are installing. For versions earlier than 2.4.6, use `elasticsearch7` with the `--elasticsearch-*` options for Elasticsearch 7 or OpenSearch. For version 2.4.6 and later, use the search engine value and corresponding CLI options supported by that release.
 
 1. Switch to developer mode:
 
@@ -186,7 +190,7 @@ These instructions assume you're using the Ubuntu default location for the nginx
 
    ```conf
    upstream fastcgi_backend {
-     server  unix:/run/php/php7.2-fpm.sock;
+     server  unix:/run/php/php<supported-php-version>-fpm.sock;
    }
 
    server {
@@ -261,10 +265,14 @@ Adobe Commerce requires several [PHP](../php-settings.md) extensions to function
 1. Install `php-fpm`:
 
    ```bash
-   yum -y install php70w-fpm
+   yum -y install <supported-php-fpm-package>
    ```
 
 1. Open the `/etc/php.ini` file in an editor.
+
+   >[!NOTE]
+   >
+   >Install the package name that provides `php-fpm` for a PHP version supported by the Adobe Commerce release you are installing. Package names vary by repository and operating system.
 
 1. Uncomment the `cgi.fix_pathinfo` line and change the value to `0`.
 

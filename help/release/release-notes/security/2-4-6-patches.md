@@ -8,6 +8,40 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+>[!IMPORTANT]
+>
+>MySQL 8.0 will reach End of Support (EOS) starting April 30, 2026.
+>
+>Following this date Adobe Commerce 2.4.6 will not provide compatibility or
+>support for any MySQL versions released after MySQL 8.0. Adobe will not
+>validate or provide support for newer MySQL major versions on this Adobe
+>Commerce release line.
+>
+>All Adobe Commerce on-premises customers running versions 2.4.6 are strongly
+>advised to migrate their database servers to a compatible MariaDB version.
+
+## 2.4.6-p14
+
+The Adobe Commerce 2.4.6-p14 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### PHPUnit upgrade support for backporting a fix from 2.4.7
+
+Adobe Commerce 2.4.6 has been validated to run with newer versions of the `sebastian/comparator` library required by secure PHPUnit releases. As part of this review, Adobe evaluated dependency constraints that previously limited upgrades to patched PHPUnit versions.
+
+Customers can now safely update PHPUnit to a secure release by adjusting their Composer requirements, for example, setting the requirement `sebastian/comparator:^4.0`. This update does not affect Adobe Commerce 2.4.6 functionality or expected behavior.
+
+#### MyDHL REST API support for DHL shipping integration
+
+The DHL shipping integration now supports MyDHL REST APIs in addition to the existing DHL Express XML integration. This update aligns with DHL's current API stack and prepares for deprecation of the older XML APIs.
+
 ## 2.4.6-p13
 
 The Adobe Commerce 2.4.6-p13 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
@@ -252,4 +286,4 @@ Platform upgrades for this release improve compliance with the latest security b
 
   This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). For details, see the [B2B release notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
 
-<!-- Last updated from includes: 2025-10-22 11:16:25 -->
+<!-- Last updated from includes: 2026-02-20 15:30:03 -->
