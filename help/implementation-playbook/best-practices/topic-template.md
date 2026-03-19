@@ -7,14 +7,16 @@ hide: yes
 hidefromtoc: yes
 ---
 
-<!-- Template Instructions: 
+<!-- 
+Template Instructions: 
 
 When you create a new best practices topic from this template, remove the hide metadata tags. These values hide this template from the TOC and search indexing.
 
 Metadata values configured in ExL:
 Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
 
-Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml  -->
+Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml  
+-->
 
 # Title
 
@@ -22,13 +24,15 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 ## Affected products and versions
 
-<!-- Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
+<!-- 
+Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.
 
-<!--Template instruction: Add details for the product and versions where the best practice info is relevant. Below are two examples, adjust and delete unneeded info per best practice requirements. If info applies specifically to B2B or B2C, include that information -->
+Template instruction: Add details for the product and versions where the best practice info is relevant. Below are two examples, adjust and delete unneeded info per best practice requirements. If info applies specifically to B2B or B2C, include that information
+-->
 
 <!-- Example 1: -->
 
-[All supported versions](../../../release/versions.md) of:
+[All supported versions](../../release/versions.md) of:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on premises

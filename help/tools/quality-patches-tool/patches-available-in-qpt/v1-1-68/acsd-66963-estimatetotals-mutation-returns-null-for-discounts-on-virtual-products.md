@@ -75,7 +75,7 @@ The `estimateTotals` mutation returns *null* for discounts when a discount code 
 
 Discount information is included for carts containing only virtual products.
 
-    ```
+```
     {
       "data": {
         "estimateTotals": {
@@ -101,13 +101,13 @@ Discount information is included for carts containing only virtual products.
       },
       "extensions": {}
     }
-    ```
+```
 
 <u>Actual results</u>:
 
 Discount information returns as *null* for carts with only virtual products.
 
-    ```
+```
     {
       "data": {
         "estimateTotals": {
@@ -120,7 +120,7 @@ Discount information returns as *null* for carts with only virtual products.
       },
       "extensions": {}
     }
-    ```
+```
 
 ## Apply the patch
 

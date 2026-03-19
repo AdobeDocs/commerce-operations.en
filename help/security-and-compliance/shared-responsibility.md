@@ -787,7 +787,8 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
->![NOTE]
+>[!NOTE]
+>
 >Merchants are required to use the most recent version of Live Search, Product Recommendations, and Payment Services to ensure the highest stability, functionality, and eligibility for support.
 >Adobe does not support outdated versions and upgrading ensures that you benefit from the latest enhancements and bug fixes.
 >For details on supported versions, see the [Product Availability Matrix for Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
