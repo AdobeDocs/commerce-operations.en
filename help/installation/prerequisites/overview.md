@@ -76,12 +76,12 @@ For example:
 mysql -u magento -p
 ```
 
-The following result indicates the version that you are running.
+In the command output, the `Server version` line indicates the version that you are running. Confirm that it matches a version supported for the Adobe Commerce release you are installing.
 
 ```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
-Server version: 5.7.9 MySQL Community Server (GPL)
+Server version: <supported MySQL version> MySQL Community Server (GPL)
 
 Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 
