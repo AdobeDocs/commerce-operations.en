@@ -196,7 +196,7 @@
 | Navarr Barnier | [#27077](https://github.com/magento/magento2/pull/27077) | [29558](https://github.com/magento/magento2/issues/29558) |
 | kolaente | [#30180](https://github.com/magento/magento2/pull/30180) | [30190](https://github.com/magento/magento2/issues/30190) |
 | Peep van Puijenbroek | [#29466](https://github.com/magento/magento2/pull/29466) | [29652](https://github.com/magento/magento2/issues/29652) |
-| Frédéric MARTINEZ | [#28588](https://github.com/magento/magento2/pull/28588) |
+| Frédéric MARTINEZ | [#28588](https://github.com/magento/magento2/pull/28588) | |
 | Petkovski Marjan | [#29751](https://github.com/magento/magento2/pull/29751) | [29372](https://github.com/magento/magento2/issues/29372) |
 | Oleh Usik | [#30222](https://github.com/magento/magento2/pull/30222) |  |
 | Timon de Groot | [#28809](https://github.com/magento/magento2/pull/28809) | [22375](https://github.com/magento/magento2/issues/22375) |

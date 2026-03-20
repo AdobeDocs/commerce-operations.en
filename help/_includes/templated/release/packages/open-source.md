@@ -1,16 +1,12 @@
 # Magento Open Source packages
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/open-source/composer_lock.json' file
- -->
+<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/open-source/composer_lock.json' file -->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/open-source/composer_lock.json' file
- -->
+<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/open-source/composer_lock.json' file -->
 
-<!-- The 'product' variable contains data of the 'magento/product-community-edition' package
- -->
+<!-- The 'product' variable contains data of the 'magento/product-community-edition' package -->
 
-<!-- The edition variable contains `open-source` value from the _data/names.yml file
- -->
+<!-- The edition variable contains `open-source` value from the _data/names.yml file -->
 
 Magento Open Source uses Composer to manage PHP packages.
 

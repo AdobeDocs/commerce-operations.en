@@ -38,7 +38,7 @@ Install the B2B module.
 1. Enable [!UICONTROL dev] query log using `bin/magento dev:que:enab`.
 1. Now send the below [!DNL GraphQL] request (id is the [!UICONTROL base64] encoded role id):
 
-   <pre><code>
+   ```
    mutation {
    updateCompanyRole(
       input: {
@@ -76,7 +76,7 @@ Install the B2B module.
        }
      }
    }
-   </code></pre>
+   ```
 
 1. Check the query log.
 1. You can see that the above query is executed. This query is executed in `app/code/Magento/CompanyGraphQl/Model/Company/Role/ValidateRole.php::validateResources`.
