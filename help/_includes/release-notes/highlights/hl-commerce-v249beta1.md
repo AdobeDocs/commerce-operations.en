@@ -274,7 +274,7 @@ _AC-14078 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 Admin users are now required to configure only one of the merchant's enabled 2FA providers (for example, Google Authenticator or U2F) to access the Admin panel. Additional enabled providers can be configured later as needed. Previously, when multiple 2FA providers were enabled, every Admin user was required to configure all enabled providers before they could sign in, creating friction for users who did not have access to all factors.
 
-_AC-8253 - [GitHub code contribution](https://github.com/magento/security-package/commit/71e7936b)_
+_AC-8253 - [GitHub code contribution](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### Shipping
 
