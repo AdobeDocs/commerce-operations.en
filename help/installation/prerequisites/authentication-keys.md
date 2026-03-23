@@ -18,6 +18,10 @@ For access entitlement to Adobe Commerce packages, you must use keys associated 
 
 To create authentication keys:
 
+>[!NOTE]
+>
+>As of August 2022, the account owner must have an Adobe ID and ensure that it is linked to their Commerce account. If the account owner does not have an Adobe ID, they must create one and link it to their Commerce account before generating authentication keys: [Create and access your Commerce account](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+
 1. Log in to the [Commerce Marketplace](https://commercemarketplace.adobe.com/). If you don't have an account, click **Register**.
 
 1. Click your account name in the top right of the page and select **My Profile**.
