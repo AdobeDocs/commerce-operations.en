@@ -9,13 +9,13 @@ feature: Install
 - [Overview](overview.md)
 - [System requirements](system-requirements.md)
 - Prerequisites {#prerequisites}
-    - [Overview](prerequisites/overview.md) 
+    - [Overview](prerequisites/overview.md)
     - File system {#file-system}
         - [Overview](prerequisites/file-system/overview.md)
         - [Configure permissions](prerequisites/file-system/configure-permissions.md)
     - Web server {#web-server}
-        - [Nginx](prerequisites/web-server/nginx.md)
-        - [Apache](prerequisites/web-server/apache.md)
+        - [Install Nginx](prerequisites/web-server/nginx.md)
+        - [Install Apache](prerequisites/web-server/apache.md)
     - Database server {#database-server}
         - [MySQL](prerequisites/database/mysql.md)
         - [Remote connections](prerequisites/database/mysql-remote.md)
@@ -26,7 +26,7 @@ feature: Install
         - [Configure Apache](prerequisites/search-engine/configure-apache.md)
     - [PHP](prerequisites/php-settings.md)
     - Message brokers {#message-brokers}
-        - [Rabbit MQ](prerequisites/rabbitmq.md) 
+        - [Rabbit MQ](prerequisites/rabbitmq.md)
         - [Active MQ](prerequisites/activemq.md)
     - [Security](prerequisites/security.md)
     - [Authentication keys](prerequisites/authentication-keys.md)

@@ -1,15 +1,28 @@
 ---
-title: Apache
-description: Follow these steps to install and configure the Apache web server for on-premises installations of Adobe Commerce.
+title: Install Apache for On-Premises Deployments
+description: Learn how to install and configure Apache for on-premises Adobe Commerce deployments. Enable required modules, rewrites, and `.htaccess` settings.
+feature: Install, Configuration
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 ---
-# Apache
+# Install Apache for on-premises deployments {#apache}
 
-Adobe Commerce supports Apache 2.4.x.
+This guide walks you through installing Apache for Adobe Commerce on-premises deployments and configuring the Apache settings that Commerce requires. It includes shared Apache requirements and operating system-specific procedures for Ubuntu and CentOS. Adobe recommends following the configuration instructions provided in this guide to preserve both the functionality and security of the Commerce application.
 
-## Apache required directives
+Adobe supports the Apache versions listed in the [system requirements](../../system-requirements.md) for your Adobe Commerce release. Supported versions vary by release. Apache also requires a supported PHP configuration. For related PHP requirements, see [PHP settings](../php-settings.md).
 
-1. Set `AllowEncodedSlashes` in the server config (globally) or in the virtual host configurations to avoid decoding the encoded slashes that may cause issues for URLs. For instance, when retrieving products with a slash in the SKU via the API, you do not want that converted. The sample block is not complete and other directives are required.
+Start with the section that matches your environment:
+
+- If Apache is already installed, start with [Review Apache requirements](#review-apache-requirements).
+- If you need to install or upgrade Apache on Ubuntu, go to [Install or upgrade Apache on Ubuntu](#installing-or-upgrading-apache-on-ubuntu).
+- If you need to install Apache on CentOS, go to [Install Apache on CentOS](#installing-apache-on-centos).
+
+## Review Apache requirements
+
+Complete these requirements on any Apache server that hosts Adobe Commerce.
+
+### Configure required directives
+
+Set `AllowEncodedSlashes` in the server config (globally) or in the virtual host configurations to avoid decoding the encoded slashes that can cause issues for URLs. For example, when retrieving products with a slash in the SKU via the API, you do not want the slash converted. The following example block is not complete and other directives are required.
 
    ```conf
    <VirtualHost *:443>
@@ -18,19 +31,13 @@ Adobe Commerce supports Apache 2.4.x.
    </VirtualHost>
    ```
 
-## Apache rewrites and htaccess
+### Configure rewrites and .htaccess {#apache-rewrites-and-htaccess}
 
-This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
+Use this section to enable Apache rewrites and configure the [distributed `.htaccess` file](https://httpd.apache.org/docs/current/howto/htaccess.html). Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level instructions for Apache.
 
-Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all other sections in this topic as well.
-
-Use this section to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
-
-Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level instructions for Apache.
-
->[!NOTE]
+>[!IMPORTANT]
 >
->Failure to enable these settings typically results in no styles displaying on your storefront or Admin.
+>Failure to enable these settings typically results in no styles displaying on your storefront or Admin. It can also prevent Apache from applying the Adobe Commerce security protections defined in `.htaccess`.
 
 1. Enable the Apache rewrite module:
 
@@ -38,120 +45,110 @@ Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level i
    a2enmod rewrite
    ```
 
-1. To enable the application to use the distributed `.htaccess` configuration file, see the guidelines in the [Apache 2.4 documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Enable the application to use the distributed `.htaccess` configuration file.
 
-   >[!TIP]
-   >
-   >In Apache 2.4, the server's default site configuration file is `/etc/apache2/sites-available/000-default.conf`.
+   1. On Ubuntu, edit `/etc/apache2/sites-available/000-default.conf`. For other Apache layouts or if additional parameters are required, see the [Apache documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) and the [Apache access control documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
-   For example, you can add the following to the end of `000-default.conf`:
+   1. Add or update the `AllowOverride` directive for the directory where you plan to install Adobe Commerce.
 
-   ```
-   <Directory "/var/www/html">
-       AllowOverride All
-   </Directory>
-   ```
+     For example, if you install Adobe Commerce in the default `docroot`, add the following block to `000-default.conf`:
 
-   >[!NOTE]
-   >
-   >Sometimes, additional parameters might be required. For more information, see the [Apache 2.4 documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+    ```conf
+    <Directory "/var/www/html">
+      AllowOverride All
+    </Directory>
+    ```
 
-1. If you changed Apache settings, restart Apache:
+    >[!NOTE]
+    >
+    >If you upgraded from an earlier Apache version, first look for an existing `<Directory "/var/www/html">` or `<Directory "/var/www">` block in `000-default.conf`. If you install Adobe Commerce in a different `docroot`, update the matching `<Directory>` block for that path.
+
+1. Restart Apache to apply your changes:
 
    ```bash
    service apache2 restart
    ```
 
-   >[!NOTE]
-   >
-   >-  If you upgraded from an earlier Apache version, first look for `<Directory "/var/www/html">` or `<Directory "/var/www">` in `000-default.conf`.
-   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Adobe Commerce software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
-
->[!NOTE]
->
->Failure to enable these settings typically results in styles not displaying on the storefront or Admin.
-
-## Apache required modules
+### Install required modules
 
 Adobe Commerce requires the following Apache modules to be installed:
 
--  [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
--  [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
--  [mod_headers.c](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
--  [mod_rewrite.c](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
--  [mod_security.c](https://modsecurity.org)
--  [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+- [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
+- [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
+- [mod_headers.c](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
+- [mod_rewrite.c](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
+- [mod_security.c](https://modsecurity.org)
+- [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
-## Verify the Apache version
+## Verify Apache is installed
 
-To verify the Apache version that you're currently running, enter:
+To verify that Apache is installed and view the current version, enter:
 
 ```bash
 apache2 -v
 ```
 
-The result displays similar to the following:
+The result displays information similar to the following:
 
+```text
+Server version: Apache/<installed-version>
+Server built: <build-date>
 ```
-Server version: Apache/2.4.04 (Ubuntu)
-Server built: Jul 22 2020 14:35:32
-```
 
--  If Apache is *not* installed, see:
-    -  [Installing or upgrading Apache on Ubuntu](#installing-apache-on-ubuntu)
-    -  [Installing Apache on CentOS](#installing-apache-on-centos)
+- If Apache is *not* installed, see:
+  - [Install or upgrade Apache on Ubuntu](#installing-or-upgrading-apache-on-ubuntu)
+  - [Install Apache on CentOS](#installing-apache-on-centos)
 
-## Installing or upgrading Apache on Ubuntu
+## Install or upgrade Apache on Ubuntu {#installing-or-upgrading-apache-on-ubuntu}
 
-The following sections discuss how to install or upgrade Apache:
+Installing and configuring Apache on Ubuntu is a three-step process:
 
--  Install Apache
--  Upgrade to Apache 2.4 on Ubuntu to use PHP 7.4.
+1. Install the software.
+1. Enable rewrites.
+1. Specify `.htaccess` directives.
 
-### Installing Apache on Ubuntu
+When you configure Apache server rewrites, you must specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules and security protections.
 
-To install the default version of Apache:
+### Install Apache on Ubuntu
 
-1. Install Apache
+1. Install Apache if you have not already done so:
 
    ```bash
    apt-get -y install apache2
    ```
 
-1. Verify the installation.
+1. Verify the installation:
 
    ```bash
    apache2 -v
    ```
 
-   The result displays similar to the following:
+   Messages similar to the following display to confirm that the installation was successful:
 
+   ```text
+   Server version: Apache/<installed-version>
+   Server built: <build-date>
    ```
-   Server version: Apache/2.4.18 (Ubuntu)
-   Server built: 2020-04-15T18:00:57
-   ```
 
-1. Enable [rewrites and `.htaccess`](#apache-rewrites-and-htaccess).
+1. Continue with the next section.
 
-### Upgrading Apache on Ubuntu
+   >[!NOTE]
+   >
+   >Even if Apache is provided by default with Ubuntu, see the following section to configure it.
 
-To upgrade to Apache 2.4:
+### Upgrade Apache on Ubuntu
 
-1. Add the `ppa:ondrej` repository, which has Apache 2.4:
+If Apache is already installed and you are using a version earlier than `2.4`, upgrade to Apache `2.4` or to the latest version supported by the Adobe Commerce version you have deployed. See [system requirements](../../system-requirements.md).
+
+1. Update package information:
 
    ```bash
    apt-get -y update
    ```
 
-   ```bash
-   apt-add-repository ppa:ondrej/apache2
-   ```
+1. Add a repository that provides a supported Apache version for your environment, if needed.
 
-   ```bash
-   apt-get -y update
-   ```
-
-1. Install Apache 2.4:
+1. Install or upgrade Apache:
 
    ```bash
    apt-get install -y apache2
@@ -159,62 +156,24 @@ To upgrade to Apache 2.4:
 
    >[!NOTE]
    >
-   >If the 'apt-get install' command fails because of unmet dependencies, consult a resource like [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >If the `apt-get install` command fails because of unmet dependencies, consult your operating system package documentation or distribution support resources.
 
-1. Verify the installation.
+1. Verify the installation:
 
    ```bash
    apache2 -v
    ```
 
-   Messages similar to the following should display:
+1. Confirm that the installed version matches the version supported for your Adobe Commerce release in [system requirements](../../system-requirements.md).
 
-   ```
-   Server version: Apache/2.4.10 (Ubuntu)
-   Server built: Jul 22 2020 22:46:25
-   ```
+1. Enable [rewrites and `.htaccess` for Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu).
 
-1. Enable [rewrites and `.htaccess`](#apache-rewrites-and-htaccess).
+### Enable rewrites and .htaccess for Ubuntu
 
-## Installing Apache on CentOS
-
-Adobe Commerce requires Apache server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules.
-
-Installing and configuring Apache is basically a three-step process: install the software, enable rewrites, and specify `.htaccess` directives.
-
-### Installing Apache
-
-1. Install Apache 2.4 if you have not already done so.
+1. Open the `/etc/apache2/sites-available/000-default.conf` file for editing:
 
    ```bash
-   yum -y install httpd
-   ```
-
-1. Verify the installation:
-
-   ```bash
-   httpd -v
-   ```
-
-   Messages similar to the following display to confirm that the installation was successful:
-
-   ```
-   Server version: Apache/2.4.40 (Unix)
-   Server built: Oct 16 2020 14:48:21
-   ```
-
-1. Continue with the next section.
-
-   >[!NOTE]
-   >
-   >Even if Apache 2.4 is provided by default with CentOS, see the following section to configure it.
-
-### Enable rewrites and .htaccess for CentOS
-
-1. Open `/etc/httpd/conf/httpd.conf` file for editing:
-
-   ```bash
-   vim /etc/httpd/conf/httpd.conf`
+   vim /etc/apache2/sites-available/000-default.conf
    ```
 
 1. Locate the block that starts with:
@@ -222,47 +181,6 @@ Installing and configuring Apache is basically a three-step process: install the
    ```conf
    <Directory "/var/www/html">
    ```
-
-1. Change the value of `AllowOverride` to `All`.
-
-   For example,
-
-   ```conf
-   <Directory "/var/www/">
-     Options Indexes FollowSymLinks MultiViews
-     AllowOverride All
-     Order allow,deny
-     Allow from all
-   </Directory>
-   ```
-
-   >[!NOTE]
-   >
-   >The preceding values for `Order` might not work in all cases. For more information, see the Apache documentation ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
-
-1. Save the file and exit the text editor.
-
-1. To apply Apache settings, restart Apache.
-
-   ```bash
-   service apache2 restart
-   ```
-
->[!NOTE]
->
->Failure to enable these settings typically results in no styles displaying on your storefront or Admin.
-
-### Enable rewrites and .htaccess for Ubuntu
-
-1. Open `/etc/apache2/sites-available/default` file for editing:
-
-   ```bash
-   vim /etc/apache2/sites-available/default
-   ```
-
-1. Locate the block that starts with:
-
-   `<Directory "/var/www/html">`
 
 1. Change the value of `AllowOverride` to `All`.
 
@@ -295,11 +213,95 @@ Installing and configuring Apache is basically a three-step process: install the
    service apache2 restart
    ```
 
+>[!IMPORTANT]
+>
+>Failure to enable these settings typically results in no styles displaying on your storefront or Admin. It can also prevent Apache from applying the Adobe Commerce security protections defined in `.htaccess`.
+
+## Install Apache on CentOS {#installing-apache-on-centos}
+
+Installing and configuring Apache on CentOS is a three-step process:
+
+1. Install the software
+2. Enable rewrites
+3. Specify `.htaccess` directives.
+
+When you configure Apache server rewrites, you must specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules and security protections.
+
+### Installing Apache
+
+1. Install Apache if you have not already done so.
+
+   ```bash
+   yum -y install httpd
+   ```
+
+1. Verify the installation:
+
+   ```bash
+   httpd -v
+   ```
+
+   Messages similar to the following display to confirm that the installation was successful:
+
+   ```text
+   Server version: Apache/<installed-version>
+   Server built: <build-date>
+   ```
+
+1. Continue with the next section.
+
+   >[!NOTE]
+   >
+   >Even if Apache is provided by default with CentOS, see the following section to configure it.
+
+### Enable rewrites and .htaccess for CentOS
+
+1. Open the `/etc/httpd/conf/httpd.conf` file for editing:
+
+   ```bash
+   vim /etc/httpd/conf/httpd.conf
+   ```
+
+1. Locate the block that starts with:
+
+   ```conf
+   <Directory "/var/www/html">
+   ```
+
+1. Change the value of `AllowOverride` to `All`.
+
+   For example:
+
+   ```conf
+   <Directory "/var/www/">
+     Options Indexes FollowSymLinks MultiViews
+     AllowOverride All
+     Order allow,deny
+     Allow from all
+   </Directory>
+   ```
+
+   >[!NOTE]
+   >
+   >The preceding values for `Order` might not work in all cases. For more information, see the [Apache documentation](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order).
+
+1. Save the file and exit the text editor.
+
+1. To apply the Apache settings, restart Apache.
+
+   ```bash
+   systemctl restart httpd
+   ```
+
+>[!IMPORTANT]
+>
+>Failure to enable these settings typically results in no styles displaying on your storefront or Admin. It can also prevent Apache from applying the Adobe Commerce security protections defined in `.htaccess`.
+
 ## Solving 403 (Forbidden) errors
 
 If you encounter 403 Forbidden errors when trying to access the site, you can update your Apache configuration or your virtual host configuration to enable visitors to the site:
 
-### Solving 403 Forbidden errors for Apache 2.4
+### Solve 403 Forbidden errors for Apache
 
 To enable website visitors to access your site, use one of the [Require directives](https://httpd.apache.org/docs/2.4/howto/access.html).
 
