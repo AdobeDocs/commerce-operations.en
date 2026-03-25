@@ -9,14 +9,14 @@ See [System Requirements](../../system-requirements.md) for supported versions o
 
 Adobe _strongly_ recommends you observe the following standard when you set up your database:
 
-*  Adobe Commerce uses [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule](../../../configuration/cli/manage-indexers.md#configure-indexers). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce versions.
-*  Familiarize yourself with [these potential MySQL trigger limitations](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) before you continue.
-*  To enhance your database security posture, enable the [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL mode to prevent storing invalid data values, which might cause unwanted database interactions.
-*  Adobe Commerce does _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+*  Adobe Commerce uses [MySQL database triggers](https://dev.mysql.com/doc/refman/8.4/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule](../../../configuration/cli/manage-indexers.md#configure-indexers). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce versions.
+*  Familiarize yourself with [these potential MySQL trigger limitations](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) before you continue.
+*  To enhance your database security posture, enable the [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL mode to prevent storing invalid data values, which might cause unwanted database interactions.
+*  Adobe Commerce does _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html).
 
 >[!WARNING]
 >
->Adobe Commerce currently uses `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations use GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
+>Adobe Commerce currently uses `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/8.4/en/replication-gtids-restrictions.html) with database implementations use GTID-based replication, such as [Google Cloud SQL second-generation instances](https://docs.cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
 
 >[!NOTE]
 >
@@ -24,12 +24,12 @@ Adobe _strongly_ recommends you observe the following standard when you set up y
 
 ## Installing MySQL on Ubuntu
 
-Adobe Commerce 2.4 requires a clean installation of MySQL 8.0. Follow the links below for instructions on installing MySQL on your machine.
+Adobe Commerce 2.4 supports different MySQL 8 versions depending on the release you are installing. Use a version listed in [System Requirements](../../system-requirements.md), then follow the links below for instructions on installing MySQL on your machine.
 
-*  [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
-*  [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
+*  [Ubuntu](https://ubuntu.com/server/docs/databases-mysql/)
+*  [CentOS](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
 
-If you expect to import large numbers of products, you can increase the value for [`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) that is larger than the default, 16 MB.
+If you expect to import large numbers of products, you can increase the value for [`max_allowed_packet`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet) to a value that is larger than the default, 16 MB.
 
 >[!NOTE]
 >
@@ -181,8 +181,8 @@ To configure a MySQL database instance:
 
    References:
 
-   *  [MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   *  [MariaDB](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
+   *  [MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
+   *  [MariaDB](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
 
    If this setting is not enabled, `bin/magento setup:db:status` always reports that the `Declarative Schema is not up to date`.
 

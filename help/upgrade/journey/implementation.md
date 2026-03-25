@@ -46,7 +46,7 @@ The following are items that you may want to include in a thorough analysis:
 
 - **Extensions and third-party modules**—Use this table template to help you understand the status of your extensions and customizations, so that you can make strategic decisions and define actions. This is an opportunity to replace any extensions that might be native to Adobe Commerce to minimize your project's complexity. Use the `bin/magento module:status` command to see a list of modules and extensions.
 
-  | # | Extension/<br>module name   | Composer package                   | Vendor      | Current version   | Functionality         | Compatible with latest<br>Commerce version? | Issues                                           | Native to Commerce? | Action                  | Notes | 
+  | # | Extension/<br>module name   | Composer package                   | Vendor      | Current version   | Functionality         | Compatible with latest<br>Commerce version? | Issues                                           | Native to Commerce? | Action                  | Notes |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
   | 1 | Extension name and link     | extension/<br>extensionx-magento-2 | Vendor name | Version installed | Business requirements | Yes/No                                      | List identified issues faced with this extension | Yes/No              | Keep/Replace/<br>Remove |       |
  

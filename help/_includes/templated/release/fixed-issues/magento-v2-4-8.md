@@ -10,91 +10,91 @@ The following 31 highlights apply to the Magento Open Source 2.4.8 release.
 
 Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x
 
-_AC-10721 - [GitHub code contribution](<https://github.com/magento/magento2/commit/91cb4d46>)_
+_AC-10721 - [GitHub code contribution](https://github.com/magento/magento2/commit/91cb4d46)_
 
 #### Investigate php-amqplib/php-amqplib latest versions
 
 Updated the latest version php-amqplib/php-amqplib :^3.x
 
-_AC-11673 - [GitHub code contribution](<https://github.com/magento/magento2/commit/de4dfb8e>)_
+_AC-11673 - [GitHub code contribution](https://github.com/magento/magento2/commit/de4dfb8e)_
 
 #### jQuery/fileuploader css cleanup after migration to uppy library
 
 Removed jQuery/fileUploader library because it has been migrated to Uppy library
 
-_AC-11911 - [GitHub code contribution](<https://github.com/magento/magento2/commit/7cabfb46>)_
+_AC-11911 - [GitHub code contribution](https://github.com/magento/magento2/commit/7cabfb46)_
 
 #### Add compatibility with MySQL 8.4 LTS for Magento CE
 
-_AC-11995 - [GitHub code contribution](<https://github.com/magento/magento2/commit/672a2e61>)_
+_AC-11995 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### ExtJs folder cleanup after migration to jsTree library
 
 Removed extJs folder as the related functionality has been migrated to jsTree
 
-_AC-12015 - [GitHub code contribution](<https://github.com/magento/magento2/commit/7cabfb46>)_
+_AC-12015 - [GitHub code contribution](https://github.com/magento/magento2/commit/7cabfb46)_
 
 #### Upgrade monolog/monolog system dependency to the latest major version
 
 The system has been updated to use the latest major version of the "monolog/monolog:^3.x" library, ensuring compatibility and improved performance. Previously, the system was using an outdated version of the "monolog/monolog" library which could have led to potential issues and limitations.
 
-_AC-12022 - [GitHub code contribution](<https://github.com/magento/magento2/commit/edcd0dcc>)_
+_AC-12022 - [GitHub code contribution](https://github.com/magento/magento2/commit/edcd0dcc)_
 
 #### Upgrade wikimedia/less.php dependency to the latest major version
 
 The system has been updated to use the latest major version 5.x of the "wikimedia/less.php" library, ensuring compatibility and up-to-date functionality. Previously, the system was using an outdated version of the library which could have led to security issues.
 
-_AC-12023 - [GitHub code contribution](<https://github.com/magento/magento2/commit/edcd0dcc>)_
+_AC-12023 - [GitHub code contribution](https://github.com/magento/magento2/commit/edcd0dcc)_
 
 #### Upgrade jquery/validate library dependency to the latest minor version
 
 Upgrade jquery/validate library dependency to the latest minor version 1.20.0
 
-_AC-12024 - [GitHub code contribution](<https://github.com/magento/magento2/commit/de4dfb8e>)_
+_AC-12024 - [GitHub code contribution](https://github.com/magento/magento2/commit/de4dfb8e)_
 
 #### Upgrade moment.js system dependency to the latest minor version
 
 Upgrade moment.js system dependency to the latest minor version 2.30.1
 
-_AC-12025 - [GitHub code contribution](<https://github.com/magento/magento2/commit/de4dfb8e>)_
+_AC-12025 - [GitHub code contribution](https://github.com/magento/magento2/commit/de4dfb8e)_
 
 #### Add compatibility with MySQL 8.4 LTS for EE
 
-_AC-12032 - [GitHub code contribution](<https://github.com/magento/magento2/commit/672a2e61>)_
+_AC-12032 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Add compatibility with MySQL 8.4 LTS for B2B
 
-_AC-12034 - [GitHub code contribution](<https://github.com/magento/magento2/commit/672a2e61>)_
+_AC-12034 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Add compatibility with MySQL 8.4 LTS for bundle extensions
 
-_AC-12074 - [GitHub code contribution](<https://github.com/magento/magento2/commit/672a2e61>)_
+_AC-12074 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Add compatibility with MariaDB 11.4 LTS For CE
 
 Added MariaDB 11.4 support with Adobe Commerce and extensions
 
-_AC-12085 - [GitHub code contribution](<https://github.com/magento/magento2/commit/b34c0a75>)_
+_AC-12085 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Subscribers Optimisation - PhpUnit10
 
-_AC-12165 - [GitHub code contribution](<https://github.com/magento/magento2/commit/90e25b6b>)_
+_AC-12165 - [GitHub code contribution](https://github.com/magento/magento2/commit/90e25b6b)_
 
 #### Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0
 
 Updated latest version of colinmollenhour/php-redis-session-abstract v2.0.0 compatible with adobe commerce
 
-_AC-12267 - [GitHub code contribution](<https://github.com/magento/magento2/commit/672a2e61>)_
+_AC-12267 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Investigate the automation tests failures with MySQL 8.4 LTS
 
-_AC-12576 - [GitHub code contribution](<https://github.com/magento/magento2/commit/672a2e61>)_
+_AC-12576 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Add compatibility with MariaDB 11.4 LTS For EE
 
 Added MariaDB 11.4 support with Adobe Commerce and extensions
 
-_AC-12595 - [GitHub code contribution](<https://github.com/magento/magento2/commit/b34c0a75>)_
+_AC-12595 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Update laminas composer dependencies upgrading to latest version
 
@@ -105,17 +105,17 @@ laminas/laminas-stdlib
 laminas/laminas-validator
 ensuring compatibility and up-to-date functionality. Previously, updating to the latest versions of these dependencies could cause backward incompatibility issues and test failures.
 
-_AC-12715 - [GitHub code contribution](<https://github.com/magento/magento2/commit/b34c0a75>)_
+_AC-12715 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Investigate the unit test failure due to phpunit patch update during component upgrade
 
-_AC-12823 - [GitHub code contribution](<https://github.com/magento/magento2/commit/b34c0a75>)_
+_AC-12823 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### [Part 1] - Update all js library and npm dependency with latest available version
 
 composer version support was up to the composer version 2.2.x only. Now the support extended to 2.4.x version as well.
 
-_AC-13076 - [GitHub code contribution](<https://github.com/magento/magento2/commit/19844aa0>)_
+_AC-13076 - [GitHub code contribution](https://github.com/magento/magento2/commit/19844aa0)_
 
 ### Order
 
@@ -123,7 +123,7 @@ _AC-13076 - [GitHub code contribution](<https://github.com/magento/magento2/comm
 
 In order to minimize the confusion, the "Submit Comment" button label changed to "Update" in the order detail page.
 
-_ACP2E-2709 - [GitHub code contribution](<https://github.com/magento/magento2/commit/488c1034>)_
+_ACP2E-2709 - [GitHub code contribution](https://github.com/magento/magento2/commit/488c1034)_
 
 ### Other
 
@@ -131,37 +131,37 @@ _ACP2E-2709 - [GitHub code contribution](<https://github.com/magento/magento2/co
 
 After Installation Magento, Indexer's Status must be in *Ready* state by default.
 
-_AC-11420 - [GitHub code contribution](<https://github.com/magento/magento2/commit/71432aeb>)_
+_AC-11420 - [GitHub code contribution](https://github.com/magento/magento2/commit/71432aeb)_
 
 #### In existing Magento installation when install third party indexer module set indexers in update by schedule by default.
 
 All new indexers are by default in [Update by Schedule] mode. Previously, the default mode was [Update on Save]. Same with custom indexers as well.
 
-_AC-11421 - [GitHub code contribution](<https://github.com/magento/magento2/commit/71432aeb>)_
+_AC-11421 - [GitHub code contribution](https://github.com/magento/magento2/commit/71432aeb)_
 
 #### Elasticsearch 7 and 8 options should come with Deprecated in Admin config.
 
 Elasticsearch 8 option in Admin Config option will show with Deprecated text to inform users that Elasticsearch 8 is no longer recommended option to use.
 
-_AC-12480 - [GitHub code contribution](<https://github.com/magento/magento2/commit/0611e750>)_
+_AC-12480 - [GitHub code contribution](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Add text note when Elasticsearch option is selected in Admin Configuration
 
 A text note is added to let Adobe Commerce admin users know that elasticsearch is no longer supported by Adobe and is deprecated.
 
-_AC-12481 - [GitHub code contribution](<https://github.com/magento/magento2/commit/0611e750>)_
+_AC-12481 - [GitHub code contribution](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Deliver tier-price operations performance improvement patch into 2.4.8
 
 The system now allows for more efficient bulk updates of tier prices without causing performance issues or site unresponsiveness when using the "/V1/products/tier-prices" REST API endpoint. Previously, updating a large number of prices using this endpoint could result in performance issues and site unresponsiveness.
 
-_AC-13448 - [GitHub code contribution](<https://github.com/magento/magento2/commit/082d981c>)_
+_AC-13448 - [GitHub code contribution](https://github.com/magento/magento2/commit/082d981c)_
 
 #### Remove all the Adobe confidential copyright notices from the Magento Open Source repositories
 
 All Adobe confidential copyright notices have been removed from the open source repositories, ensuring that only the reduced form of Adobe copyright is used. Previously, some files in the public repositories contained Adobe confidential copyright notices, which led to escalations from the community.
 
-_AC-13550 - [GitHub issue](https://github.com/magento/magento2/issues/39493) - [GitHub code contribution](<https://github.com/magento/magento2/commit/4bca5dfe>)_
+_AC-13550 - [GitHub issue](https://github.com/magento/magento2/issues/39493) - [GitHub code contribution](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 ### UI Framework
 
@@ -169,25 +169,25 @@ _AC-13550 - [GitHub issue](https://github.com/magento/magento2/issues/39493) - [
 
 Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
 
-_AC-12726 - [GitHub code contribution](<https://github.com/magento/magento2/commit/edcd0dcc>)_
+_AC-12726 - [GitHub code contribution](https://github.com/magento/magento2/commit/edcd0dcc)_
 
 #### [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 Page Builder
 
 Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
 
-_AC-12825 - [GitHub code contribution](<https://github.com/magento/magento2/commit/edcd0dcc>)_
+_AC-12825 - [GitHub code contribution](https://github.com/magento/magento2/commit/edcd0dcc)_
 
 #### [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 - Magento2-infra - banned words
 
 Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
 
-_AC-12844 - [GitHub code contribution](<https://github.com/magento/magento2/commit/edcd0dcc>)_
+_AC-12844 - [GitHub code contribution](https://github.com/magento/magento2/commit/edcd0dcc)_
 
 #### Require.js upgrade to the latest version 2.3.7 (security vulnerability CVE-2024-38999)
 
 Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability
 
-_AC-12901 - [GitHub code contribution](<https://github.com/magento/magento2/commit/b34c0a75>)_
+_AC-12901 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
 ## Fixed issues in v2.4.8
 
