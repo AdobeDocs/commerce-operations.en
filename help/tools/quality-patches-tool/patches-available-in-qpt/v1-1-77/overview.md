@@ -11,21 +11,17 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.77 includes the following patches:
 
-1. **ACSD-63687**: Fixes an issue where incorrect prices display because [!DNL Redis] cache cleanup fails.
-1. **ACSD-68341**: Multiple `X‑Magento‑Vary` cookie updates occur on PDP load.
-1. **ACSD-68537**: Checkout performance degrades with many customer segments.
-1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: Scheduled update preview has errors on custom store domains.
-1. **ACSD-68759**: Customer account creation error with Arabic locale when Date of Birth is shown.
-1. **ACSD-68892**: Inconsistent [!DNL Fastly] caching behavior for cacheable pages.
-1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: Fixes an issue where special price isn’t applied on websites with different time zones.
-1. **ACSD-69020**: Configurable products appear in [!UICONTROL Page Builder] carousels when child products match filters.
-1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Fixes an inconsistent [!DNL Fastly] caching behavior for cacheable pages.
-1. **ACSD-69016**: Special price isn't applied on websites with different time zones.
-1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Fixes an issue where configurable products appear in [!DNL Page Builder] product carousels when child products match filtering conditions.
-1. **ACSD-69237**: `sales_*_async_insert` cron jobs process only 100 entries per run.
-1. **ACSD-69351**: Fixes the issue where gift card balances and expiration dates display across incorrect websites.
-1. **ACSD-69311**: Fixes the incorrect tax calculation in credit memos after partial refunds from invoices.
-1. **ACSD-69494**: Fixes the async refund requests with `is_online` don't trigger online refunds.
-1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Fixes the async refund requests with `is_online` don't trigger online refunds.
+1. **[ACSD-63687](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687.md)**: Fixes an issue where incorrect prices are displayed because it isn't possible to clean [!DNL Redis] cache.
+1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)**: Fixes an issue where `X-Magento-Vary` cookie sets several times during PDP loading, when multiple customer segments are created at the store.
+1. **[ACSD-68537](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)**: Fixes an issue where checkout performance degraded as the number of customer segments increased.
+1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: Fixes an issue where the scheduled update preview breaks when attempting to preview content for stores with custom domains.
+1. **[ACSD-68759](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759.md)**: Fixes an issue where creating a customer account fails when using the Arabic locale and the Date of Birth (DOB) attribute is set to display on the storefront.
+1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Fixes an issue where cacheable pages aren't properly stored or served from the [!DNL Fastly] cache, resulting in inconsistent caching behavior and reduced performance.
+1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: Fixes an issue where the special price doesn't take effect for websites created in different time zones.
+1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Fixes an issue where a configurable product is automatically included in [!DNL Page Builder] product carousel listings if any of its child products meets the filtering conditions.
+1. **[ACSD-69237](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237.md)**: Fixes an issue where the number of entries that can be processed and inserted through the `sales_*_async_insert` cron jobs is limited to *100* per run.
+1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**: Fixes an issue with the incorrect tax calculation in credit memos when creating a partial refund from an invoice, if a previous credit memo was created from the order view page.
+1. **[ACSD-69351](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)**: Fixes an issue where gift card balances and expiration dates aren't displayed in accordance to the assigned website scope.
+1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: Fixes an issue with the async refund operations where refund requests with the `is_online` parameter aren't processed correctly.
 
 Use the menu on the left to navigate to a specific patch page.
