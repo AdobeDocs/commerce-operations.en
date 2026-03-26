@@ -71,6 +71,27 @@ This enhancement helps merchants deliver more relevant product discovery experie
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
+### Category Merchandising (Public Beta)
+
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
+
+Adobe Commerce Optimizer category merchandising helps merchants control how products are ordered on category pages. Merchants configure behavior as a **Category rule** in the merchandising rules workflow, together with [search rules and default product-listing rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview). Each rule can combine **intelligent ranking** (behavioral signals and AI where applicable), optional **price-based sorting**, and **manual** actions such as pin, boost, and bury—so teams can curate discovery, run promotions, and align category pages with strategy without external tools.
+
+**Key benefits**
+
+- Target one or more categories with the same rule-based workflow used for search and default listings.
+- Order category listings using intelligent ranking strategies (for example, most viewed, most purchased, add to cart, personalized recommendations, trending) plus optional price sorting.
+- Layer manual pin, boost, and bury actions on top of intelligent ranking when you need precise placement.
+- Scope rules by catalog view when your setup uses multiple catalog views.
+
+To learn more, see [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/category-merchandising), [Merchandising Rules workspace](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view) (catalog view scoping), and [Create and manage rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+
+>[!NOTE]
+>
+>Catalog view controls for rules are currently in beta. Merchandising and manual positions typically apply when the shopper uses the default sort for the listing; if a shopper changes sort (for example, by name or price), pinned, boosted, buried, or hidden behavior may no longer match the preview.
+
+To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
 ### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
