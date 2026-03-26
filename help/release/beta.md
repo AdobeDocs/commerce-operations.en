@@ -84,7 +84,7 @@ Adobe Commerce Optimizer category merchandising helps merchants control how prod
 - Layer manual pin, boost, and bury actions on top of intelligent ranking when you need precise placement.
 - Scope rules by catalog view when your setup uses multiple catalog views.
 
-To learn more, see [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/category-merchandising), [Merchandising Rules workspace](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view) (catalog view scoping), and [Create and manage rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+To learn more, see [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/category-merch), [Merchandising Rules workspace](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view) (catalog view scoping), and [Create and manage rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
 
 >[!NOTE]
 >
