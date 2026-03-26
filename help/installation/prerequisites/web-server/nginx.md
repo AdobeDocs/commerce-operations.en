@@ -2,6 +2,8 @@
 title: Install Nginx for On-Premises Deployments
 description: Learn how to install and configure the Nginx web server for on-premises Adobe Commerce deployments. Set up PHP-FPM and your virtual host.
 feature: Install, Configuration
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 ---
 # Install Nginx for on-premises deployments {#nginx}

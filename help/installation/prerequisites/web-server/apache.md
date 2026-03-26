@@ -2,6 +2,7 @@
 title: Install Apache for On-Premises Deployments
 description: Learn how to install and configure Apache for on-premises Adobe Commerce deployments. Enable required modules, rewrites, and `.htaccess` settings.
 feature: Install, Configuration
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 ---
 # Install Apache for on-premises deployments {#apache}
