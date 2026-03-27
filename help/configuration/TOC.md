@@ -40,6 +40,10 @@ feature: Configuration
         + [Configure Valkey](cache/config-valkey.md)
         + [Use Valkey for default cache](cache/valkey-pg-cache.md)
         + [Use Valkey for session storage](cache/valkey-session.md)
+    + Dragonfly {#dragonfly}
+        + [Configure Dragonfly](cache/config-dragonfly.md)
+        + [Use Dragonfly for default cache](cache/dragonfly-pg-cache.md)
+        + [Use Dragonfly for session storage](cache/dragonfly-session.md)
     + Varnish {#varnish}
         + [Varnish overview](cache/config-varnish.md)
         + [Install Varnish](cache/config-varnish-install.md)
