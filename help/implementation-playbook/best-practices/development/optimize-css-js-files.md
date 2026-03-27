@@ -75,7 +75,7 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Bundle JS files
 
-You can enable bundling in the Commerce Admin: [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
+You can enable bundling in the Commerce [!UICONTROL Admin]: [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
 
 >[!NOTE]
 >
