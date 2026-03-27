@@ -31,7 +31,7 @@ Do not merge or bundle files if your deployment uses HTTP/2. HTTP/2 downloads st
 
 ### Using Admin
 
-To enable CSS merging or minification, go into the [!UICONTROL **Admin** > **Stores** > **Setting** > **Configuration** > **Advanced** > **Developer** > **CSS Settings**].
+To enable CSS merging or minification, go into the **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL CSS Settings]**.
 
 ### Using the command line
 
@@ -57,9 +57,9 @@ To enable CSS minification in Adobe Commerce on cloud infrastructure:
 
 ## Minify JS files
 
-### Using Admin
+### Using [!UICONTROL Admin]
 
-On the *Admin* sidebar, go to **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**.
+On the [!UICONTROL Admin] sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
 
 ### Using the command line
 
@@ -75,7 +75,7 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Bundle JS files
 
-You can enable bundling in the Commerce [!UICONTROL Admin]: [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
+You can enable bundling in the Commerce [!UICONTROL Admin]: **[!UICONTROL Stores]** > ***[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
 
 >[!NOTE]
 >
