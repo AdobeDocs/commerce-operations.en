@@ -79,7 +79,7 @@ You can enable bundling in the Commerce [!UICONTROL Admin]: **[!UICONTROL Stores
 
 >[!NOTE]
 >
->Merging and bundling cannot be enabled at the same time.
+>Merging and bundling can't be enabled at the same time.
 
 You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
 
@@ -91,9 +91,9 @@ You can also enable Adobe Commerce built-in bundling (basic bundling) from the c
 
 >[!WARNING]
 >
->We do not recommend enabling **[!UICONTROL Merge JavaScript Files]**. This setting was designed only for synchronously-loaded JavaScript in the HEAD section of the page and can cause bundling and RequireJS logic to work incorrectly. It is kept for backward compatibility only and provides no performance benefit when HTTP/2 is enabled.
+>We do not recommend enabling **[!UICONTROL Merge JavaScript Files]**. This setting was designed only for synchronously-loaded JavaScript in the **[!UICONTROL HEAD]** section of the page and can cause bundling and [!DNL RequireJS] logic to work incorrectly. It's kept for backward compatibility only and provides no performance benefit when HTTP/2 is enabled.
 >
->If you have **[!UICONTROL Merge JavaScript Files]** enabled and encounter issues, try disabling it before applying any patches. See [ACSD-67908](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) if you cannot disable merging.
+>If you have **[!UICONTROL Merge JavaScript Files]** enabled and encounter issues, try disabling it before applying any patches. See [ACSD-67908](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) if you can't disable merging.
 
 ## Additional information
 
