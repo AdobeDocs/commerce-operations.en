@@ -38,6 +38,10 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
   bin/magento config:set --lock-config dev/js/merge_files 1
   ```
 
+  >[!NOTE]
+  >
+  >Adobe does not recommend enabling **[!UICONTROL Merge JavaScript Files]**. See [Merge JS files (not recommended)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
+
 1. Enable production mode.
 
   ```

@@ -97,7 +97,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 >
 >See [Optimize resource files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) for more information about optimizing CSS and Javascript.
 
-### Bundling tips
+### Bundling tips {#bundling-tips}
 
 * We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
 * Activating the HTTP/2 protocol can be a good alternative to using JS bundling. The protocol provides many of the same benefits. It is enabled by default in Adobe Commerce on cloud infrastructure projects.

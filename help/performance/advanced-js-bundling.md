@@ -16,7 +16,9 @@ In a modular application, the number of server requests can reach into the hundr
 
 ## Merging and bundling
 
-Out of the box, [!DNL Commerce] provides two ways to reduce the number of server requests: merging and bundling. These settings are turned off by default. You can turn them on within the Admin UI in **[!UICONTROL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
+[!DNL Commerce] supports bundling to reduce the number of server requests. Bundling is turned off by default. You can turn it on in **[!UICONTROL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
+
+See [Bundling tips](configuration.md#bundling-tips) in *Configuration best practices* for third-party tooling, HTTP/2, and guidance on deprecated JS and CSS merge.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
@@ -36,7 +38,12 @@ Better, but the browser still loads ALL the [!DNL JavaScript] bundles, not just 
 
 [!DNL Commerce] bundling reduces the number of connections per page, but for each page request it loads all bundles, even when the requested page may only depend on files within one or two of the bundles. Performance improves after the browser caches the bundles. But, because the browser loads these bundles synchronously, the user's first visit to a [!DNL Commerce] storefront could take a while to render and hurt the user experience.
 
-### Basic merging
+### Basic merging (not recommended)
+
+>[!NOTE]
+>
+>We do not recommend using **[!UICONTROL Merge JavaScript Files]**. This setting was designed only for synchronously-loaded JavaScript in the HEAD section of the page and can cause bundling and RequireJS logic to work incorrectly. It is kept for backward compatibility only and provides no performance benefit when HTTP/2 is enabled.
+>If you have **[!UICONTROL Merge JavaScript Files]** enabled and encounter issues, try disabling it before applying any patches. See [ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) if you cannot disable merging.
 
 To enable built-in merging from the command line:
 
