@@ -16,7 +16,7 @@ In a modular application, the number of server requests can reach into the hundr
 
 ## Merging and bundling
 
-[!DNL Commerce] supports bundling to reduce the number of server requests. Bundling is turned off by default. You can turn it on in **[!UICONTROL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
+[!DNL Commerce] supports bundling to reduce the number of server requests. Bundling is turned off by default. You can turn it on in **[!UICONTROL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**, or from the command line.
 
 See [Bundling tips](configuration.md#bundling-tips) in *Configuration best practices* for third-party tooling, HTTP/2, and guidance on deprecated JS and CSS merge.
 
@@ -43,7 +43,7 @@ Better, but the browser still loads ALL the [!DNL JavaScript] bundles, not just 
 >[!NOTE]
 >
 >We do not recommend using **[!UICONTROL Merge JavaScript Files]**. This setting was designed only for synchronously-loaded JavaScript in the HEAD section of the page and can cause bundling and RequireJS logic to work incorrectly. It is kept for backward compatibility only and provides no performance benefit when HTTP/2 is enabled.
->If you have **[!UICONTROL Merge JavaScript Files]** enabled and encounter issues, try disabling it before applying any patches. See [ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) if you cannot disable merging.
+>If you have **[!UICONTROL Merge JavaScript Files]** enabled and encounter issues, try disabling it before applying any patches. See [ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) if you can't disable merging.
 
 To enable built-in merging from the command line:
 
@@ -73,7 +73,7 @@ With a more advanced approach to [!DNL JavaScript] bundling, we can improve thes
 
 ## Advanced bundling
 
-Remember, the goal of [!DNL JavaScript] bundling is to reduce the number and size of requested assets for each page loaded in the browser. To do that, we want to build our bundles so that each page in our store will only need to download a common bundle and a page-specific bundle for each page accessed.
+Remember, the goal of JavaScript bundling is to reduce the number and size of requested assets for each page loaded in the browser. To do that, we want to build our bundles so that each page in our store will only need to download a common bundle and a page-specific bundle for each page accessed.
 
 One way to achieve this is to define your bundles by page types. You can categorize [!DNL Commerce]'s pages into several page types, including Category, Product, CMS, Customer, Cart, and Checkout. Each page categorized into one of these page types has a different set of RequireJS module dependencies. When you bundle your RequireJS modules by page type, you will end up with only a handful of bundles that cover the dependencies of any page in your store.
 
@@ -205,7 +205,7 @@ if (system.args.length === 1) {
 }
 ```
 
-Open a terminal inside the [!DNL Commerce] root directory and run the script against each page in your store that represents a specific page type:
+Open a terminal inside the Commerce root directory and run the script against each page in your store that represents a specific page type:
 
 <pre>
 phantomjs deps.js <i>url-to-specific-page</i> > <i>text-file-representing-pagetype-dependencies</i>
@@ -255,7 +255,7 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 
 The goal is to create a common bundle of [!DNL JavaScript] files needed by all pages. That way the browser only needs to load the common bundle along with one or more specific page types.
 
-Open a terminal in the [!DNL Commerce] root directory and use the following command to verify that you have dependencies you can split into separate bundles:
+Open a terminal in the Commerce root directory and use the following command to verify that you have dependencies you can split into separate bundles:
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
@@ -288,7 +288,7 @@ This tells us that we can likely improve our store's page-loading speeds by spli
 
 #### 8\. Create a dependencies distribution file
 
-To find out which page types need which dependencies, create a new file in the [!DNL Commerce] root directory called `deps-map.sh` and copy in the code below:
+To find out which page types need which dependencies, create a new file in the Commerce root directory called `deps-map.sh` and copy in the code below:
 
 ```shell
 awk 'END {
@@ -379,7 +379,7 @@ This example reuses `mage/bootstrap` and `requirejs/require` assets, placing hig
 
 ### Part 2: Generate bundles
 
-The steps below describe the basic process for generating more efficient [!DNL Commerce] bundles. You can automate this process any way you want, but you will still need to use `nodejs` and `r.js` to actually generate your bundles. And if your themes have [!DNL JavaScript]-related customizations and cannot reuse the same `build.js` file, you may need to create several `build.js` configurations per theme.
+The steps below describe the basic process for generating more efficient Commerce bundles. You can automate this process any way you want, but you will still need to use `nodejs` and `r.js` to actually generate your bundles. And if your themes have JavaScript-related customizations and can't reuse the same `build.js` file, you may need to create several `build.js` configurations per theme.
 
 #### 1. Generate static store sites
 
@@ -414,7 +414,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### 3. Run the r.js optimizer
 
-Then run the r.js optimizer on the `build.js` file from [!DNL Commerce]'s root directory. Paths to all directories and files are relative to the working directory.
+Then run the r.js optimizer on the `build.js` file from Commerce's root directory. Paths to all directories and files are relative to the working directory.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -504,11 +504,11 @@ After the page loads, notice the browser loading different dependencies and bund
 
 ![Twice as fast](../assets/performance/images/TwiceAsFast.png)
 
-The page load time for an empty homepage is now twice as fast than using native [!DNL Commerce] bundling. But we can do even better.
+The page load time for an empty homepage is now twice as fast than using native Commerce bundling. But we can do even better.
 
 #### 7. Optimize the bundles
 
-Even if gzipped, the [!DNL JavaScript] files are still large. Minify them with RequireJS, which uses uglifier for minifying [!DNL JavaScript] to good result.
+Even if gzipped, the JavaScript files are still large. Minify them with RequireJS, which uses uglifier for minifying JavaScript to good result.
 
 To enable the optimizer in your `build.js` file, add `uglify2` as the value for the optimize property at the top of the `build.js` file:
 
