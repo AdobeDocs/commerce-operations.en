@@ -71,10 +71,6 @@ This enhancement helps merchants deliver more relevant product discovery experie
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
-### Database Storage for App Builder (Public Beta)
-
-[Database Storage for App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) is a new managed, document-style datastore built into Adobe Developer App Builder that gives your Commerce apps persistent, queryable storage for structured JSON data. All customers with an App Builder license can provision this feature.
-
 ### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}

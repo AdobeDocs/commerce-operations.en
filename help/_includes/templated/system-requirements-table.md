@@ -130,6 +130,24 @@
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          8
+      </td>
+      <td>
+          8
+      </td>
+      <td>
+          8
+      </td>
+      <td>
+          8
+      </td>
+      <td>
+          8.17
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
           3

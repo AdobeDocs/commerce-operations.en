@@ -936,6 +936,9 @@ feature: Configuration
            - [ACSD-68490: [!UICONTROL Add New Attribute] button visible to restricted admin during configurable product creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
         - v1.1.76 {#v1-1-76}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+           - [ACSD-69319: bundle product prices were not indexed properly when child products had stock under custom sources](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319.md)
+           - [ACSD-69086: installation fails on MariaDB 10.11 due to unsupported database version check](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086.md)
+           - [ACSD-69331: Media Gallery folder creation fails for admin users with only Create Folder permission](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331.md)
            - [ACSD-69203: Products List widget returns incorrect results when multiple categories are used in the category condition](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)
            - [ACSD-69115: Shopping cart errors not displayed to admin users for customers assigned to non‑default websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69115.md)
            - [ACSD-67370: Incorrect prices were shown for Bundle products on PDP/PLP and the cart page for multi-currency stores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)

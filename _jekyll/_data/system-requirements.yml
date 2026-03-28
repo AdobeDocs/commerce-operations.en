@@ -30,7 +30,7 @@
   AWS OpenSearch: '3.1 or latest available'
   AWS S3: ✔️
   Composer: '2.9.3+'
-  ElasticSearch: '8'
+  Elasticsearch: '8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.28'
@@ -47,7 +47,7 @@
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
   Composer: '2.9.3+'
-  ElasticSearch: '8'
+  Elasticsearch: '8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.28'
@@ -64,6 +64,7 @@
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
   Composer: '2.9.3+'
+  Elasticsearch: '8'
   MariaDB: '11.4'
   MySQL: '8.4'
   nginx: '1.28'
@@ -80,6 +81,7 @@
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
   Composer: '2.9.3+'
+  Elasticsearch: '8'
   MariaDB: '11.4'
   MySQL: '8.4'
   New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
@@ -98,6 +100,7 @@
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
   Composer: '2.9.3+'
+  Elasticsearch: '8.17'
   MariaDB: '11.4'
   MySQL: '8.4'
   New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
