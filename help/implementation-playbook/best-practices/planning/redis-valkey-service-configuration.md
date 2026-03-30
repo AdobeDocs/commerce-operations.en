@@ -41,7 +41,7 @@ stage:
 
 For environment configuration on Cloud infrastructure, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) configuration reference in the _Commerce on Cloud Infrastructure Guide_.
 
-For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) or [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
 >[!TAB Valkey configuration]
 
@@ -131,6 +131,12 @@ Usage can vary across nodes, but it should converge to a similar value.
 ## Enable Redis or Valkey replica connection
 
 Enable a replica connection in the `.magento.env.yaml` file to let Magento read cache entries from the replica endpoint while continuing to write to the primary endpoint. This configuration can reduce read load on the primary cache service and improve resilience during short spikes.
+
+>[!NOTE]
+>
+>In Redis terminology, *replica* replaces *slave*. Redis states that, starting with Redis 5, the project no longer uses the word *slave* except for backward compatibility and recommends using `REPLICAOF` instead of `SLAVEOF`. The `SLAVEOF` command continues to work for backward compatibility. See the Redis [SLAVEOF command reference](https://redis.io/docs/latest/commands/SLAVEOF/).
+>
+>Adobe Commerce still uses the legacy deployment variable names `REDIS_USE_SLAVE_CONNECTION` and `VALKEY_USE_SLAVE_CONNECTION`, but these variables configure a replica connection.
 
 >[!BEGINTABS]
 
@@ -477,7 +483,7 @@ Use the following procedure for your cache service:
 
 ## Cache compression
 
-If you use more than 6 GB of Redis or Valkey `maxmemory`, you can enable cache compression to reduce the space consumed by keys. Be aware that this setting trades client-side performance for memory savings. If you have spare CPU capacity, consider enabling it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) in the _Configuration Guide_.
+If you use more than 6 GB of Redis or Valkey `maxmemory`, you can enable cache compression to reduce the space consumed by keys. Be aware that this setting trades client-side performance for memory savings. If you have spare CPU capacity, consider enabling it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) or [Use Valkey for session storage](../../../configuration/cache/valkey-session.md) in the _Configuration Guide_.
 
 ```yaml
 stage:
