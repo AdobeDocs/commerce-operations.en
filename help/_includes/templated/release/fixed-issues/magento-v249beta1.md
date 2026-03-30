@@ -1822,6 +1822,8 @@ _AC-15559 - [GitHub issue](https://github.com/magento/magento2/issues/31396) - [
 
 #### Illegal mix of collations for operation
 
+No description available.
+
 _AC-15614 - [GitHub issue](https://github.com/magento/magento2/issues/40138) - [GitHub code contribution](https://github.com/magento/magento2/commit/44329e9d)_
 
 #### [Issue] [PHPDOC] Fix bad phpdoc Magento\Framework\DB\Adapter\AdapterInterface::quoteColumnAs()
@@ -1831,6 +1833,8 @@ This PR updates the PHPDoc for \Magento\Framework\DB\Adapter\AdapterInterface::q
 _AC-15626 - [GitHub issue](https://github.com/magento/magento2/issues/39598) - [GitHub code contribution](https://github.com/magento/magento2/pull/39581)_
 
 #### Illegal mix of collations in urlrewrite module
+
+No description available.
 
 _AC-15647 - [GitHub issue](https://github.com/magento/magento2/issues/40189) - [GitHub code contribution](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2479,6 +2483,8 @@ AC-10568
 _AC-10568 - [GitHub issue](https://github.com/magento/magento2/issues/31644)_
 
 #### When customer is set for quote order is still a guest order
+
+No description available.
 
 _AC-11689 - [GitHub issue](https://github.com/magento/magento2/issues/38540)_
 
@@ -3197,6 +3203,8 @@ The test case addresses the functionality of the "Email to Friend" form when CAP
 _AC-13492 - [GitHub issue](https://github.com/magento/magento2/issues/39462) - [GitHub code contribution](https://github.com/magento/magento2/pull/32830)_
 
 #### Hardcoded Fixture Paths Fail in Composer Builds
+
+No description available.
 
 _AC-16488_
 

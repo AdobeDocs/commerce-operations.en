@@ -1189,6 +1189,8 @@ _AC-16066 - [GitHub issue](https://github.com/magento/magento2/issues/33965) - [
 
 #### Dropdown option deletion is not working while creating attribute on product page
 
+No description available.
+
 _AC-16437_
 
 #### Product page gives error because of url rewrites
@@ -1995,6 +1997,8 @@ _AC-15559 - [GitHub issue](https://github.com/magento/magento2/issues/31396) - [
 
 #### Illegal mix of collations for operation
 
+No description available.
+
 _AC-15614 - [GitHub issue](https://github.com/magento/magento2/issues/40138) - [GitHub code contribution](https://github.com/magento/magento2/commit/44329e9d)_
 
 #### [Issue] [PHPDOC] Fix bad phpdoc Magento\Framework\DB\Adapter\AdapterInterface::quoteColumnAs()
@@ -2004,6 +2008,8 @@ This PR updates the PHPDoc for \Magento\Framework\DB\Adapter\AdapterInterface::q
 _AC-15626 - [GitHub issue](https://github.com/magento/magento2/issues/39598) - [GitHub code contribution](https://github.com/magento/magento2/pull/39581)_
 
 #### Illegal mix of collations in urlrewrite module
+
+No description available.
 
 _AC-15647 - [GitHub issue](https://github.com/magento/magento2/issues/40189) - [GitHub code contribution](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2069,6 +2075,8 @@ This PR ensures the $maxAge parameter in the PageCache kernel is strictly typed 
 _AC-16313 - [GitHub issue](https://github.com/magento/magento2/issues/40438) - [GitHub code contribution](https://github.com/magento/magento2/pull/36600)_
 
 #### Fake Modules Require dev/ Directory in Extension Repositories
+
+No description available.
 
 _AC-16487_
 
@@ -2674,6 +2682,8 @@ AC-10568
 _AC-10568 - [GitHub issue](https://github.com/magento/magento2/issues/31644)_
 
 #### When customer is set for quote order is still a guest order
+
+No description available.
 
 _AC-11689 - [GitHub issue](https://github.com/magento/magento2/issues/38540)_
 
@@ -3539,13 +3549,19 @@ _AC-13492 - [GitHub issue](https://github.com/magento/magento2/issues/39462) - [
 
 #### [Cloud Native Service] CNS Build Failure - 2.4.9-beta1-  Integration
 
+No description available.
+
 _AC-16427_
 
 #### Hardcoded Fixture Paths Fail in Composer Builds
 
+No description available.
+
 _AC-16488_
 
 #### PHPUnit Config File Mismatch Between PR and Composer Builds
+
+No description available.
 
 _AC-16501_
 
@@ -3635,6 +3651,8 @@ AC-12343
 _AC-12343 - [GitHub issue](https://github.com/magento/magento2/issues/37469)_
 
 #### GUID is not getting saved as secured format
+
+No description available.
 
 _AC-15809_
 

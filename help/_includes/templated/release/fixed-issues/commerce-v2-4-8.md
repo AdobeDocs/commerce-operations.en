@@ -125,6 +125,8 @@ _AC-10782 - [GitHub issue](https://github.com/magento/magento2/issues/38331) - [
 
 #### admin Password update.
 
+No description available.
+
 _AC-10886 - [GitHub issue](https://github.com/magento/magento2/issues/38352) - [GitHub code contribution](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### my account add address crash on save
@@ -164,6 +166,8 @@ The system now allows the "Login as Customer opt-in checkbox" and "Login as Cust
 _AC-13000 - [GitHub issue](https://github.com/magento/magento2/issues/32329) - [GitHub code contribution](https://github.com/magento/magento2/pull/32359)_
 
 #### Front end UI Homepage in my profile Dropdown is button is not there.(intermittently)
+
+No description available.
 
 _AC-14299_
 
@@ -230,6 +234,8 @@ _ACP2E-3038 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### "select" custom customer address attribute does not render for new customer address
 
+No description available.
+
 _AC-2341 - [GitHub issue](https://github.com/magento/magento2/issues/34950)_
 
 ### Admin UI
@@ -278,9 +284,13 @@ _AC-13529 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### When the Max Number of Password Reset Requests"  is set greater than 0 eg: 3 , "Exceeding limit error messages are sent before reching the limit i.e from second time
 
+No description available.
+
 _AC-13767_
 
 #### Though the Max Number of Password Reset Requests"  is set to 0( diabled) , "Exceeding limit error messages are sent from 2nd time"
+
+No description available.
 
 _AC-13768_
 
@@ -291,6 +301,8 @@ Earlier red asterisk was not showing for phone number but  phone number was man
 _AC-13850 - [GitHub code contribution](https://github.com/magento/magento2/commit/c699c206)_
 
 #### In Admin When we try to Reorder submit order button is not clickable. (intermittently)
+
+No description available.
 
 _AC-14300_
 
@@ -598,6 +610,8 @@ _ACP2E-3187 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### 2.4.8-beta102 package Enterprise edition is failing with application exceptions
 
+No description available.
+
 _AC-13501_
 
 #### Products assigned to shared catalog are not reflect on the front end when partial index is executed
@@ -677,6 +691,8 @@ _ACP2E-3391_
 
 #### Admin express checkout button is disabled.
 
+No description available.
+
 _AC-14293_
 
 #### Pay via LPM
@@ -692,6 +708,8 @@ The system now allows express payment methods for configurable products that hav
 _BUNDLE-3368_
 
 #### CVV Verification failed error
+
+No description available.
 
 _BUNDLE-3369_
 
@@ -803,9 +821,13 @@ _AC-13302 - [GitHub issue](https://github.com/magento/magento2/issues/39292) - [
 
 #### Gift registry Product isn't displayinging properly
 
+No description available.
+
 _AC-13797_
 
 #### Gift registry Product isn't displaying properly
+
+No description available.
 
 _AC-13841_
 
@@ -1524,6 +1546,8 @@ _AC-12283 - [GitHub issue](https://github.com/magento/magento2/issues/38845) - [
 
 #### Widget category tree is not rendered correctly
 
+No description available.
+
 _AC-12692 - [GitHub issue](https://github.com/magento/magento2/issues/39008) - [GitHub code contribution](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### Unable to see "Using Default value" message when changing the theme in design configuration page
@@ -1902,6 +1926,8 @@ _AC-13149 - [GitHub issue](https://github.com/magento/magento2/issues/39219) - [
 
 #### setup:upgrade is failing with MariaDB 11.4 version due to charset & collation changes
 
+No description available.
+
 _AC-13247_
 
 #### [Issue] Remove all marketing get parameters to minimize the cache
@@ -2077,6 +2103,8 @@ _AC-7976 - [GitHub issue](https://github.com/magento/magento2/issues/36877) - [G
 ### Framework, Product
 
 #### 2.4.8-beta1 EE Reports are not generating due to magento exception
+
+No description available.
 
 _AC-13011_
 
@@ -2655,13 +2683,19 @@ _ACP2E-3003 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### [Braintree] Refund online storing transaction as transactionid-refund
 
+No description available.
+
 _BUNDLE-3394_
 
 #### [Braintree] + [CLOUD] Braintree (credit card) orders unable to split the charges
 
+No description available.
+
 _BUNDLE-3421_
 
 #### [Braintree] [Cloud]Braintree SSL Certificate expire by June 30
+
+No description available.
 
 _BUNDLE-3422_
 
@@ -2974,6 +3008,8 @@ _AC-11474 - [GitHub issue](https://github.com/magento/magento2/issues/38486) - [
 
 #### Navigating in the categories tree leads to errors in Redis: "Redis session exceeded concurrent connections"
 
+No description available.
+
 _AC-12571 - [GitHub issue](https://github.com/magento/magento2/issues/38851) - [GitHub code contribution](https://github.com/magento/magento2/commit/0611e750)_
 
 #### CSP issues combined with dev/css/use_css_critical_path
@@ -3108,6 +3144,8 @@ The system now correctly displays the price of simple products when queried thro
 _AC-11810 - [GitHub issue](https://github.com/magento/magento2/issues/38603)_
 
 #### Penny rounding error in catalog rule
+
+No description available.
 
 _AC-13855 - [GitHub code contribution](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3328,6 +3366,8 @@ _ACP2E-3383 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Second Cart Price Rule isn't applied if First Cart rule is already applied
 
+No description available.
+
 _AC-13751_
 
 ### Search
@@ -3339,6 +3379,8 @@ The system now correctly displays search results on the Advanced Search page whe
 _AC-13053 - [GitHub code contribution](https://github.com/magento/magento2/commit/3ea26621)_
 
 #### magento/module-open-search depends on on nonexistent opensearch-php branch
+
+No description available.
 
 _AC-13721 - [GitHub code contribution](https://github.com/magento/magento2/commit/05dc0bbf)_
 
@@ -3389,6 +3431,8 @@ Ensure to UPS rates should visible in checkout and cart.
 _AC-11938 - [GitHub issue](https://github.com/magento/magento2/issues/38618) - [GitHub code contribution](https://github.com/magento/magento2/commit/493e01f5)_
 
 #### UPS REST "sandbox" and "prod" setup instruction updates in devdoc
+
+No description available.
 
 _AC-12938_
 
@@ -3498,9 +3542,13 @@ _AC-13362 - [GitHub issue](https://github.com/magento/magento2/issues/31399) - [
 
 #### MAGETWO-95118: Checking behaviour with the persistent shopping cart after the session is expired
 
+No description available.
+
 _AC-13478 - [GitHub code contribution](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Integration tests are failed Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
+
+No description available.
 
 _AC-13716_
 
@@ -3511,6 +3559,8 @@ Earlier if Database contains record about the target rule without any condition 
 _AC-13722_
 
 #### Fix static tests to enable usage by 3d-party extensions
+
+No description available.
 
 _AC-13848 - [GitHub code contribution](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3577,6 +3627,8 @@ This PR improves the error message when requirejs fails to load a component.
 _AC-13472 - [GitHub issue](https://github.com/magento/magento2/issues/36761) - [GitHub code contribution](https://github.com/magento/magento2/pull/38971)_
 
 #### PHP 8.4 Deprecation Errors Causing Build Failures in 2.4-develop
+
+No description available.
 
 _AC-14004 - [GitHub code contribution](https://github.com/magento/magento2/commit/1da9ba6f)_
 

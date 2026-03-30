@@ -26,6 +26,8 @@ _AC-11911 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Add compatibility with MySQL 8.4 LTS for Magento CE
 
+No description available.
+
 _AC-11995 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### ExtJs folder cleanup after migration to jsTree library
@@ -60,13 +62,19 @@ _AC-12025 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Add compatibility with MySQL 8.4 LTS for EE
 
+No description available.
+
 _AC-12032 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Add compatibility with MySQL 8.4 LTS for B2B
 
+No description available.
+
 _AC-12034 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Add compatibility with MySQL 8.4 LTS for bundle extensions
+
+No description available.
 
 _AC-12074 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -78,6 +86,8 @@ _AC-12085 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Subscribers Optimisation - PhpUnit10
 
+No description available.
+
 _AC-12165 - [GitHub code contribution](https://github.com/magento/magento2/commit/90e25b6b)_
 
 #### Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0
@@ -87,6 +97,8 @@ Updated latest version of colinmollenhour/php-redis-session-abstract v2.0.0 comp
 _AC-12267 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Investigate the automation tests failures with MySQL 8.4 LTS
+
+No description available.
 
 _AC-12576 - [GitHub code contribution](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -108,6 +120,8 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
 _AC-12715 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Investigate the unit test failure due to phpunit patch update during component upgrade
+
+No description available.
 
 _AC-12823 - [GitHub code contribution](https://github.com/magento/magento2/commit/b34c0a75)_
 
@@ -292,6 +306,8 @@ _AC-10782 - [GitHub issue](https://github.com/magento/magento2/issues/38331) - [
 
 #### admin Password update.
 
+No description available.
+
 _AC-10886 - [GitHub issue](https://github.com/magento/magento2/issues/38352) - [GitHub code contribution](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### my account add address crash on save
@@ -380,6 +396,8 @@ _ACP2E-3038 - [GitHub code contribution](https://github.com/magento/magento2/com
 ### Account, Cart & Checkout
 
 #### "select" custom customer address attribute does not render for new customer address
+
+No description available.
 
 _AC-2341 - [GitHub issue](https://github.com/magento/magento2/issues/34950)_
 
@@ -1474,6 +1492,8 @@ The system now successfully completes the static content deployment process when
 _AC-12283 - [GitHub issue](https://github.com/magento/magento2/issues/38845) - [GitHub code contribution](https://github.com/magento/magento2/pull/38922)_
 
 #### Widget category tree is not rendered correctly
+
+No description available.
 
 _AC-12692 - [GitHub issue](https://github.com/magento/magento2/issues/39008) - [GitHub code contribution](https://github.com/magento/magento2/commit/58e40ceb)_
 
@@ -2758,6 +2778,8 @@ _AC-11474 - [GitHub issue](https://github.com/magento/magento2/issues/38486) - [
 
 #### Navigating in the categories tree leads to errors in Redis: "Redis session exceeded concurrent connections"
 
+No description available.
+
 _AC-12571 - [GitHub issue](https://github.com/magento/magento2/issues/38851) - [GitHub code contribution](https://github.com/magento/magento2/commit/0611e750)_
 
 #### CSP issues combined with dev/css/use_css_critical_path
@@ -2884,6 +2906,8 @@ The system now correctly displays the price of simple products when queried thro
 _AC-11810 - [GitHub issue](https://github.com/magento/magento2/issues/38603)_
 
 #### Penny rounding error in catalog rule
+
+No description available.
 
 _AC-13855 - [GitHub code contribution](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3065,6 +3089,8 @@ _AC-13053 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### magento/module-open-search depends on on nonexistent opensearch-php branch
 
+No description available.
+
 _AC-13721 - [GitHub code contribution](https://github.com/magento/magento2/commit/05dc0bbf)_
 
 #### search_query table when of huge size, has large impact on load time frontend
@@ -3195,9 +3221,13 @@ _AC-13362 - [GitHub issue](https://github.com/magento/magento2/issues/31399) - [
 
 #### MAGETWO-95118: Checking behaviour with the persistent shopping cart after the session is expired
 
+No description available.
+
 _AC-13478 - [GitHub code contribution](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Fix static tests to enable usage by 3d-party extensions
+
+No description available.
 
 _AC-13848 - [GitHub code contribution](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3264,6 +3294,8 @@ This PR improves the error message when requirejs fails to load a component.
 _AC-13472 - [GitHub issue](https://github.com/magento/magento2/issues/36761) - [GitHub code contribution](https://github.com/magento/magento2/pull/38971)_
 
 #### PHP 8.4 Deprecation Errors Causing Build Failures in 2.4-develop
+
+No description available.
 
 _AC-14004 - [GitHub code contribution](https://github.com/magento/magento2/commit/1da9ba6f)_
 
