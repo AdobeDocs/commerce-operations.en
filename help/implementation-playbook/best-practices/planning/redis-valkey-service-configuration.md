@@ -39,6 +39,10 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
+For environment configuration on Cloud infrastructure, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) configuration reference in the _Commerce on Cloud Infrastructure Guide_.
+
+For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) or [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+
 >[!TAB Valkey configuration]
 
 For Valkey, use:
@@ -49,15 +53,15 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
+For environment configuration on cloud infrastructure, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)configuration reference in the _Commerce on Cloud Infrastructure Guide_.
+
+For on-premises installations, see [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+
 >[!ENDTABS]
-
-For environment configuration on Cloud infrastructure, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)configuration reference in the _Commerce on Cloud Infrastructure Guide_.
-
-For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) or [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
 
 >[!NOTE]
 >
->Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
+>For Commerce on Cloud infrastructure environments, verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
 
 
 ### L2 cache memory sizing (Adobe Commerce Cloud)
@@ -120,7 +124,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-See [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+For environment configuration on Commerce Cloud infrastructure, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento:setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
@@ -134,12 +138,15 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
+For environment configuration on Commerce Cloud infrastructure, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+
+For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. See [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+
 >[!ENDTABS]
 
 ## Preload keys
 
 Magento usually loads cache entries from Redis and Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and improves bootstrap performance for those keys.
-
 
 You can identify frequently used keys by monitoring active commands on Redis or Valkey:
 
@@ -147,7 +154,7 @@ You can identify frequently used keys by monitoring active commands on Redis or 
 
 >[!TAB Redis preload key configuration]
 
-List the keys to preload in the `.magento.env.yaml` configuration file.
+The preload keys are configured in the `.magento.env.yaml` configuration file.
 
 ```yaml
 stage:
@@ -166,7 +173,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-For Redis, run:
+To list the keys, run the following command:
 
 ```terminal
 redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
@@ -188,9 +195,7 @@ For on-premises installations, see [Redis preload feature](../../../configuratio
 
 >[!TAB Valkey preload key configuration]
 
-For Valkey, run:
-
-List the keys to preload in the `.magento.env.yaml` configuration file.
+The preload keys are configured in the `.magento.env.yaml` configuration file.
 
 ```yaml
 stage:
@@ -208,6 +213,8 @@ stage:
               - '061_DB_IS_UP_TO_DATE:hash'
               - '061_SYSTEM_DEFAULT:hash'
 ```
+
+To list the keys, run the following command:
 
 ```terminal
 valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
@@ -285,8 +292,8 @@ For on-premises installations, see [Stale cache options](../../../configuration/
 >
 >The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types generally work with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API, for example `$this->cache->save()`, without using a dedicated cache frontend, those entries will also be eligible to serve the previous local value during regeneration.
 >
+>
 >If this causes unexpected behavior in your customizations, keep stale cache disabled on `default` and enable it only for selected cache types, similar to [how it is done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options), but configure it in config.php instead of env.php.
-
 
 ## Separate cache and session instances
 
