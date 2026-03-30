@@ -274,89 +274,89 @@ To separate cache and session instances:
 
 1. Update the `.magento/services.yaml` configuration file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Redis configuration]
+>[!TAB Redis configuration]
 
-   For Redis, use:
+For Redis, use:
 
-   ```yaml
-   mysql:
-     type: mysql:10.4
-     disk: 35000
+```yaml
+mysql:
+  type: mysql:10.4
+  disk: 35000
 
-   redis:
-     type: redis:6.0
+redis:
+  type: redis:6.0
 
-   redis-session: # This is for the new Redis instance
-     type: redis:6.0
+redis-session: # This is for the new Redis instance
+  type: redis:6.0
 
-   search:
-     type: elasticsearch:7.9
-     disk: 5000
+search:
+  type: elasticsearch:7.9
+  disk: 5000
 
-   rabbitmq:
-     type: rabbitmq:3.8
-     disk: 2048
-   ```
+rabbitmq:
+  type: rabbitmq:3.8
+  disk: 2048
+```
 
-   >[!TAB Valkey configuration]
+>[!TAB Valkey configuration]
 
-   For Valkey, use:
+For Valkey, use:
 
-   ```yaml
-   mysql:
-     type: mysql:10.4
-     disk: 35000
+```yaml
+mysql:
+  type: mysql:10.4
+  disk: 35000
 
-   valkey:
-     type: valkey:8.0
+valkey:
+  type: valkey:8.0
 
-   valkey-session: # This is for the new Valkey instance
-     type: valkey:8.0
+valkey-session: # This is for the new Valkey instance
+  type: valkey:8.0
 
-   search:
-     type: elasticsearch:7.9
-     disk: 5000
+search:
+  type: elasticsearch:7.9
+  disk: 5000
 
-   rabbitmq:
-     type: rabbitmq:3.8
-     disk: 2048
-   ```
+rabbitmq:
+  type: rabbitmq:3.8
+  disk: 2048
+```
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Update the `.magento.app.yaml` configuration file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Redis configuration]
+>[!TAB Redis configuration]
 
-   For Redis, use:
+For Redis, use:
 
-   ```yaml
-   relationships:
-     database: "mysql:mysql"
-     redis: "redis:redis"
-     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-     search: "search:elasticsearch"
-     rabbitmq: "rabbitmq:rabbitmq"
-   ```
+```yaml
+relationships:
+  database: "mysql:mysql"
+  redis: "redis:redis"
+  redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+  search: "search:elasticsearch"
+  rabbitmq: "rabbitmq:rabbitmq"
+```
 
-   >[!TAB Valkey configuration]
+>[!TAB Valkey configuration]
 
-   For Valkey, use:
+For Valkey, use:
 
-   ```yaml
-   relationships:
-     database: "mysql:mysql"
-     valkey: "valkey:valkey"
-     valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
-     search: "search:elasticsearch"
-     rabbitmq: "rabbitmq:rabbitmq"
-   ```
+```yaml
+relationships:
+  database: "mysql:mysql"
+  valkey: "valkey:valkey"
+  valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
+  search: "search:elasticsearch"
+  rabbitmq: "rabbitmq:rabbitmq"
+```
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a new Redis or Valkey instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
@@ -392,25 +392,25 @@ To separate cache and session instances:
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis or Valkey cache instance.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Redis configuration]
+>[!TAB Redis configuration]
 
-   For Redis:
+For Redis:
 
-   ```terminal
-   redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-   ```
+```terminal
+redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+```
 
-   >[!TAB Valkey configuration]
+>[!TAB Valkey configuration]
 
-   For Valkey:
+For Valkey:
 
-   ```terminal
-   valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-   ```
+```terminal
+valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+```
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 ## Cache compression
 
