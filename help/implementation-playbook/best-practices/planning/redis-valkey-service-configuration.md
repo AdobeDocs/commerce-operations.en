@@ -100,9 +100,7 @@ stage:
             cleanup_percentage: 90
 ```
 
->[TAB Valkey configuration]
-
-```yaml
+>[!TAB Valkey configuration]
 
 ```yaml
 stage:
@@ -329,36 +327,36 @@ Use the following procedure for your cache service:
 
 1. Update the `.magento/services.yaml` configuration file.
 
-   ```yaml
-   mysql:
-     type: mysql:10.4
-     disk: 35000
+    ```yaml
+    mysql:
+      type: mysql:10.4
+      disk: 35000
 
-   redis:
-     type: redis:6.0
+    redis:
+      type: redis:6.0
 
-   redis-session: # This is for the new Redis instance
-     type: redis:6.0
+    redis-session: # This is for the new Redis instance
+      type: redis:6.0
 
-   search:
-     type: elasticsearch:7.9
-     disk: 5000
+    search:
+      type: elasticsearch:7.9
+      disk: 5000
 
-   rabbitmq:
-     type: rabbitmq:3.8
-     disk: 2048
-   ```
+    rabbitmq:
+      type: rabbitmq:3.8
+      disk: 2048
+    ```
 
 1. Update the `.magento.app.yaml` configuration file.
 
-   ```yaml
-   relationships:
-     database: "mysql:mysql"
-     redis: "redis:redis"
-     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-     search: "search:elasticsearch"
-     rabbitmq: "rabbitmq:rabbitmq"
-   ```
+    ```yaml
+    relationships:
+      database: "mysql:mysql"
+      redis: "redis:redis"
+      redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+      search: "search:elasticsearch"
+      rabbitmq: "rabbitmq:rabbitmq"
+    ```
 
 1. Request a new Redis instance dedicated to sessions on Production and Staging environments.
 
@@ -368,9 +366,9 @@ Use the following procedure for your cache service:
 
 1. Verify that the new instance is running, and note the port number.
 
-   ```bash
-   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
-   ```
+    ```bash
+    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+    ```
 
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
@@ -382,58 +380,58 @@ Use the following procedure for your cache service:
    >
    >Set `disable_locking` to `1` for best performance. In rare cases where race conditions occur due to high concurrent session activity, set it to `0` to enable locking.
 
-   ```yaml
-   SESSION_CONFIGURATION:
-     _merge: true
-     redis:
-       timeout: 5
-       disable_locking: 1
-       bot_first_lifetime: 60
-       bot_lifetime: 7200
-       max_lifetime: 2592000
-       min_lifetime: 60
-   ```
+    ```yaml
+    SESSION_CONFIGURATION:
+      _merge: true
+      redis:
+        timeout: 5
+        disable_locking: 1
+        bot_first_lifetime: 60
+        bot_lifetime: 7200
+        max_lifetime: 2592000
+        min_lifetime: 60
+    ```
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis cache instance.
 
-   ```terminal
-   redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-   ```
+    ```terminal
+    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+    ```
 
 >[!TAB Valkey]
 
 1. Update the `.magento/services.yaml` configuration file.
 
-   ```yaml
-   mysql:
-     type: mysql:10.4
-     disk: 35000
+    ```yaml
+    mysql:
+      type: mysql:10.4
+      disk: 35000
 
-   valkey:
-     type: valkey:8.0
+    valkey:
+      type: valkey:8.0
 
-   valkey-session: # This is for the new Valkey instance
-     type: valkey:8.0
+    valkey-session: # This is for the new Valkey instance
+      type: valkey:8.0
 
-   search:
-     type: elasticsearch:7.9
-     disk: 5000
+    search:
+      type: elasticsearch:7.9
+      disk: 5000
 
-   rabbitmq:
-     type: rabbitmq:3.8
-     disk: 2048
-   ```
+    rabbitmq:
+      type: rabbitmq:3.8
+      disk: 2048
+    ```
 
 1. Update the `.magento.app.yaml` configuration file.
 
-   ```yaml
-   relationships:
-     database: "mysql:mysql"
-     valkey: "valkey:valkey"
-     valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
-     search: "search:elasticsearch"
-     rabbitmq: "rabbitmq:rabbitmq"
-   ```
+    ```yaml
+    relationships:
+      database: "mysql:mysql"
+      valkey: "valkey:valkey"
+      valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
+      search: "search:elasticsearch"
+      rabbitmq: "rabbitmq:rabbitmq"
+    ```
 
 1. Request a new Valkey instance dedicated to sessions on Production and Staging environments.
 
@@ -443,9 +441,9 @@ Use the following procedure for your cache service:
 
 1. Verify that the new instance is running, and note the port number.
 
-   ```bash
-   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
-   ```
+    ```bash
+    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+    ```
 
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
@@ -457,23 +455,23 @@ Use the following procedure for your cache service:
    >
    >Set `disable_locking` to `1` for best performance. In rare cases where race conditions occur due to high concurrent session activity, set it to `0` to enable locking.
 
-   ```yaml
-   SESSION_CONFIGURATION:
-     _merge: true
-     redis: # keep 'redis' even if you are using Valkey.
-       timeout: 5
-       disable_locking: 1
-       bot_first_lifetime: 60
-       bot_lifetime: 7200
-       max_lifetime: 2592000
-       min_lifetime: 60
-   ```
+    ```yaml
+    SESSION_CONFIGURATION:
+      _merge: true
+      redis: # keep 'redis' even if you are using Valkey.
+        timeout: 5
+        disable_locking: 1
+        bot_first_lifetime: 60
+        bot_lifetime: 7200
+        max_lifetime: 2592000
+        min_lifetime: 60
+    ```
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Valkey cache instance.
 
-   ```terminal
-   valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-   ```
+    ```terminal
+    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+    ```
 
 >[!ENDTABS]
 
