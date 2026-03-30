@@ -20,7 +20,7 @@ Use these recommendations to configure Redis or Valkey for Adobe Commerce cachin
 - Enable stale cache
 - Separate cache and session instances
 - Compress the cache with `gzip`
-- Review a Redis configuration example
+- Review a cache configuration examples
 
 
 ## Configure L2 cache
@@ -82,7 +82,11 @@ Adjust the maximum L2 cache memory usage based on your project requirements. Use
 >
 >The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
 
-The following code shows an example configuration in the `.magento.env.yaml` file:
+The following examples show the configuration code in the `.magento.env.yaml` file:
+
+>[!BEGINTABS]
+
+>[!TAB Redis configuration]
 
 ```yaml
 stage:
@@ -95,6 +99,24 @@ stage:
           backend_options:
             cleanup_percentage: 90
 ```
+
+>[TAB Valkey configuration]
+
+```yaml
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+>[!ENDTABS]
 
 Cache requirements vary based on your project configuration and custom third-party code. Size L2 cache memory so that the cache can operate without frequent threshold hits.
 
@@ -299,95 +321,48 @@ For on-premises installations, see [Stale cache options](../../../configuration/
 
 Separate cache and session storage so that you can manage them independently. This separation prevents cache issues from affecting sessions, which can impact revenue. Each Redis or Valkey instance runs on its own core, which improves performance.
 
-To separate cache and session instances:
+Use the following procedure for your cache service:
+
+>[!BEGINTABS]
+
+>[!TAB Redis]
 
 1. Update the `.magento/services.yaml` configuration file.
 
->[!BEGINTABS]
+   ```yaml
+   mysql:
+     type: mysql:10.4
+     disk: 35000
 
->[!TAB Redis configuration]
+   redis:
+     type: redis:6.0
 
-For Redis, use:
+   redis-session: # This is for the new Redis instance
+     type: redis:6.0
 
-```yaml
-mysql:
-  type: mysql:10.4
-  disk: 35000
+   search:
+     type: elasticsearch:7.9
+     disk: 5000
 
-redis:
-  type: redis:6.0
-
-redis-session: # This is for the new Redis instance
-  type: redis:6.0
-
-search:
-  type: elasticsearch:7.9
-  disk: 5000
-
-rabbitmq:
-  type: rabbitmq:3.8
-  disk: 2048
-```
-
->[!TAB Valkey configuration]
-
-For Valkey, use:
-
-```yaml
-mysql:
-  type: mysql:10.4
-  disk: 35000
-
-valkey:
-  type: valkey:8.0
-
-valkey-session: # This is for the new Valkey instance
-  type: valkey:8.0
-
-search:
-  type: elasticsearch:7.9
-  disk: 5000
-
-rabbitmq:
-  type: rabbitmq:3.8
-  disk: 2048
-```
-
->[!ENDTABS]
+   rabbitmq:
+     type: rabbitmq:3.8
+     disk: 2048
+   ```
 
 1. Update the `.magento.app.yaml` configuration file.
 
->[!BEGINTABS]
+   ```yaml
+   relationships:
+     database: "mysql:mysql"
+     redis: "redis:redis"
+     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+     search: "search:elasticsearch"
+     rabbitmq: "rabbitmq:rabbitmq"
+   ```
 
->[!TAB Redis configuration]
+1. Request a new Redis instance dedicated to sessions on Production and Staging environments.
 
-For Redis, use:
-
-```yaml
-relationships:
-  database: "mysql:mysql"
-  redis: "redis:redis"
-  redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-  search: "search:elasticsearch"
-  rabbitmq: "rabbitmq:rabbitmq"
-```
-
->[!TAB Valkey configuration]
-
-For Valkey, use:
-
-```yaml
-relationships:
-  database: "mysql:mysql"
-  valkey: "valkey:valkey"
-  valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
-  search: "search:elasticsearch"
-  rabbitmq: "rabbitmq:rabbitmq"
-```
-
->[!ENDTABS]
-
-1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a new Redis or Valkey instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
    This update does not cause any downtime, but it requires a deployment to activate the new service.
 
@@ -401,7 +376,82 @@ relationships:
 
    >[!IMPORTANT]
    >
-   >Configure the Redis or Valkey session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` Redis or Valkey session service definition.
+   >Configure the Redis session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` Redis session service definition.
+
+   >[!NOTE]
+   >
+   >Set `disable_locking` to `1` for best performance. In rare cases where race conditions occur due to high concurrent session activity, set it to `0` to enable locking.
+
+   ```yaml
+   SESSION_CONFIGURATION:
+     _merge: true
+     redis:
+       timeout: 5
+       disable_locking: 1
+       bot_first_lifetime: 60
+       bot_lifetime: 7200
+       max_lifetime: 2592000
+       min_lifetime: 60
+   ```
+
+1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis cache instance.
+
+   ```terminal
+   redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
+
+>[!TAB Valkey]
+
+1. Update the `.magento/services.yaml` configuration file.
+
+   ```yaml
+   mysql:
+     type: mysql:10.4
+     disk: 35000
+
+   valkey:
+     type: valkey:8.0
+
+   valkey-session: # This is for the new Valkey instance
+     type: valkey:8.0
+
+   search:
+     type: elasticsearch:7.9
+     disk: 5000
+
+   rabbitmq:
+     type: rabbitmq:3.8
+     disk: 2048
+   ```
+
+1. Update the `.magento.app.yaml` configuration file.
+
+   ```yaml
+   relationships:
+     database: "mysql:mysql"
+     valkey: "valkey:valkey"
+     valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
+     search: "search:elasticsearch"
+     rabbitmq: "rabbitmq:rabbitmq"
+   ```
+
+1. Request a new Valkey instance dedicated to sessions on Production and Staging environments.
+
+   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+
+   This update does not cause any downtime, but it requires a deployment to activate the new service.
+
+1. Verify that the new instance is running, and note the port number.
+
+   ```bash
+   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+   ```
+
+1. Add the port number to the `.magento.env.yaml` configuration file.
+
+   >[!IMPORTANT]
+   >
+   >Configure the Valkey session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` Valkey session service definition.
 
    >[!NOTE]
    >
@@ -419,25 +469,11 @@ relationships:
        min_lifetime: 60
    ```
 
-1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis or Valkey cache instance.
+1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Valkey cache instance.
 
->[!BEGINTABS]
-
->[!TAB Redis configuration]
-
-For Redis:
-
-```terminal
-redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-```
-
->[!TAB Valkey configuration]
-
-For Valkey:
-
-```terminal
-valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-```
+   ```terminal
+   valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
 
 >[!ENDTABS]
 
@@ -522,9 +558,13 @@ These settings can reduce intermittent connection and read-timeout errors during
 >
 >These settings can help with brief congestion, but they do not fix persistent overload.
 
-## Review a Redis configuration example
+## Review configuration examples
 
-Use the following example as a starting point for a Redis-based configuration.
+Use the following examples as a starting point for your Redis or Valkey cache service:
+
+>[!BEGINTABS]
+
+>[!TAB Redis configuration example]
 
 ```yaml
 stage:
@@ -550,6 +590,37 @@ stage:
               read_timeout: 10
               retry_reads_on_master: 1        # Required for split architecture
 ```
+
+>[!TAB Valkey configuration example]
+
+<!--TO DO- Verify example:-->
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    VALKEY_USE_SLAVE_CONNECTION: true # Enables the replica connection logic in Magento.
+    VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '001_' # Any prefix is fine, but keep it consistent.
+          backend_options:
+            use_stale_cache: true             # Enables stale cache feature
+            connect_retries: 3                # Number of connection retries
+            preload_keys:                     # Preload keys at backend_options level (official Adobe placement)
+              - '001_EAV_ENTITY_TYPES:hash'   # Bootstrap: entity types
+              - '001_GLOBAL_PLUGIN_LIST:hash' # Bootstrap: DI plugin list
+              - '001_DB_IS_UP_TO_DATE:hash'   # Bootstrap: schema version
+              - '001_SYSTEM_DEFAULT:hash'     # Config: system defaults
+              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
+            remote_backend_options:
+              read_timeout: 10
+              retry_reads_on_master: 1        # Required for split architecture
+```
+
+>[!ENDTABS]
 
 ## Additional information
 
