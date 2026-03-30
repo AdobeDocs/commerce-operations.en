@@ -51,9 +51,9 @@ stage:
 
 >[!ENDTABS]
 
-For environment configuration on Cloud infrastructure, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
+For environment configuration on Cloud infrastructure, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)configuration reference in the _Commerce on Cloud Infrastructure Guide_.
 
-For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) or [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
 
 >[!NOTE]
 >
@@ -120,6 +120,10 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
+See [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+
+For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento:setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+
 >[!TAB Valkey configuration]
 
 For Valkey, use:
@@ -132,13 +136,16 @@ stage:
 
 >[!ENDTABS]
 
-See [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
-
-For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento:setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
-
 ## Preload keys
 
 Magento usually loads cache entries from Redis and Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and improves bootstrap performance for those keys.
+
+
+You can identify frequently used keys by monitoring active commands on Redis or Valkey:
+
+>[!BEGINTABS]
+
+>[!TAB Redis preload key configuration]
 
 List the keys to preload in the `.magento.env.yaml` configuration file.
 
@@ -159,12 +166,6 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-You can identify frequently used keys by monitoring active commands on Redis or Valkey:
-
->[!BEGINTABS]
-
->[!TAB Redis preload key configuration]
-
 For Redis, run:
 
 ```terminal
@@ -183,9 +184,30 @@ This log lists the keys you can preload. To see the content of a key, run the fo
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
+For on-premises installations, see [Redis preload feature](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in the _Configuration Guide_.
+
 >[!TAB Valkey preload key configuration]
 
 For Valkey, run:
+
+List the keys to preload in the `.magento.env.yaml` configuration file.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
+          backend_options:
+            preload_keys: # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
 
 ```terminal
 valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
@@ -203,9 +225,9 @@ This log lists the keys you can preload. To see the content of a key, run the fo
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
->[!ENDTABS]
+For on-premises installations, see [Valkey preload feature](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) in the _Configuration Guide_.
 
-For on-premises installations, see [Redis preload feature](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in the _Configuration Guide_.
+>[!ENDTABS]
 
 ## Enable stale cache
 
