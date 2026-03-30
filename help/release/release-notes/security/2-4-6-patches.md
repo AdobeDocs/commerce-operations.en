@@ -286,4 +286,4 @@ Platform upgrades for this release improve compliance with the latest security b
 
   This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). For details, see the [B2B release notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
 
-<!-- Last updated from includes: 2026-02-20 15:30:03 -->
+<!-- Last updated from includes: 2026-03-19 11:29:47 -->
