@@ -2,7 +2,7 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Mar 20 15:39:50 2026
+updated: Mon Mar 30 10:21:55 2026
 entries:
 - description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69319:
     Bundle prices were not indexed properly when child products had stock under custom
