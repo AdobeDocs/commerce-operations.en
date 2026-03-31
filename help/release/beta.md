@@ -7,7 +7,7 @@ badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/
 ---
 # Adobe Commerce beta releases
 
-Adobe Commerce beta programs are a way for merchants to get access to prerelease features and code, provide feedback, and guide the future of Adobe Commerce. There are two types of beta programs:
+Beta programs for [Adobe Commerce product solutions](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions) are a way for merchants to get access to prerelease features and code, provide feedback, and guide the future of Adobe Commerce. There are two types of beta programs:
 
 - Public Beta: A public beta program is available to all Adobe Commerce customers and partners
 - Private Beta: A private beta program may require an approval based on qualifying criteria to participate
