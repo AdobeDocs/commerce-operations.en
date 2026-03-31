@@ -56,7 +56,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration on cloud infrastructure, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)configuration reference in the _Commerce on Cloud Infrastructure Guide_.
+For environment configuration on cloud infrastructure, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuration reference in the _Commerce on Cloud Infrastructure Guide_.
 
 For on-premises installations, see [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
 
@@ -145,7 +145,7 @@ stage:
 
 For environment configuration on Commerce Cloud infrastructure, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
-For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento:setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
 >[!TAB Valkey configuration]
 
@@ -159,7 +159,7 @@ stage:
 
 For environment configuration on Commerce Cloud infrastructure, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
-For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. See [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento setup` commands. See [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
 
 >[!ENDTABS]
 
@@ -472,6 +472,7 @@ Follow the steps below to provision a dedicated instance for sessions:
    rabbitmq:
      type: rabbitmq:3.8
      disk: 2048
+   ```
 
 1. Update the `.magento.app.yaml` configuration file.
 
@@ -528,7 +529,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 1. Update the `.magento/services.yaml` configuration file.
 
-```yaml
+   ```yaml
    mysql:
      type: mysql:10.4
      disk: 35000
@@ -546,6 +547,7 @@ Follow the steps below to provision a dedicated instance for sessions:
    rabbitmq:
      type: rabbitmq:3.8
      disk: 2048
+   ```
 
 1. Update the `.magento.app.yaml` configuration file.
 
@@ -568,6 +570,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+   ```
 
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
@@ -589,6 +592,7 @@ Follow the steps below to provision a dedicated instance for sessions:
        bot_lifetime: 7200
        max_lifetime: 2592000
        min_lifetime: 60
+   ```
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Valkey cache instance.
 
