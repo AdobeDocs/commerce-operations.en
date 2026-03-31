@@ -134,9 +134,9 @@ Enable a replica connection in the `.magento.env.yaml` file to let Magento read 
 
 >[!NOTE]
 >
->In Redis terminology, *replica* replaces *slave*. Redis states that, starting with Redis 5, the project no longer uses the word *slave* except for backward compatibility and recommends using `REPLICAOF` instead of `SLAVEOF`. The `SLAVEOF` command continues to work for backward compatibility. See the Redis [SLAVEOF command reference](https://redis.io/docs/latest/commands/SLAVEOF/).
+>In Redis terminology, *replica* replaces *slave*. Redis states that, starting with Redis 5, the project no longer uses the word *slave* except for backward compatibility.
 >
->Adobe Commerce still uses the legacy deployment variable names `REDIS_USE_SLAVE_CONNECTION` and `VALKEY_USE_SLAVE_CONNECTION`, but these variables configure a replica connection.
+>Adobe Commerce still uses the legacy deployment variable names `REDIS_USE_SLAVE_CONNECTION` and `VALKEY_USE_SLAVE_CONNECTION` to configure the connection.
 
 >[!BEGINTABS]
 
