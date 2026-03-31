@@ -475,13 +475,14 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 1. Update the `.magento.app.yaml` configuration file.
 
-```yaml
-   relationships:
-     database: "mysql:mysql"
-     redis: "redis:redis"
-     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-     search: "search:elasticsearch"
-     rabbitmq: "rabbitmq:rabbitmq"
+   ```yaml
+      relationships:
+        database: "mysql:mysql"
+        redis: "redis:redis"
+        redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+        search: "search:elasticsearch"
+        rabbitmq: "rabbitmq:rabbitmq"
+   ```
 
 1. Request a new Redis instance dedicated to sessions on Production and Staging environments.
 
@@ -493,6 +494,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+   ```
 
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
@@ -514,11 +516,13 @@ Follow the steps below to provision a dedicated instance for sessions:
        bot_lifetime: 7200
        max_lifetime: 2592000
        min_lifetime: 60
+   ```
 
 1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis cache instance.
 
    ```terminal
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
 
 >[!TAB Valkey]
 
@@ -552,6 +556,7 @@ Follow the steps below to provision a dedicated instance for sessions:
      valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
      search: "search:elasticsearch"
      rabbitmq: "rabbitmq:rabbitmq"
+   ```
 
 1. Request a new Valkey instance dedicated to sessions on Production and Staging environments.
 
@@ -589,6 +594,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
 
 >[!ENDTABS]
 
