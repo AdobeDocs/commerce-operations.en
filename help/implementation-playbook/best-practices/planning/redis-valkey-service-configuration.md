@@ -308,7 +308,7 @@ For on-premises installations, see [Stale cache options](../../../configuration/
 >The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types generally work as expected with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API (for example `$this->cache->save()`) without a dedicated cache frontend, those entries can also serve stale values during regeneration.
 >
 >
->If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as is commonly [done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options). In this case, configure the setting in `config.php` instead of `env.php`.
+>If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as is commonly [done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options).
 
 ### Enabling stale cache per cache type individually
 
