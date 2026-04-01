@@ -22,6 +22,8 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 ## 2.4.5-p16
 
+{{extended-support}}
+
 The Adobe Commerce 2.4.5-p16 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
@@ -45,6 +47,8 @@ Due to the end-of-support risk associated with RabbitMQ 4, Adobe Commerce has in
 Adobe Commerce 2.4.5-p16 has been verified for compatibility with MariaDB 10.11, while continuing to fully support MariaDB 10.6. Merchants currently running 2.4.5-px can safely upgrade to 2.4.5-p16 and transition from MariaDB 10.6 to MariaDB 10.11.
 
 ## 2.4.5-p15
+
+{{extended-support}}
 
 The Adobe Commerce 2.4.5-p15 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
 
