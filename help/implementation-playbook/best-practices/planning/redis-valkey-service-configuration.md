@@ -63,18 +63,14 @@ For on-premises installations, see [Configure Valkey](../../../configuration/cac
 >[!ENDTABS]
 
 
-### L2 cache memory sizing (Adobe Commerce Cloud)
+### L2 cache memory sizing for Adobe Commerce Cloud
 
-L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Unlike specialized key-value database systems, a temporary file system does not have a key eviction policy to control memory usage.
+L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) as its storage mechanism. Unlike specialized key-value stores, tmpfs has no key eviction policy, so memory usage can grow unbounded. To prevent exhaustion, Adobe Commerce automatically clears the L2 storage when usage reaches a configurable threshold (95% by default). You can control memory consumption by requesting a larger `/dev/shm` mount or by lowering the cleanup threshold.
 
-The lack of memory usage control can cause the L2 cache memory usage to grow over time.
+Adjust the maximum L2 cache memory usage based on your project requirements. Use one of the following methods:
 
-To avoid memory exhaustion of L2 cache implementations, Adobe Commerce clears the storage when a certain threshold is reached. The default threshold value is 95%.
-
-Adjust the maximum L2 cache memory usage based on your project requirements. Use one of the following methods to configure cache memory sizing:
-
-- Create a support ticket to request size changes of the `/dev/shm` mount. In this case, we recommend setting the size of `/dev/shm` to 15 GB.
-- Adjust the `cleanup_percentage` property at the application level to cap the maximum filling percentage of the storage. The remaining free memory can be used by other services.
+- Create a support ticket to adjust the `/dev/shm` mount size. For this scenario, Adobe recommends setting the `/dev/shm` mount size to 15 GB.
+- Adjust the `cleanup_percentage` property at the application level to cap storage usage and free memory available for other services.
    You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
 
 >[!NOTE]
@@ -127,7 +123,7 @@ df -h /dev/shm
 
 Usage can vary across nodes, but it should converge to a similar value.
 
-## Enable Redis or Valkey slave connection
+## Enable slave connection
 
 Enable the slave connection in the `.magento.env.yaml` file to let Adobe Commerce use an additional read-only cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
 
@@ -257,7 +253,7 @@ For on-premises installations, see [Valkey preload feature](../../../configurati
 
 ## Enable stale cache
 
-Stale cache is an L2 cache feature of `RemoteSynchronizedCache`. When enabled, Magento can serve an existing local cache value from /dev/shm while another request is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
+Stale cache is an L2 cache feature of `RemoteSynchronizedCache`. When enabled, Adobe Commerce can serve an existing local cache value from `/dev/shm` while another request is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
 
 ### How it works
 
@@ -309,10 +305,10 @@ For on-premises installations, see [Stale cache options](../../../configuration/
 
 >[!WARNING]
 >
->The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types generally work with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API, for example `$this->cache->save()`, without using a dedicated cache frontend, those entries will also be eligible to serve the previous local value during regeneration.
+>The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types generally work as expected with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API (for example `$this->cache->save()`) without a dedicated cache frontend, those entries can also serve stale values during regeneration.
 >
 >
->If this causes unexpected behavior in your customizations, keep stale cache disabled on `default` and enable it only for selected cache types, similar to [how it is done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options), but configure it in config.php instead of env.php.
+>If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as is commonly [done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options). In this case, configure the setting in `config.php` instead of `env.php`.
 
 ### Enabling stale cache per cache type individually
 
@@ -320,7 +316,7 @@ You can enable stale cache only for selected cache types by defining a dedicated
 
 To work correctly, the custom frontend must be defined as a complete frontend under `CACHE_CONFIGURATION.frontend`. Defining only `use_stale_cache: true` for a new frontend name is not enough.
 
-Example:
+**Example configurations**
 
 >[!BEGINTABS]
 
@@ -342,6 +338,7 @@ stage:
 
         # Now, create a new frontend called 'stale_cache_enabled'.
         # It must contain the same backend connection settings as the frontend 'default':
+
         stale_cache_enabled:
           id_prefix: '001_'
           backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
@@ -360,9 +357,9 @@ stage:
             local_backend_options:
               cache_dir: /dev/shm/
             use_stale_cache: true # stale cache here is enabled
- 
+
       # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
-  
+
       type:
         default:
           frontend: default
@@ -439,12 +436,12 @@ stage:
 
 >[!NOTE]
 >
->If the source frontend is configured with additional backend options like compression, retries, preload keys, or other tuning values, copy those options to `stale_cache_enabled` so the new frontend maintains the same behavior.
+>If the source frontend is configured with additional backend options like compression, retries, preload keys, or other tuning values, copy those options to `stale_cache_enabled` so that the new frontend maintains the same behavior.
 
 
 ## Separate cache and session instances
 
-Separating the cache from the sessions allows you to manage them independently. It reduces contention between cache and session traffic, prevents cache-related pressure from affecting sessions, and allows each Redis or Valkey instance to be sized and tuned for their own workload.
+Separating the cache from the sessions allows you to manage them independently. It reduces contention between cache and session traffic, prevents cache-related pressure from affecting sessions, and allows each Redis or Valkey instance to be sized and tuned for its own workload.
 
 Follow the steps below to provision a dedicated instance for sessions:
 
@@ -620,7 +617,7 @@ stage:
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
 
-## Enable Redis or Valkey asynchronous freeing
+## Enable asynchronous freeing
 
 To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting that the following Redis or Valkey configuration be applied to your environments:
 
@@ -640,15 +637,15 @@ When `lazyfree` is enabled, Redis or Valkey offloads memory reclamation to backg
 
 >[!WARNING]
 >
->Because freeing occurs in the background, memory used by deleted, expired, or evicted keys remains allocated until background threads complete the work. If your Redis instance is already under tight memory pressure, test cautiously and consider reducing memory pressure first. For example, disable Block cache for specific cases and separate cache and session Redis instances as described above.
+>Because freeing occurs in the background, memory used by deleted, expired, or evicted keys remains allocated until background threads complete the work. If your Redis or Valkey instance is already under tight memory pressure, test cautiously and consider reducing memory pressure first. For example, disable Block cache for specific cases and separate cache and session Redis instances as described above.
 
-## Enable Redis multithreaded I/O
+## Enable multithreaded I/O
 
-To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the configuration below. This can improve throughput by offloading socket reads/writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the I/O threading configuration below. This configuration can improve throughput by offloading socket reads and writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
 
 >[!BEGINTABS]
 
->[!TAB Configure stale cache for Redis]
+>[!TAB Configure I/O threads for Redis]
 
 For Redis:
 
@@ -657,7 +654,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB Configure stale cache for Valkey]
+>[!TAB Configure I/O threads for Valkey]
 
 For Valkey:
 
@@ -679,9 +676,9 @@ events-per-io-thread 2
 >Enabling I/O threads can increase CPU usage and does not benefit every workload. Start with a conservative value and benchmark. If latency rises or CPU saturates, reduce `io-threads` or disable reads in I/O threads.
 
 
-## Increase Redis or Valkey client timeouts and retries
+## Increase client timeouts and retries
 
-Increase the cache client's tolerance to short periods of saturation by adjusting the backend options in `.magento.env.yaml`.
+Increase the Redis or Valkey cache client's tolerance to short periods of saturation by adjusting the backend options in `.magento.env.yaml`.
 
 ```yaml
 stage:
@@ -707,7 +704,7 @@ These settings can reduce intermittent connection and read-timeout errors during
 Use the following examples as a starting point for your Redis or Valkey service configurations.
 
 
-### Configuration with all best practice recommendations applied
+### Apply all best practice recommendations
 
 >[!BEGINTABS]
 
@@ -762,7 +759,7 @@ stage:
 stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
-    VALEKY_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
+    VALKEY_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
     VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
     CACHE_CONFIGURATION:
       _merge: true
@@ -801,7 +798,7 @@ stage:
 
 >[!ENDTABS]
 
-### Configuration with all best practices recommendations applied and stale cache separated by cache type
+### Apply all best practice recommendations and separate stale cache by cache type
 
 >[!BEGINTABS]
 
