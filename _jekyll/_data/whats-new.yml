@@ -1448,7 +1448,7 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration)
+- description: Added [guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
     for enabling stale cache on cloud via config.php; new sections on Redis lazyfree
     and multithreaded I/O (requestable via Support); clarified session Redis example;
     and added client timeout/retry guidance with an explicit overload caveat.
@@ -5081,7 +5081,7 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     for Adobe Commerce on cloud infrastructure.
   versions: ''
   type: major-update
@@ -5797,7 +5797,7 @@ entries:
   labels:
   - major-update
   - 2.4.6
-- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     with information about separating the cache from the session and using compression.
   versions: ''
   type: major-update
