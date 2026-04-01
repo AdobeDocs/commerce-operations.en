@@ -17,6 +17,7 @@ labels:
     - technical
     - qpt
     - feedback
+    - release-notes
 
 # Format of output file
 output_format:
