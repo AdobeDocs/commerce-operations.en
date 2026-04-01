@@ -31,7 +31,7 @@ where
 |session-save-redis-port|port|Redis server listen port.|6379|
 |session-save-redis-password|password|Specifies a password if your Redis server requires authentication.|empty|
 |session-save-redis-timeout|timeout|Connection timeout, in seconds.|2.5|
-|session-save-redis-persistent-id|persistent_identifier|Unique string to enable persistent connections (for example, sess-db0).<br>[Known issues with phpredis and php-fpm](https://github.com/phpredis/phpredis/issues/70).|
+|session-save-redis-persistent-id|persistent_identifier|Unique string to enable persistent connections (for example, sess-db0).<br>[Known issues with phpredis and php-fpm](https://github.com/phpredis/phpredis/issues/70).||
 |session-save-redis-db|database|Unique Redis database number, which is recommended to protect against data loss.<br><br>**Important**: If you use Redis for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2.|0|
 |session-save-redis-compression-threshold|compression_threshold|Set to 0 to disable compression (recommended when `suhosin.session.encrypt = On`).<br>[Known issue with strings of more than 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18).|2048|
 |session-save-redis-compression-lib|compression_library|Options: gzip, lzf, lz4 or snappy.|gzip|

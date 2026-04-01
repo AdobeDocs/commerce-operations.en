@@ -8,6 +8,42 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+>[!IMPORTANT]
+>
+>MySQL 8.0 will reach End of Support (EOS) starting April 30, 2026.
+>
+>Following this date Adobe Commerce 2.4.5 will not provide compatibility or
+>support for any MySQL versions released after MySQL 8.0. Adobe will not
+>validate or provide support for newer MySQL major versions on this Adobe
+>Commerce release line.
+>
+>All Adobe Commerce on-premises customers running versions 2.4.5 are strongly
+>advised to migrate their database servers to a compatible MariaDB version.
+
+## 2.4.5-p16
+
+The Adobe Commerce 2.4.5-p16 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### Compatibility with Apache ActiveMQ Artemis
+
+Due to the end-of-support risk associated with RabbitMQ 4, Adobe Commerce has initiated a strategic migration to Apache ActiveMQ Artemis to ensure long-term stability and support for its message queue infrastructure.
+
+* Adobe Commerce 2.4.5 now supports the latest version of Apache ActiveMQ Artemis.
+* Compatibility with RabbitMQ 4.1 is retained to support customers who prefer to stay on the existing MQ service.
+* ActiveMQ is now fully supported on Adobe Commerce Cloud, including AWS ActiveMQ for Cloud Native deployments.
+
+#### 2.4.5-p16 compatibility with MariaDB 10.11
+
+Adobe Commerce 2.4.5-p16 has been verified for compatibility with MariaDB 10.11, while continuing to fully support MariaDB 10.6. Merchants currently running 2.4.5-px can safely upgrade to 2.4.5-p16 and transition from MariaDB 10.6 to MariaDB 10.11.
+
 ## 2.4.5-p15
 
 The Adobe Commerce 2.4.5-p15 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
@@ -224,4 +260,4 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 One of the security bug fixes included the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2025-10-22 11:16:25 -->
+<!-- Last updated from includes: 2026-03-19 11:29:47 -->
