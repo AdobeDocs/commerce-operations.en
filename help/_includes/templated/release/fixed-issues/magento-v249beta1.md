@@ -143,7 +143,7 @@ _ACP2E-4227 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Prior to the fix you were allowed to create gift card products that did not include an amount in global scope. With the fix, a validation has been added that checks for amounts in global scope.
 
-_ACP2E-4395 - [GitHub issue](https://mcstaging.panini.it/shp_ita_it/)_
+_ACP2E-4395_
 
 ### APIs, Cart & Checkout
 
@@ -389,7 +389,7 @@ _AC-14266 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 Adobe Commerce now successfully sends registration emails when a custom return-path address is configured for SMTP. Previously, on vanilla Adobe Commerce 2.4.8 with system/smtp/set_return_path set to 2 and system/smtp/return_path_email set to a custom address, customer registration completed but the registration email was not sent, and Adobe Commerce logged this error: Symfony\Component\Mime\Exception\LogicException: The "Sender" header must be an instance of "Symfony\Component\Mime\Header\MailboxHeader" (got "Symfony\Component\Mime\Header\MailboxListHeader").
 
-_AC-14520 - [GitHub issue](https://github.com/magento/magento2/issues/39823) - [GitHub code contribution](https://github.com/magento/magento2/commit/1e14bd72) - [GitHub code contribution](https://github.com/magento/magento2/commit/1514117f)_
+_AC-14520 - [GitHub issue](https://github.com/magento/magento2/issues/39823) - [GitHub code contribution](https://github.com/magento/magento2/commit/1e14bd72)_
 
 #### Refresh order doesn't get latest custom attribute data
 
@@ -434,7 +434,7 @@ Admin users can now simultaneously delete multiple tax rates from the Admin Tax 
 
 _AC-2238 - [GitHub issue](https://github.com/magento/magento2/issues/33399) - [GitHub code contribution](https://github.com/magento/magento2/pull/33484) - [GitHub code contribution](https://github.com/magento/magento2/commit/5cd64dd0)_
 
-#### Hover colour not applied on static grids in admin
+#### Hover color not applied on static grids in admin
 
 Hover colors are now applied as expected on the rows of Admin static grids.[GitHub-35358](https://github.com/magento/magento2/issues/35358)
 
@@ -492,13 +492,13 @@ _ACP2E-4044 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Birthday filter and column will use the unified format M/d/y, same as "Customer Since" filter/column
 
-_ACP2E-4052 - [GitHub issue](https://stg1.navi-online.kakuyasu.co.jp/adminCgWN7zCh/admin/system_account/index/key/d6fdbee50ff25178d1fef981ec823c5e82e8cee6959717790031bb900c4d6633/) - [GitHub code contribution](https://github.com/magento/magento2/commit/52f46328)_
+_ACP2E-4052 - [GitHub code contribution](https://github.com/magento/magento2/commit/52f46328)_
 
 #### White Blocks Appearing on Both Sides of Admin Grid Header
 
 Fixed visual alignment issue in admin grids. Previously, when scrolling horizontally through product grids in the admin panel, white blocks would appear misaligned on the left and right sides of the grid header. The grid header elements now maintain proper vertical alignment when scrolling, providing a cleaner visual experience for administrators managing large product catalogs.
 
-_ACP2E-4104 - [GitHub issue](https://mcprod.pap-store.acer.com/index.html)_
+_ACP2E-4104_
 
 #### Ui component fileUploader not working correctly on 2.4.8-p1/ 2.4-develop
 
@@ -546,7 +546,7 @@ _ACP2E-4336 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Fixed the issue when System Configuration fields could render enabled after page load, despite "Use Default/Website" being checked.
 
-_ACP2E-4337 - [GitHub issue](https://mcstaging.pap-store.acer.com) - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
+_ACP2E-4337 - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
 
 #### Admin dashboard order graph animates into final size
 
@@ -791,13 +791,13 @@ _ACP2E-3493 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### "Something went wrong" error on checkout for inactive company
 
-Prior to the fix, the logout action was not being completed properly on the cart page, if the longged in user company was no longer enabled. Now, if the company is no longer available, the logout is performed properly.
+Prior to the fix, the logout action was not being completed properly on the cart page, if the logged in user company was no longer enabled. Now, if the company is no longer available, the logout is performed properly.
 
 _ACP2E-3541 - [GitHub code contribution](https://github.com/magento/magento2/commit/df92debe)_
 
 #### Addresses selection is not saved when we "Check Out with Multiple Addresses"
 
-Prior to the fix when cancelling the multishipping option, the address was not preselected when reverting back to multshipping. Now, the default address is replaced with one of the selections made within the multishipping screen.
+Prior to the fix when cancelling the multishipping option, the address was not preselected when reverting back to multishipping. Now, the default address is replaced with one of the selections made within the multishipping screen.
 
 _ACP2E-3646 - [GitHub code contribution](https://github.com/magento/magento2/commit/6ea61121)_
 
@@ -841,7 +841,7 @@ _ACP2E-4223 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Fixed the Bundle product price issue on the cart page for multiple-currency stores
 
-_ACP2E-4245 - [GitHub issue](https://www.techbuyer.com/) - [GitHub code contribution](https://github.com/magento/magento2/commit/cbca0396)_
+_ACP2E-4245 - [GitHub code contribution](https://github.com/magento/magento2/commit/cbca0396)_
 
 #### Manage Shopping Cart store scope issues
 
@@ -890,7 +890,7 @@ _ACP2E-3885 - [GitHub code contribution](https://github.com/magento/magento2/com
 Selecting a store during checkout using "Pick in Store" no longer fails due to long URLs when many products are in the cart.
 Previously, this triggered a 414 error caused by excessively long URLs generated during store selection, preventing customers from completing checkout.
 
-_ACP2E-4266 - [GitHub issue](https://mcstaging.casamyers.com.mx/) - [GitHub code contribution](https://github.com/magento/inventory/commit/ae1f272f)_
+_ACP2E-4266 - [GitHub code contribution](https://github.com/magento/inventory/commit/ae1f272f)_
 
 ### Cart & Checkout, Promotion
 
@@ -898,7 +898,7 @@ _ACP2E-4266 - [GitHub issue](https://mcstaging.casamyers.com.mx/) - [GitHub code
 
 Restricted the Gift Card balance check with the assigned Website Scope.
 
-_ACP2E-4379 - [GitHub issue](https://www.panini.it)_
+_ACP2E-4379_
 
 ### Cart & Checkout, Security
 
@@ -906,7 +906,7 @@ _ACP2E-4379 - [GitHub issue](https://www.panini.it)_
 
 Previous to the fix mixins would not have loaded in cart and checkout when minify and bundling enabled. After the fix, all mixins should load as expected.
 
-_ACP2E-4128 - [GitHub issue](https://ansg.integration-5ojmyuq-f46gejjrfa7be.ap-3.magentosite.cloud/) - [GitHub code contribution](https://github.com/magento/magento2/commit/e457c5e2)_
+_ACP2E-4128 - [GitHub code contribution](https://github.com/magento/magento2/commit/e457c5e2)_
 
 ### Cart & Checkout, Shipping
 
@@ -983,7 +983,7 @@ This behavior is consistent with Magento's default design, where price scope is 
 
 _AC-13857 - [GitHub issue](https://github.com/magento/magento2/issues/33559)_
 
-#### [\Magento\ConfigurableProduct\Model\Product\Type\Configurable] PHP error unoticed
+#### [\Magento\ConfigurableProduct\Model\Product\Type\Configurable] PHP error unnoticed
 
 Changed a loop variable name to correctly add the "_cache_instance_product_ids" data on the given product to be used on subsequent calls.
 
@@ -991,7 +991,7 @@ _AC-14159 - [GitHub issue](https://github.com/magento/magento2/issues/39641) - [
 
 #### Elastic Search interferes with the default sort order of products (changing newest first to oldest first)
 
-The Sytem now sorts The newest products in the database (the one with the highest entity_id) are shown first
+The system now sorts The newest products in the database (the one with the highest entity_id) are shown first
 
 _AC-14411 - [GitHub issue](https://github.com/magento/magento2/issues/31043) - [GitHub code contribution](https://github.com/magento/magento2/pull/36900)_
 
@@ -1170,11 +1170,11 @@ _ACP2E-4136 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### [Cloud] Errors with duplicate entries (temp_category_descendants_%)
 
-Fixed issue with duplicate entries during creation scheduled updates for enviroments with high number of nested categories
+Fixed issue with duplicate entries during creation scheduled updates for environments with high number of nested categories
 
 _ACP2E-4159 - [GitHub code contribution](https://github.com/magento/magento2/commit/a1c57b2e)_
 
-#### [CLOUD] Compare Products Count missmatch Issue for different stores
+#### [CLOUD] Compare Products Count mismatch Issue for different stores
 
 Compare product list now works correctly after switching to another storeview
 
@@ -1504,7 +1504,7 @@ _AC-15336 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 ### Framework
 
-#### Compling code of disabled module.
+#### Compiling code of disabled module
 
 This pull request escape disabled modules before code compilation.
 
@@ -1527,7 +1527,7 @@ _AC-11578 - [GitHub issue](https://github.com/magento/magento2/issues/38501) - [
 
 #### Website/Group/Store entity form can't be extended with multiple value form element for extension attributes
 
-This PR allowes multivalue form elements to submit data to website/group/store form.
+This PR allows multivalue form elements to submit data to website/group/store form.
 
 _AC-11657 - [GitHub issue](https://github.com/magento/magento2/issues/24070) - [GitHub code contribution](https://github.com/magento/magento2/pull/24094)_
 
@@ -1614,7 +1614,7 @@ _AC-13719 - [GitHub issue](https://github.com/magento/magento2/issues/39456) - [
 
 #### [Issue] [PHPDOC] Fix bad phpdoc for Magento\Framework\Message\ManagerInterface
 
-This PR fixes the bad phpdoc for \Magento\Framework\Message\ManagerInterface and remove all duplicate phpdoc in \Magento\Framework\Message\Manager (use inheritdoc syntaxe).
+This PR fixes the bad phpdoc for \Magento\Framework\Message\ManagerInterface and remove all duplicate phpdoc in \Magento\Framework\Message\Manager (use inheritdoc syntax).
 
 _AC-14312 - [GitHub issue](https://github.com/magento/magento2/issues/39593) - [GitHub code contribution](https://github.com/magento/magento2/pull/39153)_
 
@@ -1643,7 +1643,7 @@ AC-14567
 
 _AC-14567 - [GitHub code contribution](https://github.com/magento/magento2/commit/ae6f305b)_
 
-#### [Issue] Avoid lots of uncessary exceptions during layout XML merge loading
+#### [Issue] Avoid lots of unnecessary exceptions during layout XML merge loading
 
 This PR introduce a new function (for B/C compat we don't overwrite the protected _loadXmlString) to load and not throw an exception
 
@@ -1693,7 +1693,7 @@ SMTP email sending with TLS now works as expected.
 Previously, sending emails via SMTP with TLS resulted in the error: error:1408F10B:SSL routines:ssl3_get_record:wrong version number.
 AC-14883
 
-_AC-14883 - [GitHub issue](https://github.com/magento/magento2/issues/39947) - [GitHub code contribution](https://github.com/magento/magento2/commit/3717e6cb) - [GitHub code contribution](https://github.com/magento/magento2/commit/8b453942) - [GitHub code contribution](https://github.com/magento/magento2/commit/d3ea191d)_
+_AC-14883 - [GitHub issue](https://github.com/magento/magento2/issues/39947) - [GitHub code contribution](https://github.com/magento/magento2/commit/3717e6cb) - [GitHub code contribution](https://github.com/magento/magento2/commit/d3ea191d)_
 
 #### [Issue] Fix concurrency issue in static content deploy
 
@@ -1812,7 +1812,7 @@ The EmailMessage class now correctly handles email body retrieval.
 Previously, in Magento 2.4.8-p2 with magento/framework version 103.0.8-p2, the Magento\Framework\Mail\EmailMessage class attempted to call a non-existent method (getTextBody) on the Symfony mail message object. This caused errors when third-party modules or customizations relied on this method for email processing.
 Now, the EmailMessage class no longer calls undefined methods, preventing these errors. AC-15446
 
-_AC-15446 - [GitHub issue](https://github.com/magento/magento2/issues/40170) - [GitHub code contribution](https://github.com/magento/magento2/commit/059fd469) - [GitHub code contribution](https://github.com/magento/magento2/commit/e9412b24)_
+_AC-15446 - [GitHub issue](https://github.com/magento/magento2/issues/40170) - [GitHub code contribution](https://github.com/magento/magento2/commit/e9412b24)_
 
 #### [Magento 2.3.x] Data/Schema Patches getAliases() causes errors during `setup:upgrade`
 
@@ -1821,6 +1821,8 @@ getAliases() causes errors during setup:upgrade, this PR fixing the same
 _AC-15559 - [GitHub issue](https://github.com/magento/magento2/issues/31396) - [GitHub code contribution](https://github.com/magento/magento2/pull/38239)_
 
 #### Illegal mix of collations for operation
+
+No description available.
 
 _AC-15614 - [GitHub issue](https://github.com/magento/magento2/issues/40138) - [GitHub code contribution](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -1831,6 +1833,8 @@ This PR updates the PHPDoc for \Magento\Framework\DB\Adapter\AdapterInterface::q
 _AC-15626 - [GitHub issue](https://github.com/magento/magento2/issues/39598) - [GitHub code contribution](https://github.com/magento/magento2/pull/39581)_
 
 #### Illegal mix of collations in urlrewrite module
+
+No description available.
 
 _AC-15647 - [GitHub issue](https://github.com/magento/magento2/issues/40189) - [GitHub code contribution](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2091,7 +2095,7 @@ _ACP2E-4058 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Fixed issue where the calendar popup for date attributes appeared off-screen when assigned to custom attribute groups.
 
-_ACP2E-4060 - [GitHub issue](https://integration-5ojmyuq-3ssteurpe3xzy.us-5.magentosite.cloud/) - [GitHub code contribution](https://github.com/magento/magento2/commit/6dd3fa99)_
+_ACP2E-4060 - [GitHub code contribution](https://github.com/magento/magento2/commit/6dd3fa99)_
 
 #### Production ACL Permission Check caused Performance Degradation – populateAcl Method is the bottleneck
 
@@ -2101,7 +2105,7 @@ _ACP2E-4114 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Checkout not loading in latest version with AC-15867 + ACP2E-4296 and SCD compact
 
-Prior to the fix, having custom javascripts loaded through the head section could have caused issues. After the introduction of the new setting, such scripts can be automatically defered, insuring greater compatibility with Magento 2 framework.
+Prior to the fix, having custom javascripts loaded through the head section could have caused issues. After the introduction of the new setting, such scripts can be automatically deferred, insuring greater compatibility with Magento 2 framework.
 
 _ACP2E-4319 - [GitHub code contribution](https://github.com/magento/magento2/commit/1c547060)_
 
@@ -2165,7 +2169,7 @@ Reverted previous change that was returning errors in a different format. Now po
 
 _ACP2E-3399 - [GitHub code contribution](https://github.com/magento/magento2/commit/9608ca21)_
 
-#### GraphQL Response for Order placement is partially localised
+#### GraphQL Response for Order placement is partially localized
 
 Errors returned by placeOrder GraphQl mutation were not fully localized. Now, in a multilanguage context, errors are properly translated.
 
@@ -2187,7 +2191,7 @@ _ACP2E-3785 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Previously, before this fix through the updateGiftRegistry mutation, the custom attribute of the gift registry was not modified or updated through GraphQL mutations. After this fix has been applied, the dynamic attribute of the gift registry can successfully be updated through the updateGiftRegistry mutation.
 
-_ACP2E-3805 - [GitHub issue](https://mcstaging.briscoes.co.nz/)_
+_ACP2E-3805_
 
 #### Customer Order GraphQL : Retrieve product categories for the associated product is "not visible individually
 
@@ -2208,7 +2212,7 @@ Previous to this fix the remote address was not determined correctly when applic
 
 _ACP2E-3991 - [GitHub code contribution](https://github.com/magento/magento2/commit/47721be6)_
 
-#### [QUANS] Confirm GQL order placement exception handling behaviour reversion
+#### [QUANS] Confirm GQL order placement exception handling behavior reversion
 
 Addressed backward incompatible change for placeOrder mutation.
 
@@ -2228,7 +2232,7 @@ _ACP2E-4090 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Address issues raised in ACP2E-4031
 
-Prior to the fix the error node position did not provide seamless compatibility with 2.4.7 and 2.4.9 versions. Now, after the fix, the error node is properly placed to accomodate both versions.
+Prior to the fix the error node position did not provide seamless compatibility with 2.4.7 and 2.4.9 versions. Now, after the fix, the error node is properly placed to accommodate both versions.
 
 _ACP2E-4115 - [GitHub code contribution](https://github.com/magento/magento2/commit/e457c5e2)_
 
@@ -2287,7 +2291,7 @@ _ACP2E-3880 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 ### GraphQL, Security
 
-#### Customer password reset through GraphQL doesn't honour the restrictions
+#### Customer password reset through GraphQL doesn't honor the restrictions
 
 Resolved an issue where customer password reset requests made through GraphQL mutations did not comply with the password reset restrictions configured under Store > Configuration > Customers > Customer Configuration > Password Options. These settings are now correctly enforced.
 
@@ -2464,7 +2468,7 @@ _ACP2E-4375 - [GitHub code contribution](https://github.com/magento/inventory/co
 
 #### Order by price/price facets with invalid data
 
-Prior to the fix, bundle prices were not indexed properly when child products were having stock under custom sources. Now, after the fix, bundle prices are indexed properly regardles of child product stock assignment.
+Prior to the fix, bundle prices were not indexed properly when child products were having stock under custom sources. Now, after the fix, bundle prices are indexed properly regardless of child product stock assignment.
 
 _ACP2E-4380 - [GitHub code contribution](https://github.com/magento/magento2/commit/1c547060) - [GitHub code contribution](https://github.com/magento/inventory/commit/1f83ed24)_
 
@@ -2479,6 +2483,8 @@ AC-10568
 _AC-10568 - [GitHub issue](https://github.com/magento/magento2/issues/31644)_
 
 #### When customer is set for quote order is still a guest order
+
+No description available.
 
 _AC-11689 - [GitHub issue](https://github.com/magento/magento2/issues/38540)_
 
@@ -2527,7 +2533,7 @@ The system now send a shipment confirmation email as it is enabled in the store 
 
 _AC-14563 - [GitHub issue](https://github.com/magento/magento2/issues/39861) - [GitHub code contribution](https://github.com/magento/magento2/pull/39897)_
 
-#### Filtering on date does not work because of ambigous field names
+#### Filtering on date does not work because of ambiguous field names
 
 In Magento 2.4.7-p6, filtering the order grid by date was reported to cause an error due to joins with Braintree modules.
 The issue involved queries joining braintree_transaction_details and sales_order tables when applying date filters.
@@ -2583,13 +2589,13 @@ _AC-9605 - [GitHub issue](https://github.com/magento/magento2/issues/37983) - [G
 
 #### Order status stuck on Processing
 
-Prior to the fix, when ordering a bundle product with "Ship toghether" option enabled, the order status did not automatically switch to "complete" after invoice and shipment. Now, after the fix, the order status automatically switches to "complete" after the order has been invoiced and shipped.
+Prior to the fix, when ordering a bundle product with "Ship together" option enabled, the order status did not automatically switch to "complete" after invoice and shipment. Now, after the fix, the order status automatically switches to "complete" after the order has been invoiced and shipped.
 
 _ACP2E-3947 - [GitHub code contribution](https://github.com/magento/magento2/commit/2a252ae6)_
 
 #### [Cloud]Magento OOTB code - Email Template Setup issue
 
-Prior to the fix, when using async email sending, shipment emails were incosisten with the store order. Now, after the fix, the proper store shipment email order is delivered.
+Prior to the fix, when using async email sending, shipment emails were inconsistent with the store order. Now, after the fix, the proper store shipment email order is delivered.
 
 _ACP2E-3998 - [GitHub code contribution](https://github.com/magento/magento2/commit/462ede94)_
 
@@ -2627,7 +2633,7 @@ _ACP2E-4384 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Admin displays incorrect currency symbol on when creating return
 
-In a multi-website setup with different currencies (EUR/USD/GBP), the return product selection page in admin is now displaying the correct tcurrency symbol. Previously, it displayed the default currency symbol.
+In a multi-website setup with different currencies (EUR/USD/GBP), the return product selection page in admin is now displaying the correct currency symbol. Previously, it displayed the default currency symbol.
 
 _ACP2E-3658 - [GitHub code contribution](https://github.com/magento/magento2/commit/df92debe)_
 
@@ -2659,10 +2665,10 @@ The System now Pass with Accessibility score of 100
 
 _AC-12783 - [GitHub issue](https://github.com/magento/magento2/issues/39054) - [GitHub code contribution](https://github.com/magento/magento2/pull/39164)_
 
-#### Disable captcha storefont config still load captcha js files
+#### Disable captcha storefront config still load captcha js files
 
 The System now does not load captcha js files when we disabled captcha 
- for storefont
+ for storefront
 
 _AC-14267 - [GitHub issue](https://github.com/magento/magento2/issues/32987) - [GitHub code contribution](https://github.com/magento/magento2/pull/39154)_
 
@@ -2764,7 +2770,7 @@ _ACP2E-4324 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### Investigate the reasons for increased redis keys and cache keys creation
 
-Prior to the fix, cache kyes used for remote storage metadata were not expiring. Now, after the fix, you can set a TTL for such cache keys through dependency injection.
+Prior to the fix, cache keys used for remote storage metadata were not expiring. Now, after the fix, you can set a TTL for such cache keys through dependency injection.
 
 _ACP2E-4345 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032)_
 
@@ -2853,7 +2859,7 @@ _AC-13311 - [GitHub issue](https://github.com/magento/magento2/issues/39329) - [
 
 #### Issue with the Customizable Options grid on the product page in the admin panel
 
-The system is working as expected when we are creating a customisable options with type dropdown
+The system is working as expected when we are creating a customizable options with type dropdown
 
 _AC-14003 - [GitHub issue](https://github.com/magento/magento2/issues/39640) - [GitHub code contribution](https://github.com/magento/magento2/pull/39694)_
 
@@ -2890,7 +2896,7 @@ Fixed an issue where entering an invalid attribute set ID in the URL caused a fa
 
 _AC-15753 - [GitHub issue](https://github.com/magento/magento2/issues/40213) - [GitHub code contribution](https://github.com/magento/magento2/commit/a06a4a57)_
 
-#### Refund with negative qty alway refund discound
+#### Refund with negative qty always refund discount
 
 Fixed issue where creating a credit memo with a negative quantity incorrectly refunded the discount amount.
 Now, discounts are not refunded for negative quantities, and the refund quantity is correctly set to zero.
@@ -3007,7 +3013,7 @@ _ACP2E-3902 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 Fixed an issue where switching between store views redirected users to the homepage instead of the corresponding translated CMS page. The store switcher now checks for URL rewrites in the target store to ensure correct redirection (e.g., FAQ page in English → FAQ page in French).
 
-_ACP2E-4112 - [GitHub issue](https://adobe-ent.crm.dynamics.com/main.aspx?appid=f2e74f34-7119-ea11-a811-000d3a5936c5&forceUCI=1&pagetype=entityrecord&etn=incident&id=3e1df344-8a69-f011-bec3-6045bd04f475)_
+_ACP2E-4112_
 
 #### [Cloud] Deactivate the old sitemap generation
 
@@ -3055,7 +3061,7 @@ _AC-16344 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Bundled/Merged JS not part of SRI Hashes
 
-Prior to the fix generated bundle or merged files were not being added to SRI hashes list. Now, the files are being proprly added to the SRI hashes.
+Prior to the fix generated bundle or merged files were not being added to SRI hashes list. Now, the files are being properly added to the SRI hashes.
 
 _ACP2E-3854 - [GitHub code contribution](https://github.com/magento/magento2/commit/4ca73607)_
 
@@ -3197,6 +3203,8 @@ The test case addresses the functionality of the "Email to Friend" form when CAP
 _AC-13492 - [GitHub issue](https://github.com/magento/magento2/issues/39462) - [GitHub code contribution](https://github.com/magento/magento2/pull/32830)_
 
 #### Hardcoded Fixture Paths Fail in Composer Builds
+
+No description available.
 
 _AC-16488_
 
