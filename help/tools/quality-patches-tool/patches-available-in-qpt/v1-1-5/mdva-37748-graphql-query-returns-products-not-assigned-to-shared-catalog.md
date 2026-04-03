@@ -45,8 +45,7 @@ B2B modules are installed.
 1. Log in as the admin of the company created in step four, and validate that you only see "Product 2."
 1. Request an Authorization Token using the following GraphQL query:
 
-    <pre>
-    <code class="language-graphql">
+    ```graphql
     mutation {
       generateCustomerToken(
         email: "company.admin@exapmle.test"
@@ -55,13 +54,11 @@ B2B modules are installed.
         token
       }
     }
-    </code>
-    </pre>
+    ```
 
 1. Add header **Authorization Bearer value-of-the-token** and execute the following GraphQL query:
 
-    <pre>
-    <code class="language-graphql">
+   ```graphql
     {
       products(
           filter: {},
@@ -194,9 +191,8 @@ B2B modules are installed.
       }
 
     }
-  }
-  </code>
-  </pre>
+   }
+   ```
 
 <u>Expected results</u>:
 
@@ -206,8 +202,7 @@ The count and the product returned by GraphQL only consider the product assigned
 
 Only "Product 2" is returned, but the `total_count` shows two.
 
-<pre>
-<code class="language-graphql">
+``` graphql
 {
   "data": {
     "products": {
@@ -308,8 +303,7 @@ Only "Product 2" is returned, but the `total_count` shows two.
     }
   }
 }
-</code>
-</pre>
+```
 
 ## Apply the patch
 

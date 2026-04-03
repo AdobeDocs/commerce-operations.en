@@ -34,19 +34,19 @@ Email notifications were not sent to customers after updating their email addres
 
     ```
     mutation {
-	    createCustomer(
-		    input: {
-			    firstname: "Test"
-			    lastname: "User"
-			    email: "test@test.com"
-			    password: "Admin@123"
-			    is_subscribed: true
-		    }
-	    ) {
-		    customer {
-			    created_at
-		    }
-	    }
+        createCustomer(
+            input: {
+                firstname: "Test"
+                lastname: "User"
+                email: "test@test.com"
+                password: "Admin@123"
+                is_subscribed: true
+            }
+        ) {
+            customer {
+                created_at
+            }
+        }
     }
     ```
 
@@ -55,7 +55,7 @@ Email notifications were not sent to customers after updating their email addres
     ```
     mutation {
     generateCustomerToken(email: "test@test.com", password: "Admin@123") {
-	    token
+        token
     }
     }
     ```
@@ -64,11 +64,11 @@ Email notifications were not sent to customers after updating their email addres
 
     ```
     mutation {
-	    updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
-		    customer {
-			    email
-		    }
-	    }
+        updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
+            customer {
+                email
+            }
+        }
     }
     ```
 

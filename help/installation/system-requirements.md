@@ -11,7 +11,7 @@ There are some differences in the dependencies for Commerce on Cloud. Service ve
 
 >[!NOTE]
 >
->The system requirements apply to released versions of Adobe Commerce only. Beta or early access versions are not included. See the [release notes](../release/release-notes/overview.md) to learn more about the latest released versions of Adobe Commerce.
+>The system requirements tables identify the specific Adobe Commerce versions covered, including any explicitly labeled beta or early access releases. See the [release notes](../release/release-notes/overview.md) to learn more about the latest published versions of Adobe Commerce.
 
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
@@ -42,7 +42,7 @@ opensearch:
     disk: 1024
 ```
 
-See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in the _Commerce on Cloud Infrastructure_ guide.
+See [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
 
 >[!TAB Commerce on-premises]
 
@@ -54,13 +54,16 @@ See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-
 
 There are particular PHP configuration settings, such as the `memory_limit` setting, which can help you to avoid common problems when using Adobe Commerce. See [Required PHP settings](prerequisites/php-settings.md).
 
-For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in the _Commerce on Cloud Infrastructure_ guide.
+For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in the *Commerce on Cloud Infrastructure* guide.
 
 ### PHP OPcache
 
-It is recommended that you verify that [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. The `opcache` extension is installed by default in the Commerce on Cloud infrastructure.
+Adobe recommends that you verify that [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions.
+- **For Adobe Commerce on Cloud infrastructure deployments**, the `opcache` extension is installed by default.
+- **For Adobe Commerce on-premises deployments:**
+   - [Verify that the PHP OPcache extension is installed](prerequisites/php-settings.md#verify-php-is-installed).
+   - For specific guidance on performance settings, see the software recommendations for [PHP settings](../performance/software.md#php-settings) in the *Performance Best Practices* guide.
 
-For on-premises, verify that PHP OPcache is installed, see [PHP settings](prerequisites/php-settings.md). Or for specific guidance on performance settings, see the software recommendations for [PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in the _Performance Best Practices_ guide.
 
 If you must install OPcache separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -78,7 +81,7 @@ The [PHP installation instructions](prerequisites/php-settings.md) include a ste
 
 >[!TIP]
 >
->For PHP extensions in the Cloud infrastructure, see [Enable PHP extensions](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) in the _Commerce on Cloud Infrastructure_ guide.
+>For PHP extensions in the Cloud infrastructure, see [Enable PHP extensions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) in the _Commerce on Cloud Infrastructure_ guide.
 
 >[!BEGINTABS]
 
@@ -117,11 +120,11 @@ Storefront and Admin:
 
 ### Mail server
 
-Mail Transfer Agent (MTA) or an SMTP server. Commerce on Cloud infrastructure uses the [SendGrid email service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
+Mail Transfer Agent (MTA) or an SMTP server. Commerce on Cloud infrastructure uses the [SendGrid email service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Memory
 
-Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2 GB of RAM. If you are using a system with less than 2 GB of RAM, create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
+Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2 GB of RAM. If you are using a system with less than 2 GB of RAM, create a [swap file](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Otherwise, your upgrade might fail.
 
 ### Operating systems (Linux x86-64)
 
@@ -132,14 +135,14 @@ Microsoft Windows and macOS are **not** supported.
 Adobe Commerce requires the following system tools for some operations:
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
-- [[!DNL gzip]](https://www.gzip.org/)
-- [[!DNL lsof]](https://linux.die.net/man/8/lsof)
+- [[!DNL gzip]](https://www.gnu.org/software/gzip/manual/gzip.html)
+- [[!DNL lsof]](https://lsof.readthedocs.io/en/stable/manpage/)
 - [[!DNL mysql]](https://www.mysql.com/)
-- [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
-- [[!DNL nice]](https://linux.die.net/man/1/nice)
+- [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html)
+- [[!DNL nice]](https://www.gnu.org/s/coreutils/manual/html_node/nice-invocation.html)
 - [[!DNL php]](https://www.php.net/)
 - [[!DNL sed]](https://www.gnu.org/software/sed/manual/sed.html)
-- [[!DNL tar]](https://linux.die.net/man/1/tar)
+- [[!DNL tar]](https://www.gnu.org/software/tar/manual/tar.html)
 
 ### SSL
 
@@ -147,17 +150,17 @@ Adobe Commerce requires the following system tools for some operations:
 - Self-signed SSL certificates are not supported.
 - Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 
-For Commerce on Cloud infrastructure, see [Fastly configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in the _Commerce on Cloud Infrastructure_ guide.
+For Commerce on Cloud infrastructure, see [Fastly configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) in the *Commerce on Cloud Infrastructure* guide.
 
 ### Xdebug
 
 For Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
 
-For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) in the _Commerce on Cloud Infrastructure_ guide.
+For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) in the *Commerce on Cloud Infrastructure* guide.
 
 >[!NOTE]
 >
->There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in the _Commerce Support Knowledge Base_.
+>There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in the _Commerce Support Knowledge Base_.
 
 
-<!-- Last updated from includes: 2026-01-16 17:09:37 -->
+<!-- Last updated from includes: 2026-03-13 12:40:18 -->

@@ -51,12 +51,12 @@ The customer data is updated.
 
 You get the following error:
 
-    ```json
-    {
-        "message": "A customer with the same email address already exists in an associated website.",
-        "trace": ...
-    }
-    ```
+```json
+{
+    "message": "A customer with the same email address already exists in an associated website.",
+    "trace": ...
+}
+```
 
 ## Apply the patch
 

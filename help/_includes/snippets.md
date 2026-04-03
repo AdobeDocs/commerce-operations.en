@@ -1,5 +1,11 @@
 # Snippets
 
+## Security patches for extended support {#extended-support}
+
+>[!NOTE]
+>
+>Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
 ## Commerce only {#commerce-only}
 
 >[!NOTE]
