@@ -134,7 +134,7 @@ To ensure application-wide consistency and prevent fragmented cache storage, con
 - **`local_backend_options['cache_dir']`**: Directs the backend cache adapter (for example, `Cm_Cache_Backend_File`) to store its synchronized L2 cache files in the specified location.
 - **`directories['cache']['path']`**: Updates the Adobe Commerce `DirectoryList` registry, establishing the custom path as the definitive system cache directory for the entire application.
 
-### Preventing split cache directories and GlusterFS segmentation faults
+### Prevent split cache directories and GlusterFS segmentation faults
 
 If you define the custom path exclusively in the `local_backend_options`, the L2 cache engine functions correctly, but the global application registry continues to recognize `var/cache` as the default cache location.
 
@@ -142,7 +142,7 @@ This configuration mismatch results in a "split-brain" scenario where third-part
 
 **Critical Impact on Adobe Commerce Cloud:** On Pro architectures, the `var/` directory is mounted on a shared distributed file system. Forcing high-velocity cache I/O over this network mount overwhelms the client and is a primary trigger for **GlusterFS segmentation faults and cluster-wide outages**. Configuring both settings ensures all cache I/O remains strictly on the local, high-performance disk.
 
-### Configuration Example
+### Configuration example
 
 To enforce a single, unified cache directory, update your `env.php` file to include both configurations:
 
