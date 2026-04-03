@@ -134,7 +134,7 @@ To ensure application-wide consistency and prevent fragmented cache storage, con
 - **`local_backend_options['cache_dir']`**: Directs the backend cache adapter (for example, `Cm_Cache_Backend_File`) to store its synchronized L2 cache files in the specified location.
 - **`directories['cache']['path']`**: Updates the Adobe Commerce `DirectoryList` registry, establishing the custom path as the definitive system cache directory for the entire application.
 
-### Preventing Split Cache Directories and GlusterFS Crashes
+### Preventing split cache directories and GlusterFS segmentation faults
 
 If you define the custom path exclusively in the `local_backend_options`, the L2 cache engine functions correctly, but the global application registry continues to recognize `var/cache` as the default cache location.
 
