@@ -123,20 +123,20 @@ df -h /dev/shm
 
 Usage can vary across nodes, but it should converge to a similar value.
 
-## Configuring Custom Directories for L2 Cache
+## Configure custom directories for L2 cache
 
-When optimizing L2 cache performance, you may choose to store the local cache files in a custom, high-performance directory, such as a RAM disk (`/dev/shm/`).
+When optimizing L2 cache performance, you can choose to store the local cache files in a custom, high-performance directory, such as a RAM disk (`/dev/shm/`).
 
-To ensure application-wide consistency and prevent fragmented cache storage, you must configure both the specific L2 backend options and the global directory registry within the `app/etc/env.php` file.
+To ensure application-wide consistency and prevent fragmented cache storage, configure both the specific L2 backend options and the global directory registry within the `app/etc/env.php` file.
 
 **Best Practice:** Define both `local_backend_options['cache_dir']` and the global `directories['cache']['path']`.
 
-- **`local_backend_options['cache_dir']`**: Directs the backend cache adapter (e.g., `Cm_Cache_Backend_File`) to store its synchronized L2 cache files in the specified location.
+- **`local_backend_options['cache_dir']`**: Directs the backend cache adapter (for example, `Cm_Cache_Backend_File`) to store its synchronized L2 cache files in the specified location.
 - **`directories['cache']['path']`**: Updates the Adobe Commerce `DirectoryList` registry, establishing the custom path as the definitive system cache directory for the entire application.
 
 ### Preventing Split Cache Directories and GlusterFS Crashes
 
-If you define the custom path exclusively in the `local_backend_options`, the L2 cache engine will function correctly, but the global application registry will continue to recognize `var/cache` as the default cache location.
+If you define the custom path exclusively in the `local_backend_options`, the L2 cache engine functions correctly, but the global application registry continues to recognize `var/cache` as the default cache location.
 
 This configuration mismatch results in a "split-brain" scenario where third-party extensions or core fallback processes write temporary files to the default `var/cache` directory.
 
