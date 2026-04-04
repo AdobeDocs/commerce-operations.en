@@ -73,13 +73,13 @@ Where:
 
 Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix ': hash' for preload keys.
+Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix ':hash' for preload keys.
 
 ## Stale cache options
 
 Starting with Commerce 2.4, the `use_stale_cache` option can improve performance in specific cases by serving previously cached data while new cache data is generated in a parallel process.
 
-Generally, the trade-off with lock waiting is acceptable from a performance perspective. However, as the number of blocks or cache entries grows, lock waits take more time. In some scenarios, the wait can be up to **the number of keys** x **lookup timeout** for the process. In rare cases, a merchant can have hundreds of keys in the `Block/Config` cache, so even a small lookup timeout for a lock may cost seconds.
+Generally, the trade-off with lock waiting is acceptable from a performance perspective. However, as the number of blocks or cache entries grows, lock waits take more time. In some scenarios, the wait can be up to **the number of keys** x **lookup timeout** for the process. In rare cases, a merchant can have hundreds of keys in the `Block/Config` cache, so even a small lookup timeout for a lock can cost seconds.
 
 >[!IMPORTANT]
 >

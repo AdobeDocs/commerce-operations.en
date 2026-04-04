@@ -4,7 +4,7 @@ description: Learn how to configure Redis as the default and page cache backend 
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
 ---
-# Use Redis for the default cache
+# Use Redis for the default and page cache
 
 Commerce provides command-line options to configure the Redis page and default caching. Although you can configure caching by editing the `<Commerce-install-dir>app/etc/env.php` file, the command line is the recommended method, especially for initial configurations. The command line provides validation to ensure that the configuration is syntactically correct.
 
