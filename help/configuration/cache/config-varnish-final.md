@@ -4,7 +4,7 @@ description: Learn how to perform final verification of your Varnish configurati
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 ---
-# Final verification of Varnish configuration
+# Final verification
 
 Now that you are using the `default.vcl` generated for you by Commerce, you can perform some final verifications to make sure that Varnish is working.
 

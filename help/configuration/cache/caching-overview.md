@@ -4,7 +4,7 @@ description: Learn about caching in Adobe Commerce, including backend storage, f
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 ---
-# Caching overview
+# Caching overview and configuration options
 
 Adobe Commerce relies on a multi-layered caching architecture to reduce database load, minimize redundant processing, and accelerate page delivery. At the application level, Commerce maintains over a dozen [cache types](../cli/manage-cache.md#clean-and-flush-cache-types)---such as configuration, layout, block HTML, and collections---each of which you can route to a dedicated storage backend like [Redis](config-redis.md) or [Valkey](config-valkey.md). For full-page caching, Adobe strongly recommends [Varnish](config-varnish.md), an HTTP accelerator that serves cached pages directly from memory. Additional layers such as [L2 caching](level-two-cache.md) and [static content signing](static-content-signing.md) further improve performance for high-traffic, multi-node deployments.
 

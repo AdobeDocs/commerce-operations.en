@@ -4,7 +4,7 @@ description: Learn how to configure L2 cache in Adobe Commerce to reduce network
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 ---
-# L2 cache configuration
+# L2 cache configuration for performance optimization
 
 L2 (two-level) caching reduces network traffic between the remote cache storage (Redis or Valkey) and the Commerce application by adding a local cache layer on each web node. A standard Commerce instance transfers around 300 KB per request, and traffic can quickly grow to over 1000 requests in some situations.
 

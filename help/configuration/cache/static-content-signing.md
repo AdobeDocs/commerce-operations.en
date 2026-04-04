@@ -4,7 +4,7 @@ description: Learn how static content signing works in Adobe Commerce to invalid
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 ---
-# Static content cache
+# Static content signing and browser cache invalidation
 
 To improve performance, Commerce sets the `Expires` headers for static resources, such as images, JavaScript, and CSS files.
 Setting the `Expires` header on a static resource tells the browser to cache the resource at that URL and serve the cached version until it expires.

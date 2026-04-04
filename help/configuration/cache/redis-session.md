@@ -4,7 +4,7 @@ description: Learn how to configure Redis for session storage in Adobe Commerce.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 ---
-# Use Redis for session storage
+# Configure Redis for session storage
 
 >[!IMPORTANT]
 >

@@ -4,7 +4,7 @@ description: Learn about cache backend options in Adobe Commerce, including file
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 ---
-# Cache backend options
+# Cache backend options and storage reference
 
 The Commerce application uses a low-level cache frontend and backend to provide access to cache storage. Commerce supports several caching backends and strategies, each suited to different use cases. This page describes the available backends and how they differ.
 
