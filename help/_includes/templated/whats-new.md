@@ -671,33 +671,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### February 6, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.75 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451">ACSD-68451: Fixes an issue for multiple websites where a company admin logs in on one website, creates an unrelated company on another website, but is erroneously linked to that unrelated company</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74e1ed73b9574903f12fa27c2f1198a823c80651">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added Database Storage for App Builder (Public Beta) to <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">Beta releases</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7908d56156bd72ef7e36938090befd9dd39e50e5">commit</a></td>
-    </tr>
-  </tbody>
-</table>
