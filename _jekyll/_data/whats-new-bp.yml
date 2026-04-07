@@ -41,7 +41,7 @@ entries:
   labels:
   - major-update
   - best-practices
-- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     for Adobe Commerce on cloud infrastructure.
   versions: ''
   type: best-practices
@@ -135,7 +135,7 @@ entries:
   labels:
   - new-topic
   - best-practices
-- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     with information about separating the cache from the session and using compression.
   versions: ''
   type: best-practices
@@ -159,7 +159,7 @@ entries:
   membership: false
   labels:
   - best-practices
-- description: Added a [warning](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Added a [warning](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     about Redis configuration differences between Adobe Commerce Pro and Starter projects.
   versions: ''
   type: best-practices

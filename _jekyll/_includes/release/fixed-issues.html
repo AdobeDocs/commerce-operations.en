@@ -5,19 +5,22 @@
 {% assign sorted_fixes = group.items | sort: 'Issue key' %}
 {%- for fix in sorted_fixes %}
 #### {{fix['Summary'] | replace: "<", "&lt;" | replace: id_in_braces, ":id" }}
-{%- unless fix['Custom field (Release Note)'] == empty %}
+{%- unless fix['Custom field (Release Note)'] == empty or fix['Custom field (Release Note)'] == nil %}
 
 {{fix['Custom field (Release Note)'] | replace: "<", "&lt;" }}
+{%- else %}
+
+No description available.
 {%- endunless -%}
 
 {% capture key %}{{fix['Issue key']}}{% endcapture %}
 
 {%- capture issue -%}
-{%- unless fix['Custom field (External Issue URL)'] == empty %} - [GitHub issue]({{fix['Custom field (External Issue URL)']}})
+{%- unless fix['Custom field (External Issue URL)'] == nil or fix['Custom field (External Issue URL)'] == empty %} - [GitHub issue]({{fix['Custom field (External Issue URL)']}})
 {%- endunless -%}
 {%- endcapture -%}
 {%- capture contribution -%}
-{%- unless fix['Custom field (Git Pull Request)'] == empty -%}
+{%- unless fix['Custom field (Git Pull Request)'] == nil or fix['Custom field (Git Pull Request)'] == empty -%}
 {%- assign prs = fix['Custom field (Git Pull Request)'] | split: ', ' -%}
 {%- for pr in prs %} - [GitHub code contribution]({{pr}})
 {%- endfor -%}
