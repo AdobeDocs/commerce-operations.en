@@ -30,16 +30,16 @@ feature: Configuration
     + [Caching overview](cache/caching-overview.md)
     + [Configure cache frontends](cache/cache-types.md)
     + [Cache backend options](cache/cache-options.md)
-    + [L2 cache](cache/level-two-cache.md)
+    + [L2 cache configuration](cache/level-two-cache.md)
     + Redis {#redis}
         + [Install and set up Redis](cache/config-redis.md)
-        + [Use Redis for default and page cache](cache/redis-pg-cache.md)
-        + [Use Redis for session storage](cache/redis-session.md)
-        + [Configure ElastiCache for EC2 instances](cache/redis-elasticache-for-ec2.md)
+        + [Configure Redis for default and page cache](cache/redis-pg-cache.md)
+        + [Configure Redis for session storage](cache/redis-session.md)
+        + [Configure Redis with AWS ElastiCache](cache/redis-elasticache-for-ec2.md)
     + Valkey {#valkey}
         + [Install and set up Valkey](cache/config-valkey.md)
-        + [Use Valkey for default and page cache](cache/valkey-pg-cache.md)
-        + [Use Valkey for session storage](cache/valkey-session.md)
+        + [Configure Valkey for default and page cache](cache/valkey-pg-cache.md)
+        + [Configure Valkey for session storage](cache/valkey-session.md)
     + Varnish {#varnish}
         + [Varnish overview](cache/config-varnish.md)
         + [Install Varnish](cache/config-varnish-install.md)
