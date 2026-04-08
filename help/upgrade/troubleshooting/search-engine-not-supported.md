@@ -64,7 +64,7 @@ You must perform the following tasks before upgrading to 2.4:
 
    >[!NOTE]
    >
-   >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+   >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) to check which version of JDK is installed.
 
 1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) and reindex.
 

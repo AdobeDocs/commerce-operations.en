@@ -155,6 +155,6 @@ Enabled default mode.
 
 ### Run CLI commands from anywhere
 
-[Run CLI commands from anywhere](../cli/config-cli.md#config-install-cli-first).
+[Run CLI commands from anywhere](../cli/config-cli.md#prerequisites).
 
 If you have not added `<Commerce-install-directory>/bin` to your system `PATH`, then you can expect an error when running the command by itself.
