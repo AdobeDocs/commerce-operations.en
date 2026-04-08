@@ -2,8 +2,48 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Mar 30 10:21:55 2026
+updated: Fri Apr 3 17:13:14 2026
 entries:
+- description: Added instructions for properly overriding Adobe Commerce’s default
+    L2 cache directories in `env.php` to ensure that cache files are stored in the
+    intended location and prevent split cache directories and GlusterFS segmentation
+    faults. See the updated guidance in [Best practices for Redis and Valkey services
+    configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration).
+  versions: ''
+  type: technical, feedback
+  date: April 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1874
+  merge_commit: c3030226d7832b17c82be375431795cba44d72f9
+  contributor: dyushkin
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Updated the [2026 Adobe Commerce release calendar](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    with the most current release information.
+  versions: ''
+  type: release-notes
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1881
+  merge_commit: 3f32d342cbdc3e962fede45de828d836c242bc9a
+  contributor: meker
+  membership:
+  labels:
+  - release-notes
+- description: Updated the [best practices for Redis and Valkey configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+    and provided related configuration guidance.
+  versions: ''
+  type: technical, feedback
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1848
+  merge_commit: c96e5b397a2ffee8fadaf638e721799b40d320d3
+  contributor: magedocs
+  membership:
+  labels:
+  - imported
+  - technical
+  - devops
+  - feedback
 - description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69319:
     Bundle prices were not indexed properly when child products had stock under custom
     sources](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319).'

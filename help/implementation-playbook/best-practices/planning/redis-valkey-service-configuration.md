@@ -123,6 +123,60 @@ df -h /dev/shm
 
 Usage can vary across nodes, but it should converge to a similar value.
 
+## Configure custom directories for L2 cache
+
+When optimizing L2 cache performance, you can choose to store the local cache files in a custom, high-performance directory, such as a RAM disk (`/dev/shm/`).
+
+To ensure application-wide consistency and prevent fragmented cache storage, configure both the specific L2 backend options and the global directory registry within the `app/etc/env.php` file.
+
+**Best Practice:** Define both `local_backend_options['cache_dir']` and the global `directories['cache']['path']`.
+
+- **`local_backend_options['cache_dir']`**: Directs the backend cache adapter (for example, `Cm_Cache_Backend_File`) to store its synchronized L2 cache files in the specified location.
+- **`directories['cache']['path']`**: Updates the Adobe Commerce `DirectoryList` registry, establishing the custom path as the definitive system cache directory for the entire application.
+
+### Prevent split cache directories and GlusterFS segmentation faults
+
+If you define the custom path exclusively in the `local_backend_options`, the L2 cache engine functions correctly, but the global application registry continues to recognize `var/cache` as the default cache location.
+
+This configuration mismatch results in a "split-brain" scenario where third-party extensions or core fallback processes write temporary files to the default `var/cache` directory.
+
+**Critical Impact on Adobe Commerce Cloud:** On Pro architectures, the `var/` directory is mounted on a shared distributed file system. Forcing high-velocity cache I/O over this network mount overwhelms the client and is a primary trigger for **GlusterFS segmentation faults and cluster-wide outages**. Configuring both settings ensures all cache I/O remains strictly on the local, high-performance disk.
+
+### Configuration example
+
+To enforce a single, unified cache directory, update your `env.php` file to include both configurations:
+
+```php
+return [
+    // 1. Override the global directory registry
+    'directories' => [
+        'cache' => [
+            'path' => '/dev/shm/magento_cache'
+        ]
+    ],
+    // 2. Configure the L2 cache engine
+    'cache' => [
+        'frontend' => [
+            'default' => [
+                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+                'backend_options' => [
+                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                    'server' => '127.0.0.1',
+                    'port' => '6379',
+                    'database' => '1',
+                    // ... other redis configurations ...
+                    'local_backend' => 'Cm_Cache_Backend_File',
+                    'local_backend_options' => [
+                        'cache_dir' => '/dev/shm/magento_cache' 
+                    ]
+                ]
+            ]
+        ]
+    ],
+    // ...
+];
+```
+
 ## Enable slave connection
 
 Enable the slave connection in the `.magento.env.yaml` file to let Adobe Commerce use an additional read-only cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
