@@ -58,7 +58,7 @@ In developer mode:
 
 The _production_ mode is best for deploying the Commerce application on a production system. After optimizing the server environment, such as the database and web server, you should run the [static view files deployment tool](../cli/static-view-file-deployment.md) to write static view files to the `pub/static` directory. This improves performance by providing all necessary static files at deployment instead of forcing the Commerce application to dynamically locate and copy (materialize) static files on demand during run time.
 
-Some fields, such as the Advanced and Developer system configuration sections in the Admin, are not available in production mode. For example, you _cannot_ enable or disable cache types using the Admin. You can enable and disable cache types _only_ using the [command line](../cli/manage-cache.md#config-cli-subcommands-cache-en).
+Some fields, such as the Advanced and Developer system configuration sections in the Admin, are not available in production mode. For example, you _cannot_ enable or disable cache types using the Admin. You can enable and disable cache types _only_ using the [command line](../cli/manage-cache.md#enable-or-disable-cache-types).
 
 In production mode:
 

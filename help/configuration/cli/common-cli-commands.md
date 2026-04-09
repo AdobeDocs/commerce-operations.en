@@ -40,7 +40,7 @@ Commands are shown in summary form only; for more information about a command, c
 |[`magento setup:perf:generate-fixtures`](../cli/generate-data.md)|Generate data to use for performance testing.|
 |[`magento sampledata:install`](../../installation/sample-data/overview.md)|Installs optional sample data after you install the Commerce application.<br><br>For more details about sample data, see [Optional sample data](../../installation/sample-data/overview.md).|
 |[`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md)|Manages backend configurations|
-|[`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account)| Creates/edits/unlocks admin users.|
+|[`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unlock-an-administrator-account)| Creates/edits/unlocks admin users.|
 |[`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/)|Enables/disables developer template hints.|
 
 ## Common arguments
