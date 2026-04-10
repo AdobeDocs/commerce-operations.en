@@ -2,8 +2,33 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 3 17:13:14 2026
+updated: Fri Apr 10 18:06:05 2026
 entries:
+- description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    with New Relic (APM) supported versions for Commerce on Cloud by release.
+  versions: ''
+  type: technical, feedback
+  date: April 8, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1886
+  merge_commit: f82d05cf0f7d2749b313ef5f7e89e1e36248bf30
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Updated [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    with a Category Merchandising (Public Beta) program for SaaS projects, including
+    links to [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)
+    and related merchandising rules topics.
+  versions: ''
+  type: major-update
+  date: April 8, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1868
+  merge_commit: a9f3594a0ccf4326b0541a4f2b07fdf49cde7148
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
 - description: Added instructions for properly overriding Adobe Commerce’s default
     L2 cache directories in `env.php` to ensure that cache files are stored in the
     intended location and prevent split cache directories and GlusterFS segmentation
