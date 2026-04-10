@@ -17,7 +17,7 @@ With Commerce profiling, you can:
 
   You should be particularly interested in the list of _unused dependencies_, which are objects that were created because they were requested in some constructor, but were never used (that is, none of their methods were called). As a result, processor time and memory spent to create these dependencies are wasted.
 
-Commerce provides the base functionality in [`Magento\Framework\Profiler`][profiler].
+Commerce provides the base functionality in [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php).
 
 You can enable and configure the profiler using a MAGE_PROFILER variable or the command line.
 
@@ -31,8 +31,8 @@ You can set the value of `MAGE_PROFILER` in any of the ways discussed in [Set th
 
   You can use one of the following values to enable a specific profiler:
 
-  - `csvfile` which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-  - Any other value (except `2`), including an empty value, which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+  - `csvfile` which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+  - Any other value (except `2`), including an empty value, which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)
 
 - `2` to enable dependency graphs.
 
@@ -75,8 +75,3 @@ To enable dependency graphs, use the variable option.
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

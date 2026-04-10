@@ -48,8 +48,8 @@ You will see output similar to the following:
 | BUNDLE-2554  | Set Payment info bug | Optional |  Not applied|  Affected components: <br>- amzn/amazon-pay-module |
 | MC-1    | Fixes issue 1 | Optional | Applied |  Affected components: <br> - magento/module-cms |
 | MC-2  | Fixes issue 2  | Optional | Not applied |  Affected components: <br> - magento/module-cms |
-| MC-3  | Fixes issue 3  | Optional  | Not applied | Required patches:<br> - MC-2 <br>Affected components: <br>- magento/module-cms |  
-|  MC-3-V2   | Updated fix for issue 3, replaces MC-3 patch  | Optional | N/A  | Affected components:  <br>- magento/module-cms  |  
+| MC-3  | Fixes issue 3  | Optional  | Not applied | Required patches:<br> - MC-2 <br>Affected components: <br>- magento/module-cms |
+|  MC-3-V2   | Updated fix for issue 3, replaces MC-3 patch  | Optional | N/A  | Affected components:  <br>- magento/module-cms  |
 
 Adobe Commerce 2.3.5.
 

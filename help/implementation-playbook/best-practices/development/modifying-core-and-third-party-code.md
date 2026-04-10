@@ -1,7 +1,7 @@
 ---
 title: Best practices for modifying core and third-party PHP code
 description: Learn how and when to modify core Adobe Commerce and third-party PHP code.
-role: Developer, Architect
+role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1

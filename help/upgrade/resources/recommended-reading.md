@@ -46,10 +46,10 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
       <td><strong>Features and Independent Services</strong>
         <p>Explore innovative Commerce services that are available as Adobe Commerce extensions and where to get them.</p>
           <ul>
-            <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
-            <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>
-            <li><a href="https://marketplace.magento.com/magento-payment-services.html">Payment Services</a></li>
-            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">Product Recommendations</a></li>
+            <li><a href="https://commercemarketplace.adobe.com//">Commerce Marketplace</a></li>
+            <li><a href="https://commercemarketplace.adobe.com//magento-live-search.html">Live Search</a></li>
+            <li><a href="https://commercemarketplace.adobe.com//magento-payment-services.html">Payment Services</a></li>
+            <li><a href="https://commercemarketplace.adobe.com//magento-product-recommendations.html">Product Recommendations</a></li>
           </ul>
       </td>
     </tr>

@@ -78,7 +78,7 @@ The following sections include best practice information for the planning phase.
     <td>Access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.</td>
   </tr>
   <tr>
-    <td><a href="redis-service-configuration.md">Configure Redis</a></td>
+    <td><a href="redis-valkey-service-configuration.md">Configure Redis/Valkey</a></td>
     <td>Improve caching performance by using the extended Redis cache implementation for Adobe Commerce.</td>
   </tr>
   <tr>

@@ -40,7 +40,7 @@ To continue configuring server-side image resizing, you must prepare the `nginx.
 
 **To enable Nginx to resize images**:
 
-1. Install the [Nginx image filter module][nginx-module].
+1. Install the [Nginx image filter module](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html).
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -67,6 +67,3 @@ To continue configuring server-side image resizing, you must prepare the `nginx.
 
    - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
-<!-- link definitions -->
-
-[nginx-module]: https://nginx.org/en/docs/http/ngx_http_image_filter_module.html

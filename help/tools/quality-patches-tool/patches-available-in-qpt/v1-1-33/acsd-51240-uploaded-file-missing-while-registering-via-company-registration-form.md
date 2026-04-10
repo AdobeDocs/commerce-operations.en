@@ -24,7 +24,7 @@ The ACSD-51240 patch fixes the issue where the uploaded file is missing while re
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>). Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+>The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Issue
 

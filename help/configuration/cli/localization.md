@@ -12,11 +12,11 @@ Commerce translations enable you to customize and localize your store for multip
 - **Translation dictionaries**, which are a convenient way to customize or translate _some_ words and phrases, such as those for a custom module or theme.
 - **Language packages** that enable you to translate _any or all_ words and phrases in the Commerce application.
 
-See [Translations overview][].
+See [Translations overview](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Generate a translation dictionary
 
-You can generate a [translation dictionary][] to customize existing strings, translate words and phrases in a custom module, localize a theme, or create language packages.
+You can generate a [translation dictionary](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries) to customize existing strings, translate words and phrases in a custom module, localize a theme, or create language packages.
 
 To begin translating, use a command to generate a dictionary CSV file with a collected list of all existing phrases and words.
 
@@ -29,7 +29,7 @@ To generate the dictionary and begin translation:
 
 1. You can package the translation dictionaries into a language package and provide the package to the Commerce store administrator.
 
-1. In the Admin, the store administrator [configures the translations].
+1. In the Admin, the store administrator [configures the translations](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Command options:
 
@@ -79,7 +79,7 @@ An example of translating a phrase:
 
 ## Create a language package
 
-As opposed to a translation dictionary, you can translate any or all words and phrases in the Commerce application using a language package. You can translate a particular component—like a module or a theme—using a translation dictionary. [Learn more about language packages][].
+As opposed to a translation dictionary, you can translate any or all words and phrases in the Commerce application using a language package. You can translate a particular component—like a module or a theme—using a translation dictionary. [Learn more about language packages](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages).
 
 This section discusses how to create a language package, which writes CSV files to modules and themes. To create a language package, you must perform the tasks discussed in the following sections:
 
@@ -101,7 +101,7 @@ The following table explains the parameters and values for the language package 
 |Parameter|Value|Required?|
 |--- |--- |--- |
 |`<source>`|Absolute file system path and file name of a CSV file that contains the combined translation dictionary and meta-information necessary for breakdown into a language package.<br><br>Use [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) to create the CSV file then create the language package as discussed in [Create directories and files](#m2devgde-xlate-files).|Yes|
-|`<locale>`|[ISO 639-1][] (language) and [ISO 3166][] (country) identifier of language used as file name for all resulting CSV files. Examples: `de_DE`, `pt_PT`, `pt_BR`.|Yes|
+|`<locale>`|[ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (language) and [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (country) identifier of language used as file name for all resulting CSV files. Examples: `de_DE`, `pt_PT`, `pt_BR`.|Yes|
 |`-m --mode`|If a target file exists, specifies whether to replace the existing language package or merge with the new language pack. Merging overrides any phrases that existed and adds new ones.<br><br>Values: merge or replace (default).|No|
 |`-d --allow-duplicates`|Include this option to allow duplicates in the language pack. Otherwise, the command fails with an error if it encounters the same phrase in multiple entries with different translations.|No|
 
@@ -111,12 +111,12 @@ Language packages are located in a directory under `app/i18n/<VendorName>` in th
 
 - Required license files
 - `composer.json`
-- `registration.php` that [registers][] the language package
+- `registration.php` that [registers](https://developer.adobe.com/commerce/php/development/build/component-registration/) the language package
 - [`language.xml`](#language-package-languagexml) meta-information file
 
 >[!INFO]
 >
->You must lowercase the entire path. For example, see [`de_de`][].
+>You must lowercase the entire path. For example, see [`de_de`](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php).
 
 To create these files:
 
@@ -125,8 +125,8 @@ To create these files:
    For example, Commerce language packages are located in `app/i18n/magento`
 
 1. Add required license files.
-1. Add [`composer.json`][] that specifies dependencies for your language package.
-1. Register the language package with [`registration.php`][]
+1. Add [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) that specifies dependencies for your language package.
+1. Register the language package with [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 1. Add `language.xml` meta-information file as discussed in the next section.
 
 #### Language package language.xml
@@ -189,7 +189,7 @@ If the Commerce application cannot find word or phrase in the `en_GB` package, i
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-Specifying all inheritances between the language packages might result in creating circular inheritance chains. Use [Magento\Test\Integrity\App\Language\CircularDependencyTest][] test to locate and fix such chains.
+Specifying all inheritances between the language packages might result in creating circular inheritance chains. Use [Magento\Test\Integrity\App\Language\CircularDependencyTest](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) test to locate and fix such chains.
 
 ### Configure multiple packages for a language
 
@@ -306,16 +306,3 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    </language>
    ```
 
-<!-- link definitions -->
-
-[Translations overview]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
-[translation dictionary]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configures the translations]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
-[Learn more about language packages]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
-[ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
-[ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[registers]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[`de_de`]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[`composer.json`]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
-[`registration.php`]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

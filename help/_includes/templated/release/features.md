@@ -1,7 +1,9 @@
 # Commerce features
 
-<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
-https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
+<!--
+This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content:
+https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates
+-->
 
 <table style="table-layout:auto">
   <tbody>
@@ -14,7 +16,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
-      <td>Live Search powered by Adobe Sensei (B2C & B2B)</td>
+      <td>Live Search powered by Adobe AI (B2C & B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -38,7 +40,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Product Recommendations powered by Adobe Sensei (B2C & B2B)</td>
+      <td>Product Recommendations powered by Adobe AI (B2C & B2B)</td>
       <td></td>
       <td></td>
       <td></td>

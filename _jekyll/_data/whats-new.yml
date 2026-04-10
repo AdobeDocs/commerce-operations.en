@@ -2,8 +2,718 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 9 16:14:40 2026
+updated: Fri Apr 3 17:13:14 2026
 entries:
+- description: Added instructions for properly overriding Adobe Commerce’s default
+    L2 cache directories in `env.php` to ensure that cache files are stored in the
+    intended location and prevent split cache directories and GlusterFS segmentation
+    faults. See the updated guidance in [Best practices for Redis and Valkey services
+    configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration).
+  versions: ''
+  type: technical, feedback
+  date: April 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1874
+  merge_commit: c3030226d7832b17c82be375431795cba44d72f9
+  contributor: dyushkin
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Updated the [2026 Adobe Commerce release calendar](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    with the most current release information.
+  versions: ''
+  type: release-notes
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1881
+  merge_commit: 3f32d342cbdc3e962fede45de828d836c242bc9a
+  contributor: meker
+  membership:
+  labels:
+  - release-notes
+- description: Updated the [best practices for Redis and Valkey configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+    and provided related configuration guidance.
+  versions: ''
+  type: technical, feedback
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1848
+  merge_commit: c96e5b397a2ffee8fadaf638e721799b40d320d3
+  contributor: magedocs
+  membership:
+  labels:
+  - imported
+  - technical
+  - devops
+  - feedback
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69319:
+    Bundle prices were not indexed properly when child products had stock under custom
+    sources](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1822
+  merge_commit: 7646d46e37385cf0a2bfbee6de82410ca54629a1
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69086:
+    Installation fails on MariaDB 10.11 due to unsupported database version check](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 18, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1835
+  merge_commit: 016d24d990492d009677c218b253ae88c21634e6
+  contributor: muntianu
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69331:
+    Content creators in the media gallery could not create folders with only the `create_folder`
+    permission. After the fix, they can create folders as expected](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 17, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1827
+  merge_commit: 40a14de0a67a0c373dcbb497f1893a98322435b3
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements):
+    added Elasticsearch to the technology stack table for v2.4.8.'
+  versions: ''
+  type: technical
+  date: March 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1852
+  merge_commit: a9fe1555d9c9d5b27d8fb7fe23a312e8f124d94c
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68759:
+    Customer account creation error with Arabic locale when Date of Birth is shown](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1807
+  merge_commit: d3c2d0ebea67fb376a43a67995f3ce278ceac3ee
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69237:
+    Sales__async_insert cron jobs process only 100 entries per run](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1811
+  merge_commit: '0842ba414e45857e36d61c589687718435739efa'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69203:
+    Products List widget returns incorrect results when multiple categories are used
+    in the category condition](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1816
+  merge_commit: 1c435f9cef082a01dbcc160443291e6b7655f009
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69115:
+    Shopping cart errors not displayed to admin users for customers assigned to non‑default
+    websites](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69115).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1792
+  merge_commit: 9441537126c958bfcc6485e627cbad7efd16128e
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69016:
+    Special price isn''t applied on websites with different time zones](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1809
+  merge_commit: b9788fef5bab2eb33334ef9f62bb52fa7b9f243e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements):
+    MariaDB 10.6 is still supported for 2.4.5-p16.'
+  versions: ''
+  type: technical
+  date: March 11, 2026
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/173
+  merge_commit: 1f408f11955ef3c2bdb0ef9675b9dc6dbf78c0b7
+  contributor: mpchadwick
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69351:
+    Gift card balances and expiration dates displayed across incorrect websites](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1813
+  merge_commit: '092972cf6a0689b886e1729bb195bfc9cea7cb07'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-67370:
+    Incorrect prices were shown for Bundle products on PDP/PLP and the cart page for
+    multi-currency stores](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1821
+  merge_commit: 6be4fb9868ce348b9d7ab911b501807c2e9603a5
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated security patch release notes (2.4.4, 2.4.5, 2.4.6, 2.4.7)
+    to reference [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html):
+    [2.4.4 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches),
+    [2.4.5 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    [2.4.6 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    and [2.4.7 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches).'
+  versions: ''
+  type: technical
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1845
+  merge_commit: aca7de52b79acd844950e792430937795bd23eba
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+  - release-notes
+- description: 'Updated [Upgrade Compatibility Tool CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct)
+    to version 3.0.26: revised command examples and available-version lists for `dbschema:diff`
+    and `upgrade:check`.'
+  versions: ''
+  type: technical
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1846
+  merge_commit: 4fa8705ac5d11e6baf2e9fe250e4fc87a1327116
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'March''26 release:<br/>- Added highlights to the [Adobe Commerce 2.4.9-beta1
+    release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    to summarize significant updates included in the release.<br/>- Added MySQL 8.0
+    End of Support (EOS) notice to security patch release notes for [2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    [2.4.6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    and [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches),
+    advising on-premises customers to migrate to a compatible MariaDB version before
+    April 30, 2026.<br/>- Documented [2.4.4-p17](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p17)
+    security patch release.<br/>- Added [bin/magento (Adobe Commerce on-premises 2.4.9-beta1)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises-beta)
+    CLI reference documenting all available commands, arguments, and options for the
+    2.4.9-beta1 on-premises CLI.<br/>- Updated security patch release notes with new
+    patch versions and highlights: [2.4.5-p16](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    [2.4.6-p14](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    [2.4.7-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches),
+    and [2.4.8-p4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches).<br/>-
+    Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for Adobe Commerce 2.4.9 beta1 (replacing alpha columns with 2.4.9-beta1), refreshed
+    dependency versions (PHP 8.5/8.4, ActiveMQ Artemis, AWS services), and added patch
+    versions 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, 2.4.5-p16, and 2.4.4-p17.<br/>- Updated
+    [Adobe Commerce 2.4.9-beta1 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9-beta1 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9)
+    with fixed-issues content for beta1.<br/>- Updated [Adobe Commerce 2.4.9-beta1
+    release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9-beta1 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9)
+    with beta1 highlights, including framework updates (OpenSearch 3.x, Valkey 8.x,
+    ActiveMQ, Composer, PHP 8.5), security and ACL improvements, shipping (USPS, DHL),
+    Braintree enhancements, and other 2.4.9-beta1 changes.'
+  versions: 2.4.9
+  type: major-update
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1842
+  merge_commit: e4cec53679d038d2324f89478c5495de98a29fb3
+  contributor: shevtsov
+  membership:
+  labels:
+  - major-update
+  - 2.4.9
+  - release-notes
+- description: Updated [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)
+    after March 2026 release.
+  versions: ''
+  type: technical
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1843
+  merge_commit: 9bc44a3ec7199ccb08927caf3d7904611cc7b167
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-67091:
+    Catalog rule product index cleanup fails due to maximum writeset size during large
+    deletions](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1789
+  merge_commit: 520273fb4c1b30e3f8b346f7079062cf9c8b37f3
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69261:
+    Single‑use cart coupon reused due to incorrect times_used handling in partial
+    invoice and cancellation flows](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1795
+  merge_commit: 536364742e2102f8386b3e13503cf2965821f04b
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69541:
+    Reducing a product''s quantity in the admin to less than what already exists in
+    a cart made it impossible to edit the product quantity in that cart via GraphQL](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1825
+  merge_commit: b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69308:
+    Catalog price rules did not apply when `special_price` was set only at the website
+    level (not at "All Store Views"). After the fix, catalog price rules apply correctly
+    by checking the website''s default store first](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1826
+  merge_commit: db07a5d6f991ff36536a4365ee88fa25062dbe43
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69020:
+    Configurable products appear in Page Builder carousels when child products match
+    filters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1810
+  merge_commit: 5ce526100a22243b91f75b8a52690e529b64b152
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69325:
+    Modifying the SKU case caused the product to appear out-of-stock on the storefront](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1823
+  merge_commit: bceda2e729082e0dc81f7eb81838ca5c5049342d
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Updated [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    with two new public beta programs: Merchandising Rules globally and per catalog
+    view, and Product Recommendations globally and per catalog view.'
+  versions: ''
+  type: major-update
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1832
+  merge_commit: 5533640a3f0f648162ebfc3609eb4e35fd32f6d7
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69129:
+    REST API tier price update fails after deleting the default base website and using
+    the secondary website as default](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 5, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1793
+  merge_commit: 06d33e9ed08e079365ac6ae6087e4bdf30bbf45e
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-68410:
+    Negotiable quote checkout includes unintended shopping cart items](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 5, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1790
+  merge_commit: 123a0b7c2335fd27d6c8fabbb8a6520af2ac0c76
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68892:
+    Inconsistent Fastly caching behavior for cacheable pages](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 5, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1808
+  merge_commit: d727bea23f1a60b597bb795948eb924e76e869a5
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-63687:
+    Incorrect prices are displayed due to Redis cache cleanup issues](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1803
+  merge_commit: e8a9b37a61119e7604461c83f135a282b15a93ef
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68664:
+    Scheduled update preview has errors on custom store domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1806
+  merge_commit: d0a57180c224fc7d1eba3e4e5b87a87ddb11d88c
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69333:
+    SKU changes allowed for products with an active Scheduled Update](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333).'
+  versions: ''
+  type: new-topic, qpt
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1824
+  merge_commit: b9ea11e00223a3c4a4cd5be1eca1a3175074124c
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69311:
+    Incorrect tax calculation in credit memos after partial refunds from invoices](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1812
+  merge_commit: c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-69494:
+    Async refund requests with is_online don''t trigger online refunds](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1814
+  merge_commit: 29a5f90122336bde78ed00e778b43b7c56549eef
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68537:
+    Checkout performance degrades with many customer segments](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1805
+  merge_commit: 70729169b3588f5061f98b555577c2b62215e6f0
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.77 fix for [ACSD-68341:
+    Multiple X‑Magento‑Vary cookie updates occur on PDP load](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 26, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1804
+  merge_commit: 88ae7472fc5ec3c7b422a9a1d568204c42e017bb
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.77](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1801
+  merge_commit: '09c026905c464ec0e41d12db8a5822b3e3b57064'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68359:
+    Fixes 414 error when selecting Pick in Store with large carts](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68359).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 14, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1763
+  merge_commit: 33348fa893265e14d9e2cec9f30ffd6cf42b0878
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68517:
+    Fixes a form resubmission error on Catalog and Catalog Search pages](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1766
+  merge_commit: 3b3f33eda0f87829f97a875ec9805c6e257d9b09
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Updated the [Patch release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    to clarify current release guidelines and timeline.
+  versions: ''
+  type: technical, feedback
+  date: February 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1774
+  merge_commit: 8ee6404271170b19ff27a3ab64711061505494b3
+  contributor: meker
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.76](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1785
+  merge_commit: 6e7e67291cabb1a35b132e3ae2d407e2ffefe7f1
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68573:
+    Category permissions were not applied properly to customer wishlist items. After
+    the fix, wishlist items are properly displayed and paginated in both the web and
+    GraphQL](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68573).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1767
+  merge_commit: 19e5faea683395375efefe6fc57e0897392ef354
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68793:
+    Valid products were incorrectly rejected when assigning them to a shared catalog](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1769
+  merge_commit: bbd18afc87f16777b6218cdcf7ec0798c1640083
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68925:
+    Responses for GraphQL requests are now aligned with the GraphQL over HTTP specs.
+    A 4XX response code is returned when the request cannot be parsed, is unauthorized,
+    or encounters a general problem. If the request is parsed](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68925).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1770
+  merge_commit: 210a5038743bec986807d7dff5db31d74670461e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68289:
+    Full-text search now returns matching products if the minimum match condition
+    is met across all searchable fields collectively, rather than requiring the condition
+    to be satisfied by a single field](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1762
+  merge_commit: d26429ef5b2dee650e14914d3b9678895a23f73e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68451:
+    Fixes an issue for multiple websites where a company admin logs in on one website,
+    creates an unrelated company on another website, but is erroneously linked to
+    that unrelated company](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451).'
+  versions: ''
+  type: new-topic, qpt
+  date: February 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1764
+  merge_commit: 74e1ed73b9574903f12fa27c2f1198a823c80651
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added Database Storage for App Builder (Public Beta) to [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+  versions: ''
+  type: major-update
+  date: February 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1778
+  merge_commit: 7908d56156bd72ef7e36938090befd9dd39e50e5
+  contributor: keharper
+  membership:
+  labels:
+  - major-update
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68615:
+    The inventory reservation compensation CLI showed an exception if the processed
+    combination had a missing order ID](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 29, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1768
+  merge_commit: c73feb1bb1d8e11220482f5ea51fa4427ecee201
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.75 fix for [ACSD-68490:
+    The "Add New Attribute" button is visible for a restricted admin user during configurable
+    product creation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 29, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1765
+  merge_commit: 1a59b4d956a8982b414eba2c8c03bcfc439d4ac4
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.75](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1761
+  merge_commit: 623f2a0ca319827d8afbb7d1f59ba714fb2c553a
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Updated the [Commerce Patch release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    to reflect 2026 release plans.
+  versions: ''
+  type: technical, feedback
+  date: January 22, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1750
+  merge_commit: cfda1cd1584e55a42687ae76f26e7c63c811126d
+  contributor: meker
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Changed product references from "Adobe Sensei" to "Adobe AI" to reflect
+    Adobe branding updates.
+  versions: ''
+  type: feedback
+  date: January 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1752
+  merge_commit: d45a1ea4357f3f14c5d6133225f0d74dee84c9a9
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+- description: 'Updated Composer dependency in [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements):<br/>-
+    For core versions 2.4.4–2.4.6 (base and patches): updated to v2.2.26.<br/>- For
+    2.4.7+ (base and patches, including 2.4.8 and 2.4.9-alpha versions): updated to
+    v2.9.3.'
+  versions: ''
+  type: technical
+  date: January 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1751
+  merge_commit: 73561ef1228a22a2032fa3ca354c9be52727ebc7
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+- description: Added the [detailed description of the issue fixed by the ACSD-65935
+    patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted).
+  versions: ''
+  type: new-topic, qpt
+  date: January 15, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1479
+  merge_commit: 8921d17196230f97b6f940621e8236c5d85e1b9f
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.73 fix for [ACSD-68190:
+    Discounts don''t apply, applied discounts don''t display correctly in the GraphQL
+    cart view response, and non-coupon discounts are removed on removing a coupon
+    discount](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190).'
+  versions: ''
+  type: new-topic, qpt
+  date: January 15, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1684
+  merge_commit: 26980e4011b7f6d81b13df75c003019d23af8aab
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added Composer 2.9 as a supported version for Adobe Commerce 2.4.9,
     2.4.8, and 2.4.7 in the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
     documentation.
@@ -778,7 +1488,7 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration)
+- description: Added [guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
     for enabling stale cache on cloud via config.php; new sections on Redis lazyfree
     and multithreaded I/O (requestable via Support); clarified session Redis example;
     and added client timeout/retry guidance with an explicit overload caveat.
@@ -4411,7 +5121,7 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     for Adobe Commerce on cloud infrastructure.
   versions: ''
   type: major-update
@@ -5127,7 +5837,7 @@ entries:
   labels:
   - major-update
   - 2.4.6
-- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.html)
     with information about separating the cache from the session and using compression.
   versions: ''
   type: major-update

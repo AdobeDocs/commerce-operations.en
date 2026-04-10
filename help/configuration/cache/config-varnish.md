@@ -6,7 +6,7 @@ exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 ---
 # Configure Varnish
 
-[Varnish Cache][] is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
+[Varnish Cache](https://varnish-cache.org) is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
 
 [System requirements](../../installation/system-requirements.md) lists the supported versions of Varnish.
 
@@ -16,9 +16,9 @@ exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 
 For more information about Varnish, see:
 
-- [The Big Varnish Picture][]
-- [Varnish startup options][]
-- [Varnish and Website Performance][]
+- [The Big Varnish Picture](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [Varnish startup options](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [Varnish and Website Performance](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## Varnish topology diagram
 
@@ -55,7 +55,7 @@ The process can be summarized as follows:
 
 We know of the following issues with Varnish:
 
-- [Varnish does not support SSL][]
+- [Varnish does not support SSL](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
    As an alternative, use SSL termination or an SSL termination proxy.
 
@@ -140,10 +140,3 @@ The 304 status code occurs because the user invalidated their local cache and th
 
 If the content changes on the server, the client downloads the static asset with an HTTP 200 (OK) status code and a new ETag.
 
-<!-- Link Definitions -->
-
-[The Big Varnish Picture]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[Varnish Cache]: https://varnish-cache.org
-[Varnish startup options]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Varnish and Website Performance]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[Varnish does not support SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

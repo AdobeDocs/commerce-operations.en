@@ -6,10 +6,10 @@ exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 ---
 # Log database activity
 
-The following example shows how to log database activity using the [`Magento\Framework\DB\LoggerInterface`][interface], which has two implementations:
+The following example shows how to log database activity using the `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)`, which has two implementations:
 
-- Logs nothing (default): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
+- Logs nothing (default): [`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
@@ -52,8 +52,3 @@ And clean the cache with:
 bin/magento cache:clean
 ```
 
-<!-- link definitions -->
-
-[file]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/File.php
-[interface]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/LoggerInterface.php
-[quiet]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/Quiet.php

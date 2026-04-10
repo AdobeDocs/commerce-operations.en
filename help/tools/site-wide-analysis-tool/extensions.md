@@ -5,7 +5,7 @@ exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 ---
 # [!DNL Extensions]
 
-An [!DNL extension] is a custom module, language pack, or combination of custom modules and language packs that add new functionality to the core Adobe Commerce product. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) offers a selection of [!DNL extensions] that are available for free and those that are for sale. You can find the list of [!DNL extensions] installed on your Adobe Commerce instance in the [!DNL Site-Wide Analysis Tool].
+An [!DNL extension] is a custom module, language pack, or combination of custom modules and language packs that add new functionality to the core Adobe Commerce product. [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html) offers a selection of [!DNL extensions] that are available for free and those that are for sale. You can find the list of [!DNL extensions] installed on your Adobe Commerce instance in the [!DNL Site-Wide Analysis Tool].
 
 ## When to use
 
@@ -25,4 +25,4 @@ The [!DNL Extensions] tab in the [!DNL Site-Wide Analysis Tool] provides informa
 
 * If you cannot keep your third-party [!DNL extensions] up-to-date to their latest versions, consider using different [!DNL extensions].
 
-* To avoid potential issues, download/purchase third-party [!DNL extensions] from a trusted source, like [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* To avoid potential issues, download/purchase third-party [!DNL extensions] from a trusted source, like [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html).

@@ -64,10 +64,5 @@ The next order placed at the store with `ID=1` will have the ID '#100002000'.
 Before executing the `ALTER TABLE` query on a production environment of Adobe Commerce on cloud infrastructure, we strongly recommend performing these steps:
 
 -  Test the entire procedure of changing the increment ID on your staging environment
--  [Create a DB backup][] to restore your Production DB in case of failure
+-  [Create a DB backup](https://support.magento.com/hc/en-us/articles/360003254334) to restore your Production DB in case of failure
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[Create a DB backup]: https://support.magento.com/hc/en-us/articles/360003254334
-[any supported version]

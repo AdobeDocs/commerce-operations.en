@@ -10,6 +10,7 @@ exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 includes the following patches:
+
 1. **ACP2E-3918**: Checkout failure for company customers using in-store pickup.
 1. **ACP2E-3789**: Media files duplicated on product update via WebAPI.
 1. **ACSD-65750**: GraphQL "route" query returned products out of order in Page Builder Products content types.

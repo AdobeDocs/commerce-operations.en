@@ -16,7 +16,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
 >[!WARNING]
 >
 >This guide does not apply if you used `git clone` to install Commerce.
->Contributing developers should use [this guide][install] to update their Commerce installation.
+>Contributing developers should use [this guide](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) to update their Commerce installation.
 
 ## Deployment steps
 
@@ -85,6 +85,3 @@ This topic provides instructions for deploying updates to Commerce on a producti
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

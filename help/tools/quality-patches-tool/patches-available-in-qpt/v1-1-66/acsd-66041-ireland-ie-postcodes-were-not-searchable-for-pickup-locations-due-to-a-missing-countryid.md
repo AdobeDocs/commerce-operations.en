@@ -42,14 +42,14 @@ Ireland (IE) postcodes are not searchable for pickup locations due to a missing 
                     pickup_location_code
                     name
                     description
-		    latitude
-		    longitude
-		    country_id
-		    region
-		    city
-		    street
-		    postcode
-		    phone
+            latitude
+            longitude
+            country_id
+            region
+            city
+            street
+            postcode
+            phone
             }
         }
     }

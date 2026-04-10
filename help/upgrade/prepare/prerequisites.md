@@ -23,11 +23,11 @@ After reviewing system requirements, you must complete the following prerequisit
 
 The [system requirements](../../installation/system-requirements.md) describe exactly which versions of third-party software have been tested with Adobe Commerce releases.
 
-Ensure that you updated all system requirements and dependencies in your environment. See PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), and [required PHP settings](../../installation/prerequisites/php-settings.md#php-settings).
+Ensure that you updated all system requirements and dependencies in your environment. Review the [PHP migration appendices](https://www.php.net/manual/en/appendices.php) for your target PHP version and the [required PHP settings](../../installation/prerequisites/php-settings.md#php-settings).
 
 >[!NOTE]
 >
->For Adobe Commerce on cloud infrastructure Pro projects, you must create a [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ticket to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>For Adobe Commerce on cloud infrastructure Pro projects, you must create a [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ticket to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project. See [Supported software and services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Verify that a supported search engine is installed
 
@@ -50,7 +50,7 @@ The following sections describe what actions that you must take before upgrading
 As of 2.4, MySQL is no longer a supported catalog search engine. You must install and configure Elasticsearch or OpenSearch before upgrading. Use the following resources to help guide you through this process:
 
 * [Install and configure Elasticsearch](../../configuration/search/overview-search.md)
-* [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* [Installing Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
 * Configure [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) or [Apache](../../installation/prerequisites/search-engine/configure-apache.md) to work with your search engine
 * [Configure Commerce to use Elasticsearch](../../configuration/search/configure-search-engine.md) and reindex
 
@@ -92,9 +92,11 @@ To properly upgrade MySQL from version 8.0 to version 8.4, you must follow these
    >[!WARNING]
    >
    >If you do not change the value of `restrict_fk_on_non_standard_key` to `OFF`, you will get the following error during import:
+   >
    >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
+
 1. Restart the MySQL server.
 1. Import the backed-up data into MySQL.
 1. Clean the cache:
@@ -117,9 +119,9 @@ To properly upgrade MySQL from version 8.0 to version 8.4, you must follow these
 
 You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Search engine configuration](../../configuration/search/configure-search-engine.md) in the _Configuration Guide_ describes the tasks you must perform after upgrading Elasticsearch to a supported version.
 
-Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
+Refer to [Upgrading Elasticsearch](https://www.elastic.co/docs/deploy-manage/upgrade/deployment-or-cluster) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
-Elasticsearch requires Java Development Kit (JDK) 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+Elasticsearch requires Java Development Kit (JDK) 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) to check which version of JDK is installed.
 
 #### OpenSearch
 
@@ -133,7 +135,7 @@ OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsear
 
 You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.md) only if you are upgrading to a version of Adobe Commerce listed above (or higher).
 
-OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) to check which version of JDK is installed.
 
 [Search engine configuration](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after changing search engines.
 
@@ -143,9 +145,9 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 
 >[!NOTE]
 >
->In the upcoming 2.4.8 release, these steps won't be necessary because the Elasticsearch 8 module is included by default and you won't need to install it separately.
+>These steps apply only to Adobe Commerce 2.4.6 and 2.4.7. Adobe Commerce 2.4.8 and later no longer support Elasticsearch; use OpenSearch instead.
 
-1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Enable the `id_field_data` field by adding the following configuration to your `elasticsearch.yml` file and restarting the Elasticsearch 8.x service. 
 
@@ -211,7 +213,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 
 If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce project dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x
 
-1. Downgrade the Elasticsearch 8.x server to 7.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Downgrade the Elasticsearch 8.x server to 7.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch8` module and its Composer dependencies and install the `Magento_Elasticsearch7` module.
 
@@ -251,7 +253,7 @@ You must convert the format of all database tables from `COMPACT` to `DYNAMIC`. 
 
 Setting the open files limit (ulimit) can help avoid failure from multiple recursive calls of long query strings or issues with using the `bin/magento setup:rollback` command. This command is different for different UNIX shells. Consult your individual flavor for specifics about the `ulimit` command.
 
-Adobe recommends setting the open files [ulimit](https://ss64.com/bash/ulimit.html) to a value of `65536` or more, but you can use a larger value if necessary. You can set the ulimit on the command line or you can make it a permanent setting for the user's shell.
+Adobe recommends setting the open files [ulimit](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-ulimit) to a value of `65536` or more, but you can use a larger value if necessary. You can set the ulimit on the command line or you can make it a permanent setting for the user's shell.
 
 To set the ulimit from the command line:
 

@@ -38,6 +38,6 @@ Do not start Magento 2 cron jobs.
 
 Migrate Magento 1 extension code to Magento 2.
 
-To find the latest extensions versions, visit [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) or contact your extension provider.
+To find the latest extensions versions, visit [!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//) or contact your extension provider.
 
 You can also use the [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

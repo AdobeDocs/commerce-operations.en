@@ -11,11 +11,11 @@ The `Magento\Framework\Logger` module contains the following handler classes:
 
 | Class | Log file |
 | ----- | -------- |
-| [Magento\Framework\Logger\Handler\Base][base] | - |
-| [Magento\Framework\Logger\Handler\Debug][debug] | `/var/log/debug.log` |
-| [Magento\Framework\Logger\Handler\Exception][exception] | `/var/log/exception.log` |
-| [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
-| [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
+| [Magento\Framework\Logger\Handler\Base](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
+| [Magento\Framework\Logger\Handler\Debug](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
+| [Magento\Framework\Logger\Handler\Exception](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
+| [Magento\Framework\Logger\Handler\Syslog](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
+| [Magento\Framework\Logger\Handler\System](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
 
 You may find them in the `lib/internal/Magento/Framework/Logger/Handler` directory.
 
@@ -199,10 +199,3 @@ This example shows how to use a custom logger handler class to log `error` messa
 
 Exception messages are logged in the `/var/log/my_custom_logger/error.log` file.
 
-<!-- link definitions -->
-
-[base]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php
-[debug]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php
-[exception]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php
-[syslog]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php
-[system]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php
