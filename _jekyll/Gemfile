@@ -6,5 +6,4 @@
 source 'https://rubygems.org'
 
 gem 'adobe-comdox-exl-rake-tasks', git: 'https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks', tag: 'v0.3.0'
-gem 'faraday-retry'
-gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', tag: 'v1.2.0'
+gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', ref: 'v2.0.0'

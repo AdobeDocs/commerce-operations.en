@@ -2,8 +2,55 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 10 18:06:05 2026
+updated: Mon Apr 13 12:20:29 2026
 entries:
+- description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    with New Relic (APM) supported versions for Commerce on Cloud by release.
+  versions: ''
+  type: technical, feedback
+  date: April 8, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1886
+  merge_commit: f82d05cf0f7d2749b313ef5f7e89e1e36248bf30
+  contributor: shevtsov
+  labels:
+  - technical
+  - feedback
+- description: Updated [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    with a Category Merchandising (Public Beta) program for SaaS projects, including
+    links to [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)
+    and related merchandising rules topics.
+  versions: ''
+  type: major-update
+  date: April 8, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1868
+  merge_commit: a9f3594a0ccf4326b0541a4f2b07fdf49cde7148
+  contributor: emarr
+  labels:
+  - major-update
+- description: Added instructions for properly overriding Adobe Commerce’s default
+    L2 cache directories in `env.php` to ensure that cache files are stored in the
+    intended location and prevent split cache directories and GlusterFS segmentation
+    faults. See the updated guidance in [Best practices for Redis and Valkey services
+    configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration).
+  versions: ''
+  type: technical, feedback
+  date: April 3, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1874
+  merge_commit: c3030226d7832b17c82be375431795cba44d72f9
+  contributor: dyushkin
+  labels:
+  - technical
+  - feedback
+- description: Updated the [2026 Adobe Commerce release calendar](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    with the most current release information.
+  versions: ''
+  type: release-notes
+  date: April 1, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1881
+  merge_commit: 3f32d342cbdc3e962fede45de828d836c242bc9a
+  contributor: meker
+  labels:
+  - release-notes
 - description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
     with New Relic (APM) supported versions for Commerce on Cloud by release.
   versions: ''
