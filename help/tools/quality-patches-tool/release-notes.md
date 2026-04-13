@@ -16,6 +16,33 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.78 {#v1-1-78}
+
+* **ACP2E-4416** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where customer reward points are not initialized when created in the Admin.
+* **ACP2E-4419** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where gift cards are not applied correctly at checkout after successful reCAPTCHA v2 ('I am not a robot') validation on the storefront.
+* **ACP2E-4431** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where Related Products matched by the target rules are deleted during the reindex process.
+* **ACP2E-4448** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where configuration changes made during Redis outages are not reflected after Redis recovers, causing stale values to persist.
+* **ACP2E-4452** (for Adobe Commerce, B2B >=1.5.1 <1.5.3) - Fixes the issue where product prices on the Quick Order page include tax regardless of the tax display configuration.
+* **ACP2E-4456** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where canceling an order using a GraphQL mutation does not transition an order paid entirely with gift cards to the Closed status.
+* **ACP2E-4507** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where Password Options configuration is not applied for customer password reset requests made through GraphQL mutations.
+* **ACP2E-4513** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where expired CAPTCHA images are not deleted from the system.
+* **ACP2E-4522** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue where an intermittent duplicate key error occurs on the quote_coupons table when multiple cart merge or quote save requests run at the same time.
+* **ACP2E-4528** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue with city validation in customer addresses, which now allows a forward slash (/) character and rejects invalid characters such as !, ", #, and ?.
+* **ACP2E-4535** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes an issue where submitting the forgot-password form causes the session to be destroyed or regenerated (PHPSESSID changes) and the guest cart is cleared.
+* **ACP2E-4540** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where the Fotorama library was not loading correctly, causing only the first attached image to be visible.
+* **ACP2E-4555** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where modern telephone numbers containing "." or "/" are not validated properly.
+* **ACP2E-4565** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used.
+* **ACP2E-4591** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where customer segments based on order count, such as "First-time buyers", did not update when orders were placed via the REST API.
+* **ACP2E-4609** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where the My Quotes page shows no quotes when some quotes contain deleted products.
+* **ACP2E-4613** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where large media directory structures caused slow gettree responses, leading to extended Media Gallery directory tree loading times.
+* **ACP2E-4628** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where importing customers with uppercase email addresses results in the undefined array key error, when Account Sharing is set to Global.
+* **ACP2E-4665** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where child products of configurable products containing videos in the product galleries are not listed when requested through REST API.
+* **ACP2E-4732** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes an issue where partial indexation stopped for customers with a large number of updates when the version_id column in the changelog table reached its maximum value.
+* **ACP2E-4763** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax values when Catalog Prices are set to Including Tax, due to tax being applied twice.
+* **ACSD-60989** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where modifying a column with a foreign key through a declarative schema causes errors on MariaDB.
+* Versions updated: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965-V2**, **ACSD-56546**, **ACSD-61756**, **ACSD-68040**, **ACSD-62708**, **ACSD-63283**, **ACSD-64732**, **ACSD-65775**, **ACSD-66965**, **ACP2E-4050**
+* Replaced patches: **ACSD-58446**, **ACSD-67904**
+
 ## v1.1.77 {#v1-1-77}
 
 * **ACSD-63687** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where incorrect prices are displayed because it is not possible to clean Redis cache.
