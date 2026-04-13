@@ -40,8 +40,8 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACP2E-4732** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes an issue where partial indexation stopped for customers with a large number of updates when the version_id column in the changelog table reached its maximum value.
 * **ACP2E-4763** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax values when Catalog Prices are set to Including Tax, due to tax being applied twice.
 * **ACSD-60989** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where modifying a column with a foreign key through a declarative schema causes errors on MariaDB.
-* Versions updated: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965**, **ACSD-54965-V2**, **ACSD-56546**, **ACSD-61756**, **ACSD-68040**, **ACSD-62708**, **ACSD-63283**, **ACSD-64732**, **ACSD-65775**, **ACSD-66965**, **ACP2E-4050**
-* Replaced patches: **ACSD-54965**, **ACSD-58446**, **ACSD-67904**
+* Versions updated: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965-V2**, **ACSD-56546**, **ACSD-61756**, **ACSD-68040**, **ACSD-62708**, **ACSD-63283**, **ACSD-64732**, **ACSD-65775**, **ACSD-66965**, **ACP2E-4050**
+* Replaced patches: **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
 
