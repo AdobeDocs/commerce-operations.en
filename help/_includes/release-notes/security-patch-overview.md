@@ -15,3 +15,12 @@ For instructions on downloading and applying security patches, see [How to obtai
 >[!NOTE]
 >
 >Extended support security patches for 2.4.4 and 2.4.5 are available to Adobe Commerce customers only and not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+## Isolated security fixes
+
+Isolated patches are non-cumulative security fixes released independently from a full security patch to allow for faster implementation. Each isolated security fix addresses a specific security problem and is either included in the latest or an upcoming full security patch. Details about the issue are provided in the related security bulletin, which links to a Knowledge Base (KB) article containing the fix details, how to apply the fix, and additional information.
+
+To apply isolated security fixes, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
+
+See the [Security Center](https://helpx.adobe.com/security/products/magento.html) to find the latest security updates available for Adobe Commerce.
+
