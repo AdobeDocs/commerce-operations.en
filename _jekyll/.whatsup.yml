@@ -1,8 +1,6 @@
 # Parameters for a GitHub search query
 base_branch: main
 
-enterprise: git.corp.adobe.com
-
 # The list of repositories to scan for pull requests
 repos:
   - AdobeDocs/commerce-operations.en
