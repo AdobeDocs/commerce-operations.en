@@ -155,7 +155,9 @@ To maintain full security coverage and ensure PCI compliance, customers must upg
 | Adobe Commerce 2.4.5 | August 9, 2022       | August 11, 2026         | May 2027                           |
 | Adobe Commerce 2.4.4 | April 12, 2022       | April 14, 2026          | May 2027                           |
 
+
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >Additional security fixes are only available to Adobe Commerce customers only and not available for the Magento Open Source code base.
-{style="table-layout:auto"}
