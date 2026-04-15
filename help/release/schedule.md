@@ -24,7 +24,9 @@ Adobe Commerce patch releases are released based on the following guidelines:
 
 - **Patch**—A full [patch](versioning-policy.md#patch-release) for the Adobe Commerce 2.4.x LTS release line (3-year support period) is released annually (May).
 
-- **Beta patches**—Two [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line are released twice a year.
+- **Alpha patches**–One [alpha patch](versioning-policy.md#alpha-patch-release for Adobe Commerce 2.4.x LTS release line is released annually.
+
+- **Beta patches**—One [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line is released annually.
 
 See the following image for details:
 
