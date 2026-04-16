@@ -171,7 +171,7 @@ The support timeline maps support periods quarter by quarter for each Adobe Comm
    <td>Extended support</td>
   </tr>
     <tr>
-   <td style="background-color::#FFBF00;"></td>
+   <td style="background-color:#FFBF00;">&nbsp;</td>
    <td>Extended security fixes</td>
   </tr>
  </tbody>
