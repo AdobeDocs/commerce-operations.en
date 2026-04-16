@@ -71,6 +71,10 @@ To maintain full security coverage and ensure PCI compliance, customers must upg
 >Additional security fixes are only available to Adobe Commerce customers only and not available for the Magento Open Source code base.
 
 
+## Support timeline for Adobe Commerce releases
+
+This timeline maps support periods quarter by quarter for each Adobe Commerce release line; use the tables earlier in this topic for exact end dates.
+
 <table style="table-layout:auto">
 <thead>
   <tr>
@@ -121,7 +125,7 @@ To maintain full security coverage and ensure PCI compliance, customers must upg
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="4" style="background-color:#FFBF00"></td>
+    <td colspan="5" style="background-color:#FFBF00"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
@@ -165,6 +169,10 @@ To maintain full security coverage and ensure PCI compliance, customers must upg
   <tr>
    <td style="background-color:#ffd700;"></td>
    <td>Extended support</td>
+  </tr>
+    <tr>
+   <td style="background-color::#FFBF00"></td>
+   <td>Extended security fixes</td>
   </tr>
  </tbody>
 </table>
