@@ -18,7 +18,7 @@ In addition to the scheduled quality, security, and beta patches listed on this 
 
 Adobe Commerce patch releases are released based on the following guidelines:
 
-- **Isolated security fixes**—Individual, non-cumulative [security fixes](versioning-policy.md#isolated-patch) are released as needed and include security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support). To apply isolated security fixes, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
+- **Isolated security patch file**—Individual, non-cumulative [security fixes](versioning-policy.md#isolated-patch) are released as needed and include security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support). To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
 
 - **Security patches**—At minimium, [security patches](versioning-policy.md#security-patch-release) are released annually for all [supported](lifecycle-policy.md) release lines. These patches include all previously released isolated security fixes. Adobe may release additional security patches if necessary, but it is not guaranteed.
 

@@ -49,9 +49,9 @@ As a one-time exception, Adobe is providing an extended security fixes provision
 
 During this security fixes provisioning period, note the following:
 
-- **Isolated security fixes only**-Isolated security patches will be released for these versions according to the release schedule. No security patch releases (that is, no new -p versions) will be provided during this period.
+- **Isolated security patch file only**-An isolated security patch file will be released for these versions according to the release schedule. No security patch releases (that is, no new -p versions) will be provided during this period.
 
-  To apply isolated security fixes, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
+  To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
 
 - **No quality fixes or engineering assistance**–No bug fixes, quality updates ([Quality Patches Tool](../tools/quality-patches-tool/usage.md)), or engineering assistance ([Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) will be provided for versions 2.4.4 or 2.4.5 during this period.
 
