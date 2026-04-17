@@ -12,7 +12,7 @@ exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 
 # Best practices for Redis and Valkey service configuration
 
-Use these recommendations to configure Redis or Valkey for Adobe Commerce caching and sessions.
+Use these recommendations to configure Redis or Valkey caching and sessions for Adobe Commerce on cloud. For on-premises deployments, see [Configure caching](../../../configuration/cache/caching-overview.md) in the _Configuration Guide_.
 
 - Configure L2 cache
 - Enable slave connection
