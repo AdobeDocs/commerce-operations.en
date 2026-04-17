@@ -6,6 +6,8 @@ exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 ---
 # Cache types
 
+{{cloud-cache-config}}
+
 The following steps walk through associating cache frontend with a cache type.
 
 ## Step 1: Define a cache frontend
