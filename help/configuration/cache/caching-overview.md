@@ -3,6 +3,7 @@ title: Configure caching
 description: Learn about caching mechanisms and configuration options for Adobe Commerce applications. Discover alternatives to default file system caching.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises on-premises projects only."
 ---
 # Configure caching
 
