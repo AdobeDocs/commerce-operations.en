@@ -12,7 +12,7 @@ During the three year support window, customer have access to:
 
 - **Quality fixes**–Customers can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). The following table described end of software support dates for the Adobe Commerce release lines.
 
-- **Security fixes**–Adobe provides security fixes through cumulative security patches and non-cumulative [isolated security fixes](versioning-policy.md#isolated-security-fixes) for the three-year support period.
+- **Security fixes**–Adobe provides security fixes through cumulative security patches and non-cumulative [isolated security patch files](versioning-policy.md#isolated-security-fixes) for the three-year support period.
 
 - **Hotfixes**–For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. Note that a hotfix is not comprehensive and does not address all security issues that would be resolved by upgrading to the latest release.
 
