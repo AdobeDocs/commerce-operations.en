@@ -16,7 +16,7 @@ For instructions on downloading and applying security patches, see [How to obtai
 >
 >Extended support security patches are available to Adobe Commerce customers only and not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
-## Isolated security patch file {#isolated-security-fixes}
+## Isolated security patch file
 
 Isolated security patch files are non-cumulative, standalone patch files that include fixes for one or more security vulnerabilities only, without any additional feature updates or non-security changes. These patches are released independently to enable faster remediation and are incorporated into the next full security patch. Details about the vulnerabilities are provided in the associated security bulletin, which links to a Knowledge Base (KB) article with instructions for applying the patch and additional information.
 
