@@ -43,7 +43,7 @@ The REST API should return the child product data without errors, including the 
 
 The REST API returns an error:
 
-```
+```yaml
 Error: Call to a member function getVideoProvider() on null in vendor/magento/module-product-video/Model/Product/Attribute/Media/ExternalVideoEntryConverter.php:87
 ```
 

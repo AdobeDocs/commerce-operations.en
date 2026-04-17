@@ -74,7 +74,7 @@ Do not ask any interactive question
 
 ## `_complete`
 
-```bash
+```shell
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
@@ -118,13 +118,13 @@ deprecated
 
 ## `completion`
 
-```bash
+```shell
 bin/uct completion [--debug] [--] [<shell>]
 ```
 
 Dump the shell completion script
 
-```
+```shell
 The completion command dumps the shell completion script required
 to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
@@ -173,13 +173,13 @@ Tail the completion debug log
 
 ## `help`
 
-```bash
+```shell
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 Display help for a command
 
-```
+```shell
 The help command displays help for a given command:
 
   ./uct/bin/uct help list
@@ -220,13 +220,13 @@ To output raw command help
 
 ## `list`
 
-```bash
+```shell
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 List commands
 
-```
+```shell
 The list command lists all commands:
 
   ./uct/bin/uct list
@@ -278,7 +278,7 @@ To skip describing commands' arguments
 
 ## `refactor`
 
-```bash
+```shell
 bin/uct refactor <path>
 ```
 
@@ -299,7 +299,7 @@ For global options, see [Global options](#global-options).
 
 ## `core:code:changes`
 
-```bash
+```shell
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
 
@@ -331,7 +331,7 @@ Path of the file where the output will be exported (Json Format)
 
 ## `dbschema:diff`
 
-```bash
+```shell
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
@@ -359,7 +359,7 @@ For global options, see [Global options](#global-options).
 
 ## `graphql:compare`
 
-```bash
+```shell
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
 
@@ -393,7 +393,7 @@ Path of the file where the output will be exported (JSON Format)
 
 ## `upgrade:check`
 
-```bash
+```shell
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
 

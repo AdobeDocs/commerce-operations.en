@@ -62,13 +62,13 @@ To configure additional databases, you must create an empty database and run one
 
 For Checkout Master DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 For OMS Master DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -80,7 +80,7 @@ In addition to master databases, [!DNL Commerce] allows you to configure a numbe
 
 You can add a slave database by running the following command:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

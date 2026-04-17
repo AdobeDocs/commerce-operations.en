@@ -27,13 +27,13 @@ Uninstalling the application drops and restores the database, removes the deploy
 
 To uninstall the application, enter the following command:
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
 The following message displays to confirm a successful uninstallation:
 
-```
+```shell
 [SUCCESS]: Magento uninstallation complete.
 ```
 
@@ -43,7 +43,7 @@ By default, `bin/magento setup:upgrade` clears compiled code and the cache. Typi
 
 However, in some situations (particularly, deploying to production), you might wish to avoid clearing compiled code because it can take some time. (The cache is still cleared.) To update the database schema and data *without* clearing compiled code, enter:
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 

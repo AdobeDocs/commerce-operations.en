@@ -49,7 +49,7 @@ The admin is able to return items even though the configurable product is delete
 
 An error occurs when returning items.
 
-```
+```yaml
 report.CRITICAL: Error: Call to a member function getShipmentType() on null in magento2ee/app/code/Magento/Rma/view/frontend/templates/return/create.phtml:52
 ```
 

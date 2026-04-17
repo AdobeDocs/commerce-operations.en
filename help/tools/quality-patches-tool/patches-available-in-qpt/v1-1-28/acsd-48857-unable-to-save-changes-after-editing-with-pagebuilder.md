@@ -51,7 +51,7 @@ HTML content sanitization is implemented. This removes [!DNL Page Builder] reser
 
 Page remains unsaved and the loader keeps spinning. In the console, the following error is generated:
 
-```
+```ini
 [ERROR] Page Builder was rendering for 5 seconds without releasing locks.
 ```
 

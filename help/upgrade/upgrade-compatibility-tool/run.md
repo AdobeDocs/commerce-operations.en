@@ -9,13 +9,13 @@ exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
 
 To get started with the [!DNL Upgrade Compatibility Tool] in a command-line interface, download it by running the following command:
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
 You may need to give the tool executable permissions with the `chmod` command:
 
-```bash
+```shell
 chmod +x ./uct/bin/uct
 ```
 
@@ -43,7 +43,7 @@ The `upgrade:check` command checks for core code changes for that specific Adobe
 
 The `upgrade:check` command is the main command to execute the tool:
 
-```bash
+```shell
 bin/uct upgrade:check <dir>
 ```
 
@@ -57,7 +57,7 @@ Available options for the `upgrade:check` command:
 
 The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option. Use this option when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report:
 
-```bash
+```shell
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 ```
 
@@ -71,7 +71,7 @@ You can compare your current Adobe Commerce installation with any Adobe Commerce
 
 You must provide the version as a parameter when running the `upgrade:check` command:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
 
@@ -88,7 +88,7 @@ There are some limitations when running the `--coming-version`:
 
 You can retrieve the difference between the database schema of two Adobe Commerce versions.
 
-```bash
+```shell
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
@@ -99,7 +99,7 @@ Where arguments are as follows:
 
 Example of execution:
 
-```bash
+```text
 bin/uct dbschema:diff 2.4.3 2.4.3-p3
 
 DB schema differences between versions 2.4.3 and 2.4.3-p3:
@@ -123,7 +123,7 @@ Total detected differences between version 2.4.3 and 2.4.3-p3: 11
 
 You can compare your current Adobe Commerce installation to validate if the core code of Adobe Commerce was modified to implement a customization. This command shows a list of core modifications only:
 
-```bash
+```shell
 bin/uct core:code:changes <dir> <vanilla dir>
 ```
 
@@ -162,7 +162,7 @@ The [!DNL Upgrade Compatibility Tool] has the ability to automatically fix a red
 
 For that, execute the `refactor` command:
 
-```bash
+```shell
 bin/uct refactor <dir>
 ```
 
@@ -178,7 +178,7 @@ Available options for the `refactor` command:
 
 This command provides the option to the [!DNL Upgrade Compatibility Tool] to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
 
-```bash
+```shell
 bin/uct graphql:compare <schema1> <schema2>
 ```
 
@@ -197,7 +197,7 @@ Available options for the `graphql:compare` command:
 
 To return a list of the [!DNL Upgrade Compatibility Tool] available commands, run:
 
-```bash
+```shell
 bin/uct list
 ```
 
@@ -205,13 +205,13 @@ bin/uct list
 
 To see the [!DNL Upgrade Compatibility Tool] command general options and help, run:
 
-```bash
+```shell
 bin/uct --help
 ```
 
 That returns a list with all available `help` options for the [!DNL Upgrade Compatibility Tool] in a command-line interface:
 
-```
+```text
 - --raw             To output raw command list
 - --format=FORMAT   The output format (txt, xml, json, or md) [default: "txt"]
 - --short           To skip describing commands' arguments
@@ -227,13 +227,13 @@ It is possible to run `--help` as an option when running a specific command. It 
 
 Example of the `upgrade:check` command with `--help` option:
 
-```bash
+```shell
 bin/uct upgrade:check --help
 ```
 
 This returns specific options that can be run for the `upgrade:check` command:
 
-```
+```shell
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.

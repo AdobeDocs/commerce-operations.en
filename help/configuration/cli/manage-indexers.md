@@ -9,7 +9,7 @@ exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 
 To view a list of all indexers:
 
-```bash
+```shell
 bin/magento indexer:info
 ```
 
@@ -45,7 +45,7 @@ Use this command to view the status of all indexers or specific indexers. For ex
 
 Command options:
 
-```bash
+```shell
 bin/magento indexer:status [indexer]
 ```
 
@@ -87,7 +87,7 @@ Use this command to reindex all or selected indexers one time only.
 
 Command options:
 
-```bash
+```shell
 bin/magento indexer:reindex [indexer]
 ```
 
@@ -149,7 +149,7 @@ To use parallelization, set one of the available dimensions modes for the produc
 
 For example, to set the mode per website:
 
-```bash
+```shell
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
@@ -160,7 +160,7 @@ To use parallelization for Catalog permissions, set one of the available dimensi
 
 Or to check the current mode:
 
-```bash
+```shell
 bin/magento indexer:show-dimensions-mode
 ```
 
@@ -168,7 +168,7 @@ To reindex in parallel mode, run the reindex command using the environment varia
 
 For example, the following command runs the `Catalog Search Fulltext` indexer across three threads:
 
-```bash
+```shell
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
 ```
 
@@ -178,7 +178,7 @@ Use this command to invalidate the status of all indexers or specific indexers.
 
 Command options:
 
-```bash
+```shell
 bin/magento indexer:reset [indexer]
 ```
 
@@ -219,7 +219,7 @@ Use this command to set the following indexer options:
 
 To view the current indexer configuration:
 
-```bash
+```shell
 bin/magento indexer:show-mode [indexer]
 ```
 
@@ -257,7 +257,7 @@ Stores Feed:                                       Update by Schedule
 >
 >   Use the following command to set this indexer to update on save:
 >
->   ```bash
+>   ```shell
 >   bin/magento indexer:set-mode realtime customer_grid
 >   ```
 >
@@ -271,7 +271,7 @@ Stores Feed:                                       Update by Schedule
 
 To specify the indexer configuration:
 
-```bash
+```shell
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
 ```
 
@@ -283,13 +283,13 @@ Where:
 
 For example, to change only the category products and product categories indexers to update on schedule, enter:
 
-```bash
+```shell
 bin/magento indexer:set-mode schedule catalog_category_product catalog_product_category
 ```
 
 Sample result:
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -302,7 +302,7 @@ The `bin/magento indexer:set-status` command was introduced in Adobe Commerce 2.
 
 Command syntax:
 
-```bash
+```shell
 bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
 ```
 
@@ -315,13 +315,13 @@ Where:
 
 For example, to suspend specific indexers, enter:
 
-```bash
+```shell
 bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
 ```
 
 Sample result:
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```

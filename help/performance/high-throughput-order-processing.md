@@ -37,7 +37,7 @@ Use the command-line interface to enable these features, or edit the `app/etc/en
 
 You can enable AsyncOrder using the command-line interface:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 1
 ```
 
@@ -60,7 +60,7 @@ See [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/modul
 
 You can disable AsyncOrder using the command-line interface:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 0
 ```
 
@@ -126,7 +126,7 @@ Deferred Total Calculation is **disabled** by default. Use the command-line inte
 
 You can enable DeferredTotalCalculation using the command-line interface:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
@@ -143,7 +143,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 You can disable DeferredTotalCalculation using the command-line interface:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 

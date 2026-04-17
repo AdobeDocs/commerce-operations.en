@@ -34,7 +34,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 1. Create a **[!UICONTROL Cart Price Rule]**, set **[!UICONTROL Coupon]** to `Specific Coupon` and enter _TEST1234_ as the coupon code.
 1. Create a customer:
 
-    ```
+    ```graphql
     mutation {
     createCustomer(
         input: {
@@ -57,7 +57,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Generate a customer token. You can use this token for subsequent requests.
 
-    ```
+    ```graphql
     mutation {
     generateCustomerToken(email: "john.doe@example.com", password: "b1b2b3l@w+") {
         token
@@ -67,7 +67,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Create an empty cart. Save the cart ID and use it for the subsequent requests.
 
-    ```
+    ```graphql
     mutation {
         createEmptyCart
     } 
@@ -75,7 +75,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Add the product to the cart:
 
-    ```
+    ```graphql
     mutation {
         addProductsToCart(
             cartId: "xxxx"
@@ -114,7 +114,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Apply the coupon:
 
-    ```
+    ```graphql
     mutation {
         applyCouponToCart(input: { cart_id: "xxxx", coupon_code: "TEST1234" }) {
             cart {
@@ -148,7 +148,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Set a shipping address:
 
-    ```
+    ```graphql
     mutation {
         setShippingAddressesOnCart(
             input: {
@@ -203,7 +203,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Set a shipping method:
 
-    ```
+    ```graphql
     mutation {
         setShippingMethodsOnCart(
             input: {
@@ -231,7 +231,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Set a billing address:
 
-    ```
+    ```graphql
     mutation {
         setBillingAddressOnCart(
             input: {
@@ -278,7 +278,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Set a payment method:
 
-    ```
+    ```graphql
     mutation {
         setPaymentMethodOnCart(
             input: { cart_id: "xxxx", payment_method: { code: "checkmo" } }
@@ -294,7 +294,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 
 1. Place the order:
 
-    ```
+    ```graphql
     mutation {
     placeOrder(
         input: {
@@ -325,7 +325,7 @@ The following error message appears:
 
 `exception.log` contains the following error:
 
-```
+```yaml
     report.ERROR: "discount_model" value should be specifiedGraphQL (1:135)
     1: mutation { placeOrder(input: {cart_id: "xxxx"}) { orderV2 { total { discounts { amount { currency value } coupon { code } } } } errors { message code } } }
 ```

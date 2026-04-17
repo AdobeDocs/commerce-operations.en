@@ -45,7 +45,7 @@ The minimum requirements to use the [!DNL Upgrade Compatibility Tool] in a comma
 
 [!DNL Upgrade Compatibility Tool] requires [PCNTL](https://www.php.net/manual/en/book.pcntl.php) and other PHP extensions for the execution. Check the required PHP extensions using `composer check-platform-reqs` command:
 
-```bash
+```shell
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
 
 $ composer check-platform-reqs

@@ -36,7 +36,7 @@ While resetting password via GraphQL in a store view other than the one register
 1. Create a customer account.
 1. Use the following GraphQL mutation with *store* header with the secondary store view code.
 
-    ```
+    ```graphql
     mutation {
         requestPasswordResetEmail(
             email: "test@gmail.com"

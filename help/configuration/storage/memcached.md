@@ -42,7 +42,7 @@ Commerce uses memcached for session storage but not for page caching. For page c
 
 1. Delete the contents of the following directories under your Commerce installation directory:
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* var/session/*
    ```
 
@@ -56,17 +56,17 @@ Commerce uses memcached for session storage but not for page caching. For page c
 
 1. (Optional.) Use Telnet to look at memcached storage.
 
-   ```bash
+   ```shell
    telnet <memcached host or ip> <memcached port>
    ```
 
-   ```bash
+   ```shell
    stats items
    ```
 
    The results display similar to the following:
 
-   ```
+   ```text
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

@@ -57,7 +57,7 @@ You can run the following commands to find values for some required arguments:
 
 The install command uses the following format:
 
-```bash
+```shell
 magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
@@ -215,7 +215,7 @@ The following example installs the application with the following options:
 * Default time zone is U.S. Central (America/Chicago)
 * Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
@@ -227,7 +227,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages similar to the following display to indicate a successful installation:
 
-```
+```shell
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -239,7 +239,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 You can install the application without creating the administrator user as shown in the following example.
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
@@ -249,7 +249,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages like the following display if the installation is successful:
 
-```
+```shell
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -287,7 +287,7 @@ The following example installs the application with the following options:
 * Uses server rewrites
 * Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
@@ -304,7 +304,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages like the following display if the installation is successful:
 
-```
+```shell
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -316,7 +316,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 The following example shows how to install Adobe Commerce with ActiveMQ Artemis as the message broker:
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \

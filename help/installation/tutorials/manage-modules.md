@@ -11,7 +11,7 @@ This command has no prerequisites.
 
 Use the following command to list enabled and disabled modules:
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] <module-list>
 ```
 
@@ -29,11 +29,11 @@ Where
 
 To enable or disable available modules, use the following command:
 
-```bash
+```shell
 bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
-```bash
+```shell
 bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
@@ -50,7 +50,7 @@ Where
 
 For example, to disable the `Magento_Weee` module, enter:
 
-```bash
+```shell
 bin/magento module:disable Magento_Weee
 ```
 
@@ -60,13 +60,13 @@ For important information about enabling and disabling modules, see [About enabl
 
 If you enabled one or more modules, run the following command to update the database:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 Then clean the cache:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

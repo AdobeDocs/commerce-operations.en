@@ -63,7 +63,7 @@ We know of the following issues with Varnish:
 
 - Possible error installing Commerce:
 
-   ```
+   ```text
    Error 503 Service Unavailable
    Service Unavailable
    XID: 303394517

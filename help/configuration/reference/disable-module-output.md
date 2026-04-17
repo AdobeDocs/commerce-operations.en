@@ -54,7 +54,7 @@ As a sample result of this configuration, customers can no longer sign up to rec
 
 Run the following command to export the configuration changes:
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -62,7 +62,7 @@ The results are written to the `<Magento_install_dir>/app/etc/config.php` file.
 
 Next, clear the cache to enable the new setting:
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 

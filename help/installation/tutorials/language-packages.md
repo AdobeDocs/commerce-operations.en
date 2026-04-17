@@ -13,7 +13,7 @@ You can restore backups at any time using the [`magento setup:rollback`](uninsta
 
 Command usage:
 
-```bash
+```shell
 bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {language package name}
 ```
 
@@ -29,20 +29,20 @@ The language package uninstall command performs the following tasks:
 
 For example, if you attempt to uninstall a language package that another language package depends on, the following message displays:
 
-```
+```text
 Cannot uninstall vendorname/language-en_us because the following package(s) depend on it:
       vendorname/language-en_gb
 ```
 
 One alternative is to uninstall both language packages after backing up the codebase:
 
-```bash
+```shell
 bin/magento i18n:uninstall vendorname/language-en_us vendorname/language-en_gb --backup-code
 ```
 
 Messages similar to the following display:
 
-```
+```shell
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

@@ -41,7 +41,7 @@ The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_C
 1. Execute a full reindex.
 1. Set the following indexers to **[!UICONTROL Update on Schedule]**:
 
-    ```
+    ```shell
     bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
     ```
 
@@ -49,7 +49,7 @@ The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_C
 1. Click **[!UICONTROL Category Permissions]** and create a **[!UICONTROL New Permission]** for an existing customer group.
 1. Ensure the `catalogpermissions_category` indexer has a backlog. Execute the following command to verify this:
 
-    ```
+    ```shell
     bin/magento indexer:status
     ```
 
@@ -61,7 +61,7 @@ The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_C
 
 1. Run the cron job:
 
-    ```
+    ```shell
     bin/magento cron:run
     ```
 
@@ -73,7 +73,7 @@ The cron job should execute without any issues.
 
 The `indexer_update_all_views` cron job encounters the following error:
 
-```
+```yaml
 report.CRITICAL: PDOException: There is no active transaction in /home/vendor/magento/zend-db/library/Zend/Db/Adapter/Pdo/Abstract.php:326
 ```
 

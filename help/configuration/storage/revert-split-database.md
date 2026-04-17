@@ -16,44 +16,44 @@ In this example, we log in to all three databases, which are installed on the sa
 
 1. Create a backup of the `magento_quote` database:
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_quote > ./quote.sql
    ```
 
 1. Create a backup of the `magento_sales` database:
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_sales > ./sales.sql
    ```
 
 1. Load the `magento_quote` database into the `magento_main` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./quote.sql
    ```
 
 1. Load the `magento_sales` database into the `magento_main` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./sales.sql
    ```
 
 1. Drop the `magento_sales` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_sales;"
    ```
 
 1. Drop the `magento_quote` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
 1. Remove the deployment configuration for `checkout` and `sales` in the `connections` and `resources` sections of the `env.php` file.
 1. Restore foreign keys:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 

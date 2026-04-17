@@ -14,7 +14,7 @@ Use this command to update your layout XML files if you update the corresponding
 
 Command options:
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 ```
 

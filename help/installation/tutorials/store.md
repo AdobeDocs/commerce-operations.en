@@ -18,7 +18,7 @@ Before you run this command, you must do the following *or* you must [install th
 
 Command usage:
 
-```bash
+```shell
 bin/magento setup:store-config:set [--<parameter_name>=<value>, ...]
 ```
 

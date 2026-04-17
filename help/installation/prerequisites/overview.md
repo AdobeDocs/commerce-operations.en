@@ -21,21 +21,21 @@ Enter the following commands as a user with `root` privileges:
 
 *  Ubuntu
 
-   ```bash
+   ```shell
    apt-get update
    ```
 
-   ```bash
+   ```shell
    apt-get upgrade
    ```
 
 *  CentOS
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum -y upgrade
    ```
 
@@ -51,7 +51,7 @@ Ubuntu: `apache2 -v`
 
 Adobe Commerce supports Apache version 2.4 as the following result indicates:
 
-```
+```text
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -66,19 +66,19 @@ See the *Commerce on-premises* tab in [system requirements](../system-requiremen
 
 Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See the *Commerce on-premises* tab in [System requirements](../system-requirements.md) for supported versions.
 
-```bash
+```shell
 mysql -u <database root user or database owner name> -p
 ```
 
 For example:
 
-```bash
+```shell
 mysql -u magento -p
 ```
 
 In the command output, the `Server version` line indicates the version that you are running. Confirm that it matches a version supported for the Adobe Commerce release you are installing.
 
-```
+```shell
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)
@@ -100,23 +100,23 @@ To install or upgrade MySQL, see [MySQL](database/mysql.md).
 
 To verify your OpenSearch installation:
 
-```bash
+```shell
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
 To verify your Elasticsearch installation:
 
-```bash
+```shell
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 For example:
 
-```bash
+```shell
 curl -XGET 'localhost:9200'
 ```
 
-```
+```json
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

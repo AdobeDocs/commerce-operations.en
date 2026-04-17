@@ -36,7 +36,7 @@ This command backs up code and compresses it in `tar.gz` format.
 
 Command options:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -48,7 +48,7 @@ Where:
 
 For example, to create a code backup named `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -62,7 +62,7 @@ This command backs up the Commerce database and compresses it in `tar.gz` format
 
 Command options:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -75,7 +75,7 @@ Where:
 
 Sensitive data includes customer information from the following database tables:
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -94,7 +94,7 @@ After the command completes, provide the database backup to Adobe Commerce Suppo
 
 We provide commands that display paths to utilities required by the Data Collector and the command line. You can use these commands, for example, if errors like the following display in the Admin or on the command line:
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -113,7 +113,7 @@ Run the following commands in the order shown to display the paths to the applic
 
 A sample follows:
 
-```
+```shell
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

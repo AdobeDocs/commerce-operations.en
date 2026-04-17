@@ -50,7 +50,7 @@ No errors.
 
 An error similar to the following is logged:
 
-```
+```yaml
 report.ERROR: InvalidArgumentException: Invalid image dimensions. in /var/www/html/vendor/magento/framework/Image/Adapter/AbstractAdapter.php:630
 ```
 

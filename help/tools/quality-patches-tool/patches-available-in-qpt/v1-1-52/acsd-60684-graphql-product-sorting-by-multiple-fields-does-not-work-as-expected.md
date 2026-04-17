@@ -33,7 +33,7 @@ The ACSD-60684 patch fixes the issue where [!DNL GraphQL] product sorting by mul
 1. Create three products with names A, B, and C.   
 1. Fetch the products by using the following [!DNL GraphQL]:
 
-    ```
+    ```graphql
     query FindProducts($search: String, $filter:ProductAttributeFilterInput!, $pageSize: Int!, $currentPage: Int!, $sort: ProductAttributeSortInput!){
         products(search: $search, filter: $filter, pageSize: $pageSize, currentPage: $currentPage, sort: $sort){
             total_count
@@ -59,7 +59,7 @@ The ACSD-60684 patch fixes the issue where [!DNL GraphQL] product sorting by mul
 
     Variables:
 
-    ```
+    ```json
     {
         "search": null,
         "filter": {

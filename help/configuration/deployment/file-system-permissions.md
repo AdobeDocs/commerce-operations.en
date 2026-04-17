@@ -68,19 +68,19 @@ To remove write permissions to files and directories from the web server user's 
 
 1. Change to production mode.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Remove write permissions to the following directories.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Make the command-line tool executable.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -92,7 +92,7 @@ To make files and directories writable so you can update components and upgrade 
 1. Change to your Commerce installation directory.
 1. Enter the following commands:
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
@@ -148,15 +148,15 @@ To set `setgid` and permissions for developer mode:
 1. Log in to your Commerce server as, or switch to, the file system owner.
 1. Enter the following commands in the order shown:
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -182,13 +182,13 @@ To remove writable permissions to files and directories from the web server user
 1. Change to your Commerce installation directory.
 1. As the file system owner, enter the following command to change to production mode:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Enter the following command as a user with `root` privileges:
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -200,6 +200,6 @@ To make files and directories writable so you can update components and upgrade 
 1. Change to your Commerce installation directory.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

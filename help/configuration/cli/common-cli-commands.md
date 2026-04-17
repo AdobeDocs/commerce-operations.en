@@ -9,17 +9,17 @@ The following summarizes some of the available commands.
 
 **To display a complete list of commands**:
 
-```bash
+```shell
 bin/magento list
 ```
 
 Example help command:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 

@@ -51,7 +51,7 @@ The customer values are saved successfully.
 The customer record isn't saved, and the admin user sees the error message, *Something went wrong while saving the customer.*
 The `system.log` contains the following error:
 
-```
+```yaml
 report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
 ```
 

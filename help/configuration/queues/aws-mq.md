@@ -41,7 +41,7 @@ Where:
 
 After editing the `env.php` file, run the following command to finish the setup:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -76,7 +76,7 @@ To test message sending from Commerce to [!DNL RabbitMQ]:
 
 1. Start the `async.operations.all` message queue consumer.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

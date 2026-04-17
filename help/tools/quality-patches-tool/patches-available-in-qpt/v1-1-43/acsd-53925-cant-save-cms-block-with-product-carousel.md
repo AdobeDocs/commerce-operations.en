@@ -55,7 +55,7 @@ User is able to add a product carousel without errors.
 * A message is thrown in the UI: *We're sorry, an error has occurred while generating this content* 
 * `var/log/exception.log` contains the following error:
 
-    ```
+    ```text
     [2023-08-18T20:58:14.533374+00:00] report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'username_dev.catalog_product_index_price_ws0' doesn't exist in /test/lib/internal/Magento/Framework/DB/Statement/Pdo/Mysql.php:90
     ```
 
