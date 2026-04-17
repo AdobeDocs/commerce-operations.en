@@ -6,6 +6,8 @@ exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 ---
 # Low-level cache options
 
+{{cloud-cache-config}}
+
 The Commerce application uses a low-level cache frontend and backend to provide access to the cache storage.
 
 ## Low-level frontend cache
