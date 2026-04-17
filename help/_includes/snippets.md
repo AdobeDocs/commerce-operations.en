@@ -1,5 +1,11 @@
 # Snippets
 
+## Cache configuration instructions cloud {#cloud-cache-config}
+
+>[!NOTE]
+>
+>If your Commerce project is deployed on cloud, see [Best practices for Redis and Valkey service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) for caching configuration instructions.
+
 ## Security patches for extended support {#extended-support}
 
 >[!NOTE]
