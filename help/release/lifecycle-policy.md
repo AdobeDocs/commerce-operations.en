@@ -49,7 +49,7 @@ As a one-time exception, Adobe is providing an extended security fixes provision
 
 During this security fixes provisioning period, note the following:
 
-- **Isolated security patch file only**-An isolated security patch file will be released for these versions according to the release schedule. No security patch releases (that is, no new -p versions) will be provided during this period.
+- **Isolated security patch file only**-An isolated security patch file will be released for these versions according to the release schedule. No security patch releases (no new -p versions) will be provided during this period.
 
   To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
 
