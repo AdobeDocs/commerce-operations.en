@@ -45,7 +45,7 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 
 ## Additional Security fixes provisioning for Adobe Commerce 2.4.4 and 2.4.5
 
-As a one-time exception, Adobe is providing an extended security fixes provisioning period for Adobe Commerce versions 2.4.4 and 2.4.5 to give customers additional time to migrate to Adobe Commerce as a Cloud Service (ACCS) or upgrade to a supported release line.
+As a one-time exception, Adobe is providing an extended security fixes provisioning period for Adobe Commerce versions 2.4.4 and 2.4.5 to give customers additional time to migrate to Adobe Commerce as a Cloud Service or upgrade to a supported release line.
 
 During this security fixes provisioning period, note the following:
 
@@ -68,7 +68,7 @@ To maintain full security coverage and ensure PCI compliance, customers must upg
 
 >[!NOTE]
 >
->Additional security fixes are only available to Adobe Commerce customers only and not available for the Magento Open Source code base.
+>Additional security fixes are only available to Adobe Commerce customers only and are not available for the Magento Open Source code base.
 
 
 ## Support timeline

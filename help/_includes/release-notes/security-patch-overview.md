@@ -14,7 +14,7 @@ For instructions on downloading and applying security patches, see [How to obtai
 
 >[!NOTE]
 >
->Extended support security patches are available to Adobe Commerce customers only and not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Extended support security patches are available to Adobe Commerce customers only and are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ## Isolated security patch file
 
