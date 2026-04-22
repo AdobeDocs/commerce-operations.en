@@ -4,7 +4,7 @@
 
 >[!NOTE]
 >
->If your Commerce project is deployed on cloud, see [Best practices for Redis and Valkey service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) for caching configuration instructions.
+>If your Commerce project is deployed on cloud, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for caching configuration instructions.
 
 ## Security patches for extended support {#extended-support}
 
