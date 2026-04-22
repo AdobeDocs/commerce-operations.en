@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="KixzvvNvo-jrBnS4_1hr">
-    <mxGraphModel dx="1375" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,43 +38,10 @@
           <mxGeometry height="40" width="150" x="90.70000000000006" y="310" as="geometry" />
         </mxCell>
         <mxCell id="uMbBWUGbu5ElNzKfa8k4-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;" value="Beta patch (2.4.9-beta1)" vertex="1">
-          <mxGeometry height="40" width="147.87" x="575.71" y="110" as="geometry" />
+          <mxGeometry height="40" width="147.87" x="570.94" y="110" as="geometry" />
         </mxCell>
         <mxCell id="uMbBWUGbu5ElNzKfa8k4-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2;fillColor=none;strokeColor=#9E9E9E;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;fontFamily=Adobe Clean;fontSize=17;perimeter=rectanglePerimeter;shadow=0;align=left;spacingTop=-108;spacing=2;spacingLeft=8;fontColor=light-dark(default, #915050);" value="&lt;div&gt;&lt;font&gt;&lt;b&gt;October 13, 2026&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="190" width="228.57" x="319.28" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;" value="Security patches (tentative)" vertex="1">
-          <mxGeometry height="37.33" width="170" x="569.99" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;" value="Beta patch (2.4.10-beta1)" vertex="1">
-          <mxGeometry height="37.33" width="159.3" x="569.99" y="610" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="138.59" x="90.7" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="811.4200000000001" y="110" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="330.71000000000004" y="310" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="570.71" y="310" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="810.71" y="310" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="90.70000000000005" y="510" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="569.99" y="510" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="809.99" y="510" as="geometry" />
-        </mxCell>
-        <mxCell id="uMbBWUGbu5ElNzKfa8k4-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Isolated security fixes&lt;div&gt;(tentative)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="329.28" y="512.6700000000001" as="geometry" />
         </mxCell>
         <mxCell id="uMbBWUGbu5ElNzKfa8k4-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2;fillColor=none;strokeColor=#9E9E9E;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;fontFamily=Adobe Clean;fontSize=17;perimeter=rectanglePerimeter;shadow=0;align=left;spacingTop=-108;spacing=2;spacingLeft=8;fontColor=light-dark(default, #915050);" value="&lt;div&gt;&lt;font&gt;&lt;b&gt;&amp;nbsp;January 2026&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="190" width="228.57" x="80" y="70" as="geometry" />
@@ -86,7 +53,37 @@
           <mxGeometry height="150" width="208.3" x="329.40999999999997" y="105" as="geometry" />
         </mxCell>
         <mxCell id="uMbBWUGbu5ElNzKfa8k4-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;spacingLeft=5;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Security patches&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2.4.8-p4, 2.4.7-p9, 2.4.6-p14, 2.4.5-p16, 2.4.4-p17&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="170" x="575.71" y="170" as="geometry" />
+          <mxGeometry height="60" width="170" x="570.94" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5oHDcJoFZmQ8rE0xiynO-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFFF;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);align=left;spacingLeft=6;spacingRight=6;shadow=0;" value="&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;No security‑isolated patches will be released in April.&amp;nbsp; Our next release is in May. Once the update is available, Adobe will notify through our regular channels–the Security Bulletin, email, and in-product alerts.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="150" width="208.3" x="810.71" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="5oHDcJoFZmQ8rE0xiynO-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;spacingLeft=5;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Security patches&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2.4.8-p5, 2.4.7-p10, 2.4.6-p15, 2.4.5-p17, 2.4.4-p18&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="90.70000000000006" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFFF;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);align=left;spacingLeft=6;spacingRight=6;shadow=0;" value="&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;No security‑isolated patches are scheduled for June.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="208.3" x="329.28" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;spacingLeft=5;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Isolated security patch file&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="570.94" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;spacingLeft=5;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Isolated security patch file&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="90.7" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);" value="Adobe Commerce 2.4.10-alpha" vertex="1">
+          <mxGeometry height="40" width="180" x="330" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;spacingLeft=5;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Isolated security patch file&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="329.28" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Adobe Clean;fontSize=14;spacingLeft=5;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Isolated security patch file&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="810.71" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Pg3_-W8pP5uBGaWAPdNL-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFFF;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);align=left;spacingLeft=6;spacingRight=6;shadow=0;" value="&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Optional release due to holiday code freeze for &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="208.3" x="810.71" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="swcx3deszJ1JKHiBJEZe-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFFF;strokeColor=#666666;fontFamily=Adobe Clean;fontSize=14;fontColor=light-dark(default, #915050);align=left;spacingLeft=6;spacingRight=6;shadow=0;" value="&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Optional release due to holiday code freeze for &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="208.3" x="568.7" y="510" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
