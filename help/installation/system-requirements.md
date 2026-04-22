@@ -12,6 +12,8 @@ There are some differences in the dependencies for Commerce on Cloud. Service ve
 >[!NOTE]
 >
 >The system requirements tables identify the specific Adobe Commerce versions covered, including any explicitly labeled beta or early access releases. See the [release notes](../release/release-notes/overview.md) to learn more about the latest published versions of Adobe Commerce.
+>
+>Service version mismatches relative to your Commerce version can introduce behavior that is not reproducible in supported environments. In these cases, Support may request that you align the environment to a supported configuration (for example, upgrade/downgrade the service version) before we can investigate, troubleshoot, or validate the reported behavior. Once the versions are aligned, Support can proceed with the investigation.
 
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
