@@ -964,6 +964,8 @@ feature: Configuration
            - [ACSD-68537: Checkout performance degrades with many customer segments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
            - [ACSD-69311: incorrect tax calculation in credit memos after partial refunds from invoices](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+        - v1.1.78 {#v1-1-78}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
