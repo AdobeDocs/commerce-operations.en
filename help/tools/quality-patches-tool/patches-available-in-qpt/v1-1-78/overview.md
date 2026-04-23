@@ -27,7 +27,7 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4591**: Fixes the issue where customer segments based on order count, such as "First-time buyers", did not update when orders were placed via the REST API.
 1. **ACP2E-4609**: Fixes the issue where the My Quotes page shows no quotes when some quotes contain deleted products.
 1. **ACP2E-4613**: Fixes the issue where large media directory structures caused slow gettree responses, leading to extended Media Gallery directory tree loading times.
-1. **ACP2E-4628**: Fixes the issue where importing customers with uppercase email addresses results in the undefined array key error, when Account Sharing is set to Global.
+1. **[ACP2E-4628](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)**: Fixes the issue where importing customers with uppercase email addresses results in the undefined array key error, when Account Sharing is set to Global.
 1. **ACP2E-4665**: Fixes the issue where child products of configurable products containing videos in the product galleries are not listed when requested through REST API.
 1. **ACP2E-4732**: Fixes an issue where partial indexation stopped for customers with a large number of updates when the version_id column in the changelog table reached its maximum value.
 1. **ACP2E-4763**: Fixes the issue where the GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax values when Catalog Prices are set to Including Tax, due to tax being applied twice.
