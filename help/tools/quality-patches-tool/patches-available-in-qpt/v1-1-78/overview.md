@@ -15,7 +15,7 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4431**: Fixes the issue where Related Products matched by the target rules are deleted during the reindex process.
 1. **ACP2E-4448**: Fixes the issue where configuration changes made during Redis outages are not reflected after Redis recovers, causing stale values to persist.
 1. **ACP2E-4452**: Fixes the issue where product prices on the Quick Order page include tax regardless of the tax display configuration.
-1. **ACP2E-4456**: Fixes an issue where canceling an order using a GraphQL mutation does not transition an order paid entirely with gift cards to the Closed status.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)**: Fixes an issue where canceling an order using a GraphQL mutation does not transition an order paid entirely with gift cards to the Closed status.
 1. **ACP2E-4507**: Fixes the issue where Password Options configuration is not applied for customer password reset requests made through GraphQL mutations.
 1. **ACP2E-4513**: Fixes the issue where expired CAPTCHA images are not deleted from the system.
 1. **ACP2E-4522**: Fixes the issue where an intermittent duplicate key error occurs on the quote_coupons table when multiple cart merge or quote save requests run at the same time.
