@@ -20,7 +20,7 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4513**: Fixes the issue where expired CAPTCHA images are not deleted from the system.
 1. **ACP2E-4522**: Fixes the issue where an intermittent duplicate key error occurs on the quote_coupons table when multiple cart merge or quote save requests run at the same time.
 1. **ACP2E-4528**: Fixes the issue with city validation in customer addresses, which now allows a forward slash (/) character and rejects invalid characters such as !, ", #, and ?.
-1. **ACP2E-4535**: Fixes an issue where submitting the forgot-password form causes the session to be destroyed or regenerated (PHPSESSID changes) and the guest cart is cleared.
+1. **[ACP2E-4535](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535.md)**: Fixes an issue where submitting the forgot-password form causes the session to be destroyed or regenerated (PHPSESSID changes) and the guest cart is cleared.
 1. **ACP2E-4540**: Fixes the issue where the Fotorama library was not loading correctly, causing only the first attached image to be visible.
 1. **ACP2E-4555**: Fixes the issue where modern telephone numbers containing "." or "/" are not validated properly.
 1. **ACP2E-4565**: Fixes the issue where the Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used.
