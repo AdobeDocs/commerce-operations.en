@@ -31,6 +31,6 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4665**: Fixes the issue where child products of configurable products containing videos in the product galleries are not listed when requested through REST API.
 1. **ACP2E-4732**: Fixes an issue where partial indexation stopped for customers with a large number of updates when the version_id column in the changelog table reached its maximum value.
 1. **ACP2E-4763**: Fixes the issue where the GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax values when Catalog Prices are set to Including Tax, due to tax being applied twice.
-1. **ACSD-60989**: Fixes the issue where modifying a column with a foreign key through a declarative schema causes errors on MariaDB.
+1. **[ACSD-60989](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)**: Fixes the issue where modifying a column with a foreign key through a declarative schema causes errors on MariaDB.
 
 Use the menu on the left to navigate to a specific patch page.
