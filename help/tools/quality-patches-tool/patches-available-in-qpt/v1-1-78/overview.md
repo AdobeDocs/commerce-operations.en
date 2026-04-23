@@ -25,7 +25,7 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4555**: Fixes the issue where modern telephone numbers containing "." or "/" are not validated properly.
 1. **ACP2E-4565**: Fixes the issue where the Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used.
 1. **ACP2E-4591**: Fixes the issue where customer segments based on order count, such as "First-time buyers", did not update when orders were placed via the REST API.
-1. **ACP2E-4609**: Fixes the issue where the My Quotes page shows no quotes when some quotes contain deleted products.
+1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)**: Fixes the issue where the My Quotes page shows no quotes when some quotes contain deleted products.
 1. **ACP2E-4613**: Fixes the issue where large media directory structures caused slow gettree responses, leading to extended Media Gallery directory tree loading times.
 1. **ACP2E-4628**: Fixes the issue where importing customers with uppercase email addresses results in the undefined array key error, when Account Sharing is set to Global.
 1. **ACP2E-4665**: Fixes the issue where child products of configurable products containing videos in the product galleries are not listed when requested through REST API.
