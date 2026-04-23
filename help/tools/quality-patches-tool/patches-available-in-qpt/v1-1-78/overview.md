@@ -14,7 +14,7 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4419**: Fixes the issue where gift cards are not applied correctly at checkout after successful reCAPTCHA v2 ('I am not a robot') validation on the storefront.
 1. **ACP2E-4431**: Fixes the issue where Related Products matched by the target rules are deleted during the reindex process.
 1. **ACP2E-4448**: Fixes the issue where configuration changes made during Redis outages are not reflected after Redis recovers, causing stale values to persist.
-1. **ACP2E-4452**: Fixes the issue where product prices on the Quick Order page include tax regardless of the tax display configuration.
+1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: Fixes the issue where product prices on the Quick Order page include tax regardless of the tax display configuration.
 1. **ACP2E-4456**: Fixes an issue where canceling an order using a GraphQL mutation does not transition an order paid entirely with gift cards to the Closed status.
 1. **ACP2E-4507**: Fixes the issue where Password Options configuration is not applied for customer password reset requests made through GraphQL mutations.
 1. **ACP2E-4513**: Fixes the issue where expired CAPTCHA images are not deleted from the system.
