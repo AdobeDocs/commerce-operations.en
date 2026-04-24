@@ -966,7 +966,7 @@ feature: Configuration
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
-           - [ACP2E-4507: Password Options configuration does not apply to customer password reset requests made through GraphQL mutations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507.md)
+           - [ACP2E-4507: [!UICONTROL Password Options] configuration doesn't apply to customer password reset requests made through GraphQL mutations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
