@@ -45,11 +45,11 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 
 ## Additional Security fixes provisioning for Adobe Commerce 2.4.4 and 2.4.5
 
-As a one-time exception, Adobe is providing an extended security fixes provisioning period for Adobe Commerce versions 2.4.4 and 2.4.5 to give customers additional time to migrate to Adobe Commerce as a Cloud Service (ACCS) or upgrade to a supported release line.
+As a one-time exception, Adobe is providing an extended security fixes provisioning period for Adobe Commerce versions 2.4.4 and 2.4.5 to give customers additional time to migrate to Adobe Commerce as a Cloud Service or upgrade to a supported release line.
 
 During this security fixes provisioning period, note the following:
 
-- **Isolated security patch file only**-An isolated security patch file will be released for these versions according to the release schedule. No security patch releases (that is, no new -p versions) will be provided during this period.
+- **Isolated security patch file only**-An isolated security patch file will be released for these versions according to the release schedule. No security patch releases (no new -p versions) will be provided during this period.
 
   To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
 
@@ -68,7 +68,7 @@ To maintain full security coverage and ensure PCI compliance, customers must upg
 
 >[!NOTE]
 >
->Additional security fixes are only available to Adobe Commerce customers only and not available for the Magento Open Source code base.
+>Additional security fixes are only available to Adobe Commerce customers only and are not available for the Magento Open Source code base.
 
 
 ## Support timeline
