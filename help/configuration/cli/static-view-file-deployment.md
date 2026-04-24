@@ -25,7 +25,7 @@ You must write static view files to the Commerce file system manually using the 
 
 >[!WARNING]
 >
->_Developer mode only_: When you install or enable a new module, it might load new JavaScript, CSS, layouts, and so on. To avoid issues with static files, you must clean the old files to make sure you get all the changes for the new module. You can clean generated static view files in several ways. Refer to [Clean static files cache topic for details](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) for more information.
+>_Developer mode only_: When you install or enable a new module, it might load new JavaScript, CSS, layouts, and so on. To avoid issues with static files, you must clean the old files to make sure you get all the changes for the new module. You can clean generated static view files in several ways. Refer to [Clean static files cache topic for details](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache) for more information.
 
 **To deploy static view files**:
 

@@ -23,7 +23,7 @@ chmod +x ./uct/bin/uct
 
 The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
-See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
+See this [video tutorial](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/upgrade-compatibility-tool-overview) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
 
 Available commands for the [!DNL Upgrade Compatibility Tool] in a command-line interface:
 
@@ -150,7 +150,7 @@ The `bin/uct core:code:changes` command checks if there is a vanilla instance in
 
 You can run an [!DNL Upgrade Compatibility Tool] command with the `--vanilla-dir` option to specify the Adobe Commerce vanilla installation directory.
 
-See the [Deploy vanilla instance](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) topic for more information.
+See the [Deploy vanilla instance](https://developer.adobe.com/commerce/contributor/guides/install/) topic for more information.
 
 ## Use the `refactor` command
 

@@ -10,7 +10,7 @@ Before you use this command, you must know the relative path to your theme. Them
 
 For example, the path to the Luma theme provided with Adobe Commerce is `frontend/Magento/luma`.
 
-For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure).
 
 ## Overview of uninstalling themes
 
@@ -21,7 +21,7 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
 *  Updating the `parent` node information in `theme.xml` to remove references to the theme.
 *  Removing theme code from the file system.
 
-   [More information about theme inheritance](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+   [More information about theme inheritance](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance).
 
 ## Uninstall themes
 

@@ -133,7 +133,7 @@ Files in the following directories must be writable by both users in developer a
 - `pub/media`
 - `app/etc`
 
-Set the [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) bit on directories so permissions always inherit from the parent directory.
+Set the [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits) bit on directories so permissions always inherit from the parent directory.
 
 >[!INFO]
 >

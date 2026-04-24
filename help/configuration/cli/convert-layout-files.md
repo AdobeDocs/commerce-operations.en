@@ -9,8 +9,8 @@ exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
 
 Use this command to update your layout XML files if you update the corresponding Extensible Stylesheet Language Transformations (XSLT) stylesheet.
 
-- [Layout instructions](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [Layout file types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [Layout instructions](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions)
+- [Layout file types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-files-types-and-conventions)
 
 Command options:
 

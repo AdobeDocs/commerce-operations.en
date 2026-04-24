@@ -20,7 +20,7 @@ The AsyncOrder, Deferred Total Calculation, and Inventory Check on Cart Load con
 
 >[!NOTE]
 >
->Do not use custom PHP code to customize the built-in cart and checkout capabilities. In addition to potential performance issues, using custom PHP code can result in complex upgrades and maintenance challenges. These issues increase your total cost of ownership. If PHP-based cart and checkout customization is unavoidable, use [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)-approved extensions only. All marketplace extensions are subject to [extensive review](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) to verify that they meet Adobe Commerce coding standards and best practices.
+>Do not use custom PHP code to customize the built-in cart and checkout capabilities. In addition to potential performance issues, using custom PHP code can result in complex upgrades and maintenance challenges. These issues increase your total cost of ownership. If PHP-based cart and checkout customization is unavoidable, use [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)-approved extensions only. All marketplace extensions are subject to [extensive review](    https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) to verify that they meet Adobe Commerce coding standards and best practices.
 
 ## Asynchronous order placement
 
