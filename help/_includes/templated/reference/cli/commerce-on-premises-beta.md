@@ -185,7 +185,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 Display help for a command
 
-```shell
+```text
 The help command displays help for a given command:
 
   bin/magento help list
@@ -232,7 +232,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 List commands
 
-```shell
+```text
 The list command lists all commands:
 
   bin/magento list
@@ -415,7 +415,7 @@ bin/magento admin:user:unlock <username>
 
 Unlock Admin Account
 
-```shell
+```text
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
@@ -576,7 +576,7 @@ Space-separated list of cache types or omit to apply to all cache types.
 
 - Default: `[]`
 - Array
-
+   
 ### Options
 
 For global options, see [Global options](#global-options).
@@ -604,7 +604,7 @@ Space-separated list of cache types or omit to apply to all cache types.
 
 - Default: `[]`
 - Array
-
+   
 ### Options
 
 For global options, see [Global options](#global-options).
@@ -632,7 +632,7 @@ Space-separated list of cache types or omit to apply to all cache types.
 
 - Default: `[]`
 - Array
-
+   
 ### Options
 
 For global options, see [Global options](#global-options).
@@ -2689,7 +2689,7 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 Start MessageQueue consumer
 
-```shell
+```text
 This command starts MessageQueue consumer by its name.
 
 To start consumer which will process all queued messages and terminate execution:
