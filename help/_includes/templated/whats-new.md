@@ -21,7 +21,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce-operations.en/pull/1900">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f14416d89140ee75ec437a42fbebae804282b72">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,7 +45,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical, major update
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce-operations.en/pull/1893">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">commit</a></td>
     </tr>
   </tbody>
 </table>
