@@ -43,7 +43,7 @@ No errors.
 <u>Actual results</u>:
 
 ```shell
-Error "Warning: Undefined array key "column" in SchemaBuilder.php on line 90
+```text
 ```
 
 ## Apply the patch
