@@ -1,6 +1,6 @@
 ---
 title: Build System Setup
-description: Learn how to deploy Commerce into a build system.
+description: Learn how to set up a build system for Adobe Commerce deployment with source control, generated assets, and static content requirements.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 ---

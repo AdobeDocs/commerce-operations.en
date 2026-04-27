@@ -1,6 +1,6 @@
 ---
 title: Use memcached for session storage
-description: Learn about using memcached for Commerce session storage.
+description: Learn how to configure Adobe Commerce to use memcached for session storage in env.php and when to prefer Redis or Varnish for other caching layers.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
 ---

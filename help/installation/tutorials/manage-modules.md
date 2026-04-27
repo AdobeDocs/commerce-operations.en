@@ -1,6 +1,6 @@
 ---
 title: Enable or disable modules
-description: Follow these steps to manage Adobe Commerce modules.
+description: Learn how to enable, disable, and check the status of Adobe Commerce modules from the command line using module status and related options.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
 ---
 # Enable or disable modules

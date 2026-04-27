@@ -1,6 +1,6 @@
 ---
 title: Uninstall themes
-description: Follow these steps to uninstall an Adobe Commerce theme.
+description: Learn how to uninstall Adobe Commerce themes from the command line, including Composer packages, code removal, and backups before you make changes.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 ---

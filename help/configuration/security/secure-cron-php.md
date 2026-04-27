@@ -1,6 +1,6 @@
 ---
 title: Secure cron PHP
-description: Restrict who can run the cron.php file in a browser.
+description: Learn how to restrict browser access to pub/cron.php and secure Adobe Commerce scheduled tasks against unauthorized or malicious cron execution.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 ---

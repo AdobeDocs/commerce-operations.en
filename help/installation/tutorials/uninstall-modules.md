@@ -1,6 +1,6 @@
 ---
 title: Uninstall modules
-description: Follow these steps to uninstall an Adobe Commerce module.
+description: Learn how to uninstall Adobe Commerce modules with optional removal of code, schema, and data, and when to disable modules instead of uninstalling them.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
 ---
 # Uninstall modules
