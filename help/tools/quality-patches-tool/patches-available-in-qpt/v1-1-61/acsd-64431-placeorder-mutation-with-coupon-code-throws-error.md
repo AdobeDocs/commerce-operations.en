@@ -325,7 +325,7 @@ The following error message appears:
 
 `exception.log` contains the following error:
 
-```yaml
+```text
     report.ERROR: "discount_model" value should be specifiedGraphQL (1:135)
     1: mutation { placeOrder(input: {cart_id: "xxxx"}) { orderV2 { total { discounts { amount { currency value } coupon { code } } } } errors { message code } } }
 ```

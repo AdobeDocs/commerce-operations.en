@@ -246,7 +246,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Look for headers like the following:
 
-```yaml
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

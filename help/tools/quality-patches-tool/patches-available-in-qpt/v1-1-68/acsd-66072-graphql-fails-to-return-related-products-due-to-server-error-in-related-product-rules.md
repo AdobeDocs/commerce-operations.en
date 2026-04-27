@@ -167,7 +167,7 @@ The query returns the related product (`config1`).
 
 The `var/log/exception.log` file contains:
 
-```yaml
+```text
 report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/magento2ee/app/code/Magento/TargetRule/Model/ResourceModel/Index.php on line 557
 ```
 

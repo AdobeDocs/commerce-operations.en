@@ -44,7 +44,7 @@ The restricted admin user can update reviews using the **[!UICONTROL Mass Update
 An error occurs while updating reviews using **[!UICONTROL Mass Update]** action.<br>
 The `var/log/exception.log` contains a similar error:
 
-```yaml
+```text
 report.CRITICAL: TypeError: array_intersect(): Argument #1 ($array) must be of type array, null given in app/code/Magento/AdminGws/Model/Models.php:439
 ```
 

@@ -56,7 +56,7 @@ Reindex is completed without any errors.
 
 The `indexer_update_all_views` cron job encounters the following error:
 
-```graphql
+```text
 Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogpermissions_category_cl__tmp67acb6582cec12_69065236' doesn't exist, query was: SELECT MAX(id) as max, COUNT(*) as cnt FROM (SELECT `catalogpermissions_category_cl__tmp67acb6582cec12_69065236`.* FROM
 ```
 

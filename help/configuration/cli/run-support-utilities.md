@@ -113,7 +113,7 @@ Run the following commands in the order shown to display the paths to the applic
 
 A sample follows:
 
-```shell
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

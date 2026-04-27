@@ -73,7 +73,7 @@ The cron job should execute without any issues.
 
 The `indexer_update_all_views` cron job encounters the following error:
 
-```yaml
+```text
 report.CRITICAL: PDOException: There is no active transaction in /home/vendor/magento/zend-db/library/Zend/Db/Adapter/Pdo/Abstract.php:326
 ```
 

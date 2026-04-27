@@ -80,7 +80,7 @@ bin/magento deploy:mode:set production
 
 Messages similar to the following display:
 
-```shell
+```text
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===

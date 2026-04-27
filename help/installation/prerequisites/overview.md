@@ -78,7 +78,7 @@ mysql -u magento -p
 
 In the command output, the `Server version` line indicates the version that you are running. Confirm that it matches a version supported for the Adobe Commerce release you are installing.
 
-```shell
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)

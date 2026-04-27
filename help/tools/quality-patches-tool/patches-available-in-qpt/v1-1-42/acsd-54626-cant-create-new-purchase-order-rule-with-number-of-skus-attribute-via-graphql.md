@@ -69,7 +69,7 @@ A purchase rule is created.
 
 The following error is thrown:
 
-```graphql
+```json
 {
     "errors": [
         {

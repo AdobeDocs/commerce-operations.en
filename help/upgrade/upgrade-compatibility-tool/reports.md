@@ -14,7 +14,7 @@ As a result of the analysis, the [!DNL Upgrade Compatibility Tool] can export a 
 
 See the following command-line interface example of a report:
 
-```yaml
+```text
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
  * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'

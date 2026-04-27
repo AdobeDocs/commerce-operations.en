@@ -59,7 +59,7 @@ The product export should be finished successfully.
 
 The product export process fails and returns the following fatal error:
 
-```shell
+```text
 Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocate 12288 bytes) in /var/www/html/app/code/Magento/Catalog/Model/ResourceModel/Product/Collection.php on line 597
 ```
 

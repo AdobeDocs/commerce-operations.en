@@ -62,7 +62,7 @@ An "Internal Error" occurs as all levels of [!DNL REST API] payload are not vali
 
 The endpoint should validate the parameter and return the `400 status code` with a specific error message. Example:
 
-```yaml
+```text
 report.CRITICAL: LogicException: Property "Street." does not have accessor method "getStreet." in class "Magento\Quote\Api\Data\AddressInterface". in vendor/magento/framework/Reflection/NameFinder.php:103
 ```
 

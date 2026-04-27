@@ -51,7 +51,7 @@ The following error is thrown:
 
 *The page cannot be displayed due to the error*
 
-```yaml
+```text
 report.CRITICAL: DivisionByZeroError: Division by zero in vendor/magento/module-sales/Model/Order/Creditmemo/Total/Tax.php:139*
 ```
 

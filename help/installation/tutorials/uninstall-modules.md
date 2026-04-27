@@ -75,7 +75,7 @@ bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent -
 
 Messages similar to the following display:
 
-```shell
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...

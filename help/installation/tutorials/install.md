@@ -227,7 +227,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages similar to the following display to indicate a successful installation:
 
-```shell
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -249,7 +249,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages like the following display if the installation is successful:
 
-```shell
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -304,7 +304,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages like the following display if the installation is successful:
 
-```shell
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]

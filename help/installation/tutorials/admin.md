@@ -47,7 +47,7 @@ Example of usage:
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```shell
+```text
 Created Magento administrator user named j.doe
 ```
 
@@ -65,7 +65,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```shell
+```text
 Created Magento administrator user named John
 ```
 
@@ -75,7 +75,7 @@ The following example updates `first name`, `last name`, and `password` of `j.do
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```shell
+```text
 Created Magento administrator user named j.doe
 ```
 
@@ -107,6 +107,6 @@ Verify that the user is an administrator, the user is active, and that the accou
 
 If the account doesn't exist, the following message displays:
 
-```shell
+```text
 Couldn't find the user account "bob"
 ```

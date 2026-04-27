@@ -75,7 +75,7 @@ bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/Exam
 
 Messages similar to the following display:
 
-```shell
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

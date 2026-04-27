@@ -428,7 +428,7 @@ Listing the contents of the new bundle directory might look like this:
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```shell
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

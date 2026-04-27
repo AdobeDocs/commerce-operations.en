@@ -76,7 +76,7 @@ The query execution time is optimized, resulting in a less significant increase 
 
 The query execution time increases significantly due to inefficient handling of the large `search_query` table:
 
-```yaml
+```text
 TIME: 10.8520 seconds  
 ```
 

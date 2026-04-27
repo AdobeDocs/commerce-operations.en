@@ -132,7 +132,7 @@ mysql -u <local database username> -h <database server ip address> -p
 
 If the MySQL monitor displays as follows, the database is ready for Adobe Commerce:
 
-```shell
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 
