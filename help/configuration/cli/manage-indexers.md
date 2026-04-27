@@ -9,7 +9,7 @@ exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 
 To view a list of all indexers:
 
-```shell
+```bash
 bin/magento indexer:info
 ```
 
@@ -45,7 +45,7 @@ Use this command to view the status of all indexers or specific indexers. For ex
 
 Command options:
 
-```shell
+```bash
 bin/magento indexer:status [indexer]
 ```
 
@@ -87,7 +87,7 @@ Use this command to reindex all or selected indexers one time only.
 
 Command options:
 
-```shell
+```bash
 bin/magento indexer:reindex [indexer]
 ```
 
@@ -149,7 +149,7 @@ To use parallelization, set one of the available dimensions modes for the produc
 
 For example, to set the mode per website:
 
-```shell
+```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
@@ -160,7 +160,7 @@ To use parallelization for Catalog permissions, set one of the available dimensi
 
 Or to check the current mode:
 
-```shell
+```bash
 bin/magento indexer:show-dimensions-mode
 ```
 
@@ -168,7 +168,7 @@ To reindex in parallel mode, run the reindex command using the environment varia
 
 For example, the following command runs the `Catalog Search Fulltext` indexer across three threads:
 
-```shell
+```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
 ```
 
@@ -178,7 +178,7 @@ Use this command to invalidate the status of all indexers or specific indexers.
 
 Command options:
 
-```shell
+```bash
 bin/magento indexer:reset [indexer]
 ```
 
@@ -219,7 +219,7 @@ Use this command to set the following indexer options:
 
 To view the current indexer configuration:
 
-```shell
+```bash
 bin/magento indexer:show-mode [indexer]
 ```
 
