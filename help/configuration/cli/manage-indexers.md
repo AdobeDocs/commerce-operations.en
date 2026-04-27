@@ -257,7 +257,7 @@ Stores Feed:                                       Update by Schedule
 >
 >   Use the following command to set this indexer to update on save:
 >
->   ```shell
+>   ```bash
 >   bin/magento indexer:set-mode realtime customer_grid
 >   ```
 >
@@ -271,7 +271,7 @@ Stores Feed:                                       Update by Schedule
 
 To specify the indexer configuration:
 
-```shell
+```bash
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
 ```
 
@@ -283,7 +283,7 @@ Where:
 
 For example, to change only the category products and product categories indexers to update on schedule, enter:
 
-```shell
+```bash
 bin/magento indexer:set-mode schedule catalog_category_product catalog_product_category
 ```
 
@@ -302,7 +302,7 @@ The `bin/magento indexer:set-status` command was introduced in Adobe Commerce 2.
 
 Command syntax:
 
-```shell
+```bash
 bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
 ```
 
@@ -315,7 +315,7 @@ Where:
 
 For example, to suspend specific indexers, enter:
 
-```shell
+```bash
 bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
 ```
 
