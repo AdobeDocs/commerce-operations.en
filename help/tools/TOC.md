@@ -967,6 +967,7 @@ feature: Configuration
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
            - [ACP2E-4535: Submitting the forgot-password form destroys or regenerates the session (PHPSESSID changes) and clears the guest cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535.md)
+           - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
