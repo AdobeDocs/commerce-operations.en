@@ -29,8 +29,8 @@ php -v
 
 If PHP is installed, a message similar to the following displays:
 
-```shell
 ```text
+PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v<matching-version>, Copyright (c) Zend Technologies
     with Zend OPcache v<matching-version>, Copyright (c), by Zend Technologies
@@ -63,8 +63,8 @@ To verify installed extensions:
 
 -  Set the system time zone for PHP; otherwise, errors like the following display during the installation and time-related operations like cron might not work:
 
-```shell
 ```text
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
 -  Set the PHP memory limit.

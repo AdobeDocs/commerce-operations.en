@@ -153,8 +153,8 @@ netstat -tulpn
 
 Look for the following output in particular:
 
-```shell
 ```text
+tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
@@ -211,8 +211,8 @@ In a web browser, go to any Commerce page.
 
 A long list of response headers display in your command prompt window. Look for headers like the following:
 
-```shell
 ```text
+-   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
 -   BackendOpen    17 default(10.249.151.10,,8080) 10.249.151.10 60914
