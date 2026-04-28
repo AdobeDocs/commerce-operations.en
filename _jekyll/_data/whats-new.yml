@@ -2,8 +2,36 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Sun Apr 19 21:12:02 2026
+updated: Fri Apr 24 15:40:12 2026
 entries:
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.78](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 23, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1900
+  merge_commit: 3f14416d89140ee75ec437a42fbebae804282b72
+  contributor: muntianu
+  labels:
+  - new-topic
+  - qpt
+- description: "- Updated [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
+    with revised end-of-support table, extended support scope, and a new section on
+    additional security fixes provisioning for 2.4.4 and 2.4.5.<br/>- Updated [Versioning
+    policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy)
+    and [Release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for isolated security fixes prerequisites and hotfix/individual patch delivery
+    through the Quality Patches Tool; moved isolated security fixes detail into the
+    shared security patch overview include.<br/>- Refreshed the 2026 release calendar
+    to match current schedule."
+  versions: ''
+  type: technical, major-update
+  date: April 20, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1893
+  merge_commit: 0bc6807d7f4bfd84ac698de81f8cf6f56d849af7
+  contributor: meker
+  labels:
+  - technical
+  - major-update
 - description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
     with New Relic (APM) supported versions for Commerce on Cloud by release.
   versions: ''

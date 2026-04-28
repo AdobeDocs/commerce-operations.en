@@ -4,6 +4,52 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### April 23, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview">Overview: Quality Patches Tool (QPT) v1.1.78</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f14416d89140ee75ec437a42fbebae804282b72">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### April 20, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">Lifecycle policy</a> with revised end-of-support table, extended support scope, and a new section on additional security fixes provisioning for 2.4.4 and 2.4.5.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy">Versioning policy</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">Release schedule</a> for isolated security fixes prerequisites and hotfix/individual patch delivery through the Quality Patches Tool; moved isolated security fixes detail into the shared security patch overview include.<br />- Refreshed the 2026 release calendar to match current schedule.</li>
+</ul>
+</td>
+      <td>
+        Technical, major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### April 8, 2026
 
 <table style="table-layout:auto;">
@@ -542,28 +588,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         New topic, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/88ae7472fc5ec3c7b422a9a1d568204c42e017bb">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### February 20, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview">Overview: Quality Patches Tool (QPT) v1.1.77</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/09c026905c464ec0e41d12db8a5822b3e3b57064">commit</a></td>
     </tr>
   </tbody>
 </table>
