@@ -2,8 +2,101 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Mar 30 10:21:55 2026
+updated: Fri Apr 24 15:40:12 2026
 entries:
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.78](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 23, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1900
+  merge_commit: 3f14416d89140ee75ec437a42fbebae804282b72
+  contributor: muntianu
+  labels:
+  - new-topic
+  - qpt
+- description: "- Updated [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
+    with revised end-of-support table, extended support scope, and a new section on
+    additional security fixes provisioning for 2.4.4 and 2.4.5.<br/>- Updated [Versioning
+    policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy)
+    and [Release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for isolated security fixes prerequisites and hotfix/individual patch delivery
+    through the Quality Patches Tool; moved isolated security fixes detail into the
+    shared security patch overview include.<br/>- Refreshed the 2026 release calendar
+    to match current schedule."
+  versions: ''
+  type: technical, major-update
+  date: April 20, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1893
+  merge_commit: 0bc6807d7f4bfd84ac698de81f8cf6f56d849af7
+  contributor: meker
+  labels:
+  - technical
+  - major-update
+- description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    with New Relic (APM) supported versions for Commerce on Cloud by release.
+  versions: ''
+  type: technical, feedback
+  date: April 8, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1886
+  merge_commit: f82d05cf0f7d2749b313ef5f7e89e1e36248bf30
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Updated [Beta releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    with a Category Merchandising (Public Beta) program for SaaS projects, including
+    links to [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)
+    and related merchandising rules topics.
+  versions: ''
+  type: major-update
+  date: April 8, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1868
+  merge_commit: a9f3594a0ccf4326b0541a4f2b07fdf49cde7148
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+- description: Added instructions for properly overriding Adobe Commerce’s default
+    L2 cache directories in `env.php` to ensure that cache files are stored in the
+    intended location and prevent split cache directories and GlusterFS segmentation
+    faults. See the updated guidance in [Best practices for Redis and Valkey services
+    configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration).
+  versions: ''
+  type: technical, feedback
+  date: April 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1874
+  merge_commit: c3030226d7832b17c82be375431795cba44d72f9
+  contributor: dyushkin
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Updated the [2026 Adobe Commerce release calendar](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    with the most current release information.
+  versions: ''
+  type: release-notes
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1881
+  merge_commit: 3f32d342cbdc3e962fede45de828d836c242bc9a
+  contributor: meker
+  membership:
+  labels:
+  - release-notes
+- description: Updated the [best practices for Redis and Valkey configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+    and provided related configuration guidance.
+  versions: ''
+  type: technical, feedback
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1848
+  merge_commit: c96e5b397a2ffee8fadaf638e721799b40d320d3
+  contributor: magedocs
+  membership:
+  labels:
+  - imported
+  - technical
+  - devops
+  - feedback
 - description: 'Added detailed description of the QPT 1.1.76 fix for [ACSD-69319:
     Bundle prices were not indexed properly when child products had stock under custom
     sources](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319).'

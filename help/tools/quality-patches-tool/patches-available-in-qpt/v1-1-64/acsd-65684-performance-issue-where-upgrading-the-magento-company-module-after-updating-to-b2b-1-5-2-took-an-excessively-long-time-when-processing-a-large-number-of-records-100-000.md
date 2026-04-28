@@ -36,7 +36,7 @@ Performance issue where upgrading the `Magento_Company` module in [!DNL B2B] 1.5
 1. Apply patch ACSD-65540.
 1. Run:
 
-```
+```shell
 bin/magento setup:upgrade
 ```
 

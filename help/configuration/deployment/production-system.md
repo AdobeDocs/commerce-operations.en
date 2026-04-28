@@ -28,7 +28,7 @@ To set up a production machine:
 
    Create the directory:
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
@@ -68,19 +68,19 @@ To set sensitive values:
 1. Change to the Commerce installation directory.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    For example, to set the value of the YouTube API key to `1234`, enter
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    You can also set one or more values interactively as follows:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 

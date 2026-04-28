@@ -16,7 +16,7 @@ First, make sure you are using [developer mode](../cli/set-mode.md#change-to-dev
 
 For example,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
@@ -64,7 +64,7 @@ Make sure the `<magento_root>/var/page_cache` directory is empty:
 1. Log in to your Commerce server, or switch to, the file system owner.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/var/page_cache/*
    ```
 

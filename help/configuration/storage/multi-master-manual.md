@@ -49,7 +49,7 @@ Adobe strongly recommends that you back up your current database and file system
 1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Enter the following commands:
 
-   ```bash
+   ```shell
    magento setup:backup --code --media --db
    ```
 
@@ -64,7 +64,7 @@ This section discusses how to create database instances for sales and quote tabl
 1. Log in to your database server as any user.
 1. Enter the following command to get to a MySQL command prompt:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -87,7 +87,7 @@ This section discusses how to create database instances for sales and quote tabl
 
    quote database:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -95,11 +95,11 @@ This section discusses how to create database instances for sales and quote tabl
    exit
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -196,7 +196,7 @@ Run the preceding script:
 
 1. Log in to your MySQL database as the `root` or administrative user:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -229,25 +229,25 @@ Run the following `mysqldump` commands, one at a time, from the command shell. I
 
 #### Script 1
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sales_bestsellers_aggregated_daily sales_bestsellers_aggregated_monthly sales_bestsellers_aggregated_yearly sales_creditmemo sales_creditmemo_comment sales_creditmemo_grid sales_creditmemo_item sales_invoice sales_invoice_comment sales_invoice_grid sales_invoice_item sales_invoiced_aggregated sales_invoiced_aggregated_order sales_order sales_order_address sales_order_aggregated_created sales_order_aggregated_updated sales_order_grid sales_order_item sales_order_payment sales_order_status sales_order_status_history sales_order_status_label sales_order_status_state sales_order_tax sales_order_tax_item sales_payment_transaction sales_refunded_aggregated sales_refunded_aggregated_order sales_sequence_meta sales_sequence_profile sales_shipment sales_shipment_comment sales_shipment_grid sales_shipment_item sales_shipment_track sales_shipping_aggregated sales_shipping_aggregated_order > /<path>/sales.sql
 ```
 
 #### Script 2
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_sales_creditmemo_grid_archive magento_sales_invoice_grid_archive magento_sales_order_grid_archive magento_sales_shipment_grid_archive > /<path>/salesarchive.sql
 ```
 
 #### Script 3
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_order magento_customercustomattributes_sales_flat_order_address > /<path>/customercustomattributes.sql
 ```
 
 #### Script 4
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sequence_creditmemo_0 sequence_creditmemo_1 sequence_invoice_0 sequence_invoice_1 sequence_order_0 sequence_order_1 sequence_rma_item_0 sequence_rma_item_1 sequence_shipment_0 sequence_shipment_1 > /<path>/sequence.sql
 ```
 
@@ -261,7 +261,7 @@ If you are using a [Network Database (NDB)](https://dev.mysql.com/doc/refman/5.6
 
 1. Convert tables from InnoDb to NDB type in dump files:
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -271,19 +271,19 @@ If you are using a [Network Database (NDB)](https://dev.mysql.com/doc/refman/5.6
 
 Run the following commands:
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sales.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sequence.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/salesarchive.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattributes.sql
 ```
 
@@ -324,7 +324,7 @@ Run the script as follows:
 
 1. Log in to your MySQL database as the root or administrative user:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -345,7 +345,7 @@ This section discusses how to back up quote tables from the main database and re
 
 Run the following command from a command prompt:
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_quote magento_customercustomattributes_sales_flat_quote_address quote quote_address quote_address_item quote_item quote_item_option quote_payment quote_shipping_rate quote_id_mask > /<path>/quote.sql;
 ```
 
@@ -355,7 +355,7 @@ If you are using a [Network Database (NDB)](https://dev.mysql.com/doc/refman/5.6
 
 1. Convert tables from InnoDb to NDB type in dump files:
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -363,7 +363,7 @@ If you are using a [Network Database (NDB)](https://dev.mysql.com/doc/refman/5.6
 
 ### Restore tables to the quote database
 
-```bash
+```shell
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
@@ -447,7 +447,7 @@ Run the script as follows:
 
 1. Log in to your MySQL database as the root or administrative user:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -474,7 +474,7 @@ To update the deployment configuration:
 1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Back up your deployment configuration:
 
-   ```bash
+   ```shell
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 

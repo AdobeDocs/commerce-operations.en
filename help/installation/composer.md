@@ -37,13 +37,13 @@ To switch to the file system owner:
 
    If you use the bash shell, you can use the following syntax to switch to the file system owner and enter the command at the same time:
 
-   ```bash
+   ```shell
    su <file system owner> -s /bin/bash -c <command>
    ```
 
    If the file system owner does not allow logins, you can do the following:
 
-   ```bash
+   ```shell
    sudo -u <file system owner>  <command>
    ```
 
@@ -53,7 +53,7 @@ To switch to the file system owner:
 
    Sample bash shell for CentOS:
 
-   ```bash
+   ```shell
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
@@ -73,13 +73,13 @@ To get the Adobe Commerce metapackage:
 
     **Magento Open Source**
 
-    ```bash
+    ```shell
     composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
     ```
 
     **Adobe Commerce**
 
-    ```bash
+    ```shell
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
@@ -97,7 +97,7 @@ To get the Adobe Commerce metapackage:
 
 Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.6 metapackage:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -105,7 +105,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Adobe Commerce 2.4.6 metapackage:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -115,7 +115,7 @@ Security patches contain security fixes only. They are designed to make the upgr
 
 Security patches use the Composer naming convention `2.4.6-px`. Use Composer to specify a patch. For example, to download the Adobe Commerce 2.4.6-p1 metapackage:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
@@ -123,7 +123,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 You must set read-write permissions for the web server group before you install Adobe Commerce. This is necessary so that the command line can write files to the file system.
 
-```bash
+```shell
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
@@ -137,7 +137,7 @@ You must use the command line to install Adobe Commerce.
 
 This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
 
-```bash
+```shell
 bin/magento setup:install \
 --base-url=http://localhost/magento2ee \
 --db-host=localhost \
@@ -172,23 +172,23 @@ bin/magento setup:install \
 
 To display a complete list of commands, enter:
 
-```bash
+```shell
 bin/magento list
 ```
 
 To get help for a particular command, enter:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
 For example:
 
-```bash
+```shell
 bin/magento help setup:install
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 

@@ -32,13 +32,13 @@ a pull request for the corresponding command in the relevant [codebase](https://
 
 ## `{{ command.name }}`
 
-```bash
+```shell
 {{ tool }} {{ command.usage }}
 ```
 
 {{ command.description | strip_html }}
 {% unless command.help == command.description %}
-```
+```text
 {{ command.help | strip_html }}
 ```
 {% endunless %}

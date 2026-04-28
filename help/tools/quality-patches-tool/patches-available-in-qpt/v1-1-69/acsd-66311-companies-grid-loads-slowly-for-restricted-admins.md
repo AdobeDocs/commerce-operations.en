@@ -50,7 +50,7 @@ Companies grid loads slowly for admin users with restricted website access.
 
    1. Run the following query to verify the distribution:
 
-       ```
+       ```sql
             SELECT website_id, COUNT(*) 
             FROM customer_entity 
             GROUP BY website_id; 
@@ -66,7 +66,7 @@ Companies grid loads slowly for admin users with restricted website access.
 
    1. Run the following query to verify the distribution:
 
-      ```
+      ```sql
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
               SELECT company_id, COUNT(customer_id) AS customer_count

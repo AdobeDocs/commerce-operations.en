@@ -31,7 +31,7 @@ Fixes the issue where the **[!UICONTROL Select All]** option doesn't work in Adm
 
 1. Generate *1200* products using the command:
 
-   ```bash
+   ```shell
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 

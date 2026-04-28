@@ -18,13 +18,15 @@ In addition to the scheduled quality, security, and beta patches listed on this 
 
 Adobe Commerce patch releases are released based on the following guidelines:
 
-- **Isolated security fixes**—Individual, non-cumulative [security fixes](versioning-policy.md#isolated-security-fixes) are released as needed and include security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
+- **Isolated security patch file**—Individual, non-cumulative [security patch files](versioning-policy.md#isolated-security-patch-file) are released independently to enable faster remediation and are incorporated into the next full security patch. To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
 
-- **Security patches**—At minimium, [security patches](versioning-policy.md#security-patch-release) are released annually for all [supported](lifecycle-policy.md) release lines. These patches include all previously released isolated security fixes. Adobe may release additional security patches if necessary, but it is not guaranteed.
+- **Security patches**—At minimium, [security patches](versioning-policy.md#security-patch-release) are released annually for all [supported](lifecycle-policy.md) release lines. These patches include all previously released security, compliance, and quality hotfixes.  Adobe may release additional security patches if necessary, but it is not guaranteed.
 
 - **Patch**—A full [patch](versioning-policy.md#patch-release) for the Adobe Commerce 2.4.x LTS release line (3-year support period) is released annually (May).
 
-- **Beta patches**—Two [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line are released twice a year.
+- **Alpha patches**–One [alpha patch](versioning-policy.md#alpha-patch-release) for Adobe Commerce 2.4.x LTS release line is released annually.
+
+- **Beta patches**—One [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line is released annually.
 
 See the following image for details:
 
