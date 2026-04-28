@@ -39,7 +39,7 @@ The GraphQL `requisition_lists` request does not consider pagination settings an
 
     * Ensure that the page size is less than the total number of requisition lists created by you (example: 4)
 
-    ```
+    ```graphql
     {
     customer {
     requisition_lists(pageSize: 4, currentPage: 1) {

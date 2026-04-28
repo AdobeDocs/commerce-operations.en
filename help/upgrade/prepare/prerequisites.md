@@ -71,20 +71,20 @@ To properly upgrade MySQL from version 8.0 to version 8.4, you must follow these
 
 1. Enable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Make a database backup:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
 1. Upgrade MySQL to version 8.4.
 1. Set `restrict_fk_on_non_standard_key` to `OFF` in `[mysqld]` in the `my.cnf`  file.
 
-   ```bash
+   ```shell
    [mysqld]
    restrict_fk_on_non_standard_key = OFF 
    ```
@@ -101,13 +101,13 @@ To properly upgrade MySQL from version 8.0 to version 8.4, you must follow these
 1. Import the backed-up data into MySQL.
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Disable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -163,7 +163,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 
 1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch7` module and install the `Magento_Elasticsearch8` module.
 
-   ```bash
+   ```shell
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
@@ -175,13 +175,13 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 
    1. First, require the Elasticsearch 8 module without updating other dependencies:
 
-      ```bash
+      ```shell
       composer require magento/module-elasticsearch-8 --no-update
       ```
 
    1. Then update the Elasticsearch 8 module and `aws/aws-sdk-php` packages:
 
-      ```bash
+      ```shell
       composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
       ```
 
@@ -191,7 +191,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 
 1. Update your project components.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -199,13 +199,13 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 
 1. Reindex the catalog index.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Delete all items from the enabled cache types.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -217,13 +217,13 @@ If you inadvertently upgrade the version of Elasticsearch on your server or dete
 
 1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch8` module and its Composer dependencies and install the `Magento_Elasticsearch7` module.
 
-   ```bash
+   ```shell
    composer remove magento/module-elasticsearch-8
    ```
 
 1. Update your project components.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -231,13 +231,13 @@ If you inadvertently upgrade the version of Elasticsearch on your server or dete
 
 1. Reindex the catalog index.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Delete all items from the enabled cache types.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -260,7 +260,7 @@ To set the ulimit from the command line:
 1. Switch to the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Set the ulimit to `65536`.
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -270,7 +270,7 @@ To set the value in your Bash shell:
 1. Open `/home/<username>/.bashrc` in a text editor.
 1. Add the following line:
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -290,7 +290,7 @@ To verify that your cron job is set up properly, check the crontab by entering t
 >
 >The crontab is the configuration file responsible for running cron jobs.
 
-```bash
+```shell
 crontab -l
 ```
 
@@ -335,7 +335,7 @@ To set the environment variable:
 1. Switch to the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Set the variable:
 
-   ```bash
+   ```shell
    export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
@@ -345,7 +345,7 @@ To set the environment variable:
 
 1. After your upgrade is complete, you can unset the variable:
 
-   ```bash
+   ```shell
    unset DATA_CONVERTER_BATCH_SIZE
    ```
 
@@ -359,7 +359,7 @@ To verify that your file system permissions are set properly, either log into th
 
 For example, enter the following command if the application is installed in `/var/www/html/magento2`:
 
-```bash
+```shell
 ls -l /var/www/html/magento2
 ```
 
@@ -408,7 +408,7 @@ See the following for an explanation of the sample output:
 
 To get more detailed information, you can enter the following command:
 
-```bash
+```shell
 ls -la /var/www/html/magento2/pub
 ```
 
@@ -430,13 +430,13 @@ To install the plugin:
 
 1. Add the package to your `composer.json` file.
 
-   ```bash
+   ```shell
    composer require magento/composer-root-update-plugin ~2.0 --no-update
    ```
 
 1. Update the dependencies:
 
-   ```bash
+   ```shell
    composer update
    ```
 

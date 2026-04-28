@@ -111,7 +111,7 @@ On your development system:
 
 1. To remove generated php code and static assets files while in development, run the following commands:
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -281,10 +281,10 @@ The default email domain system-specific configuration setting is written to `ap
 
 The PayPal settings are written to neither file because the `bin/magento app:config:dump` command does not write sensitive settings. You must set the PayPal settings on the production system using the following commands:
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

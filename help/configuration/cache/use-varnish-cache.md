@@ -44,7 +44,7 @@ The parameter format must be `<hostname or ip>:<listen port>`, where you can omi
 
 For example,
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 

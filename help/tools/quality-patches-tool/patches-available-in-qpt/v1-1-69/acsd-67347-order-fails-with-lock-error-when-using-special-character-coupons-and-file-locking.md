@@ -33,7 +33,7 @@ Orders fail with the *Cannot acquire a lock* error when coupons with special cha
 1. Install 2.4-develop.
 1. Set the file lock configuration in the `env.php` file:
    
-   ```
+   ```text
    'lock' => [
            'provider' => 'file',
            'config' => [
@@ -55,7 +55,7 @@ Orders are placed successfully because there are no restrictions on creating cou
 
 The order cannot be placed. The following error appears: *Cannot acquire lock.*
 
-```
+```text
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
 ```
 

@@ -24,7 +24,7 @@ If you are running Adobe Commerce on cloud infrastructure, you do not need to co
 
 ### Command usage
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 

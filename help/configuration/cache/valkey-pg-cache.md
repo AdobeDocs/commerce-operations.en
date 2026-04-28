@@ -41,7 +41,7 @@ Commerce provides command-line options to configure the Valkey default and page 
 
 Run the `setup:config:set` command and specify parameters for Valkey default caching.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
@@ -64,7 +64,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 The following example enables Valkey default caching, sets the host to `127.0.0.1`, and assigns the database number to `0`. Valkey uses default values for all other parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
 ```
 
@@ -74,7 +74,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-serve
 
 To configure Valkey page caching on Commerce, run the `setup:config:set` command with additional parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>=<value>...
 ```
 
@@ -95,7 +95,7 @@ With the following parameters:
 
 The following example enables Valkey page caching, sets the host to `127.0.0.1`, and assigns the database number to `1`. All other parameters are set to the default value.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
@@ -254,7 +254,7 @@ Starting with the Commerce 2.4.0 release, Adobe introduced the `allow_parallel_g
 
 **To enable parallel generation**:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -493,13 +493,13 @@ If the commands succeed, then Valkey is running and can communicate with the Com
 
 ### Valkey monitor command
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Sample page-caching output:
 
-```terminal
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"
@@ -524,7 +524,7 @@ Sample page-caching output:
 
 ### Valkey ping command
 
-```bash
+```shell
 valkey-cli ping
 ```
 

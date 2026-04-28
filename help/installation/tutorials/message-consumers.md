@@ -14,7 +14,7 @@ Before you run this command, you must do the following *or* you must [install th
 
 Configuring consumer behavior is done by sending key/value pairs within the setup function:
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 

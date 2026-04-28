@@ -51,7 +51,7 @@ The payment step should load successfully during checkout, and no errors should 
 
 The payment step does not load, and the browser console displays the following JavaScript error:
 
-```
+```text
         Uncaught TypeError: Unable to process binding "text: function(){return currentBillingAddress().street.join(', ') }"
         Message: Cannot read properties of undefined (reading 'join')
 ```

@@ -54,7 +54,7 @@ To minimally configure Varnish:
 
 1. Back up `default.vcl`:
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -91,13 +91,13 @@ To minimally configure Varnish:
 
 1. Restart Varnish:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 If Varnish fails to start, try running it from the command line as follows:
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -125,7 +125,7 @@ If Varnish fails to start as a service, start it from the command line as follow
 
 1. Start the Varnish CLI:
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -147,7 +147,7 @@ If Varnish fails to start as a service, start it from the command line as follow
 
 Log in to the Varnish server and enter the following command:
 
-```bash
+```shell
 netstat -tulpn
 ```
 
@@ -172,7 +172,7 @@ Install the Commerce software if you have not already done so. When prompted for
 
 Possible error installing Commerce:
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -203,7 +203,7 @@ To set Commerce for developer mode, use the [`magento deploy:mode:set`](../cli/s
 
 Make sure that Varnish is running then enter the following command on the Varnish server:
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -211,7 +211,7 @@ In a web browser, go to any Commerce page.
 
 A long list of response headers display in your command prompt window. Look for headers like the following:
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -234,19 +234,19 @@ There are several ways to look at response headers, including using a browser pl
 
 The following example uses `curl`. You can enter this command from any machine that can access the Commerce server using HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 For example,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Look for headers like the following:
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

@@ -44,7 +44,7 @@ Commerce provides command-line options to configure the Redis page and default c
 
 Run the `setup:config:set` command and specify parameters specific to Redis default caching.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
 ```
 
@@ -67,7 +67,7 @@ With the following parameters:
 
 The following example enables Redis default caching, sets the host to `127.0.0.1`, and assigns the database number to 0. Redis uses default values for all other parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
@@ -75,7 +75,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 To configure Redis page caching on Commerce, run the `setup:config:set` command with additional parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
@@ -94,7 +94,7 @@ With the following parameters:
 
 The following example enables Redis page caching, sets the host to `127.0.0.1`, and assigns the database number to `1`. All other parameters are set to the default value.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
@@ -253,7 +253,7 @@ Starting with the Commerce 2.4.0 release, Adobe introduced the `allow_parallel_g
 
 **To enable parallel generation**:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -493,13 +493,13 @@ If the commands succeed, then Redis is running and can communicate with the Comm
 
 ### Redis monitor command
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Sample page-caching output:
 
-```terminal
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"

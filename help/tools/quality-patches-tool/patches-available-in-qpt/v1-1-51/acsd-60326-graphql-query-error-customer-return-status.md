@@ -67,7 +67,7 @@ GraphQL query on customer [!UICONTROL Returns] status gives an error.
 
 1. Authorize with the received token and perform following query:
 
-    ```
+    ```graphql
     {
     customer {
         returns(pageSize: 20, currentPage: 1) {
@@ -91,7 +91,7 @@ The query does not show any error. The status of the second return is not *null*
 
 The query returns an internal server error:
 
-```
+```json
     {
     "errors": [
         {
