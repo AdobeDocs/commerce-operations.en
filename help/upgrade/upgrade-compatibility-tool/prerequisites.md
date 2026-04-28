@@ -7,7 +7,7 @@ exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 
 {{commerce-only}}
 
-You must have [Adobe Commerce access keys](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
+You must have [Adobe Commerce access keys](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
 
 >[!NOTE]
 >
@@ -40,12 +40,12 @@ The minimum requirements to use the [!DNL Upgrade Compatibility Tool] in a comma
 |----------------|-----------------|
 | PHP version| >= 7.3 |
 | Composer | no known requirement. |
-| Node.js | Node.js versions `^12.22.0`, `^14.17.0`, or `>=16.0.0` (see [Install Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
+| Node.js | Node.js versions `^12.22.0`, `^14.17.0`, or `>=16.0.0` (see [Install Node.js](https://nodejs.org/en/download)) |
 | Memory limitations | At least 2GB RAM. |
 
 [!DNL Upgrade Compatibility Tool] requires [PCNTL](https://www.php.net/manual/en/book.pcntl.php) and other PHP extensions for the execution. Check the required PHP extensions using `composer check-platform-reqs` command:
 
-```bash
+```shell
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
 
 $ composer check-platform-reqs

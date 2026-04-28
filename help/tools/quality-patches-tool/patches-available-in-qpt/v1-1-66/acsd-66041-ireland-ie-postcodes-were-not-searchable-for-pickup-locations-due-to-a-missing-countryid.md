@@ -57,7 +57,7 @@ Ireland (IE) postcodes are not searchable for pickup locations due to a missing 
 
 1. Use the following variables:
 
-    ```
+    ```json
     {
         "radius": 81,
         "term": "dublin:IE"
@@ -73,7 +73,7 @@ Ireland postcodes are available to search for pickup locations.
 * An *Internal Server Error* is returned.
 * `var/log/exception.log` contains the following error:
 
-    ```
+    ```yaml
     report.ERROR: Provided countryId does not exist.  {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Provided countryId does not exist.
     ```
 

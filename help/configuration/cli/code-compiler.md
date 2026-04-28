@@ -20,11 +20,11 @@ You can find code compilation classes in the [\Magento\Setup\Module\Di\App\Task\
 
 To run the single-tenant compiler:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```
+```text
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -34,7 +34,7 @@ In some cases, you might want to compile code before you install the Commerce ap
 
 1. Enable the modules.
 
-   ```bash
+   ```shell
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
@@ -44,11 +44,11 @@ In some cases, you might want to compile code before you install the Commerce ap
 
 1. Compile the code.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
-   ```
+   ```text
    Generated code and dependency injection configuration successfully.
    ```
 

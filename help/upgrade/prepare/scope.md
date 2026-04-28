@@ -34,7 +34,7 @@ See the following sections to get started with the [!DNL Upgrade Compatibility T
 
 Use Composer to download the tool. It requires PHP 7.3 or later, at least 2GB of RAM, Node.js (if you are checking GraphQL compatibility), and an Adobe Commerce license.  
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
@@ -42,7 +42,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 To analyze your instance and check for errors, warnings, and critical issues:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c <coming version> 
 ```
 
@@ -52,7 +52,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 To identify the most critical issues for your team to address:  
 
-```bash
+```shell
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
 ```
 

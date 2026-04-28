@@ -39,7 +39,7 @@ Products assigned to a shared catalog via API do not show up on the frontend aft
 
 1. Use the following API request to assign the created product to the shared catalog.
 
-    ```
+    ```text
     pub/rest/all/V1/sharedCatalog/<id>/assignProducts
     {
         "products":[{

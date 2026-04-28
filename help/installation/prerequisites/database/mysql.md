@@ -101,13 +101,13 @@ To properly update MySQL from version 5.7 to version 8, you must follow these st
    Test everything and make sure that your system works as expected.
 1. Enable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Make a database backup:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -115,13 +115,13 @@ To properly update MySQL from version 5.7 to version 8, you must follow these st
 1. Import the backed-up data into MySQL.
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Disable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -134,7 +134,7 @@ To configure a MySQL database instance:
 1. Log in to your database server as any user.
 1. Get to a MySQL command prompt:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -161,7 +161,7 @@ To configure a MySQL database instance:
 
 1. Verify the database:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 
