@@ -34,7 +34,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 1. Load the Adobe Commerce Admin UI.
 1. Open the browser console and execute the following script:
 
-    ```
+    ```text
     Object.values([] || {}).forEach((function(e) {  
     e("dd")  
     }));  
@@ -48,7 +48,7 @@ The JavaScript functions available in the default JS library execute correctly w
 
 JavaScript errors appear in the browser console:
 
-```
+```text
 Uncaught TypeError: this._each is not a function
 ```
 

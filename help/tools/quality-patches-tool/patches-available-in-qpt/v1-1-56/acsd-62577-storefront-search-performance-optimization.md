@@ -33,7 +33,7 @@ Large `search_query` tables significantly slow down storefront searches, increas
 1. Set up Adobe Commerce Develop using the performance toolkit `small.xml`.
 1. Access the SQL command line and delete the `search_query` table using the following commands:
 
-    ```
+    ```text
     SET FOREIGN_KEY_CHECKS = 0;  
     DROP TABLE search_query;  
     SET FOREIGN_KEY_CHECKS = 1;  
@@ -42,7 +42,7 @@ Large `search_query` tables significantly slow down storefront searches, increas
 1. Populate the `search_query` table with a large number of records, ex: 4 million records.
 1. Trigger reindexing and flush caches.
 
-    ```
+    ```shell
     bin/magento indexer:reindex  
     bin/magento c:c  
     bin/magento c:f  
@@ -50,7 +50,7 @@ Large `search_query` tables significantly slow down storefront searches, increas
     
 1. Enable database debug logs:
 
-    ```
+    ```shell
     bin/magento dev:query-log:enable  
     ```
     
@@ -58,7 +58,7 @@ Large `search_query` tables significantly slow down storefront searches, increas
 `http://your_magento_instance/default/catalogsearch/result/?q=test.`
 1. Check the `db.log` for the query execution time for the following SQL:
 
-    ```
+    ```sql
     SELECT COUNT(*) FROM (  
     SELECT DISTINCT `main_table`.`query_text`  
     FROM `search_query` AS `main_table`  
@@ -76,7 +76,7 @@ The query execution time is optimized, resulting in a less significant increase 
 
 The query execution time increases significantly due to inefficient handling of the large `search_query` table:
 
-```
+```text
 TIME: 10.8520 seconds  
 ```
 

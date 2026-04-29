@@ -41,7 +41,7 @@ There is no CSP error in the developer console.
 
 You get the following error:
 
-```
+```text
 Content-Security-Policy: The page's settings blocked an inline script (script-src-elem) from being executed because it violates the following directive: "script-src 
 ...
 ```

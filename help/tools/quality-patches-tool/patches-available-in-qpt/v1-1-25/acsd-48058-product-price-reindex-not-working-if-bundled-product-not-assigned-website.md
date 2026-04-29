@@ -43,8 +43,8 @@ Reindex is performed successfully.
 
 The following error is thrown while running the product price index:
 
-```bash
-Undefined array key <bundel product id > in vendor/magento/module-bundle/Model/ResourceModel/Indexer/Price/DisabledProductOptionPriceModifier.php on line 117
+```shell
+Undefined array key <bundle product id > in vendor/magento/module-bundle/Model/ResourceModel/Indexer/Price/DisabledProductOptionPriceModifier.php on line 117
 ```
 
 ## Apply the patch
