@@ -20,7 +20,7 @@ A patch is a file that contains instructions to directly change code within a fi
 
 Patches break easily. If the files that the patch targets are updated, this often causes the patch to stop working. That's because a patch file contains line numbers and column numbers that specifically indicate what is to be changed by the patch. If anything doesn't match what the patch was expecting, it ceases to apply and breaks the code.
 
-```bash
+```shell
 diff --git a/vendor/magento/module-quote/Model/QuoteManagement.php b/vendor/magento/module-quote/Model/QuoteManagement.php
 index 51b68411d40..ac4a3468322 100644
 --- a/vendor/magento/module-quote/Model/QuoteManagement.php

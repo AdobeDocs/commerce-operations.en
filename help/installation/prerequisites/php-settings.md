@@ -23,13 +23,13 @@ For Cloud configuration guidance, see [PHP settings](https://experienceleague.ad
 
 PHP is installed by default on most Linux distributions. This topic assumes that you have already installed PHP. To verify if PHP is installed, enter the following on the command line:
 
-```bash
+```shell
 php -v
 ```
 
 If PHP is installed, a message similar to the following displays:
 
-```
+```text
 PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v<matching-version>, Copyright (c) Zend Technologies
@@ -48,7 +48,7 @@ To verify installed extensions:
 
 1. List installed modules.
 
-   ```bash
+   ```shell
    php -m
    ```
 
@@ -63,7 +63,7 @@ To verify installed extensions:
 
 -  Set the system time zone for PHP; otherwise, errors like the following display during the installation and time-related operations like cron might not work:
 
-```
+```text
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
@@ -106,7 +106,7 @@ To find the web server configuration, run a [`phpinfo.php` file](optional-softwa
 
 To locate the PHP command-line configuration, enter
 
-```bash
+```shell
 php --ini | grep "Loaded Configuration File"
 ```
 
@@ -128,7 +128,7 @@ Use the following guidelines to find it:
 
    If not, use the following command to locate it:
 
-   ```bash
+   ```shell
    sudo find / -name 'opcache.ini'
    ```
 
@@ -201,7 +201,6 @@ See the following Adobe Commerce Support articles for help with troubleshooting 
 
 -  [PHP version error or 404 error when accessing Adobe Commerce in a browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 -  [PHP settings errors](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
--  [PHP mcrypt extension not installed properly](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
 -  [PHP version readiness check issues](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
 -  [Common PHP Fatal Errors and solutions](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
