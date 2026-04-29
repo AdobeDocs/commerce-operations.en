@@ -34,7 +34,7 @@ Default values aren't set for the date and time fields when creating products wi
 1. Create another text type attribute and set the default value to ***test value***.
 1. Create a new product using a REST API POST request to `/rest/all/V1/products/`.
 
-    ```
+    ```json
         {
             "product": {
                 "sku": "testsku2",

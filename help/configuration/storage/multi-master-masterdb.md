@@ -31,7 +31,7 @@ Create checkout and OMS master databases as follows:
 1. Log in to your database server as any user.
 1. Enter the following command to get to a MySQL command prompt:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -60,7 +60,7 @@ Create checkout and OMS master databases as follows:
 
    Checkout database:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -70,7 +70,7 @@ Create checkout and OMS master databases as follows:
 
    Order management system database:
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -92,19 +92,19 @@ See [Running commands](../cli/config-cli.md#running-commands) to log in and run 
 
 Command syntax:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 For example,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
 The following message displays to confirm a successful setup:
 
-```
+```text
 Migration has been finished successfully!
 ```
 
@@ -112,22 +112,22 @@ Migration has been finished successfully!
 
 Command syntax:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 For example,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 The following message displays to confirm a successful setup:
 
-```
+```text
 Migration has been finished successfully!
 ```

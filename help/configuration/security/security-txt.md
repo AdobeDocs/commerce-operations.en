@@ -28,12 +28,12 @@ Signature: https://example.com/.well-known/security.txt.sig
 
 To create the `security.txt` signature (`security.txt.sig`) file:
 
-```bash
+```shell
 gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt
 ```
 
 To verify the signature:
 
-```bash
+```shell
 gpg --verify security.txt.sig security.txt
 ```

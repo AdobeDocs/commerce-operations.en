@@ -34,7 +34,7 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
 1. Enable **[!UICONTROL Free Shipping]** and set **[!UICONTROL Minimum Order Amount]** to *999999*.
 1. Navigate to [!UICONTROL Admin] > [!UICONTROL Marketing] > [!UICONTROL Cart Price Rules], and create a cart price rule with the following conditions:
 
-  ```
+  ```text
   If ALL of these conditions are TRUE:
    * Subtotal is at least 50
    * The subtotal is at most 500

@@ -45,7 +45,7 @@ The default lifetime for stopwords file cache is 15 minutes.
 
    - Command line: As the file system owner, enter the following command:
 
-      ```bash
+      ```shell
       php <magento_root>/bin/magento cache:clean config
       ```
 
@@ -83,7 +83,7 @@ The default lifetime for stopwords file cache is 15 minutes.
 
    - Command line: As the file system owner, enter the following command:
 
-      ```bash
+      ```shell
       php <magento_root>/bin/magento magento cache:clean config
       ```
 

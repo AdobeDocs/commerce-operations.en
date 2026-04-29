@@ -24,19 +24,19 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 1. Change directory to the Commerce base directory:
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. Enable maintenance mode using the command:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Apply updates to Commerce or its components using the following command pattern:
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
@@ -51,37 +51,37 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 1. Update components with Composer:
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Update the database schema and data:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Compile the code:
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Deploy static content:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Exit maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

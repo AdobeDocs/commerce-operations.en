@@ -32,7 +32,7 @@ The `SchemaBuilder` class crashes during schema creation or updates due to an un
 
 1. Execute the following command:
 
-  ```
+  ```shell
   bin/magento setup:upgrade
   ```
 
@@ -42,7 +42,7 @@ No errors.
 
 <u>Actual results</u>:
 
-```
+```text
 Error "Warning: Undefined array key "column" in SchemaBuilder.php on line 90
 ```
 
