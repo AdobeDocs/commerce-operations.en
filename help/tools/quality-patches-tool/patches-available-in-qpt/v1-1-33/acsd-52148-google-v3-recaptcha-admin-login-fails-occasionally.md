@@ -42,7 +42,7 @@ Admin is logged in successfully.
 * *reCAPTCHA verification failed.* error is displayed occasionally.
 * An error is logged-
   
-    ```
+    ```yaml
     report.ERROR: Can not resolve reCAPTCHA parameter. {"exception":"[object] (Magento\Framework\Exception\InputException(code: 0): Can not resolve reCAPTCHA parameter. at vendor/magento/module-re-captcha-ui/Model/CaptchaResponseResolver.php:25)"} []
     ```
 

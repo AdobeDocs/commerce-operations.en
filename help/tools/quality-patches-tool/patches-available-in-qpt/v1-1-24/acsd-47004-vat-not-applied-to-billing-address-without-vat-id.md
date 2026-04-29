@@ -38,7 +38,7 @@ VAT is not applied to a billing address without a VAT ID.
 1. Register a new customer.
 1. Add a new default address without VAT. For example:
 
-    ```
+    ```text
     123 N University Dr
     Edmond, 73034
     Germany
@@ -48,7 +48,7 @@ VAT is not applied to a billing address without a VAT ID.
 1. Verify that the customer's group remains [!UICONTROL General].
 1. Edit this address and add a valid VAT number:
 
-    ```
+    ```text
     123 N University Dr
     Edmond, 73034
     Germany
@@ -59,7 +59,7 @@ VAT is not applied to a billing address without a VAT ID.
 1. Make sure that the customer's group has changed to [!UICONTROL Retailer].
 1. Edit the address and remove the VAT number:
 
-    ```
+    ```text
     123 N University Dr
     Edmond, 73034
     Germany

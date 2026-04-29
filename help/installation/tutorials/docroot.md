@@ -63,7 +63,7 @@ The name and location of your virtual host file depends on which version of Apac
 1. Log in to your application server.
 1. Edit your virtual host file:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -86,7 +86,7 @@ The name and location of your virtual host file depends on which version of Apac
 
 1. Restart Apache:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
@@ -100,7 +100,7 @@ If you appended a directory name to your server's hostname or IP address to crea
 
 1. Log in to the database:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -137,22 +137,22 @@ Switching between modes is an important step in verifying that your server confi
 1. Go to your installation directory.
 1. Switch to `production` mode.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Refresh your browser and verify that the storefront displays properly.
 1. Switch to `developer` mode.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
