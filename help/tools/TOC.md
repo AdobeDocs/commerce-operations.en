@@ -966,6 +966,7 @@ feature: Configuration
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+           - [ACP2E-4416: Customer reward points do not initialize when created in the Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)
            - [ACP2E-4535: Submitting the forgot-password form destroys or regenerates the session (PHPSESSID changes) and clears the guest cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535.md)
            - [ACP2E-4507: [!UICONTROL Password Options] configuration doesn't apply to customer password reset requests made through GraphQL mutations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507.md)
            - [ACP2E-4431: [!UICONTROL Related Products] matched by target rules are deleted during the reindex process](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)

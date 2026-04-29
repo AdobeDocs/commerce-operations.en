@@ -10,7 +10,7 @@ type: Troubleshooting
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 QPT v1.1.78 includes the following patches:
-1. **ACP2E-4416**: Fixes the issue where customer reward points aren't initialized when created in the Admin.
+1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: Fixes the issue where customer reward points are not initialized when created in the Admin.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: Fixes the issue where [!UICONTROL Related Products] matched by the target rules are deleted during the reindex process.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: Fixes the issue where gift cards aren't applied correctly at checkout after successful reCAPTCHA v2 ('I am not a robot') validation on the storefront.
 1. **ACP2E-4448**: Fixes the issue where configuration changes made during Redis outages aren't reflected after Redis recovers, causing stale values to persist.
