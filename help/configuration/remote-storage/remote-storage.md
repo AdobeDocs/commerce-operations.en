@@ -14,7 +14,7 @@ By default, the Adobe Commerce application stores media files in the same filesy
 
 You cannot have both remote storage _and_ database storage enabled at the same time. You must disable database storage before enabling remote storage.
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -61,13 +61,13 @@ You can install remote storage during an Adobe Commerce installation or add remo
 
 - Example: Install Commerce with remote storage
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - Example: Enable remote storage on existing Commerce
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -79,7 +79,7 @@ You can install remote storage during an Adobe Commerce installation or add remo
 
 After you enable remote storage for a specific adapter, you can use the CLI to migrate existing _media_ files to the remote storage.
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 

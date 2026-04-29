@@ -33,7 +33,7 @@ An "Internal Error" occurs as all levels of [!DNL REST API] payload are not vali
 1. Add a product to the customer's cart.
 1. Send the [!DNL REST API] request to `rest/V1/carts/mine/estimate-shipping-methods` using a wrong attribute "_street._" with a dot in the end.
 
-```
+```json
  {
     "address": {
          "street.": [
@@ -62,7 +62,7 @@ An "Internal Error" occurs as all levels of [!DNL REST API] payload are not vali
 
 The endpoint should validate the parameter and return the `400 status code` with a specific error message. Example:
 
-```
+```text
 report.CRITICAL: LogicException: Property "Street." does not have accessor method "getStreet." in class "Magento\Quote\Api\Data\AddressInterface". in vendor/magento/framework/Reflection/NameFinder.php:103
 ```
 

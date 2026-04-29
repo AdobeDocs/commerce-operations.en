@@ -25,4 +25,4 @@ Sites that have private content blocks containing the `_isScopePrivate` variable
 ## Additional information
 
 - [Private Content](../../../performance/configuration.md#client-side-optimization-settings)
-- [High throughput AJAX requests cause poor performance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Cacheable and Private Blocks](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) in the _[!DNL Commerce PHP Extensions Guide]_

@@ -44,7 +44,7 @@ This was fixed by refactoring the way banners' contents are loaded, which reduce
     * Without `bin/magento dev:query-log:enable`
     * With `bin/magento dev:query-log:enable`
 
-        ```
+        ```shell
         grep 'magento_banner_content' var/debug/db.log  | wc -l
         ```
 

@@ -13,7 +13,7 @@ All catalog images should be resized before a store goes into production. Failin
 
 Use the default CLI command to resize all images:
 
-```bash
+```shell
 bin/magento catalog:images:resize
 ```
 
@@ -35,19 +35,19 @@ Asynchronous image resizing was introduced in Adobe Commerce 2.4 and can resize 
 
 1. Verify that the queue handlers are running:
 
-   ```bash
+   ```shell
    pgrep -fl media.storage.catalog.image.resize
    ```
 
 1. Fill the queue with all image resize requests:
 
-   ```bash
+   ```shell
    bin/magento catalog:images:resize --async
    ```
 
 1. After all images are resized, terminate the process:
 
-   ```bash
+   ```shell
    pkill -f media.storage.catalog.image.resize
    ```
 
@@ -71,7 +71,7 @@ This approach resizes 100,000 images in less than 8 hours, whereas the CLI comma
 
 >[!TAB sed]
 
-```bash
+```shell
 cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
@@ -80,13 +80,13 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 The disadvantage of `siege` is that it visits all URLs in the 10 times if concurrency is set to 10.
 
-```bash
+```shell
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
 >[!TAB curl]
 
-```bash
+```shell
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
@@ -96,7 +96,7 @@ The `-P` argument determines the number of threads.
 
 The one-liner for the `find/curl` example, in case you can run `curl` from the same machine the images are on:
 
-```bash
+```shell
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
