@@ -1,6 +1,6 @@
 ---
 title: Configure the store
-description: Follow these steps to configure your Adobe Commerce store.
+description: Learn how to configure your Adobe Commerce store from the command line after deployment configuration and database schema setup, including secure install options.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
 ---
 # Configure the store
@@ -18,7 +18,7 @@ Before you run this command, you must do the following *or* you must [install th
 
 Command usage:
 
-```bash
+```shell
 bin/magento setup:store-config:set [--<parameter_name>=<value>, ...]
 ```
 

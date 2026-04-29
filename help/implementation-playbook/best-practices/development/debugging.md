@@ -21,7 +21,7 @@ This section describes the most common issues that you might encounter during de
 
 The following code sample provides helpful commands related to managing the cache (do not run on production environments):
 
-```bash
+```shell
 # restart php-fpm to flush APC
 sudo service php-fpm restart
  
@@ -72,7 +72,7 @@ Reindex everything if the issue might be index-related. Debugging indexed data t
 
 You might have outdated code due to a branch change or because of core files that were edited in a previous debugging effort. To eliminate potential issues, run the following commands:
 
-```bash
+```shell
 rm -rf vendor/*
 composer clear-cache
 composer install
@@ -82,7 +82,7 @@ composer install
 
 Rebuild frontend files before debugging the generated content in JS, CSS, images, translations, and other files.
 
-```bash
+```shell
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
 bin/magento setup:static-content:deploy
 bin/magento cache:flush
@@ -98,7 +98,7 @@ If you have created a module, check for the following issues:
 
 - Is the module enabled? 
 
-   ```bash
+   ```shell
    bin/magento module --enable Your_Module
    ```
 
@@ -173,7 +173,7 @@ If you are looking at a problem for too long, it can be challenging to find a so
 
 The n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) provide useful capabilities to work with Adobe Commerce from the command line. Especially these commands:
 
-```bash
+```shell
 n98-magerun2.phar dev:console
 n98-magerun2.phar sys:cron:run
 n98-magerun2.phar db:console

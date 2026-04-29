@@ -44,13 +44,13 @@ The image is uploaded without errors.
     *A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later.*
 1. `var/log/exception.log` contains:
 
-    ```
+    ```yaml
     report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($width) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
     ```
 
     or
 
-    ```
+    ```yaml
     report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($height) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
     ```
 

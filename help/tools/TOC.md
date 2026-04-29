@@ -967,6 +967,11 @@ feature: Configuration
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
            - [ACP2E-4431: [!UICONTROL Related Products] matched by target rules are deleted during the reindex process](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)
+           - [ACP2E-4540: The Fotorama library does not load correctly, so only the first attached image is visible](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)
+           - [ACP2E-4555: Telephone numbers that contain periods or forward slashes don't validate properly](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)
+           - [ACP2E-4565: The Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)
+           - [ACP2E-4522: Intermittent duplicate key errors occur on the quote_coupons table when multiple cart merge or quote save requests run at the same time](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)
+           - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

@@ -37,7 +37,7 @@ Return attribute labels for the default store are returned via [!DNL GraphQL] AP
 1. Create a *[!UICONTROL Return]* for that order. Make sure the *[!UICONTROL Return]* is in *[!UICONTROL Pending]* status. 
 1. Send a Customer [!DNL GraphQL] query with the specified non-default [!UICONTROL Store View] in the header:    
 
-    ```
+    ```graphql
     query {
         customer {
             returns {

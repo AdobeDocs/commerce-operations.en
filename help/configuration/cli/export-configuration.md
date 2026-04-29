@@ -7,7 +7,7 @@ exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
 
 In Commerce 2.2 and later [pipeline deployment model](../deployment/technical-details.md), you can maintain a consistent configuration across systems. After you configure settings in the Admin on your development system, export those settings to configuration files using the following command:
 
-```bash
+```shell
 bin/magento app:config:dump {config-types}
 ```
 
@@ -15,7 +15,7 @@ _config_types_ is a space-separated list of config types to dump. Available type
 
 The following example dumps scopes and themes only:
 
-```bash
+```shell
 bin/magento app:config:dump scopes themes
 ```
 

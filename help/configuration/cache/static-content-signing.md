@@ -20,7 +20,7 @@ Commerce accomplishes this by adding a deployment version to the URL of static f
 
 The following is an example of a URL signed with a version:
 
-```
+```text
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
@@ -38,13 +38,13 @@ The configuration for static content signing is in [**[!UICONTROL Stores]** > Se
 
 Determine the status:
 
-```bash
+```shell
 bin/magento config:show dev/static/sign
 ```
 
 Enable or disable static content signing:
 
-```bash
+```shell
 bin/magento config:set dev/static/sign <value>
 ```
 

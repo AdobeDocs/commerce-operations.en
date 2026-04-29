@@ -34,7 +34,7 @@ The **[!UICONTROL types]** field is missing for product image types when fetchin
 1. Upload an image to the product.
 1. Fetch the media data using the following GraphQL.
 
-    ```
+    ```text
     query{
       products(search:"",filter:{sku:{eq:"p1"}})\{
         items{

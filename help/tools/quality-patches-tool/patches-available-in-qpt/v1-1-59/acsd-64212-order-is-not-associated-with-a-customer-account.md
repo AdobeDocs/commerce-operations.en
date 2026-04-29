@@ -33,7 +33,7 @@ Order is not linked to a customer account when the account is created via [!DNL 
 1. Place a guest order on the frontend.
 1. Send the following request to create the account:
 
-  ```
+  ```graphql
   mutation CreateAccountAfterCheckout(
   $email: String!
   $firstname: String!
@@ -60,7 +60,7 @@ Order is not linked to a customer account when the account is created via [!DNL 
 
   ```
 
-  ```
+  ```json
   {
     "email": "guest@example.com",
     "firstname": "first",
