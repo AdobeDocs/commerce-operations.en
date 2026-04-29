@@ -33,7 +33,7 @@ While using a multi-store setup with AsyncOrder processing, orders placed on any
 1. Install [!DNL RabbitMQ] and execute `bin/magento setup:upgrade` to create the queues for [!DNL RabbitMQ].
 1. Configure AsyncOrder processing with:
 
-    ```bash
+    ```shell
     bin/magento setup:config:set --checkout-async 1
     ```
 
@@ -53,7 +53,7 @@ While using a multi-store setup with AsyncOrder processing, orders placed on any
 1. Change the default website by going to **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**. Click the second website, check *[!UICONTROL Set as Default]* and save.
 1. Clear the cache with:
 
-    ```bash
+    ```shell
     bin/magento cache:clear
     ```
 
@@ -61,13 +61,13 @@ While using a multi-store setup with AsyncOrder processing, orders placed on any
 1. Go back to Admin after placing the order, and change the default website back to the original main website and save.
 1. Clear the cache:
 
-    ```bash
+    ```shell
     bin/magento cache:clear
     ```
 
 1. Run the following command to start the queue consumer:
 
-    ```bash
+    ```shell
     bin/magento queue:cons:start placeOrderProcessor
     ```
 

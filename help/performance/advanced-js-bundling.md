@@ -26,7 +26,7 @@ See [Bundling tips](configuration.md#bundling-tips) in *Configuration best pract
 
 To enable built-in bundling from the command line:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -47,7 +47,7 @@ Commerce bundling reduces the number of connections per page, but for each page 
 
 To enable built-in merging from the command line:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
@@ -213,7 +213,7 @@ phantomjs deps.js <i>url-to-specific-page</i> > <i>text-file-representing-pagety
 
 For example, here are four pages from the Luma themed sample store that represent the four page types we will use to create our four bundles (homepage, category, product, cart):
 
-```
+```text
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -235,7 +235,7 @@ This command (used within the [!DNL PhantomJS] script) creates the same list of 
 
 After you merge the [!DNL RequireJS] dependencies into page-type text files, you can use the following command on each page-type dependency file to replace the commas in your files with newlines:
 
-```bash
+```shell
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -244,7 +244,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 You should also remove all the mixins for each file because mixins duplicate dependencies. Use the following command on each dependency file:
 
-```bash
+```shell
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -257,13 +257,13 @@ The goal is to create a common bundle of JavaScript files needed by all pages. T
 
 Open a terminal in the Commerce root directory and use the following command to verify that you have dependencies you can split into separate bundles:
 
-```bash
+```shell
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
 This command merges and sorts the dependencies found in the `bundle/*.txt` files.  The output also shows the number of files that contain each dependency:
 
-```
+```text
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -312,13 +312,13 @@ You can also find the script at [https://www.unix.com/shell-programming-and-scri
 
 Open a terminal in the Commerce root directory and run the file:
 
-```bash
+```shell
 bash deps-map.sh
 ```
 
 The output from this script, applied to our three example page types, should look something like this (but much longer):
 
-```
+```text
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -385,7 +385,7 @@ The steps below describe the basic process for generating more efficient Commerc
 
 Before generating bundles, run the static deployment command:
 
-```bash
+```shell
 php -f bin/magento setup:static-content:deploy -f -a frontend
 ```
 
@@ -402,13 +402,13 @@ To generate bundles for all store themes and locales, repeat the steps below for
 
 First, you need to move the static content from the target directory to some temporary directory because [!DNL RequireJS] replaces all the content within the target directory.
 
-```bash
+```shell
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
 For example:
 
-```bash
+```shell
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
@@ -416,7 +416,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 Then run the r.js optimizer on the `build.js` file from Commerce's root directory. Paths to all directories and files are relative to the working directory.
 
-```bash
+```shell
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -424,11 +424,11 @@ This command generates bundles in a `bundles` subdirectory of the target directo
 
 Listing the contents of the new bundle directory might look like this:
 
-```bash
+```shell
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
@@ -479,7 +479,7 @@ require.config({});
 
 Run the following command to deploy:
 
-```bash
+```shell
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 

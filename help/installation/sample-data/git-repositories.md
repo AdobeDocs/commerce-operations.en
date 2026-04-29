@@ -45,7 +45,7 @@ To clone the sample data GitHub repository using the SSH protocol:
 
    An example follows:
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-sample-data.git
    ```
 
@@ -55,7 +55,7 @@ To clone the sample data GitHub repository using the SSH protocol:
    >
    >If the following error displays, make sure you [shared your SSH key](https://docs.github.com/articles/generating-ssh-keys/) with GitHub:<br>
 
-   ```
+   ```text
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
@@ -69,14 +69,14 @@ To clone the sample data GitHub repository using the SSH protocol:
 
    To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4-develop` branch):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Change to `<app_root>`.
 1. Enter the following command to create symbolic links between the files that you cloned so sample data works properly:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
@@ -86,7 +86,7 @@ To clone the sample data GitHub repository using the SSH protocol:
 
 1. Run the following command:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -110,7 +110,7 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 
    An example follows:
 
-   ```bash
+   ```shell
    git clone https://github.com/magento/magento2-sample-data.git
    ```
 
@@ -123,20 +123,20 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 
    To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4-develop` branch):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Change to `<magento_root>`.
 1. Enter the following command to create symbolic links between the files that you cloned so sample data works properly:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
    For example,
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
    ```
 
@@ -147,7 +147,7 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 >
 >If you're installing sample data *after* installing Adobe Commerce, you must also run the following command to update the database and schema:
 >
->```bash
+>```shell
 ><magento_root>/bin/magento setup:upgrade
 >```
 
@@ -160,7 +160,7 @@ To set file system permissions and ownership on the sample data repository:
 1. Change to your sample data clone directory.
 1. Set ownership:
 
-   ```bash
+   ```shell
    chown -R :<your web server group name> .
    ```
 
@@ -172,17 +172,17 @@ To set file system permissions and ownership on the sample data repository:
 
 1. Set permissions:
 
-   ```bash
+   ```shell
    find . -type d -exec chmod g+ws {} +
    ```
 
 1. Clear static files:
 
-   ```bash
+   ```shell
    cd <your Magento Open Source install dir>
    ```
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* generated/*
    ```
 

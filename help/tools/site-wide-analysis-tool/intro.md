@@ -11,7 +11,7 @@ exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
 
 This guide provides a holistic overview of the [!DNL Site-Wide Analysis Tool]. It describes the uses, step-by-step instructions for installation, and how to access the tool.
 
-## What is the [!DNL Site-Wide Analysis Tool]? 
+## What is the [!DNL Site-Wide Analysis Tool]?
 
 The [!DNL Site-Wide Analysis Tool] is a proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and better visibility into site health, safety, and application configurations. It helps reduce resolution time and improve site stability and performance.
 
@@ -21,7 +21,7 @@ The [!DNL Site-Wide Analysis Tool] is a proactive self-service tool and central 
 >
 >The [!DNL Site-Wide Analysis Tool] reports on system-level data. For reports on Adobe Commerce product, sales, marketing, and other commerce application data, see [Adobe Commerce Reports](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu).
 
-![Site-Wide Analysis Tool dashboard](../../assets/tools/swat-dashboard.png){zoomable="yes"}
+![Site-Wide Analysis Tool dashboard](../../assets/tools/swat-dashboard.png){width="700" zoomable="yes"}
 
 See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to learn more.
 
@@ -58,7 +58,7 @@ The security information includes [Tech [!DNL Stack] Version Compliance with [!D
 
   The [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) provides Adobe Commerce and Magento Open-Source customers with real-time insights into their store's security posture by proactively detecting malware and alerting them if their store is compromised.
 
-- **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)** - Checks your Adobe Commerce instance against the upgrade version and flags critical issues, errors, and warnings to fix before upgrading. Addressing these issues streamlines the upgrade process.”
+- **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)** - Checks your Adobe Commerce instance against the upgrade version and flags critical issues, errors, and warnings to fix before upgrading. Addressing these issues streamlines the upgrade process."
 
 - **[[!DNL Managed Alerts]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)** - Monitor key metrics (CPU, application performance, disk, memory, and database health), and provides clear troubleshooting steps to help merchants stay ahead of issues and avoid downtime.
 

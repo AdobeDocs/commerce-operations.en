@@ -9,19 +9,19 @@ This section discusses two ways to verify that HTTP Basic authentication is work
 
 Enter the following command:
 
-```bash
+```shell
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 For example, if you enter the command on the search engine server and your proxy uses port 8080:
 
-```bash
+```shell
 curl -i http://localhost:8080/_cluster/health
 ```
 
 The following message displays to indicate authentication failed:
 
-```
+```text
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -38,19 +38,19 @@ WWW-Authenticate: Basic realm="Restricted"
 
 Now try the following command:
 
-```bash
+```shell
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 For example:
 
-```bash
+```shell
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
 This time the command succeeds with a message similar to the following:
 
-```
+```text
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8

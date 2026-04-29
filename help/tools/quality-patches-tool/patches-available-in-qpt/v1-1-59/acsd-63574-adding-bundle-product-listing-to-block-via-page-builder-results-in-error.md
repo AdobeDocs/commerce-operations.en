@@ -28,7 +28,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.4-p11
 
 When adding **[!UICONTROL Bundle Product]** to a block using [!DNL Page Builder], the product widget preview breaks and shows the error message *We're sorry, an error has occurred while generating this content*. This issue occurs specifically when the bundle product includes `Checkbox` or `Multi Select` option types and `indexer dimension mode` is set to `website_and_customer_group`. The exception log shows the following error:
 
-    ```
+    ```yaml
     report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_name.catalog_product_index_price_cg0_ws0' doesn't exist in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
     ```
 

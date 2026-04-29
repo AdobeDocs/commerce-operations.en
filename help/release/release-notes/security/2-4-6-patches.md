@@ -66,7 +66,7 @@ This version does not include the `magento/inventory-composer-installer` package
 
 If you upgrade from 2.3 to 2.4.6-p13, run the following command to install the `magento/inventory-composer-installer` package before upgrading:
 
-```bash
+```shell
 composer require magento/inventory-composer-installer
 ```
 
@@ -274,7 +274,7 @@ Platform upgrades for this release improve compliance with the latest security b
 
 * Missing dependencies for the B2B security package cause the following installation error when installing or upgrading the B2B extension to 1.4.0.
 
-  ```
+  ```shell
   Your requirements could not be resolved to an installable set of packages.
 
     Problem 1

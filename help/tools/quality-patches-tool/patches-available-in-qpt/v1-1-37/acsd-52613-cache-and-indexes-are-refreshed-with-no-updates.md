@@ -37,7 +37,7 @@ Inventory modules installed
 1. Turn developer mode to have `debug.log`.
 1. Prepare import file with 100 products - import.csv:
 
-   ```
+   ```text
    sku    name    product_type    attribute_set_code    price
    test_sku_1    test_sku_1    simple    Default    10
    test_sku_2    test_sku_2    simple    Default    10
@@ -58,7 +58,7 @@ Inventory modules installed
 
    using this as the body 
 
-   ```
+   ```json
    {
     "sourceItems": [
         {

@@ -15,7 +15,7 @@ This topic discusses how to:
 
 Enter the following command:
 
-```bash
+```shell
 bin/magento sampledata:remove
 ```
 
@@ -49,7 +49,7 @@ This command enables you to update sample data before you update Adobe Commerce.
 
 To prepare sample data for updating, enter the following command:
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 

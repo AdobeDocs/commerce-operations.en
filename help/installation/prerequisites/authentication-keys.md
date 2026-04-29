@@ -58,7 +58,7 @@ You must use your MAGEID plus your token to download a release. Your MAGEID is d
 
 For example:
 
-```bash
+```shell
 curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/help
 ```
 

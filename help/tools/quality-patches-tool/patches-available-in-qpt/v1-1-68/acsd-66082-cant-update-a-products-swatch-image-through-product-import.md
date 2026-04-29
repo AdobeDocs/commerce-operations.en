@@ -34,7 +34,7 @@ Uploading a CSV file with the `swatch_image` field set to `EMPTY_VALUE` to unset
 1. Upload a PNG image named *testing.png* to `var/import/images/`.
 1. Create a CSV file with the following content:
 
-    ```
+    ```text
     sku,swatch_image,swatch_image_label
     ABC,testing.png,testing
     ```
@@ -45,7 +45,7 @@ Uploading a CSV file with the `swatch_image` field set to `EMPTY_VALUE` to unset
     * Click **[!UICONTROL Choose File]** to select the CSV file created in the previous step to import. The import is successful, and the swatch is added.
 1. Update the CSV with the following content:
 
-    ```
+    ```text
     sku,swatch_image,swatch_image_label
     ABC,__EMPTY__VALUE__,__EMPTY__VALUE__
     ```

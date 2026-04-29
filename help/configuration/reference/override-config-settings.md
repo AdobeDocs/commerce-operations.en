@@ -131,7 +131,7 @@ To get these values from the database:
 1. Log in to your development system as the file system owner if you have not done so already.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    mysql -u <database-username> -p
    ```
 

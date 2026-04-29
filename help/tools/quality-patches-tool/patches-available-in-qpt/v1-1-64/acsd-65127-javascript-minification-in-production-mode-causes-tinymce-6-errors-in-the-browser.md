@@ -32,7 +32,7 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
 
 1. Set the configuration by running the below commands:
 
-  ```
+  ```shell
   bin/magento config:set --lock-config dev/js/minify_files 1
   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
   bin/magento config:set --lock-config dev/js/merge_files 1
@@ -44,7 +44,7 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
 
 1. Enable production mode.
 
-  ```
+  ```shell
   bin/magento deploy:mode:set production
   ```
 

@@ -57,13 +57,13 @@ To enable dependency graphs, use the variable option.
 
    To enable the profiler using type `html` and create a flagfile:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    To enable the profiler using type `csvfile` and create a flagfile:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -71,7 +71,7 @@ To enable dependency graphs, use the variable option.
 
    To disable the profiler and remove the flagfile:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

@@ -18,13 +18,13 @@ You have the following options:
 
 Command usage:
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 For example:
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -32,13 +32,13 @@ composer show --all example/module
 
 Command usage:
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 For example:
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -61,7 +61,7 @@ Wait while Composer updates dependencies and installs the module.
 
 1. Resolve dependencies and write exact versions to the `composer.lock` file. 
 
-   ```bash
+   ```shell
    composer update
    ```
 

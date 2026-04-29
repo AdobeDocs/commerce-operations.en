@@ -30,7 +30,7 @@ If you're a contributing developer, refer to [Install by cloning repositories](g
 
 To install sample data using the command line, enter the following command as the file system owner in the `<app_root>` directory:
 
-```bash
+```shell
 bin/magento sampledata:deploy
 ```
 
@@ -38,7 +38,7 @@ bin/magento sampledata:deploy
 >
 >If you're installing sample data _after_ installing the application, you must also run the following command to update the database and schema in the `<app_root>` directory:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -48,7 +48,7 @@ You are required to [authenticate](../prerequisites/authentication-keys.md) to c
 
 The following authentication error might display:
 
-```
+```text
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate

@@ -32,7 +32,7 @@ New input attribute `sort` added to sort customer orders in [!DNL GraphQL] by `s
 
 Query customer orders using [!DNL GraphQL]:
 
-```
+```text
   {
     customerOrders {
       items {

@@ -22,7 +22,7 @@ The [system requirements](../../installation/system-requirements.md) for the [!D
 
 The following diagram represents directory structure of [!DNL Data Migration Tool]:
 
-```
+```shell
 
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
@@ -530,12 +530,12 @@ There are three types of tests in the [!DNL Data Migration Tool]:
 
 They are located in the tool's `tests/` directory, which is the same as the type of test (unit tests are located in the `tests/unit` directory). To launch the test, you should have phpunit installed. Change the current directory to the test directory and launch phpunit. For example:
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

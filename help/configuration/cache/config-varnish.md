@@ -6,7 +6,7 @@ exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 ---
 # Configure Varnish
 
-[Varnish Cache](https://varnish-cache.org) is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
+[Varnish Cache](https://www.varnish.org/) is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
 
 [System requirements](../../installation/system-requirements.md) lists the supported versions of Varnish.
 
@@ -16,9 +16,9 @@ exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 
 For more information about Varnish, see:
 
-- [The Big Varnish Picture](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
-- [Varnish startup options](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
-- [Varnish and Website Performance](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
+- [The Big Varnish Picture](https://www.varnish.org/docs/users-guide/intro/#users-intro)
+- [Varnish startup options](https://www.varnish.org/docs/users-guide/running/#users-running)
+- [Varnish and Website Performance](https://www.varnish.org/docs/users-guide/performance/)
 
 ## Varnish topology diagram
 
@@ -63,7 +63,7 @@ We know of the following issues with Varnish:
 
 - Possible error installing Commerce:
 
-   ```
+   ```text
    Error 503 Service Unavailable
    Service Unavailable
    XID: 303394517

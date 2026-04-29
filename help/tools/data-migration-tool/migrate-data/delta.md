@@ -28,7 +28,7 @@ See the [first steps](overview.md#first-steps) section for more details.
 
 To start migrating incremental changes, run:
 
-```bash
+```shell
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

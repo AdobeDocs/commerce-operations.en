@@ -15,13 +15,13 @@ To upgrade if you are a contributing developer:
 
 1. Create a backup of your `composer.json` file.
 
-   ```bash
+   ```shell
    cp composer.json composer.json.old
    ```
 
 1. Update your local repository to get the latest code:
 
-   ```bash
+   ```shell
    git pull origin develop
    ```
 
@@ -33,19 +33,19 @@ To upgrade if you are a contributing developer:
 
 1. Resolve dependencies and write exact versions to the `composer.lock` file. 
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Update the database:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 

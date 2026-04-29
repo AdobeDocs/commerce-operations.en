@@ -110,7 +110,7 @@ Developers can use automation to review DI compilation, database schema, compose
 
 - DI compilation—Run the following CLI commands to see if the code can be compiled without any issues.
 
-  ```bash
+  ```shell
   bin/magento module:disable -n -q --all || exit;
   bin/magento module:enable -n -q --all || exit;
   bin/magento cache:enable -n -q || exit;
@@ -127,26 +127,26 @@ Developers can use automation to review DI compilation, database schema, compose
 
 - Database schema `whitelist.json`—Run the following CLI command and validate that the `db_schema_whitelist.json` file is not added or altered.
 
-  ```bash
+  ```shell
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
 - Composer validate—Validate the `composer.json` file by running the following CLI command in the directory that contains the `composer.json` file.
 
-  ```bash
+  ```shell
   composer validate
   ```
 
 - Coding standard—Install and run the Coding Standard tool and run it against your module. The following file shows how to enable it to run anywhere by typing `mcs ./app/code/Vendor/Module/`.
 
-  ```bash
+  ```shell
   #!/usr/bin/env bash
   $HOME/web/magento/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 "$@"
   ```
 
 - Phpstan
 
-  ```bash
+  ```shell
   ./vendor/bin/phpstan analyze app/code/Vendor/Module
   ```
 

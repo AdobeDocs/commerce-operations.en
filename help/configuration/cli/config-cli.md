@@ -36,13 +36,13 @@ Before you begin using the CLI, make sure that:
 
 For the bash shell, use the following syntax to switch to the file system owner and enter the command at the same time:
 
-```bash
+```shell
 su <file system owner> -s /bin/bash -c <command>
 ```
 
 If the file system owner does not allow logins, you can use the following:
 
-```bash
+```shell
 sudo -u <file system owner> <command>
 ```
 
@@ -52,7 +52,7 @@ Add `<magento_root>/bin` to your system `PATH`.
 
 Sample bash shell for CentOS:
 
-```bash
+```shell
 export PATH=$PATH:/var/www/html/magento2/bin
 ```
 

@@ -35,7 +35,7 @@ The `customerOrders` GraphQL query returns an internal server error when a produ
 1. Go to the backend and delete one product.
 1. Create a customer token: 
    
-```
+```text
 https://localhost/pub/graphql
 mutation {
   generateCustomerToken(email: "test@test.com", password: "123123qA") {
@@ -46,7 +46,7 @@ mutation {
 
 1. Retrieve the list of orders using the `eligible_for_return` filter (used in PWA to fetch customer orders):
 
-```
+```text
 https://localhost/pub/graphql
 {
   customerOrders {
@@ -72,7 +72,7 @@ Order list is collected without errors.
 
 Exception : *Internal server error*
 
-```
+```graphql
 [2025-05-16T23:42:15.174025+00:00] report.ERROR: Call to a member function getIsReturnable() on null
 
 {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Call to a member function getIsReturnable() on null at /var/www/html/localhost/vendor/webonyx/graphql-php/src/Error/Error.php:170) [previous exception] [object] (Error(code: 0): Call to a member function getIsReturnable() on null at /var/www/html/localhost/magento2ee/app/code/Magento/Rma/Helper/Data.php:644)"}

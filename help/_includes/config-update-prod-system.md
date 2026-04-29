@@ -5,11 +5,11 @@
 1. Log in to the production system as the file system owner.
 1. Change to the application root and enable maintenance mode.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    ```
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -25,42 +25,42 @@
 
 1. Update the configuration.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Finally, `kill` any active consumer processes.
 
-   ```bash
+   ```shell
    kill <PID>
    ```
 
    Where `PID` is the process ID to be killed, for example:
 
-   ```bash
+   ```shell
    kill 1234
    ```
 
 1. Pull code from source control.
 
-   ```bash
+   ```shell
    git pull mconfig m2.2_deploy
    ```
 
 1. Update the configuration.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Clean the cache.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. End maintenance mode.
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```

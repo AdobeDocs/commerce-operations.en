@@ -80,19 +80,19 @@ After the Application Server feature is enabled on your Pro project, complete th
    
 1. Ensure that `/application-server/start.sh` is executable by running the following command:
 
-   ```bash
+   ```shell
    chmod +x application-server/start.sh
    ```
 
 1. Add updated files to the git index with this command:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml application-server/*
    ```
 
 1. Commit your changes with this command:
 
-   ```bash
+   ```shell
    git commit -m "AppServer Enabled"
    ```
 
@@ -100,7 +100,7 @@ After the Application Server feature is enabled on your Pro project, complete th
 
 After completing the enablement steps, push changes to your Git repository to deploy GraphQL Application Server:
 
-```bash
+```shell
 git push
 ```
 
@@ -153,26 +153,26 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. Add updated files to the git index:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
 1. Commit your changes and push them to trigger a deployment:
 
-   ```bash
+   ```shell
    git commit -m "Enabling AppServer: initial changes"
    git push
    ```
 
 1. Use SSH to log in to the remote cloud environment (_not_ the `application-server` app):
 
-   ```bash
+   ```shell
    magento-cloud ssh -p <project-ID> -e <environment-ID>
    ```
 
 1. Sync the data from the local mounts to the shared mounts:
 
-   ```bash
+   ```shell
    rsync -avz var/* var_shared/
    rsync -avz app/etc/* app/etc_shared/
    rsync -avz pub/media/* pub/media_shared/
@@ -233,7 +233,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. Add the updated file to the git index, commit changes, and push to trigger a deployment:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: switch mounts"
    git push
@@ -243,7 +243,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. Cleanup old local mounts:
 
-   ```bash
+   ```shell
    rm -rf var_old/*
    rm -rf app/etc_old/*
    rm -rf pub/media_old/*
@@ -261,7 +261,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. Add the updated file to the git index, commit changes, and push to trigger a deployment:
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: finish"
    git push
@@ -275,7 +275,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. Perform a GraphQL query or mutation against your instance to confirm that the `graphql` endpoint is accessible. For example:
 
-   ```
+   ```graphql
    mutation {  
     createEmptyCart
    }
@@ -295,7 +295,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
 1. You can also check if GraphQL Application Server is running by executing the following command:
 
-   ```bash
+   ```shell
    ps aux|grep php
    ```
 
@@ -337,7 +337,7 @@ To run the GraphQL Application Server locally, install the Swoole extension (v5.
 
 The following procedure describes how to install the Swoole extension for PHP 8.2 on OSX-based systems. It is one of several ways of installing the Swoole extension.
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -347,7 +347,7 @@ During installation, Adobe Commerce displays prompts to enable support for `open
 
 Confirm that the extension has been successfully enabled:
 
-```bash
+```shell
 php -m | grep swoole
 ```
 
@@ -357,7 +357,7 @@ Any errors that occur during Swoole installation typically occur during the `pec
 
 * Check the location of `openssl` by running:
 
-```bash
+```shell
 openssl version -d
 ```
 
@@ -365,17 +365,17 @@ This command shows the path where `openssl` is installed.
 
 * Check the location of `pcre2` by running:
 
-```bash
+```shell
 pcre2-config --prefix 
 ```
 
 Use Homebrew to install the missing packages if the command output indicates that files are missing:
 
-```bash
+```shell
 brew install openssl
 ```
 
-```bash
+```shell
 brew install pcre2
 ```
 
@@ -383,7 +383,7 @@ brew install pcre2
 
 To resolve issues related to `openssl`, run:
 
-```bash
+```shell
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
 ```
 
@@ -393,7 +393,7 @@ Confirm that you are using the path from your local `dev` environment.
 
 You can run the following command again to check if openssl-related issues have been resolved:
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -405,7 +405,7 @@ To resolve issues related to `pcre2.h`, symlink the `pcre2.h` path to your insta
 
 Start GraphQL Application Server:
 
-```bash
+```shell
 bin/magento server:run
 ```
 
@@ -413,7 +413,7 @@ This command starts an HTTP port on 9501. Once GraphQL Application Server launch
 
 To confirm that GraphQL Application Server is running in your deployment:
 
-```bash
+```shell
 ps aux | grep php
 ```
 
@@ -445,13 +445,13 @@ Procedures for disabling GraphQL Application Server vary depending upon whether 
 
 1. Commit your changes using this command:
 
-   ```bash
+   ```shell
    git commit -m "AppServer Disabled"
    ```
 
 1. Deploy these changes using this command:
 
-   ```bash
+   ```shell
    git push
    ```
 
@@ -511,7 +511,7 @@ While deploying the GraphQL Application Server, extension developers should exec
 
 While running functional tests (or manual testing), the GraphQL Application Server can run with `--state-monitor mode` enabled to help find classes where state is being unintentionally reused. Start the Application Server normally, except add the `--state-monitor` parameter.
 
-```
+```shell
 bin/magento server:run --state-monitor
 ```
 
@@ -519,7 +519,7 @@ After each request is processed, a new file is added to the `tmp` directory, for
 
 Examples:
 
-```
+```text
 /var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ``` 

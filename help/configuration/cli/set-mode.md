@@ -19,7 +19,7 @@ Production mode has better performance because static view files are populated i
 
 When you change to developer or production mode, we clear the contents of following directories:
 
-```
+```text
 var/cache
 generated/metadata
 generated/code
@@ -42,13 +42,13 @@ The easiest way to do that is to run this command as the [file system owner](../
 
 Command usage:
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
 A message similar to the following displays:
 
-```
+```text
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -60,7 +60,7 @@ where:
 
 Command usage:
 
-```bash
+```shell
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
@@ -74,13 +74,13 @@ Examples follow.
 
 ### Change to production mode
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
 Messages similar to the following display:
 
-```
+```text
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -125,31 +125,31 @@ When you change from production to developer mode, you should clear generated cl
 
 1. If you are changing from production mode to developer mode, delete the contents of the `generated/code` and `generated/metadata` directories:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
 1. Set the mode:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
    The following message displays:
 
-   ```
+   ```text
    Enabled developer mode.
    ```
 
 ### Change to default mode
 
-```bash
+```shell
 bin/magento deploy:mode:set default
 ```
 
 The following message displays:
 
-```
+```text
 Enabled default mode.
 ```
 

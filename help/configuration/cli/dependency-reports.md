@@ -19,7 +19,7 @@ A dependency in a comment is also a dependency.
 
 Command options:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -45,7 +45,7 @@ If no directory or filename is passed as an argument, the following application 
 
 The following is a portion of the output for a sample module dependencies report:
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -69,7 +69,7 @@ The following is a portion of the output for a sample module dependencies report
 
 The following is a portion of the output for a sample circular dependencies report:
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -95,7 +95,7 @@ The following is a portion of the output for a sample circular dependencies repo
 
 The following is a portion of the output for a sample framework dependencies report:
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

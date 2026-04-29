@@ -75,7 +75,7 @@ Error message: "The store that was requested wasn't found. Verify the store and 
 
 Fatal error like:
 
-```Allowed memory size of 792723456 bytes exhausted```
+`Allowed memory size of 792723456 bytes exhausted`
 
 ## Apply the patch
 

@@ -42,7 +42,7 @@ Use this section to enable Apache rewrites and configure the [distributed `.htac
 
 1. Enable the Apache rewrite module:
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -66,7 +66,7 @@ Use this section to enable Apache rewrites and configure the [distributed `.htac
 
 1. Restart Apache to apply your changes:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -85,7 +85,7 @@ Adobe Commerce requires the following Apache modules to be installed:
 
 To verify that Apache is installed and view the current version, enter:
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -114,13 +114,13 @@ When you configure Apache server rewrites, you must specify the type of directiv
 
 1. Install Apache if you have not already done so:
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. Verify the installation:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -143,7 +143,7 @@ If Apache is already installed and you are using a version earlier than `2.4`, u
 
 1. Update package information:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -151,7 +151,7 @@ If Apache is already installed and you are using a version earlier than `2.4`, u
 
 1. Install or upgrade Apache:
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -161,7 +161,7 @@ If Apache is already installed and you are using a version earlier than `2.4`, u
 
 1. Verify the installation:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -173,7 +173,7 @@ If Apache is already installed and you are using a version earlier than `2.4`, u
 
 1. Open the `/etc/apache2/sites-available/000-default.conf` file for editing:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -200,17 +200,17 @@ If Apache is already installed and you are using a version earlier than `2.4`, u
 
 1. Configure Apache to use the `mod_rewrite` module:
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. Restart Apache to apply changes:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -232,13 +232,13 @@ When you configure Apache server rewrites, you must specify the type of directiv
 
 1. Install Apache if you have not already done so.
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. Verify the installation:
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -259,7 +259,7 @@ When you configure Apache server rewrites, you must specify the type of directiv
 
 1. Open the `/etc/httpd/conf/httpd.conf` file for editing:
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -290,7 +290,7 @@ When you configure Apache server rewrites, you must specify the type of directiv
 
 1. To apply the Apache settings, restart Apache.
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

@@ -40,7 +40,7 @@ Product exports include incorrect rows when the visibility filter is set to *[!U
 1. Set a filter where **[!UICONTROL Visibility]** = *[!UICONTROL Catalog, Search]*, and click **[!UICONTROL Continue]**.
 1. Run the following command to process the export:
 
-    ```
+    ```shell
     php bin/magento queue:consumers:start exportProcessor
     ```
 

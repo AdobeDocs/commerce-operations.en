@@ -19,7 +19,7 @@ If you are deploying Adobe Commerce on multiple hosts, NTP is a simple way to gu
 
 Enter the following command to install NTP:
 
-```bash
+```shell
 apt-get install ntp
 ```
 
@@ -31,7 +31,7 @@ To install and configure NTP:
 
 1. Enter the following command to find the appropriate NTP software:
 
-   ```bash
+   ```shell
    yum search ntp
    ```
 
@@ -39,13 +39,13 @@ To install and configure NTP:
 
 1. Install the package.
 
-   ```bash
+   ```shell
    yum -y install ntp.x86_64
    ```
 
 1. Enter the following command so that NTP starts when the server starts.
 
-   ```bash
+   ```shell
    chkconfig ntpd on
    ```
 

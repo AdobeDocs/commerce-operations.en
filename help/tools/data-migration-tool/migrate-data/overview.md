@@ -28,13 +28,13 @@ This section shows how to run the [!DNL Data Migration Tool] to migrate settings
 
    If you use the bash shell, you can use the following syntax to switch to the file system owner and enter the command at the same time:
 
-   ```bash
+   ```shell
    su <file system owner> -s /bin/bash -c <command>
    ```
 
    If the file system owner does not allow logins, you can do the following:
 
-   ```bash
+   ```shell
    sudo -u <file system owner>  <command>
    ```
 
@@ -44,7 +44,7 @@ This section shows how to run the [!DNL Data Migration Tool] to migrate settings
 
    Sample bash shell for CentOS:
 
-   ```bash
+   ```shell
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
@@ -58,7 +58,7 @@ This section shows how to run the [!DNL Data Migration Tool] to migrate settings
 
 Below is a typical command example:
 
-```bash
+```shell
 bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

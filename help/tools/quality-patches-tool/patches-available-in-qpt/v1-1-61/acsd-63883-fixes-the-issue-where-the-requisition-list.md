@@ -37,7 +37,7 @@ The **[!UICONTROL Requisition List]** returns an incorrect `items_count` in the 
 1. Click **[!UICONTROL Create new Requisition List]**.
 1. Send the `addProductsToRequisitionList` [!DNL GraphQL] mutation request with a product to add it to the [!UICONTROL Requisition List].
 
-    ```
+    ```graphql
     mutation addProductsToRequisitionList(
     $requisitionListUid: ID!
     $requisitionListItems: [RequisitionListItemsInput!]!

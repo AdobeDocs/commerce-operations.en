@@ -43,7 +43,7 @@ Customer account cannot be saved after an upgrade.
 
 1. Set the values below into database for any customer under the `customer_entity` table:
 
-    ```
+    ```text
     -> rp_token as incr4869
     -> rp_token_created_at as "2021-04-29 20:06:14"
     ```

@@ -33,7 +33,7 @@ SQL syntax error occurs due to missing `REGEXP_LIKE` function in `company_struct
 1. Update [!DNL B2B] to version 1.5.2.
 1. Run the following command:
 
-```
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -43,7 +43,7 @@ Upgrade completes succesfully.
 
 <u>Actual results</u>:
 
-```
+```text
 Unable to apply data patch Magento\Company\Setup\Patch\Data\SetCompanyForStructure for module Magento_Company. Original exception message: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION REGEXP_LIKE does not exist, query was: UPDATE `company_structure` SET `company_id` = ? WHERE (REGEXP_LIKE(path, '^331(/.+)?$'))
 ```
 
