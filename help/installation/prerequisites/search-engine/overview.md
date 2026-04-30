@@ -85,7 +85,7 @@ To set up rules to allow communication with the firewall or SELinux enabled, con
 
 To determine if Java is already installed, enter the following command:
 
-```bash
+```shell
 java -version
 ```
 
@@ -102,7 +102,7 @@ See this [Digital Ocean tutorial](https://www.digitalocean.com/community/tutoria
 
 Be sure to install the JDK and *not* the JRE.
 
-```bash
+```shell
 yum -y install java-1.8.0-openjdk
 ```
 
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 To install JDK 1.8 on Ubuntu, enter the following commands as a user with `root` privileges:
 
-```bash
+```shell
 apt-get -y update
 ```
 
-```bash
+```shell
 apt-get install -y openjdk-8-jdk
 ```
 
@@ -130,24 +130,24 @@ Follow [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 
 To verify that Elasticsearch is working, enter the following command on the server on which it is running:
 
-```bash
+```shell
 curl -XGET '<host>:9200/_cat/health?v&pretty'
 ```
 
 A message similar to the following is displayed:
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```
 
 To verify OpenSearch is working, enter the following commands:
 
-```bash
+```shell
 curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 ```
 
-```bash
+```shell
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 

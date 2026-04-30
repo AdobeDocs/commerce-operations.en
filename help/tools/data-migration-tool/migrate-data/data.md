@@ -17,7 +17,7 @@ See the [first steps](overview.md#first-steps) section for more details.
 
 To start migrating data, run:
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

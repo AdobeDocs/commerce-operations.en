@@ -32,7 +32,7 @@ Cart GraphQL request fails to return items on final page.
 
 1. Create a new cart:
 
-    ```
+    ```graphql
     mutation createEmptyCart($input: createEmptyCartInput) {
         createEmptyCart(input: $input)
     } 
@@ -40,7 +40,7 @@ Cart GraphQL request fails to return items on final page.
 
 1. Add more than five products to the cart:
 
-    ```
+    ```text
     addProductsToCart(
         cartId: "{{cartId}}"
         cartItems: [
@@ -77,7 +77,7 @@ Cart GraphQL request fails to return items on final page.
 
 1. Run the following query:
 
-    ```
+    ```text
     cart(cart_id: $cartId) {
     email
     itemsV2(pageSize: 2, currentPage: 3) {
@@ -105,7 +105,7 @@ The query returns the items on the last page.
 
 <u>Actual results</u>:
 
-```
+```json
   {
     "data": {
         "cart": {

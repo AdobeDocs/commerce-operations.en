@@ -63,13 +63,13 @@ If so, try the following:
 
   For example, to see if your search engine is running on its default port, use the following command:
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   If it is running on port 9200, it displays similar to the following:
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -94,13 +94,13 @@ To reindex using the command line:
 
    Enter the following command to reindex the catalog search index only:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    Enter the following command to reindex all indexers:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 

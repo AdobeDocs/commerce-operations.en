@@ -1,6 +1,6 @@
 ---
 title: Sample data overview
-description: Learn about using sample data for Adobe Commerce projects.
+description: Learn about installing Adobe Commerce sample data for demos and training, how the Luma-based storefront behaves, and limitations for production development.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
 ---
 # Sample data overview

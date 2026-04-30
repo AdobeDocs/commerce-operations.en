@@ -26,7 +26,7 @@ This section discusses how to configure a proxy using a virtual host.
 
 1. Enable `mod_proxy` as follows:
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
@@ -48,25 +48,25 @@ This section discusses how to configure a proxy using a virtual host.
 
 1. Restart Apache:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. Verify the proxy works by entering the following command:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    For example, if you are using Elasticsearch and your proxy uses port 8080:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Messages similar to the following display to indicate success:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -97,7 +97,7 @@ First, see if you have the Apache `htpasswd` utility is installed as follows:
 
 1. Enter the following command to determine if `htpasswd` is already installed:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -112,11 +112,11 @@ First, see if you have the Apache `htpasswd` utility is installed as follows:
 
 Enter the following commands as a user with `root` privileges:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
@@ -139,22 +139,22 @@ Follow the prompts on your screen to create a password for the user.
 **Example 1: cron**
 You must set up authentication for only one user for cron; in this example, we use the web server user. To create a password file for the web server user, enter the following commands:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Example 2: Elasticsearch**
 You must set up authentication for two users: one with access to nginx and one with access to Elasticsearch. To create password files for these users, enter the following commands:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
@@ -162,7 +162,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 To add another user to your password file, enter the following command as a user with `root` privileges:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 

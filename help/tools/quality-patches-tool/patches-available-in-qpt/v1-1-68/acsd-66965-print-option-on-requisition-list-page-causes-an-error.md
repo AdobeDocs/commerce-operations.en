@@ -47,7 +47,7 @@ The **[!UICONTROL Print]** option on the **[!UICONTROL Requisition List]** page 
 
 The following error message appears: *An error has happened during application run. See exception log for details.*
 
-```
+```text
 Call to a member function setCollection() on null in /vendor/magento/module-requisition-list/Block/Requisition/View/Items/Grid.php:146
 ```
 
