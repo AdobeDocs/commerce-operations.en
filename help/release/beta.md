@@ -139,7 +139,7 @@ The Merchant Productivity AI Assistant is a conversational interface embedded in
 - Query live store data on demand—for example, retrieve the last 10 orders, view currently active promotions, or check inventory status.
 - Reduce time spent on repetitive Admin tasks, freeing merchants to focus on strategy and growth.
 
-To request this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+To participate in this beta, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
