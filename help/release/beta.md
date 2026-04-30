@@ -129,6 +129,7 @@ The beta includes the following features:
 To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Merchant Productivity AI Assistant (Public Beta)
+
 The Merchant Productivity AI Assistant is a conversational interface embedded in the Adobe Commerce Admin that helps merchants complete routine tasks and surface business insights on demand using natural language. It enables merchants to manage promotions, update product catalog information, and retrieve operational data such as recent orders or active promotions–directly within their existing workflows. The assistant also provides in-context guidance to help merchants navigate and use the Admin more efficiently.
 
 **Key benefits**
