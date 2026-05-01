@@ -20,13 +20,13 @@ By default, Commerce writes to the debug log (`<install_directory>/var/log/debug
 
 1. Use the `setup:config:set` command to enable debug logging for the current mode.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=true
    ```
 
 1. Flush the cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -34,13 +34,13 @@ By default, Commerce writes to the debug log (`<install_directory>/var/log/debug
 
 1. Use the `setup:config:set` command to disable debug logging for the current mode.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=false
    ```
 
 1. Flush the cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -69,17 +69,17 @@ The query log contains:
 
 1. Use the `dev:query-log` command to enable or disable database logging.
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:enable
    ```
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:disable
    ```
 
 1. Flush the cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -87,7 +87,7 @@ The query log contains:
 
 You can view the query logs using standard file viewing commands:
 
-```bash
+```shell
 # View the entire query log
 cat var/debug/db.log
 
@@ -121,13 +121,13 @@ Logging to `syslog` is disabled by default.
 
 1. Use the `setup:config:set` command to change the `dev/syslog/syslog_logging` database value to `true`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=true
    ```
 
 1. Flush the cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -135,12 +135,12 @@ Logging to `syslog` is disabled by default.
 
 1. Use the `setup:config:set` command to change the `dev/syslog/syslog_logging` database value to `false`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=false
    ```
 
 1. Flush the cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```

@@ -28,7 +28,7 @@ Before you upgrade the [!DNL Data Migration Tool], back up at least the `vendor/
 
 You can also back up the entire Magento codebase and database using the following command:
 
-```bash
+```shell
 php <magento_root>/bin/magento setup:backup --code --db
 ```
 
@@ -55,7 +55,7 @@ See the [Install [!DNL Data Migration Tool]](install.md) topic to know how to:
 1. Change to the application root directory.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -63,7 +63,7 @@ See the [Install [!DNL Data Migration Tool]](install.md) topic to know how to:
 
    For example, for version 2.1.2, enter:
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.1.2
    ```
 

@@ -36,7 +36,7 @@ Create 2000 bundle products using the [Performance toolkit](https://experiencele
 
 1. Enable the [!DNL DB] query logger:
 
-    ```
+    ```shell
     bin/magento dev:query-log:enable
     ```
     

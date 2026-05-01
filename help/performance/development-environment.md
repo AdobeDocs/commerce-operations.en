@@ -21,7 +21,7 @@ In the development mode, do not run commands for compilation, code generation an
 
 * `setup:di:compile` generates auto-generated classes and optimized configuration caches.
 
-  ```bash
+  ```shell
   bin/magento setup:di:compile
   ```
 
@@ -29,7 +29,7 @@ In the development mode, do not run commands for compilation, code generation an
 
 * `setup:static-content:deploy` deploys static content for a store.
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 

@@ -35,19 +35,19 @@ The ACSD-53750 patch fixes the issue where a *Broken pipe or closed connection* 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Inventory Indexer Setting]** and set **[!UICONTROL Stock/Source reindex strategy]** = **[!UICONTROL Asynchronous]**.
 1. Set the dimension mode for indexes which support that. E.g., `catalog_product_price_website_and_customer_group` or `customer_group`.
 
-    ```
+    ```shell
     bin/magento indexer:set-dimensions-mode catalog_product_price customer_group
     ```
 
 1. Run reset of indexers for `catalog_product_price`.
 
-    ```
+    ```shell
     bin/magento indexer:reset catalog_product_price
     ```
 
 1. Run the indexer for the reset indexer using multiple threads.
 
-    ```
+    ```shell
     MAGE_INDEXER_THREADS_COUNT=10 bin/magento indexer:reindex catalog_product_price
     ```
 

@@ -17,7 +17,7 @@ Adobe Commerce third-party extensions (modules) have the potential to cause vari
 
 >[!NOTE]
 >
-> All extensions available in the Adobe Commerce Marketplace are required to maintain compatibility with new Commerce releases. See [Release compatibility](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
+> All extensions available in the Adobe Commerce Marketplace are required to maintain compatibility with new Commerce releases. See [Release compatibility](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases).
 
 ## Affected products and versions
 

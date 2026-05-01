@@ -1,6 +1,6 @@
 ---
 title: Search engine overview
-description: Overview of search engine options for Adobe Commerce.
+description: Learn about Elasticsearch and OpenSearch for Adobe Commerce catalog search, prerequisites, web server setup, and post-install maintenance tasks.
 feature: Configuration, Search
 exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
 ---
