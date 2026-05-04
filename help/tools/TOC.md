@@ -966,6 +966,7 @@ feature: Configuration
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+           - [ACP2E-4452: Quick Order page product prices include tax regardless of tax display configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)
            - [ACP2E-4448: Configuration changes made during [!DNL Redis] outages do not reflect after [!DNL Redis] recovers, and stale values persist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)
            - [ACP2E-4665: Child products of configurable products with videos in the product galleries do not appear when requested through the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)
            - [ACP2E-4613: Large media directory causes delays in loading of the Media Gallery directory tree](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)
