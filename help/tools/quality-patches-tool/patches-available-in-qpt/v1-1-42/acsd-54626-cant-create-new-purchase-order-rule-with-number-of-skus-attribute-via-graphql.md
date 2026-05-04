@@ -38,7 +38,7 @@ Install and enable Adobe Commerce B2B modules.
 1. Create a company with enabled purchase rules.
 1. Run the following GraphQL query:
 
-    ```
+    ```graphql
     mutation CreatePurchaseRule {
         createPurchaseOrderApprovalRule(
             input: {
@@ -69,7 +69,7 @@ A purchase rule is created.
 
 The following error is thrown:
 
-```
+```json
 {
     "errors": [
         {

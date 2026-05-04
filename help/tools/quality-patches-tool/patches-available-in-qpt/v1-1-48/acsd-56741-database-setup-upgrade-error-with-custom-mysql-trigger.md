@@ -32,7 +32,7 @@ An error message *Trying to access array offset on value of type null* appears d
 
 1. Run `php bin/magento indexer:set-mode schedule`.
 
-    ```
+    ```text
     DELIMITER //
     CREATE TRIGGER trg_catalog_category_entity_before_delete_umis BEFORE DELETE ON catalog_category_entity FOR EACH ROW
         -> BEGIN

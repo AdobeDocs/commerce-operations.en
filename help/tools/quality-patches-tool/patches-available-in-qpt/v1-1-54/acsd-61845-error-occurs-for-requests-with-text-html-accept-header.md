@@ -36,7 +36,7 @@ B2B modules are installed and enabled.
 
 1. Send a request with only *text/html* in the accept header, as follows:
 
-    ```
+    ```shell
     curl -I --header "Accept: text/html, text/plain" http://<hostname>/pub/
     ```
 
@@ -48,7 +48,7 @@ The page is returned with a *200 status code*.
 
 A 500 error is returned, with the following error message in the `exception.log`:
 
-```
+```text
 Magento\Framework\Webapi\Exception: Server cannot match any of the given Accept HTTP header media type(s) from the request: "text/html" with media types from the config of response renderer. in vendor/magento/framework/Webapi/Rest/Response/RendererFactory.php:84
 ```
 
