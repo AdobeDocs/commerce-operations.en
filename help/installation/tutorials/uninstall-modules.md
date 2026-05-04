@@ -1,6 +1,6 @@
 ---
 title: Uninstall modules
-description: Follow these steps to uninstall an Adobe Commerce module.
+description: Learn how to uninstall Adobe Commerce modules with optional removal of code, schema, and data, and when to disable modules instead of uninstalling them.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
 ---
 # Uninstall modules
@@ -15,7 +15,7 @@ You should uninstall a module only if you're certain you won't use it. Instead o
 
 Command usage:
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -61,7 +61,7 @@ The module uninstall command performs the following tasks:
 
 For example, if you attempt to uninstall a module that another module depends on, the following message displays:
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -69,13 +69,13 @@ magento module:uninstall Magento_SampleMinimal
 
 One alternative is to uninstall both modules after backing up the module file system, `pub/media` files, and database tables but _not_ removing the module's database schema or data:
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 Messages similar to the following display:
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -116,7 +116,7 @@ Disabling maintenance mode
 
 To restore the codebase to the state at which you backed it up, use the following command:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -162,19 +162,19 @@ For example, to restore a code (that is, file system) backup, enter the followin
 
 *  Display a list of backups:
 
-   ```bash
+   ```shell
    magento info:backups:list
    ```
 
 *  Restore a file backup named `1433876616_filesystem.tgz`:
 
-   ```bash
+   ```shell
    magento setup:rollback --code-file="1433876616_filesystem.tgz"
    ```
 
    Messages similar to the following display:
 
-   ```
+   ```text
    Enabling maintenance mode
    Code rollback is starting ...
    Code rollback filename: 1433876616_filesystem.tgz

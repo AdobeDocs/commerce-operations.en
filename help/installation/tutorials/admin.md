@@ -26,7 +26,7 @@ Use this command to create an administrator or to edit an existing administrator
 
 Command usage:
 
-```bash
+```shell
 bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 ```
 
@@ -43,21 +43,21 @@ Where the following table defines parameters and values:
 
 Example of usage:
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
 If you do not specify any of the required params, the application asks about them in the CLI:
 
-```bash
+```shell
 bin/magento admin:user:create
 ```
 
-```
+```text
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -65,17 +65,17 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```
+```text
 Created Magento administrator user named John
 ```
 
 The following example updates `first name`, `last name`, and `password` of `j.doe` admin user:
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
@@ -83,23 +83,23 @@ Created Magento administrator user named j.doe
 
 Use this command to unlock the account of an administrator that was locked, typically because of multiple incorrect login attempts.
 
-```bash
+```shell
 bin/magento admin:user:unlock {username}
 ```
 
 You must specify the administrator's username. Example:
 
-```bash
+```shell
 bin/magento admin:user:unlock admin
 ```
 
-```
+```text
 The user account "admin" has been unlocked
 ```
 
 If the account is either not unlocked or if there was a problem, the following message displays:
 
-```
+```text
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -107,6 +107,6 @@ Verify that the user is an administrator, the user is active, and that the accou
 
 If the account doesn't exist, the following message displays:
 
-```
+```text
 Couldn't find the user account "bob"
 ```

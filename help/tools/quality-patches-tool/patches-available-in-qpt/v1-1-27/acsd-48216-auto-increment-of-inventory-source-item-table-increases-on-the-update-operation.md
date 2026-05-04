@@ -32,7 +32,7 @@ The ACSD-48216 patch fixes the issue where *AUTO_INCREMENT* of the *inventory_so
 
 1. Check the current value of `AUTO_INCREMENT` of the `inventory_source_item` table:
 
-```bash
+```shell
 MySQL > show create table inventory_source_item;
 ```
 

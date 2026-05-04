@@ -40,7 +40,7 @@ On submitting an empty [!DNL GraphQL] request, there is an HTTP internal server 
 
 The response code is 200 for the request.
 
-```
+```shell
 curl -i -X OPTIONS http://commerce.local/graphql
 ```
 
@@ -48,7 +48,7 @@ curl -i -X OPTIONS http://commerce.local/graphql
 
 A 500 internal server error occurs as shown:
 
-```
+```text
 HTTP/1.1 500 Internal Server Error
 ```
 

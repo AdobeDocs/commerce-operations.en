@@ -32,7 +32,7 @@ Concurrent requests to save and update the same product result in data inconsist
 
 1. Set up multi-process for consumers in `env.php`:
 
-    ```
+    ```text
     'multiple_processes' =>
         array (
             'async.operations.all' => 4,
@@ -42,7 +42,7 @@ Concurrent requests to save and update the same product result in data inconsist
 1. Add an additional store and a new storeview to the main website.
 1. Send a bulk API request to the default storeview endpoint `/rest/default/async/bulk/V1/products` with the following payload to create a product:
 
-    ```
+    ```text
     [
       {
         "product": {

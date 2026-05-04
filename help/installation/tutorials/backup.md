@@ -23,7 +23,7 @@ After backing up, you can [rollback](#rollback) later.
 
 The backup feature is disabled by default. To enable, enter the following CLI command:
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
@@ -48,7 +48,7 @@ Before you continue, if you haven't already done so, switch to the [file system 
 
 Command:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -64,7 +64,7 @@ To optionally set the value in the user's Bash shell:
 1. Open `/home/<username>/.bashrc` in a text editor.
 1. Add the following line:
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -78,7 +78,7 @@ To optionally set the value in the user's Bash shell:
 
 Command usage:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -97,13 +97,13 @@ The command performs the following tasks:
 
 For example, to back up the file system and database,
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Messages similar to the following display:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -122,7 +122,7 @@ This section discusses how to roll back to a backup you made previously. You mus
 
 To find the name of your backups, enter:
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -130,19 +130,19 @@ The first string in the backup file name is the timestamp.
 
 To roll back to a previous backup, enter:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 For example, to restore a media backup named `1440611839_filesystem_media.tgz`, enter
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Messages similar to the following display:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode
