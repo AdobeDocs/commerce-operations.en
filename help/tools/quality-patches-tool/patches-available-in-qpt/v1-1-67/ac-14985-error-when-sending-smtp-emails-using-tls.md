@@ -44,7 +44,7 @@ The email is sent successfully without errors.
 
 The following error appears:
 
-```
+```text
 error:1408F10B:SSL routines:ssl3_get_record:wrong version number [] []
 ```
 

@@ -22,7 +22,7 @@ Installing the Varnish software is beyond the scope of this guide. For more info
 
 Open a terminal and enter the following command to display the version of Varnish:
 
-```bash
+```shell
 varnishd -V
 ```
 

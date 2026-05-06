@@ -25,7 +25,7 @@ See the [first steps](overview.md#first-steps) section for more details.
 
 To start migrating settings, run:
 
-```bash
+```shell
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -52,7 +52,7 @@ You may ignore, rename, or change the system configurations when migrating setti
 
 1. Change to the following directory:
 
-   ```bash
+   ```shell
    cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
@@ -66,7 +66,7 @@ You may ignore, rename, or change the system configurations when migrating setti
 
 1. To create a `settings.xml` file from the provided sample, run:
 
-   ```bash
+   ```shell
    cp settings.xml.dist settings.xml
    ```
 

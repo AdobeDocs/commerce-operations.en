@@ -32,7 +32,7 @@ The REST endpoint `[V1/import/csv]` fails to validate mandatory fields, allowing
 
 1. Execute the following payload (update the Authorization header):
 
-    ```
+    ```shell
     curl --location 'http://<domain>/rest/default/V1/import/json' \
     --header 'Content-Type: application/json' \
     --header 'Authorization: Bearer xxxxx' \
