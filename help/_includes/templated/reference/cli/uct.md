@@ -150,7 +150,7 @@ Dynamic installation
 
 Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
-    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion )"
+    eval "$(/path/to/uct/bin/uct completion)"
 ```
 
 ### Arguments
