@@ -15,7 +15,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
-      {%- for requirement in requirements %}
+      {%- for requirement in requirements limit:2 %}
       <th>{{requirement[0]}}</th>
       {%- endfor %}
     </tr>
@@ -23,7 +23,7 @@
   <tbody>
     {%- for dependency in cloud_dependencies %}
     {%- assign has_value = false %}
-    {%- for requirement in requirements %}
+    {%- for requirement in requirements limit:2 %}
       {%- if requirement[1][dependency] %}
         {%- assign has_value = true %}
         {%- break %}
@@ -37,7 +37,7 @@
     {%- if has_value %}
     <tr>
       <td><span class="uicontrol">[!DNL {{dependency | remove: " Cloud"}}]</span></td>
-      {%- for requirement in requirements %}
+      {%- for requirement in requirements limit:2 %}
       <td>
         {%- assign value = requirement[1][dependency] %}
         {%- unless value %}
