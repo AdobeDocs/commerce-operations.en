@@ -34,13 +34,11 @@ QPT v1.1.78 includes the following patches:
 1. **ACP2E-4540**: Fixes the issue where the Fotorama library was not loading correctly, causing only the first attached image to be visible.
 1. **ACP2E-4555**: Fixes the issue where modern telephone numbers containing "." or "/" are not validated properly.
 1. **ACP2E-4565**: Fixes the issue where the Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used.
-1. **ACP2E-4591**: Fixes the issue where customer segments based on order count, such as "First-time buyers", did not update when orders were placed via the REST API.
+1. **[ACP2E-4591](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)**: Fixes the issue where customer segments based on order count, such as "First-time buyers", did not update when orders were placed via the REST API.
 1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)**: Fixes the issue where the Fotorama library wasn't loading correctly, causing only the first attached image to be visible.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: Fixes the issue where modern telephone numbers containing "." or "/" aren't validated properly.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Fixes the issue where the Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used.
-1. **ACP2E-4591**: Fixes the issue where customer segments based on order count, such as "First-time buyers", did not update when orders were placed via the REST API.
 1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)**: Fixes the issue where the My Quotes page shows no quotes when some quotes contain deleted products.
-1. **ACP2E-4591**: Fixes the issue where customer segments based on order count, such as "First-time buyers", didn't update when orders were placed via the REST API.
 1. **ACP2E-4609**: Fixes the issue where the My Quotes page shows no quotes when some quotes contain deleted products.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: Fixes the issue where large media directory structures caused slow gettree responses, leading to extended loading times for the **[!UICONTROL Media Gallery]** directory tree.
 1. **ACP2E-4628**: Fixes the issue where importing customers with uppercase email addresses results in the undefined array key error, when Account Sharing is set to Global.

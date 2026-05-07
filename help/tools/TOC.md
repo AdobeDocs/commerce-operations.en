@@ -966,6 +966,7 @@ feature: Configuration
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+           - [ACP2E-4591: Customer segments based on order count, such as "First-time buyers", do not update when orders are placed through the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)
            - [ACP2E-4732: Partial indexation stops for customers with many updates when the version_id column in the changelog table reaches its maximum value](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)
            - [ACP2E-4456: Canceling an order with a GraphQL mutation does not move orders paid entirely with gift cards to the Closed status](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)
            - [ACP2E-4452: Quick Order page product prices include tax regardless of tax display configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)
