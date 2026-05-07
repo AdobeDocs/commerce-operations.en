@@ -3,7 +3,7 @@ title: Best practices topic title
 description: Learn how to apply this best practices topic template when authoring new Adobe Commerce operational guidance for Experience League.
 role: Developer
 feature: Best Practices
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 

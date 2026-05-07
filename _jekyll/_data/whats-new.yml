@@ -2,8 +2,148 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 24 15:40:12 2026
+updated: Fri May 1 15:43:22 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4665:
+    Child products of configurable products with videos in the product galleries do
+    not appear when requested through the REST API](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 1, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1920
+  merge_commit: 8753c098963a0b2df6a4135e9a8038211bbb93d1
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4613:
+    Large media directory structures slow gettree responses and delay Media Gallery
+    directory tree loading](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 30, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1918
+  merge_commit: ae0f38980186b40f4ffd6d81bbe2104f3e8238fc
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4535:
+    Submitting the forgot-password form destroys or regenerates the session (PHPSESSID
+    changes) and clears the guest cart](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1912
+  merge_commit: 953e231d2161d84e2444fa46ac95b93dbba28241
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4507:
+    Password Options configuration does not apply to customer password reset requests
+    made through GraphQL mutations](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1908
+  merge_commit: b657f2e50d48c9179d1c6b3559ee7e6ee99b306d
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4609:
+    The My Quotes page shows no quotes when some quotes contain deleted products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1917
+  merge_commit: 670dacfa2bdc211eb9f4ed6788144ba6c1dac678
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4431:
+    Related Products matched by target rules are deleted during the reindex process](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1904
+  merge_commit: f9424da66669c54eb0a794555ea7df66625f6c71
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4416:
+    Customer reward points do not initialize when created in the Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1902
+  merge_commit: 517b6c299474497378966a4a2122a6854f3f7be1
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4540:
+    The Fotorama library does not load correctly, so only the first attached image
+    is visible](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 28, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1913
+  merge_commit: bfab19dc07ecc1c314c530d053b82e3408478c41
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4522:
+    Intermittent duplicate key errors occur on the quote_coupons table when multiple
+    cart merge or quote save requests run at the same time](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1910
+  merge_commit: 13abccbeb79cdb3377dcea9528ffcb13b491a8d8
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4565:
+    The Company GraphQL query returns "The current customer isn''t authorized" when
+    the X-Adobe-Company header is used](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1915
+  merge_commit: 0ee08b94a3b56febff5d2126af71d2b964846f7a
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4419:
+    Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation
+    on the storefront](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1903
+  merge_commit: 7c7052efdd8b10be705959c854064eaed484d796
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4555:
+    Telephone numbers that contain periods or forward slashes do not validate properly](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1914
+  merge_commit: ee63f4566c476877588dde5ff002ac105f2e4764
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.78](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview).'
   versions: ''
   type: new-topic, qpt

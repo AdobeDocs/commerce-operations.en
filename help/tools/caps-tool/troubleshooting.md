@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Cloud Automation Patching Service (CAPS)] Troubleshooting Guide'
 description: Troubleshoot common issues and error messages in [!DNL Cloud Automation Patching Service (CAPS)]
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # [!DNL Cloud Automation Patching Service (CAPS)] troubleshooting guide
