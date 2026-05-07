@@ -967,6 +967,13 @@ feature: Configuration
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
            - [ACP2E-4732: Partial indexation stops for customers with many updates when the version_id column in the changelog table reaches its maximum value](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)
+           - [ACP2E-4456: Canceling an order with a GraphQL mutation does not move orders paid entirely with gift cards to the Closed status](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)
+           - [ACP2E-4452: Quick Order page product prices include tax regardless of tax display configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)
+           - [ACP2E-4448: Configuration changes made during [!DNL Redis] outages do not reflect after [!DNL Redis] recovers, and stale values persist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)
+           - [ACP2E-4665: Child products of configurable products with videos in the product galleries do not appear when requested through the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)
+           - [ACP2E-4613: Large media directory causes delays in loading of the Media Gallery directory tree](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)
+           - [ACP2E-4609: The [!UICONTROL My Quotes] page shows no quotes when some quotes contain deleted products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)
+           - [ACP2E-4416: Customer reward points do not initialize when created in the Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)
            - [ACP2E-4535: Submitting the forgot-password form destroys or regenerates the session (PHPSESSID changes) and clears the guest cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535.md)
            - [ACP2E-4507: [!UICONTROL Password Options] configuration doesn't apply to customer password reset requests made through GraphQL mutations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507.md)
            - [ACP2E-4431: [!UICONTROL Related Products] matched by target rules are deleted during the reindex process](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)
