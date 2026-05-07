@@ -1,7 +1,7 @@
 ---
 title: Adobe Privacy JavaScript Library
 description: Learn how to use custom tools for accessing and deleting customer personal information collected by Adobe Commerce.
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
 ---
@@ -22,7 +22,7 @@ Use one of the following methods to download the library file:
 -  npm: `npm install @adobe/adobe-privacy`
 -  GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-After you have the file, you will need to add it to a custom module or theme installed in your Adobe Commerce instance. Follow the instructions described in the [Use custom JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) topic to accomplish this task.
+After you have the file, you will need to add it to a custom module or theme installed in your Adobe Commerce instance. Follow the instructions described in the [Use custom JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom) topic to accomplish this task.
 
 ## Usage
 

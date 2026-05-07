@@ -43,6 +43,10 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 >- <sup>1</sup> If you are an Adobe Commerce customer, you can continue to receive security and quality fixes for an additional year through the extended support period.
 >- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
+>[!IMPORTANT]
+>
+>PCI compliance cannot be guaranteed for merchants running version 2.4.6 who continue to use PHP 8.1, which reached [end of support in 2025](https://www.php.net/eol.php). Similarly, PHP 8.2 reaches [end of life at the end of 2026](https://www.php.net/supported-versions.php), creating the same PCI compliance risk for merchants who continue using it in 2027.
+
 ## Additional Security fixes provisioning for Adobe Commerce 2.4.4 and 2.4.5
 
 As a one-time exception, Adobe is providing an extended security fixes provisioning period for Adobe Commerce versions 2.4.4 and 2.4.5 to give customers additional time to migrate to Adobe Commerce as a Cloud Service or upgrade to a supported release line.

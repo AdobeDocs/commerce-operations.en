@@ -45,7 +45,7 @@ The coupon gets applied successfully.
 
 The following error message appears:
 
-```
+```text
 "The "TEST" coupon code isn't valid. Verify the code and try again."
 ```
 

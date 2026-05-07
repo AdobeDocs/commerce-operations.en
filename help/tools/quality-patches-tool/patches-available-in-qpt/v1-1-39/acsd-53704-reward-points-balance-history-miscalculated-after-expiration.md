@@ -34,7 +34,7 @@ The reward points balance history is miscalculated after the expiration date of 
 1. Add reward points for the customer with different expiration dates.
 1. Check the `magento_reward_history` table and set the expiration date for the latest record of reward points to a past date:
 
-    ```
+    ```sql
     UPDATE magento_reward_history SET expired_at_static = '2023-08-24 10:47:38' WHERE history_id = 3;
     ```
 
