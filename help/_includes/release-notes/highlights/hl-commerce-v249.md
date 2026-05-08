@@ -23,7 +23,7 @@ _ACP2E-4358 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### `clearCart` GraphQL mutation is now available in Magento Open Source
 
-The [`clearCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/) GraphQL mutation is now available to all Magento Open Source users. Previously, this mutation was only accessible in Adobe Commerce.
+The [clearCart](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/) GraphQL mutation is now available to all Magento Open Source users. Previously, this mutation was only accessible in Adobe Commerce.
 
 _AC-16683 - [GitHub code contribution](https://github.com/magento/magento2/commit/4449d914)_
 
@@ -181,7 +181,7 @@ _LYNX-889_
 
 - **Pay Upon Invoice — new BNPL payment method for Germany**
 
-  Added Pay Upon Invoice as a new local payment method for German buyers. Pay Upon Invoice is a Buy Now, Pay Later (BNPL) option powered by PayPal and Ratepay ("Rechnungskauf mit Ratepay") that lets customers receive goods first and pay the invoice within 30 days without needing a PayPal account. Because it is not an instant payment, order finalization is driven by a server-side webhook from PayPal.
+  Added [!DNL Pay Upon Invoice] as a new local payment method for German buyers. [!DNL Pay Upon Invoice] is a Buy Now, Pay Later (BNPL) option powered by PayPal and Ratepay ("Rechnungskauf mit Ratepay") that lets customers receive goods first and pay the invoice within 30 days without needing a PayPal account. Because it is not an instant payment, order finalization is driven by a server-side webhook from PayPal.
 
   _BUNDLE-3475_
 
@@ -237,13 +237,14 @@ _AC-14808_
 
 #### Add compatibility with RabbitMQ 4.2
 
-RabbitMQ 4.2 is now a supported message broker. This update is a short-term compatibility path that lets merchants who rely on the AMQP protocol continue using RabbitMQ ahead of RabbitMQ 4.1 end-of-support in February 2026, without an immediate migration to STOMP. For long-term deployments, see [Apache ActiveMQ Artemis is the long-term replacement for RabbitMQ](#apache-activemq-artemis-is-the-long-term-replacement-for-rabbitmq) below.
+RabbitMQ 4.2 is now a supported message broker. This update is a short-term compatibility path that lets merchants who rely on the AMQP protocol continue using RabbitMQ ahead of RabbitMQ 4.1 end-of-support in February 2026, without an immediate migration to STOMP. For long-term deployments, use Apache ActiveMQ Artemis as the long-term replacement for RabbitMQ.
 
 _AC-16117_
 
 #### Apache ActiveMQ Artemis is the long-term replacement for RabbitMQ
 
-Apache ActiveMQ Artemis is the recommended long-term message broker for Adobe Commerce, driven by end-of-support risks associated with RabbitMQ 4.1. ActiveMQ Artemis is now fully supported across Commerce release lines 2.4.6 through 2.4.9, including Adobe Commerce Cloud with AWS ActiveMQ for cloud-native deployments, and supports STOMP configuration for queue consumers and publishers.
+Apache ActiveMQ Artemis is the recommended long-term message broker for Adobe Commerce, driven by end-of-support risks associated with RabbitMQ 4.1. ActiveMQ Artemis is fully supported across Commerce release lines 2.4.6 through 2.4.9. On Adobe Commerce Cloud, it is delivered as AWS ActiveMQ for cloud-native deployments. Both queue consumers and publishers can be configured to use STOMP.
+
 
 Existing RabbitMQ 4 installations remain compatible for merchants who prefer to continue using their current message queue service in the short term — see [Add compatibility with RabbitMQ 4.2](#add-compatibility-with-rabbitmq-42) above. Plan a migration to ActiveMQ Artemis for long-term support.
 
