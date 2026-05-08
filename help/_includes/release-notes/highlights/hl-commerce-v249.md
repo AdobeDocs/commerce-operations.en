@@ -1,8 +1,8 @@
-# Adobe Commerce highlights (v2.4.9-beta1)
+# Adobe Commerce highlights (v2.4.9)
 
-## Highlights in v2.4.9-beta1
+## Highlights in v2.4.9
 
-The following highlights apply to the Adobe Commerce 2.4.9-beta1 release.
+The following highlights apply to the Adobe Commerce 2.4.9 release.
 
 ### APIs
 
