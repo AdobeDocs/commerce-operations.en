@@ -1,17 +1,17 @@
 ---
-title: Shared responsibility security and operational model
+title: Shared Responsibility Security and Operational Model
 description: Learn about the security responsibilities of each party involved in your Adobe Commerce on cloud infrastructure project.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
 ---
 # Shared responsibility security and operational model
 
-Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offering that relies on a shared responsibility security and operational model. These responsibilities are shared between Adobe, the merchant, the cloud service provider, and the content delivery network (CDN) provider. Each party bears distinct responsibility for securing and operating the Adobe Commerce application and the merchant-specific code and extensions deployed on cloud infrastructure.
+Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offering that relies on a shared responsibility security and operational model. Adobe, the merchant, the cloud service provider, and the content delivery network (CDN) provider share these responsibilities. Each party bears distinct responsibility for securing and operating the Adobe Commerce application and the merchant-specific code and extensions deployed on cloud infrastructure.
 
-This shared model enables merchants to design and implement a highly flexible, customizable, and scalable solution to meet their business requirements while minimizing operational responsibilities and costs.
+This shared model enables merchants to design and implement a flexible, customizable, and scalable solution that meets their business requirements while minimizing operational responsibilities and costs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
-In general, Adobe is responsible for the following:
+Adobe is responsible for the following:
 
 - Developing and maintaining secure core application code
 - Maintaining the security of the platform
@@ -29,11 +29,11 @@ Merchants are responsible for the following:
 
 >[!NOTE]
 >
->Adobe only provides support for deployments running supported versions of all dependencies and services. This applies to:
+>Adobe provides support only for deployments running supported versions of all dependencies and services. This applies to:
 >
->- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, OpenSearch/ElasticSearch, RabbitMQ, and Nginx)—merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
->- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services)—only the latest released version is supported.
->- **Custom extensions and third-party integrations**—merchants are responsible for ensuring these remain on vendor-supported versions.
+>- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ, and Nginx) — merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services) — only the latest released version is supported.
+>- **Custom extensions and third-party integrations** — merchants are responsible for ensuring these remain on vendor-supported versions.
 >
 >Running unsupported versions may expose your store to security vulnerabilities, and Adobe cannot provide security patches for dependencies no longer maintained by their vendors.
 >
@@ -41,7 +41,7 @@ Merchants are responsible for the following:
 
 ## Adobe responsibilities
 
-Adobe is responsible for the security and availability of the Adobe Commerce on cloud infrastructure environment and the core solution code. In addition, Adobe is responsible for the necessary activities and mechanisms that maintain the security of the Adobe Commerce on cloud infrastructure solution, including:
+Adobe is responsible for the security and availability of the Adobe Commerce on cloud infrastructure environment and the core solution code. Adobe also performs the activities that maintain the security of the Adobe Commerce on cloud infrastructure solution, including:
 
 - Applying server-level security and patches for applications supported by Adobe Commerce on cloud infrastructure, such as cloud data storage and search capabilities
 - Conducting penetration testing and scanning of the core Adobe Commerce on cloud infrastructure code
@@ -55,7 +55,7 @@ Adobe is responsible for the security and availability of the Adobe Commerce on 
 - Hardening the operating system (OS)
 - Implementing and maintaining the integration of content distribution network (CDN) and application performance management (APM) solutions with Adobe Commerce on cloud infrastructure
 - Issuing periodic security and other updates for the core Adobe Commerce on cloud infrastructure code (applying patches is the merchant's responsibility)
-- Managing merchant support and support access controls
+- Managing merchant support and support access controls (for example, Experience League Support)
 - Monitoring, logging, and remediating security incidents concerning the Adobe Commerce on cloud infrastructure platform infrastructure
 - Monitoring platform operations and providing 24/7 support for Adobe Commerce on cloud infrastructure merchants
 - Provisioning the production and staging environments
@@ -64,17 +64,17 @@ Adobe is responsible for the security and availability of the Adobe Commerce on 
 - Setting up DNS (Adobe Commerce on cloud infrastructure platform infrastructure only)
 - Testing the platform for security vulnerabilities
 
-Adobe maintains PCI certification for the infrastructure and services used for the Adobe Commerce solution.  Merchants are responsible for the compliance of custom code, system and network processes, and the organization.
+Adobe maintains PCI certification for the infrastructure and services used for the Adobe Commerce solution. Merchants are responsible for the compliance of their custom code, system and network processes, and organization.
 
 Adobe also ensures the availability of the merchant's infrastructure as agreed upon in the applicable SLA.
 
 ## Merchant responsibilities
 
-The merchant is responsible for following security best practices for their specific, customized instance of Adobe Commerce on cloud infrastructure solution:
+The merchant is responsible for following security best practices for their customized instance of the Adobe Commerce on cloud infrastructure solution:
 
 - Adding the necessary Adobe Commerce on cloud infrastructure configuration files to the repository
 - Applying security and other patches to their custom Adobe Commerce on cloud infrastructure solution immediately following their release by Adobe
-- Applying security and other patches to all custom extensions and code, immediately following their release by the vendor
+- Applying security and other patches to all custom extensions and code immediately following their release by the vendor
 - Creating, deploying, and testing custom Varnish VCL files
 - Designing, theming, installing, integrating, and securing the customized Adobe Commerce on cloud infrastructure solution, including all custom extensions and code
 - Granting and revoking user access to the merchant's instance of the Adobe Commerce on cloud infrastructure configuration, application, and platform
@@ -94,11 +94,17 @@ The merchant is responsible for following security best practices for their spec
 - Securing access to the platform accounts, instance access, and application
 - Testing and QA of the custom application
 - Maintaining the security of any systems or networks the merchant connects to the Adobe Commerce on cloud infrastructure application
-- Maintaining all platform services, third-party dependencies, and Adobe Commerce Services extensions on versions actively supported by their respective vendors or by Adobe, as applicable (including but not limited to infrastructure services such as database, cache, search, PHP runtime, and web server; Adobe Commerce Services extensions; and all third-party extensions and custom integrations). Adobe does not provide support for deployments running unsupported versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
+- Maintaining all platform services, third-party dependencies, and Adobe Commerce Services extensions on versions actively supported by their respective vendors or by Adobe. This includes:
 
-## Cloud Service Provider responsibilities
+   - Infrastructure services such as the database, cache, search, PHP runtime, and web server
+   - Adobe Commerce Services extensions
+   - All third-party extensions and custom integrations
 
-Adobe relies on well-established cloud service providers to host the cloud server infrastructure for Adobe Commerce on cloud infrastructure. These providers are responsible for security of the network, including routing, switching, and perimeter network security via firewall systems and intrusion detection systems (IDS). Cloud service providers are also responsible for the physical security of data centers that host the Adobe Commerce on cloud infrastructure solution and the environmental security of data centers.
+   Adobe does not provide support for deployments running unsupported versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
+
+## Cloud service provider responsibilities
+
+Adobe relies on cloud service providers to host the cloud server infrastructure for Adobe Commerce on cloud infrastructure. These providers are responsible for network security, including routing, switching, and perimeter network security via firewall systems and intrusion detection systems (IDS). Cloud service providers are also responsible for the physical and environmental security of the data centers that host the Adobe Commerce on cloud infrastructure solution.
 
 Cloud service providers are also responsible for:
 
@@ -108,13 +114,13 @@ Cloud service providers are also responsible for:
 
 ## CDN provider responsibilities
 
-The Adobe Commerce on cloud infrastructure solution uses CDN providers to speed page-load time, cache content, and instantly purge outdated content. These providers are also responsible for security issues directly related to or affecting their CDN, and for defining and maintaining CDN WAF rules.
+The Adobe Commerce on cloud infrastructure solution uses CDN providers to speed page-load time, cache content, and instantly purge outdated content. These providers are also responsible for security issues affecting their CDN and for defining and maintaining CDN WAF rules.
 
 ## Security responsibilities summary
 
 >[!BEGINSHADEBOX]
 
-The following summary table uses the RACI model to show the security responsibilities shared between Adobe, the merchant, and the Cloud service provider:
+The following summary table uses the RACI model to show the security responsibilities shared among Adobe, the merchant, and the cloud service provider:
 
 **R** — Responsible
 **A** — Accountable
@@ -537,10 +543,10 @@ The following summary table uses the RACI model to show the security responsibil
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
-      <p><sup><strong>2</strong></sup> Adobe provides Level 1 support for issues with CDN providers.</p>
-      <p><sup><strong>3</strong></sup> The merchant is responsible for any Nginx controls that they configure for their applications.</p>
-      <p><sup><strong>4</strong></sup> For PCI, penetration testing requirements are shared between Adobe and the merchant.</p>
+      <p><sup>1</sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
+      <p><sup>2</sup> Adobe provides Level 1 support for issues with CDN providers.</p>
+      <p><sup>3</sup> The merchant is responsible for any Nginx controls that they configure for their applications.</p>
+      <p><sup>4</sup> For PCI, penetration testing requirements are shared between Adobe and the merchant.</p>
     </td>
   </tr>
 </tfoot>
@@ -550,7 +556,7 @@ The following summary table uses the RACI model to show the security responsibil
 
 >[!BEGINSHADEBOX]
 
-The following summary tables clarify the operational responsibilities for Adobe and Merchants when developing, deploying, maintaining, and securing Adobe Commerce on cloud infrastructure.
+The following summary tables clarify the operational responsibilities for Adobe and merchants when developing, deploying, maintaining, and securing Adobe Commerce on cloud infrastructure.
 
 >[!ENDSHADEBOX]
 
@@ -641,10 +647,10 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Core Application tuning and optimization| R |   |
+| Core application tuning and optimization | R |   |
 | Custom code tuning and optimization |     | R |
 | Custom Adobe Commerce code |     | R |
-| Load Testing |     | R |
+| Load testing |     | R |
 | Performance testing |     | R |
 
 {style="table-layout:auto"}
@@ -654,11 +660,11 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Rotating Logs| R |   |
-| Custom Adobe Commerce application| |R |
-| Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration| R |   |
-| Setting up New Relic Alerts |     | R |
-| Deploying New Relic agent on PaaS Servers |  R   |  |
+| Rotating logs | R |   |
+| Custom Adobe Commerce application |   | R |
+| Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>logging and integration | R |   |
+| Setting up New Relic alerts |     | R |
+| Deploying New Relic agent on PaaS servers | R |   |
 
 {style="table-layout:auto"}
 
@@ -720,7 +726,7 @@ Merchants are responsible for synchronizing data between environments.
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Galera and MariaDB services| R | |
-| Ongoing maintenance of default database settings<br><br>(indexing and optimizing core tables, optimizing default sys-admin settings)| R |   |
+| Ongoing maintenance of default database settings<br><br>(indexing and optimizing core tables, optimizing default system administration settings) | R |   |
 | Ongoing maintenance of merchant data and modified settings<br><br>(configuring normalized vs flat tables, indexing and optimizing custom and third party tables, archiving or removing data, configuring system administration settings) |     | R |
 | Configuration of Galera and MySQL| R |   |
 | Ongoing quality and patching of Galera and MariaDB| R |   |
@@ -736,18 +742,18 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability and Quality of CDN| R |   |
-| Fastly service configuration (via Extension / API) |     | R |
-| Fastly Extension Quality| R  |   |
-| Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality| R |   |
-| Page Cache optimization |     | R |
-| Adding domains to services, to CDN, and to infrastructure| R |   |
-| Custom VCL Snippets |     | R |
-| WAF & WAF Rules| R |   |
+| Availability and quality of CDN | R |   |
+| Fastly service configuration (via extension or API) |     | R |
+| Fastly extension quality | R |   |
+| Fastly integration VCL snippets quality (bundled with the Fastly extension) | R |   |
+| Page cache optimization |     | R |
+| Adding domains to services, CDN, and infrastructure | R |   |
+| Custom VCL snippets |     | R |
+| WAF and WAF rules | R |   |
 
 {style="table-layout:auto"}
 
-#### Cache Service
+#### Cache service
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -763,9 +769,9 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of ElasticSearch or OpenSearch| R |   |
-| Configuration of default ElasticSearch or OpenSearch settings| R |   |
-| Submit a service request to install an ElasticSearch or OpenSearch version compatible with the installed Adobe Commerce version |  | R |
+| Availability of OpenSearch | R |   |
+| Configuration of default OpenSearch settings | R |   |
+| Submit a service request to install an OpenSearch version compatible with the installed Adobe Commerce version |   | R |
 | Merchant must maintain OpenSearch on a supported version. Deployments on unsupported versions are NOT eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
 
 {style="table-layout:auto"}
@@ -774,14 +780,14 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of SendGrid email service and its integration| R |   |
-| Monitor merchant's SendGrid usage against limits| R |   |
-| Merchant is responsible for using the service only for outgoing transactional emails<br>The service does not support sending of marketing emails. |     | R |
+| Availability of SendGrid email service and its integration | R |   |
+| Monitoring merchant's SendGrid usage against limits | R |   |
+| Using the service only for outgoing transactional emails. The service does not support sending marketing emails. |     | R |
 | Configuring optional third-party email services |     | R |
 
 {style="table-layout:auto"}
 
-#### Third Party services
+#### Third-party services
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -791,12 +797,12 @@ Merchants are responsible for synchronizing data between environments.
 
 ### Commerce Services extensions
 
-#### Advance Reporting service
+#### Advanced Reporting service
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of the Advanced Reporting Service| R |   |
-| Configuration of Advanced Reporting complies with Advanced Reporting Terms & Conditions |     | R |
+| Availability of the Advanced Reporting service | R |   |
+| Configuration of Advanced Reporting complies with Advanced Reporting terms and conditions |     | R |
 
 {style="table-layout:auto"}
 
@@ -814,13 +820,13 @@ Merchants are responsible for synchronizing data between environments.
 
 >[!NOTE]
 >
->Adobe only provides support for deployments running supported versions of all services and extensions. This includes:
+>Adobe provides support only for deployments running supported versions of all services and extensions. This includes:
 >
->- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, OpenSearch, RabbitMQ, and Nginx)—merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
->- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services)—only the latest released version receives support. Adobe does not support outdated versions.
->- **Custom extensions and third-party integrations**—merchants are responsible for ensuring these remain on vendor-supported versions.
+>- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ, and Nginx) — merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services) — only the latest released version receives support. Adobe does not support outdated versions.
+>- **Custom extensions and third-party integrations** — merchants are responsible for ensuring these remain on vendor-supported versions.
 >
->Running unsupported versions may expose your store to unpatched security vulnerabilities and will render your deployment **ineligible for Adobe support**. Upgrading ensures you benefit from the latest security patches, enhancements, and bug fixes.
+>Running unsupported versions may expose your store to unpatched security vulnerabilities and renders your deployment **ineligible for Adobe support**. Upgrading ensures you benefit from the latest security patches, enhancements, and bug fixes.
 >
 >**Reference:** [Product availability matrix — Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
 
@@ -844,7 +850,9 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
-#### Quality of storefront events (data collection) to power Product Recommendations and Live Search output
+#### Storefront event data quality
+
+Storefront event collection drives the quality of Product Recommendations and Live Search output. Responsibility depends on the storefront implementation:
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -852,8 +860,8 @@ Merchants are responsible for synchronizing data between environments.
 | Custom theme |  |  R |
 | Core PWA implementation | R |   |
 | Custom PWA implementation |  | R  |
-| Core AEM EDS implementation (Commerce Boilerplate) | R |   |
-| Custom AEM EDS implementation |  | R  |
+| Core Edge Delivery Services implementation (Commerce Boilerplate) | R |   |
+| Custom Edge Delivery Services implementation |   | R |
 | Any other custom storefront implementation |  | R  |
 
 {style="table-layout:auto"}
@@ -870,74 +878,74 @@ Merchants are responsible for synchronizing data between environments.
 
 ### Network services
 
-#### Image Optimization
+#### Image optimization
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability and Quality of Image Optimization| R |  |
-| Configuration of Image Optimization |     | R  |
+| Availability and quality of Image Optimization | R |   |
+| Configuration of Image Optimization |     | R |
 
 {style="table-layout:auto"}
 
-#### SSL Certificates
+#### SSL certificates
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| SSL Dedicated Certificate - expiration| R |  |
-| Provisioning SSL Certificates| R |  |
-| Purchasing and Maintaining EV/Specific SSL cert (other than defaults provided) and provide to Adobe |     | R |
+| Dedicated SSL certificate expiration | R |   |
+| Provisioning SSL certificates | R |   |
+| Purchasing and maintaining EV or other specific SSL certificates (other than the defaults provided) and providing them to Adobe |     | R |
 
 {style="table-layout:auto"}
 
-#### Web Application Firewall (WAF)
+#### Web application firewall (WAF)
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability & Configuration of WAF| R  |  |
-| Addressing WAF Rule False Positives| R  | |
-| Reporting WAF Rule False Positives |     | R |
-| WAF Rule Tuning (NOT SUPPORTED) |     |     |
-| WAF/CDN Logs |     | R  |
+| Availability and configuration of WAF | R |   |
+| Addressing WAF rule false positives | R |   |
+| Reporting WAF rule false positives |     | R |
+| WAF rule tuning (NOT SUPPORTED) |     |     |
+| WAF and CDN logs |     | R |
 
 {style="table-layout:auto"}
 
-#### DDOS
+#### DDoS
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Proactive IP Blocking |     | R |
-| Bot Protection |     | R  |
-| DDOS detection - layer 3-4| R |   |
-| DDOS detection - layer 7 |     | R |
-| DDOS response| R  |   |
+| Proactive IP blocking |     | R |
+| Bot protection |     | R |
+| DDoS detection — layer 3–4 | R |   |
+| DDoS detection — layer 7 |     | R |
+| DDoS response | R |   |
 
 {style="table-layout:auto"}
 
-#### Private Link
+#### PrivateLink
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Configuring and maintaining PrivateLink connections (if used) with an Adobe-owned VPC | R  |   |
-| Configuring and maintaining PrivateLink connections (if used) with a Merchant-owned VPC |     | R |
-| Availability of SSH (Non-Private Link)| R |   |
-| Configuration of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint| R |   |
-| Acceptance of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint |     | R |
-| Configuration of PrivateLink Inbound to Merchant's VPC Service endpoint |     | R |
-| Acceptance of PrivateLink Inbound to Merchant's VPC Service endpoint| R |   |
+| Configuring and maintaining PrivateLink connections (if used) with an Adobe-owned VPC | R |   |
+| Configuring and maintaining PrivateLink connections (if used) with a merchant-owned VPC |     | R |
+| Availability of SSH (non-PrivateLink) | R |   |
+| Configuration of PrivateLink inbound to Adobe Commerce Cloud Service endpoint | R |   |
+| Acceptance of PrivateLink inbound to Adobe Commerce Cloud Service endpoint |     | R |
+| Configuration of PrivateLink inbound to merchant's VPC service endpoint |     | R |
+| Acceptance of PrivateLink inbound to merchant's VPC service endpoint | R |   |
 | Configuration of PrivateLink integrations (endpoint to account) |     | R |
-| Configuration of merchant-owned VPC for PrivateLink endpoint<br><br> (including any VPN connections) |     | R |
+| Configuration of merchant-owned VPC for PrivateLink endpoint<br><br>(including any VPN connections) |     | R |
 
 {style="table-layout:auto"}
 
 ### System and infrastructure
 
-#### App Server
+#### App server
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of Nginx| R  |   |
-| Configuration of Nginx| R  |   |
-| Ongoing quality and patching of Nginx| R |   |
+| Availability of Nginx | R |   |
+| Configuration of Nginx | R |   |
+| Ongoing quality and patching of Nginx | R |   |
 
 {style="table-layout:auto"}
 
@@ -945,8 +953,8 @@ Merchants are responsible for synchronizing data between environments.
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of Operating System| R |   |
-| Ongoing quality and patching of Operating System| R |   |
+| Availability of operating system | R |   |
+| Ongoing quality and patching of operating system | R |   |
 
 {style="table-layout:auto"}
 
@@ -961,11 +969,11 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
-#### Cloud Servers & Scaling
+#### Cloud servers and scaling
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of CPU resources, data center, disk space | R |   |
+| Availability of CPU resources, data center, and disk space | R |   |
 | Availability and execution of surge capacity or emergency upsizing | R |   |
 | Requesting surge capacity |     | R |
 | Monitoring vCPU usage against the limits | R |   |
