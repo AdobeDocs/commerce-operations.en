@@ -1,8 +1,8 @@
-# Adobe Commerce fixed issues (v2.4.9-beta1)
+# Adobe Commerce fixed issues (v2.4.9)
 
-## Fixed issues in v2.4.9-beta1
+## Fixed issues in v2.4.9
 
-We have fixed 560 issues in the Adobe Commerce 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 560 issues in the Adobe Commerce 2.4.9 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 

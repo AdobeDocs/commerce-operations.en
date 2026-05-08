@@ -1,8 +1,8 @@
-# Magento Open Source fixed issues (v2.4.9-beta1)
+# Magento Open Source fixed issues (v2.4.9)
 
-## Fixed issues in v2.4.9-beta1
+## Fixed issues in v2.4.9
 
-We have fixed 501 issues in the Magento Open Source 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 501 issues in the Magento Open Source 2.4.9 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
