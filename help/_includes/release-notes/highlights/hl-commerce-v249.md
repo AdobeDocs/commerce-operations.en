@@ -19,11 +19,6 @@ This change ensures store views can easily maintain or restore default gallery v
 
 _ACP2E-4358 - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
 
-#### CAPTCHA validation now enforced for REST and GraphQL APIs
-
-When CAPTCHA (or reCAPTCHA) is enabled for the Create Account form, the same CAPTCHA validation is now enforced for customer account creation via REST and GraphQL APIs.
-
-_AC-16245_
 ### GraphQL API changes
 
 #### `clearCart` GraphQL mutation is now available in Magento Open Source
