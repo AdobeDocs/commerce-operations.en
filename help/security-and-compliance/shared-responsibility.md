@@ -25,6 +25,19 @@ Merchants are responsible for the following:
 - Ensuring secure application development
 - Obtaining PCI certification if requested by the merchant's payment processor
 - Reacting and responding to security incidents
+- Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
+
+>[!NOTE]
+>
+>Adobe only provides support for deployments running supported versions of all dependencies and services. This applies to:
+>
+>- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, OpenSearch/ElasticSearch, RabbitMQ, and Nginx)—merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services)—only the latest released version is supported.
+>- **Custom extensions and third-party integrations**—merchants are responsible for ensuring these remain on vendor-supported versions.
+>
+>Running unsupported versions may expose your store to security vulnerabilities, and Adobe cannot provide security patches for dependencies no longer maintained by their vendors.
+>
+>For the full list of supported versions, see the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Adobe responsibilities
 
@@ -42,7 +55,7 @@ Adobe is responsible for the security and availability of the Adobe Commerce on 
 - Hardening the operating system (OS)
 - Implementing and maintaining the integration of content distribution network (CDN) and application performance management (APM) solutions with Adobe Commerce on cloud infrastructure
 - Issuing periodic security and other updates for the core Adobe Commerce on cloud infrastructure code (applying patches is the merchant's responsibility)
-- Managing merchant support and support access controls (for example, Zendesk)
+- Managing merchant support and support access controls
 - Monitoring, logging, and remediating security incidents concerning the Adobe Commerce on cloud infrastructure platform infrastructure
 - Monitoring platform operations and providing 24/7 support for Adobe Commerce on cloud infrastructure merchants
 - Provisioning the production and staging environments
@@ -81,6 +94,7 @@ The merchant is responsible for following security best practices for their spec
 - Securing access to the platform accounts, instance access, and application
 - Testing and QA of the custom application
 - Maintaining the security of any systems or networks the merchant connects to the Adobe Commerce on cloud infrastructure application
+- Maintaining all platform services, third-party dependencies, and Adobe Commerce Services extensions on versions actively supported by their respective vendors or by Adobe, as applicable (including but not limited to infrastructure services such as database, cache, search, PHP runtime, and web server; Adobe Commerce Services extensions; and all third-party extensions and custom integrations). Adobe does not provide support for deployments running unsupported versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
 
 ## Cloud Service Provider responsibilities
 
@@ -478,7 +492,7 @@ The following summary table uses the RACI model to show the security responsibil
     <td></td>
   </tr>
   <tr>
-    <td>Managing IAMand permissions for Adobe Commerce on cloud infrastructure</td>
+    <td>Managing IAM and permissions for Adobe Commerce on cloud infrastructure</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -512,13 +526,20 @@ The following summary table uses the RACI model to show the security responsibil
     <td></td>
     <td></td>
   </tr>
+  <tr>
+    <td>Maintaining all platform services, third-party dependencies, and Commerce Services extensions on actively supported versions (including but not limited to infrastructure services, SaaS Commerce add-ons, and third-party extensions)</td>
+    <td>I</td>
+    <td>R</td>
+    <td></td>
+    <td></td>
+  </tr>
 </tbody>
 <tfoot>
   <tr>
     <td colspan="5">
       <p><sup><strong>1</strong></sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
       <p><sup><strong>2</strong></sup> Adobe provides Level 1 support for issues with CDN providers.</p>
-      <p><sup><strong>3</strong></sup> The merchant is responsible for any Ngnix controls that they configure for their applications.</p>
+      <p><sup><strong>3</strong></sup> The merchant is responsible for any Nginx controls that they configure for their applications.</p>
       <p><sup><strong>4</strong></sup> For PCI, penetration testing requirements are shared between Adobe and the merchant.</p>
     </td>
   </tr>
@@ -690,6 +711,7 @@ Merchants are responsible for synchronizing data between environments.
 | Configuration of default PHP settings | R |     |
 | Configuration of custom PHP settings |     | R |
 | Configuration of YAML file to align PHP versions compatible with installed Adobe Commerce version |    | R |
+| Merchant must maintain PHP on a supported version. Deployments on unsupported versions are NOT eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
 
 {style="table-layout:auto"}
 
@@ -705,6 +727,7 @@ Merchants are responsible for synchronizing data between environments.
 | Ongoing infrastructure optimization| R  |   |
 | Identifying and fixing slow queries |     | R |
 | Submit a service request to install a MariaDB version compatible with the installed Adobe Commerce version |     | R |
+| Merchant must maintain MariaDB on a supported version. Deployments on unsupported versions are NOT eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
 | Setting and maintaining merchant-specific data retention policies (Adobe's data retention policies are defined in the merchant agreement) |     | R |
 
 {style="table-layout:auto"}
@@ -732,6 +755,7 @@ Merchants are responsible for synchronizing data between environments.
 | Configuration of default Redis settings| R |   |
 | Ongoing quality and patching of Redis| R |   |
 | Submit a service request to install a Redis version compatible with the installed Adobe Commerce version |     | R |
+| Merchant must maintain Redis on a supported version. Deployments on unsupported versions are NOT eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
 
 {style="table-layout:auto"}
 
@@ -742,6 +766,7 @@ Merchants are responsible for synchronizing data between environments.
 | Availability of ElasticSearch or OpenSearch| R |   |
 | Configuration of default ElasticSearch or OpenSearch settings| R |   |
 | Submit a service request to install an ElasticSearch or OpenSearch version compatible with the installed Adobe Commerce version |  | R |
+| Merchant must maintain OpenSearch on a supported version. Deployments on unsupported versions are NOT eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
 
 {style="table-layout:auto"}
 
@@ -789,9 +814,15 @@ Merchants are responsible for synchronizing data between environments.
 
 >[!NOTE]
 >
->Merchants are required to use the most recent version of Live Search, Product Recommendations, and Payment Services to ensure the highest stability, functionality, and eligibility for support.
->Adobe does not support outdated versions and upgrading ensures that you benefit from the latest enhancements and bug fixes.
->For details on supported versions, see the [Product Availability Matrix for Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+>Adobe only provides support for deployments running supported versions of all services and extensions. This includes:
+>
+>- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, OpenSearch, RabbitMQ, and Nginx)—merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services)—only the latest released version receives support. Adobe does not support outdated versions.
+>- **Custom extensions and third-party integrations**—merchants are responsible for ensuring these remain on vendor-supported versions.
+>
+>Running unsupported versions may expose your store to unpatched security vulnerabilities and will render your deployment **ineligible for Adobe support**. Upgrading ensures you benefit from the latest security patches, enhancements, and bug fixes.
+>
+>**Reference:** [Product availability matrix — Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
 
 #### Product Recommendations
 
@@ -799,6 +830,7 @@ Merchants are responsible for synchronizing data between environments.
 | --- | --- | --- |
 | Availability of Product Recommendations service| R |   |
 | Upgrading Product Recommendations modules|   | R |
+| Only the latest released version of Product Recommendations is supported. The merchant must upgrade promptly after each release. |     | R |
 
 {style="table-layout:auto"}
 
@@ -808,6 +840,7 @@ Merchants are responsible for synchronizing data between environments.
 | --- | --- | --- |
 | Availability of Live Search service| R |   |
 | Upgrading Live Search modules |   | R |
+| Only the latest released version of Live Search is supported. The merchant must upgrade promptly after each release. |     | R |
 
 {style="table-layout:auto"}
 
@@ -831,6 +864,7 @@ Merchants are responsible for synchronizing data between environments.
 | --- | --- | --- |
 | Availability of Payments Service | R |   |
 | Upgrading Payments modules |   | R |
+| Only the latest released version of Payment Services is supported. The merchant must upgrade promptly after each release. |     | R |
 
 {style="table-layout:auto"}
 
