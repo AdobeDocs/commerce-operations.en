@@ -110,7 +110,7 @@ The Adobe Commerce on cloud infrastructure solution uses CDN providers to speed 
 
 >[!BEGINSHADEBOX]
 
-The following summary table uses the RACI model to show the security responsibilities shared among Adobe, the merchant, and the cloud service provider:
+The following summary table uses the RACI model to show the security responsibilities shared between Adobe, the merchant, and the cloud service provider:
 
 **R** — Responsible
 **A** — Accountable
@@ -762,7 +762,7 @@ Merchants are responsible for synchronizing data between environments.
 | Availability of OpenSearch | R |   |
 | Configuration of default OpenSearch settings | R |   |
 | Submit a service request to install an OpenSearch version compatible with the installed Adobe Commerce version |   | R |
-| Merchant must maintain OpenSearch on a supported version. Deployments on unsupported versions are NOT eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
+| Merchant must maintain OpenSearch on a supported version. Deployments on unsupported versions are _not_ eligible for Adobe support and may contain unpatched security vulnerabilities. |     | R |
 
 {style="table-layout:auto"}
 
