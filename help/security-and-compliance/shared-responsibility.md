@@ -27,17 +27,7 @@ Merchants are responsible for the following:
 - Reacting and responding to security incidents
 - Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
 
->[!NOTE]
->
->Adobe provides support only for deployments running supported versions of all dependencies and services. This applies to:
->
->- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ, and Nginx) — merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
->- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services) — only the latest released version is supported.
->- **Custom extensions and third-party integrations** — merchants are responsible for ensuring these remain on vendor-supported versions.
->
->Running unsupported versions may expose your store to security vulnerabilities, and Adobe cannot provide security patches for dependencies no longer maintained by their vendors.
->
->For the full list of supported versions, see the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+{{supported versions only}}
 
 ## Adobe responsibilities
 
@@ -818,17 +808,7 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
->[!NOTE]
->
->Adobe provides support only for deployments running supported versions of all services and extensions. This includes:
->
->- **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ, and Nginx) — merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
->- **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services) — only the latest released version receives support. Adobe does not support outdated versions.
->- **Custom extensions and third-party integrations** — merchants are responsible for ensuring these remain on vendor-supported versions.
->
->Running unsupported versions may expose your store to unpatched security vulnerabilities and renders your deployment **ineligible for Adobe support**. Upgrading ensures you benefit from the latest security patches, enhancements, and bug fixes.
->
->**Reference:** [Product availability matrix — Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
+{{supported versions only}}
 
 #### Product Recommendations
 
