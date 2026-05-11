@@ -511,7 +511,7 @@ _AC-2916 - [GitHub issue](https://github.com/magento/magento2/issues/35358) - [G
 
 #### "Can not resolve reCAPTCHA parameter" entries in exception.log for Google reCAPTCHA Admin Panel
 
-A reCaptcha error in the `var/log/exception.log` file for the Google V3  reCAPTCHA Admin login has been resolved, and no error messages are logged. Previously, the following error was thrown every few seconds when an admin user configured their **Configuration**  >  **Security**  >  **Google reCAPTCHA Admin Panel** settings: `main.ERROR: Can not resolve reCAPTCHA parameter. {"exception":"[object] (Magento\Framework\Exception\InputException(code: 0): Can not resolve reCAPTCHA parameter. at /home/xxxxxxx/public_html/vendor/magento/module-re-captcha-ui/Model/CaptchaResponseResolver.php:25)"} []`.  [GitHub-34975](https://github.com/magento/magento2/issues/34975)
+A reCaptcha error in the `var/log/exception.log` file for the Google V3  reCAPTCHA Admin login has been resolved, and no error messages are logged. Previously, the following error was thrown every few seconds when an admin user configured their **Configuration**  >  **Security**  >  **Google reCAPTCHA Admin Panel** settings: `main.ERROR: Can not resolve reCAPTCHA parameter. {"exception":"[object] (Magento\Framework\Exception\InputException(code: 0): Can not resolve reCAPTCHA parameter. at /home/xxxxxxx/public_html/vendor/magento/module-re-captcha-ui/Model/CaptchaResponseResolver.php:25)"} []`.
 
 _AC-3179 - [GitHub issue](https://github.com/magento/magento2/issues/34975) - [GitHub code contribution](https://github.com/magento/magento2/commit/4f7e5983) - [GitHub code contribution](https://github.com/magento/security-package/commit/804dbc2a)_
 
@@ -2477,7 +2477,7 @@ _AC-8949 - [GitHub code contribution](https://github.com/magento/magento2/commit
 
 #### GraphQL Response for Order placement does not include the exception message
 
-Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema. This should be added as known BIC, approved by PM here: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema.
 
 _ACP2E-3399 - [GitHub code contribution](https://github.com/magento/magento2/commit/9608ca21)_
 
