@@ -104,13 +104,13 @@ Before you can run indexers in parallel mode, you must enable Process Control su
 
 <!--These fixes were backported to 2.4.8-pe, 2.4.7-p8, and 2.4.6-p13-->
 
-- **Migrate from TinyMCE to Hugerte.org**
+* **Migrate from TinyMCE to Hugerte.org**
 
   Due to the end of support for TinyMCE 5 and 6 and licensing incompatibilities with TinyMCE 7, The current implementation of Adobe Commerce WYSIWYG editor is migrated from TinyMCE to the open-source [HugeRTE editor](https://hugerte.org/).
 
   This migration ensures Adobe Commerce remains compliant with open-source licensing, avoids known TinyMCE 6 vulnerabilities, and delivers a modern, supported editing experience for merchants and developers.
 
-- **Added support for Apache ActiveMQ Artemis  STOMP protocol**
+* **Added support for Apache ActiveMQ Artemis  STOMP protocol**
 
   Added support for the ActiveMQ Artemis open-source message broker through the Simple Text Oriented Messaging Protocol (STOMP). It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations. See [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in the *Commerce Configuration Guide*.
 
@@ -120,8 +120,8 @@ After recent CSP/SRI changes, the checkout page does not load static.min.js and 
 
 **Workaround**:
 
-- Disable JavaScript bundling; or
-- If you keep JavaScript bundling enabled, disable JavaScript minification.
+* Disable JavaScript bundling; or
+* If you keep JavaScript bundling enabled, disable JavaScript minification.
 
 >[!IMPORTANT]
 >
