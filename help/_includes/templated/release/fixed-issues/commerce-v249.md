@@ -4046,10 +4046,10 @@ _AC-16285 - [GitHub issue](https://github.com/magento/magento2/issues/40314) - [
 
 The USPS REST API integration in Adobe Commerce (AC-15210) was incomplete. Key problems included missing tracking information, loss of Allowed Methods settings when switching API types, excessive requests risking quota limits, and lack of protection against "429" quota limit errors. Exceeding the quota prevented shipping rates from being displayed to customers.
 The USPS REST API integration has been improved to:
- - Provide proper tracking information for shipped parcels.
- - Preserve Allowed Methods settings when switching between USPS WEBtools and REST APIs.
- - Prevent unnecessary requests to the USPS API, reducing the risk of hitting quota limits.
- - Handle "429" quota limit errors gracefully, ensuring shipping rates remain available to customers.
+- Provide proper tracking information for shipped parcels.
+- Preserve Allowed Methods settings when switching between USPS WEBtools and REST APIs.
+- Prevent unnecessary requests to the USPS API, reducing the risk of hitting quota limits.
+- Handle "429" quota limit errors gracefully, ensuring shipping rates remain available to customers.
 
 _AC-16577 - [GitHub issue](https://github.com/magento/magento2/issues/40394) - [GitHub code contribution](https://github.com/magento/magento2/commit/15a9362d)_
 
