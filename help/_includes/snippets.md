@@ -1,6 +1,6 @@
 # Snippets
 
-## Adobe service version support {#supported versions only}
+## Adobe service version support {#supported-versions-only}
 
 >[!NOTE]
 >

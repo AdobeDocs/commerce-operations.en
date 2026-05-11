@@ -13,46 +13,46 @@ This shared model enables merchants to design and implement a flexible, customiz
 
 Adobe is responsible for the following:
 
-- Developing and maintaining secure core application code
-- Maintaining the security of the platform
-- Ensuring that the platform is SOC 2 and PCI compliant and compatible with PCI-compliant technology components (for example, PHP, Redis)
-- Responding to security issues concerning the core platform
-- Working with cloud service providers and CDN partners to resolve any issues that occur
+* Developing and maintaining secure core application code
+* Maintaining the security of the platform
+* Ensuring that the platform is SOC 2 and PCI compliant and compatible with PCI-compliant technology components (for example, PHP, Redis)
+* Responding to security issues concerning the core platform
+* Working with cloud service providers and CDN partners to resolve any issues that occur
 
 Merchants are responsible for the following:
 
-- Maintaining security for custom code and integrations with third-party applications
-- Ensuring secure application development
-- Obtaining PCI certification if requested by the merchant's payment processor
-- Reacting and responding to security incidents
-- Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
+* Maintaining security for custom code and integrations with third-party applications
+* Ensuring secure application development
+* Obtaining PCI certification if requested by the merchant's payment processor
+* Reacting and responding to security incidents
+* Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
 
-{{supported versions only}}
+{{supported-versions-only}}
 
 ## Adobe responsibilities
 
 Adobe is responsible for the security and availability of the Adobe Commerce on cloud infrastructure environment and the core solution code. Adobe also performs the activities that maintain the security of the Adobe Commerce on cloud infrastructure solution, including:
 
-- Applying server-level security and patches for applications supported by Adobe Commerce on cloud infrastructure, such as cloud data storage and search capabilities
-- Conducting penetration testing and scanning of the core Adobe Commerce on cloud infrastructure code
-- Conducting semi-annual reviews and audits of public cloud service providers' identity and access management (IAM) solutions and permissions management (PCI compliance requirement)
-- Conducting semi-annual reviews and audits of authorized users, including Adobe employees and contractors (PCI compliance requirement)
-- Conducting annual testing and documentation of backup and restore functionality
-- Configuring server and perimeter firewalls
-- Connecting and configuring the Adobe Commerce on cloud infrastructure repository
-- Defining, testing, implementing, and documenting disaster recovery (DR) plans for the areas within Adobe's scope of responsibility
-- Defining global platform web application firewall (WAF) rules
-- Hardening the operating system (OS)
-- Implementing and maintaining the integration of content distribution network (CDN) and application performance management (APM) solutions with Adobe Commerce on cloud infrastructure
-- Issuing periodic security and other updates for the core Adobe Commerce on cloud infrastructure code (applying patches is the merchant's responsibility)
-- Managing merchant support and support access controls (for example, Experience League Support)
-- Monitoring, logging, and remediating security incidents concerning the Adobe Commerce on cloud infrastructure platform infrastructure
-- Monitoring platform operations and providing 24/7 support for Adobe Commerce on cloud infrastructure merchants
-- Provisioning the production and staging environments
-- Assessing potential security threats to platform operations and infrastructure
-- Scaling computing, storage, grid, and other resources, as described in the service-level agreement (SLA) with the merchant
-- Setting up DNS (Adobe Commerce on cloud infrastructure platform infrastructure only)
-- Testing the platform for security vulnerabilities
+* Applying server-level security and patches for applications supported by Adobe Commerce on cloud infrastructure, such as cloud data storage and search capabilities
+* Conducting penetration testing and scanning of the core Adobe Commerce on cloud infrastructure code
+* Conducting semi-annual reviews and audits of public cloud service providers' identity and access management (IAM) solutions and permissions management (PCI compliance requirement)
+* Conducting semi-annual reviews and audits of authorized users, including Adobe employees and contractors (PCI compliance requirement)
+* Conducting annual testing and documentation of backup and restore functionality
+* Configuring server and perimeter firewalls
+* Connecting and configuring the Adobe Commerce on cloud infrastructure repository
+* Defining, testing, implementing, and documenting disaster recovery (DR) plans for the areas within Adobe's scope of responsibility
+* Defining global platform web application firewall (WAF) rules
+* Hardening the operating system (OS)
+* Implementing and maintaining the integration of content distribution network (CDN) and application performance management (APM) solutions with Adobe Commerce on cloud infrastructure
+* Issuing periodic security and other updates for the core Adobe Commerce on cloud infrastructure code (applying patches is the merchant's responsibility)
+* Managing merchant support and support access controls (for example, Experience League Support)
+* Monitoring, logging, and remediating security incidents concerning the Adobe Commerce on cloud infrastructure platform infrastructure
+* Monitoring platform operations and providing 24/7 support for Adobe Commerce on cloud infrastructure merchants
+* Provisioning the production and staging environments
+* Assessing potential security threats to platform operations and infrastructure
+* Scaling computing, storage, grid, and other resources, as described in the service-level agreement (SLA) with the merchant
+* Setting up DNS (Adobe Commerce on cloud infrastructure platform infrastructure only)
+* Testing the platform for security vulnerabilities
 
 Adobe maintains PCI certification for the infrastructure and services used for the Adobe Commerce solution. Merchants are responsible for the compliance of their custom code, system and network processes, and organization.
 
@@ -62,33 +62,33 @@ Adobe also ensures the availability of the merchant's infrastructure as agreed u
 
 The merchant is responsible for following security best practices for their customized instance of the Adobe Commerce on cloud infrastructure solution:
 
-- Adding the necessary Adobe Commerce on cloud infrastructure configuration files to the repository
-- Applying security and other patches to their custom Adobe Commerce on cloud infrastructure solution immediately following their release by Adobe
-- Applying security and other patches to all custom extensions and code immediately following their release by the vendor
-- Creating, deploying, and testing custom Varnish VCL files
-- Designing, theming, installing, integrating, and securing the customized Adobe Commerce on cloud infrastructure solution, including all custom extensions and code
-- Granting and revoking user access to the merchant's instance of the Adobe Commerce on cloud infrastructure configuration, application, and platform
-- Handling security issues related to the merchant's internal network, servers, infrastructure, and any custom applications built on the Adobe Commerce on cloud infrastructure platform
-- Installing the Adobe Commerce on cloud infrastructure command-line integration (CLI) tool
-- Maintaining the required level of PCI compliance of the customized application and other internal processes, as defined by the PCI-DSS guidelines
+* Adding the necessary Adobe Commerce on cloud infrastructure configuration files to the repository
+* Applying security and other patches to their custom Adobe Commerce on cloud infrastructure solution immediately following their release by Adobe
+* Applying security and other patches to all custom extensions and code immediately following their release by the vendor
+* Creating, deploying, and testing custom Varnish VCL files
+* Designing, theming, installing, integrating, and securing the customized Adobe Commerce on cloud infrastructure solution, including all custom extensions and code
+* Granting and revoking user access to the merchant's instance of the Adobe Commerce on cloud infrastructure configuration, application, and platform
+* Handling security issues related to the merchant's internal network, servers, infrastructure, and any custom applications built on the Adobe Commerce on cloud infrastructure platform
+* Installing the Adobe Commerce on cloud infrastructure command-line integration (CLI) tool
+* Maintaining the required level of PCI compliance of the customized application and other internal processes, as defined by the PCI-DSS guidelines
 
    >[!NOTE]
    >
    >To minimize the areas that must be reviewed, PCI compliance for the merchant is built on the PCI certifications of Adobe Commerce and the cloud hosting provider.
 
-- Running PCI ASV scans and remediating issues in the core Adobe Commerce on cloud infrastructure code and platform
-- Monitoring all application activities that might reveal a potential security threat, including penetration testing, vulnerability scans, and logs
-- Monitoring and responding to security incidents, including forensics, remediation, and reporting related to the merchant's Adobe Commerce on cloud infrastructure solution and user accounts
-- Obtaining a DNS provider and configuring and maintaining any merchant-specific DNS records
-- Running performance tests on the customized application
-- Securing access to the platform accounts, instance access, and application
-- Testing and QA of the custom application
-- Maintaining the security of any systems or networks the merchant connects to the Adobe Commerce on cloud infrastructure application
-- Maintaining all platform services, third-party dependencies, and Adobe Commerce Services extensions on versions actively supported by their respective vendors or by Adobe. This includes:
+* Running PCI ASV scans and remediating issues in the core Adobe Commerce on cloud infrastructure code and platform
+* Monitoring all application activities that might reveal a potential security threat, including penetration testing, vulnerability scans, and logs
+* Monitoring and responding to security incidents, including forensics, remediation, and reporting related to the merchant's Adobe Commerce on cloud infrastructure solution and user accounts
+* Obtaining a DNS provider and configuring and maintaining any merchant-specific DNS records
+* Running performance tests on the customized application
+* Securing access to the platform accounts, instance access, and application
+* Testing and QA of the custom application
+* Maintaining the security of any systems or networks the merchant connects to the Adobe Commerce on cloud infrastructure application
+* Maintaining all platform services, third-party dependencies, and Adobe Commerce Services extensions on versions actively supported by their respective vendors or by Adobe. This includes:
 
-   - Infrastructure services such as the database, cache, search, PHP runtime, and web server
-   - Adobe Commerce Services extensions
-   - All third-party extensions and custom integrations
+   * Infrastructure services such as the database, cache, search, PHP runtime, and web server
+   * Adobe Commerce Services extensions
+   * All third-party extensions and custom integrations
 
    Adobe does not provide support for deployments running unsupported versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
 
@@ -98,9 +98,9 @@ Adobe relies on cloud service providers to host the cloud server infrastructure 
 
 Cloud service providers are also responsible for:
 
-- Maintaining PCI DSS, SOC 2, and ISO 27001 certifications for their cloud services
-- Securing the hypervisor
-- Securing the data center, including both physical and network access
+* Maintaining PCI DSS, SOC 2, and ISO 27001 certifications for their cloud services
+* Securing the hypervisor
+* Securing the data center, including both physical and network access
 
 ## CDN provider responsibilities
 
@@ -808,7 +808,7 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
-{{supported versions only}}
+{{supported-versions-only}}
 
 #### Product Recommendations
 
@@ -959,3 +959,4 @@ Storefront event collection drives the quality of Product Recommendations and Li
 | Monitoring vCPU usage against the limits | R |   |
 
 {style="table-layout:auto"}
+
