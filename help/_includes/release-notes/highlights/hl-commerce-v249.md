@@ -45,11 +45,6 @@ Introduced a new `exchangeExternalCustomerToken` GraphQL mutation that authentic
 
 _LYNX-815_
 
-#### Updated documentation for new and existing GraphQL mutations
-
-Documentation updated for the following GraphQL mutations: `clearWishlist` (2.4.9), `confirmCancelOrder` (2.4.8), `requestGuestOrderCancel` (2.4.8), `resendConfirmationEmail` (2.4.8), and `exchangeExternalCustomerToken` (2.4.9).
-
-_LYNX-821_
 
 #### New GraphQL queries return applied customer group, segments, and cart rule IDs
 
@@ -250,12 +245,11 @@ Existing RabbitMQ 4 installations remain compatible for merchants who prefer to 
 
 _AC-14558_
 
-#### Add support for Valkey 8.x and Valkey 9.x LTS
+#### Add support for Valkey 9.x
 
 Adobe Commerce 2.4.9 expands support for Valkey as a Redis-compatible cache backend:
 
-- **Valkey 8.x** — Comprehensive support introduced in Adobe Commerce 2.4.9, including full CLI command parity with Redis and updated Admin and Cloud configuration options for seamless setup. This work is driven by Redis 7.2 end-of-support and licensing changes, giving merchants a reliable, fully supported alternative to Redis across Commerce release lines 2.4.5 through 2.4.9.
-- **Valkey 9.x LTS** — Now a compatible caching backend, giving merchants long-term support, improved platform performance, and a seamless migration path that does not require a major version upgrade.
+- **Valkey 9.x** — Comprehensive support introduced in Adobe Commerce 2.4.9, including full CLI command parity with Redis and updated Admin and Cloud configuration options for seamless setup. This work is driven by Redis 7.2 end-of-support and licensing changes, giving merchants a reliable, fully supported alternative to Redis.
 
 _AC-14103, AC-14604, AC-16122_
 
@@ -267,7 +261,7 @@ _AC-11846, AC-16403_
 
 #### Add support for MariaDB 11.8 and 12.x
 
-MariaDB 11.8 and 12.x are now supported database versions, enabling merchants to adopt the latest releases for improved SQL performance and long-term platform stability. MariaDB 11.4 remains supported.
+MariaDB 11.8 and 12.x are now supported database versions, enabling merchants to adopt the latest releases for improved SQL performance and long-term platform stability.
 
 _AC-16533_
 
