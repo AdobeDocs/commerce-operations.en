@@ -1,6 +1,6 @@
 ---
 title: Set up Amazon Message Queue
-description: Learn how to configure Commerce to use the AWS MQ service.
+description: Learn how to configure Adobe Commerce message queues for Amazon MQ in env.php, including SSL and TLS requirements for cloud-ready AMQP connections.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
 ---
 # Set up Amazon Message Queue
@@ -41,7 +41,7 @@ Where:
 
 After editing the `env.php` file, run the following command to finish the setup:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -76,7 +76,7 @@ To test message sending from Commerce to [!DNL RabbitMQ]:
 
 1. Start the `async.operations.all` message queue consumer.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

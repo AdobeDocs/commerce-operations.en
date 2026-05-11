@@ -90,11 +90,11 @@ Before you migrate any data, you must create a Magento 2 module.
 
    For example, if you migrate `Magento 1.9.3.6 Community Edition` to `Magento 2 Open Source`:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
@@ -112,13 +112,13 @@ To configure the [!DNL Data Migration Tool] for migration:
 
 1. Change to the following directory:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Enter the following command to create a `config.xml` from the provided sample:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 

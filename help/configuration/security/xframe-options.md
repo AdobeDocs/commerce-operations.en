@@ -41,7 +41,7 @@ To verify your setting, view the HTTP headers on any storefront page. There are 
 
 The following example uses curl, which you can run from any machine that can connect to your Commerce server over the HTTP protocol.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

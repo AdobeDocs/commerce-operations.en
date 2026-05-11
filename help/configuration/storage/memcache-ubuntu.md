@@ -29,11 +29,11 @@ The `memcache` extension currently _does not_ work with PHP 7. See [PHP document
 
 1. As a user with `root` privileges, enter the following command:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
-   ```bash
+   ```shell
    apt-get -y install php5-memcached memcached
    ```
 
@@ -47,7 +47,7 @@ The `memcache` extension currently _does not_ work with PHP 7. See [PHP document
    1. Save your changes to `memcached.conf` and exit the text editor.
    1. Restart memcached.
 
-      ```bash
+      ```shell
       service memcached restart
       ```
 
@@ -124,7 +124,7 @@ Refresh the browser. The message changes to `Successfully retrieved the data!`
 
 Finally, you can view the memcache keys using Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
@@ -136,7 +136,7 @@ stats items
 
 The result is similar to the following:
 
-```
+```text
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0

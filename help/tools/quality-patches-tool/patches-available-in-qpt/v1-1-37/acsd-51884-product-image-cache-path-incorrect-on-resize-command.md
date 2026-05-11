@@ -35,7 +35,7 @@ Product image cache path becomes incorrect on resize command.
 1. Create a new theme (see attached Adobe.zip).
 1. In `app/design/Adobe/theme/etc/view.xml` change:
 
-```
+```xml
 <vars module="Magento_Catalog">
            <var name="product_image_white_borders">1</var>
 </vars>
@@ -43,7 +43,7 @@ Product image cache path becomes incorrect on resize command.
 
 to
 
-```
+```xml
 <vars module="Magento_Catalog">
            <var name="product_image_white_borders">0</var>
 </vars>

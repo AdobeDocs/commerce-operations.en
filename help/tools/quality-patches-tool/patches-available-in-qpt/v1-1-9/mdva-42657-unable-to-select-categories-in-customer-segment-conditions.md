@@ -52,7 +52,7 @@ The selected categories are saved and selected when viewing/editing the segment 
 
 The selected categories are missing and did not save properly. You get the following error in console:
 
-```
+```text
 category-checkbox-tree.js:249 Uncaught TypeError: Cannot set properties of undefined (setting 'value')
     at Ext.tree.TreePanel.Enhanced.<anonymous> (category-checkbox-tree.js:249)
     at Ext.util.Event.fire (ext-tree.js:29)

@@ -1,6 +1,6 @@
 ---
 title: Password hashing
-description: Read about password hashing strategies and implementation.
+description: Learn about password hashing in Adobe Commerce, supported algorithms such as Argon2 and SHA256, and how legacy hashes upgrade without changing passwords.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
 ---

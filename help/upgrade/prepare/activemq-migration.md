@@ -28,13 +28,13 @@ These migration instructions assume that Adobe Commerce is the sole application 
 
 1. Place the site in [Maintenance Mode](../../installation/tutorials/maintenance-mode.md):
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Verify maintenance mode is enabled:
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
@@ -55,7 +55,7 @@ Before proceeding, verify that all messages in RabbitMQ have been processed. Use
 
 1. Check all queues and their message counts:
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages consumers
    ```
 
@@ -63,7 +63,7 @@ Before proceeding, verify that all messages in RabbitMQ have been processed. Use
 
 1. Check detailed queue information:
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
    ```
 
@@ -75,7 +75,7 @@ If messages are pending in any queues, process them before proceeding.
 
 1. Get the list of available consumers:
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:list
    ```
 
@@ -83,7 +83,7 @@ If messages are pending in any queues, process them before proceeding.
 
    - **Process consumers as a group**
 
-     ```bash
+     ```shell
      bin/magento cron:run --group=consumers
      ```
 
@@ -93,13 +93,13 @@ If messages are pending in any queues, process them before proceeding.
 
    - **Process a specific message queue**
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
      ```
 
      For example, to process async operations:
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start async.operations.all --max-messages=1000
      ```
 
@@ -111,7 +111,7 @@ If messages are pending in any queues, process them before proceeding.
 
      Continuously check message counts until all queues are empty:
 
-     ```bash
+     ```shell
      # Check every few seconds until 0 messages remain
      watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
      ```
@@ -128,7 +128,7 @@ Before proceeding to the next step, ensure **all queues show 0 messages**. Run t
 
 1. Stop all running message queue consumers:
 
-   ```bash
+   ```shell
    # If using supervisor
    supervisorctl stop all
 
@@ -138,13 +138,13 @@ Before proceeding to the next step, ensure **all queues show 0 messages**. Run t
 
 1. Disable cron jobs:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. Verify cron jobs are removed:
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -152,7 +152,7 @@ Before proceeding to the next step, ensure **all queues show 0 messages**. Run t
 
 Create a backup of your current configuration:
 
-```bash
+```shell
 cp app/etc/env.php app/etc/env.php.backup.rabbitmq
 ```
 
@@ -168,13 +168,13 @@ To complete ActiveMQ installation and configuration tasks such as configuring th
 
 1. After testing completes successfully, reinstall cron jobs:
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Verify that cron jobs are scheduled:
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -182,13 +182,13 @@ To complete ActiveMQ installation and configuration tasks such as configuring th
 
 1. After verifying everything is working correctly, disable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
 1. Verify that maintenance mode is disabled:
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
@@ -201,7 +201,7 @@ Monitor your system for 24-48 hours after migration to ensure that all queue ope
 - Verify that async operations (config saves, exports, and so on) are working
 - Check cron logs to ensure that consumers are running
 
-```bash
+```shell
 # Monitor system logs for queue activity
 tail -f var/log/system.log | grep -i queue
 
@@ -218,44 +218,44 @@ If issues occur during or after migration, you can rollback to RabbitMQ:
 
 1. Enable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Stop all consumers and disable cron:
 
-   ```bash
+   ```shell
    pkill -f "queue:consumers:start"
    bin/magento cron:remove
    ```
 
 1. Restore the previous configuration:
 
-   ```bash
+   ```shell
    cp app/etc/env.php.backup.rabbitmq app/etc/env.php
    ```
 
 1. Start RabbitMQ (if stopped):
 
-   ```bash
+   ```shell
    sudo systemctl start rabbitmq-server
    ```
 
 1. Clear cache:
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Reinstall cron:
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Disable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
