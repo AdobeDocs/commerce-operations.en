@@ -1,6 +1,6 @@
 ---
 title: Get the Adobe Commerce software
-description: Learn how to download the Adobe Commerce software.
+description: Learn how to obtain the Adobe Commerce software using Composer, check extension compatibility, and choose the right distribution for installation.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
 ---
 # Get the Adobe Commerce software

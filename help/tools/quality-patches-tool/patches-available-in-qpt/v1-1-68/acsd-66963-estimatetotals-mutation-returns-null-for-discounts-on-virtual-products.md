@@ -33,7 +33,7 @@ The `estimateTotals` mutation returns *null* for discounts when a discount code 
 1. Create a cart containing only virtual products.
 1. Apply a discount code:
 
-    ```
+    ```graphql
     mutation {
       estimateTotals(
         input: {
@@ -75,7 +75,7 @@ The `estimateTotals` mutation returns *null* for discounts when a discount code 
 
 Discount information is included for carts containing only virtual products.
 
-```
+```json
     {
       "data": {
         "estimateTotals": {
@@ -107,7 +107,7 @@ Discount information is included for carts containing only virtual products.
 
 Discount information returns as *null* for carts with only virtual products.
 
-```
+```json
     {
       "data": {
         "estimateTotals": {

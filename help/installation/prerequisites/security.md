@@ -16,23 +16,23 @@ exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
 
 If you choose to enable SELinux, you might have issues running the installer unless you change the *security context* of some directories as follows:
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
@@ -48,7 +48,7 @@ To enable Apache to initiate a connection to another host with SELinux enabled:
 
 1. To determine if SELinux is enabled, use the following command:
 
-   ```bash
+   ```shell
    getenforce
    ```
 

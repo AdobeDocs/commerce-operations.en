@@ -62,9 +62,9 @@ In the Adobe Commerce on cloud infrastructure, you can override the default conf
 
 1. On your local workstation, change to your project directory.
 
-1. In the `.magento.env.yaml` file, set the `MYSQL_USE_SLAVE_CONNECTION` to true.  
+1. In the `.magento.env.yaml` file, set the `MYSQL_USE_SLAVE_CONNECTION` to true.
 
-   ```
+   ```yaml
    stage:
      deploy:
        MYSQL_USE_SLAVE_CONNECTION: true

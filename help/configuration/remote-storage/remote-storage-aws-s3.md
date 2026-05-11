@@ -22,19 +22,19 @@ The [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) is an
 
 1. Disable the default database storage.
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
 1. Configure Commerce to use the private bucket. See [Remote storage options](remote-storage.md#remote-storage-options) for a full list of parameters.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. Synchronize media files with remote storage.
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 

@@ -128,6 +128,19 @@ The beta includes the following features:
 
 To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
+### Merchant Productivity AI Assistant (Public Beta)
+
+The Merchant Productivity AI Assistant is a conversational interface embedded in the Adobe Commerce Admin that helps merchants complete routine tasks and access business insights on demand using natural language. It enables merchants to manage promotions, update product catalog information, and retrieve operational data–such as recent orders or active promotions–directly within their existing workflows. The assistant also provides in-context guidance to help merchants navigate and use the Admin more efficiently.
+
+**Key benefits**
+
+- Automate common merchandising tasks, including promotion creation and catalog metadata updates, using natural language instructions.
+- Access contextual assistance and guidance directly within the Admin workflow.
+- Query live store data on demand—for example, retrieve the last 10 orders, view currently active promotions, or check inventory status.
+- Reduce time spent on repetitive Admin tasks, freeing merchants to focus on strategy and growth.
+
+To participate in this beta, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
 ### Adobe Commerce Foundation (Public Alpha/Beta)
 
 [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}

@@ -45,25 +45,25 @@ This section discusses how to specify who can access the nginx server.
 
 1. Restart nginx:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. Verify the proxy works by entering the following command:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    For example, if your proxy uses port 8080:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Messages similar to the following display to indicate success:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -100,7 +100,7 @@ To create a password:
 
 1. Enter the following command to determine if `htpasswd` is already installed:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -113,11 +113,11 @@ To create a password:
 
 1. Create a `/etc/nginx/passwd` directory to store passwords:
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -127,7 +127,7 @@ To create a password:
 
 1. *(Optional).* To add another user to your password file, enter the same command without the `-c` (create) option:
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -182,7 +182,7 @@ This section discusses how to specify who can access the search engine server.
 
 1. Enter the following command to create a directory to store the authentication configuration:
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -203,7 +203,7 @@ This section discusses how to specify who can access the search engine server.
 1. If you set up a secure proxy, delete `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. Restart nginx and continue with the next section:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

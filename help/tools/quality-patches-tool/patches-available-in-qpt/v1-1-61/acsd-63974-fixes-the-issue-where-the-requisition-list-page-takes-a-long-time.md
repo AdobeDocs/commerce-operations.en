@@ -35,7 +35,7 @@ The **[!UICONTROL Requisition List]** page takes a long time to load when there 
 1. Generate 2000+ products by editing `simple_products` node in `setup/performance-toolkit/profiles/ce/small.xml`.
 1. Run the command:
 
-    ```bash
+    ```shell
     bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
     ```
 

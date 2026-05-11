@@ -37,7 +37,7 @@ The *[!UICONTROL Credit Memo]* email sent when a credit memo is created via the 
     1. Endpoint: `POST V1/order/:orderId/refund`
     1. Request payload: 
 
-        ```
+        ```json
         {  
             "notify": true,  
             "items": [  

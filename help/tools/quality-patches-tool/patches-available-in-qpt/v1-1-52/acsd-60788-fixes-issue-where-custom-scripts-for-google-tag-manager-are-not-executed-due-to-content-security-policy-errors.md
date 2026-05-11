@@ -34,7 +34,7 @@ Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Sec
 1. Set up the *[!DNL Google Tag Manager]* Custom HTML Tag.
 1. Place the following JavaScript code in the first Tag:
 
-    ```
+    ```xml
     <script nonce="{{gtmNonce}}">
     console.log("Nonce from simple JS {{gtmNonce}}");
     </script>

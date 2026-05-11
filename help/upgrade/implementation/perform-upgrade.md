@@ -40,7 +40,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
 1. Switch to maintenance mode to prevent access to your store during the upgrade process.
 
-    ```bash
+    ```shell
     bin/magento maintenance:enable
     ```
 
@@ -50,19 +50,19 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
    _Adobe Commerce on cloud infrastructure:_
 
-   ```bash
+   ```shell
    ./vendor/bin/ece-tools cron:disable
    ```
 
    _Magento Open Source:_
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. Start all message queue consumers manually to ensure that all messages are consumed.
 
-   ```bash
+   ```shell
    bin/magento cron:run --group=consumers
    ```
 
@@ -70,7 +70,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
 1. Create a backup of the `composer.json` file.
 
-   ```bash
+   ```shell
    cp composer.json composer.json.bak
    ```
 
@@ -78,32 +78,32 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
    For example, if you are upgrading from Magento Open Source to Adobe Commerce, remove the Magento Open Source package.
 
-   ```bash
+   ```shell
    composer remove magento/product-community-edition --no-update
    ```
 
    You can also upgrade sample data.
 
-   ```bash
+   ```shell
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
       - _Adobe Commerce:_
 
-        ```bash
+        ```shell
         composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
 
         ```
 
       - _Magento Open Source:_
 
-        ```bash
+        ```shell
         composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
         ```
 
 1. Upgrade your instance using the following `composer require-commerce` command syntax:
 
-   ```bash
+   ```shell
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
    ```
 
@@ -125,7 +125,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
 1. Update the dependencies.
 
-   ```bash
+   ```shell
    composer update
    ```
 
@@ -135,13 +135,13 @@ To see the full list of available 2.4.x versions:
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer show magento/product-community-edition 2.4.* --available | grep -m 1 versions
 ```
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
@@ -151,13 +151,13 @@ Quality patches primarily contain functional _and_ security fixes. However, they
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
@@ -167,13 +167,13 @@ Security patches contain security fixes only. They are designed to make the upgr
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
 ```
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
@@ -187,21 +187,21 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 1. Apply updates.
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Clear the `var/` and `generated/` subdirectories:
 
-   ```bash
+   ```shell
    rm -rf var/cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf var/page_cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf generated/code/*
    ```
 
@@ -211,13 +211,13 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 1. Update the database schema and data.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Disable maintenance mode.
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -225,7 +225,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
    If you use Varnish for page caching, restart it:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 

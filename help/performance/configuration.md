@@ -42,7 +42,7 @@ For projects with a large number of store-level configurations, saving a store c
 
 You can enable AsyncConfig using the command-line interface:
 
-```bash
+```shell
 bin/magento setup:config:set --config-async 1
 ```
 
@@ -57,7 +57,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 Start the following Consumer to begin processing the messages in the queue on a first-in-first-out basis: 
 
-```bash
+```shell
 bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 ```
 
