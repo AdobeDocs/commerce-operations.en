@@ -12,6 +12,74 @@ Updating product via REST API in a store scope no longer causes product images a
 
 _ACP2E-4358 - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
 
+### Braintree
+
+#### Vaulting Google Pay via the Account Area
+
+In Adobe Commerce 2.4.9, customers can now vault their Google Pay cards via the account area when Google Pay Vault is enabled in Braintree. Vaulted cards appear under stored payment methods, can be used for future purchases at checkout, and can be deleted by the customer. This extends vaulting support beyond Cards and PayPal to Google Pay.
+
+_BUNDLE-3459_
+
+#### Real Time Account Updater (RTAU)
+
+The Real Time Account Updater (RTAU) feature in Adobe Commerce 2.4.9 for Braintree ensures that vaulted Visa, Mastercard, and Discover card details are automatically updated when cards expire or are replaced. This minimizes failed payments, keeps Magento Vault current, and skips unsupported types (prepaid, Apple Pay, Google Pay) without errors.
+
+_BUNDLE-3462_
+
+#### ELO Card type support for Braintree Card Payments
+
+In Adobe Commerce 2.4.9, support for the ELO card type has been added to Braintree Payments. Admins can now enable ELO in the credit card configuration, and customers can successfully place orders using ELO cards at checkout, ensuring seamless transactions through Braintree.
+
+_BUNDLE-3464_
+
+#### Pay Upon Invoice
+
+For Adobe Commerce 2.4.9 (Braintree extension), a new local payment method "Pay Upon Invoice" has been added for German buyers. Pay Upon Invoice is a Buy Now, Pay Later (BNPL) option powered by PayPal + Ratepay ("Rechnungskauf mit Ratepay") that lets customers receive goods first and pay the invoice within 30 days, without needing a PayPal account. Because it's not an instant payment, order finalisation is driven by a server-side webhook from PayPal.
+
+_BUNDLE-3475_
+
+#### Add offers to the Google Pay Express Pay Sheet
+
+For the Braintree extension in Adobe Commerce 2.4.9, the Google Pay Express Pay Sheet now supports promo/offer codes. Shoppers can apply, view, and remove Magento cart promotions directly within the Google Pay sheet, ensuring express checkout customers receive the same discounts and incentives as standard checkout flows.
+
+_BUNDLE-3476_
+
+#### Add Offers to the Apple Pay Express Pay Sheet
+
+For the Braintree extension in Adobe Commerce 2.4.9, the Apple Pay Express Pay Sheet now supports promo/offer codes. Shoppers can apply a coupon directly within the Apple Pay sheet, so express checkout users benefit from the same discounts and campaigns as standard checkout flows.
+
+_BUNDLE-3477_
+
+#### Pay with Apple Pay on Chrome and Firefox
+
+For the Braintree extension in Adobe Commerce 2.4.9, Apple Pay can now be used on Chrome and Firefox, not just Safari. When Apple Pay Express is enabled, Apple Pay buttons are available across supported storefront locations, and customers complete payment by scanning a code with their iPhone.
+
+_BUNDLE-3478_
+
+#### Server Side Shipping Callback
+
+For the Braintree extension in Adobe Commerce 2.4.9, the PayPal Express shipping callback has been moved from client‑side to server‑side. This provides dynamic shipping methods, real‑time cost calculations, and accurate cart‑level details directly in the PayPal modal, improving reliability and laying the groundwork for future features such as Contact Module support, app‑switch flows, and Venmo Express.
+
+_BUNDLE-3479_
+
+#### PayPal Contact Module
+
+For the Braintree extension in Adobe Commerce 2.4.9, a new PayPal Contact Module is introduced for U.S. merchants. When enabled, buyers using PayPal Express can view and update the email address and phone number shared with the merchant directly inside the PayPal modal during express flows (PDP, mini‑cart, cart, checkout express). The chosen contact details are then stored on the Adobe Commerce order.
+
+_BUNDLE-3480_
+
+#### BLIK (Local Payment Method)
+
+For the Braintree extension in Adobe Commerce 2.4.9, BLIK has been added as a new local payment method for Polish shoppers. This enables secure, bank-based BLIK payments within the existing Braintree Local Payment Methods (LPM) flow, improving checkout convenience and conversion for customers in Poland.
+
+_BUNDLE-3481_
+
+#### Cardinal Integration Update CSP Policy
+
+For the Braintree extension in Adobe Commerce 2.4.9, the Content Security Policy (CSP) has been updated to support the latest Cardinal (3‑D Secure) integration requirements. This ensures that all Cardinal-hosted scripts, iframes, and related resources used during 3‑D Secure flows are allowed by the browser's CSP, preventing blocked requests and broken challenge/verification experiences.
+
+_BUNDLE-3485_
+
 ### Framework
 
 #### Investigate the latest major version of web-token/jwt-framework
@@ -20,49 +88,49 @@ As part of continuous security review process, we evaluated the latest major rel
 
 _AC-13209 - [GitHub code contribution](https://github.com/magento/magento2/commit/2bac8114) - [GitHub code contribution](https://github.com/magento/magento2/commit/09b36ebb) - [GitHub code contribution](https://github.com/magento/magento2/commit/33b81f28)_
 
+#### [Part 2] - Update all js library and npm dependency with latest available version
+
+composer version support was up to the composer version 2.2.x only. Now the support extended to 2.4.x version as well.
+
+_AC-13792 - [GitHub code contribution](https://github.com/magento/magento2/commit/19844aa0)_
+
 #### Replace carlos-mg89/oauth with PHP Native Functions
 
 Replaced the third-party carlos-mg89/oauth library with native PHP OAuth functions to improve security, reduce external dependencies, and enhance platform stability.
 
 _AC-14075 - [GitHub code contribution](https://github.com/magento/magento2/commit/7b8064f7)_
 
-#### Investigate the latest version chart.js
-
-Upgraded the Chart.js JavaScript charting library to the latest version 4.4.8 to improve chart rendering performance, enhance visual capabilities, and address security vulnerabilities in the admin dashboard and reporting modules.
-
-_AC-14304 - [GitHub code contribution](https://github.com/magento/magento2/commit/768b4442)_
-
-#### Investigate the latest version jquery/uppy and uppy
+#### Upgrade jquery/uppy and uppy libraries the latest version
 
 Upgraded the Uppy file upload library to version 4.13.4 to enhance file upload capabilities, improve user experience, and address security vulnerabilities in file handling across the Adobe Commerce admin interface and frontend components.
 
 _AC-14307 - [GitHub code contribution](https://github.com/magento/magento2/commit/eb491c05)_
 
-#### Investigate the latest version jquery-validate
+#### Upgrade jquery-validate library to the latest version
 
 Upgraded the jQuery Validate library to version 1.21.0 to enhance form validation capabilities, improve user experience, and ensure modern browser compatibility across all Adobe Commerce forms in both admin and frontend interfaces.
 
 _AC-14403 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
 
-#### Investigate the latest version jquery-ui
+#### Upgrade jquery-ui library to the latest version
 
 Upgraded the jQuery UI library to version 1.14.1 to enhance user interface widgets, improve accessibility, and ensure modern browser compatibility across all Adobe Commerce admin and frontend interface components.
 
 _AC-14417 - [GitHub code contribution](https://github.com/magento/magento2/commit/77c589a6)_
 
-#### Investigate the latest version less.js
+#### Upgrade less.js library to the latest version
 
 Upgraded the Less.js CSS preprocessor to version 4.2.2 to enhance CSS compilation performance, improve syntax support, and modernize the theme build process across all Adobe Commerce frontend and admin themes.
 
 _AC-14418 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
 
-#### Investigate the latest version moment-timezone-with-data.js
+#### Upgrade moment-timezone-with-data.js library to the latest version
 
 Upgraded the Moment Timezone library to version 0.5.43 to enhance timezone handling capabilities, update timezone data with latest IANA Time Zone Database changes, and improve date/time processing accuracy across all Adobe Commerce international and multi-timezone operations.
 
 _AC-14419 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
 
-#### Investigate the latest version underscore.js
+#### Upgrade underscore.js library to the latest version
 
 Upgraded the Underscore.js utility library to version 1.13.7 to enhance JavaScript functional programming capabilities, improve data manipulation performance, and ensure modern browser compatibility across all Adobe Commerce frontend and admin interface components.
 
@@ -114,19 +182,6 @@ The ReCaptcha validation is added to updateCustomer, updateCustomerV2, and conta
 
 _LYNX-941_
 
-#### [AC-2.4.9] [EE] Implement ReCaptcha for missing GraphQL mutations
-
-The ReCaptcha validation is added to applyCouponsToCart mutation.
-
-_LYNX-942_
-
-#### [AC-2.4.9] GraphQL API Customer ID value
-
-The Customer ID field in the B2B GraphQL API is now fully supported and available for use in your company management queries and mutations. Previously, this field was deprecated and returned null, which limited its functionality. With this update, the Customer ID field is restored and will return the correct value as expected.
-You can now reliably use the Customer ID field in GraphQL queries and mutations for B2B company management.
-
-_LYNX-955_
-
 ### Other
 
 #### Captcha / reCAPTCHA is not working for API / GraphQL
@@ -135,17 +190,11 @@ In Adobe Commerce 2.4.9, when CAPTCHA (or reCAPTCHA) is enabled for the Create A
 
 _AC-16245 - [GitHub code contribution](https://github.com/magento/magento2/commit/fd7f30ee)_
 
-#### Gift options should not persist on empty cart
+#### braintree branch should be updated with PHP 8.5 support
 
-Fixed an issue where gift options persisted on an empty cart after all items were removed. Gift options now clear automatically when the cart is emptied, ensuring a consistent user experience similar to coupon handling.
+The Braintree payment extension has been updated to support the latest PHP 8.5 runtime, while maintaining compatibility with PHP 8.4.
 
-_LYNX-786_
-
-#### Enhance Gift Options handling during cart merge
-
-Enhanced gift options handling during cart merges to ensure a more consistent user experience. Gift options now follow a prioritized merging logic, preventing unintended overrides when a guest user logs in and their cart is merged with an existing customer cart.
-
-_LYNX-788_
+_BUNDLE-3493_
 
 #### Add clear wishlist operation
 
@@ -198,11 +247,3 @@ _AC-14078 - [GitHub code contribution](https://github.com/magento/magento2/commi
 Admin users are now required to configure only one of the merchant's enabled 2FA providers (for example, Google Authenticator or U2F) to access the Admin panel. Additional enabled providers can be configured later as needed. Previously, when multiple 2FA providers were enabled (e.g., Google Authenticator and U2F), every Admin user was required to configure all enabled providers before they could sign in. This created friction for users who did not have access to all factors (such as a hardware key for U2F).
 
 _AC-8253 - [GitHub code contribution](https://github.com/magento/security-package/commit/71e7936b)_
-
-### Staging & Preview
-
-#### [Feature Request] Content staging preview in mobile view
-
-The staging preview feature in the admin panel now enables browser-simulated mobile device previews to be rendered accurately, providing a visual representation of how the staging update will appear on a mobile device.
-
-_ACP2E-3397 - [GitHub code contribution](https://github.com/magento/magento2/commit/520f9e30)_
