@@ -1,6 +1,6 @@
 ---
 title: Database replication
-description: See the benefits of configuring database replication.
+description: Learn about database replication benefits for Adobe Commerce, including backup, analytics offload, and asynchronous MySQL slave configuration.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 ---

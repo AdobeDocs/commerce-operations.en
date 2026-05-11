@@ -32,7 +32,7 @@ Static content deployment fails when deploying with a compact strategy.
 
 1. Deploy the static content with a compact strategy by running the following command:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -f -s compact
 ```
 

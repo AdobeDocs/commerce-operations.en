@@ -29,19 +29,19 @@ To install memcached on CentOS, perform the following tasks as a user with `root
 
 1. Install memcached and its dependencies:
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -64,7 +64,7 @@ To install memcached on CentOS, perform the following tasks as a user with `root
 1. Save your changes to `memcached` and exit the text editor.
 1. Restart memcached.
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -72,7 +72,7 @@ To install memcached on CentOS, perform the following tasks as a user with `root
 
    For Apache:
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -114,7 +114,7 @@ The test uses a MySQL database, table, and data to verify you can retrieve the d
 
 Create the MySQL database:
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -161,11 +161,11 @@ Where `<memcached hostname or ip>` is either `localhost`, `127.0.0.1`, or the me
 
 Run the script from the command line.
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -175,19 +175,19 @@ The second result is `got result from memcached`, which verifies that the value 
 
 Finally, you can view the memcache keys using Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 At the prompt, enter
 
-```bash
+```shell
 stats items
 ```
 
 The result is similar to the following:
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -199,11 +199,11 @@ STAT items:3:tailrepairs 0
 
 Flush the memcache storage and quit Telnet:
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 

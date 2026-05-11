@@ -27,25 +27,25 @@ To set permissions before you install the application:
 
 1. If you have command-line access, enter the following commands in the order shown:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    To optionally enter all commands on one line, enter the following assuming the application is installed in `/var/www/html/magento2`:
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
@@ -91,13 +91,13 @@ This section discusses how to create the file system owner. (file system owner i
 
 To create a user on CentOS or Ubuntu, enter the following command as a user with `root` privileges:
 
-```bash
+```shell
 adduser <username>
 ```
 
 To give the user a password, enter the following command as a user with `root` privileges:
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -109,11 +109,11 @@ Follow the prompts on your screen to create a password for the user.
 
 For example, to create a user named `magento_user` and give the user a password, enter:
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
@@ -127,13 +127,13 @@ To find the web server user's group:
 
 * CentOS:
 
-   ```bash
+   ```shell
    grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
    ```
 
    or
 
-   ```bash
+   ```shell
    grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
    ```
 
@@ -156,19 +156,19 @@ To put the file system owner in the web server's primary group (assuming the typ
 
 For example, to add the user `magento_user` to the `apache` primary group on CentOS:
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 To confirm that your user is a member of the web server group, enter the following command:
 
-```bash
+```shell
 groups magento_user
 ```
 
 The following sample result shows the user's primary (`magento`) and secondary (`apache`) groups.
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -195,35 +195,35 @@ To set ownership and permissions before you install the application:
 1. Log in to your application server as, or switch to, the file system owner.
 1. Enter the following commands in the order shown:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 To optionally enter all commands on one line, enter the following assuming the application is installed in `/var/www/html/magento2` and the web server group name is `apache`:
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 In the event file system permissions are set improperly and can't be changed by the file system owner, you can enter the command as a user with `root` privileges:
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -236,6 +236,6 @@ After you've performed the other tasks in this topic, enter one of the following
 
 For example,
 
-```bash
+```shell
 su magento_user
 ```

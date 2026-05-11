@@ -34,7 +34,7 @@ The MDVA-40550 patch solves the issue where reindexing results in some or all of
 1. Enable xdebug and make xdebug breakpoint in `\Magento\Indexer\Model\Indexer::reindexAll` and `\Magento\Indexer\Model\IndexMutex::execute`.
 1. Run a **full reindex** of `catalog_category_product` with the command:
 
-    ```bash
+    ```shell
     bin/magento indexer:reindex catalog_category_product
     ```
 
@@ -42,7 +42,7 @@ The MDVA-40550 patch solves the issue where reindexing results in some or all of
 
 1. In another console, run a **partial reindex** in parallel with the command:
 
-    ```bash
+    ```shell
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
     ```
 

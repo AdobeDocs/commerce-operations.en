@@ -6,27 +6,27 @@
 
 1. Change to the application root and run the dump command.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    php bin/magento app:config:dump
    ```
 
    For example, if Commerce is installed in `/var/www/html/magento2`, enter:
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
 1. Confirm that `app/etc/config.php` was updated.
 
-   ```bash
+   ```shell
    git status
    ```
 
    Sample response:
 
-   ```
+   ```text
    On branch m2.2_deploy
    Changed but not updated:
      (use "git add <file>..." to update what will be committed)
@@ -40,6 +40,6 @@
 
 1. Check in your changes to `app/etc/config.php` only to source control.
 
-   ```bash
+   ```shell
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy
    ```

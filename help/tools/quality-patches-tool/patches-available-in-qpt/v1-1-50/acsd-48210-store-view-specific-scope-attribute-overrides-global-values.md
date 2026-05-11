@@ -35,7 +35,7 @@ Importing product prices with multiple rows sharing the same `SKU` and `store_vi
 1. Create a simple product named as *SP01* and set the price to *$84.50*.
 1. Import the product using the following CSV provided below:
     
-    ```
+    ```text
     sku,store_view_code,price
     SP01,default,99.99
     SP01,default,86.59

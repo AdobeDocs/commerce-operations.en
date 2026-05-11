@@ -32,7 +32,7 @@ When editing an existing customer segment with a condition on products within th
 
 1. Ensure that the consumer `matchCustomerSegmentProcessor` is running:
 
-    ```bash
+    ```shell
     $ bin/magento que:cons:st matchCustomerSegmentProcessor
     ```
 
@@ -56,7 +56,7 @@ The **[!UICONTROL Date range]** selector should not add time to the date when ed
     * One date only has the date, while the other has both the date and time specified.
 * The following error appears in the logs:
 
-    ```
+    ```yaml
     report.CRITICAL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2, query was: SELECT `item`.`quote_id` FROM `quote_item` AS `item`
     INNER JOIN `quote` AS `list` ON item.quote_id = list.entity_id WHERE (list.is_active = 1) AND () [] []
     ```

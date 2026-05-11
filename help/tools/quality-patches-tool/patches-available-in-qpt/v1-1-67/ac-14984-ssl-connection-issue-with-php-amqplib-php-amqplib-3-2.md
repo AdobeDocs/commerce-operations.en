@@ -32,7 +32,7 @@ SSL connection fails with an error when using `php-amqplib/php-amqplib` version 
 
 1. Configure the SSL connection in `app/env.php`:
 
-  ```
+  ```text
   'queue' =>
     array (
       'amqp' =>
@@ -62,7 +62,7 @@ The queue consumer starts and processes messages with no errors.
 
 An error message appears in the logs:
 
-```
+```json
 {
   "message": "Invalid frame type 21",
   "context": {},
