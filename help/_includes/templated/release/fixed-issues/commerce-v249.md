@@ -1,10 +1,16 @@
-# Adobe Commerce fixed issues (v2.4.9-beta1)
+# Adobe Commerce fixed issues (v2.4.9)
 
-## Fixed issues in v2.4.9-beta1
+## Fixed issues in v2.4.9
 
-We have fixed 560 issues in the Adobe Commerce 2.4.9-beta1 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 667 issues in the Adobe Commerce 2.4.9 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
+
+#### Attribute set info is cached (EAV cache), but not cleaned after the attribute set is updated in admin area
+
+Resolved missing product attribute values after new attributes are added to an attribute set when the EAV cache is enabled (cache invalidation / API import behavior).
+
+_AC-12321 - [GitHub issue](https://github.com/magento/magento2/issues/38827) - [GitHub code contribution](https://github.com/magento/magento2/pull/38864)_
 
 #### Special Price To Date is wrongly validated on applySpecialPrice
 
@@ -46,6 +52,12 @@ The System now Replaced the awkward phrase "Get new file name if the same is alr
 Same for the attribute option response.
 
 _AC-15473 - [GitHub issue](https://github.com/magento/magento2/issues/39943) - [GitHub code contribution](https://github.com/magento/magento2/pull/39941)_
+
+#### GraphQl Media gallery returns disabled entries.
+
+Fixed the issue for getting only those media gallery images which are not disabled for a product in graphql request response.
+
+_AC-1608 - [GitHub issue](https://github.com/magento/magento2/issues/34342) - [GitHub code contribution](https://github.com/magento/magento2/pull/34897)_
 
 #### Internal Server Error in /V1/products/special-price API Endpoint
 
@@ -144,6 +156,12 @@ _ACP2E-4227 - [GitHub code contribution](https://github.com/magento/magento2/com
 Prior to the fix you were allowed to create gift card products that did not include an amount in global scope. With the fix, a validation has been added that checks for amounts in global scope.
 
 _ACP2E-4395_
+
+#### [CLOUD] Queue is not clearing
+
+Improved AMQP consumer resilience by blocking invalid ack/reject attempts on reconnected channels.
+
+_ACP2E-4621 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
 
 ### APIs, Cart & Checkout
 
@@ -285,6 +303,30 @@ The System is now working fine and this PR sets isSecureArea for the deletion pr
 
 _AC-15723 - [GitHub issue](https://github.com/magento/magento2/issues/40211) - [GitHub code contribution](https://github.com/magento/magento2/pull/38462)_
 
+#### Customer address telephone validation does not work when there are no allowed characters
+
+The System returns an error message stating that the telephone is invalid.
+
+_AC-16227 - [GitHub issue](https://github.com/magento/magento2/issues/40361) - [GitHub code contribution](https://github.com/magento/magento2/pull/40416)_
+
+#### Website and Store objects return ids as strings
+
+Fixed an issue where website and store IDs were returned as strings instead of integers. This resolves type errors in strict mode, allowing EmailNotification::newAccount() and similar methods to work correctly.
+
+_AC-16486 - [GitHub issue](https://github.com/magento/magento2/issues/40469)_
+
+#### Customer city validation does not work for not allowed characters
+
+Fixed an issue where customer addresses could be saved with invalid characters (such as /, @, #, !) in the city field. After this fix, the system correctly validates and rejects addresses containing disallowed characters.
+
+_AC-16504 - [GitHub issue](https://github.com/magento/magento2/issues/40521) - [GitHub code contribution](https://github.com/magento/magento2/commit/57bad413)_
+
+#### [Issue] Fix: Increase IP column length for IPv6 support in admin_user_session
+
+Currently, the ip column in admin_user_session is limited to 15 characters, which is insufficient for IPv6 addresses (up to 45 characters). This PR increases the length to 45 to ensure full IPv6 compatibility and prevent data truncation or errors when IPv6 is used.
+
+_AC-16659 - [GitHub issue](https://github.com/magento/magento2/issues/40570) - [GitHub code contribution](https://github.com/magento/magento2/pull/40563)_
+
 #### [Cloud] Delete operation is forbidden for current area error during customer account creation
 
 After the fix saving a customer with an invalid address returns a message describing the reason for invalidity instead of irrelevant "Delete operation is forbidden for current area".
@@ -316,6 +358,18 @@ Previously, the warning only appeared when custom messages were enabled, creatin
 
 _ACP2E-4374_
 
+#### City name validation is accepting disallowed characters (!"#?)
+
+When entering a city in a customer address, the validation now allows a forward slash and correctly rejects invalid characters such as !, ", #, and ?.
+
+_ACP2E-4527 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
+
+#### Address Validators Breaking Existing Customer after upgrade to 2.4.8-p3
+
+Previously, before this fix, modern telephone numbers with the characters . or \ were not validated properly. After this fix was applied, modern telephone numbers with the characters . or \ are now validated.
+
+_ACP2E-4554 - [GitHub code contribution](https://github.com/magento/magento2/commit/aa2e16d1)_
+
 ### Account, Admin UI
 
 #### [Cloud] No such entity with cartId
@@ -329,6 +383,14 @@ _ACP2E-4137 - [GitHub code contribution](https://github.com/magento/magento2/com
 Fixed an issue where customer validation error messages were not properly translated and formatted across different interfaces. Validation errors now display correctly translated messages in all areas of the application: storefront, adminhtml, rest api and graphql.
 
 _ACP2E-4354 - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
+
+### Account, Cart & Checkout
+
+#### [Cloud] PHPSESSID changed after password reset request and current cart cleared
+
+Before the fix, submitting the forgot-password form caused the session to be destroyed/regenerated (PHPSESSID changed) and the guest cart was cleared. After the fix, submitting the forgot password form leaves the session unchanged and the guest cart is preserved.
+
+_ACP2E-4524 - [GitHub code contribution](https://github.com/magento/magento2/commit/aa2e16d1)_
 
 ### Admin UI
 
@@ -442,6 +504,19 @@ The system now adds explanatory titles to cache management buttons when you move
 
 _AC-16212 - [GitHub issue](https://github.com/magento/magento2/issues/38607) - [GitHub code contribution](https://github.com/magento/magento2/pull/38598)_
 
+#### [Issue] Fix(admin): correct datepicker position inside modal-slide
+
+This pull request fixes an issue where the Magento datepicker does not display correctly inside admin modal dialogs.
+For example, this affected the Advanced Pricing section when editing or creating a product from the admin panel.
+
+_AC-16378 - [GitHub issue](https://github.com/magento/magento2/issues/40468) - [GitHub code contribution](https://github.com/magento/magento2/pull/40225)_
+
+#### FPT value in cart page and product page are different for same configurations
+
+Fixed an issue where Fixed Product Tax (FPT) values displayed differently on product pages and cart pages due to rounding inconsistencies. After this fix, FPT prices are now consistent across catalog, product, and cart pages, eliminating mismatches.
+
+_AC-16550 - [GitHub code contribution](https://github.com/magento/magento2/commit/8391dbcc)_
+
 #### Provide a feature to mass-delete tax rates using the grid
 
 Admin users can now simultaneously delete multiple tax rates from the Admin Tax Rates grid.  [GitHub-33399](https://github.com/magento/magento2/issues/33399)
@@ -456,7 +531,7 @@ _AC-2916 - [GitHub issue](https://github.com/magento/magento2/issues/35358) - [G
 
 #### "Can not resolve reCAPTCHA parameter" entries in exception.log for Google reCAPTCHA Admin Panel
 
-A reCaptcha error in the `var/log/exception.log` file for the Google V3  reCAPTCHA Admin login has been resolved, and no error messages are logged. Previously, the following error was thrown every few seconds when an admin user configured their **Configuration**  >  **Security**  >  **Google reCAPTCHA Admin Panel** settings: `main.ERROR: Can not resolve reCAPTCHA parameter. {"exception":"[object] (Magento\Framework\Exception\InputException(code: 0): Can not resolve reCAPTCHA parameter. at /home/xxxxxxx/public_html/vendor/magento/module-re-captcha-ui/Model/CaptchaResponseResolver.php:25)"} []`.  [GitHub-34975](https://github.com/magento/magento2/issues/34975)
+A reCaptcha error in the `var/log/exception.log` file for the Google V3  reCAPTCHA Admin login has been resolved, and no error messages are logged. Previously, the following error was thrown every few seconds when an admin user configured their **Configuration**  >  **Security**  >  **Google reCAPTCHA Admin Panel** settings: `main.ERROR: Can not resolve reCAPTCHA parameter. {"exception":"[object] (Magento\Framework\Exception\InputException(code: 0): Can not resolve reCAPTCHA parameter. at /home/xxxxxxx/public_html/vendor/magento/module-re-captcha-ui/Model/CaptchaResponseResolver.php:25)"} []`.
 
 _AC-3179 - [GitHub issue](https://github.com/magento/magento2/issues/34975) - [GitHub code contribution](https://github.com/magento/magento2/commit/4f7e5983) - [GitHub code contribution](https://github.com/magento/security-package/commit/804dbc2a)_
 
@@ -592,6 +667,43 @@ Fixed an issue that prevented saving pages in Page Builder when adding banners i
 
 _ACP2E-4399 - [GitHub issue](https://github.com/magento/magento2/issues/38565) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/bdac5bca)_
 
+#### Unable to update the store configuration in Admin Panel
+
+Previously, the local cache, stale cache, and Redis could become unsynchronized when Redis was unavailable. Configuration changes made during Redis outages were not properly reflected after Redis recovered, causing stale values to persist. This fix ensures correct synchronization across all caches so that the latest saved values are preserved and visible even when Redis is down.
+
+_ACP2E-4447 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+#### Archive grid not syncing with latest order data when asynchronous grid indexing is enabled
+
+Sales order archive grid now shows correct order status with async indexing
+
+_ACP2E-4493 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
+
+#### Product attribute Mass update changes product type Virtual->Simple
+
+Prevents the "Does this have a weight?" controls from activating before mass‑update attribute panels are inserted, avoiding unintended weight changes for virtual products.
+
+_ACP2E-4500 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+#### Overlapping text in multi‑page Invoice PDFs when product name and custom options are long
+
+Before the fix, in multi-page Invoice, Shipment, Credit Memo, and Returns PDFs, long product names with custom options could overlap with adjacent columns/items after page breaks, rendering line-item sections unreadable.
+After the fix, line items now flow correctly across pages, and long names/options render without overlap in Invoice, Shipment, Credit Memo, and Return PDFs.
+
+_ACP2E-4630 - [GitHub code contribution](https://github.com/magento/magento2/commit/d8a248cd)_
+
+#### [Cloud] HugeRTE editor blocks emojis after upgrade
+
+Before the fix, WYSIWYG/PageBuilder validation blocked modern 4-byte emoji content unconditionally due to UI rule that was applied too broadly, even on installations where the actual storage path was utf8mb4-safe. After the fix, validation is decided based on the real persistence path by checking the active DB connection charset/collation together with the target content column collation, so utf8mb4-safe content is allowed while utf8/utf8mb3 paths remain protected.
+
+_ACP2E-4675 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0) - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
+
+#### [Cloud] Image paths are absolute on second edit in Pagebuilder
+
+Fixed an issue where Page Builder Text inline editing could save absolute media image URLs after editing an image again, instead of keeping the portable {{media url=...}} directive.
+
+_ACP2E-4698 - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
+
 ### Admin UI, B2B
 
 #### B2B Login as Customer header still has Magento branding
@@ -608,6 +720,14 @@ Fixed an issue where catalog rule indexing could fail with a DDL transaction err
 
 _ACP2E-4378 - [GitHub code contribution](https://github.com/magento/magento2/commit/f7bbcb4e)_
 
+### Admin UI, Catalog, Performance
+
+#### Poor performance of gettree call in Media Gallery
+
+Improved Media Gallery performance by changing directory tree loading to on-demand node expansion instead of building the full tree upfront, significantly reducing initial gettree response time on large media directory structures
+
+_ACP2E-4605 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
+
 ### Admin UI, Content
 
 #### Exception "Cannot create rendition for media asset paths" during image insertion
@@ -615,6 +735,23 @@ _ACP2E-4378 - [GitHub code contribution](https://github.com/magento/magento2/com
 After removing the values of the Maximum Width and Maximum Height of the Media Gallery Image Optimization configuration, the error is not occurred any more during the image optimization process.
 
 _ACP2E-3781 - [GitHub code contribution](https://github.com/magento/magento2/commit/520f9e30)_
+
+### Admin UI, Customer/ Customers
+
+#### UI Form Reset button not working as expected for "Associate to company" field in add and edit page of customer
+
+Fixed an issue where the reset button did not correctly reset the "Associate to Company" field in the customer add/edit form. The form now resets all fields properly without page reload, restoring expected behavior.
+
+_AC-16364_
+
+### Admin UI, Import / export
+
+#### Export CSV file is available for download while export is not finished
+
+Before the fix, queued product export files were written directly to their final location in var/export, so the Admin export grid could display them and allow download before generation had finished. As a result, users could download empty or partially generated CSV files, and unrelated files present in var/export could also appear in the export list and be downloadable.
+After the fix, queued exports are written to a temporary file and published to the final export location only after generation completes successfully. The Admin export grid and download action now expose only completed export files whose format matches the configured Export File Format options, preventing partial downloads and excluding unrelated files from the UI.
+
+_ACP2E-4724 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
 
 ### Admin UI, Order
 
@@ -624,6 +761,30 @@ Resolved a session size overflow during admin order creation by preventing large
 
 _AC-15893_
 
+### Admin UI, Order, Payments
+
+#### Unable to Process Partial Refund - refund calculation mismatch
+
+Online order refund is now working correctly. Previously, it throws this error "PayPal gateway rejects the request. Internal Error".
+
+_ACP2E-4615 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
+
+### Admin UI, Performance
+
+#### Severe slowness in staging admin panel while saving product
+
+Admin product form save/edit is faster for large attribute sets by reducing expensive client-side validation passes while preserving existing validation behavior. This lowers the chance of "page unresponsive" stalls in the admin UI.
+
+_ACP2E-4488 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
+
+### Admin UI, Product
+
+#### [Cloud] RequireJS mixins.js causes duplicate script loading for all deps modules.
+
+Before the fix some storefront JavaScript files could be requested and executed twice, causing intermittent duplicate loads and unstable behavior. After the fix, JavaScript dependencies are loaded only once, eliminating duplicate requests while keeping existing mixin functionality intact.
+
+_ACP2E-4626 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
+
 ### Admin UI, Security
 
 #### Weak Password Management
@@ -631,6 +792,12 @@ _AC-15893_
 The admin user cannot be saved when using the same password. Previously, it was saved successfully without a proper validation.
 
 _ACP2E-3657 - [GitHub code contribution](https://github.com/magento/magento2/commit/df92debe)_
+
+#### Input handling issue on Gift card account expiry date field
+
+When creating or editing a Gift Card Account in Admin, the Expiration Date field is now validated appropriately. Previously, manually entered values that did not match a valid date format could be processed incorrectly when the account was saved.
+
+_ACP2E-4667_
 
 ### Admin UI, Security, Staging & Preview
 
@@ -656,6 +823,12 @@ _AC-8440 - [GitHub code contribution](https://github.com/magento/magento2/commit
 This PR adds a CSP whitelist to the Google Analytics module, enabling it to function independently without a Google Adwords dependency. Google Analytics now works correctly even when the Google Adwords module is disabled.
 
 _AC-16311 - [GitHub issue](https://github.com/magento/magento2/issues/40051) - [GitHub code contribution](https://github.com/magento/magento2/pull/40032)_
+
+#### [Issue] Performance fix for the analytics_collect_data cron job long run
+
+Optimized the analytics_collect_data cron job performance for large databases by updating report validation queries to use LIMIT 1 instead of LIMIT 0. This prevents unnecessary full table data loading during validation and significantly reduces execution time. No functional impact, fully backward-compatible improvement.
+
+_AC-16639 - [GitHub issue](https://github.com/magento/magento2/issues/40590) - [GitHub code contribution](https://github.com/magento/magento2/pull/40463)_
 
 #### Admin Actions Log User Report doesn't show details of what filter was used when applying filters
 
@@ -686,6 +859,18 @@ _ACP2E-4309 - [GitHub code contribution](https://github.com/magento/magento2/com
 Some of the order related reports were not applying store currency rates. After the fix, reports properly apply configured store rates.
 
 _ACP2E-4361 - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
+
+#### Max Disk I/O Spike on Service Nodes Due to aggregate_sales_report_order_data Cron Job
+
+Fixes the issue where the daily aggregated orders report takes an excessive amount of time to generate for a large volume of orders, causing disk I/O spikes and performance degradation. After the fix, the report is generated in a timely manner.
+
+_ACP2E-4363 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+#### [CLOUD] Performance degradation due to analytics_collect_data cron execution
+
+Improve performance related to analytics cron job.
+
+_ACP2E-4496 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
 
 ### B2B
 
@@ -721,6 +906,12 @@ Fixed a TypeError that occurred when adding grouped products to a requisition li
 
 _AC-15862_
 
+#### Proceed to Checkout and Request a Quote not visible on cart after assigning customer to company while logged in
+
+Fixed an issue where, when a customer is assigned to a company while logged in on the storefront, the "Proceed to Checkout" and "Request a Quote" buttons were not visible on the cart page. After this fix, both buttons appear immediately without requiring the customer to log out and log back in.
+
+_AC-16605_
+
 #### Rest API products-render-info return wrong final price for logged in customer
 
 The ticket has a fix for Rest API products-render-info return wrong final price for logged in customer
@@ -745,6 +936,12 @@ Now the performance is significantly improved when unassigning categories in B2B
 
 _ACP2E-3796_
 
+#### [B2B] My Quotes page shows no quotes when some quotes contain deleted products
+
+My quote is now showing the quotes correctly when some quotes contain deleted products.
+
+_ACP2E-4608 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
+
 ### B2B, Cart & Checkout
 
 #### No such entity with cartId = X error is shown on Storefront when login B2B company user from admin feature  "Login as Customer"
@@ -758,6 +955,43 @@ _ACP2E-3994 - [GitHub code contribution](https://github.com/magento/magento2/com
 Resolved an issue where the billing address was not automatically populated during checkout when In-Store Pickup was selected as the delivery method. Without a billing address, checkout could not be completed.
 
 _ACP2E-4030 - [GitHub code contribution](https://github.com/magento/inventory/commit/42d23211)_
+
+### Braintree
+
+#### Multiple coupons do not work as expected for Google Pay
+
+Fixed issue where multiple coupon codes did not work as expected within the Google Pay Express Pay Sheet. Previously, applying a second coupon code would incorrectly remove the first coupon's discount and display inaccurate totals. Removing coupons also did not update the pay sheet correctly.
+Customers can now apply multiple coupon codes in the Google Pay Express Pay Sheet, and all discounts are reflected accurately.
+
+_BUNDLE-3507_
+
+#### Braintree SDK gets call on every page to get client token even if Pay Later message disabled
+
+The Braintree SDK was making a call to retrieve the client token on every page load, even when the Pay Later message was disabled. This resulted in unnecessary requests and potential performance issues.
+The system now only requests the Braintree client token if both the PayPal payment method and the Pay Later message for the cart are enabled. This prevents unnecessary token requests and improves page load performance.
+
+_BUNDLE-3508_
+
+#### Stop rendering vaulting template and js files of Braintree Payment methods in 'Stored Payment Methods' section in customer account area
+
+JavaScript and template files for Braintree Payment methods were being rendered in the 'Stored Payment Methods' section of the customer account area, even when Braintree payment methods and vaulting configurations were disabled. This caused unnecessary errors in the browser console.
+The system now checks if the Braintree payment method and its vaulting configuration are enabled before rendering related files and forms. Only when both are enabled will the vaulting templates and scripts appear in the 'Stored Payment Methods' section.
+
+_BUNDLE-3509_
+
+#### Apple Pay and Google Pay Third Party compatibility issues
+
+Customers encountered errors when attempting to make payments via Apple Pay or Google Pay using third-party checkout extensions (such as Hyvä Checkout) or customizations. Specifically, Apple Pay would throw a TypeError due to a missing merchant name, and Google Pay could also fail depending on custom code interactions.
+Compatibility issues with Apple Pay and Google Pay have been resolved. The system now properly handles third-party checkout extensions and customizations, ensuring that required configuration values are present and correctly returned.
+
+_BUNDLE-3510_
+
+#### Google Pay via Braintree leads to infinite loading during checkout
+
+When Google Pay was enabled via Braintree, the checkout process would enter an infinite loading state after selecting Google Pay as the payment method. This prevented customers from completing their orders, with no error message or feedback provided.
+The Google Pay integration via Braintree has been fixed to ensure the payment flow proceeds as expected. Customers can now select Google Pay during checkout, complete the payment process, and place orders successfully.
+
+_BUNDLE-3512_
 
 ### Cart & Checkout
 
@@ -802,6 +1036,12 @@ _AC-14241 - [GitHub code contribution](https://github.com/magento/magento2/commi
 The system now will not throw internal server error with message when the selected option that no longer exists
 
 _AC-14256 - [GitHub issue](https://github.com/magento/magento2/issues/39729) - [GitHub code contribution](https://github.com/magento/magento2/pull/39888)_
+
+#### Subtotal shows 0 after checking out with multiple addresses and adding a different option from configurable product
+
+Fixed an issue where the cart subtotal was incorrectly shown as 0 after adding a different option of a configurable product following multi-address checkout. Subtotal now correctly reflects the actual cart value.
+
+_AC-14460 - [GitHub code contribution](https://github.com/magento/magento2/commit/57bad413)_
 
 #### GraphQL addWishlistItemsToCart Fails to Update Quantity for Existing Cart Items When One Wishlist Item Is Invalid (Magento 2.4.7-p3)
 
@@ -858,11 +1098,24 @@ Fixed an issue where users were redirected to the My Account login page instead 
 
 _AC-15962_
 
+#### [Issue] Call RemoveItem on cart instead of ItemRepository
+
+Replaces the deleteById calls on the CartItemRepository with removeItem on the cart instance.
+This makes sure expected observers are triggered and the item is actually updated on the cart object as well, instead of in the database only.
+
+_AC-15963 - [GitHub issue](https://github.com/magento/magento2/issues/40255) - [GitHub code contribution](https://github.com/magento/magento2/pull/40248)_
+
 #### [Cart] Shopping cart page is not loading when Fixed product Tax is enable
 
 Fixed an issue where the shopping cart page entered infinite loading when Fixed Product Tax (FPT) was enabled. The problem was caused by incorrect subtotal calculations due to tax being included in the same HTML element as the item price, leading to a mismatch between central and summary subtotals. After the fix, the cart loads correctly and displays accurate totals.
 
 _AC-16096 - [GitHub code contribution](https://github.com/magento/magento2/commit/01cee3c3)_
+
+#### Cart Price Rule discount not working with exclude sku condition
+
+Fixed an issue where cart price rules were incorrectly applied even when excluded SKUs were present in the subtotal calculation. The discount logic now correctly ignores excluded items when evaluating rule conditions.
+
+_AC-16417 - [GitHub issue](https://github.com/magento/magento2/issues/40503) - [GitHub code contribution](https://github.com/magento/magento2/commit/8391dbcc)_
 
 #### Cart price rule Action "Price in cart" condition, applying when It should not
 
@@ -949,6 +1202,36 @@ Coupon times_used count is now updated correctly when an order is partially canc
 
 _ACP2E-4365 - [GitHub code contribution](https://github.com/magento/magento2/commit/61c96348)_
 
+#### [CLOUD] issue in applying a Gift Card with Recaptcha v2 ("I am not a robot")
+
+Gift cards are now applied correctly when reCAPTCHA v2 ("I am not a robot") is enabled, after successful reCAPTCHA validation.
+
+_ACP2E-4410_
+
+#### A null quote is getting created when using Login as Customer from Admin
+
+Resolved an issue that caused a null quote to be created during the "Login as Customer" flow.
+
+_ACP2E-4472 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+#### Inconsistency in Bundle Products behavior with Flat Rate Shipping and Free Shipping
+
+Prior to the fix, free shipping was not being properly calculated for bundle products when provided through cart discount rules. After the fix, free shipping is properly calculated for bundle products.
+
+_ACP2E-4536 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
+
+#### Order can't be placed for products with numerical SKUs
+
+The system no longer throws an error when placing an order for a product with a numeric SKU.
+
+_ACP2E-4669 - [GitHub code contribution](https://github.com/magento/inventory/commit/83d11138)_
+
+#### Customer Address Attribute (EAV) validation rules conflicts hardcoded validation rules.
+
+Improved customer address telephone validation to support values up to 255 characters, aligning server-side checks with database limits. Error handling was also refined so that overlength phone numbers return a clear length-specific message.
+
+_ACP2E-4735 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
+
 ### Cart & Checkout, GraphQL
 
 #### Error in mapping message to error code when placing order via GraphQL
@@ -968,6 +1251,12 @@ _ACP2E-4248 - [GitHub code contribution](https://github.com/magento/magento2/com
 When a graphQL request for an item with insufficient quantity was made, a proper error message with an error code was returned, and if the requested quantity is available, the cart update was successful.
 
 _ACP2E-4404 - [GitHub code contribution](https://github.com/magento/magento2/commit/1c547060)_
+
+#### [Coupon] Intermittent Duplicate Coupon Entry Error in quote_coupons Table
+
+Resolved an intermittent duplicate key error on the quote_coupons table when multiple cart merge or quote save requests ran at the same time.
+
+_ACP2E-4521_
 
 ### Cart & Checkout, GraphQL, Inventory / MSI
 
@@ -993,6 +1282,22 @@ _ACP2E-4266 - [GitHub code contribution](https://github.com/magento/inventory/co
 Prior to the implementation of this fix, gift card emails were sent after the invoice had been created. However, after the fix was applied, gift card emails are now sent after invoices have been successfully saved and committed.
 
 _ACP2E-3905_
+
+### Cart & Checkout, Performance
+
+#### [TOYOTA] Performance issue with the Magento\Store\Model\System\Store class
+
+Performance improvement related to multiple stores and websites.
+
+_ACP2E-4491 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+### Cart & Checkout, Pricing, Tax
+
+#### Bundle product prices show incorrect tax and currency values between PDP and Cart in a multi-currency setup.
+
+Bundle product prices are now showing correctly between PDP and Checkout pages.
+
+_ACP2E-4673 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
 
 ### Cart & Checkout, Promotion
 
@@ -1119,6 +1424,12 @@ Now, four products are displayed per row as expected.
 
 _AC-14463 - [GitHub issue](https://github.com/magento/magento2/issues/39817) - [GitHub code contribution](https://github.com/magento/magento2/commit/b9f5d6f7)_
 
+#### Magento Catalog Product list widget returns incorrect count
+
+Adobe Commerce Catalog Product List widget now returns the correct total count and pagination (e.g. 9 items across pages as configured).
+
+_AC-14541 - [GitHub issue](https://github.com/magento/magento2/issues/39863) - [GitHub code contribution](https://github.com/magento/magento2/pull/40421)_
+
 #### Wishlist count not displayed on homepage/other pages except wishlist page in customer menu
 
 Fixed issue where the wishlist count appeared as empty parentheses on non-wishlist pages.
@@ -1126,11 +1437,24 @@ Now, the correct wishlist item count is displayed next to "My Wish List" across 
 
 _AC-14607 - [GitHub issue](https://github.com/magento/magento2/issues/39892) - [GitHub code contribution](https://github.com/magento/magento2/commit/a3b1abc2) - [GitHub code contribution](https://github.com/magento/magento2/commit/b3774fbe)_
 
+#### Meta tags auto generation: variables cannot be used multiple times
+
+Product meta keyword auto-generation now replaces all placeholders in the configured mask (e.g. `{{name}}, order {{name}}`), not only the first occurrence.
+
+_AC-14626 - [GitHub issue](https://github.com/magento/magento2/issues/35670) - [GitHub code contribution](https://github.com/magento/magento2/pull/40412)_
+
 #### catalog_product_save_before observer throws date-related error when using REST API without store-level values (getFinalPrice() issue)
 
 This PR adjusts the processing of SpecialFromDate to ensure proper formatting when the date is provided as a DateTimeInterface instance. This prevents errors arising during getFinalPrice() execution under certain scenarios.
 
 _AC-14847 - [GitHub issue](https://github.com/magento/magento2/issues/39959) - [GitHub code contribution](https://github.com/magento/magento2/pull/40003)_
+
+#### Company's Customer Group ID is not assigned to company admin's Customer Group ID when company admin is changed
+
+When changing the admin of a company in the B2B, the new company admin's Customer Group ID was not updated to match the company's assigned Shared Catalog. This caused tier prices and category permissions for the new admin to be based on the previous company's customer group, leading to incorrect pricing and permissions.
+The system now correctly updates the company admin's Customer Group ID when the admin is changed. This ensures that the new admin receives the correct tier prices and category permissions associated with their company's Shared Catalog.
+
+_AC-14897 - [GitHub issue](https://github.com/magento/magento2/issues/39964)_
 
 #### URGENT - Cannot add product to bundle when the product to add has customizable options
 
@@ -1140,6 +1464,12 @@ Now, products with customizable options can be added to bundles without includin
 This enables bundle creation without duplicating products or affecting inventory levels.
 
 _AC-14958 - [GitHub issue](https://github.com/magento/magento2/issues/39993)_
+
+#### Product stock alert's website and stock mismatch issue for multi website
+
+This fix includes website_id and store_id from product_alert_stock and product_alert_price tables in the collection SELECT clause, ensuring the admin grid displays the correct website where each alert was subscribed.
+
+_AC-15044 - [GitHub issue](https://github.com/magento/magento2/issues/40027) - [GitHub code contribution](https://github.com/magento/magento2/pull/40431)_
 
 #### Negative `?p=` query string causes ElasticSearch exception
 
@@ -1175,6 +1505,12 @@ Confirmed that the incorrect "As low as" price for configurable products when FP
 
 _AC-15718 - [GitHub issue](https://github.com/magento/magento2/issues/40171) - [GitHub code contribution](https://github.com/magento/magento2/commit/a06a4a57)_
 
+#### [Issue] Fix error visiting compare page without items
+
+Fixes a bug where visiting the catalog product compare page with no compare items caused a fatal error by ensuring the compare action safely handles empty item collections instead of throwing exceptions.
+
+_AC-15746 - [GitHub issue](https://github.com/magento/magento2/issues/40205) - [GitHub code contribution](https://github.com/magento/magento2/pull/40203)_
+
 #### Time complexity of _loadAttributes in Eav\Model\Entity\Collection\AbstractCollection increases with number of products in cart and attributes
 
 This PR optimized _loadAttributes in Eav\Model\Entity\Collection\AbstractCollection by replacing nested loops with array union (+) and reducing calls to _setItemAttributeValue, improving performance for large product carts.
@@ -1187,11 +1523,23 @@ Resolved a caching issue with configurable product galleries by adding a defensi
 
 _AC-16066 - [GitHub issue](https://github.com/magento/magento2/issues/33965) - [GitHub code contribution](https://github.com/magento/magento2/commit/3b5ac075)_
 
-#### Dropdown option deletion is not working while creating attribute on product page
+#### In-Store Pickup email is still using legacy methods
 
 No description available.
 
-_AC-16437_
+_AC-16380 - [GitHub issue](https://github.com/magento/inventory/issues/3384) - [GitHub code contribution](https://github.com/magento/inventory/pull/3385) - [GitHub code contribution](https://github.com/magento/inventory/commit/b4aeda50)_
+
+#### Dropdown option deletion is not working while creating attribute on product page
+
+The system now correctly displays all values in the dropdown when creating a new attribute with more than 20 values. Previously, only the first 20 values or another selected page values were displayed, causing the remaining values to be missing.
+
+_AC-16436_
+
+#### Dropdown option deletion is not working while creating attribute on product page
+
+Fixed an issue where deleted dropdown options were still retained when creating product attributes. The system now correctly removes selected options and reflects the accurate count after saving.
+
+_AC-16437 - [GitHub code contribution](https://github.com/magento/magento2/commit/57bad413)_
 
 #### Product page gives error because of url rewrites
 
@@ -1357,6 +1705,37 @@ Related products matched by target rules now remain correctly associated through
 
 _ACP2E-4430_
 
+#### [CLOUD] Circular category dependency
+
+Prior to the fix you could save categories with circular dependency. After the fix, this behaviour is prevented through a validation rule.
+
+_ACP2E-4505 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
+
+#### CMS hierarchy does not update hierarchical URL when child page URL key is changed (2.4.8‑p3)
+
+Fixed an issue where changing a CMS page's URL key did not update the page's hierarchical URL (e.g. /help/my-account stayed the same after renaming to my-account-2). The hierarchy update logic now correctly includes the page's own node, so its request_url is updated, and the new path (e.g. /help/my-account-2) works as expected.
+
+_ACP2E-4531_
+
+#### Image placeholder not displaying as expected for different stores
+
+Prior to the fix placeholder images were not being loaded in store code when this was inserted in the URL. After the fix, image placeholders are scope-sensitive with or without store code provided in the URL.
+
+_ACP2E-4533 - [GitHub code contribution](https://github.com/magento/magento2/commit/aa2e16d1)_
+
+#### [CLOUD] Deadlock on table magento_catalogpermissions_index_product. continuation
+
+Before the fix, running Catalog Permissions product reindex could leave existing permission index rows unchanged, so updated category permission grants were not reliably reflected on products.
+  After the fix, reindex correctly updates existing permission index rows, so permission changes are consistently applied in storefront access, pricing visibility, and checkout availability.
+
+_ACP2E-4603_
+
+#### Target Rule indexer cron does not pick products enabled only at store view scope
+
+Piror to the fix, products that were not enabled in the Admin scope, were not being picked up by the target rule indexer. Now, after the fix, products are picked up if are enabled in at least one  scope.
+
+_ACP2E-4706_
+
 ### Catalog, GraphQL
 
 #### GraphQl invalid discount calculation
@@ -1370,6 +1749,12 @@ _ACP2E-3993 - [GitHub code contribution](https://github.com/magento/magento2/com
 After the fix, product's media_gallery is returned as expected in the GraphQL response for the cart request.
 
 _ACP2E-4185 - [GitHub code contribution](https://github.com/magento/magento2/commit/45cbf9b6)_
+
+#### [Cloud] - Error shows when the catalog_product_entity_int value for attribute_type select 0 or Null in the graphql products
+
+Fixed an issue where the GraphQL products query with aggregations returns an error with invalid attribute values or options. The query now correctly handles invalid data and returns correct results.
+
+_ACP2E-4529 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
 
 ### Catalog, GraphQL, Search
 
@@ -1553,6 +1938,18 @@ Fixed an issue in multi-shipping checkout where the review order page displayed 
 
 _AC-15664 - [GitHub code contribution](https://github.com/magento/magento2/commit/3cf1a106)_
 
+#### Media Gallery folder structure disappears when category image name starts with "-" (dash)
+
+No description available.
+
+_AC-16544 - [GitHub issue](https://github.com/magento/magento2/issues/40536)_
+
+#### "CMS block contains invalid content" error is displayed when saving "Catalog Events Lister" CMS Block
+
+Fixed an issue where saving the default "Catalog Events Lister" CMS block displayed the error "CMS block contains invalid content". After this fix, the block can be saved successfully without any errors in the Admin panel.
+
+_AC-16686 - [GitHub code contribution](https://github.com/magento/magento2/commit/0c9a749b)_
+
 #### bin/magento config:show(or set) design/theme/theme_id fails
 
 Fixed issue where the CLI commands bin/magento config:show and config:set failed for the design/theme/theme_id path despite the configuration being present.
@@ -1638,6 +2035,18 @@ Now, admin users with website scope permissions can edit the content of banners 
 
 _ACP2E-4468_
 
+#### [ADOBE STOCK] Critical logs on "Failed to retrieve Adobe Stock search files results" even when the integration is disabled.
+
+The system no longer logs error "Failed to retrieve Adobe Stock search files results" when Adobe Stock Integration is disabled.
+
+_ACP2E-4634_
+
+#### Errors when creating new pages and using Page Builder throwing error
+
+Fixed an issue where CMS pages failed to save when using Page Builder.
+
+_ACP2E-4709_
+
 ### Customer/ Customers
 
 #### Exception on Storefront when Admin adds CustomerCustomAttribute block via CMS Page Content
@@ -1660,6 +2069,12 @@ This bug fixed the issue where minimum and maximum date validation for the Date 
 In 2.4.9-alpha3, validation now correctly blocks saving customers with DOB outside the allowed range, showing an error message.
 
 _AC-13535 - [GitHub code contribution](https://github.com/magento/magento2/commit/68a45d0a)_
+
+#### [Admin][Customer] Password Reset on Customer Admin is failing
+
+Fixed an issue where resetting a customer's password from the admin panel caused a system error and page crash. Password reset now works correctly and sends the reset link without errors, even in edge cases involving store changes.
+
+_AC-14940 - [GitHub code contribution](https://github.com/magento/magento2/commit/3e41a43b)_
 
 #### Ajax 401 error load on Warning screen in admin panel while Login as Customer permission revoked
 
@@ -2038,6 +2453,12 @@ This PR Refines Composer autoloader exclusions to skip test classes, reducing un
 
 _AC-15743 - [GitHub issue](https://github.com/magento/magento2/issues/40109) - [GitHub code contribution](https://github.com/magento/magento2/pull/40107)_
 
+#### NewRelic Module - Remove unneeded dependencies
+
+Removes the unnecessary magento/magento-composer-installer dependency from the magento/module-new-relic-reporting module to clean up unused/tight coupling in dependencies
+
+_AC-15945 - [GitHub issue](https://github.com/magento/magento2/issues/40243)_
+
 #### [Issue] Prevent `db_schema.xml` declarations with `comment=""` from breaking zero downtime deployments
 
 The system now prevents db_schema.xml declarations with comment="" from breaking zero downtime deployments
@@ -2308,6 +2729,20 @@ Previously, installation of the latest Magento 2 version failed when using Maria
 
 _ACP2E-4367 - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
 
+#### Cron captcha_delete_expired_images not working after Magento 2.4.8 update
+
+Prior to the fix, expired captcha images were not being automatically deleted anymore. After the fix, expired captcha images are deleted by corresponding cron task.
+
+_ACP2E-4512 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+### Framework, Performance
+
+#### [CLOUD] Slow MySQL reconciliation query in sales grid async cron – full table scan, 20+ s, ~14M rows examined
+
+Improved sales grid async reconciliation performance by switching missing-ID discovery to bounded entity_id windows with cursor-based progression, reducing repeated large-table scans on high-volume stores.
+
+_ACP2E-4585 - [GitHub code contribution](https://github.com/magento/magento2/commit/aa2e16d1)_
+
 ### Framework, Search
 
 #### Opensearch 2.19.1 illegal_argument_exception on one-priced categories
@@ -2352,7 +2787,7 @@ _AC-8949 - [GitHub code contribution](https://github.com/magento/magento2/commit
 
 #### GraphQL Response for Order placement does not include the exception message
 
-Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema. This should be added as known BIC, approved by PM here: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema.
 
 _ACP2E-3399 - [GitHub code contribution](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2460,6 +2895,38 @@ Prior to the fix, a guest order customer assignment was not considering account 
 
 _ACP2E-4312 - [GitHub code contribution](https://github.com/magento/magento2/commit/c135fc3a)_
 
+#### AC-2.4.9 - Unable to search orders on EDS boilerplate
+
+The guestOrder GraphQL query input type has been updated to GuestOrderInformationInput instead of OrderInformationInput.
+
+_LYNX-872_
+
+#### [AC-2.4.9] Cart query returns incorrect availability status for products with Multi-Source Inventory (MSI) and default stock is 0
+
+Resolved an issue where the Cart API incorrectly returned is_available: false for products that had sufficient inventory across Multiple Source Inventory (MSI) sources.
+
+_LYNX-918_
+
+#### [AC-2.4.9] cannot set a customer's shipping/billing address with setNegotiableQuoteShippingAddress/setNegotiableQuoteBillingAddress GQLs
+
+Exposed the uid field in the Customer Address GraphQL query to enable setting shipping and billing addresses in negotiable quotes.
+
+_LYNX-924_
+
+#### [AC-2.4.9] Order List | internal server error
+
+Ensured stability in order flows by returning null for missing purchased products, avoiding exceptions in order history and recent orders.
+
+_LYNX-937_
+
+#### [AC-2.4.9] Align NegotiableQuoteBillingAddressInput with BillingAddressInput
+
+'
+Aligned NegotiableQuoteBillingAddressInput, BillingAddressInput, ShippingAddressInput and GiftRegistryShippingAddressInput to support customer address uid while deprecating customer address id.
+Introduced deleteCustomerAddressV2 and updateCustomerAddressV2 mutations to support customer address uid and deprecated the existing deleteCustomerAddress and updateCustomerAddress mutations.
+
+_LYNX-950_
+
 ### GraphQL, Inventory / MSI
 
 #### Issue with only_x_left_in_stock in Magento 2 GraphQL – Incorrect Calculation When Using Thresholds
@@ -2473,6 +2940,14 @@ _AC-15832 - [GitHub code contribution](https://github.com/magento/inventory/comm
 After the fix, the merge carts GraphQL request properly checks the product quantity, taking into account the stock configuration.
 
 _ACP2E-4184 - [GitHub code contribution](https://github.com/magento/inventory/commit/5632fb5e)_
+
+### GraphQL, Order, Pricing
+
+#### [Cloud] The SalesGraphQl customerOrders query returns incorrect values for the order item fields
+
+Fixes the issue where the SalesGraphQl customerOrders query returned inflated original_price_including_tax and original_row_total_including_tax values when Catalog Prices were set to "Including Tax" because tax was applied a second time to prices that already included tax.
+
+_ACP2E-4762 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
 
 ### GraphQL, Product
 
@@ -2569,6 +3044,12 @@ _ACP2E-4243 - [GitHub code contribution](https://github.com/magento/magento2/com
 Fixed an undefined array key error when importing customers with uppercase emails when Account Sharing is set to Global. Email normalization is now consistent throughout the import process, ensuring customers can be imported regardless of email case. Website-level account sharing behavior remains unchanged.
 
 _ACP2E-4373 - [GitHub code contribution](https://github.com/magento/magento2/commit/31258bf6)_
+
+#### Advanced Pricing CSV, Products CSV not being exported. OOM even with 4G memory limit
+
+Before the fix, full Product and Advanced Pricing exports could fail with high memory usage/OOM on large catalogs, and product export pagination could produce duplicate rows when dynamic page-size changed during processing. After the fix, exports complete with stable memory behavior using paged batch processing, duplicate rows from pagination overlap are eliminated, and exported row content remains aligned with baseline output.
+
+_ACP2E-4587 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
 
 ### Import / export, Customer/ Customers
 
@@ -2671,6 +3152,32 @@ SKU changes are now prohibited for products with an active Scheduled Update; sav
 
 _ACP2E-4389_
 
+#### Bundle saleability status not updated when order is cancelled
+
+Bundle product salability now calculated correctly after cancelling order.
+
+_ACP2E-4481 - [GitHub code contribution](https://github.com/magento/inventory/commit/96b77663)_
+
+#### Magento allows overselling when multiple customers place orders concurrently
+
+With MSI, multiple customers could place orders for the same product at the same time and exceed available stock, causing overselling. After the fix, only one order can succeed per product when checkouts run concurrently, so overselling no longer occurs.
+
+_ACP2E-4509 - [GitHub code contribution](https://github.com/magento/inventory/commit/a33c60f2)_
+
+#### [CLOUD] Timeouts if clients have more than 140 article in basket
+
+Inventory database queries have been optimized to eagerly load inventory data during checkout. This eliminates the need for individual queries for each SKU, leading to a significant performance boost for checkout with large shopping carts.
+
+_ACP2E-4519 - [GitHub code contribution](https://github.com/magento/inventory/commit/40858072)_
+
+### Loyalty
+
+#### [CLOUD] getCustomerRewardPoints throws an exception when customer has no points
+
+Customer reward points are successfully initiated when created via the admin.
+
+_ACP2E-4403 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
+
 ### Order
 
 #### AbstractAddress setData('custom_attributes', AttributeValue[]) breaks customAttributes
@@ -2732,6 +3239,12 @@ The system now send a shipment confirmation email as it is enabled in the store 
 
 _AC-14563 - [GitHub issue](https://github.com/magento/magento2/issues/39861) - [GitHub code contribution](https://github.com/magento/magento2/pull/39897)_
 
+#### Invoice addComment can throw error when Invoice getComments is called first
+
+This PR resolves a critical bug where calling $invoice->getComments() before $invoice->addComment() caused a fatal error "Call to a member function addItem() on array". The fix implements proper type checking and conversion between array and Collection types in the Invoice model's comment methods, ensuring both methods can be called in any order without errors while maintaining backward compatibility.
+
+_AC-14848 - [GitHub issue](https://github.com/magento/magento2/issues/39884) - [GitHub code contribution](https://github.com/magento/magento2/pull/40428)_
+
 #### Filtering on date does not work because of ambiguous field names
 
 In Magento 2.4.7-p6, filtering the order grid by date was reported to cause an error due to joins with Braintree modules.
@@ -2777,6 +3290,18 @@ _AC-16059 - [GitHub issue](https://github.com/magento/magento2/issues/40309) - [
 Fixed an issue where requisition lists could not be created for products assigned to a new website and source when "Add Store Code to URLs" was enabled. The problem occurred because the store code was stripped from the API request, causing an unauthorized error. After the fix, the correct store context is preserved and requisition lists are created successfully.
 
 _AC-16226_
+
+#### Sales->Orders grid "shipping address" column is missing country
+
+Fixed an issue where the shipping address column in the admin Orders grid did not display the country for international orders. The address now includes country information, improving order visibility and usability.
+
+_AC-16256 - [GitHub issue](https://github.com/magento/magento2/issues/40403) - [GitHub code contribution](https://github.com/magento/magento2/commit/3e41a43b)_
+
+#### Async order consumer rejects orders with deferred stock update: NoSuchEntityException in CartManagementPlugin::getActive() (inactive quote)
+
+Fixed a critical issue where async checkout with deferred stock update failed for guest orders. Previously, the consumer threw a NoSuchEntityException due to inactive quotes, causing orders to be marked Rejected instead of Pending. After this fix, the consumer correctly processes inactive quotes, moves orders from Received to Pending, and adjusts salable quantities as expected. MFTF test AsyncOrderWithAsyncStockReservationTest now passes.
+
+_AC-16680 - [GitHub code contribution](https://github.com/magento/inventory/commit/d3b2ef0b)_
 
 #### Custom Price of 0 gets reset to original price on reorder.
 
@@ -2858,6 +3383,18 @@ Fixed incorrect tax calculation in credit memos when creating a partial refund f
 
 _ACP2E-4384 - [GitHub code contribution](https://github.com/magento/magento2/commit/61c96348)_
 
+#### GraphQL cancelOrder does not cancel orders fully paid using Gift Card
+
+Prior to the fix, an order that has been fully paid through a gift card did not automatically go to "closed" status when being called through a GraphQL mutation. Now, after the fix, the order goes to closed status when being cancelled through GraphQL.
+
+_ACP2E-4455 - [GitHub code contribution](https://github.com/magento/magento2/commit/e2b23caa)_
+
+#### Coupon usage doesn't revert upon order cancellation/rejection
+
+When you cancel an order, the applied coupon usage is now correctly reset even if the order status configuration has been modified. This could cause coupons to remain marked as used after an order was canceled when custom order status settings were in place.
+
+_ACP2E-4525_
+
 ### Order, Pricing
 
 #### Admin displays incorrect currency symbol on when creating return
@@ -2881,6 +3418,36 @@ _ACP2E-4157 - [GitHub code contribution](https://github.com/magento/magento2/com
 Adobe Commerce now allows merchants to leave the Cap Reward Points Balance At field empty while still setting a value for Rewards Points Balance Redemption Threshold. Previously, when configuring reward points under Stores > Configuration > Customers > Reward Points, entering a positive number for Rewards Points Balance Redemption Threshold and leaving Cap Reward Points Balance At blank triggered the validation error: "The \"Cap Reward Points Balance\" is invalid. The balance needs to be a positive number or left empty. Verify and try again.", preventing merchants from saving the configuration without a cap. ACP2E-3977
 
 _ACP2E-3977_
+
+#### Cart price rules based on customer segments delay for registered users
+
+Fixed an issue where cart price rules based on customer segments were not applied immediately for registered users. The discount now correctly applies upon adding a qualifying product to the cart without requiring a token refresh.
+
+_LYNX-814_
+
+#### GQL - quantity field in ProductInterface not return salable qty
+
+Resolved GraphQL issue where the quantity field in ProductInterface was not returning the saleable quantity.
+
+_LYNX-816_
+
+#### Cannot return null for non-nullable field "SelectedShippingMethod.carrier_code"
+
+Fixed an issue where selecting the second shipping method during checkout with a US address caused a Cannot return null for non-nullable field "SelectedShippingMethod.carrier_code" error. This fix ensures smooth navigation to checkout without triggering internal server errors.
+
+_LYNX-817_
+
+#### [AC-2.4.9] addProductsToCartMutation returns 200 on error
+
+Introduced a new error code, REQUIRED_PARAMETER_MISSING, to handle user errors when configurable product options are not selected during add-to-cart.
+
+_LYNX-884_
+
+#### [AC-2.4.9] Error when requesting CartItem.not_available_message or is_available field when cart inventory check is disabled
+
+Fixed error when accessing not_available_message or is_available on CartItem when cart inventory check disabled.
+
+_LYNX-910_
 
 ### Other Developer Tools
 
@@ -2961,6 +3528,12 @@ Card information is now properly persisted and displayed when using saved cards 
 
 _ACP2E-4346 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032)_
 
+#### Cron job stuck due to OOM - request to review innodb_buffer_pool_size and PHP memory_limit for cron
+
+Payment transaction processing has been improved
+
+_ACP2E-4601 - [GitHub code contribution](https://github.com/magento/magento2/commit/c12a7510)_
+
 ### Performance
 
 #### [Issue] Update Store.php
@@ -3029,6 +3602,24 @@ Prior to the fix, cache keys used for remote storage metadata were not expiring.
 
 _ACP2E-4345 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032)_
 
+#### [CLOUD][B2B] [Mainline] sales_clean_quotes getSize() bottleneck
+
+Improve the performance of the sales_clean_quotes cron job.
+
+_ACP2E-4610 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
+
+#### Last level Subcategories show zero product count in admin category tree
+
+Prior to the fix, leaf categories did not incorporate product count when displayed in the administrator area category tree. After the fix, product count is properly displayed for each category leaf.
+
+_ACP2E-4689 - [GitHub code contribution](https://github.com/magento/magento2/commit/d8a248cd)_
+
+#### Slow query performance on the magento_reward_history table due to its large data
+
+Fixed the issue where the reward points expiration cron job performed slowly on large magento_reward_history tables. Previously, the query used by the scheduled points expiration lacked composite database indexes, causing full table scans on tables with millions of records.
+
+_ACP2E-4748_
+
 ### Pricing
 
 #### Price is always 0 for bundle product items without dynamic price in order rest API
@@ -3071,6 +3662,12 @@ _ACP2E-4002_
 Resolved an issue where the regular price was not displayed when a special price was applied. The regular price now correctly appears alongside the special price as expected.
 
 _ACP2E-4100 - [GitHub code contribution](https://github.com/magento/magento2/commit/47721be6)_
+
+#### Order or filter by price not working for out-of-stock bundle products
+
+When the "Display Out of Stock Products" option is enabled, the products listing page now correctly filters and sorts out-of-stock bundle products by price.
+
+_ACP2E-4475 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628) - [GitHub code contribution](https://github.com/magento/inventory/commit/a33c60f2)_
 
 ### Product
 
@@ -3166,6 +3763,12 @@ Now, the exception message includes the missing SKU or ID, aiding in debugging a
 This change does not affect any functional behavior of the API.
 
 _AC-15199 - [GitHub issue](https://github.com/magento/magento2/issues/40090) - [GitHub code contribution](https://github.com/magento/magento2/commit/1b1baf1d)_
+
+#### Unnecessarly escaped charaters in ProductInterface
+
+The system now returns unescaped `>` in the name in GraphQL response.
+
+_AC-15494 - [GitHub issue](https://github.com/magento/magento2/issues/40178) - [GitHub code contribution](https://github.com/magento/magento2/pull/40423)_
 
 #### Attribute Set Doesn't exist error breaks the page
 
@@ -3264,6 +3867,38 @@ Before the fix catalog price rules did not apply when `special_price` was set on
 
 _ACP2E-4372 - [GitHub code contribution](https://github.com/magento/magento2/commit/61c96348)_
 
+#### Target Rule incremental indexer does not pick disabled products
+
+Target Rule incremental indexing now responds when a product is enabled or disabled, ensuring related/upsell/cross-sell recommendations update without a full reindex.
+
+_ACP2E-4402_
+
+#### Customer Segmentation is not working properly with Rest API
+
+Customer segments based on order count now update correctly when orders are placed via the REST API. Previously, segment membership was not updated for API orders because the observer relied on the customer session, which is not available in API requests.
+
+_ACP2E-4590_
+
+#### Unable to create Cart Price rule with 'Category (Children Only)' Action condition via REST API
+
+Fixes the issue where a Cart Price Rule condition attribute scope, such as Category (Parent Only) and Category (Children Only), was not exposed when rules were retrieved or updated through the REST API.
+
+_ACP2E-4653 - [GitHub code contribution](https://github.com/magento/magento2/commit/d8a248cd)_
+
+#### Cart price rules for free shipping is not working as expected for bundle products
+
+Improved handling of Free Shipping
+
+_ACP2E-4720 - [GitHub code contribution](https://github.com/magento/magento2/commit/c58a8ad0)_
+
+### Returns
+
+#### Issue with simple option selection when returning bundle products
+
+Previously, before this fix was implemented, for bundle products with the option to ship items separately for returns, the "Select Items" feature only opened the pop-up block for the first time. After selecting or closing the pop-up block, it did not open it every time the "Select Items" feature was called. However, after applying this fix, the issue has been resolved, and the feature now works as intended.
+
+_ACP2E-4407_
+
 ### SEO
 
 #### DynamicStorage.findProductRewriteByRequestPath() lacks entity_type filtering, causing CMS pages to be treated as products in category URLs
@@ -3291,6 +3926,18 @@ _AC-15345 - [GitHub issue](https://github.com/magento/magento2/issues/40146) - [
 Resolved an SEO issue where the storefront "Compare Products" link was not crawlable by search engines due to a missing or improperly bound href attribute. The update ensures the link now contains a valid, crawlable URL, improving site discoverability and helping pass Google SEO audits.
 
 _AC-15547 - [GitHub issue](https://github.com/magento/magento2/issues/40185) - [GitHub code contribution](https://github.com/magento/magento2/commit/c95ed7d7)_
+
+#### Error Message is not rendered for GET request
+
+Fixed an issue where error messages were not immediately shown for invalid GET requests. Error messages now display correctly without requiring additional user actions, improving user feedback and consistency.
+
+_AC-16296 - [GitHub issue](https://github.com/magento/magento2/issues/40411) - [GitHub code contribution](https://github.com/magento/magento2/commit/8391dbcc)_
+
+#### Transliteration missing characters
+
+The system now correctly handles transliteration missing characters
+
+_AC-16626 - [GitHub issue](https://github.com/magento/magento2/issues/40580) - [GitHub code contribution](https://github.com/magento/magento2/pull/40581)_
 
 #### Update product url_key via REST API does not generate a 301 URL Rewrite
 
@@ -3395,6 +4042,17 @@ Fixed an issue in the UPS REST shipping integration where commercial destination
 
 _AC-16285 - [GitHub issue](https://github.com/magento/magento2/issues/40314) - [GitHub code contribution](https://github.com/magento/magento2/pull/40307)_
 
+#### AC-15210 doesn't seem complete. USPS REST API required in less than a month.
+
+The USPS REST API integration in Adobe Commerce (AC-15210) was incomplete. Key problems included missing tracking information, loss of Allowed Methods settings when switching API types, excessive requests risking quota limits, and lack of protection against "429" quota limit errors. Exceeding the quota prevented shipping rates from being displayed to customers.
+The USPS REST API integration has been improved to:
+- Provide proper tracking information for shipped parcels.
+- Preserve Allowed Methods settings when switching between USPS WEBtools and REST APIs.
+- Prevent unnecessary requests to the USPS API, reducing the risk of hitting quota limits.
+- Handle "429" quota limit errors gracefully, ensuring shipping rates remain available to customers.
+
+_AC-16577 - [GitHub issue](https://github.com/magento/magento2/issues/40394) - [GitHub code contribution](https://github.com/magento/magento2/commit/15a9362d)_
+
 #### Exception while creating UPS shipping label
 
 Fixed Warning: Array to string conversion during UPS shipping label creation
@@ -3406,6 +4064,12 @@ _ACP2E-3676 - [GitHub code contribution](https://github.com/magento/magento2/com
 Adobe Commerce is no long make many requests to FedEx API service for the access token. Previously, even though the access token is still valid, Adobe Commerce always make new requests to FedEx API which caused a rate limiting issue.
 
 _ACP2E-3930 - [GitHub code contribution](https://github.com/magento/magento2/commit/4ca73607)_
+
+#### USPS Rest API shipping method is not getting displayed in checkout for some products
+
+USPS REST API shipping methods are now available for products in checkout.
+
+_ACP2E-4556 - [GitHub code contribution](https://github.com/magento/magento2/commit/aa2e16d1)_
 
 ### Staging & Preview
 
@@ -3426,6 +4090,12 @@ _AC-15670 - [GitHub code contribution](https://github.com/magento/magento2/commi
 Fixed an issue where editing an existing scheduled update for a subcategory incorrectly increased the children_count for parent categories in the database. The problem caused inaccurate category hierarchy data after saving updates. After the fix, the children count remains correct and no longer increments unexpectedly.
 
 _AC-16239 - [GitHub code contribution](https://github.com/magento/magento2/commit/8670a2b4)_
+
+#### Price of product in cart affected by catalog price rule doesn't change when rule is adjusted by the staging update
+
+Fixed an issue where changes to catalog price rules via staging updates were not consistently reflected in the shopping cart. After this fix, when a scheduled price rule update is applied, product prices in all cart sections (central block and summary block) update correctly.
+
+_AC-16530 - [GitHub code contribution](https://github.com/magento/magento2/commit/57bad413)_
 
 #### Previewing a scheduled update opens the first store view in alphabetical order instead of the store view of interest
 
@@ -3494,6 +4164,12 @@ Before this fix, scheduled update preview would break when attempting to preview
 
 _ACP2E-4308 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032)_
 
+#### Issue on special price scheduling
+
+Prior to the fix, special price from date was not being saved properly whenever a staging updated was being saved. Now, after the fix, corresponding special price from/to dates are being correlated with the staging update start and end dates.
+
+_ACP2E-4433 - [GitHub code contribution](https://github.com/magento/magento2/commit/f2fd9628)_
+
 ### Tax
 
 #### Wrong Order total, the round is not applied to the price calculation.
@@ -3521,6 +4197,12 @@ Mini-cart now correctly converts currency and displays the accurate amount based
 
 _ACP2E-4364 - [GitHub code contribution](https://github.com/magento/magento2/commit/1c547060)_
 
+#### Bundle product prices show incorrect tax and currency values between PDP and Cart in a multi-currency setup.
+
+Conversion of bundle product dynamic price excluding tax calculation for quote item works correctly.
+
+_ACP2E-4411 - [GitHub code contribution](https://github.com/magento/magento2/commit/aa2e16d1)_
+
 ### Test framework
 
 #### [Issue] Remove a duplicated &lt;severity> tag from MFTF test AdminSetUpWatermarkForSwatchImageTest
@@ -3546,6 +4228,12 @@ _AC-13305 - [GitHub issue](https://github.com/magento/magento2/issues/39324) - [
 The test case addresses the functionality of the "Email to Friend" form when CAPTCHA is enabled, ensuring that the form submission process works correctly with both incorrect and correct CAPTCHA values.
 
 _AC-13492 - [GitHub issue](https://github.com/magento/magento2/issues/39462) - [GitHub code contribution](https://github.com/magento/magento2/pull/32830)_
+
+#### [Issue] SwiftOtter-SOP-348 Enable Compiled Configuration Cache for Test execution
+
+Improves integration test performance by enabling the compiled_config cache during test execution, reducing CPU usage and execution time.
+
+_AC-16018 - [GitHub issue](https://github.com/magento/magento2/issues/40253) - [GitHub code contribution](https://github.com/magento/magento2/pull/40239)_
 
 #### [Cloud Native Service] CNS Build Failure - 2.4.9-beta1-  Integration
 
