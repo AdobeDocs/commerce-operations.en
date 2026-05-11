@@ -82,7 +82,7 @@ _BUNDLE-3485_
 
 ### Framework
 
-#### Upgraded web-token/jwt-framework library to the latest major version
+#### Investigate the latest major version of web-token/jwt-framework
 
 As part of continuous security review process, we evaluated the latest major release of the JWT framework to ensure future compatibility and maintain strong security standards. There is no impact on existing functionality in this release.
 
