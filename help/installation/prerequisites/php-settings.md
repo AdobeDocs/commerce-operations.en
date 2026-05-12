@@ -204,4 +204,4 @@ See the following Adobe Commerce Support articles for help with troubleshooting 
 -  [PHP version readiness check issues](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
 -  [Common PHP Fatal Errors and solutions](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
-<!-- Last updated from includes: 2025-04-04 22:27:22 -->
+<!-- Last updated from includes: 2026-05-11 20:38:54 -->
