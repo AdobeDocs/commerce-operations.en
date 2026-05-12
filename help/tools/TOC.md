@@ -966,6 +966,11 @@ feature: Configuration
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+           - [ACP2E-4628: Importing customers with uppercase email addresses triggers an undefined array key error when Account Sharing is set to Global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
+           - [ACSD-60989: Modifying a column with a foreign key through declarative schema causes errors on [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
+           - [ACP2E-4763: The GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)
+           - [ACP2E-4591: Customer segments based on order count, such as "First-time buyers", do not update when orders are placed through the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)
+           - [ACP2E-4732: Partial indexation stops for customers with many updates when the version_id column in the changelog table reaches its maximum value](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)
            - [ACP2E-4456: Canceling an order with a GraphQL mutation does not move orders paid entirely with gift cards to the Closed status](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)
            - [ACP2E-4452: Quick Order page product prices include tax regardless of tax display configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)
            - [ACP2E-4448: Configuration changes made during [!DNL Redis] outages do not reflect after [!DNL Redis] recovers, and stale values persist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)
