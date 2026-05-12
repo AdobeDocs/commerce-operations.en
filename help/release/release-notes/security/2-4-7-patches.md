@@ -32,17 +32,17 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 This release includes the following highlights:
 
-#### MariaDB 11.4 and 11.8 compatibility
+#### MariaDB 11.8 compatibility
 
-Adobe Commerce 2.4.7 has been validated for compatibility with MariaDB 11.4 and MariaDB 11.8. This update addresses SQL behavior changes, default updates, and deprecations introduced in newer MariaDB versions to maintain platform stability.
+Adobe Commerce 2.4.7-p10 introduces compatibility with MariaDB version 11.8. MariaDB 11.8 introduces changes in SQL behavior, defaults, deprecations, and performance optimizations. This update proactively addresses potential issues to maintain platform stability and future readiness.
 
 #### OpenSearch 3 latest minor version support
 
 Adobe Commerce 2.4.7 now supports the latest minor version of OpenSearch 3 on Adobe Commerce on cloud infrastructure, Cloud Native, and on-premises deployments. Compatibility with OpenSearch 2 is retained.
 
-#### Valkey 9.x LTS support
+#### Valkey 8.1 LTS support
 
-Adobe Commerce 2.4.7 is now compatible with Valkey 9.x LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
+Adobe Commerce 2.4.7 is now compatible with Valkey 8.1 LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
 
 #### RabbitMQ 4.2 support
 
