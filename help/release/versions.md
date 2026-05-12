@@ -22,4 +22,4 @@ Adobe offers a one-year support extension at no additional cost for Adobe Commer
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-04-20 02:12:24 -->
+<!-- Last updated from includes: 2026-05-12 12:57:59 -->
