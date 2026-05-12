@@ -10,7 +10,7 @@ type: Troubleshooting
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.79.
 
 QPT v1.1.79 includes the following patches:
-1. **ACP2E-4402**: Fixes the issue where products created as disabled weren't added back to related [!UICONTROL Target Rule] results after being enabled.
+1. **[ACP2E-4402](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)**: Fixes the issue where products created as disabled were not added back to related Target Rule results after being enabled.
 1. **ACP2E-4505**: Fixes the issue where it was possible to save a category with stale data from a duplicate browser tab, creating a circular dependency.
 1. **ACP2E-4531**: Fixes the issue where changing a CMS page's URL key didn't update the page's hierarchical URL.
 1. **ACP2E-4601**: Fixes the issue where payment transaction processing could behave inefficiently under certain conditions.
