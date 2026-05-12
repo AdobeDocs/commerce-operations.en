@@ -5,10 +5,6 @@
 {%- assign requirements_data = site.data.system-requirements %}
 {%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
 
->[!NOTE]
->
->Versions 2.4.4 and 2.4.5 support MySQL 8.0.0 through 8.0.28 only.
-
 {%- for minor_version in grouped_requirements %}
 {%- assign requirements = minor_version.items %}
 
@@ -18,7 +14,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
-      {%- for requirement in requirements %}
+      {%- for requirement in requirements limit:2 %}
       <th>{{requirement[0]}}</th>
       {%- endfor %}
     </tr>
@@ -26,7 +22,7 @@
   <tbody>
     {%- for dependency in dependencies %}
     {%- assign has_value = false %}
-    {%- for requirement in requirements %}
+    {%- for requirement in requirements limit:2 %}
       {%- if requirement[1][dependency] %}
         {%- assign has_value = true %}
         {%- break %}
@@ -35,7 +31,7 @@
     {%- if has_value %}
     <tr>
       <td><span class="uicontrol">[!DNL {{dependency}}]</span></td>
-      {%- for requirement in requirements %}
+      {%- for requirement in requirements limit:2 %}
       <td>
         {%- if requirement[1][dependency] %}
           {{requirement[1][dependency]}}

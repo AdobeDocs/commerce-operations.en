@@ -1,5 +1,5 @@
 ---
-title: Advanced Varnish configuration
+title: Advanced Varnish Configuration
 description: Learn how to configure advanced Varnish features for Adobe Commerce including health checks, grace, and saint modes. Discover VCL optimization techniques.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054

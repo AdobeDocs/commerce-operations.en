@@ -82,4 +82,4 @@ This release includes the following hotfix, and all hotfixes that have been rele
 
 The unsupported source expression `unsafe-inline` has been removed from the Content Security Policy `frame-ancestors` directive. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2025-05-28 17:01:56 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->

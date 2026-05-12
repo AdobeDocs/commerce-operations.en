@@ -4,7 +4,7 @@ description: Learn how to configure and use Varnish caching for Adobe Commerce. 
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 ---
-# Configure Varnish
+# Configure and use Varnish
 
 [Varnish Cache](https://www.varnish.org/) is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
 

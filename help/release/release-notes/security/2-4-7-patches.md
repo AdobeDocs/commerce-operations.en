@@ -20,6 +20,42 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 >All Adobe Commerce on-premises customers running versions 2.4.7 are strongly
 >advised to migrate their database servers to a compatible MariaDB version.
 
+## 2.4.7-p10
+
+The Adobe Commerce 2.4.7-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### MariaDB 11.4 and 11.8 compatibility
+
+Adobe Commerce 2.4.7 has been validated for compatibility with MariaDB 11.4 and MariaDB 11.8. This update addresses SQL behavior changes, default updates, and deprecations introduced in newer MariaDB versions to maintain platform stability.
+
+#### OpenSearch 3 latest minor version support
+
+Adobe Commerce 2.4.7 now supports the latest minor version of OpenSearch 3 on Adobe Commerce on cloud infrastructure, Cloud Native, and on-premises deployments. Compatibility with OpenSearch 2 is retained.
+
+#### Valkey 9.x LTS support
+
+Adobe Commerce 2.4.7 is now compatible with Valkey 9.x LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
+
+#### RabbitMQ 4.2 support
+
+Adobe Commerce 2.4.7 is now compatible with RabbitMQ 4.2, which addresses the RabbitMQ 4.1 end-of-support date scheduled for February 2026. Compatibility with Apache ActiveMQ Artemis is retained, and ActiveMQ remains the default message queue service for this security-only release line.
+
+#### USPS REST API support
+
+The USPS shipping integration now supports the modernized RESTful USPS APIs in addition to the legacy Web Tools APIs. Administrators can select which USPS integration API to use from the Admin configuration. This update prepares for the USPS Web Tools API deprecation.
+
+#### Magento-owned Laminas MVC fork
+
+To address the Laminas MVC retirement, Adobe Commerce now uses a Magento-owned fork of `laminas-mvc` (published as `magento/magento-zf-mvc`). This fork ensures continued patching and long-term security compliance for Adobe Commerce 2.4.7.
+
 ## 2.4.7-p9
 
 The Adobe Commerce 2.4.7-p9 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
@@ -182,4 +218,4 @@ This release includes the following highlights:
 
 Adobe Commerce 2.4.7-p1 resolves an issue introduced in the scope of the UPS integration migration from SOAP to REST API. This issue affected customers who ship outside of the US and prevented them from using the Metric System/SI measurements of kilograms and centimeters for packages to create shipments with UPS. See the [UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) knowledge base article for details.
 
-<!-- Last updated from includes: 2026-03-19 11:29:47 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->

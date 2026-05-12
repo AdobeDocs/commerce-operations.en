@@ -7,6 +7,42 @@ exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.8-p5
+
+The Adobe Commerce 2.4.8-p5 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.8.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### MariaDB 11.8 compatibility
+
+Adobe Commerce 2.4.8 has been validated for compatibility with MariaDB 11.8 while retaining support for MariaDB 11.4. This update addresses SQL behavior changes, default updates, and deprecations introduced in MariaDB 11.8 to maintain platform stability.
+
+#### OpenSearch 3 latest minor version support
+
+Adobe Commerce 2.4.8 now supports the latest minor version of OpenSearch 3 on Adobe Commerce on cloud infrastructure, Cloud Native, and on-premises deployments. Compatibility with OpenSearch 2 is retained.
+
+#### Valkey 9.x LTS support
+
+Adobe Commerce 2.4.8 is now compatible with Valkey 9.x LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
+
+#### RabbitMQ 4.2 support
+
+Adobe Commerce 2.4.8 is now compatible with RabbitMQ 4.2, which addresses the RabbitMQ 4.1 end-of-support date scheduled for February 2026. Compatibility with Apache ActiveMQ Artemis is retained, and ActiveMQ remains the default message queue service for this security-only release line.
+
+#### USPS REST API support
+
+The USPS shipping integration now supports the modernized RESTful USPS APIs in addition to the legacy Web Tools APIs. Administrators can select which USPS integration API to use from the Admin configuration. This update prepares for the USPS Web Tools API deprecation.
+
+#### Magento-owned Laminas MVC fork
+
+To address the Laminas MVC retirement, Adobe Commerce now uses a Magento-owned fork of `laminas-mvc` (published as `magento/magento-zf-mvc`). This fork ensures continued patching and long-term security compliance for Adobe Commerce 2.4.8.
+
 ## 2.4.8-p4
 
 The Adobe Commerce 2.4.8-p4 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.8.
@@ -93,4 +129,4 @@ The fixes for CVE-2025-47110 and VULN-31547 are also available as an isolated pa
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-02-20 15:30:03 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->

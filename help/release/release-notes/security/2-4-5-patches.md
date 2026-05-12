@@ -20,6 +20,32 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 >All Adobe Commerce on-premises customers running versions 2.4.5 are strongly
 >advised to migrate their database servers to a compatible MariaDB version.
 
+## 2.4.5-p17
+
+{{extended-support}}
+
+The Adobe Commerce 2.4.5-p17 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+#### Valkey 9.x LTS support
+
+Adobe Commerce 2.4.5 is now compatible with Valkey 9.x LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
+
+#### RabbitMQ 4.2 support
+
+Adobe Commerce 2.4.5 is now compatible with RabbitMQ 4.2, which addresses the RabbitMQ 4.1 end-of-support date scheduled for February 2026. Compatibility with Apache ActiveMQ Artemis is retained, and ActiveMQ remains the default message queue service for this security-only release line.
+
+>[!NOTE]
+>
+>Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
 ## 2.4.5-p16
 
 {{extended-support}}
@@ -264,4 +290,4 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 One of the security bug fixes included the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2026-03-19 11:29:47 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->

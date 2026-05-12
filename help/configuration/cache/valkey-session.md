@@ -1,11 +1,11 @@
 ---
-title: Use Valkey for session storage
-description: Learn how to configure Valkey for session storage in Adobe Commerce. Discover setup steps, configuration options, and performance optimization techniques.
+title: Configure Valkey for Session Storage
+description: Learn how to configure Valkey for session storage in Adobe Commerce. Discover CLI setup, session parameters, and connection verification techniques.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
 ---
 
-# Use Valkey for session storage
+# Configure Valkey for session storage
 
 >[!IMPORTANT]
 >

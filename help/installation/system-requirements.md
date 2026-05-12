@@ -1,13 +1,13 @@
 ---
-title: System requirements
-description: Learn about software dependencies and system requirements for Adobe Commerce. Discover tested configurations to ensure compatibility with your deployment environment.
+title: System Requirements
+description: Learn about software dependencies and system requirements for Adobe Commerce. See tested configurations for compatibility with your deployment environment.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
 
 The following summarizes software dependencies and services tested for Adobe Commerce.
 
-There are some differences in the dependencies for Commerce on Cloud. Service version and compatibility support for Adobe Commerce on Cloud is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1 is supported for 2.4.4 Adobe Commerce on Cloud.
+There are some differences in the dependencies for Commerce on Cloud. Service version and compatibility support for Adobe Commerce on Cloud is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments.
 
 >[!NOTE]
 >
@@ -17,9 +17,7 @@ There are some differences in the dependencies for Commerce on Cloud. Service ve
 
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
-Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
-
-To ensure a smooth upgrade process and prevent deployment failures, Adobe recommends upgrading RabbitMQ versions incrementally. For example, when upgrading from version 3.8 to 4.1, you should first upgrade from 3.8 to 3.9, then from 3.9 to 3.10, and so on. Only after reaching version 3.13 should you proceed with the upgrade to version 4.1.
+Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.9 is fully tested with MariaDB 12.3. Adobe recommends that you upgrade to MariaDB 12.3 before upgrading to 2.4.9.
 
 >[!BEGINTABS]
 
@@ -29,28 +27,34 @@ The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provi
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-The services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following is the default service configuration for Commerce 2.4.6 on Cloud infrastructure:
-
-```yaml
-mysql:
-    type: mysql:10.6
-    disk: 5120
-
-redis:
-    type: redis:7.0
-
-opensearch:
-    type: opensearch:2
-    disk: 1024
-```
-
-See [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
+For default configuration, the services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+For more details, refer to [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
 
 >[!TAB Commerce on-premises]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
+**MySQL 8.0 reached End of Support (EOS) on April 30, 2026.**
+Following this date Adobe Commerce 2.4.7, 2.4.6, 2.4.5, and 2.4.4 will not provide compatibility or
+support for any MySQL versions released after MySQL 8.0. Adobe will not
+validate or provide support for newer MySQL major versions on this Adobe
+Commerce release line.
+All Adobe Commerce on-premises customers running versions 2.4.7, 2.4.6, 2.4.5, 2.4.4 are strongly
+advised to migrate their database servers to a compatible MariaDB version.
+
+**Elasticsearch 7.17 reached End of Support (EOS) on January 15, 2026.**
+Following this date Adobe Commerce 2.4.6, 2.4.5, and 2.4.4 will not provide compatibility or
+support for any Elasticsearch versions released after Elasticsearch 7. Adobe will not
+validate or provide support for newer Elasticsearch major versions on this Adobe
+Commerce release line.
+All Adobe Commerce on-premises customers running versions 2.4.6, 2.4.5, 2.4.4 are strongly
+advised to migrate their search infrastructure to a compatible OpenSearch version.
+
 >[!ENDTABS]
+
+>[!AVAILABILITY]
+>
+><sup>1</sup> Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
 
 ## PHP settings
 
@@ -61,6 +65,7 @@ For Cloud configuration guidance, see [PHP settings](https://experienceleague.ad
 ### PHP OPcache
 
 Adobe recommends that you verify that [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions.
+
 - **For Adobe Commerce on Cloud infrastructure deployments**, the `opcache` extension is installed by default.
 - **For Adobe Commerce on-premises deployments:**
    - [Verify that the PHP OPcache extension is installed](prerequisites/php-settings.md#verify-php-is-installed).
@@ -75,7 +80,7 @@ If you must install OPcache separately, see the [PHP OPcache documentation](http
 
 ### PHPUnit
 
-PHPUnit v9 (as a command-line tool).
+The supported PHPUnit major version depends on the Adobe Commerce release. Adobe tests 2.4.9 with PHPUnit 12, 2.4.8-p5 with PHPUnit 10, and 2.4.7-p10 through 2.4.4-p18 with PHPUnit 9. Install PHPUnit as a command-line tool at the major version that matches Adobe tested configurations for your release.
 
 ### PHP extensions
 
@@ -101,7 +106,7 @@ Refer to [official PHP documentation](https://www.php.net/manual/en/extensions.p
 
 >[!ENDTABS]
 
-## Miscellaneous
+## Other software requirements
 
 This section describes support and compatibility for all other types of required and optional software.
 
@@ -114,11 +119,11 @@ This section describes support and compatibility for all other types of required
 Storefront and Admin:
 
 - Microsoft Edge (latest and previous major version)
-- Firefox (latest and previous major version; any operating system)
-- Chrome (latest and previous major version; any operating system)
-- Safari (latest and previous major version; macOS only)
-- Safari for iOS (latest and previous major version, for storefront)
-- Chrome for Android (latest and previous major version, for storefront)
+- Firefox (latest and previous major version on any operating system)
+- Chrome (latest and previous major version on any operating system)
+- Safari (latest and previous major version on macOS only)
+- Safari for iOS (latest and previous major version for the storefront)
+- Chrome for Android (latest and previous major version for the storefront)
 
 ### Mail server
 
@@ -130,7 +135,7 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 ### Operating systems (Linux x86-64)
 
-Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar.
+Linux distributions, such as Red Hat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar.
 
 Microsoft Windows and macOS are **not** supported.
 
@@ -164,5 +169,4 @@ For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.ado
 >
 >There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in the _Commerce Support Knowledge Base_.
 
-
-<!-- Last updated from includes: 2026-04-07 14:41:32 -->
+<!-- Last updated from includes: 2026-05-07 17:27:48 -->

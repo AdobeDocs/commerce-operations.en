@@ -1,11 +1,11 @@
 ---
-title: Varnish ESI block
+title: Configure Varnish ESI Block
 description: Learn about Varnish Edge Side Includes (ESI) and how to embed web pages for Adobe Commerce. Discover ESI block implementation and optimization.
 badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 ---
-# Varnish ESI block
+# Configure Varnish ESI block {#varnish-esi-block}
 
 Edge Side Includes (ESI) are special directives that you can use to include web pages in other web pages.
 

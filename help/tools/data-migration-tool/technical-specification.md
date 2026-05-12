@@ -222,7 +222,7 @@ The migration process consists of steps.
 
 Step is a unit that provides functionality required for migration some separated data. Step can consist of one or more stages (integrity check, data, volume check, and delta).
 
-By default, there are several steps ([Map](#map-step), [EAV](#eav), [URL Rewrites](#url-rewrite-step), and so on). You can optionally add your own steps as well.
+By default, there are several steps ([Map](#map-step), [EAV](#eav-step), [URL Rewrites](#url-rewrite-step), and so on). You can optionally add your own steps as well.
 
 Steps related classes are located in the src/Migration/Step directory.
 
