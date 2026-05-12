@@ -2,6 +2,7 @@
 
 ## 2.4.9
 
+Regular support for the 2.4.9 release line ends in May, 2029.
 
 <table>
   <thead>

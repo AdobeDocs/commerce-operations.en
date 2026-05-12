@@ -6,7 +6,8 @@
                 "tagName": "2.4.9",
                 "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9"
             }
-        ]
+        ],
+        "end-of-support": "2029-05-??"
     },
     "2.4.8": {
         "releases": [
