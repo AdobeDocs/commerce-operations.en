@@ -56,6 +56,45 @@ advised to migrate their search infrastructure to a compatible OpenSearch versio
 >
 ><sup>1</sup> Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
 
++++Archived system requirements
+
+The following tables system requirements for older Adobe Commerce releases. These tables are provided for reference purposes only. Adobe does not recommend using unsupported versions of software dependencies, and Support requires that you align your environment to a supported configuration before we can investigate, troubleshoot, or validate reported behavior.
+
+>[!BEGINTABS]
+
+>[!TAB Commerce on Cloud]
+
+The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with a specific Commerce version.
+
+{{$include /help/_includes/templated/cloud-requirements-table.md}}
+
+For default configuration, the services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+For more details, refer to [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
+
+>[!TAB Commerce on-premises]
+
+{{$include /help/_includes/templated/system-requirements-table.md}}
+
+**MySQL 8.0 reached End of Support (EOS) on April 30, 2026.**
+Following this date Adobe Commerce 2.4.7, 2.4.6, 2.4.5, and 2.4.4 will not provide compatibility or
+support for any MySQL versions released after MySQL 8.0. Adobe will not
+validate or provide support for newer MySQL major versions on this Adobe
+Commerce release line.
+All Adobe Commerce on-premises customers running versions 2.4.7, 2.4.6, 2.4.5, 2.4.4 are strongly
+advised to migrate their database servers to a compatible MariaDB version.
+
+**Elasticsearch 7.17 reached End of Support (EOS) on January 15, 2026.**
+Following this date Adobe Commerce 2.4.6, 2.4.5, and 2.4.4 will not provide compatibility or
+support for any Elasticsearch versions released after Elasticsearch 7. Adobe will not
+validate or provide support for newer Elasticsearch major versions on this Adobe
+Commerce release line.
+All Adobe Commerce on-premises customers running versions 2.4.6, 2.4.5, 2.4.4 are strongly
+advised to migrate their search infrastructure to a compatible OpenSearch version.
+
+>[!ENDTABS]
+
++++
+
 ## PHP settings
 
 There are particular PHP configuration settings, such as the `memory_limit` setting, which can help you to avoid common problems when using Adobe Commerce. See [Required PHP settings](prerequisites/php-settings.md).
