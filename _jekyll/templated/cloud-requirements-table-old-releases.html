@@ -1,0 +1,64 @@
+---
+---
+# Cloud requirements table
+
+{%- assign requirements_data = site.data.system-requirements %}
+{%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
+
+{%- assign cloud_dependencies = "Composer,OpenSearch Cloud,MariaDB Cloud,New Relic Cloud,PHP,RabbitMQ Cloud,ActiveMQ Artemis Cloud,Redis Cloud,Valkey Cloud,nginx" | split: "," %}
+{%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,ActiveMQ Artemis,Redis,Valkey" | split: "," %}
+
+{%- for minor_version in grouped_requirements %}
+{%- assign requirements = minor_version.items %}
+{%- if requirements.size > 2 %}
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>Software dependencies</th>
+      {%- for requirement in requirements offset:2 %}
+      <th>{{requirement[0]}}</th>
+      {%- endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {%- for dependency in cloud_dependencies %}
+    {%- assign has_value = false %}
+    {%- for requirement in requirements offset:2 %}
+      {%- if requirement[1][dependency] %}
+        {%- assign has_value = true %}
+        {%- break %}
+      {%- endif %}
+      {%- assign base_dependency = dependency | remove: " Cloud" %}
+      {%- if fallback_keys contains base_dependency and requirement[1][base_dependency] %}
+        {%- assign has_value = true %}
+        {%- break %}
+      {%- endif %}
+    {%- endfor %}
+    {%- if has_value %}
+    <tr>
+      <td><span class="uicontrol">[!DNL {{dependency | remove: " Cloud"}}]</span></td>
+      {%- for requirement in requirements offset:2 %}
+      <td>
+        {%- assign value = requirement[1][dependency] %}
+        {%- unless value %}
+          {%- assign base_dependency = dependency | remove: " Cloud" %}
+          {%- if fallback_keys contains base_dependency %}
+            {%- assign value = requirement[1][base_dependency] %}
+          {%- endif %}
+        {%- endunless %}
+        {%- if value %}
+          {{value}}
+        {%- else %}
+          Not supported
+        {%- endif %}
+      </td>
+      {%- endfor %}
+    </tr>
+    {%- endif %}
+    {%- endfor %}
+  </tbody>
+</table>
+
+{%- endif %}
+{%- endfor %}
