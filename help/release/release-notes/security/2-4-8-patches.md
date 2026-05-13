@@ -27,9 +27,9 @@ Adobe Commerce 2.4.8 has been validated for compatibility with MariaDB 11.8 whil
 
 Adobe Commerce 2.4.8 now supports the latest minor version of OpenSearch 3 on Adobe Commerce on cloud infrastructure, Cloud Native, and on-premises deployments. Compatibility with OpenSearch 2 is retained.
 
-#### Valkey 9.x LTS support
+#### Valkey 8.1 LTS support
 
-Adobe Commerce 2.4.8 is now compatible with Valkey 9.x LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
+Adobe Commerce 2.4.8 is now compatible with Valkey 8.1 LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
 
 #### RabbitMQ 4.2 support
 
