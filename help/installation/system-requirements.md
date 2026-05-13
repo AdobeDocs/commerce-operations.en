@@ -58,7 +58,7 @@ advised to migrate their search infrastructure to a compatible OpenSearch versio
 
 +++Archived system requirements
 
-The following tables system requirements for older Adobe Commerce releases. These tables are provided for reference purposes only. Adobe does not recommend using unsupported versions of software dependencies, and Support requires that you align your environment to a supported configuration before we can investigate, troubleshoot, or validate reported behavior.
+The following tables list system requirements for Adobe Commerce releases that include those in extended support  These tables are provided for reference purposes only. Adobe does not recommend using unsupported versions of software dependencies, and Support requires that you align your environment to a supported configuration before we can investigate, troubleshoot, or validate reported behavior.
 
 >[!BEGINTABS]
 
