@@ -5,7 +5,7 @@ exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
 
-The following summarizes software dependencies and services tested for Adobe Commerce.
+The following information summarizes software dependencies and services tested for Adobe Commerce.
 
 There are some differences in the dependencies for Commerce on Cloud. Service version and compatibility support for Adobe Commerce on Cloud is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments.
 
@@ -18,6 +18,10 @@ There are some differences in the dependencies for Commerce on Cloud. Service ve
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
 Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.9 is fully tested with MariaDB 12.3. Adobe recommends that you upgrade to MariaDB 12.3 before upgrading to 2.4.9.
+
+## System requirements for latest Commerce release versions
+
+The following tables summarize the system requirements for the latest release of all supported Commerce versions. Adobe recommends that all customers upgrade to these versions.
 
 >[!BEGINTABS]
 
@@ -56,9 +60,16 @@ advised to migrate their search infrastructure to a compatible OpenSearch versio
 >
 ><sup>1</sup> Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
 
-+++Archived system requirements
 
-The following tables list system requirements for Adobe Commerce releases that include those in extended support  These tables are provided for reference purposes only. Adobe does not recommend using unsupported versions of software dependencies, and Support requires that you align your environment to a supported configuration before we can investigate, troubleshoot, or validate reported behavior.
+## System requirements for earlier Commerce releases
+
+The following tables list system requirements for Adobe Commerce releases including those in extended support. These tables are provided for reference purposes only. Adobe does not recommend using unsupported versions of software dependencies, and Support requires that you align your environment to a supported configuration before we can investigate, troubleshoot, or validate reported behavior.
+
+>[!NOTE]
+>
+>The table is collapsed to minimize the length of this article. Select the header to expand it.
+
++++Requirements for earlier releases
 
 >[!BEGINTABS]
 
