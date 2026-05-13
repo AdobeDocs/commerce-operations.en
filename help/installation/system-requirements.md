@@ -5,19 +5,24 @@ exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
 
-The following summarizes software dependencies and services tested for Adobe Commerce.
+The following information summarizes software dependencies and services tested for Adobe Commerce.
 
 There are some differences in the dependencies for Commerce on Cloud. Service version and compatibility support for Adobe Commerce on Cloud is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The system requirements tables identify the specific Adobe Commerce versions covered, including any explicitly labeled beta or early access releases. See the [release notes](../release/release-notes/overview.md) to learn more about the latest published versions of Adobe Commerce.
+>The system requirements tables list the Adobe Commerce versions they apply to, including releases labeled as beta or early access.
+>See the [release notes](../release/release-notes/overview.md) for the latest published Commerce versions.
 >
->Service version mismatches relative to your Commerce version can introduce behavior that is not reproducible in supported environments. In these cases, Support may request that you align the environment to a supported configuration (for example, upgrade or downgrade the service version) before we can investigate, troubleshoot, or validate the reported behavior. Once the versions are aligned, Support can proceed with the investigation.
+>When your service versions do not match the supported configuration for your Commerce version, behavior may differ from what Adobe can reproduce in testing. Adobe Support may ask you to align your environment with a supported configuration before investigating, troubleshooting, or validating the reported behavior. After you align your environment, Adobe Support can continue the investigation.
 
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
-Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.9 is fully tested with MariaDB 12.3. Adobe recommends that you upgrade to MariaDB 12.3 before upgrading to 2.4.9.
+Adobe supports only the system requirement combinations listed in the following tables. Adobe does not validate or support configurations that do not match a listed combination. For example, Adobe Commerce 2.4.9 is tested with MariaDB 12.3. Upgrade to MariaDB 12.3 before you upgrade to 2.4.9.
+
+## System requirements for latest Commerce release versions
+
+The following tables summarize the system requirements for the latest release of all supported Commerce versions. Adobe recommends that all customers upgrade to these versions.
 
 >[!BEGINTABS]
 
@@ -55,6 +60,51 @@ advised to migrate their search infrastructure to a compatible OpenSearch versio
 >[!AVAILABILITY]
 >
 ><sup>1</sup> Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
+
+## System requirements for earlier Commerce releases
+
+The following tables list system requirements for Adobe Commerce releases including those in extended support. These tables are provided for reference purposes only. Adobe does not recommend using unsupported versions of software dependencies, and Support requires that you align your environment to a supported configuration before we can investigate, troubleshoot, or validate reported behavior.
+
+>[!NOTE]
+>
+>The table is collapsed to minimize the length of this article. Select the header to expand it.
+
++++Requirements for earlier releases
+
+>[!BEGINTABS]
+
+>[!TAB Commerce on Cloud]
+
+The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with a specific Commerce version.
+
+{{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
+
+For default configuration, the services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+For more details, refer to [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
+
+>[!TAB Commerce on-premises]
+
+{{$include /help/_includes/templated/system-requirements-table-old-releases.md}}
+
+**MySQL 8.0 reached End of Support (EOS) on April 30, 2026.**
+Following this date Adobe Commerce 2.4.7, 2.4.6, 2.4.5, and 2.4.4 will not provide compatibility or
+support for any MySQL versions released after MySQL 8.0. Adobe will not
+validate or provide support for newer MySQL major versions on this Adobe
+Commerce release line.
+All Adobe Commerce on-premises customers running versions 2.4.7, 2.4.6, 2.4.5, 2.4.4 are strongly
+advised to migrate their database servers to a compatible MariaDB version.
+
+**Elasticsearch 7.17 reached End of Support (EOS) on January 15, 2026.**
+Following this date Adobe Commerce 2.4.6, 2.4.5, and 2.4.4 will not provide compatibility or
+support for any Elasticsearch versions released after Elasticsearch 7. Adobe will not
+validate or provide support for newer Elasticsearch major versions on this Adobe
+Commerce release line.
+All Adobe Commerce on-premises customers running versions 2.4.6, 2.4.5, 2.4.4 are strongly
+advised to migrate their search infrastructure to a compatible OpenSearch version.
+
+>[!ENDTABS]
+
++++
 
 ## PHP settings
 
