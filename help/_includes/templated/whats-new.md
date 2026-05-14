@@ -4,6 +4,120 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### May 13, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Corrected Valkey LTS compatibility to 8.1 in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 security patch releases</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 security patch releases</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 security patch releases</a> topics so the cache-backend guidance matches supported Valkey on Adobe Commerce on cloud infrastructure.<br /><em>Addresses the issue <a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
+</td>
+      <td>
+        Technical, feedback, release notes
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c84f28dc9b90b9206147dffe1eed909d86525345">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added a <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements for earlier Commerce releases</a> collapsible section with reference tables and MySQL 8.0 / Elasticsearch 7.17 end-of-support guidance for older Adobe Commerce versions.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### May 12, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented May 12, 2026 security patch releases and 2.4.9 GA in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Released versions</a>. Also:<br />- Corrected 2.4.7-p10 platform highlights (MariaDB 11.8, Valkey 8.1 LTS) in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">Adobe Commerce 2.4.7 security patches</a>.<br />- Fixed the 2.4.8 security patch topic description metadata in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">Adobe Commerce 2.4.8 security patches</a>.</p>
+</td>
+      <td>
+        Major update, feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c138beddb066fe26f9e57afbd9b6e74f978a8407">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview">Overview: Quality Patches Tool (QPT) v1.1.79</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12093993f31c321afc75da6f2c661b4a9e6fd711">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">required PHP extensions</a> for v2.4.9.<br />Updated security patch release notes (2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.8) to reference <a href="https://helpx.adobe.com/security/products/magento/apsb26-49.html">Adobe Security Bulletin APSB26-49</a> and document new platform compatibility highlights for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8 patches</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7 patches</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 patches</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 patches</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 patches</a>.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 release notes</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 release notes</a> with GA fixed issues data and include paths aligned to the 2.4.9 release (replacing beta-era fixed-issues sources).<br />Updated highlight sections for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 release notes</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 release notes</a> for GA.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a> for 2.4.9, recent security-patch lines, and on-premises and cloud dependency tables.<br />Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI reference</a> to version 3.0.27.<br />Updated cache configuration documentation for Commerce 2.4.9 Symfony Cache support:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">Use Redis for default cache</a> — Added tabbed content for Zend and Symfony Cache implementations with performance optimizations.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">Use Valkey for default cache</a> — Added tabbed content for Zend and Symfony Cache implementations with performance optimizations.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2 cache</a> — Added modern Symfony L2 Cache implementation (<code class="language-plaintext highlighter-rouge">symfony_l2</code> backend) with stale cache support.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options">Cache options</a> — Added implementation options comparing Zend-based and Symfony Cache backends.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types">Cache types</a> — Added references to modern Symfony Cache backend types.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/baa2cd68fe266f6f31113ff1adba4342e6f427ef">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### May 11, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.78 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628">ACP2E-4628: Importing customers with uppercase email addresses triggers an undefined array key error when Account Sharing is set to Global</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c2c4f04d05b5bd1b60936256d3dbd6be5f396c5b">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.78 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763">ACP2E-4763: The GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6f156475e60ca0f8ac365306e282c90156837567">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.78 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989">ACSD-60989: Modifying a column with a foreign key through declarative schema causes errors on MariaDB</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9001c0e440f8a80e618bcf68a72cb6ac1533a2c0">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility">Shared responsibility security and operational model</a> to clarify that merchants must keep platform services, third-party dependencies, and Commerce Services extensions on actively supported versions to remain eligible for Adobe security support, with new guidance for PHP, MariaDB, Redis, and OpenSearch.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4b841ca5a55640e770fdbec71869fad6d6564fe8">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### May 7, 2026
 
 <table style="table-layout:auto;">
