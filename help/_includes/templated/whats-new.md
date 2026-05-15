@@ -27,7 +27,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><p>Added a <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements for earlier Commerce releases</a> collapsible section with reference tables and MySQL 8.0 / Elasticsearch 7.17 end-of-support guidance for older Adobe Commerce versions.</p>
 </td>
       <td>
-        Technical
+        Technical, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">commit</a></td>
     </tr>
