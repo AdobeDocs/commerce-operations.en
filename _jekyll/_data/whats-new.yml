@@ -2,7 +2,7 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Wed May 13 18:52:17 2026
+updated: Fri May 15 15:40:03 2026
 entries:
 - description: Corrected Valkey LTS compatibility to 8.1 in the [2.4.5 security patch
     releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support),
@@ -27,13 +27,14 @@ entries:
     collapsible section with reference tables and MySQL 8.0 / Elasticsearch 7.17 end-of-support
     guidance for older Adobe Commerce versions.
   versions: ''
-  type: technical
+  type: technical, feedback
   date: May 13, 2026
   link: enterprise:AdobeDocs/commerce-operations.en/pull/1966
   merge_commit: 07e7c6904ead0c730597bc6d0899f4c988b7725b
   contributor: meker
   labels:
   - technical
+  - feedback
 - description: Documented May 12, 2026 security patch releases and 2.4.9 GA in [Released
     versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
     Also:<br/>- Corrected 2.4.7-p10 platform highlights (MariaDB 11.8, Valkey 8.1
