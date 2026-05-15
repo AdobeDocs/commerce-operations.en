@@ -656,7 +656,7 @@ _ACP2E-4675 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### [Cloud] Image paths are absolute on second edit in Pagebuilder
 
-Fixed an issue where Page Builder Text inline editing could save absolute media image URLs after editing an image again, instead of keeping the portable {{media url=...}} directive.
+Fixed an issue where Page Builder Text inline editing could save absolute media image URLs after editing an image again, instead of keeping the portable `{{media url=...}}` directive.
 
 _ACP2E-4698 - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
 
@@ -1780,7 +1780,7 @@ In 2.4.9-alpha3, validation now correctly blocks saving customers with DOB outsi
 
 _AC-13535 - [GitHub code contribution](https://github.com/magento/magento2/commit/68a45d0a)_
 
-#### [Admin][Customer] Password Reset on Customer Admin is failing
+#### `[Admin][Customer]` Password Reset on Customer Admin is failing
 
 Fixed an issue where resetting a customer's password from the admin panel caused a system error and page crash. Password reset now works correctly and sends the reset link without errors, even in edge cases involving store changes.
 
@@ -3208,7 +3208,7 @@ Prior to the fix, cache keys used for remote storage metadata were not expiring.
 
 _ACP2E-4345 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032)_
 
-#### [CLOUD][B2B] [Mainline] sales_clean_quotes getSize() bottleneck
+#### `[CLOUD][B2B]` `[Mainline]` sales_clean_quotes getSize() bottleneck
 
 Improve the performance of the sales_clean_quotes cron job.
 
