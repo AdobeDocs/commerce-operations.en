@@ -5,6 +5,8 @@ feature-set: Commerce
 git-repo: https://github.com/AdobeDocs/commerce-operations.en
 index: true
 level: Experienced
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 mini-toc-levels: 2
 product: magento
 role: Admin, Developer
