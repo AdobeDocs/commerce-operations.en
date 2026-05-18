@@ -2,7 +2,6 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Learn about [!DNL Cloud Automation Patching Service (CAPS)], its uses, how to access it, and best practices for automated patching
 hide: true
-hidefromtoc: yes
 ---
 # [!DNL Cloud Automation Patching Service (CAPS)]
 
