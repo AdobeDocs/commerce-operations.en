@@ -12,7 +12,7 @@ feature: Security
 - Privacy regulations {#privacy}
   - [CCPA](privacy/ccpa.md)
   - [GDPR](privacy/gdpr.md)
-  - [Adobe Privacy JavaScript Library](privacy/adobe-javascript-library.md)
+  - {hide-from-toc} [Adobe Privacy JavaScript Library](privacy/adobe-javascript-library.md)
   - [Privacy JavaScript Library](privacy/javascript-library.md)
 - Reference {#reference}
   - [Customer personal information (version 2.x)](privacy/data-m2.md)

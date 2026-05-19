@@ -21,11 +21,11 @@ feature: Configuration
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
 - CAPS {#caps-tool}
-    - [Introduction](caps-tool/intro.md)
-    - [Access](caps-tool/access.md)
-    - [Workflow](caps-tool/workflow.md)
-    - [Best practices](caps-tool/best-practices.md)
-    - [Troubleshooting](caps-tool/troubleshooting.md)
+    - {hide-from-toc} [Introduction](caps-tool/intro.md)
+    - {hide-from-toc} [Access](caps-tool/access.md)
+    - {hide-from-toc} [Workflow](caps-tool/workflow.md)
+    - {hide-from-toc} [Best practices](caps-tool/best-practices.md)
+    - {hide-from-toc} [Troubleshooting](caps-tool/troubleshooting.md)
 - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
     - [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
     - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
