@@ -34,9 +34,9 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 This release includes the following highlights:
 
-#### Valkey 9.x LTS support
+#### Valkey 8.1 LTS support
 
-Adobe Commerce 2.4.5 is now compatible with Valkey 9.x LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
+Adobe Commerce 2.4.5 is now compatible with Valkey 8.1 LTS, providing a long-term-support cache backend option that is supported on Adobe Commerce on cloud infrastructure.
 
 #### RabbitMQ 4.2 support
 
