@@ -7,6 +7,7 @@
 
 {%- for minor_version in grouped_requirements %}
 {%- assign requirements = minor_version.items %}
+{%- if requirements.size > 2 %}
 
 {%- assign dependencies = "Composer,Elasticsearch,OpenSearch,MariaDB,MySQL,PHP,RabbitMQ,ActiveMQ Artemis,Redis,Valkey,Varnish,Apache,nginx,AWS Aurora (MySQL),AWS S3,AWS MQ,AWS ElastiCache,AWS Elasticsearch,AWS OpenSearch" | split: "," %}
 
@@ -14,7 +15,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
-      {%- for requirement in requirements limit:2 %}
+      {%- for requirement in requirements offset:2 %}
       <th>{{requirement[0]}}</th>
       {%- endfor %}
     </tr>
@@ -22,7 +23,7 @@
   <tbody>
     {%- for dependency in dependencies %}
     {%- assign has_value = false %}
-    {%- for requirement in requirements limit:2 %}
+    {%- for requirement in requirements offset:2 %}
       {%- if requirement[1][dependency] %}
         {%- assign has_value = true %}
         {%- break %}
@@ -31,12 +32,12 @@
     {%- if has_value %}
     <tr>
       <td><span class="uicontrol">[!DNL {{dependency}}]</span></td>
-      {%- for requirement in requirements limit:2 %}
+      {%- for requirement in requirements offset:2 %}
       <td>
         {%- if requirement[1][dependency] %}
           {{requirement[1][dependency]}}
         {%- else %}
-          Not supported
+          --
         {%- endif %}
       </td>
       {%- endfor %}
@@ -46,4 +47,5 @@
   </tbody>
 </table>
 
+{%- endif %}
 {%- endfor %}
