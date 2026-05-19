@@ -21,11 +21,11 @@ feature: Configuration
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
 - CAPS {#caps-tool}
-    - [Introduction](caps-tool/intro.md)
-    - [Access](caps-tool/access.md)
-    - [Workflow](caps-tool/workflow.md)
-    - [Best practices](caps-tool/best-practices.md)
-    - [Troubleshooting](caps-tool/troubleshooting.md)
+    - {hide-from-toc} [Introduction](caps-tool/intro.md)
+    - {hide-from-toc} [Access](caps-tool/access.md)
+    - {hide-from-toc} [Workflow](caps-tool/workflow.md)
+    - {hide-from-toc} [Best practices](caps-tool/best-practices.md)
+    - {hide-from-toc} [Troubleshooting](caps-tool/troubleshooting.md)
 - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
     - [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
     - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
@@ -966,6 +966,11 @@ feature: Configuration
            - [ACSD-68341: Multiple X‑Magento‑Vary cookie updates occur on PDP load](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
         - v1.1.78 {#v1-1-78}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+           - [ACP2E-4628: Importing customers with uppercase email addresses triggers an undefined array key error when Account Sharing is set to Global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
+           - [ACSD-60989: Modifying a column with a foreign key through declarative schema causes errors on [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
+           - [ACP2E-4763: The GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)
+           - [ACP2E-4591: Customer segments based on order count, such as "First-time buyers", do not update when orders are placed through the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)
+           - [ACP2E-4732: Partial indexation stops for customers with many updates when the version_id column in the changelog table reaches its maximum value](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)
            - [ACP2E-4456: Canceling an order with a GraphQL mutation does not move orders paid entirely with gift cards to the Closed status](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)
            - [ACP2E-4452: Quick Order page product prices include tax regardless of tax display configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)
            - [ACP2E-4448: Configuration changes made during [!DNL Redis] outages do not reflect after [!DNL Redis] recovers, and stale values persist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)
@@ -981,6 +986,8 @@ feature: Configuration
            - [ACP2E-4565: The Company GraphQL query returns "The current customer isn't authorized" when the X-Adobe-Company header is used](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)
            - [ACP2E-4522: Intermittent duplicate key errors occur on the quote_coupons table when multiple cart merge or quote save requests run at the same time](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)
            - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
+        - v1.1.79 {#v1-1-79}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

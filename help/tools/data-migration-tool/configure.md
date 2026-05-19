@@ -100,7 +100,7 @@ Before you migrate any data, you must create a Magento 2 module.
 
 1. In the `config.xml` file, you must set access details to M1 and M2 databases and encryption key.
 
-1. If your M1 store has custom changes, you should map the rest of your configuration files to your Magento 1 store customizations. See [Work with configuration and mapping files](#migration-config).
+1. If your M1 store has custom changes, you should map the rest of your configuration files to your Magento 1 store customizations. See [Work with configuration and mapping files](#work-with-configuration-and-mapping-files).
 
 ### Configure migration in `vendor` folder
 

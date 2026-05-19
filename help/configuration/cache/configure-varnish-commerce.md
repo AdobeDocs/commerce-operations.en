@@ -4,7 +4,7 @@ description: Learn how to configure Varnish specifically for Adobe Commerce appl
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
 ---
-# Configure the Commerce application to use Varnish
+# Configure Varnish for Commerce
 
 To configure Commerce to use Varnish:
 

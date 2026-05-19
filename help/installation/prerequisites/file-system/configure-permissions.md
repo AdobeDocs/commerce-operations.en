@@ -105,7 +105,7 @@ Follow the prompts on your screen to create a password for the user.
 
 >[!WARNING]
 >
->If you don't have `root` privileges on your application server, you can use another local user account. Make sure that the user has a strong password and continue with [Put the file system owner in the web server group](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>If you don't have `root` privileges on your application server, you can use another local user account. Make sure that the user has a strong password and continue with [Put the file system owner in the web server group](#put-the-file-system-owner-in-the-web-server-group).
 
 For example, to create a user named `magento_user` and give the user a password, enter:
 

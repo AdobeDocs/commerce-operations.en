@@ -16,6 +16,23 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.79 {#v1-1-79}
+
+* **AC-10737** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7-p5) - Fixes an issue where the bin/magento setup:db:status command does not recognize the JSON data type.
+* **ACP2E-4402** (for Adobe Commerce >=2.4.5 <2.4.6 || >=2.4.8 <2.4.9) - Fixes the issue where products created as disabled were not added back to related Target Rule results after being enabled.
+* **ACP2E-4505** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where it was possible to save a category with stale data from a duplicate browser tab, creating a circular dependency.
+* **ACP2E-4531** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where changing a CMS page's URL key didn't update the page's hierarchical URL.
+* **ACP2E-4601** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where payment transaction processing could behave inefficiently under certain conditions.
+* **ACP2E-4603** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where running the Catalog Permissions product reindex left existing permission index rows unchanged, causing updated category permission grants to not be reliably reflected on products.
+* **ACP2E-4706** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where products not enabled in the Admin scope were skipped by the Target Rule indexer.
+* **ACP2E-4720** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where free shipping wasn't properly applied nor removed for bundle products with cart discount rules.
+* **ACP2E-4411** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the incorrect price is shown for a bundle product on the cart page and in the mini-cart for multiple-currency stores.
+* **ACP2E-4475** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where the products listing page incorrectly filters and sorts out-of-stock bundle products by price when the "Display Out of Stock Products" option is enabled.
+* **ACP2E-4110** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where bundle products with a special price displayed incorrect amounts on PDP and PLP in a non-default currency.
+* **AC-10698** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the system sent the currency at the all orders level instead of associating it with individual orders. Transaction prices and totals are now sent per order to Google Tag, improving ecommerce data tracking accuracy.
+* Versions updated: **ACSD-67383**, **ACSD-69203**
+* Replaced patches: **ACSD-67370**, **ACSD-69319**
+
 ## v1.1.78 {#v1-1-78}
 
 * **ACP2E-4416** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where customer reward points are not initialized when created in the Admin.

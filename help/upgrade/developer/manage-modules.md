@@ -65,4 +65,4 @@ Wait while Composer updates dependencies and installs the module.
    composer update
    ```
 
-<!-- Last updated from includes: 2022-09-08 16:00:49 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->
