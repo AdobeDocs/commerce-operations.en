@@ -8,21 +8,9 @@ exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 
 Adobe Commerce follows a defined software lifecycle policy to ensure customers run on secure, supported versions. If you are on an older release line, understanding where you fall in this lifecycle — and acting before enforcement deadlines — is critical. This topic covers support tier definitions, end-of-support and enforcement dates, transitional provisions for versions approaching end of life, and paths to remain on a supported release.
 
-## Find your version
-
-| Your version | Status | Immediate action | Learn more |
-|---|---|---|---|
-| 2.4.4 or 2.4.5 | Extended support ended; security-only transitional period active | Plan migration or upgrade — transitional period ends May 31, 2027 | [Transitional provisions](#security-only-transitional-provisions) |
-| 2.4.6 | Regular support ended; extended support active | Plan migration or upgrade — enforcement date is June 1, 2028 | [End of support dates](#end-of-support-dates) · [Enforcement policy](version-upgrade-enforcement-policy.md) |
-| 2.4.7 | Regular support active | No immediate action — monitor enforcement date of June 1, 2028 | [End of support dates](#end-of-support-dates) · [Enforcement policy](version-upgrade-enforcement-policy.md) |
-| 2.4.8 | Regular support active | No immediate action | [End of support dates](#end-of-support-dates) |
-| 2.4.9 | Regular support active | No immediate action — released May 12, 2026 | [End of support dates](#end-of-support-dates) |
-
-{style="table-layout:auto"}
-
 >[!IMPORTANT]
 >
->Adobe is introducing a version upgrade enforcement policy for Adobe Commerce on Cloud (PaaS). See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for dates, affected versions, and required actions.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting **June 1, 2027**, Adobe will stop maintaining Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
 
 ## Understanding support tiers
 
@@ -44,12 +32,11 @@ A one-year support extension available for specific release lines beyond regular
 
 ### Security-only transitional period
 
-A one-time, time-limited transitional period available for specific versions whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only. 
-Adobe Commerce on-call support is not included. This period is not equivalent to regular or extended support and will not be extended further. Treat it as a migration period, not as a long-term support tier. See [Security-only transitional provisions](#security-only-transitional-provisions).
+A one-time, time-limited transitional period available for specific versions whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only. Adobe Commerce on-call support is not included. This period is not equivalent to regular or extended support and will not be extended further. Treat it as a migration period, not as a long-term support tier. See [Security-only transitional provisions](#security-only-transitional-provisions).
 
 ## End of support dates
 
-The following table shows the full lifecycle for each Adobe Commerce version, including version upgrade enforcement dates for Adobe Commerce on Cloud (PaaS) environments.
+The following table shows the full lifecycle for each Adobe Commerce version, including the new version upgrade enforcement dates for Adobe Commerce on Cloud (PaaS) environments.
 
 | Release | General Availability | End of regular support | End of extended support | End of security-only period | [Version upgrade enforcement date (Cloud only)](version-upgrade-enforcement-policy.md) |
 |---------|----------------------|------------------------|-------------------------|-----------------------------|-----------------------------------------------|
@@ -66,7 +53,7 @@ If your release line is approaching or past these dates, see [Upgrade and migrat
 
 ### Support timeline by quarter
 
-Use this chart to see overlapping support windows across release lines. For exact end dates, see the tables above.
+Use this chart to see overlapping support windows across release lines. For exact end dates, see the tables above. Extended support for 2.4.8 and 2.4.9 is TBD and is not shown.
 
 <table style="table-layout:auto">
 <thead>
@@ -79,11 +66,16 @@ Use this chart to see overlapping support windows across release lines. For exac
     <th colspan="4">2026</th>
     <th colspan="4">2027</th>
     <th colspan="4">2028</th>
+    <th colspan="4">2029</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Commerce</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -118,7 +110,7 @@ Use this chart to see overlapping support windows across release lines. For exac
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="5" style="background-color:#FFBF00"></td>
+    <td colspan="4" style="background-color:#FFBF00;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
@@ -126,25 +118,33 @@ Use this chart to see overlapping support windows across release lines. For exac
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="4" style="background-color:#FFBF00"></td>
-    <td colspan="9"></td>
+    <td colspan="3" style="background-color:#FFBF00;"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="15" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="10"></td>
+    <td colspan="3" style="background-color:#FFBF00;"></td>
+    <td colspan="6"></td>
   </tr>
   <tr>
     <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
     <td colspan="6"></td>
   </tr>
   <tr>
     <td>2.4.8</td>
     <td colspan="13"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>2.4.9</td>
+    <td colspan="17"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
@@ -172,7 +172,7 @@ Use this chart to see overlapping support windows across release lines. For exac
 
 ## Security-only transitional provisions {#security-only-transitional-provisions}
 
-As a one-time measure for 2.4.4, 2.4.5, and 2.4.6 versions with extended support that already ended in 2025 and 2026, Adobe provides the following transitional provisions to give you additional time to plan and execute your migration or upgrade:
+As a one-time measure for 2.4.4, 2.4.5, and 2.4.6 versions with extended support that already ended in 2025 and 2026, Adobe provides the following transitional provisions to give you additional time to plan and execute your migration or upgrade. These provisions do not replace [Cloud version upgrade enforcement](version-upgrade-enforcement-policy.md) for PaaS environments. You must still upgrade or migrate before your published enforcement date.
 
 | Version | Transitional provision | Period | What is included | What is not included |
 |---------|------------------------|--------|------------------|----------------------|
@@ -195,7 +195,7 @@ Adobe does not provide security support or assistance for deployments running un
 
 >[!IMPORTANT]
 >
->Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe cannot resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to deactivate the service if an upgrade is not possible — regardless of your Adobe Commerce version support status.
+>Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to deactivate the service if an upgrade is not possible — regardless of your Adobe Commerce version support status.
 
 ## PHP end of life and PCI compliance
 
@@ -205,20 +205,20 @@ The following PHP versions used by older Commerce release lines have reached or 
 
 | PHP version | End of life date | Affected Commerce versions | PCI compliance impact |
 |-------------|------------------|----------------------------|------------------------|
-| PHP 8.1 | December 31, 2025 | 2.4.4, 2.4.5, and 2.4.6 (where PHP 8.1 is used) | At risk after EOL — PHP security fixes end; assess compliance and prioritize upgrading |
-| PHP 8.2 | December 31, 2026 | 2.4.6 (where PHP 8.2 is used) | At risk after EOL — plan upgrade or migration before end of 2026 |
+| PHP 8.1 | December 31, 2025 | 2.4.4, 2.4.5, and 2.4.6 (where PHP 8.1 is used) | PCI compliance at risk — running PHP 8.1 past its end-of-life date means security vulnerabilities in PHP may not receive fixes, which puts PCI compliance at risk. Assess compliance status and prioritize upgrading. |
+| PHP 8.2 | December 31, 2026 | 2.4.6 (where PHP 8.2 is used) | PCI compliance at risk from end of 2026 — plan upgrade or migration before the end of 2026 to maintain PCI compliance. |
 
 {style="table-layout:auto"}
 
->[!IMPORTANT]
->
->PCI compliance is the merchant's responsibility to assess. Adobe strongly recommends that merchants on affected versions consult with their qualified security assessor and prioritize moving to a supported Commerce version and a supported PHP version as soon as possible. For PHP support timelines, see [PHP supported versions](https://www.php.net/supported-versions.php) and [PHP end of life](https://www.php.net/eol.php).
+### PCI compliance notice
+
+PCI compliance is the merchant's responsibility to assess. Adobe strongly recommends that merchants on affected versions consult with their qualified security assessor and prioritize moving to a supported Commerce version and a supported PHP version as soon as possible. For PHP support timelines, see [PHP supported versions](https://www.php.net/supported-versions.php) and [PHP end of life](https://www.php.net/eol.php).
 
 ## Upgrade and migration options
 
-If you are on a version approaching or past its end of support dates, take action now.
+If you are on a version approaching or past its end of support dates, take action now. Remaining on an unsupported version puts your store at risk of security vulnerabilities, compliance issues, and loss of support. Adobe provides the following paths to move to a supported release.
 
-### Recommended path: migrate to Adobe Commerce as a Cloud Service
+### Recommended path: migrate to Adobe Commerce as a Cloud Service (ACCS)
 
 [!DNL Adobe Commerce as a Cloud Service] is Adobe's next-generation hosted commerce platform and Adobe's recommended long-term destination for all Adobe Commerce on Cloud customers.
 
@@ -229,7 +229,7 @@ If you are on a version approaching or past its end of support dates, take actio
 
 Contact your Adobe account team to begin a migration assessment. See [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) for product overview.
 
-### Alternative path: upgrade to a supported Adobe Commerce on-premises or on cloud release
+### Alternative path: upgrade to a supported Adobe Commerce on cloud or on-premises release
 
 If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, you can upgrade to the latest currently supported Adobe Commerce on-premises or on cloud release. This moves you to a fully supported, modern infrastructure stack while preserving your existing PaaS deployment model.
 
