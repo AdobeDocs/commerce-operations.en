@@ -305,7 +305,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           8.0
@@ -341,7 +341,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.2
@@ -443,7 +443,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.17
@@ -470,7 +470,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           8.0
@@ -506,7 +506,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.2
@@ -608,7 +608,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.17
@@ -635,7 +635,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           8.0
@@ -671,7 +671,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.2
@@ -728,7 +728,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.17
@@ -755,7 +755,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           8.0
