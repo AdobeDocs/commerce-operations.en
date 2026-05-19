@@ -233,7 +233,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.2
@@ -335,7 +335,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.2
@@ -437,7 +437,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Not supported
       </td>
       <td>
           7.2
