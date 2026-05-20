@@ -988,7 +988,7 @@ feature: Configuration
            - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
-           - [ACP2E-4110: Bundle product prices with a special price differ between PDP/PLP and cart in a non-default currency](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
+           - [ACP2E-4110: Bundle product prices with a [!UICONTROL special price] differ between PDP/PLP and cart in a non-default currency](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
