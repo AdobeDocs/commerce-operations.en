@@ -47,7 +47,6 @@ recommendations: noDisplay, noCatalog
 - [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
-  - {hide-from-toc} [Version upgrade enforcement policy](version-upgrade-enforcement-policy.md)
   - [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)
