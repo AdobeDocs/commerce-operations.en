@@ -24,7 +24,7 @@ If you're part of the Adobe community and you want to create a new article or su
 
 ### Major changes from Adobe employees
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it's your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`.
+If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it's your job to contribute to or author technical articles, you should use the private repository at `https://github.com/Adobe-Enterprise-Docs`.
 
 ## Tools and setup
 
@@ -75,4 +75,3 @@ This repository uses rake tasks provided by the `adobe-comdox-exl-rake-tasks` ge
 cd _jekyll
 bundle exec rake --tasks
 ```
-
