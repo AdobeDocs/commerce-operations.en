@@ -18,7 +18,7 @@ Knowledge transfer occurs over the course of the entire project, and a successfu
 
 The following diagram shows the phases and activities that would be included in a successful transition outcome:
 
-![Diagram showing phases of the transition process](../../assets/playbooks/transition-diagram.svg)
+![Diagram showing phases of the transition process](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >
