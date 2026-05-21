@@ -60,8 +60,19 @@ With the following parameters:
 | `cache-backend-redis-port`     | port      | Redis server listen port | `6379` |
 | `cache-backend-redis-db`       | database  | Required if you use Redis for both the default and full-page cache. Specify the database number of one of the caches; the other cache uses 0 by default.<br><br>**Important**: If you use Redis for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2. | `0` |
 | `cache-backend-redis-password` | password  | Configuring a Redis password enables one of its built-in security features: the `auth` command, which requires clients to authenticate to access the database. The password is configured directly in Redis' configuration file: `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua   | Enable or disable Lua. <br><br>**Lua**: Lua enables running part of the application logic inside Redis, improving performance and ensuring data consistency through atomic execution. | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Enable or disable Lua for garbage collection. <br><br>**Lua**: Lua enables running part of the application logic inside Redis, improving performance and ensuring data consistency through atomic execution. | `1` |
+| `cache-backend-redis-use-lua` | use_lua   | Enable or disable Lua scripts for all redis operations. <br><br>**Default: keep at `0`.** Lua mode is disabled by default to prevent known performance regressions and GraphQL cache miss issues introduced by the bundled Redis library (1.17.x) when Lua was enabled. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Enable or disable Lua scripts for garbage collection (the `backend_clean_cache` cron job). <br><br>**Default: keep at `1`.** Intentionally enabled to ensure atomic tag-set cleanup during GC. Without it, a race condition can occur when the `backend_clean_cache` cron runs at the same time as a cache save operation, leaving cache entries without a corresponding record in the cache tag index. This causes tag-based invalidation to silently fail — for example, updating a product price may not invalidate the product cache, requiring a full cache flush instead. | `1` |
+
+### Lua mode
+
+When enabled, Lua mode bundles multiple Redis operations (cache writes, tag updates, garbage collection) into a single atomic script executed server-side via `EVALSHA`. This prevents interleaving from concurrent requests — for example, ensuring a cache entry and its tag membership are written together.
+
+>[!WARNING]
+>
+>Do not change the default values for `use_lua` and `use_lua_on_gc` without understanding the implications for your Adobe Commerce version:
+>
+>- **`use_lua`**: Enabling this on Adobe Commerce 2.4.7 or 2.4.8 (library `colinmollenhour/cache-backend-redis` 1.17.1) can cause cache corruption and GraphQL cache miss issues.
+>- **`use_lua_on_gc`**: Disabling this on Adobe Commerce 2.4.8 removes atomic protection during garbage collection and can cause tag-based cache invalidation to fail silently, requiring a full cache flush to recover.
 
 ## Example command (default cache)
 
