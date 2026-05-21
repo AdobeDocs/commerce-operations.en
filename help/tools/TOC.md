@@ -989,6 +989,7 @@ feature: Configuration
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
            - [AC-10737: `bin/magento setup:db:status` command doesn't recognize JSON data type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+           - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
