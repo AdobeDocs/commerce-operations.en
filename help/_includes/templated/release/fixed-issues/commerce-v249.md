@@ -2088,7 +2088,7 @@ _AC-15336 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Compiling code of disabled module
 
-This pull request escape disabled modules before code compilation.
+Changed the behavior of `setup:di:compile` to no longer compile code for disabled modules.
 
 _AC-10933 - [GitHub issue](https://github.com/magento/magento2/issues/38241) - [GitHub code contribution](https://github.com/magento/magento2/pull/39723)_
 
