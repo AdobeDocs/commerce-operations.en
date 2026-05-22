@@ -25,7 +25,7 @@ You must write static view files to the Commerce file system manually using the 
 
 >[!WARNING]
 >
->_Developer mode only_: When you install or enable a new module, it might load new JavaScript, CSS, layouts, and so on. To avoid issues with static files, you must clean the old files to make sure you get all the changes for the new module. You can clean generated static view files in several ways. Refer to [Clean static files cache topic for details](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) for more information.
+>_Developer mode only_: When you install or enable a new module, it might load new JavaScript, CSS, layouts, and so on. To avoid issues with static files, you must clean the old files to make sure you get all the changes for the new module. You can clean generated static view files in several ways. Refer to [Clean static files cache topic for details](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache) for more information.
 
 **To deploy static view files**:
 
@@ -39,7 +39,7 @@ You must write static view files to the Commerce file system manually using the 
 
    Command options:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy [<languages>] [-t|--theme[="<theme>"]] [--exclude-theme[="<theme>"]] [-l|--language[="<language>"]] [--exclude-language[="<language>"]] [-a|--area[="<area>"]] [--exclude-area[="<area>"]] [-j|--jobs[="<number>"]]  [--no-javascript] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [-f|--force]
    ```
 
@@ -81,13 +81,13 @@ Following are some example commands.
 
 The following command deploys static content for the US English (`en_US`) language, excludes the Luma theme provided with Commerce, and does not minify HTML files.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
 ```
 
 Sample output:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -106,13 +106,13 @@ Successful: 1993 files; errors: 0
 
 The following command deploys only JavaScript, with 4 jobs, with a standard deployment strategy:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
 ```
 
 The following command deploys only CSS and LESS with 3 jobs, and a quick deployment strategy:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts --no-images --no-javascript -j 3
 ```
 
@@ -120,13 +120,13 @@ bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts 
 
 The following command generates static view files for all languages, the frontend area only, the Commerce Luma theme only, without generating fonts:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magento/luma
 ```
 
 Sample output:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -156,7 +156,7 @@ To do this, take the following steps:
 
 **Symptom**: The following error is displayed when you run the static view files deployment tool:
 
-```
+```text
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

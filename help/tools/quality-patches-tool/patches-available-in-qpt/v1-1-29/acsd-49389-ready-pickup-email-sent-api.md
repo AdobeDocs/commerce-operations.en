@@ -40,7 +40,7 @@ A ready-for-pickup email is sent by the API when the order is not ready for pick
 1. Set the qty of the product to *0* and make it out of stock.
 1. Post the following API request:
 
-```
+```json
 {
     "orderIds": [
         1

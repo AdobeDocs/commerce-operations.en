@@ -45,7 +45,7 @@ Ensure Docker is installed and running on your system.
 
 1. Run ActiveMQ Artemis using the official Docker image:
 
-    ```bash
+    ```shell
     # Run with default configuration
     docker run --detach \
       --name artemis \
@@ -57,7 +57,7 @@ Ensure Docker is installed and running on your system.
 
 1. Run with custom credentials:
 
-    ```bash
+    ```shell
     # Run with custom username/password
     docker run --detach \
       --name artemis \
@@ -71,7 +71,7 @@ Ensure Docker is installed and running on your system.
 
 #### Docker management commands
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -109,7 +109,7 @@ Ensure Java 17 or higher is installed (required for ActiveMQ Artemis 2.42.0+).
 
 1. Download and install the latest version from the [Apache ActiveMQ Artemis website](https://activemq.apache.org/components/artemis/download/). As of September 2025, the latest stable version is 2.42.0:
 
-    ```bash
+    ```shell
     sudo mkdir -p /opt/artemis
     cd /opt/artemis
     sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -119,7 +119,7 @@ Ensure Java 17 or higher is installed (required for ActiveMQ Artemis 2.42.0+).
 
 1. Create the `artemis` user and set ownership:
 
-    ```bash
+    ```shell
     # Create artemis user and set ownership
     sudo useradd -r -s /bin/false artemis 2>/dev/null || true
     sudo chown -R artemis:artemis /opt/artemis
@@ -127,14 +127,14 @@ Ensure Java 17 or higher is installed (required for ActiveMQ Artemis 2.42.0+).
 
 1. Create a broker instance:
 
-    ```bash
+    ```shell
     sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
     sudo chown -R artemis:artemis /var/lib/artemis-instance
     ```
 
 1. Start the broker:
 
-    ```bash
+    ```shell
     # Start in foreground (for testing)
     sudo /var/lib/artemis-instance/bin/artemis run
     
@@ -189,7 +189,7 @@ To enable SSL on STOMP you must add the `stomp-ssl` acceptor explicitly.
 
 If you install Adobe Commerce _after_ you install ActiveMQ Artemis, add the following command-line parameters during installation:
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -226,7 +226,7 @@ If you already have an Adobe Commerce instance with RabbitMQ (AMQP) configuratio
 
 You can also set ActiveMQ configuration values using the `bin/magento setup:config:set` command (remove the AMQP configuration if it exists in the `app/etc/env.php` file):
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -331,13 +331,13 @@ ActiveMQ Artemis provides a web-based management console accessible at:
 
 Test STOMP connection using telnet:
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 You should see a connection established. To test with a STOMP command:
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```

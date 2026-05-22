@@ -29,7 +29,7 @@ If you already have a sample module, you can use it; skip this step and the next
 1. Change to a directory that is not in your Commerce application root (for example, your home directory).
 1. Clone the [`magento2-samples` repository](https://github.com/magento/magento2-samples).
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
@@ -37,25 +37,25 @@ If you already have a sample module, you can use it; skip this step and the next
 
 1. Make a directory to which to copy the sample code:
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Copy the sample module code:
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Verify the files copied properly:
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    You should see the following result:
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -69,13 +69,13 @@ If you already have a sample module, you can use it; skip this step and the next
 
 1. Update the Commerce database and schema:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -85,13 +85,13 @@ Before you continue, verify that the sample module is registered and enabled.
 
 1. Run the following command:
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. Make sure that the module is enabled.
 
-   ```
+   ```text
    Module is enabled
    ```
 
@@ -107,7 +107,7 @@ To create a class:
 
 1. Create a directory for the class and change to that directory:
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -175,13 +175,13 @@ Where, `system/config/path` is a system configuration path defined in `etc/admin
 
 Compile the code with this command:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 And clean the cache with this command:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -193,7 +193,7 @@ To verify cron:
 
 1. Run Commerce cron jobs:
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
@@ -209,7 +209,7 @@ To verify cron:
 
       The result should be similar to the following:
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -222,13 +222,13 @@ To verify cron:
 
 1. (Optional) Verify that messages are written to Commerce's system log:
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    You should see one or more entries like the following:
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
@@ -277,7 +277,7 @@ To verify your custom cron group:
 
 1. Run Commerce cron jobs for your custom group:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -285,7 +285,7 @@ To verify your custom cron group:
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 

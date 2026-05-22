@@ -66,7 +66,7 @@ To redirect traffic to a custom maintenance page:
 
    Add the following at the end of your Apache configuration file:
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -84,7 +84,7 @@ To redirect traffic to a custom maintenance page:
 
 1. Enter the following command:
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -138,13 +138,13 @@ To redirect traffic to a custom maintenance page:
 
 1. Enter the following command:
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Reload the nginx configuration:
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -153,6 +153,6 @@ To redirect traffic to a custom maintenance page:
 1. After the upgrade is done, delete or rename `maintenance.enable`
 1. Reload the nginx configuration:
 
-   ```bash
+   ```shell
    service nginx reload
    ```

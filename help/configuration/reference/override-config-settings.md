@@ -131,7 +131,7 @@ To get these values from the database:
 1. Log in to your development system as the file system owner if you have not done so already.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    mysql -u <database-username> -p
    ```
 
@@ -218,7 +218,7 @@ To find the variable name for the shipping country origin:
 
 1. Determine the scope.
 
-   Find the scope in the [database](#find-a-website-or-store-view-scope-in-the-database) as discussed in Step 1: Find the website or store view scope value. (You can also find the value in the Admin as shown in the [table in Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables.
+   Find the scope in the [database](#find-a-website-or-store-view-scope-in-the-database) as discussed in Step 1: Find the website or store view scope value. (You can also find the value in the Admin as shown in the [table in Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables).
 
    For example, the scope might be `CONFIG__WEBSITES__DEFAULT`.
 

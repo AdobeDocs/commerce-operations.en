@@ -126,7 +126,7 @@ Use the following CLI commands to set system-specific and sensitive configuratio
 
 To set the system-specific setting **Default Email Domain**, which is in the default scope, use the following command:
 
-```bash
+```shell
 bin/magento config:set customer/create_account/email_domain <email domain>
 ```
 
@@ -176,4 +176,4 @@ To verify the configuration settings:
 
    ![Check settings in the production system](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

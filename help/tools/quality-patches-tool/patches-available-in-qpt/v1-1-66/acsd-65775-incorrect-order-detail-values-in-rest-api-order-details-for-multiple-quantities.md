@@ -36,7 +36,7 @@ The `base_row_total` and `row_total` in the order details REST API response show
 1. Place the order using the customer account.
 1. Obtain an admin token by sending a POST request to `/rest/V1/integration/admin/token` with the following payload:
 
-    ```
+    ```json
     {
       "username": "admin",
       "password": "password"

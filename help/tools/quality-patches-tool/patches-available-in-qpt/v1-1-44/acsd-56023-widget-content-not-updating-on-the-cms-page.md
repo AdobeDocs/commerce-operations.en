@@ -33,7 +33,7 @@ Widget content is not updating on the CMS page.
 1. Create a few products.
 1. Create the new CMS page and add new products widget to the content:
 
-    ```
+    ```text
        {{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="new_products" show_pager="1" products_per_page="5" products_count="10" template="product/widget/new/content/new_grid.phtml" page_var_name="pnetpm"}} 
     ```
 

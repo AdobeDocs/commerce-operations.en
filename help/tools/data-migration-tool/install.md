@@ -25,7 +25,7 @@ USe on of the following methods to verify your version of Magento:
 
 If you downloaded the Magento software using a Composer metapackage, enter the following command:
 
-```bash
+```shell
 php <magento_root>/bin/magento --version
 ```
 
@@ -33,11 +33,11 @@ php <magento_root>/bin/magento --version
 
 If you cloned the Magento 2 GitHub repository, enter the following commands:
 
-```bash
+```shell
 cd <your Magento 2 clone directory>
 ```
 
-```bash
+```shell
 git branch
 ```
 
@@ -70,11 +70,11 @@ To install the [!DNL Data Migration Tool], you must update `composer.json` in th
 1. Change to the application root directory.
 1. Enter the following commands:
 
-   ```bash
+   ```shell
    composer config repositories.magento composer https://repo.magento.com
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -82,11 +82,11 @@ To install the [!DNL Data Migration Tool], you must update `composer.json` in th
 
    For example, for version 2.2.0, enter:
 
-   ```bash
+   ```shell
    composer config repositories.magento composer https://repo.magento.com
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.2.0
    ```
 
@@ -100,11 +100,11 @@ If you've cloned the GitHub repository, follow the steps below to install the [!
 1. Change to the application root directory.
 1. Enter the following commands:
 
-   ```bash
+   ```shell
    composer config repositories.data-migration-tool git https://github.com/magento/data-migration-tool
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -112,11 +112,11 @@ If you've cloned the GitHub repository, follow the steps below to install the [!
 
    For example, for version 2.2.0, enter:
 
-   ```bash
+   ```shell
    composer config repositories.data-migration-tool git https://github.com/magento/data-migration-tool
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.2.0
    ```
 

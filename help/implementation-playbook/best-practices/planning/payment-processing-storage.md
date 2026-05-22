@@ -1,6 +1,6 @@
 ---
 title: Best practices for Payment Processing and storage
-description: Learn how to securely process and store payment details
+description: Learn how to securely process and store payment details in Adobe Commerce while maintaining PCI compliance and avoiding prohibited cardholder data storage.
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c

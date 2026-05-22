@@ -72,7 +72,7 @@ Scope codes for websites and store views are stored in the Commerce database in 
 
 1. Connect to the Commerce database.
 
-   ```bash
+   ```shell
    mysql -u <Commerce database username> -p
    ```
 
@@ -92,7 +92,7 @@ Scope codes for websites and store views are stored in the Commerce database in 
 
    A sample result follows:
 
-   ```
+   ```ini
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -111,13 +111,13 @@ Scope codes for websites and store views are stored in the Commerce database in 
 
 **To set system-specific configuration values**:
 
-```bash
+```shell
 bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [-lc | --lock-config] path value
 ```
 
 **To set sensitive configuration values**:
 
-```bash
+```shell
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
@@ -155,19 +155,19 @@ Some examples for setting a store base URL follow:
 
 Set the base URL for the default scope:
 
-```bash
+```shell
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
 Set the base URL for the `base` website:
 
-```bash
+```shell
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
 Set the base URL for the `test` store view:
 
-```bash
+```shell
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
@@ -175,7 +175,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 If you use the `--lock-env`  option as follows, the command saves the configuration value in `<Commerce base dir>/app/etc/env.php` and disables the field for editing this value in the Admin.
 
-```bash
+```shell
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
@@ -187,7 +187,7 @@ You can use the `--lock-env` option to set configuration values if Commerce is n
 
 If you use the `--lock-config` option as follows, the configuration value is saved in `<Commerce base dir>/app/etc/config.php`. The field for editing this value in the Admin is disabled.
 
-```bash
+```shell
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
@@ -201,7 +201,7 @@ You can use `--lock-config` to set configuration values if Commerce is not insta
 
 Command options:
 
-```bash
+```shell
 bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 ```
 
@@ -219,13 +219,13 @@ where
 
 **To show all saved configurations**:
 
-```bash
+```shell
 bin/magento config:show
 ```
 
 Result:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -235,50 +235,50 @@ analytics/subscription/enabled - 1
 
 **To show all saved configurations for the `base` website**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
 Result:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
 **To show the base URL for the default scope**:
 
-```bash
+```shell
 bin/magento config:show web/unsecure/base_url
 ```
 
 Result:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 ```
 
 **To show the base URL for the `base` website**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
 Result:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
 **To show the base URL for the `default` store**:
 
-```bash
+```shell
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
 Result:
 
-```
+```text
 web/unsecure/base_url - http://example-for-store.com/
 ```
 

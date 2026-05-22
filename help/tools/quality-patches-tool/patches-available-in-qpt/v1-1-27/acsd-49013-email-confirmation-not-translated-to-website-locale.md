@@ -39,7 +39,7 @@ Email confirmation is not translated to the website locale when creating custome
 
     `Endpoint: /rest/async/bulk/V1/customers`
 
-    ```
+    ```text
     [{
         "customer": {
         "email": "test@example.com",

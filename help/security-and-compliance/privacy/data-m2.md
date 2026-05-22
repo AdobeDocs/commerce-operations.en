@@ -28,7 +28,7 @@ A user can enter customer, address, and payment information when registering for
 
 Adobe Commerce loads customer information when the customer logs in and views several different pages, or checks out.
 
-![Frontend data access points](../../assets/security-compliance/frontend-data-access-points.svg)
+![Frontend data access points](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Backend data entry points
 
@@ -40,7 +40,7 @@ A merchant can enter customer information, address data, and payment data when c
 
 Adobe Commerce loads customer information when a merchant views several types of grids, clicks on a grid to see detailed information, and performs various other tasks.
 
-![Backend data access points](../../assets/security-compliance/backend-data-access-points.svg)
+![Backend data access points](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Database entities
 

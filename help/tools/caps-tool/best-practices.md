@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Cloud Automation Patching Service (CAPS)] Best Practices Guide'
 description: Learn best practices for using [!DNL Cloud Automation Patching Service (CAPS)] effectively and safely
-hide: yes
-hidefromtoc: yes
+hide: true
 ---
 # [!DNL Cloud Automation Patching Service (CAPS)] best practices guide
 

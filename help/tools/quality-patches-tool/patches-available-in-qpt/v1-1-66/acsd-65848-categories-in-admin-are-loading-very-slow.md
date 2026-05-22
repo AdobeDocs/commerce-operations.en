@@ -36,7 +36,7 @@ The Admin category view/edit page experiences significant delays when loading. T
     1. Open the `small.xml` profile and update it to include 2,500 categories and 250,000 products (to match the merchant's setup).
     1. Run the following command to generate the fixtures:
         
-        ```bash
+        ```shell
         bin/magento 
         setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
         ```
@@ -56,7 +56,7 @@ The Admin category view/edit page experiences significant delays when loading. T
 1. In the Admin panel, create a deeper category structure:
     * Move Category 2 under Category 1 to nest it deeper in the tree.
 1. Try to open a category page in the Admin panel using a URL like:
-    ```/admin/catalog/category/edit/id/xx/```
+    `/admin/catalog/category/edit/id/xx/`
 
 <u>Expected results</u>:
 

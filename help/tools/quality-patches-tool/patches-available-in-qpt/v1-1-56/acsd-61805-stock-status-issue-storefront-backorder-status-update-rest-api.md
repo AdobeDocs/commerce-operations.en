@@ -66,7 +66,7 @@ Products remain out of stock on the storefront after updating the backorder stat
 
 1. Run the cron jobs twice (once to create schedules and once to run the schedule):
 
-    ```bash
+    ```shell
     bin/magento cron:run
     ```
 

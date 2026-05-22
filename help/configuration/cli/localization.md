@@ -33,7 +33,7 @@ To generate the dictionary and begin translation:
 
 Command options:
 
-```bash
+```shell
 bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--magento] <path to directory to translate>
 ```
 
@@ -92,7 +92,7 @@ This section discusses how to create a language package, which writes CSV files 
 
 Command usage:
 
-```bash
+```shell
 bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <source> <locale>
 ```
 
@@ -100,7 +100,7 @@ The following table explains the parameters and values for the language package 
 
 |Parameter|Value|Required?|
 |--- |--- |--- |
-|`<source>`|Absolute file system path and file name of a CSV file that contains the combined translation dictionary and meta-information necessary for breakdown into a language package.<br><br>Use [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) to create the CSV file then create the language package as discussed in [Create directories and files](#m2devgde-xlate-files).|Yes|
+|`<source>`|Absolute file system path and file name of a CSV file that contains the combined translation dictionary and meta-information necessary for breakdown into a language package.<br><br>Use [`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary) to create the CSV file then create the language package as discussed in [Create directories and files](#create-directories-and-files).|Yes|
 |`<locale>`|[ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (language) and [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (country) identifier of language used as file name for all resulting CSV files. Examples: `de_DE`, `pt_PT`, `pt_BR`.|Yes|
 |`-m --mode`|If a target file exists, specifies whether to replace the existing language package or merge with the new language pack. Merging overrides any phrases that existed and adds new ones.<br><br>Values: merge or replace (default).|No|
 |`-d --allow-duplicates`|Include this option to allow duplicates in the language pack. Otherwise, the command fails with an error if it encounters the same phrase in multiple entries with different translations.|No|
@@ -207,7 +207,7 @@ To add a German translation to a module or theme that you want to distribute to 
 
 1. Collect phrases from your module:
 
-   ```bash
+   ```shell
    bin/magento i18n:collect-phrases -o "/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n/xx_YY.csv" /var/www/html/magento2/app/code/ExampleCorp/SampleModule
    ```
 
@@ -224,7 +224,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
 
 1. Collect phrases from your module:
 
-   ```bash
+   ```shell
    bin/magento i18n:collect-phrases -o "/var/www/html/magento2/xx_YY.csv" -m
    ```
 
@@ -235,7 +235,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
 1. Translate the words and phrases using [these guidelines](#translation-guidelines).
 1. Create the language package.
 
-   ```bash
+   ```shell
    bin/magento i18n:pack /var/www/html/magento2/xx_YY.csv -d xx_YY
    ```
 

@@ -35,19 +35,19 @@ The GraphQL response for order placement does not include a `LocalizedException`
 1. Add a `LocalizedException` to `Magento\Framework\Exception\LocalizedException` in `app/code/Magento/QuoteGraphQl/Model/Resolver/PlaceOrder.php`.
 1. Insert the exception after the following line:
 
-    ```
+    ```shell
     $cart = $this->getCartForCheckout->execute($maskedCartId, $userId, $storeId);
     ```
     
     Add the exception:
 
-    ```
+    ```text
     throw new LocalizedException(new Phrase("Test LocalizedException"));
     ```
 
 1. Execute the place order GraphQL request:
 
-    ```
+    ```graphql
     mutation {
     placeOrder(input: {cart_id: "cart_id"}) {
         order {
@@ -61,7 +61,7 @@ The GraphQL response for order placement does not include a `LocalizedException`
     1. The response does not include the `LocalizedException` message.
     1. Example of the incorrect response:
 
-        ```
+        ```json
         {
         "data": {
             "placeOrder": {

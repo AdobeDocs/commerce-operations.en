@@ -29,7 +29,7 @@ You can specify bootstrap variables as system-wide environment variables, which 
 
 For example, you can use the `MAGE_PROFILER` system environment variable to specify a mode as follows:
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -37,7 +37,7 @@ Set the variable using a shell-specific command. Because shells have differing s
 
 Bash shell example for CentOS:
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -74,7 +74,7 @@ You can modify `.htaccess` in any of the following locations, depending on your 
 
 1. Set the value of `MAGE_PROFILER` to any of the following:
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -118,13 +118,13 @@ The procedures that follows show how to set the application mode in an Apache vi
    1. Save your changes and exit the text editor.
    1. Enable your virtual host if you have not already done so:
 
-      ```bash
+      ```shell
       a2ensite <virtual host config file name>
       ```
 
       For example,
 
-      ```bash
+      ```shell
       a2ensite my.magento.conf
       ```
 

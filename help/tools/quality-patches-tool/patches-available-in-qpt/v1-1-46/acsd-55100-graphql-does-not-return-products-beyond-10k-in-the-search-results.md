@@ -58,7 +58,7 @@ To resolve the issue, include the following line in your main `composer.json` fi
 1. Generate the catalog with *15k* products.
 1. Send the [!DNL GraphQL]:
 
-```
+```graphql
     query {
     products(
     filter: {

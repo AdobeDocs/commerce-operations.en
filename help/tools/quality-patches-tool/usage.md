@@ -25,7 +25,7 @@ Watch this [technical video](https://experienceleague.adobe.com/docs/commerce-le
 >
 >If it is not already installed, you must install [[!DNL Git]](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool]. Add the `magento/quality-patches` Composer package to your `composer.json` file:
 
-```bash
+```shell
 composer require magento/quality-patches
 ```
 
@@ -33,7 +33,7 @@ composer require magento/quality-patches
 
 To view the list of individual patches available for your version of Adobe Commerce:
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -81,19 +81,19 @@ The status table includes:
 
 To apply a single patch, run the following command where `MAGETWO-XXXX` is the patch ID specified in the status table:
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
 ```
 
 You can also apply several patches at the same time by separating each additional patch ID with a space:
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 You must clean the cache after applying patches to see changes in the Adobe Commerce application:
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -109,25 +109,25 @@ You must clean the cache after applying patches to see changes in the Adobe Comm
 
 To revert a single patch, run the following command where `MAGETWO-XXXX` is the patch ID specified in the status table:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX
 ```
 
 Also, you can revert several patches at the same time by separating each additional patch ID with a space:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 To revert all applied patches:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert --all
 ```
 
 You must clean the cache after reverting patches to see changes in the Adobe Commerce application:
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -135,7 +135,7 @@ You must clean the cache after reverting patches to see changes in the Adobe Com
 
 Adobe Commerce periodically releases new individual patches. You must update the [!DNL Quality Patches Tool] to get new individual patches:
 
-```bash
+```shell
 composer update magento/quality-patches
 ```
 
@@ -145,7 +145,7 @@ View the added patches:
 >
 >New add patches display at the bottom of the table.
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -157,7 +157,7 @@ To re-apply patches:
 
 1. Update the [!DNL Quality Patches Tool]:
 
-   ```bash
+   ```shell
    composer update magento/quality-patches.
    ```
 
@@ -165,7 +165,7 @@ To re-apply patches:
 
 1. Apply the patches:
 
-   ```bash
+   ```shell
    ./vendor/bin/magento-patches apply MAGETWO-XXXX
    ```
 
@@ -173,7 +173,7 @@ To re-apply patches:
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    ./bin/magento cache:clean
    ```
 

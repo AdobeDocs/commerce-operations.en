@@ -37,19 +37,19 @@ Partial reindexing throws an error.
 1. Add slave connection settings to the `app/etc/env.php`.
 1. Generate up to 10000 products and execute the following command:
 
-   ```
+   ```shell
    bin/magento index:reindex
    ```
 
 1. Add generated product IDs into `catalogsearch_fulltext_cl` DB table.
    
-   ```
+   ```sql
    insert into catalogsearch_fulltext_cl (entity_id) select entity_id from catalog_product_entity;
    ```
 
 1. Execute the following command to trigger the partial reindex:
 
-   ```
+   ```shell
    bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1 
    ```
 

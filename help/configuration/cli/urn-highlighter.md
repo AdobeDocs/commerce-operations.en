@@ -27,7 +27,7 @@ Currently, only PhpStorm and Visual Studio Code are supported.
 
 Command syntax:
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 

@@ -19,8 +19,7 @@ The [!DNL Site-Wide Analysis Tool] service is available in [production mode](htt
 
 >[!NOTE]
 >
->Your account should be entitled to **[!DNL Support Permissions]** in order to access the [!DNL Site-Wide Analysis Tool Dashboard].
->See more details in [Share a [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in our user guide.
+>To access the Site-Wide Analysis Tool (SWAT), users must have the required permissions in Adobe Commerce Admin. Direct access to the SWAT URL, including bookmarked links, is not supported.
 
 ## Logging in to [!DNL Site-Wide Analysis Tool Dashboard] from your store's [!UICONTROL Admin Panel]
 

@@ -34,7 +34,7 @@ The [!DNL GraphQL] company query returns `null` for the **[!UICONTROL Customer I
 1. From the Commerce Admin, enable B2B features and create a test company.
 1. Generate a bearer token for the company admin using the following [!DNL GraphQL] mutation:
 
-```
+```graphql
 mutation {
   generateCustomerToken(email: "admin_email@example.com", password: "admin_password") {
     token
@@ -44,7 +44,7 @@ mutation {
 
 1. Use the generated token to retrieve the customer's company structure with the following [!DNL GraphQL] query:
 
-```
+```graphql
 query {
   company {
     id

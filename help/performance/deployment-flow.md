@@ -15,7 +15,7 @@ The `composer.json` and `composer.lock` files manage [!DNL Commerce] dependencie
 
 To install [!DNL Commerce] dependencies:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -30,7 +30,7 @@ When you preprocess and compile dependency injection (DI) instructions, Magento:
 
 To preprocess and compile DI instructions:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -44,25 +44,25 @@ To update the autoloader:
 >
 >The `-o` option converts PSR-0/4 autoloading to classmap to get a faster autoloader. The `--apcu` option uses APCu to cache found/not-found classes.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 If you plan on updating the autoloader, you must run the following commands in order:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -82,7 +82,7 @@ You can use a variety of options to customize deployment operations based on sto
 
 To deploy static content:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -100,7 +100,7 @@ Finally, you need to place your store in Production mode. Production mode is spe
 
 You can also deploy static content, compile the content, and set the mode in one CLI command:
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Advanced Varnish configuration
+title: Advanced Varnish Configuration
 description: Learn how to configure advanced Varnish features for Adobe Commerce including health checks, grace, and saint modes. Discover VCL optimization techniques.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
@@ -73,7 +73,7 @@ Alternatively, static files versioning can be turned off on all machines. This c
 
 Finally, all Commerce instances must be in production mode. Before Varnish starts, clear the cache on each instance. In the Admin, go to **System** > Tools > **Cache Management** and click **Flush Magento Cache**. You can also run the following command to clear the cache:
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -86,7 +86,7 @@ After you recompile, you can install the Saint mode module. In general, follow t
 1. Obtain the source code from [Varnish modules](https://github.com/varnish/varnish-modules). Clone the Git version (master version) since the 0.9.x versions contain a source code error.
 1. Build the source code with autotools:
 
-    ```bash
+    ```shell
     sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
     ./bootstrap   # If running from git.
     ./configure

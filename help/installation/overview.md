@@ -37,7 +37,7 @@ You have full control over your environment, allowing for greater customization 
 
 The following diagram illustrates the main steps involved in installing Adobe Commerce for on-premises environments:
 
-![How installation works](../assets/installation/on-premises-install.drawio.svg)
+![How installation works](../assets/installation/on-premises-install.png)
 
 ### Set up your server environment
    

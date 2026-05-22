@@ -25,7 +25,7 @@ To apply a custom patch using Composer:
 1. Open your command-line application and navigate to your project directory.
 1. Add the `cweagans/composer-patches` plugin to the `composer.json` file.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
@@ -51,13 +51,13 @@ To apply a custom patch using Composer:
 
 1. Apply the patch. Use the `-v` option only if you want to see debugging information.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Update the `composer.lock` file. The lock file tracks which patches have been applied to each Composer package in an object.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -69,7 +69,7 @@ To apply patches from the command line:
 1. Log into the server as the [admin user](../../configuration/cli/config-cli.md#prerequisites) and verify that the file is in the correct directory.
 1. In the command-line interface, run the following commands according to the patch extension:
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

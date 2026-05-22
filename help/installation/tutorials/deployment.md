@@ -20,7 +20,7 @@ You can use this command if:
 
 Command options:
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter>=<value>, ...]
 ```
 
@@ -48,7 +48,7 @@ After importing websites, stores, store views, and themes, you can create produc
 
 On the production system, run the following command to import data from the configuration files (`config.php` and `env.php`) to the database:
 
-```bash
+```shell
 bin/magento app:config:import [-n, --no-interaction]
 ```
 

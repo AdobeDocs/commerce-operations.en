@@ -1,6 +1,6 @@
 ---
 title: Secure cron PHP
-description: Restrict who can run the cron.php file in a browser.
+description: Learn how to restrict browser access to pub/cron.php and secure Adobe Commerce scheduled tasks against unauthorized or malicious cron execution.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 ---
@@ -41,11 +41,11 @@ For security reasons, you can locate the password file anywhere except your web 
 
 Enter the following commands as a user with `root` privileges:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -55,7 +55,7 @@ Follow the prompts on your screen to create a password for the user.
 
 To add another user to your password file, enter the following command as a user with `root` privileges:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -65,13 +65,13 @@ You can enable more than one user to run cron by adding these users to your pass
 
 To add another user to your password file:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 To create an authorized group, create a group file anywhere outside the web server docroot. The group file specifies the name of the group and the users in the group. In this example, the group name is `MagentoCronGroup`.
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -157,7 +157,7 @@ Commerce provides an optimized sample nginx configuration file out of the box. W
 
 1.Restart nginx:
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
@@ -177,7 +177,7 @@ The easiest way to verify that `pub/cron.php` is secure is to verify that it is 
 
    For example,
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

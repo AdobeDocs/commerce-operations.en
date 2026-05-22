@@ -1,6 +1,6 @@
 ---
 title: Magento Open Source release notes
-description: Review release notes for the Magento Open Source codebase.
+description: Review Magento Open Source release notes for enhancements, security updates, bug fixes, and known issues across supported Open Source versions.
 exl-id: 6a7b195c-54d5-4827-81e1-e74453350f5e
 ---
 # Magento Open Source release notes

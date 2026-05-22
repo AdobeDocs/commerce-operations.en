@@ -43,7 +43,7 @@ Adobe Commerce B2B modules installed.
 1. Log in to the **[!UICONTROL Admin]**, disable the company user, and set *[!UICONTROL Customer Active]* = *No*
 1. Make sure to delete the created team via GraphQL.
 
-   ```
+   ```graphql
    mutation {
      deleteCompanyTeam(
        id: "MQ=="

@@ -50,7 +50,7 @@ Adobe Commerce supports message queues implemented through [!DNL RabbitMQ]. [!DN
 
 >[!WARNING]
 >
->The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](../configuration/storage/revert-split-database.md).
+>The split database feature was deprecated in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce allows you to configure scalable database storage to meet the needs of a growing business. You can set up three separate master databases that serve specific domains:
 
@@ -62,13 +62,13 @@ To configure additional databases, you must create an empty database and run one
 
 For Checkout Master DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 For OMS Master DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -80,7 +80,7 @@ In addition to master databases, [!DNL Commerce] allows you to configure a numbe
 
 You can add a slave database by running the following command:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

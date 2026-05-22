@@ -1,6 +1,6 @@
 ---
 title: Uninstall themes
-description: Follow these steps to uninstall an Adobe Commerce theme.
+description: Learn how to uninstall Adobe Commerce themes from the command line, including Composer packages, code removal, and backups before you make changes.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 ---
@@ -10,7 +10,7 @@ Before you use this command, you must know the relative path to your theme. Them
 
 For example, the path to the Luma theme provided with Adobe Commerce is `frontend/Magento/luma`.
 
-For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure).
 
 ## Overview of uninstalling themes
 
@@ -21,13 +21,13 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
 *  Updating the `parent` node information in `theme.xml` to remove references to the theme.
 *  Removing theme code from the file system.
 
-   [More information about theme inheritance](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+   [More information about theme inheritance](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance).
 
 ## Uninstall themes
 
 Command usage:
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
@@ -62,20 +62,20 @@ The command performs the following tasks:
 
 For example, if you attempt to uninstall a theme that another theme depends on, the following message displays:
 
-```
+```text
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
 One alternative is to uninstall both themes at the same time as follows backing up the codebase:
 
-```bash
+```shell
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
 Messages similar to the following display:
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

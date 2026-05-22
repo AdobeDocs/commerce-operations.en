@@ -38,7 +38,7 @@ Install the B2B module.
 1. Enable [!UICONTROL dev] query log using `bin/magento dev:que:enab`.
 1. Now send the below [!DNL GraphQL] request (id is the [!UICONTROL base64] encoded role id):
 
-   ```
+   ```graphql
    mutation {
    updateCompanyRole(
       input: {
