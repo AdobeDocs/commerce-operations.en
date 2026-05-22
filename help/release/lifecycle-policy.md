@@ -10,7 +10,7 @@ Adobe Commerce follows a defined software lifecycle policy to ensure customers r
 
 >[!IMPORTANT]
 >
->Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting **June 1, 2027**, Adobe will stop maintaining Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting **June 1, 2027**, Adobe not support Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
 
 ## Understanding support tiers
 
