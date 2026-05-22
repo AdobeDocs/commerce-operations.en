@@ -365,7 +365,7 @@ feature: Configuration
         - v1.1.30 {#v1-1-30}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
             - [ACSD-50367: Customer address export does not work](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-            - [BB2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+            - [B2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
             - [B2B-2674: Adds caching capability to customAttributeMetadata GraphQL query](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
             - [ACSD-49973: Improved performance fetching bundled products via [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
             - [ACSD-50116: An admin user cannot create a URL rewrite](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
