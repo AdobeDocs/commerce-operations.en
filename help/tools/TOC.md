@@ -988,7 +988,7 @@ feature: Configuration
            - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
-           - [ACP2E-4531: CMS hierarchy doesn't update hierarchical URL when child page URL key is changed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
+           - [ACP2E-4531: CMS hierarchy does not update the hierarchical URL when the child page URL key changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
            - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
