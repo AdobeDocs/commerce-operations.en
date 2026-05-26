@@ -451,7 +451,7 @@ entries:
   membership:
   labels:
   - major-update
-- description: Added instructions for properly overriding Adobe Commerce’s default
+- description: Added instructions for properly overriding Adobe Commerce's default
     L2 cache directories in `env.php` to ensure that cache files are stored in the
     intended location and prevent split cache directories and GlusterFS segmentation
     faults. See the updated guidance in [Best practices for Redis and Valkey services
