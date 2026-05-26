@@ -182,7 +182,7 @@ Command options:
 bin/magento indexer:reset [indexer]
 ```
 
-Where ```[indexer]``` is a space-separated list of indexers. Omit `[indexer]` to invalidate all indexers.
+Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to invalidate all indexers.
 
 Sample result:
 
