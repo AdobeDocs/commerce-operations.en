@@ -17,7 +17,7 @@ QPT v1.1.15 includes the following patches:
 1. **MDVA-40961**: Fixes the issue where an additional item can't be added to the cart when the minimum qty of the item is already in the cart.
 1. **MDVA-43718**: Fixes *The consumer isn't authorized to access %resources.* error that appears when accessing a shared catalog from a custom integration.
 1. **MDVA-44533**: Fixes the issue where the discount is wrongly applied to a bundle child product.
-1. **MDVA-44660**: Fixes the issue where the grave accent character ``` ` ``` could not be used for a customer's first and last name.
+1. **MDVA-44660**: Fixes the issue where the grave accent character (`) could not be used for a customer's first and last name.
 1. **MDVA-44887**: Fixes the *Uncaught SyntaxError: Unexpected token 'const'* error in the Admin panel.
 
 Use the menu on the left to navigate to a specific patch page.
