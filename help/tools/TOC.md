@@ -365,7 +365,7 @@ feature: Configuration
         - v1.1.30 {#v1-1-30}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
             - [ACSD-50367: Customer address export does not work](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-            - [BB2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+            - [B2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
             - [B2B-2674: Adds caching capability to customAttributeMetadata GraphQL query](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
             - [ACSD-49973: Improved performance fetching bundled products via [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
             - [ACSD-50116: An admin user cannot create a URL rewrite](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
@@ -988,6 +988,8 @@ feature: Configuration
            - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+           - [AC-10737: `bin/magento setup:db:status` command doesn't recognize JSON data type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+           - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

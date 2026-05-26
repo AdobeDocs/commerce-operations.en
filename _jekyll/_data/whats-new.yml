@@ -2,8 +2,57 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 15 15:40:03 2026
+updated: Fri May 22 17:24:18 2026
 entries:
+- description: 'Updated [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9):
+    clarified the AC-10933 `setup:di:compile` fix, removed cancelled fix AC-14519,
+    and adjusted fixed-issue counts.<br/>_Credit: [hostep](https://github.com/hostep)_'
+  versions: ''
+  type: feedback, technical
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1989
+  merge_commit: 0e5a69a282839a393d6eb873af9938208706af50
+  contributor: shevtsov_adobe
+  labels:
+  - feedback
+  - technical
+- description: 'Added detailed description of the QPT 1.1.79 fix for [AC-10737: Bin/magento
+    setup:db:status command doesn''t recognize JSON data type](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1953
+  merge_commit: 9aad978f42697f74ebd7c8f401e45b4780bd5038
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4601:
+    Re-saving a payment authorization transaction self-reference parent_id and trigger
+    an infinite loop/OOM](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1957
+  merge_commit: 3fe9730b1954a07d9ef4a405ee75fcde9511e09d
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [Software lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
+    with Cloud version upgrade enforcement dates, support period definitions (including
+    security-only transitional period), an expanded end-of-support table for 2.4.4–2.4.9,
+    PHP PCI guidance, and paths to migrate to Adobe Commerce as a Cloud Service or
+    upgrade on PaaS.
+  versions: ''
+  type: major-update
+  date: May 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1976
+  merge_commit: cd0f27ae6a8dcec9b25af15386d8350c22d2fb95
+  contributor: meker_adobe
+  labels:
+  - major-update
 - description: Corrected Valkey LTS compatibility to 8.1 in the [2.4.5 security patch
     releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support),
     [2.4.6 security patch releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support),
