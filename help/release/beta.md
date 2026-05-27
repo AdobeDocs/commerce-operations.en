@@ -90,7 +90,11 @@ To share your feedback as you use this beta feature, send an email to [commerce-
 
 ### Search matching and ranking (Private Beta)
 
-Adobe is improving how product discovery ranks search results for [!DNL Live Search] on Adobe Commerce and for [!DNL Adobe Commerce Optimizer]. The update prioritizes **exact and near phrase matches**, then matches where **all query terms appear in the same searchable attribute**, and finally **cross-field** matches (including behavior that supports autocomplete-style suggestions). That layered model helps high-intent queries surface the most relevant products first while still returning useful alternatives.
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
+
+[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+
+Adobe is improving how product discovery ranks search results for [!DNL Live Search] on [!DNL Adobe Commerce] and for [!DNL Adobe Commerce Optimizer]. The update prioritizes **exact and near phrase matches**, then matches where **all query terms appear in the same searchable attribute**, and finally **cross-field** matches (including behavior that supports autocomplete-style suggestions). That layered model helps high-intent queries surface the most relevant products first while still returning useful alternatives.
 
 The same relevance model interacts with **search weights**, **intelligent ranking**, **synonyms**, and **merchandising rules** (pin, boost, bury). German storefronts can use **decompounding** for compound words, with the same overall prioritization approach.
 
