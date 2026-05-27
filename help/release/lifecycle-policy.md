@@ -10,7 +10,7 @@ Adobe Commerce follows a defined software lifecycle policy to ensure customers r
 
 >[!IMPORTANT]
 >
->Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
 
 ## Understanding support tiers
 
@@ -36,7 +36,7 @@ A one-time, time-limited transitional period available only for versions 2.4.4, 
 
 ## End of support dates
 
-The following table shows the full lifecycle for each Adobe Commerce version, including the new version upgrade enforcement dates for Adobe Commerce on Cloud (PaaS) environments.
+The following table shows the full lifecycle for each Adobe Commerce version, including the new version upgrade enforcement dates for Adobe Commerce on Cloud environments.
 
 | Release | General Availability | End of regular support | End of extended support | End of security-only period | [Version upgrade enforcement date (Cloud only)](version-upgrade-enforcement-policy.md) |
 |---------|----------------------|------------------------|-------------------------|-----------------------------|-----------------------------------------------|
@@ -172,7 +172,7 @@ Use this chart to see overlapping support windows across release lines. For exac
 
 ## Security-only transitional provisions {#security-only-transitional-provisions}
 
-As a one-time measure for 2.4.4, 2.4.5, and 2.4.6 versions with extended support that already ended in 2025 and 2026, Adobe provides the following transitional provisions to give you additional time to plan and execute your migration or upgrade. These provisions do not replace [Cloud version upgrade enforcement](version-upgrade-enforcement-policy.md) for PaaS environments. You must still upgrade or migrate before your published enforcement date.
+As a one-time measure for 2.4.4, 2.4.5, and 2.4.6 versions with extended support that already ended in 2025 and 2026, Adobe provides the following transitional provisions to give you additional time to plan and execute your migration or upgrade. These provisions do not replace [Cloud version upgrade enforcement](version-upgrade-enforcement-policy.md) for Commerce on Cloud environments. You must still upgrade or migrate before your published enforcement date.
 
 | Version | Transitional provision | Period | What is included | What is not included |
 |---------|------------------------|--------|------------------|----------------------|
@@ -231,6 +231,6 @@ Contact your Adobe account team to begin a migration assessment. See [Adobe Comm
 
 ### Alternative path: upgrade to a supported Adobe Commerce on cloud or on-premises release
 
-If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, you can upgrade to the latest currently supported Adobe Commerce on-premises or on cloud release. This moves you to a fully supported, modern infrastructure stack while preserving your existing PaaS deployment model.
+If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, you can upgrade to the latest currently supported Adobe Commerce on-premises or on cloud release. This moves you to a fully supported, modern infrastructure stack while preserving your existing Commerce on Cloud deployment model.
 
 Note that this path does not eliminate future upgrade obligations. Customers on PaaS must continue upgrading as release lines reach their version upgrade enforcement dates.
