@@ -365,7 +365,7 @@ feature: Configuration
         - v1.1.30 {#v1-1-30}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
             - [ACSD-50367: Customer address export does not work](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-            - [BB2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+            - [B2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
             - [B2B-2674: Adds caching capability to customAttributeMetadata GraphQL query](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
             - [ACSD-49973: Improved performance fetching bundled products via [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
             - [ACSD-50116: An admin user cannot create a URL rewrite](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
@@ -694,7 +694,7 @@ feature: Configuration
             - [ACSD-58471: Dynamic content fails to load on product detail page, when catalog price rules scheduled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
             - [ACSD-58383: Duplicate credit memos from simultaneous refund requests via [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
             - [ACSD-58735: Restricted admin can't view abandoned shopping carts on customer account for associated website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
-            - [ACSD-62793: Datetime attributes in exports missing time component. Additionally if [!UICONTROL Fields Enclosure] enabled, attribute values enclosed within double-quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
+            - [ACSD-62793: Datetime attributes in exports missing time component. Additionally if [!UICONTROL Fields Enclosure] enabled, attribute values enclosed within double-quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793.md)
             - [ACSD-60344: Duplicate order confirmation emails on using [!UICONTROL Purchase Order] with auto-approval](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
             - [ACSD-62332: Product listing GraphQL query limited to 10,000 products and [!DNL Live Search] sets current page to 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
             - [ACSD-62591: Theme doesn't switch properly when [!UICONTROL User Agent Rules] configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
@@ -989,6 +989,12 @@ feature: Configuration
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
            - [ACP2E-4720: Free shipping cart price rules don't reset for fixed-price bundle products with Ship Items Separately](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
+           - [AC-10698: Transaction prices and totals aren't sent to Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
+           - [ACP2E-4475: Order or filter by price not working for out-of-stock bundle products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
+           - [ACP2E-4411: Bundle product prices show incorrect tax and currency values between the Product Detail Page and cart in a multi-currency setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
+           - [ACP2E-4110: Bundle product prices with a **[!UICONTROL Special Price]** differ between PDP/PLP and cart in a non-default currency](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
+           - [ACP2E-4603: Catalog Permissions product reindex leave stale permission index rows and MySQL deadlock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
+           - [AC-10737: `bin/magento setup:db:status` command doesn't recognize JSON data type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
            - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
