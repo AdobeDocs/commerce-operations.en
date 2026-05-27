@@ -1,12 +1,12 @@
 ---
 title: Cloud Version Upgrade Enforcement Policy
-description: Learn about version upgrade enforcement for Adobe Commerce on Cloud (PaaS)—why Adobe enforces upgrades, enforcement dates, deactivation, and required actions. See the lifecycle policy for transitional provisions and migration paths.
+description: Learn about version upgrade enforcement for Adobe Commerce on Cloud—why Adobe enforces upgrades, enforcement dates, deactivation, and required actions. See the lifecycle policy for transitional provisions and migration paths.
 nudge: true
 ---
 
-# Version upgrade enforcement policy for Adobe Commerce on Cloud (PaaS)
+# Version upgrade enforcement policy for Adobe Commerce on Cloud
 
-When regular support and extended support end for an Adobe Commerce version, Adobe reserves the right to deactivate Adobe Commerce on Cloud (PaaS) environments still running that unsupported version. Version upgrade enforcement applies to Adobe-hosted PaaS environments only; on-premises customers manage their own infrastructure.
+When regular support and extended support end for an Adobe Commerce version, Adobe reserves the right to deactivate Adobe Commerce on Cloud environments still running that unsupported version. Version upgrade enforcement applies to Adobe Commerce on Cloud environments only; on-premises customers manage their own infrastructure.
 
 You must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line.
 
@@ -32,6 +32,6 @@ Extended support is announced closer to the end of regular support for each rele
 
 ## What happens on the version upgrade enforcement date
 
-On the published upgrade enforcement date, Adobe will stop maintenance of all Adobe Commerce on Cloud (PaaS) environments still running the affected release version and reserve the right to deactivate them. You will receive advance notifications at key milestones leading up to the version upgrade enforcement date. Adobe will provide a data export window before environment deactivation so you can retrieve your data.
+On the published upgrade enforcement date, Adobe will stop maintenance of all Adobe Commerce on Cloud environments still running the affected release version and reserve the right to deactivate them. You will receive advance notifications at key milestones leading up to the version upgrade enforcement date. Adobe will provide a data export window before environment deactivation so you can retrieve your data.
 
 The first enforcement date under this policy is **June 1, 2027**, for release lines that reach end of extended support before that date. See the [End of support dates](lifecycle-policy.md#end-of-support-dates) table for version-specific enforcement dates.
