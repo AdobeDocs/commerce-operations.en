@@ -10,7 +10,11 @@ Adobe Commerce follows a defined software lifecycle policy to ensure customers r
 
 >[!IMPORTANT]
 >
->Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting **June 1, 2027**, Adobe not support Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to deactivate them.  If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+
+```suggestion
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud (PaaS). Starting June 1, 2027, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud (PaaS), you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+```
 
 ## Understanding support tiers
 
@@ -30,9 +34,9 @@ The standard three-year support period from the General Availability (GA) date. 
 
 A one-year support extension available for specific release lines beyond regular support. Includes quality and security patches. Available for Adobe Commerce customers only — not available for Magento Open Source.
 
-### Security-only transitional period
+## Security-only transitional period
 
-A one-time, time-limited transitional period available for specific versions whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only. Adobe Commerce on-call support is not included. This period is not equivalent to regular or extended support and will not be extended further. Treat it as a migration period, not as a long-term support tier. See [Security-only transitional provisions](#security-only-transitional-provisions).
+A one-time, time-limited transitional period available only for versions 2.4.4, 2.4.5, and 2.4.6 whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only. Adobe Commerce on-call support is not included. This period is not equivalent to regular or extended support and will not be extended further. Treat it as a migration period, not as a long-term support tier. See [Security-only transitional provisions](#security-only-transitional-provisions).
 
 ## End of support dates
 
@@ -187,7 +191,7 @@ As a one-time measure for 2.4.4, 2.4.5, and 2.4.6 versions with extended support
 
 ## Platform dependencies
 
-Staying on a supported Commerce release also requires supported platform dependencies. Adobe does not provide security and quality fixes for third-party services and software dependencies — such as PHP, MariaDB, OpenSearch, Redis, Valkey, RabbitMQ, and others — that may reach end of life while you are on the three-year or extended support period for Adobe Commerce.
+Staying on a supported Commerce release also requires supported platform dependencies. Adobe does not provide security and quality fixes for third-party services and software dependencies — such as MariaDB, OpenSearch, Redis, Valkey, RabbitMQ, and others — that may reach end of life while you are on the three-year or extended support period for Adobe Commerce.
 
 You are responsible for maintaining all third-party dependencies and platform services on versions that are actively supported. See [System requirements](../installation/system-requirements.md) for the full list of tested and supported third-party technologies.
 
@@ -210,9 +214,9 @@ The following PHP versions used by older Commerce release lines have reached or 
 
 {style="table-layout:auto"}
 
-### PCI compliance notice
-
-PCI compliance is the merchant's responsibility to assess. Adobe strongly recommends that merchants on affected versions consult with their qualified security assessor and prioritize moving to a supported Commerce version and a supported PHP version as soon as possible. For PHP support timelines, see [PHP supported versions](https://www.php.net/supported-versions.php) and [PHP end of life](https://www.php.net/eol.php).
+>[!IMPORTANT]
+>
+>**PCI compliance notice:** PCI compliance is the merchant's responsibility to assess. Adobe strongly recommends that merchants on affected versions consult with their qualified security assessor and prioritize moving to a supported Commerce version and a supported PHP version as soon as possible. For PHP support timelines, see [PHP supported versions](https://www.php.net/supported-versions.php) and [PHP end of life](https://www.php.net/eol.php).
 
 ## Upgrade and migration options
 
