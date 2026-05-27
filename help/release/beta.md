@@ -88,6 +88,21 @@ To learn more, see [Category merchandising](https://experienceleague.adobe.com/e
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
+### Search matching and ranking (Private Beta)
+
+Adobe is improving how product discovery ranks search results for [!DNL Live Search] on Adobe Commerce and for [!DNL Adobe Commerce Optimizer]. The update prioritizes **exact and near phrase matches**, then matches where **all query terms appear in the same searchable attribute**, and finally **cross-field** matches (including behavior that supports autocomplete-style suggestions). That layered model helps high-intent queries surface the most relevant products first while still returning useful alternatives.
+
+The same relevance model interacts with **search weights**, **intelligent ranking**, **synonyms**, and **merchandising rules** (pin, boost, bury). German storefronts can use **decompounding** for compound words, with the same overall prioritization approach.
+
+**Key benefits**
+
+- Stronger boosts for exact and near phrase matches (including normalized forms such as singular and plural).
+- Higher ranking when all query words appear together in one searchable field.
+- Clearer expectations for how weights, intelligent ranking, and manual rules combine at query time.
+- Guidance for validating high-value queries and tuning boost rules after the change.
+
+To request an invitation to this private beta, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
+
 ### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
