@@ -20,7 +20,7 @@ The following sections explain why Adobe enforces upgrades, how enforcement date
 
 Adobe is responsible for the security and compliance of the hosted platform infrastructure that Adobe Commerce on Cloud customers run on. This includes keeping all underlying software dependencies up to date, applying security patches, and meeting compliance standards, such as PCI, that customers rely on.
 
-When security support for underlying software dependencies is officially ended by vendors, Adobe can no longer provide the required level of security coverage and platform support. Continuing to run stores on unsupported infrastructure puts customers, their shoppers, and Adobe at unacceptable risk. Adobe is therefore introducing a formal enforced version upgrade enforcement policy that defines when Adobe-hosted Cloud environments running unsupported Commerce versions will be deactivated.
+When security support for underlying software dependencies is officially ended by vendors, Adobe can no longer provide the required level of security coverage and platform support. Continuing to run stores on unsupported infrastructure puts customers, their shoppers, and Adobe at unacceptable risk. Adobe is therefore introducing a formal enforced version upgrade enforcement policy that defines when Adobe Commerce on Cloud environments running unsupported Commerce versions will be deactivated.
 
 ## How upgrade enforcement dates are calculated
 
