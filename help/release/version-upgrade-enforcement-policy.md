@@ -1,6 +1,7 @@
 ---
 title: Cloud Version Upgrade Enforcement Policy
 description: Learn about version upgrade enforcement for Adobe Commerce on Cloud (PaaS)—why Adobe enforces upgrades, enforcement dates, deactivation, and required actions. See the lifecycle policy for transitional provisions and migration paths.
+nudge: true
 ---
 
 # Version upgrade enforcement policy for Adobe Commerce on Cloud (PaaS)
