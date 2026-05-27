@@ -989,6 +989,7 @@ feature: Configuration
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
            - [ACP2E-4411: Bundle product prices show incorrect tax and currency values between the Product Detail Page and cart in a multi-currency setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
+           - [ACP2E-4110: Bundle product prices with a **[!UICONTROL Special Price]** differ between PDP/PLP and cart in a non-default currency](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
            - [ACP2E-4603: Catalog Permissions product reindex leave stale permission index rows and MySQL deadlock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
            - [AC-10737: `bin/magento setup:db:status` command doesn't recognize JSON data type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
            - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
