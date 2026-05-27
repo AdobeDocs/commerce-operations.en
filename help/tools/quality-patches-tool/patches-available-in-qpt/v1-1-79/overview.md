@@ -13,8 +13,6 @@ QPT v1.1.79 includes the following patches:
 1. **ACP2E-4402**: Fixes the issue where products created as disabled weren't added back to related [!UICONTROL Target Rule] results after being enabled.
 1. **ACP2E-4505**: Fixes the issue where it was possible to save a category with stale data from a duplicate browser tab, creating a circular dependency.
 1. **[ACP2E-4531](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)**: Fixes the issue where changing a CMS page's URL key didn't update the page's hierarchical URL.
-1. **[ACP2E-4531](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)**: Fixes the issue where changing a CMS page's URL key didn't update the page's hierarchical URL.
-1. **ACP2E-4531**: Fixes the issue where changing a CMS page's URL key didn't update the page's hierarchical URL.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: Fixes the issue where payment transaction processing could behave inefficiently under certain conditions.
 1. **ACP2E-4603**: Fixes the issue where running the [!UICONTROL Catalog Permissions] product reindex left existing permission index rows unchanged, causing updated category permission grants to not be reliably reflected on products.
 1. **ACP2E-4706**: Fixes the issue where products not enabled in the [!UICONTROL Admin] scope were skipped by the [!UICONTROL Target Rule] indexer.
