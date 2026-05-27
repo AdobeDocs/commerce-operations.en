@@ -28,4 +28,4 @@ QPT v1.1.79 includes the following patches:
 1. **AC-10698**: Fixes the issue where the system sent the currency at the all orders level instead of associating it with individual orders. Transaction prices and totals are now sent per order to [!DNL Google Tag], improving ecommerce data tracking accuracy.
 1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: Fixes an issue where the `bin/magento setup:db:status` command does not recognize the JSON data type.
 
-Use the menu on the left to navigate to a specific patch page.
+Use the menu on the left to navigate to a specific patch page. 
