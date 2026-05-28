@@ -113,7 +113,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.74 {#v1-1-74}
 
-* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner’s name is not correctly shown in gift card email headers when the invoice is created from another store.
+* **ACSD-68636** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes an issue where the store owner's name is not correctly shown in gift card email headers when the invoice is created from another store.
 * **ACSD-68430** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes an issue where saving a customer or customer address fails if the record includes multiple attribute options that have been deleted from the attribute configuration.
 * **ACSD-68499** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes an issue where the GraphQL `updateCartItems` mutation returns an incorrect success response when updating quantities that exceed available stock, causing inflated quantities and totals.
 * **ACSD-68810** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes an issue where an order is assigned to a customer created on a different website, despite the **[!UICONTROL Customer Account Sharing]** configuration.
@@ -985,7 +985,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **MDVA-40961** (*for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4*) - Fixes the issue where an additional item can't be added to the cart when the minimum qty of the item is already in the cart.
 * **MDVA-44887** (*for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5*) - Fixes the *Uncaught SyntaxError: Unexpected token 'const'* error in the Admin panel.
 * **MDVA-43718** (*for Adobe Commerce and Magento Open Source >=2.3.0 <2.4.5*) - Fixes *The consumer isn't authorized to access %resources.* error that appears when accessing a shared catalog from a custom integration.
-* **MDVA-44660** (*for Adobe Commerce and Magento Open Source >=2.4.2-p1 <2.4.5*) - Fixes the issue where the grave accent character ``` ` ``` could not be used for a customer's first and last name.
+* **MDVA-44660** (*for Adobe Commerce and Magento Open Source >=2.4.2-p1 <2.4.5*) - Fixes the issue where the grave accent character (\`) could not be used for a customer's first and last name.
 * **MDVA-40896** (*for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4*) - Fixes the *Error: TypeError: Argument 3 passed to Magento* error in async product bulk API.
 * **MDVA-38559** (*for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.3*) - Fixes the */V1/customers/search API* error for customers with more than one subscription.
 * **MDVA-44533** (*for Adobe Commerce and Magento Open Source >=2.3.1 <2.4.4*) - Fixes the issue where the discount is wrongly applied to a bundle child product.
