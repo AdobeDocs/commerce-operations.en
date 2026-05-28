@@ -989,7 +989,7 @@ feature: Configuration
            - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
-           - [ACP2E-4720: Free shipping cart price rules don't reset for fixed-price bundle products with ship items separately](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
+           - [ACP2E-4720: Free shipping cart price rules do not reset for fixed-price bundle products with ship items separately](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
            - [AC-10698: Transaction prices and totals aren't sent to Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
            - [ACP2E-4475: Order or filter by price not working for out-of-stock bundle products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
            - [ACP2E-4411: Bundle product prices show incorrect tax and currency values between the Product Detail Page and cart in a multi-currency setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
