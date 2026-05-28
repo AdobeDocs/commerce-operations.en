@@ -13,14 +13,19 @@ QPT v1.1.79 includes the following patches:
 1. **ACP2E-4402**: Fixes the issue where products created as disabled weren't added back to related [!UICONTROL Target Rule] results after being enabled.
 1. **[ACP2E-4505](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)**: Fixes the issue where it was possible to save a category with stale data from a duplicate browser tab, creating a circular dependency.
 1. **ACP2E-4531**: Fixes the issue where changing a CMS page's URL key didn't update the page's hierarchical URL.
+1. **[ACP2E-4603](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)**: Fixes the issue where running the [!UICONTROL Catalog Permissions] product reindex left existing permission index rows unchanged, causing updated category permission grants to not be reliably reflected on products.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: Fixes the issue where payment transaction processing could behave inefficiently under certain conditions.
-1. **ACP2E-4603**: Fixes the issue where running the [!UICONTROL Catalog Permissions] product reindex left existing permission index rows unchanged, causing updated category permission grants to not be reliably reflected on products.
 1. **ACP2E-4706**: Fixes the issue where products not enabled in the [!UICONTROL Admin] scope were skipped by the [!UICONTROL Target Rule] indexer.
 1. **ACP2E-4720**: Fixes the issue where free shipping wasn't properly applied nor removed for bundle products with cart discount rules.
 1. **ACP2E-4411**: Fixes the issue where the incorrect price is shown for a bundle product on the cart page and in the mini-cart for multiple-currency stores.
-1. **ACP2E-4475**: Fixes the issue where the products listing page incorrectly filters and sorts out-of-stock bundle products by price when the **[!UICONTROL Display Out of Stock Products]** option is enabled.
+1. **[ACP2E-4475](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)**: Fixes the issue where the products listing page incorrectly filters and sorts out-of-stock bundle products by price when the [!UICONTROL Display Out of Stock Products] option is enabled.
 1. **ACP2E-4110**: Fixes the issue where bundle products with a special price displayed incorrect amounts on PDP and PLP in a non-default currency.
+1. **[AC-10698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)**: Fixes the issue where the system sent the currency at the all-orders level instead of associating it with individual orders. 
+1. **AC-10737**: Fixes an issue where the `bin/magento setup:db:status` command doesn't recognize the JSON data type.
+1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)**: Fixes the issue where the incorrect price is shown for a bundle product on the cart page and in the mini-cart for multiple-currency stores.
+1. **ACP2E-4475**: Fixes the issue where the products listing page incorrectly filters and sorts out-of-stock bundle products by price when the **[!UICONTROL Display Out of Stock Products]** option is enabled.
+1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)**: Fixes the issue where bundle products with a **[!UICONTROL Special Price]** display incorrect amounts on the PDP and the PLP in a non-default currency.
 1. **AC-10698**: Fixes the issue where the system sent the currency at the all orders level instead of associating it with individual orders. Transaction prices and totals are now sent per order to [!DNL Google Tag], improving ecommerce data tracking accuracy.
 1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: Fixes an issue where the `bin/magento setup:db:status` command does not recognize the JSON data type.
 
-Use the menu on the left to navigate to a specific patch page.
+Use the menu on the left to navigate to a specific patch page. 
