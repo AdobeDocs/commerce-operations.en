@@ -28,7 +28,7 @@ The ACSD-58131 patch fixes the issue where the old media gallery fails to render
 
 When a 0-byte image is placed in the media gallery directory, the old media gallery fails to render any images. The updated system now skips invalid 0-byte files, displays valid images as expected, and logs a warning for each invalid file.
 
-```
+```text
 [2024-05-02T14:00:39.616459+00:00] report.WARNING: The image empty2.jpg is invalid and cannot be displayed in the gallery. [] []
 ```
 
@@ -44,7 +44,7 @@ When a 0-byte image is placed in the media gallery directory, the old media gall
     1. Under **[!UICONTROL Layout]**, drag a new **[!UICONTROL Row]** to the stage.
     1.  Expand **[!UICONTROL Media]** and drag an **[!UICONTROL Image]** placeholder into the row.
     1. Click **[!UICONTROL Select from Gallery]**.
-    1. Select the `wysiwyg` directory if it’s not selected by default.
+    1. Select the `wysiwyg` directory if it's not selected by default.
 
 <u>Expected results</u>:
 
@@ -54,7 +54,7 @@ The media gallery remains functional even if a 0-byte image (or any other file) 
 
 The media gallery fails to load any images from the `wysiwyg` directory due to a critical error logged in `var/log/system.log`:
 
-```
+```text
 [2024-03-22T05:00:55.100934+00:00] report.CRITICAL: Exception: Notice: getimagesizefromstring(): Error reading from ! in /app/project/vendor/magento/module-cms/Model/Wysiwyg/Images/Storage.php on line 426 in /app/project/vendor/magento/framework/App/ErrorHandler.php:62
 ```
 

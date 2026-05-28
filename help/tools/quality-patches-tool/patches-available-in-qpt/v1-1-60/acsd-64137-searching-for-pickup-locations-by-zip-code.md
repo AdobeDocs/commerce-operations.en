@@ -38,7 +38,7 @@ The zip code search for the Netherlands is not showing results on the frontend c
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Distance Provider for Distance Based SSA]**. Set **[!UICONTROL Provider]** to *Offline calculation*.
 1. Run the following command to import geo names for NL country.
 
-    ```bash
+    ```shell
     bin/magento inventory-geonames:import NL
     ```
 

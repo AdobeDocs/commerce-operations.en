@@ -10,7 +10,7 @@ exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
 
 [!DNL Commerce] web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) [!DNL Commerce] requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

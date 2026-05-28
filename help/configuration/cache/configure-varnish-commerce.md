@@ -4,7 +4,7 @@ description: Learn how to configure Varnish specifically for Adobe Commerce appl
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
 ---
-# Configure the Commerce application to use Varnish
+# Configure Varnish for Commerce
 
 To configure Commerce to use Varnish:
 
@@ -26,7 +26,7 @@ To configure Commerce to use Varnish:
 
 You can also activate Varnish from the command line--instead of logging in to the Admin—using the C command-line interface tool:
 
-```bash
+```shell
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
@@ -44,15 +44,15 @@ To export a Varnish configuration file from the Admin:
 
 1. Back up your existing `default.vcl`. Then rename the `varnish.vcl` file you just exported to `default.vcl`. Then copy the file to the `/etc/varnish/` directory.
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
    ```
 
-   ```bash
+   ```shell
    mv <download_directory>/varnish.vcl default.vcl
    ```
 
-   ```bash
+   ```shell
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
@@ -70,11 +70,11 @@ To export a Varnish configuration file from the Admin:
 
 1. Restart Varnish and your web server:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 

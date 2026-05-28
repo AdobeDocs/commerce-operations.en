@@ -39,7 +39,7 @@ The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_C
 1. Enable **[!UICONTROL Category Permissions]**.
 1. Set the following indexers to **[!UICONTROL Update on Schedule]** mode:
 
-    ```
+    ```shell
     bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
     ```
 
@@ -56,7 +56,7 @@ Reindex is completed without any errors.
 
 The `indexer_update_all_views` cron job encounters the following error:
 
-```
+```text
 Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogpermissions_category_cl__tmp67acb6582cec12_69065236' doesn't exist, query was: SELECT MAX(id) as max, COUNT(*) as cnt FROM (SELECT `catalogpermissions_category_cl__tmp67acb6582cec12_69065236`.* FROM
 ```
 

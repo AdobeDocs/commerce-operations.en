@@ -32,7 +32,7 @@ Email notifications were not sent to customers after updating their email addres
 
 1. Create user using below mutation:
 
-    ```
+    ```graphql
     mutation {
         createCustomer(
             input: {
@@ -52,7 +52,7 @@ Email notifications were not sent to customers after updating their email addres
 
 1. Generate a token for the previously created user and use it as a bearer token:
 
-    ```
+    ```graphql
     mutation {
     generateCustomerToken(email: "test@test.com", password: "Admin@123") {
         token
@@ -62,7 +62,7 @@ Email notifications were not sent to customers after updating their email addres
 
 1. Try to update the email for the previously created user using the last created bearer token:
 
-    ```
+    ```graphql
     mutation {
         updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
             customer {

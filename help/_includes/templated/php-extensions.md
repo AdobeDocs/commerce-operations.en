@@ -19,6 +19,7 @@ Adobe Commerce requires:
 -  `ext-openssl`
 -  `ext-pcre`
 -  `ext-pdo_mysql`
+-  `ext-reflection`
 -  `ext-simplexml`
 -  `ext-soap`
 -  `ext-sockets`
@@ -50,6 +51,7 @@ Magento Open Source requires:
 -  `ext-openssl`
 -  `ext-pcre`
 -  `ext-pdo_mysql`
+-  `ext-reflection`
 -  `ext-simplexml`
 -  `ext-soap`
 -  `ext-sockets`

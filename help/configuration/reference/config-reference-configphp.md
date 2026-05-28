@@ -114,5 +114,5 @@ Contains an array of values for theme configuration.
 ]
 ```
 
-Learn more about [Themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/).
+Learn more about [Themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront).
 

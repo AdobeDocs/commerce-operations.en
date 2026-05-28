@@ -36,7 +36,7 @@ The ACSD-48448 patch fixes the issue where the *[!UICONTROL Race]* condition iss
 
 `bash cancel_order.sh`
 
-```
+```shell
 #!/bin/bash
 baseUrl=" "
 orderId=3

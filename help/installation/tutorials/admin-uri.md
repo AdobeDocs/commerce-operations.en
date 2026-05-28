@@ -14,13 +14,13 @@ This section discusses how to use the command line to display the Admin Uniform 
 
 Command options:
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
 A sample result follows:
 
-```
+```text
 Admin Panel URI: /admin_1wgrah
 ```
 

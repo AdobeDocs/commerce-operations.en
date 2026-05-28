@@ -32,7 +32,7 @@ When running the inventory indexer, the process throws a deprecation warning and
 
 1. Run the inventory reindex using the CLI command:
 
-    ```
+    ```shell
     php bin/magento indexer:reindex inventory
     ```
 
@@ -44,7 +44,7 @@ The CLI rebuilds the inventory indexer successfully.
 
 The CLI throws a deprecated functionality error, and inventory indexes remain in the *Reindex Required* state:
 
-```
+```shell
 Deprecated Functionality: Using ${var} in strings is deprecated, use {$var} instead in /home/vendor/magento/module-elasticsearch-catalog-permissions/Model/Adapter/FieldMapper/Product/FieldProvider/FieldName/Resolver/CategoryPermission.php on line 24
 ```
 

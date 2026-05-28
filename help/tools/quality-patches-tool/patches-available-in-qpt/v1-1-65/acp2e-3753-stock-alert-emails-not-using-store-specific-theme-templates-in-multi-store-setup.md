@@ -34,7 +34,7 @@ Product alert emails in a multi-store setup are always sent using the default th
 1. Product alert setting is the default scope that runs every minute.
 1. Override/add some content to the `stock.phtml` file for both themes. Example of the file location:
 
-    ```
+    ```text
     app\design\frontend\Adobe\Taiwan\Magento_ProductAlert\templates\email\stock.phtml
     app\design\frontend\Adobe\Japan\Magento_ProductAlert\templates\email\stock.phtml
     ```

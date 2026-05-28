@@ -32,7 +32,7 @@ GraphQL returns an *UNDEFINED* error code instead of a specific one when placing
 
 1. Add `app/i18n/Magento/de_DE/de_DE.csv` and include the following error string translation:
 
-```
+```shell
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
@@ -42,7 +42,7 @@ GraphQL returns an *UNDEFINED* error code instead of a specific one when placing
 1. Run `setup:upgrade` and `setup:static-content:deploy -f`.
 1. Run the following GraphQL query with header `Store:test`:
 
-```
+```graphql
 mutation {
     placeOrder(input: { cart_id: "test" }) {
         orderV2 {
@@ -57,7 +57,7 @@ mutation {
 
 Correct error response:
 
-```
+```graphql
 {
     "errors": [
         {
@@ -87,7 +87,7 @@ Correct error response:
 
 The `error_code` returned is *UNDEFINED*:
 
-```
+```graphql
 {
     "errors": [
         {

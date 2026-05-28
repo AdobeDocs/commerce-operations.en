@@ -55,7 +55,7 @@ To create the Commerce crontab:
 1. Change to your Commerce installation directory.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    bin/magento cron:install [--force]
    ```
 
@@ -68,13 +68,13 @@ Use `--force` to rewrite an existing crontab.
 
 To view the crontab, enter the following command as the file system owner:
 
-```bash
+```shell
 crontab -l
 ```
 
 A sample follows:
 
-```
+```shell
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -96,7 +96,7 @@ To remove the Commerce crontab:
 1. Change to the Commerce installation directory.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
@@ -108,7 +108,7 @@ To remove the Commerce crontab:
 
 Command options:
 
-```bash
+```shell
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
@@ -116,13 +116,13 @@ where `--group` specifies the cron group to run (omit this option to run cron fo
 
 To run the indexing cron job, enter:
 
-```bash
+```shell
 bin/magento cron:run --group index
 ```
 
 To run the default cron job, enter:
 
-```bash
+```shell
 bin/magento cron:run --group default
 ```
 

@@ -42,7 +42,7 @@ Wishlist items are incorrectly filtered by store ID instead of by website.
 1. Confirm that the product still appears in the wishlist (correct behavior).
 1. Execute the following [!DNL GraphQL] query:
 
-    ```
+    ```text
     {
       customer {
         wishlists {

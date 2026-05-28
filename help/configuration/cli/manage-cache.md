@@ -21,7 +21,7 @@ You can use the Adobe Commerce cache management system to improve the performanc
 
 From the command line of the Commerce application server, view the status of the cache using the `cache:status` Commerce CLI command.
 
-```bash
+```shell
    bin/magento cache:status
 ```
 
@@ -29,7 +29,7 @@ From the command line of the Commerce application server, view the status of the
 
 A sample follows:
 
-```
+```text
 Current status:
                         config: 1
                         layout: 1
@@ -68,11 +68,11 @@ You can clean (also referred to as _flush_ or _refresh_) cache types using eithe
 
 Command options:
 
-```bash
+```shell
 bin/magento cache:enable [type] ... [type]
 ```
 
-```bash
+```shell
 bin/magento cache:disable [type] ... [type]
 ```
 
@@ -82,19 +82,19 @@ Where omitting `[type]` enables or disables all cache types at the same time. Th
 
 To list cache types and their status:
 
-```bash
+```shell
 bin/magento cache:status
 ```
 
 For example, to disable the full page cache and the DDL cache:
 
-```bash
+```shell
 bin/magento cache:disable db_ddl full_page
 ```
 
 Sample result:
 
-```
+```text
    Changed cache status:
        db_ddl: 1 -> 0
     full_page: 1 -> 0
@@ -130,23 +130,23 @@ Flush cache types if you have already tried cleaning the cache and you are still
 
 Command usage:
 
-```bash
+```shell
    bin/magento cache:clean [type] ... [type]
 ```
 
-```bash
+```shell
    bin/magento cache:flush [type] ... [type]
 ```
 
 Where `[type]` is a space-separated list of cache types. Omitting `[type]` cleans or flushes all cache types at the same time. For example, to flush all cache types, enter
 
-```bash
+```shell
    bin/magento cache:flush
 ```
 
 Sample result:
 
-```
+```text
    Flushed cache types:
    config
    layout

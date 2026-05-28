@@ -2,8 +2,430 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Sun Apr 19 21:12:02 2026
+updated: Fri May 22 17:24:18 2026
 entries:
+- description: 'Updated [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9):
+    clarified the AC-10933 `setup:di:compile` fix, removed cancelled fix AC-14519,
+    and adjusted fixed-issue counts.<br/>_Credit: [hostep](https://github.com/hostep)_'
+  versions: ''
+  type: feedback, technical
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1989
+  merge_commit: 0e5a69a282839a393d6eb873af9938208706af50
+  contributor: shevtsov_adobe
+  labels:
+  - feedback
+  - technical
+- description: 'Added detailed description of the QPT 1.1.79 fix for [AC-10737: Bin/magento
+    `setup:db:status` command doesn''t recognize JSON data type](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1953
+  merge_commit: 9aad978f42697f74ebd7c8f401e45b4780bd5038
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4601:
+    Re-saving a payment authorization transaction self-reference parent_id and trigger
+    an infinite loop/OOM](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1957
+  merge_commit: 3fe9730b1954a07d9ef4a405ee75fcde9511e09d
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [Software lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
+    with Cloud version upgrade enforcement dates, support period definitions (including
+    security-only transitional period), an expanded end-of-support table for 2.4.4–2.4.9,
+    PHP PCI guidance, and paths to migrate to Adobe Commerce as a Cloud Service or
+    upgrade on PaaS.
+  versions: ''
+  type: major-update
+  date: May 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1976
+  merge_commit: cd0f27ae6a8dcec9b25af15386d8350c22d2fb95
+  contributor: meker_adobe
+  labels:
+  - major-update
+- description: Corrected Valkey LTS compatibility to 8.1 in the [2.4.5 security patch
+    releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support),
+    [2.4.6 security patch releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support),
+    and [2.4.8 security patch releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support)
+    topics so the cache-backend guidance matches supported Valkey on Adobe Commerce
+    on cloud infrastructure.<br/>_Addresses the issue [#177](https://github.com/AdobeDocs/commerce-operations.en/issues/177)._
+  versions: 2.4.5, 2.4.6, 2.4.8
+  type: technical, feedback, release-notes
+  date: May 13, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1965
+  merge_commit: c84f28dc9b90b9206147dffe1eed909d86525345
+  contributor: shevtsov
+  labels:
+  - technical
+  - 2.4.5
+  - 2.4.6
+  - 2.4.8
+  - feedback
+  - release-notes
+- description: Added a [System requirements for earlier Commerce releases](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    collapsible section with reference tables and MySQL 8.0 / Elasticsearch 7.17 end-of-support
+    guidance for older Adobe Commerce versions.
+  versions: ''
+  type: technical, feedback
+  date: May 13, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1966
+  merge_commit: 07e7c6904ead0c730597bc6d0899f4c988b7725b
+  contributor: meker
+  labels:
+  - technical
+  - feedback
+- description: Documented May 12, 2026 security patch releases and 2.4.9 GA in [Released
+    versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+    Also:<br/>- Corrected 2.4.7-p10 platform highlights (MariaDB 11.8, Valkey 8.1
+    LTS) in [Adobe Commerce 2.4.7 security patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches).<br/>-
+    Fixed the 2.4.8 security patch topic description metadata in [Adobe Commerce 2.4.8
+    security patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches).
+  versions: 2.4.7, 2.4.9
+  type: major-update, feedback
+  date: May 12, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1951
+  merge_commit: c138beddb066fe26f9e57afbd9b6e74f978a8407
+  contributor: shevtsov
+  labels:
+  - major-update
+  - 2.4.7
+  - feedback
+  - 2.4.9
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.79](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 12, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1952
+  merge_commit: 12093993f31c321afc75da6f2c661b4a9e6fd711
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [Packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce),
+    [bin/magento](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises),
+    and [required PHP extensions](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions)
+    for v2.4.9.<br/>Updated security patch release notes (2.4.4, 2.4.5, 2.4.6, 2.4.7,
+    2.4.8) to reference [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)
+    and document new platform compatibility highlights for [2.4.8 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches),
+    [2.4.7 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches),
+    [2.4.6 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches),
+    [2.4.5 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches),
+    and [2.4.4 patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches).<br/>Updated
+    [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9)
+    with GA fixed issues data and include paths aligned to the 2.4.9 release (replacing
+    beta-era fixed-issues sources).<br/>Updated highlight sections for [Adobe Commerce
+    2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9)
+    for GA.<br/>Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for 2.4.9, recent security-patch lines, and on-premises and cloud dependency tables.<br/>Updated
+    the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct)
+    to version 3.0.27.<br/>Updated cache configuration documentation for Commerce
+    2.4.9 Symfony Cache support:<br/>- [Use Redis for default cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache)
+    — Added tabbed content for Zend and Symfony Cache implementations with performance
+    optimizations.<br/>- [Use Valkey for default cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache)
+    — Added tabbed content for Zend and Symfony Cache implementations with performance
+    optimizations.<br/>- [L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache)
+    — Added modern Symfony L2 Cache implementation (`symfony_l2` backend) with stale
+    cache support.<br/>- [Cache options](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options)
+    — Added implementation options comparing Zend-based and Symfony Cache backends.<br/>-
+    [Cache types](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types)
+    — Added references to modern Symfony Cache backend types.
+  versions: 2.4.9
+  type: major-update
+  date: May 12, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1884
+  merge_commit: baa2cd68fe266f6f31113ff1adba4342e6f427ef
+  contributor: shevtsov
+  labels:
+  - major-update
+  - 2.4.9
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4628:
+    Importing customers with uppercase email addresses triggers an undefined array
+    key error when Account Sharing is set to Global](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 11, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1919
+  merge_commit: c2c4f04d05b5bd1b60936256d3dbd6be5f396c5b
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4763:
+    The GraphQL customerOrders query returns inflated original_price_including_tax
+    and original_row_total_including_tax](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 11, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1922
+  merge_commit: 6f156475e60ca0f8ac365306e282c90156837567
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACSD-60989:
+    Modifying a column with a foreign key through declarative schema causes errors
+    on MariaDB](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 11, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1923
+  merge_commit: 9001c0e440f8a80e618bcf68a72cb6ac1533a2c0
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [Shared responsibility security and operational model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)
+    to clarify that merchants must keep platform services, third-party dependencies,
+    and Commerce Services extensions on actively supported versions to remain eligible
+    for Adobe security support, with new guidance for PHP, MariaDB, Redis, and OpenSearch.
+  versions: ''
+  type: technical
+  date: May 11, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1947
+  merge_commit: 4b841ca5a55640e770fdbec71869fad6d6564fe8
+  contributor: meker
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4732:
+    Partial indexation stops for customers with many updates when the version_id column
+    in the changelog table reaches its maximum value](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 7, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1921
+  merge_commit: 063a15996a683a90770b699b413fb25dd7489035
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4591:
+    Customer segments based on order count, such as "First-time buyers", do not update
+    when orders are placed through the REST API](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 7, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1916
+  merge_commit: 53cdfe439238edc2148004efab3300653e891765
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4456:
+    Canceling an order with a GraphQL mutation does not move orders paid entirely
+    with gift cards to the Closed status](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 6, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1907
+  merge_commit: 570b9f8230384387166412ddd418f8130e2853bd
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4448:
+    Configuration changes made during [!DNL Redis] outages do not reflect after [!DNL
+    Redis] recovers, and stale values persist](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 4, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1905
+  merge_commit: fd467c92e3fa56db4a606118afe571ed932185fd
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4452:
+    Product prices on the Quick Order page include tax regardless of the tax display
+    configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 4, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1906
+  merge_commit: cf3a631a71997d54cd28de9afecaae0769d602b6
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4665:
+    Child products of configurable products with videos in the product galleries do
+    not appear when requested through the REST API](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 1, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1920
+  merge_commit: 8753c098963a0b2df6a4135e9a8038211bbb93d1
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4613:
+    Large media directory structures slow gettree responses and delay Media Gallery
+    directory tree loading](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 30, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1918
+  merge_commit: ae0f38980186b40f4ffd6d81bbe2104f3e8238fc
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4535:
+    Submitting the forgot-password form destroys or regenerates the session (PHPSESSID
+    changes) and clears the guest cart](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1912
+  merge_commit: 953e231d2161d84e2444fa46ac95b93dbba28241
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4507:
+    Password Options configuration does not apply to customer password reset requests
+    made through GraphQL mutations](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1908
+  merge_commit: b657f2e50d48c9179d1c6b3559ee7e6ee99b306d
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4609:
+    The My Quotes page shows no quotes when some quotes contain deleted products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1917
+  merge_commit: 670dacfa2bdc211eb9f4ed6788144ba6c1dac678
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4431:
+    Related Products matched by target rules are deleted during the reindex process](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1904
+  merge_commit: f9424da66669c54eb0a794555ea7df66625f6c71
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4416:
+    Customer reward points do not initialize when created in the Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 29, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1902
+  merge_commit: 517b6c299474497378966a4a2122a6854f3f7be1
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4540:
+    The Fotorama library does not load correctly, so only the first attached image
+    is visible](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 28, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1913
+  merge_commit: bfab19dc07ecc1c314c530d053b82e3408478c41
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4522:
+    Intermittent duplicate key errors occur on the quote_coupons table when multiple
+    cart merge or quote save requests run at the same time](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1910
+  merge_commit: 13abccbeb79cdb3377dcea9528ffcb13b491a8d8
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4565:
+    The Company GraphQL query returns "The current customer isn''t authorized" when
+    the X-Adobe-Company header is used](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1915
+  merge_commit: 0ee08b94a3b56febff5d2126af71d2b964846f7a
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4419:
+    Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation
+    on the storefront](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1903
+  merge_commit: 7c7052efdd8b10be705959c854064eaed484d796
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4555:
+    Telephone numbers that contain periods or forward slashes do not validate properly](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1914
+  merge_commit: ee63f4566c476877588dde5ff002ac105f2e4764
+  contributor: jmenn
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.78](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: April 23, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1900
+  merge_commit: 3f14416d89140ee75ec437a42fbebae804282b72
+  contributor: muntianu
+  labels:
+  - new-topic
+  - qpt
+- description: "- Updated [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
+    with revised end-of-support table, extended support scope, and a new section on
+    additional security fixes provisioning for 2.4.4 and 2.4.5.<br/>- Updated [Versioning
+    policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy)
+    and [Release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for isolated security fixes prerequisites and hotfix/individual patch delivery
+    through the Quality Patches Tool; moved isolated security fixes detail into the
+    shared security patch overview include.<br/>- Refreshed the 2026 release calendar
+    to match current schedule."
+  versions: ''
+  type: technical, major-update
+  date: April 20, 2026
+  link: enterprise:AdobeDocs/commerce-operations.en/pull/1893
+  merge_commit: 0bc6807d7f4bfd84ac698de81f8cf6f56d849af7
+  contributor: meker
+  labels:
+  - technical
+  - major-update
 - description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
     with New Relic (APM) supported versions for Commerce on Cloud by release.
   versions: ''
@@ -29,7 +451,7 @@ entries:
   membership:
   labels:
   - major-update
-- description: Added instructions for properly overriding Adobe Commerce’s default
+- description: Added instructions for properly overriding Adobe Commerce's default
     L2 cache directories in `env.php` to ensure that cache files are stored in the
     intended location and prevent split cache directories and GlusterFS segmentation
     faults. See the updated guidance in [Best practices for Redis and Valkey services

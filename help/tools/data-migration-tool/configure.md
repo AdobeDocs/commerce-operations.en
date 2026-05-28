@@ -90,17 +90,17 @@ Before you migrate any data, you must create a Magento 2 module.
 
    For example, if you migrate `Magento 1.9.3.6 Community Edition` to `Magento 2 Open Source`:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
 1. In the `config.xml` file, you must set access details to M1 and M2 databases and encryption key.
 
-1. If your M1 store has custom changes, you should map the rest of your configuration files to your Magento 1 store customizations. See [Work with configuration and mapping files](#migration-config).
+1. If your M1 store has custom changes, you should map the rest of your configuration files to your Magento 1 store customizations. See [Work with configuration and mapping files](#work-with-configuration-and-mapping-files).
 
 ### Configure migration in `vendor` folder
 
@@ -112,13 +112,13 @@ To configure the [!DNL Data Migration Tool] for migration:
 
 1. Change to the following directory:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Enter the following command to create a `config.xml` from the provided sample:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 

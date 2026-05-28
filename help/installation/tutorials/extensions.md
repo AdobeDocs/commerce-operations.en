@@ -25,7 +25,7 @@ Before installation, you may want to:
 1. Back up your database.
 1. Enable maintenance mode:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -34,7 +34,7 @@ To install an extension, you must:
 1. Get an extension from the Commerce Marketplace or another extension developer.
 1. If you install an extension from the Commerce Marketplace, make sure that the `repo.magento.com` repository exists in your `composer.json` file:
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -78,13 +78,13 @@ Add the extension's name and version to your `composer.json` file:
 
 1. Navigate to your project directory and update your `composer.json` file.
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    For example,
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
@@ -92,7 +92,7 @@ Add the extension's name and version to your `composer.json` file:
 
 1. Wait for Composer to finish updating your project dependencies and make sure that there aren't any errors:
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -104,19 +104,19 @@ Add the extension's name and version to your `composer.json` file:
 
 To verify that the extension installed properly, run the following command:
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 By default, the extension is probably disabled:
 
-```
+```text
 Module is disabled
 ```
 
 The extension name is in the format `<VendorName>_<ComponentName>`; this is a different format from the Composer name. Use this format to enable the extension. If you are unsure of the extension name, run:
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -128,13 +128,13 @@ Some extensions don't work properly unless you clear generated static view files
 
 1. Enable the extension and clear static view files:
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    You should see the following output:
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
 
@@ -146,31 +146,31 @@ Some extensions don't work properly unless you clear generated static view files
 
 1. Register the extension:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Recompile your project: In Production mode, you may receive a message to "Please rerun Magento compile command". The application does not prompt you to run the compile command in Developer mode.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Verify that the extension is enabled:
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    You should see output verifying that the extension is no longer disabled:
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -192,27 +192,27 @@ To update or upgrade a module or extension:
 
    Update per module name:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Update per version:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Run the following commands to upgrade, deploy, and clean the cache.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -234,13 +234,13 @@ The following instructions provide general information for uninstalling third-pa
 
    - For Composer-based extensions, remove the extension from your Adobe Commerce `composer.json` file.
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - For non-Composer-based extensions, remove the physical files from your Adobe Commerce project repository.
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

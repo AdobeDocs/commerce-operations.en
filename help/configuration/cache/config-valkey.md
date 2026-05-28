@@ -1,12 +1,12 @@
 ---
-title: Configure Valkey
-description: Learn how to configure Valkey caching for Adobe Commerce performance optimization. Discover features, setup steps, and configuration best practices.
+title: Install and Set Up Valkey
+description: Learn how to install and configure Valkey for caching and session storage with Adobe Commerce. Discover options for optimization and performance tuning.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
 ---
-# Configure Valkey
+# Install and set up Valkey
 
-Valkey features include:
+Valkey is an open-source, Redis-compatible in-memory data store that can be used as a cache backend and for session storage. Key features include:
 
 - PHP session storage
 - Tag-based cache cleanup without `foreach` loops
@@ -16,9 +16,9 @@ Valkey features include:
 
 To install and configure the Valkey software, consult the following resources:
 
-- [Download Valkey page](https://valkey.io/download/)
-- [Valkey quick start](https://valkey.io/topics/quickstart/)
-- [Valkey documentation page](https://valkey.io/docs)
+- [Download Valkey page](https://valkey.io/download/){target="_blank"}
+- [Valkey quick start](https://valkey.io/topics/quickstart/){target="_blank"}
+- [Valkey documentation page](https://valkey.io/docs){target="_blank"}
 
 ## Set up Valkey configuration
 

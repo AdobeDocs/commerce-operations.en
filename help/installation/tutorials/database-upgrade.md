@@ -21,7 +21,7 @@ Anytime you perform an action that causes the database schema or data to change,
 
 1. Start the upgrade:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade [--keep-generated]
    ```
 
@@ -29,6 +29,6 @@ Anytime you perform an action that causes the database schema or data to change,
 
 1. Clean the cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```

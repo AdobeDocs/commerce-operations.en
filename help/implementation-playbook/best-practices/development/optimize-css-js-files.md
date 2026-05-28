@@ -39,7 +39,7 @@ To enable CSS merging in Adobe Commerce on cloud infrastructure:
 
 1. Run this command locally:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
@@ -49,7 +49,7 @@ To enable CSS minification in Adobe Commerce on cloud infrastructure:
 
 1. Run this command locally:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
@@ -67,7 +67,7 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 1. Run this command locally:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
@@ -83,7 +83,7 @@ You can enable bundling in the Commerce [!UICONTROL Admin]: **[!UICONTROL Stores
 
 You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
 
-   ```bash
+   ```shell
    php -f bin/magento config:set dev/js/enable_js_bundling 1
    ```
 

@@ -15,27 +15,27 @@ To update or upgrade a module or extension:
 
    Update per module name:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Update per version:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Run the following commands to upgrade, deploy, and clean the cache.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
    
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 

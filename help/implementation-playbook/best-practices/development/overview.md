@@ -59,7 +59,7 @@ The following sections include best practices information for the development ph
 
 | Best practice                                                                                                  | Description                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Theme developmemt](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Describes development patterns to help ensure compatibility between your theme, future versions of Adobe Commerce, and custom extensions |
+| [Theme developmemt](https://developer.adobe.com/commerce/frontend-core/guide/best-practices){target="_blank"} | Describes development patterns to help ensure compatibility between your theme, future versions of Adobe Commerce, and custom extensions |
 
 ## PHP development
 

@@ -47,7 +47,7 @@ The search engine you use depends on the Adobe Commerce on cloud version install
 
 To determine which search engine is currently in use, run the following command:
 
-```bash
+```shell
 ./bin/magento config:show catalog/search/engine
 ```
 

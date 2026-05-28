@@ -38,7 +38,7 @@ Gift card emails were sent before confirming that the invoice was successfully c
 6. Modify the `OrderRepository` to simulate an exception during order placement.
 7. Send a POST request to `rest/default/V1/order/<ORDER_ID>/invoice` with the following payload:
 
-   ```
+   ```json
    {
      "capture": true,
      "notify": true

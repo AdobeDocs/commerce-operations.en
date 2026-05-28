@@ -1,6 +1,6 @@
 ---
 title: Change increment ID
-description: Change the increment ID for a Commerce database entity.
+description: Learn how to change increment IDs for orders, invoices, credit memos, and other Commerce database entities using SQL when merging or restoring sites.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
 ---
 # Change increment ID

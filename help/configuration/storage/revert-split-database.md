@@ -8,7 +8,7 @@ exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
 
 {{ee-only}}
 
-For Adobe Commerce customers who have implemented [Split Database](multi-master.md), the following topic describes how to revert or migrate back to a single database. We recommend that Adobe Commerce merchants currently using Split Database and plan to upgrade to 2.4.2 and later review these steps, as well as our [announcement](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) on the planned deprecation of Split Database.
+For Adobe Commerce customers who have implemented [Split Database](multi-master.md), the following topic describes how to revert or migrate back to a single database. We recommend that Adobe Commerce merchants currently using Split Database and plan to upgrade to 2.4.2 and later review these steps.
 
 Reverting from a split database to a single database involves creating backups of the `magento_quote` and `magento_sales` databases before loading them into the single `magento_main` database.
 
@@ -16,44 +16,44 @@ In this example, we log in to all three databases, which are installed on the sa
 
 1. Create a backup of the `magento_quote` database:
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_quote > ./quote.sql
    ```
 
 1. Create a backup of the `magento_sales` database:
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_sales > ./sales.sql
    ```
 
 1. Load the `magento_quote` database into the `magento_main` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./quote.sql
    ```
 
 1. Load the `magento_sales` database into the `magento_main` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./sales.sql
    ```
 
 1. Drop the `magento_sales` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_sales;"
    ```
 
 1. Drop the `magento_quote` database:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
 1. Remove the deployment configuration for `checkout` and `sales` in the `connections` and `resources` sections of the `env.php` file.
 1. Restore foreign keys:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 

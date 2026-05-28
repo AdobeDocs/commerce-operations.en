@@ -39,7 +39,7 @@ An internal server error occurs while querying `configurable_product_option_uid`
 1. Add a configurable product to a requisition list.
 1. Try to retrieve values for `configurable_product_option_uid` and `configurable_product_option_value_uid` fields using the `getRequisitionList` function in a GraphQL call.
 
-```
+```graphql
 query getRequisitionList {
   customer {
     requisition_lists(filter: { uids: { eq: "MQo=" } }) {
@@ -64,7 +64,7 @@ query getRequisitionList {
 
 <u>Expected results</u>:
 
-```
+```json
 {
     "data": {
         "customer": {

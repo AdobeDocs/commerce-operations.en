@@ -1,6 +1,6 @@
 ---
 title: Build System Setup
-description: Learn how to deploy Commerce into a build system.
+description: Learn how to set up a build system for Adobe Commerce deployment with source control, generated assets, and static content requirements.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 ---
@@ -53,11 +53,11 @@ To install Composer:
 
 1. Enter the following commands:
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
@@ -76,26 +76,26 @@ To set up the build system:
 
    If you use Git, use the following command:
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Change to the Commerce root directory and enter:
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. Wait for dependencies to update.
 1. Set ownership:
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    For example,
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -114,7 +114,7 @@ To set up the build system:
 1. Save your changes to `.gitignore` and exit the text editor.
 1. If you use Git, use the following commands to commit the change:
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
@@ -122,7 +122,7 @@ To set up the build system:
 
 1. The build system should use [default mode](../bootstrap/application-modes.md#default-mode) or [developer mode](../bootstrap/application-modes.md#developer-mode):
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

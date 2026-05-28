@@ -33,7 +33,7 @@ Certain database update operations result in 'Base table or view not found' erro
 1. Set indexer mode to **[!UICONTROL Update on Schedule]**.
 1. Insert records into `cl` tables using the following SQL commands:
 
-    ```
+    ```sql
     INSERT INTO catalogrule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
     INSERT INTO catalogrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
     INSERT INTO catalogsearch_fulltext_cl SELECT NULL, entity_id FROM catalog_product_entity;
@@ -63,7 +63,7 @@ The database operations execute successfully without errors.
 
 An error occurs during execution:
 
-```
+```text
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento24.design_config_dummy_cl__tmp663bb682960345_17794892' doesn't exist in /www/magento24/lib/internal/Magento/Framework/DB/Statement/Pdo/Mysql.php:90
 ```
 

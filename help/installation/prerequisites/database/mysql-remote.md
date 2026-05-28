@@ -17,7 +17,7 @@ Using Aurora as the database is as easy as specifying the database in the regula
 
 When running `bin/magento setup:install`, use the Aurora information in the `db-` fields:
 
-```bash
+```shell
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
@@ -58,13 +58,13 @@ To create a remote connection:
 
    To locate it, enter the following command:
 
-   ```bash
+   ```shell
    mysql --help
    ```
 
    The location displays similar to the following:
 
-   ```
+   ```text
    Default options are read from the following files in the given order:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
@@ -126,13 +126,13 @@ To grant access to a database user:
 
 On your web node host, enter the following command to verify the connection works:
 
-```bash
+```shell
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
 If the MySQL monitor displays as follows, the database is ready for Adobe Commerce:
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 

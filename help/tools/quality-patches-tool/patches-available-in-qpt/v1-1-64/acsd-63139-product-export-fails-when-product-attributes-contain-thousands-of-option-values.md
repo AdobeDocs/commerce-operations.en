@@ -37,7 +37,7 @@ The product export fails when product attributes contain thousands of option val
    - Some attributes having more than 100 options
 1. Run the following command to install cron (if not already installed):
 
-   ```
+   ```shell
    bin/magento cron:install
    ```
 
@@ -47,7 +47,7 @@ The product export fails when product attributes contain thousands of option val
 1. In the *[!UICONTROL Export Settings]* section, set **[!UICONTROL Entity Type]** to *Products*, scroll to the bottom and click **[!UICONTROL Continue]**.
 1. Run the following command to start the export processor:
 
-   ```
+   ```shell
    bin/magento queue:consumers:start exportProcessor --max-messages=1
    ```
 
@@ -59,7 +59,7 @@ The product export should be finished successfully.
 
 The product export process fails and returns the following fatal error:
 
-```
+```text
 Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocate 12288 bytes) in /var/www/html/app/code/Magento/Catalog/Model/ResourceModel/Product/Collection.php on line 597
 ```
 
