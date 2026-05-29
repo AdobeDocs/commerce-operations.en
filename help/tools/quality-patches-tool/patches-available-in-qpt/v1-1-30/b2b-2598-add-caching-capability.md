@@ -1,14 +1,42 @@
 ---
-title: 'BB2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries'
-description: Apply the BB2B-2598 patch to add caching capability to the storeConfig, currency, country, countries, and availableStores GraphQl queries.
+title: 'B2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries'
+description: Apply the B2B-2598 patch to add caching capability to the storeConfig, currency, country, countries, and availableStores GraphQl queries.
 feature: B2B, GraphQL, Cache
 role: Admin
-exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
 type: Troubleshooting
+autotag-review: '2026-05-22T20:21:20.687Z'
+TQID: 'https://experienceleague.adobe.com/DQWkSrUHcUhOTn3fWdnRPVQUK6jRkPGCAnIKPRHkebQ'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: Graph QL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+industry_v2:
+  - id: aad1e361-483a-40cf-9a88-144325515074
+    internal-label: Retail
 ---
-# BB2B-2598: Adds caching capability to `storeConfig`, `currency`, `country`, `countries`, and `availableStores` GraphQl queries
+# B2B-2598: Adds caching capability to `storeConfig`, `currency`, `country`, `countries`, and `availableStores` GraphQl queries
 
-The BB2B-2598 patch adds caching capability to `storeConfig`, `currency`, `country`, `countries`, and `availableStores` GraphQl queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.30 is installed. The patch ID is BB2B-2598. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7-beta1.
+The B2B-2598 patch adds caching capability to `storeConfig`, `currency`, `country`, `countries`, and `availableStores` GraphQl queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.30 is installed. The patch ID is B2B-2598. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7-beta1.
 
 ## Affected products and versions
 
