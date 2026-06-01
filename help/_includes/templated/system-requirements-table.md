@@ -203,7 +203,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -368,7 +368,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -533,7 +533,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -698,7 +698,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -800,7 +800,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
