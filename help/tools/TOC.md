@@ -990,12 +990,15 @@ feature: Configuration
            - [ACP2E-4419: Gift cards do not apply correctly at checkout after successful reCAPTCHA v2 validation on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
         - v1.1.79 {#v1-1-79}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+           - [ACP2E-4505: Circular category dependency from saving a category with stale data in a duplicate browser tab](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+           - [ACP2E-4720: Free shipping cart price rules do not reset for fixed-price bundle products with ship items separately](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
            - [AC-10698: Transaction prices and totals aren't sent to Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
            - [ACP2E-4475: Order or filter by price not working for out-of-stock bundle products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
            - [ACP2E-4411: Bundle product prices show incorrect tax and currency values between the Product Detail Page and cart in a multi-currency setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
            - [ACP2E-4110: Bundle product prices with a **[!UICONTROL Special Price]** differ between PDP/PLP and cart in a non-default currency](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
            - [ACP2E-4603: Catalog Permissions product reindex leave stale permission index rows and MySQL deadlock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
            - [AC-10737: `bin/magento setup:db:status` command doesn't recognize JSON data type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+           - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
