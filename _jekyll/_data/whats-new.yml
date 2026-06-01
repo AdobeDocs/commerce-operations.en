@@ -2,8 +2,167 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 22 17:24:18 2026
+updated: Mon Jun 1 15:54:19 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4513:
+    Expired CAPTCHA images are not removed from the system](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1909
+  merge_commit: 86d06d83592f40bd181b30158cb9d83a2e963b07
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4531:
+    CMS hierarchy doesn''t update hierarchical URL when child page URL key is changed](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1956
+  merge_commit: 0a726754a6e171a60a07ccedf76db7505f19706a
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4505:
+    Circular category dependency from saving a category with stale data in a duplicate
+    browser tab](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1955
+  merge_commit: bc87b7024550f49756be23108030fe7bdd571855
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Updated the supported Nginx version for on-premises Adobe Commerce
+    from 1.28 to 1.30 in the [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for 2.4.8 to 2.4.4 latest patch versions. Adobe Commerce on Cloud Infrastructure
+    continues to use Nginx 1.28.
+  versions: ''
+  type: technical
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2008
+  merge_commit: e407df8cff6711d69f0dea5bceff031123e1bee6
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: Updated MariaDB and Nginx versions in [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for On-Prem tab for v2.4.9.
+  versions: ''
+  type: technical
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2005
+  merge_commit: c96653313a98e9fe2e12b26236e0a985049ec523
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4720:
+    Free shipping cart price rules don''t reset for fixed-price bundle products with
+    Ship Items Separately](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1960
+  merge_commit: 8aec766f7377e1ed5a08987a433e676794fc2a59
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Updated system dependencies versions in the [Upgrade analysis guide](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/journey/implementation).
+  versions: ''
+  type: technical
+  date: May 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2003
+  merge_commit: dd93d4c8f52d0852f0459e234d66fda2063b6bee
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.78 fix for [ACP2E-4528:
+    Customer address city validation mishandles forward slashes (/) and invalid characters
+    such as !, ", #, and ?](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1911
+  merge_commit: 7cd24cd0182fc191f64733c2bac361404f9f9a08
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4411:
+    Bundle product prices show incorrect tax and currency values between the Product
+    Detail Page and cart in a multi-currency setup](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1961
+  merge_commit: 29ef4059b5ca8b48c628c396771659a39413573e
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4110:
+    Bundle product prices with a special price differ between PDP/PLP and cart in
+    a non-default currency](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1963
+  merge_commit: 0133d7598293f529b285737c6ef51613dc5bd826
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4475:
+    Order or filter by price not working for out-of-stock bundle products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1962
+  merge_commit: 2728ac1f484659b1db69b537640e3a5da8f965a7
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4603:
+    Catalog Permissions product reindex leave stale permission index rows and MySQL
+    deadlock](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1958
+  merge_commit: e8f56414b758832c77e7f2f93009df527f506c5b
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.79 fix for [AC-10698: Transaction
+    prices and totals aren''t sent to Google Tag](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698).'
+  versions: ''
+  type: new-topic, qpt
+  date: May 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1964
+  merge_commit: 21979ca7c9dd21a871c22271603bcd09b9dfd29a
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added typo and URL fixes of the QPT 1.1.30 fix for [B2B-2598: Adds
+    caching capability to storeConfig, currency, country, countries, availableStores
+    GraphQl queries](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability).'
+  versions: ''
+  type: qpt
+  date: May 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1990
+  merge_commit: 07202bf339331adb7b4103cdd123b0a194b72bf4
+  contributor: jmenn_adobe
+  labels:
+  - enhancement
+  - qpt
 - description: 'Updated [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
     and [Magento Open Source 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9):
     clarified the AC-10933 `setup:di:compile` fix, removed cancelled fix AC-14519,
