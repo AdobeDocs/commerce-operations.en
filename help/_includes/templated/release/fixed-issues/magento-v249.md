@@ -2,7 +2,7 @@
 
 ## Fixed issues in v2.4.9
 
-We have fixed 581 issues in the Magento Open Source 2.4.9 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 580 issues in the Magento Open Source 2.4.9 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -656,7 +656,7 @@ _ACP2E-4675 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### [Cloud] Image paths are absolute on second edit in Pagebuilder
 
-Fixed an issue where Page Builder Text inline editing could save absolute media image URLs after editing an image again, instead of keeping the portable {{media url=...}} directive.
+Fixed an issue where Page Builder Text inline editing could save absolute media image URLs after editing an image again, instead of keeping the portable `{{media url=...}}` directive.
 
 _ACP2E-4698 - [GitHub code contribution](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
 
@@ -1780,7 +1780,7 @@ In 2.4.9-alpha3, validation now correctly blocks saving customers with DOB outsi
 
 _AC-13535 - [GitHub code contribution](https://github.com/magento/magento2/commit/68a45d0a)_
 
-#### [Admin][Customer] Password Reset on Customer Admin is failing
+#### `[Admin][Customer]` Password Reset on Customer Admin is failing
 
 Fixed an issue where resetting a customer's password from the admin panel caused a system error and page crash. Password reset now works correctly and sends the reset link without errors, even in edge cases involving store changes.
 
@@ -1798,7 +1798,7 @@ _AC-15336 - [GitHub code contribution](https://github.com/magento/magento2/commi
 
 #### Compiling code of disabled module
 
-This pull request escape disabled modules before code compilation.
+Changed the behavior of `setup:di:compile` to no longer compile code for disabled modules.
 
 _AC-10933 - [GitHub issue](https://github.com/magento/magento2/issues/38241) - [GitHub code contribution](https://github.com/magento/magento2/pull/39723)_
 
@@ -1917,15 +1917,6 @@ Previously, reaching the maximum value for the version_id column in the changelo
 AC-14424
 
 _AC-14424 - [GitHub code contribution](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 uses dev packages that don't follow semantic versioning
-
-Magento 2.4.8 requires dev versions of pdepend/pdepend and phpmd/phpmd (3.x-dev) for PHP 8.4 compatibility.
-These dev versions conflict with third-party tools expecting SemVer-compliant packages, preventing some upgrades.
-A temporary workaround is to alias the dev versions in composer.json (e.g., "3.x-dev as 3.99.0"), allowing compatibility while satisfying semantic versioning.
-This ensures PHP 8.4 support and avoids conflicts until stable releases become available.
-
-_AC-14519 - [GitHub issue](https://github.com/magento/magento2/issues/39796)_
 
 #### MView mechanism silently ignores errors on trigger execution
 
@@ -3208,7 +3199,7 @@ Prior to the fix, cache keys used for remote storage metadata were not expiring.
 
 _ACP2E-4345 - [GitHub code contribution](https://github.com/magento/magento2/commit/0a3b7032)_
 
-#### [CLOUD][B2B] [Mainline] sales_clean_quotes getSize() bottleneck
+#### `[CLOUD][B2B]` `[Mainline]` sales_clean_quotes getSize() bottleneck
 
 Improve the performance of the sales_clean_quotes cron job.
 

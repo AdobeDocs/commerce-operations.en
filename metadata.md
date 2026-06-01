@@ -3,12 +3,18 @@ cloud: Experience Cloud
 description: Adobe Commerce Operational Guides
 feature-set: Commerce
 git-repo: https://github.com/AdobeDocs/commerce-operations.en
-index: yes
+index: true
 level: Experienced
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 mini-toc-levels: 2
 product: magento
 role: Admin, Developer
 solution: Commerce
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
+usetq: true
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
