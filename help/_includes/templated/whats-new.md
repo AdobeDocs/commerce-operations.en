@@ -523,33 +523,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### April 1, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">2026 Adobe Commerce release calendar</a> with the most current release information.</p>
-</td>
-      <td>
-        Release notes
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f32d342cbdc3e962fede45de828d836c242bc9a">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">best practices for Redis and Valkey configuration</a> and provided related configuration guidance.</p>
-</td>
-      <td>
-        Technical, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">commit</a></td>
-    </tr>
-  </tbody>
-</table>
