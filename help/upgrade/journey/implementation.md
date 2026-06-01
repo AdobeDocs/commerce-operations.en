@@ -36,13 +36,13 @@ The following are items that you may want to include in a thorough analysis:
   
   | Service         | Current version | Upgrade to | Notes                                                    |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP             | 7.4             | 8.1        |                                                          |
-  | Redis           | 6.0             | 6.2        |                                                          |
-  | [!DNL RabbitMQ] | 3.8             | 3.9        | Not currently being used but we should consider using it |
-  | MariaDB (Cloud) | 10.4            | 10.6       |                                                          |
-  | MySQL           | 8.0             | -/-/       |                                                          |
-  | Composer        | 1.9.2           | 2.2        |                                                          |
-  | Elasticsearch   | 7.10            | 7.17       |                                                          |
+  | PHP             | 7.4             | 8.5        |                                                          |
+  | Valkey          | 8.0             | 9          |                                                          |
+  | [!DNL RabbitMQ] | 3.8             | 4.3        | Not currently being used but we should consider using it |
+  | MariaDB (Cloud) | 10.4            | 12.3       |                                                          |
+  | MySQL           | 8.0             | N/A        |                                                          |
+  | Composer        | 1.9.2           | 2.9        |                                                          |
+  | OpenSearch      | 1               | 3          |                                                          |
 
 - **Extensions and third-party modules**—Use this table template to help you understand the status of your extensions and customizations, so that you can make strategic decisions and define actions. This is an opportunity to replace any extensions that might be native to Adobe Commerce to minimize your project's complexity. Use the `bin/magento module:status` command to see a list of modules and extensions.
 
