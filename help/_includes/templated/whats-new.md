@@ -683,25 +683,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### April 3, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added instructions for properly overriding Adobe Commerce's default L2 cache directories in <code>env.php</code> to ensure that cache files are stored in the intended location and prevent split cache directories and GlusterFS segmentation faults. See the updated guidance in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Best practices for Redis and Valkey services configuration</a>.</p>
-</td>
-      <td>
-        Technical, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">commit</a></td>
-    </tr>
-  </tbody>
-</table>

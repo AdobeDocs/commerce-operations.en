@@ -284,7 +284,8 @@
             }
         ],
         "end-of-support": "2025-08-12",
-        "end-of-extended-support": "2026-08-11"
+        "end-of-extended-support": "2026-08-11",
+        "end-of-security-fixes-provisioning": "2027-05-??"
     },
     "2.4.4": {
         "releases": [
@@ -385,7 +386,8 @@
             }
         ],
         "end-of-support": "2025-04-12",
-        "end-of-extended-support": "2026-04-14"
+        "end-of-extended-support": "2026-04-14",
+        "end-of-security-fixes-provisioning": "2027-05-??"
     },
     "2.4.0-2.4.3": {
         "releases": [
