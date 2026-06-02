@@ -1,0 +1,14 @@
+{%- assign _date_sec = include.date | replace: '??', '01' | date: "%s" %}
+{%- if include.date contains '??' %}
+{%- if _date_sec < now_in_seconds %}
+{{ include.label }} the {{ include.version }} release line ended in {{ include.date | replace: '??', '01' | date: "%B, %Y" }}.
+{%- else %}
+{{ include.label }} the {{ include.version }} release line ends in {{ include.date | replace: '??', '01' | date: "%B, %Y" }}.
+{%- endif %}
+{%- else %}
+{%- if _date_sec < now_in_seconds %}
+{{ include.label }} the {{ include.version }} release line ended on {{ include.date | date: "%B&nbsp;%e, %Y" }}.
+{%- else %}
+{{ include.label }} the {{ include.version }} release line ends on {{ include.date | date: "%B&nbsp;%e, %Y" }}.
+{%- endif %}
+{%- endif -%}
