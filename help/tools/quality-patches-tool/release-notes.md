@@ -3,6 +3,19 @@ title: Release notes
 description: Learn about the patches available for Adobe Commerce and the issues they resolve.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Release notes
 
@@ -15,6 +28,27 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >[!INFO]
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.80 {#v1-1-80}
+
+* **ACP2E-4239** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where Admin grid filters that use date attributes return incorrect results due to timezone differences between the selected date, stored UTC values, and the configured store timezone.
+* **ACP2E-4472** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where a null quote is created during the "Login as Customer" flow.
+* **ACP2E-4481** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where bundle product saleability is not recalculated correctly after an order is canceled.
+* **ACP2E-4488** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where saving or editing products in Admin is slow for products with large attribute sets.
+* **ACP2E-4493** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where the Sales Order Archive grid displays an incorrect order status when asynchronous indexing is enabled.
+* **ACP2E-4496** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the analytics cron job causes performance degradation during execution, resulting in improved overall system performance.
+* **ACP2E-4533** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where placeholder images do not load on the Storefront when a store code is included in the URL.
+* **ACP2E-4552** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the company status is not returned in the GraphQL response.
+* **ACP2E-4610** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the sales_clean_quotes cron job has performance issues.
+* **ACP2E-4615** (for Adobe Commerce >=2.4.4-p13 <2.4.4-p17 || >=2.4.4-p18 <2.4.5 || >=2.4.5-p12 <2.4.6 || >=2.4.6-p10 <2.4.7 || >=2.4.7-p5 <2.4.9) - Fixes the issue where online order refunds fail with a PayPal error stating "PayPal gateway rejects the request. Internal Error.".
+* **ACP2E-4626** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where some Storefront JavaScript files are requested and executed twice, causing intermittent duplicate loads and unstable behavior.
+* **ACP2E-4653** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the Cart Price Rule condition attribute scope for "Category (Parent Only)" and "Category (Children Only)" is not exposed when retrieving or updating rules through the REST API.
+* **ACP2E-4808** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.10) - Fixes the issue where the Weight attribute on the storefront product page displays only a raw numeric value in the "Additional Information" or "More Information" section without the configured unit of measurement (lbs or kgs).
+* **ACP2E-4156** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where shipping address validation in the REST API does not adhere to the attribute configuration defined in Admin.
+* **ACP2E-4813** (for Adobe Commerce and Magento Open Source >=2.4.6-p3 <2.4.6-p15 || >=2.4.7 <2.4.7-p10 || >=2.4.8 <2.4.8-p5) - Fixes the issue where USPS shipping methods are unavailable at checkout and shipping estimates are incorrect for certain products, including orders that split into multiple packages.
+* **ACSD-53502** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where Add to Cart intermittently fails on the storefront in iOS Safari due to recursive calls to the New Relic monitoring script, causing page reloads.
+* Versions updated: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **ACSD-68925**, **ACP2E-4402**, **ACP2E-4505**, **ACP2E-4603**, **ACP2E-4706**
+* Replaced patches: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
 
