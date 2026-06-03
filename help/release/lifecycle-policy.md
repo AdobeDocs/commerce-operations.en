@@ -10,11 +10,11 @@ Adobe Commerce follows a defined software lifecycle policy to ensure customers r
 
 >[!IMPORTANT]
 >
->Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to deactivate them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to decommission them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
 
 ## Understanding support tiers
 
-Adobe Commerce defines three support tiers for release lines. The following sections describe each tier.
+Adobe Commerce defines two support tiers for release lines. The following sections describe each tier.
 
 ### Regular support
 
@@ -195,7 +195,7 @@ Adobe does not provide security support or assistance for deployments running un
 
 >[!IMPORTANT]
 >
->Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to deactivate the service if an upgrade is not possible — regardless of your Adobe Commerce version support status.
+>Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status.
 
 ## PHP end of life and PCI compliance
 
@@ -218,7 +218,7 @@ The following PHP versions used by older Commerce release lines have reached or 
 
 If you are on a version approaching or past its end of support dates, take action now. Remaining on an unsupported version puts your store at risk of security vulnerabilities, compliance issues, and loss of support. Adobe provides the following paths to move to a supported release.
 
-### Recommended path: migrate to Adobe Commerce as a Cloud Service (ACCS)
+### Recommended path: migrate to Adobe Commerce as a Cloud Service
 
 [!DNL Adobe Commerce as a Cloud Service] is Adobe's next-generation hosted commerce platform and Adobe's recommended long-term destination for all Adobe Commerce on Cloud customers.
 
@@ -231,6 +231,6 @@ Contact your Adobe account team to begin a migration assessment. See [Adobe Comm
 
 ### Alternative path: upgrade to a supported Adobe Commerce on cloud or on-premises release
 
-If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, you can upgrade to the latest currently supported Adobe Commerce on-premises or on cloud release. This moves you to a fully supported, modern infrastructure stack while preserving your existing Commerce on Cloud deployment model.
+If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, you can upgrade to the latest currently supported Adobe Commerce on Cloud release. This moves you to a fully supported, modern infrastructure stack while preserving your existing Commerce on Cloud deployment model.
 
 Note that this path does not eliminate future upgrade obligations. Customers on PaaS must continue upgrading as release lines reach their version upgrade enforcement dates.
