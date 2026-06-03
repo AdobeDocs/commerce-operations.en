@@ -11,30 +11,23 @@
 {%- assign end_of_support = minor_release[1].end-of-support %}
 {%- assign end_of_support_array = end_of_support | split: '-' %}
 {%- assign extended_support = minor_release[1].end-of-extended-support %}
+{%- assign security_fixes_provisioning = minor_release[1].end-of-security-fixes-provisioning %}
 
 ## {{ minor_release_version }}
 {% if end_of_support_array[0] contains '?' %}
 The date when support of the {{ minor_release_version }} release line ends has not been set yet.
 {%- elsif end_of_support_array[1] contains '?' %}
 Regular support for the {{ minor_release_version }} release line ends in {{ end_of_support | replace: '??', '01' | date: "%Y" }}.
-{%- elsif end_of_support_array[2] contains '?' %}
-Regular support for the {{ minor_release_version }} release line ends in {{ end_of_support | replace: '??', '01' | date: "%B, %Y" }}.
 {%- else %}
-{%- assign end_of_support_in_seconds = end_of_support | date: "%s" %}
-{%- if end_of_support_in_seconds < now_in_seconds %}
-Regular support for the {{ minor_release_version }} release line ended on {{ end_of_support_in_seconds | date: "%B&nbsp;%e, %Y" }}.
-{%- elsif end_of_support_in_seconds > now_in_seconds %}
-Regular support for the {{ minor_release_version }} release line ends on {{ end_of_support | date: "%B&nbsp;%e, %Y" }}.
-{%- endif %}
+{%- include release/support-phrase.html label="Regular support for" version=minor_release_version date=end_of_support %}
 {%- endif %}
 
 {%- if extended_support %}
-{%- assign extended_support_in_seconds = extended_support | date: "%s" %}
-{%- if extended_support_in_seconds < now_in_seconds %}
-Extended support for the {{ minor_release_version }} release line ended on {{ extended_support_in_seconds | date: "%B&nbsp;%e, %Y" }}.
-{%- elsif extended_support_in_seconds > now_in_seconds %}
-Extended support for the {{ minor_release_version }} release line ends on {{ extended_support | date: "%B&nbsp;%e, %Y" }}.
+{%- include release/support-phrase.html label="Extended support for" version=minor_release_version date=extended_support %}
 {%- endif %}
+
+{%- if security_fixes_provisioning %}
+{%- include release/support-phrase.html label="Additional security fixes provisioning for" version=minor_release_version date=security_fixes_provisioning %}
 {%- endif %}
 
 <table>

@@ -268,6 +268,7 @@ Regular support for the 2.4.6 release line ends on August&nbsp;11, 2026.
 
 Regular support for the 2.4.5 release line ended on August&nbsp;12, 2025.
 Extended support for the 2.4.5 release line ends on August&nbsp;11, 2026.
+Additional security fixes provisioning for the 2.4.5 release line ends in May, 2027.
 
 <table>
   <thead>
@@ -392,6 +393,7 @@ Extended support for the 2.4.5 release line ends on August&nbsp;11, 2026.
 
 Regular support for the 2.4.4 release line ended on April&nbsp;12, 2025.
 Extended support for the 2.4.4 release line ended on April&nbsp;14, 2026.
+Additional security fixes provisioning for the 2.4.4 release line ends in May, 2027.
 
 <table>
   <thead>
