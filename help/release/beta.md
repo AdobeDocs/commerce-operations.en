@@ -105,6 +105,8 @@ The same relevance model interacts with **search weights**, **intelligent rankin
 - Clearer expectations for how weights, intelligent ranking, and manual rules combine at query time.
 - Guidance for validating high-value queries and tuning boost rules after the change.
 
+Learn more about search matching and ranking strategy in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching) and [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching).
+
 To request an invitation to this private beta, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
 
 ### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
