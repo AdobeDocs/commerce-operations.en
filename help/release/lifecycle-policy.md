@@ -233,4 +233,4 @@ Contact your Adobe account team to begin a migration assessment. See [Adobe Comm
 
 If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, you can upgrade to the latest currently supported Adobe Commerce on Cloud release. This moves you to a fully supported, modern infrastructure stack while preserving your existing Commerce on Cloud deployment model.
 
-Note that this path does not eliminate future upgrade obligations. Customers on PaaS must continue upgrading as release lines reach their version upgrade enforcement dates.
+Note that this path does not eliminate future upgrade obligations. Customers with Adobe Commerce on Cloud deployments must continue upgrading as release lines reach their version upgrade enforcement dates.
