@@ -32,6 +32,9 @@ The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provi
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
+**<sup>1</sup>Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9**
+Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
+
 For default configuration, the services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 For more details, refer to [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
 
@@ -56,10 +59,6 @@ All Adobe Commerce on-premises customers running versions 2.4.6, 2.4.5, 2.4.4 ar
 advised to migrate their search infrastructure to a compatible OpenSearch version.
 
 >[!ENDTABS]
-
->[!AVAILABILITY]
->
-><sup>1</sup> Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
 
 ## System requirements for earlier Commerce releases
 
@@ -219,4 +218,4 @@ For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.ado
 >
 >There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in the _Commerce Support Knowledge Base_.
 
-<!-- Last updated from includes: 2026-05-13 16:20:40 -->
+<!-- Last updated from includes: 2026-06-01 15:26:19 -->
