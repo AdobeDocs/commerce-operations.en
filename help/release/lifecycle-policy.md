@@ -24,15 +24,10 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 
 >[!NOTE]
 >
-<<<<<<< HEAD
 >Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to decommission them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
-=======
->Extended support is available to Adobe Commerce customers only. It is not available for the Magento Open Source code base.
->>>>>>> main
 
 ## End of software support
 
-<<<<<<< HEAD
 Adobe Commerce defines two support tiers for release lines. The following sections describe each tier.
 
 ### Regular support
@@ -65,15 +60,6 @@ The following table shows the full lifecycle for each Adobe Commerce version, in
 | Adobe Commerce 2.4.6 | March 14, 2023 | August 11, 2026 | August 30, 2027 | May 31, 2028 | June 1, 2028 |
 | Adobe Commerce 2.4.5 | August 9, 2022 | August 12, 2025 | August 12, 2026 | May 31, 2027 | June 1, 2027 |
 | Adobe Commerce 2.4.4 | April 12, 2022 | April 12, 2025 | April 14, 2026 | May 31, 2027 | June 1, 2027 |
-=======
-| Release              | General Availability | End of regular support<sup>1</sup> | End of extended support |
-|----------------------|----------------------|------------------------------------|-------------------------|
-| Adobe Commerce 2.4.8 | April 8, 2025        | May 31, 2028                       | TBD                     |
-| Adobe Commerce 2.4.7 | April 9, 2024        | May 31, 2027                       | TBD                     |
-| Adobe Commerce 2.4.6 | March 14, 2023       | August 11, 2026                    | August 30, 2027         |
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 12, 2025                    | August 11, 2026         |
-| Adobe Commerce 2.4.4 | April 12, 2022       | April 12, 2025                     | April 14, 2026          |
->>>>>>> main
 
 {style="table-layout:auto"}
 
