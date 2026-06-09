@@ -101,7 +101,7 @@ You can define **static** ranges with fixed minimum and maximum values in your s
 - Include or exclude recommendation candidates by price using inclusion and exclusion rules on the **Filter products** step.
 - Use static price bands for fixed merchandising goals (for example, budget-friendly add-ons or premium upsells).
 - Use dynamic price rules on the product detail page to show alternatives within a comparable price band relative to the product being viewed.
-- Align filtering with the price shoppers see—the same final price from the active price book is used for filtering and display.
+- Align filtering with the price shoppers see, which is the same final price from the active price book that is used for filtering and display.
 
 To learn more, see [Recommendation filters — Price](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price) in the merchant guide and [Product Recommendations setup](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/) in the storefront drop-in guide.
 
