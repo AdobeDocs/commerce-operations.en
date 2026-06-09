@@ -124,7 +124,7 @@ You can define **static** ranges with fixed minimum and maximum values in your s
 - Use dynamic price rules on the product detail page to show alternatives within a comparable price band relative to the product being viewed.
 - Align filtering with the price shoppers see—the same final price from the active price book is used for filtering and display.
 
-To learn more, see [Recommendation filters — Price](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price).
+To learn more, see [Recommendation filters — Price](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price) in the merchant guide and [Product Recommendations setup](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/) in the storefront drop-in guide.
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
