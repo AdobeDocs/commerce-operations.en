@@ -25,69 +25,6 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
-### Merchandising Rules Globally and per Catalog View (Public Beta)
-
-[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
-
-Adobe Commerce Optimizer introduces the ability to define merchandising rules with flexible scope, allowing merchants to apply rules either across all catalog views or scope them to a specific catalog view. This capability simplifies the management of merchandising rules for merchants operating multiple storefronts, brands, or languages. Catalog View–specific rules allow merchants to tailor search results and merchandising logic for individual channels when they need localized or brand-specific experiences. If catalog view–specific rules exists, they override the global rule for that view, providing precise control while maintaining efficient configuration management.
-
-**Key benefits**
-
-- Define merchandising rules globally across all catalog views.
-- Override rules for specific catalog views when localized experiences are required.
-- Reduce configuration duplication across storefronts.
-- Improve scalability for multi-brand and multi-language commerce implementations.
-
-This capability improves merchandising flexibility and operational efficiency, helping merchants deliver more relevant product discovery experiences at scale. To learn more, see [merchandising rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
-
->[!NOTE]
->
->Beta participants will need to recreate any existing merchandising rules to take advantage of the new catalog view scope.
-
-To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Product Recommendations Globally and per Catalog View (Public Beta)
-
-[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
-
-Adobe Commerce Optimizer introduces enhanced control over Product Recommendations configuration, enabling merchants to define recommendation units either globally across all catalog views or specifically for individual catalog views.
-
-This capability simplifies recommendation management for businesses operating multiple storefronts, brands, regions, or languages. Merchants can create a recommendation unit once globally and it will apply to all catalog views, ensuring consistent product discovery strategies across channels. At the same time, catalog view–specific recommendation units allow merchants to tailor experiences for particular storefronts when needed.
-
-Storefront engagement events and recommendation metrics are tracked at the catalog view level, providing more accurate insights into shopper behavior across different storefronts.
-
-**Key benefits**
-
-- Configure product recommendation units globally across all catalog views.
-- Create catalog view–specific recommendations for localized storefront experiences.
-- Reduce duplicated configuration across multi-brand or multi-language storefronts.
-- Gain more precise insights with metrics and events tracked by catalog view.
-
-This enhancement helps merchants deliver more relevant product discovery experiences while simplifying the management of recommendations across complex commerce environments. To learn more, see [recommendations](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/recommendation-performance)
-
->[!NOTE]
->
->Beta participants will need to recreate any existing recommendation units to take advantage of the new catalog view scope.
-
-To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Category Merchandising (Public Beta)
-
-[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
-
-Adobe Commerce Optimizer category merchandising helps merchants control how products are ordered on category pages. Merchants configure behavior as a **Category rule** in the merchandising rules workflow, together with [search rules and default product-listing rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview). Each rule can combine **intelligent ranking** (behavioral signals and AI where applicable), optional **price-based sorting**, and **manual** actions such as pin, boost, and bury—so teams can curate discovery, run promotions, and align category pages with strategy without external tools.
-
-**Key benefits**
-
-- Target one or more categories with the same rule-based workflow used for search and default listings.
-- Order category listings using intelligent ranking strategies (for example, most viewed, most purchased, add to cart, personalized recommendations, trending) plus optional price sorting.
-- Layer manual pin, boost, and bury actions on top of intelligent ranking when you need precise placement.
-- Scope rules by catalog view when your setup uses multiple catalog views.
-
-To learn more, see [Category merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
-
-To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
 ### Search matching and ranking (Private Beta)
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
