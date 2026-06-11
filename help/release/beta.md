@@ -88,20 +88,24 @@ To learn more, see [Category merchandising](https://experienceleague.adobe.com/e
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
-### Semantic Search: smarter, context-aware shopping experiences (Private Beta)
+### Recommendation price filters (Public Beta) {#recommendation-price-filters-public-beta}
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
-Semantic search is an e-commerce search technology that understands the *meaning* behind a shopper's query, not just the exact words. Unlike traditional keyword-based search, which often fails when queries include unfamiliar or misspelled terms, this AI-powered approach interprets intent using natural language processing (NLP) and context to deliver more relevant results.
+[!DNL Adobe Commerce Optimizer] adds **price filters** to Product Recommendations so you can include or exclude recommended products based on price when you create or edit a recommendation unit. Filters use each product's **final computed price** from the storefront's **active price book**, including discounts and promotions from that price book (not list price alone). Price rules refine the candidate set; they do not re-rank products.
 
-This technology addresses a major limitation of traditional search: zero-result pages that occur when shoppers use words that do not exist in the catalog. By using AI-powered techniques, it maps user queries and product data into a shared semantic space. For example, the system recognizes that "running shoes" and "jogging sneakers" refer to the same type of product, enabling:
+You can define **static** ranges with fixed minimum and maximum values in your store's base currency, or **dynamic** rules on product detail pages that compare recommended products to the **currently viewed product** using operators such as less than or equal to, greater than or equal to, or within a value or percentage range of the anchor price. Dynamic filters are available for SKU-related recommendation types that run in product context (for example, *Viewed this, viewed that* and *More like this*).
 
-- Synonym recognition
-- Contextual relevance
-- Intelligent handling of vague, misspelled, or compound queries
-- Understanding of natural, conversational language
+**Key benefits**
 
-To request an invitation to the beta program, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
+- Include or exclude recommendation candidates by price using inclusion and exclusion rules on the **Filter products** step.
+- Use static price bands for fixed merchandising goals (for example, budget-friendly add-ons or premium upsells).
+- Use dynamic price rules on the product detail page to show alternatives within a comparable price band relative to the product being viewed.
+- Align filtering with the price shoppers see, which is the same final price from the active price book that is used for filtering and display.
+
+To learn more, see [Recommendation filters — Price](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price) in the merchant guide and [Product Recommendations setup](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/) in the storefront drop-in guide.
+
+To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Cloud Automation Patching Service (Private Beta)
 
