@@ -28,7 +28,7 @@ The following tables summarize the system requirements for the latest release of
 
 >[!TAB Commerce on Cloud]
 
-The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with a specific Commerce version.
+The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with the latest Commerce version for each release line.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
