@@ -11,7 +11,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
     </tr>
     <tr>
@@ -77,7 +77,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
       <td>
           2.9.3+
@@ -170,7 +170,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
       <td>
           2.9.3+
