@@ -31,8 +31,8 @@ Merchants are responsible for the following:
 >
 >See also:
 >
->- [Software lifecycle policy](../release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
->- [Cloud version upgrade enforcement policy](../release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions
+>* [Software lifecycle policy](../release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
+>* [Cloud version upgrade enforcement policy](../release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions
 
 {{supported-versions-only}}
 
