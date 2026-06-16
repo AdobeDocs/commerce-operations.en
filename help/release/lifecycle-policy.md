@@ -8,19 +8,11 @@ exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 
 To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three year support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of software support](#end-of-software-support) table.
 
-During the three year support window, customer have access to:
-
-- **Quality fixes**–Customers can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). The following table described end of software support dates for the Adobe Commerce release lines.
-
-- **Security fixes**–Adobe provides security fixes through cumulative security patches and non-cumulative [isolated security patch files](versioning-policy.md#isolated-security-fixes) for the three-year support period.
-
-- **Hotfixes**–For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. Note that a hotfix is not comprehensive and does not address all security issues that would be resolved by upgrading to the latest release.
-
 Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are in the three-year or extended support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
 
 ## Extended support
 
-Adobe encourages customers to upgrade as soon as possible. However, to provide greater flexibility to align with upgrade plans and business needs, Adobe offers a one-year support extension at no additional cost for Adobe Commerce customers on versions 2.4.6. The support extension includes quality and security patches for the core application for up to one year. Extended support for Adobe Commerce 2.4.4 and 2.4.5 versions ends in April and August 2026 as planned.
+Adobe encourages customers to upgrade as soon as possible. However, to provide greater flexibility to align with upgrade plans and business needs, Adobe offers up to a one-year support extension at no additional cost for Adobe Commerce customers on versions 2.4.6 and 2.4.7. The support extension includes quality and security patches for the core application. Extended support for Adobe Commerce 2.4.4 and 2.4.5 versions ends in April and August 2026 as planned.
 
 >[!NOTE]
 >
@@ -42,7 +34,7 @@ The standard three-year support period from the General Availability (GA) date. 
 
 ### Extended support
 
-A one-year support extension available for specific release lines beyond regular support. Includes quality and security patches. Available for Adobe Commerce customers only — not available for Magento Open Source.
+Up to a one-year support extension available for specific release lines beyond regular support. Includes quality and security patches. Available for Adobe Commerce customers only — not available for Magento Open Source.
 
 ## Security-only transitional period
 
@@ -65,40 +57,8 @@ The following table shows the full lifecycle for each Adobe Commerce version, in
 
 >[!NOTE]
 >
->- <sup>1</sup> If you are an Adobe Commerce customer, you can continue to receive security and quality fixes for an additional year through the extended support period.
+>- <sup>1</sup> If you are an Adobe Commerce customer, you can continue to receive security and quality fixes through the extended support period.
 >- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
-
->[!IMPORTANT]
->
->PCI compliance cannot be guaranteed for merchants running version 2.4.6 who continue to use PHP 8.1, which reached [end of support in 2025](https://www.php.net/eol.php). Similarly, PHP 8.2 reaches [end of life at the end of 2026](https://www.php.net/supported-versions.php), creating the same PCI compliance risk for merchants who continue using it in 2027.
-
-## Additional Security fixes provisioning for Adobe Commerce 2.4.4 and 2.4.5
-
-As a one-time exception, Adobe is providing an extended security fixes provisioning period for Adobe Commerce versions 2.4.4 and 2.4.5 to give customers additional time to migrate to Adobe Commerce as a Cloud Service or upgrade to a supported release line.
-
-During this security fixes provisioning period, note the following:
-
-- **Isolated security patch file only**-An isolated security patch file will be released for these versions according to the release schedule. No security patch releases (no new -p versions) will be provided during this period.
-
-  To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security fixes are tested exclusively against that version.
-
-- **No quality fixes or engineering assistance**–No bug fixes, quality updates ([Quality Patches Tool](../tools/quality-patches-tool/usage.md)), or engineering assistance ([Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) will be provided for versions 2.4.4 or 2.4.5 during this period.
-
-- **PCI compliance is not guaranteed:**–Because 2.4.4 and 2.4.5 use PHP versions that have reached end of life, PCI compliance cannot be guaranteed for merchants on those releases. Continuing to run these versions may put your PCI compliance at risk.
-
-To maintain full security coverage and ensure PCI compliance, customers must upgrade to a currently supported version of Adobe Commerce as soon as possible or migrate to [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
-
-| Release              | General Availability | End of extended support | End of Security fixes provisioning |
-|----------------------|----------------------|-------------------------|------------------------------------|
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 11, 2026         | May 2027                           |
-| Adobe Commerce 2.4.4 | April 12, 2022       | April 14, 2026          | May 2027                           |
-
-{style="table-layout:auto"}
-
->[!NOTE]
->
->Additional security fixes are only available to Adobe Commerce customers only and are not available for the Magento Open Source code base.
-
 
 ## Support timeline
 
@@ -176,7 +136,8 @@ The support timeline maps support periods quarter by quarter for each Adobe Comm
     <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="2"></td>
   </tr>
   <tr>
     <td>2.4.8</td>
