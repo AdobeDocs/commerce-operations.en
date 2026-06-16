@@ -27,6 +27,13 @@ Merchants are responsible for the following:
 * Reacting and responding to security incidents
 * Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
 
+>[!NOTE]
+>
+>See also:
+>
+>- [Software lifecycle policy](../release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
+>- [Cloud version upgrade enforcement policy](../release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions
+
 {{supported-versions-only}}
 
 ## Adobe responsibilities
@@ -807,8 +814,6 @@ Merchants are responsible for synchronizing data between environments.
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database configuration)| R |   |
 
 {style="table-layout:auto"}
-
-{{supported-versions-only}}
 
 #### Product Recommendations
 

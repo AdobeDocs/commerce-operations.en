@@ -6,13 +6,13 @@ exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 
 # Adobe Commerce lifecycle policy
 
-To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three year support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of software support](#end-of-software-support) table.
+To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three-year support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of software support](#end-of-software-support) table.
 
 Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are in the three-year or extended support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
 
 ## Extended support
 
-Adobe encourages customers to upgrade as soon as possible. However, to provide greater flexibility to align with upgrade plans and business needs, Adobe offers up to a one-year support extension at no additional cost for Adobe Commerce customers on versions 2.4.6 and 2.4.7. The support extension includes quality and security patches for the core application. Extended support for Adobe Commerce 2.4.4 and 2.4.5 versions ends in April and August 2026 as planned.
+Adobe encourages customers to upgrade as soon as possible. However, to provide greater flexibility to align with upgrade plans and business needs, Adobe offers up to a one year of additional support at no additional cost for Adobe Commerce customers on versions 2.4.6 and 2.4.7. The support extension includes quality and security patches for the core application. Extended support for Adobe Commerce 2.4.4 and 2.4.5 versions ends in April and August 2026 as planned.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ A one-time, time-limited transitional period available only for versions 2.4.4, 
 The following table shows the full lifecycle for each Adobe Commerce version, including the new version upgrade enforcement dates for Adobe Commerce on Cloud environments.
 
 | Release | General Availability | End of regular support | End of extended support | End of security-only period | [Version upgrade enforcement date (Cloud only)](version-upgrade-enforcement-policy.md) |
-|---------|----------------------|------------------------|-------------------------|-----------------------------|-----------------------------------------------|
+| --------- | ---------------------- | ------------------------ | ------------------------- |-----------------------------| ----------------------------------------------- |
 | Adobe Commerce 2.4.9 | May 12, 2026 | May 31, 2029 | TBD | N/A | TBD |
 | Adobe Commerce 2.4.8 | April 8, 2025 | May 31, 2028 | TBD | N/A | TBD |
 | Adobe Commerce 2.4.7 | April 9, 2024 | May 31, 2027 | May 31, 2028 | N/A | June 1, 2028 |
