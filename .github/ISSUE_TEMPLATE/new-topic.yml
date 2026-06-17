@@ -1,6 +1,7 @@
 ---
-name: Missing content
-description: Undocumented feature, service, command, API, UI component, procedure, etc.
+name: New topic
+description: Create a request to add missing information.
+labels: ["new-topic"]
 body:
   - type: markdown
     attributes:
@@ -19,12 +20,20 @@ body:
           required: true
   - type: textarea
     attributes:
-      label: What's missing?
-      placeholder: |
-        - In the <guide name> or <page link> ...
-        - Missing explanation of how ... works.
-        - Missing steps or guidelines for ....
-        - Missing code samples to demonstrate ....
-        - Something else ...
+      label: Description
+      description: What topic is missing?
     validations:
       required: true
+  - type: checkboxes
+    attributes:
+      label: Content checklist
+      description: List specific information or details to include in this topic.
+      options:
+        - label: The topic provides an explanation of how ____ works.
+        - label: The topic provides steps for ____.
+        - label: The topic contains code samples that shows ____.
+        - label: Other (please specify in the Additional information field below).
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Any information you already know or other online resources that cover this topic.
