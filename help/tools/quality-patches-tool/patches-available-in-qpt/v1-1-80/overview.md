@@ -36,7 +36,7 @@ QPT v1.1.80 includes the following patches:
 1. **ACP2E-4552**: Fixes the issue where the company status isn't returned in the GraphQL response.
 1. **ACP2E-4610**: Fixes the issue where the `sales_clean_quotes` cron job has performance issues.
 1. **ACP2E-4615**: Fixes the issue where online order refunds fail with a PayPal error stating, *PayPal gateway rejects the request. Internal Error.*.
-1. **ACP2E-4626**: Fixes the issue where some Storefront JavaScript files were requested and executed twice, causing intermittent duplicate loads and unstable behavior.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: Fixes the issue where some Storefront JavaScript files were requested and executed twice, causing intermittent duplicate loads and unstable behavior.
 1. **ACP2E-4653**: Fixes the issue where the **[!UICONTROL Cart Price Rule]** condition attribute scope for **[!UICONTROL Category (Parent Only)]** and **[!UICONTROL Category (Children Only)]** isn't exposed when retrieving or updating rules through the REST API.
 1. **ACP2E-4808**: Fixes the issue where the Weight attribute on the storefront product page displays only a raw numeric value in the **[!UICONTROL Additional Information]** or **[!UICONTROL More Information]** section without the configured unit of measurement (lbs or kgs).
 1. **ACP2E-4156**: Fixes the issue where shipping address validation in the REST API doesn't adhere to the attribute configuration defined in the [!UICONTROL Admin].
