@@ -14,8 +14,6 @@ An eCommerce implementation is an evolution—it's never truly finished. Your bu
 - Better developer experience and tooling
 - Ability to more deeply integrate with other Adobe Experience Cloud applications
 
-To provide our merchants with more flexibility when planning upgrades, we recently updated the Adobe Commerce [release schedule](../../release/schedule.md), extended the 2.3 End of Support (EOS) date, and announced new extended support options for select versions of our software. For more information on these updates, see [Expanded support for Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
-
 The following are Adobe Commerce-recommended upgrade paths to keep your site secure and performant while upgrading to one of the latest versions.
 
 ## Upgrading from 2.3.7
