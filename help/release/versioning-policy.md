@@ -65,7 +65,7 @@ Hotfixes are patches that contain high-impact security or quality fixes, such as
 
 ## Individual patch
 
-Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the supported minor versions of Adobe Commerce. Adobe releases individual patches as needed for Adobe Commerce in accordance with the [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). They are delivered through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md).
+Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the supported minor versions of Adobe Commerce. Adobe releases individual patches as needed for Adobe Commerce in accordance with the [Software lifecycle policy](lifecycle-policy.md). For legal terms, see the [Adobe Commerce Software Lifecycle Policy (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). They are delivered through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
