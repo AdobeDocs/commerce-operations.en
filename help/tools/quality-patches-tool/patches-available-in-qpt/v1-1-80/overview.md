@@ -34,7 +34,7 @@ QPT v1.1.80 includes the following patches:
 1. **ACP2E-4496**: Fixes the issue where the analytics cron job causes performance degradation during execution, resulting in improved overall system performance.
 1. **ACP2E-4533**: Fixes the issue where placeholder images don't load on the Storefront when a store code is included in the URL.
 1. **ACP2E-4552**: Fixes the issue where the company status isn't returned in the GraphQL response.
-1. **ACP2E-4610**: Fixes the issue where the `sales_clean_quotes` cron job has performance issues.
+1. **[ACP2E-4610](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)**: Fixes the issue where the sales_clean_quotes cron job has performance issues.
 1. **ACP2E-4615**: Fixes the issue where online order refunds fail with a PayPal error stating, *PayPal gateway rejects the request. Internal Error.*.
 1. **ACP2E-4626**: Fixes the issue where some Storefront JavaScript files were requested and executed twice, causing intermittent duplicate loads and unstable behavior.
 1. **ACP2E-4653**: Fixes the issue where the **[!UICONTROL Cart Price Rule]** condition attribute scope for **[!UICONTROL Category (Parent Only)]** and **[!UICONTROL Category (Children Only)]** isn't exposed when retrieving or updating rules through the REST API.
