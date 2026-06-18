@@ -30,7 +30,7 @@ QPT v1.1.80 includes the following patches:
 1. **ACP2E-4472**: Fixes the issue where a null quote is created during the **[!UICONTROL Login as Customer]** flow.
 1. **ACP2E-4481**: Fixes the issue where bundle product saleability isn't recalculated correctly after an order is canceled.
 1. **ACP2E-4488**: Fixes the issue where saving or editing products in [!UICONTROL Admin] is slow for products with large attribute sets.
-1. **ACP2E-4493**: Fixes the issue where the Sales Order Archive grid displays an incorrect order status when asynchronous indexing is enabled.
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)**: Fixes the issue where the Sales Order Archive grid displays an incorrect order status when asynchronous indexing is enabled.
 1. **ACP2E-4496**: Fixes the issue where the analytics cron job causes performance degradation during execution, resulting in improved overall system performance.
 1. **ACP2E-4533**: Fixes the issue where placeholder images don't load on the Storefront when a store code is included in the URL.
 1. **ACP2E-4552**: Fixes the issue where the company status isn't returned in the GraphQL response.
