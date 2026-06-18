@@ -24,7 +24,7 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 ## 2.4.5-p17
 
-The Adobe Commerce 2.4.5-p17 is an [extended support security release](../../lifecycle-policy.md#security-only transitional period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+The Adobe Commerce 2.4.5-p17 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
 
@@ -44,7 +44,7 @@ Adobe Commerce 2.4.5 is now compatible with RabbitMQ 4.2, which addresses the Ra
 
 ## 2.4.5-p16
 
-The Adobe Commerce 2.4.5-p16 is an [extended support security release](../../lifecycle-policy.md#security-only transitional period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+The Adobe Commerce 2.4.5-p16 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
 
@@ -68,7 +68,7 @@ Adobe Commerce 2.4.5-p16 has been verified for compatibility with MariaDB 10.11,
 
 ## 2.4.5-p15
 
-The Adobe Commerce 2.4.5-p15 is an [extended support security release](../../lifecycle-policy.md#security-only transitional period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
+The Adobe Commerce 2.4.5-p15 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 

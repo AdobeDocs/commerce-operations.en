@@ -68,7 +68,7 @@ The following tables list system requirements for Adobe Commerce releases includ
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 is on [extended support](../release/lifecycle-policy.md#extended-support) through **August 30, 2027**, followed by a [security-only transitional period](../release/lifecycle-policy.md#security-only transitional period) through **May 31, 2028**. These provisions are available to Adobe Commerce customers only. They do not extend support for third-party dependencies such as MySQL.
+>Adobe Commerce 2.4.6 is on [extended support](../release/lifecycle-policy.md#extended-support) through **August 30, 2027**, followed by a [security-only transitional period](../release/lifecycle-policy.md#security-only-transitional-period) through **May 31, 2028**. These provisions are available to Adobe Commerce customers only. They do not extend support for third-party dependencies such as MySQL.
 >
 >If you run Adobe Commerce on Cloud, you must upgrade to a supported release or migrate to [!DNL Adobe Commerce as a Cloud Service] before the **June 1, 2028** [version upgrade enforcement date](../release/version-upgrade-enforcement-policy.md). See the [end of support dates](../release/lifecycle-policy.md#end-of-support-dates) table for full lifecycle dates.
 >
