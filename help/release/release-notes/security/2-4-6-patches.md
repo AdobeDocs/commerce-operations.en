@@ -22,7 +22,7 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 >
 >Adobe Commerce on Cloud customers must keep platform dependencies on supported versions. See [Platform dependencies](../../lifecycle-policy.md#platform-dependencies) in the lifecycle policy.
 >
->Adobe Commerce 2.4.6 is on [extended support](../../lifecycle-policy.md#extended-support) through **August 30, 2027**, followed by a [security-only transitional period](../../lifecycle-policy.md#security-only-transitional-provisions) through **May 31, 2028**. These provisions are available to Adobe Commerce customers only. They do not extend support for third-party dependencies such as MySQL.
+>Adobe Commerce 2.4.6 is on [extended support](../../lifecycle-policy.md#extended-support) through **August 30, 2027**, followed by a [security-only transitional period](../../lifecycle-policy.md#security-only transitional period) through **May 31, 2028**. These provisions are available to Adobe Commerce customers only. They do not extend support for third-party dependencies such as MySQL.
 >
 >If you run Adobe Commerce on Cloud, you must upgrade to a supported release or migrate to [!DNL Adobe Commerce as a Cloud Service] before the **June 1, 2028** [version upgrade enforcement date](../../version-upgrade-enforcement-policy.md). See the [end of support dates](../../lifecycle-policy.md#end-of-support-dates) table for full lifecycle dates.
 

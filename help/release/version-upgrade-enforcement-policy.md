@@ -14,7 +14,7 @@ The following sections explain why Adobe enforces upgrades, how enforcement date
 
 >[!NOTE]
 >
->This topic covers Cloud upgrade enforcement only. For support tier definitions, the [end of support dates](lifecycle-policy.md#end-of-support-dates) table, [security-only transitional provisions](lifecycle-policy.md#security-only-transitional-provisions), [third-party software dependencies](lifecycle-policy.md#platform-dependencies), [PHP end of life and PCI compliance](lifecycle-policy.md#php-end-of-life-and-pci-compliance), and [upgrade and migration options](lifecycle-policy.md#upgrade-and-migration-options), see the [lifecycle policy](lifecycle-policy.md). In addition to upgrading to a supported Adobe Commerce version, Adobe also requires you to keep third-party software dependencies on actively supported versions.
+>This topic covers Cloud upgrade enforcement only. For support tier definitions, the [end of support dates](lifecycle-policy.md#end-of-support-dates) table, [security-only transitional provisions](lifecycle-policy.md#security-only transitional period), [third-party software dependencies](lifecycle-policy.md#platform-dependencies), [PHP end of life and PCI compliance](lifecycle-policy.md#php-end-of-life-and-pci-compliance), and [upgrade and migration options](lifecycle-policy.md#upgrade-and-migration-options), see the [lifecycle policy](lifecycle-policy.md). In addition to upgrading to a supported Adobe Commerce version, Adobe also requires you to keep third-party software dependencies on actively supported versions.
 
 ## Why Adobe is introducing this policy
 
