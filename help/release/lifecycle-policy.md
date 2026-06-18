@@ -2,6 +2,7 @@
 title: Software lifecycle policy
 description: Learn about key dates for end of software support for Adobe Commerce releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
+nudge: true
 ---
 
 # Adobe Commerce lifecycle policy
@@ -50,11 +51,6 @@ The following table shows the full lifecycle for each Adobe Commerce version, in
 | Adobe Commerce 2.4.4 | April 12, 2022 | April 12, 2025 | April 14, 2026 | May 31, 2027 | June 1, 2027 |
 
 {style="table-layout:auto"}
-
->[!NOTE]
->
->- <sup>1</sup> If you are an Adobe Commerce customer, you can continue to receive security and quality fixes through the extended support period.
->- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## Support timeline
 
