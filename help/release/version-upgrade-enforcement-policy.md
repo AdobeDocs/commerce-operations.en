@@ -1,7 +1,7 @@
 ---
 title: Cloud Version Upgrade Enforcement Policy
 description: Learn about version upgrade enforcement for Adobe Commerce on Cloud — why Adobe enforces upgrades, enforcement dates, decommissioning, and required actions. See the lifecycle policy for transitional provisions and migration paths.
-nudge: true
+nudge: false
 ---
 
 # Version upgrade enforcement policy for Adobe Commerce on Cloud
