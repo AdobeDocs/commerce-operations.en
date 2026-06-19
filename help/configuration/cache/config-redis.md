@@ -3,6 +3,7 @@ title: Configure Redis
 description: Learn how to configure Redis caching for Adobe Commerce performance optimization. Discover features, setup steps, and configuration best practices.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Configure Redis
 
@@ -11,6 +12,8 @@ Redis features include:
 - PHP session storage
 - Tag-based cache cleanup without `foreach` loops
 - On-disk saves and master/slave replication
+
+{{cloud-cache-config}}
 
 ## Install Redis
 
