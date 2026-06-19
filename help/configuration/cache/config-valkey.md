@@ -3,6 +3,8 @@ title: Configure Valkey
 description: Learn how to configure Valkey caching for Adobe Commerce performance optimization. Discover features, setup steps, and configuration best practices.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+
 ---
 # Configure Valkey
 
@@ -11,6 +13,8 @@ Valkey features include:
 - PHP session storage
 - Tag-based cache cleanup without `foreach` loops
 - On-disk saves and master/slave replication
+
+{{cloud-cache-config}}
 
 ## Install Valkey
 
