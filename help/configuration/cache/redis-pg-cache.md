@@ -3,8 +3,11 @@ title: Use Redis for default cache
 description: Learn how to configure Redis as the default cache for Adobe Commerce. Discover command-line setup, configuration options, and validation techniques.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Use Redis for default cache
+
+{{cloud-cache-config}}
 
 Commerce provides command-line options to configure the Redis page and default caching. Although you can configure caching by editing the `<Commerce-install-dir>app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
 
