@@ -25,7 +25,7 @@ Use these recommendations to configure Redis or Valkey caching and sessions for 
 
 >[!NOTE]
 >
->For Commerce on Cloud infrastructure environments, verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
+>Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
 
 ## Configure L2 cache
 
@@ -43,9 +43,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration on Cloud infrastructure, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) configuration reference in the _Commerce on Cloud Infrastructure Guide_.
-
-For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For environment configuration details, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!TAB Valkey configuration]
 
@@ -57,9 +55,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration on cloud infrastructure, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuration reference in the _Commerce on Cloud Infrastructure Guide_.
-
-For on-premises installations, see [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+For environment configuration details, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuration variables in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!ENDTABS]
 
@@ -140,9 +136,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-For environment configuration on Commerce Cloud infrastructure, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
-
-For Adobe Commerce on-premises installations, configure the new Redis cache implementation using the `bin/magento setup` commands. See [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!TAB Valkey configuration]
 
@@ -154,9 +148,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-For environment configuration on Commerce Cloud infrastructure, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
-
-For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento setup` commands. See [Configure Valkey](../../../configuration/cache/config-valkey.md) in the _Configuration Guide_.
+For environment variable configuration details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!ENDTABS]
 
@@ -207,8 +199,6 @@ This log lists the keys you can preload. To see the content of a key, run the fo
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
-For on-premises installations, see [Redis preload feature](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in the _Configuration Guide_.
-
 >[!TAB Valkey preload key configuration]
 
 The preload keys are configured in the `.magento.env.yaml` configuration file.
@@ -247,8 +237,6 @@ This log lists the keys you can preload. To see the content of a key, run the fo
 ```terminal
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
-
-For on-premises installations, see [Valkey preload feature](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) in the _Configuration Guide_.
 
 >[!ENDTABS]
 
@@ -301,8 +289,6 @@ stage:
 >[!NOTE]
 >
 >The `full_page` cache type is not relevant to Adobe Commerce on Cloud infrastructure projects because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
-
-For on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
 
 >[!WARNING]
 >
@@ -992,7 +978,5 @@ stage:
 
 See the following related topics:
 
-- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
-- [Use Redis for session storage](../../../configuration/cache/redis-session.md)
-- [Use Valkey for default cache](../../../configuration/cache/valkey-pg-cache.md)
-- [Use Valkey for session storage](../../../configuration/cache/valkey-session.md)
+- [Set up Redis service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
