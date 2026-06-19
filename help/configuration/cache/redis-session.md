@@ -3,13 +3,13 @@ title: Use Redis for session storage
 description: Learn how to configure Redis for session storage in Adobe Commerce. Discover command-line setup, configuration options, and performance optimization techniques.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Use Redis for session storage
 
 >[!IMPORTANT]
 >
 >You must [install Redis](config-redis.md#install-redis) before continuing.
-
 
 Commerce now provides command-line options to configure Redis session storage. In previous releases, you edited the `<Commerce install dir>app/etc/env.php` file. The command line provides validation and is the recommended configuration method, but you can still edit the `env.php` file.
 
