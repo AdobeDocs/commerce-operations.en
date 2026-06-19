@@ -4,6 +4,7 @@ description: Learn about Varnish Edge Side Includes (ESI) and how to embed web p
 badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Varnish ESI block
 
