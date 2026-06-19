@@ -3,6 +3,7 @@ title: L2 cache configuration
 description: Learn how to configure L2 cache for Adobe Commerce performance optimization. Discover setup steps and network traffic reduction techniques.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # L2 cache configuration
 
@@ -15,9 +16,7 @@ To reduce the network bandwidth to Redis, store cache data locally on each web n
 
 Commerce stores the hashed data version in Redis, with the suffix ':hash' appended to the regular key. If there is an outdated local cache, the data is transferred to the local machine with a cache adapter.
 
->[!INFO]
->
->For Adobe Commerce on cloud infrastructure, you can use [deploy variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) for L2 cache configuration.
+{{cloud-cache-config}}
 
 ## Configuration example
 
