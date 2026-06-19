@@ -31,6 +31,8 @@ Use these recommendations to configure Redis or Valkey caching and sessions for 
 
 Configure the L2 cache by setting the `REDIS_BACKEND` or `VALKEY_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
+For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache).
+
 >[!BEGINTABS]
 
 >[!TAB Redis configuration]
