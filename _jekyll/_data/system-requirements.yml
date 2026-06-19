@@ -14,7 +14,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '3.1 or latest available'
   AWS S3: ✔️
-  Composer: '2.9.3+'
+  Composer: '2.10'
   MariaDB: '12.3'
   MariaDB Cloud: '11.8, 12.3<sup>1</sup>'
   MySQL: '8.4'
@@ -33,7 +33,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '3.1 or latest available'
   AWS S3: ✔️
-  Composer: '2.9.3+'
+  Composer: '2.10'
   Elasticsearch: '8'
   MariaDB: '11.4, 11.8'
   MySQL: '8.4'
@@ -144,7 +144,7 @@
   AWS MQ: '3.13 or latest available'
   AWS OpenSearch: '3.1 or latest available'
   AWS S3: ✔️
-  Composer: '2.9.3+'
+  Composer: '2.10'
   Elasticsearch: '8'
   MariaDB: '10.11, 11.8'
   New Relic Cloud: '10.15.0.4+, 10.7.0.319+'

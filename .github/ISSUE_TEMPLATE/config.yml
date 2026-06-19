@@ -1,0 +1,12 @@
+---
+blank_issues_enabled: false
+contact_links:
+  - name: Help Center
+    url: https://helpx.adobe.com/support.html
+    about: Find help with issues unrelated to documentation here.
+  - name: Adobe Commerce Support Knowledge Base
+    url: https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview
+    about: Find troubleshooting and how-to articles for Adobe Commerce.
+  - name: Adobe Support
+    url: https://experienceleague.adobe.com/en/support
+    about: Get help from Adobe Support.
