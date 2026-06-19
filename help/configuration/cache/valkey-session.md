@@ -8,13 +8,13 @@ badgePaas: label="On-premises" type="Informative" url="https://experienceleague.
 
 # Use Valkey for session storage
 
+Commerce provides command-line options to configure the Valkey page and default caching. Although you can configure caching by editing the `<Commerce-install-dir>app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
+
+You must [install Valkey](config-valkey.md#install-valkey) before continuing.
+
 {{cloud-cache-config}}
 
->[!IMPORTANT]
->
->You must [install Valkey](config-valkey.md#install-valkey) before continuing.
-
-Adobe Commerce provides command-line options to configure Valkey session storage.
+## Configure Valkey session storage
 
 Run the `setup:config:set` command and specify Valkey-specific parameters.
 
@@ -25,7 +25,6 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` enables Valkey session storage. If this feature is already enabled, omit this parameter.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` is a list of parameter/value pairs that configure session storage:
-
 
 >[!NOTE]
 >
