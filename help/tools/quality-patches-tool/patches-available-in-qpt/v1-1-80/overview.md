@@ -41,6 +41,6 @@ QPT v1.1.80 includes the following patches:
 1. **ACP2E-4808**: Fixes the issue where the Weight attribute on the storefront product page displays only a raw numeric value in the **[!UICONTROL Additional Information]** or **[!UICONTROL More Information]** section without the configured unit of measurement (lbs or kgs).
 1. **ACP2E-4156**: Fixes the issue where shipping address validation in the REST API doesn't adhere to the attribute configuration defined in the [!UICONTROL Admin].
 1. **ACP2E-4813**: Fixes the issue where USPS shipping methods are unavailable at checkout and shipping estimates are incorrect for certain products, including orders that split into multiple packages.
-1. **[ACSD-53502](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)**: Fixes the issue where Add to Cart intermittently fails on the storefront in iOS Safari due to recursive calls to the New Relic monitoring script, causing page reloads.
+1. **[ACSD-53502](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)**: Fixes the issue where **[!UICONTROL Add to Cart]** intermittently fails on the storefront in iOS [!DNL Safari] due to recursive calls to the New Relic monitoring script, causing page reloads.
 
 Use the menu on the left to navigate to a specific patch page.
