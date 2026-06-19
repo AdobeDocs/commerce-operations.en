@@ -3,12 +3,15 @@ title: Cache clearing with multiple Varnish instances
 description: Learn how cache clearing works with multiple Varnish instances in Adobe Commerce. Discover configuration and management best practices.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Cache clearing multiple Varnish instances
 
 Adobe Commerce supports multiple Varnish instances out of the box.
 
 This topic shows the basics of configuring multiple Varnish instances with Commerce.
+
+{{varnish-config-cloud}}
 
 ## Configuration to purge multiple Varnish instances
 
