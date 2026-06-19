@@ -8,6 +8,8 @@ badgePaas: label="On-premises" type="Informative" url="https://experienceleague.
 ---
 # Varnish ESI block
 
+{{varnish-config-cloud}}
+
 Edge Side Includes (ESI) are special directives that you can use to include web pages in other web pages.
 
 An example:
