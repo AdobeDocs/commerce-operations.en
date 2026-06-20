@@ -3,11 +3,8 @@ title: Configure caching
 description: Learn about caching mechanisms and configuration options for Adobe Commerce applications. Discover alternatives to default file system caching.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises on-premises projects only."
 ---
 # Configure caching
-
-{{cloud-cache-config}}
 
 [!DNL Commerce] enables you to configure alternatives to the default file system caching. This guide discusses some of those alternatives; namely,
 
@@ -45,3 +42,5 @@ badgePaas: label="On-premises" type="Informative" url="https://experienceleague.
 >[!TIP]
 >
 >Varnish does not require changes to the [!DNL Commerce] configuration. See [Configure and use Varnish](config-varnish.md).
+
+{{cloud-cache-config}}
