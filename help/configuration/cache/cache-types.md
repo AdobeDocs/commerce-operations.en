@@ -6,9 +6,11 @@ exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 ---
 # Cache types
 
-{{cloud-cache-config}}
-
 The following steps walk through associating cache frontend with a cache type.
+
+>[!NOTE]
+>
+>This topic applies to Adobe Commerce on cloud infrastructure and on-premises deployments. For Adobe Commerce on cloud installations, custom cache frontend configuration is an advanced application-level customization and should be implemented with the Commerce on Cloud Infrastructure Guide requirements in mind. See [Store Configuration Management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings)
 
 ## Step 1: Define a cache frontend
 
