@@ -10,7 +10,7 @@ As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache 
 
 >[!WARNING]
 >
->This section is applicable only for Commerce instances running on Amazon EC2 VPCs. It does not work for on-premises installations.
+>This section is applicable only for Commerce instances running on Amazon EC2 VPCs. It does not work for Commerce on Cloud or on-premises installations.
 
 ## Prerequisites
 
