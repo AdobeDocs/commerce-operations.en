@@ -3,8 +3,11 @@ title: Configure Varnish for Commerce
 description: Learn how to configure Varnish specifically for Adobe Commerce applications. Discover configuration file updates and management techniques.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Configure the Commerce application to use Varnish
+
+{{varnish-config-cloud}}
 
 To configure Commerce to use Varnish:
 
