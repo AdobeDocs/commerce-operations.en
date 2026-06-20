@@ -3,8 +3,11 @@ title: Install Varnish
 description: Learn about Varnish installation requirements for Adobe Commerce caching. Discover installation resources and setup guidance.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Install Varnish
+
+{{varnish-config-cloud}}
 
 Installing the Varnish software is beyond the scope of this guide. For more information about installing Varnish, see:
 
