@@ -3,10 +3,13 @@ title: Final verification
 description: Learn how to perform final verification of your Varnish configuration with Adobe Commerce. Discover testing steps and troubleshooting techniques.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
+badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
 # Final verification of Varnish configuration
 
 Now that you are using the `default.vcl` generated for you by Commerce, you can perform some final verifications to make sure that Varnish is working.
+
+{{varnish-config-cloud}}
 
 ## Verify HTTP response headers
 
