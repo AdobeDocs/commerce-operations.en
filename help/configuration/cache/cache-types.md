@@ -8,9 +8,17 @@ exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 
 A cache frontend is an interface between Commerce and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend.
 
+This is useful when you want to use different cache backends or configurations for different types of cached data. For example, you might want `full_page` caching on a dedicated Redis database while using a separate database for `default` caching.
+
 >[!NOTE]
 >
 >This topic applies to Adobe Commerce on cloud infrastructure and on-premises deployments. For Adobe Commerce on cloud installations, custom cache frontend configuration is an advanced application-level customization and should be implemented with the Commerce on Cloud Infrastructure Guide requirements in mind. See [Store Configuration Management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings)
+
+## Use the default frontend
+
+Commerce provides a `default` cache frontend that works for all cache types. It extends [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) by implementing the [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) frontend cache.
+
+In most cases, you do not need to customize the frontend. You only need to configure the backend. See [Cache backend options](cache-options.md).
 
 ## Define a custom cache frontend
 
