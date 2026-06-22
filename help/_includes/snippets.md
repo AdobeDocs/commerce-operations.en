@@ -6,6 +6,12 @@
 >
 >If your Commerce project is deployed on cloud, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for caching configuration instructions.
 
+## Varnish configuration instructions cloud {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
+
 ## Adobe service version support {#supported-versions-only}
 
 >[!NOTE]

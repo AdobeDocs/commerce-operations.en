@@ -50,7 +50,7 @@ Cache configuration is stored in two files:
 - `<magento_root>/app/etc/di.xml` -- The global dependency injection configuration. Modify this file to change the provided `default` cache frontend.
 - `<magento_root>/app/etc/env.php` -- Environment-specific configuration. Modify this file to configure custom cache frontends. This file overrides the equivalent configuration in `di.xml`.
 
-For details on frontend-to-type mapping and cache configuration syntax for Commece on-premises deployments, see:
+For details on frontend-to-type mapping and cache configuration syntax for Commerce on-premises deployments, see:
 
 - [Configure cache frontends](cache-types.md) -- Associate a cache frontend with specific cache types
 - [Cache backend options](cache-options.md) -- Backend option reference

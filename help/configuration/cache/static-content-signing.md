@@ -3,7 +3,7 @@ title: Static Content Signing and Browser Cache Invalidation
 description: Learn how static content signing works in Adobe Commerce to invalidate browser cache for static resources. Discover how to enable and configure this feature.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-badgePaas: label="On cloud and On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+badgePaas: label="On cloud and On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud and on-premises projects only."
 ---
 # Static content signing and browser cache invalidation
 
