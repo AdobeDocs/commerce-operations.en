@@ -1,6 +1,6 @@
 ---
 title: Release policy
-description: Learn about the different types of Adobe Commerce releases.
+description: Learn about Adobe Commerce release types, marketing versus module versioning, patch and security releases, betas, hotfixes, and the overall release policy.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
 ---
 # Adobe Commerce release policy
@@ -65,7 +65,7 @@ Hotfixes are patches that contain high-impact security or quality fixes, such as
 
 ## Individual patch
 
-Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the supported minor versions of Adobe Commerce. Adobe releases individual patches as needed for Adobe Commerce in accordance with the [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). They are delivered through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md).
+Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the supported minor versions of Adobe Commerce. Adobe releases individual patches as needed for Adobe Commerce in accordance with the [Software lifecycle policy](lifecycle-policy.md). For legal terms, see the [Adobe Commerce Software Lifecycle Policy (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). They are delivered through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
@@ -75,4 +75,4 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 Created by non-Adobe personnel to fix an issue or modify the Adobe Commerce code for various reasons.
 
-<!-- Last updated from includes: 2025-10-09 22:53:22 -->
+<!-- Last updated from includes: 2026-04-20 10:12:04 -->

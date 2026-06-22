@@ -43,7 +43,7 @@ The products are updated.
 
 1. An error is logged:
 
-    ```
+    ```yaml
     report.CRITICAL: Message has been rejected: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away [] []
     ```
 

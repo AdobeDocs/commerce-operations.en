@@ -45,7 +45,7 @@ The [!DNL GraphQL] "route" query doesn't return products in the correct sort ord
 1. Save the page.
 1. Make the following [!DNL GraphQL] request:
 
-```
+```graphql
 query {
   route(url: "/test-widget") {
     relative_url

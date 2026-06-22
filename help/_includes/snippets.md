@@ -6,11 +6,23 @@
 >
 >If your Commerce project is deployed on cloud, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for caching configuration instructions.
 
-## Security patches for extended support {#extended-support}
+## Adobe service version support {#supported-versions-only}
 
 >[!NOTE]
 >
->Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Adobe provides support only for deployments running supported versions of all dependencies and services. This applies to:
+>
+>* **Platform services** (including but not limited to PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ, and Nginx) — merchants must stay on versions compatible with their deployed Adobe Commerce release. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Commerce Services extensions** (including but not limited to Live Search, Product Recommendations, and Payment Services) — only the latest released version is supported.
+>* **Custom extensions and third-party integrations** — merchants are responsible for ensuring these remain on vendor-supported versions.
+>
+>Running unsupported versions may expose your store to security vulnerabilities, and Adobe cannot provide security patches for dependencies no longer maintained by their vendors.
+>
+>For the full list of supported versions, see the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+
+## Security patches for extended support {#extended-support}
+
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Commerce only {#commerce-only}
 
@@ -48,7 +60,7 @@
 
 >[!IMPORTANT]
 >
->The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](/help/configuration/storage/revert-split-database.md).
+>The split database feature was deprecated in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -122,3 +134,10 @@ After recent CSP/SRI changes, the checkout page does not load static.min.js and 
 **Hotfix**:
 
 A hotfix is available. See [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) in the Knowledge Base for patch details.
+
+## Valkey Redis CLI note {#valkey-redis-cli-note}
+
+>[!NOTE]
+>
+>Starting with Adobe Commerce 2.4.9, Valkey officially replaced Redis in CLI tooling. For **versions 2.4.8 and earlier**, use the equivalent [Redis CLI commands](/help/configuration/cache/config-redis.md#set-up-redis-configuration).
+

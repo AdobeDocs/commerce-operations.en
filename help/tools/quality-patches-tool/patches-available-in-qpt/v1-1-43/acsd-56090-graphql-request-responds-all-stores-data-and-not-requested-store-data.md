@@ -40,7 +40,7 @@ GraphQL response contains all stores data instead of the store specific data.
 
 1. Execute the GraphqQL query (add header — store = 'storename ):
 
-```
+```graphql
    query {
      products(filter: { url_key: { eq: "abc" } }) {
        items {

@@ -22,7 +22,7 @@ The message queue system must be established before you install Adobe Commerce. 
 
 To install [!DNL RabbitMQ] on Ubuntu 16, enter the following command:
 
-```bash
+```shell
 sudo apt install -y rabbitmq-server
 ```
 
@@ -67,7 +67,7 @@ Review the official [!DNL RabbitMQ] documentation to configure and manage [!DNL 
 
 If you install Adobe Commerce _after_ you install [!DNL RabbitMQ], add the following command-line parameters during installation:
 
-```bash
+```shell
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
 ```
 
@@ -102,7 +102,7 @@ If you already had Adobe Commerce installed and you want to connect it to [!DNL 
 
 You can also set [!DNL RabbitMQ] configuration values using the `bin/magento setup:config:set` command:
 
-```bash
+```shell
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 

@@ -15,7 +15,7 @@ Before you run this command, the following _must_ be true:
 
 -  The `Magento_Developer` module must be enabled. You can enable it as follows:
 
-   ```bash
+   ```shell
    bin/magento module:enable [--force] Magento_Developer
    ```
 
@@ -29,24 +29,24 @@ For example, to run integration tests, you should copy `dev/tests/integration/et
 
 Command usage:
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 To list the available test types:
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 Sample return:
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 For example, to run integration tests:
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

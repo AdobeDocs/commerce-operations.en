@@ -8,7 +8,7 @@ exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
 
 The following error message indicates that the Adobe Commerce version you are upgrading from is configured to use a catalog search engine that is not supported in the version you are upgrading to:
 
-```
+```text
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
@@ -19,7 +19,7 @@ This error means one of the following conditions is true on the down-level versi
 
 Use the following command to check the current search engine:
 
-```bash
+```shell
 bin/magento config:show catalog/search/engine
 ```
 
@@ -29,11 +29,11 @@ The error occurs if the returned value is `mysql`, `elasticsearch`, or `elastics
 >
 >If you have received this error, your installation is in an inconsistent state, and you cannot access the Admin. We recommend that you revert to your previous version while you resolve this error. To do this, run one of the following commands:
 >
->```bash
+>```shell
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->```bash
+>```shell
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
@@ -64,7 +64,7 @@ You must perform the following tasks before upgrading to 2.4:
 
    >[!NOTE]
    >
-   >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+   >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) to check which version of JDK is installed.
 
 1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) and reindex.
 

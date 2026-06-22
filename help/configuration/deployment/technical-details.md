@@ -8,10 +8,10 @@ exl-id: a396d241-f895-4414-92af-3abf3511e62a
 This topic discusses technical implementation details about pipeline deployment in Commerce 2.2 and later. Improvements can be divided into the following areas:
 
 - [Configuration management](#configuration-management)
-- [Changes in the Admin](#changes-in-the-admin)
+- [Changes in the Admin](#the-commerce-admin)
 - [Install and remove cron](#install-and-remove-cron)
 
-This topic also discusses the [recommended workflow](#recommended-workflow) for pipeline deployment and provides some examples to help you understand how it works.
+This topic also discusses the [recommended workflow](#recommended-pipeline-deployment-workflow) for pipeline deployment and provides some examples to help you understand how it works.
 
 Before you get started, review the [Prerequisites for your development, build, and production systems](../deployment/prerequisites.md).
 
@@ -54,7 +54,7 @@ You can manage the sensitive configuration in any of the following ways:
 ### Configuration settings locked in the Admin
 
 Any configuration settings in `config.php` or `env.php` are locked in the Admin; that is, those settings cannot be changed in the Admin.
-Use the [`magento config:set` or `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) command to change the settings in the `config.php` or `env.php` files.
+Use the [`magento config:set` or `magento config:set --lock`](../cli/set-configuration-values.md#set-values) command to change the settings in the `config.php` or `env.php` files.
 
 ## The Commerce Admin
 
@@ -111,7 +111,7 @@ On your development system:
 
 1. To remove generated php code and static assets files while in development, run the following commands:
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -281,10 +281,10 @@ The default email domain system-specific configuration setting is written to `ap
 
 The PayPal settings are written to neither file because the `bin/magento app:config:dump` command does not write sensitive settings. You must set the PayPal settings on the production system using the following commands:
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

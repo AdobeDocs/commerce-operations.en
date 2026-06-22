@@ -1,11 +1,11 @@
 ---
-title: Configure web server
+title: Configure Web Server for Varnish Caching
 description: Learn how to configure your web server to work with Varnish caching for Adobe Commerce. Discover port configuration and setup requirements.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
-# Configure your web server
+# Configure web server for Varnish Caching
 
 Configure your web server to listen on a port other than the default port 80 because Varnish responds directly to incoming HTTP requests, not the web server.
 
@@ -57,7 +57,7 @@ To minimally configure Varnish:
 
 1. Back up `default.vcl`:
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -94,13 +94,13 @@ To minimally configure Varnish:
 
 1. Restart Varnish:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 If Varnish fails to start, try running it from the command line as follows:
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -128,7 +128,7 @@ If Varnish fails to start as a service, start it from the command line as follow
 
 1. Start the Varnish CLI:
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -138,7 +138,7 @@ If Varnish fails to start as a service, start it from the command line as follow
 
    The following messages display to confirm a successful start:
 
-   ```
+   ```text
    child (29805) Started
    200 0
 
@@ -150,13 +150,13 @@ If Varnish fails to start as a service, start it from the command line as follow
 
 Log in to the Varnish server and enter the following command:
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 Look for the following output in particular:
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -175,7 +175,7 @@ Install the Commerce software if you have not already done so. When prompted for
 
 Possible error installing Commerce:
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -206,7 +206,7 @@ To set Commerce for developer mode, use the [`magento deploy:mode:set`](../cli/s
 
 Make sure that Varnish is running then enter the following command on the Varnish server:
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -214,7 +214,7 @@ In a web browser, go to any Commerce page.
 
 A long list of response headers display in your command prompt window. Look for headers like the following:
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -237,19 +237,19 @@ There are several ways to look at response headers, including using a browser pl
 
 The following example uses `curl`. You can enter this command from any machine that can access the Commerce server using HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 For example,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Look for headers like the following:
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

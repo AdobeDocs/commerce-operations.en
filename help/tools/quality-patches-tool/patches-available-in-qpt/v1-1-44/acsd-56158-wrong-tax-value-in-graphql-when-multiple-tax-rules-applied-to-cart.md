@@ -152,7 +152,7 @@ The tax value rendering in the GraphQL response is incorrect when multiple tax r
 
 Each tax rate shows its own tax amount:
 
-```
+```text
 "applied_taxes": [
     {
         "label": "US-CA-*-Rate 1",
@@ -175,7 +175,7 @@ Each tax rate shows its own tax amount:
 
 Total tax amount returned for each rule:
 
-```
+```text
 "applied_taxes": [
     {
         "label": "US-CA-*-Rate 1",

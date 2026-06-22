@@ -38,7 +38,7 @@ Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://ex
 
 **To add the remote storage variable using the Cloud CLI**:
 
-```bash
+```shell
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
@@ -97,7 +97,7 @@ After enabling the Remote Storage module, synchronize the current media files to
 
 1. Start the sync.
 
-  ```bash
+  ```shell
   bin/magento remote-storage:sync 
   ```
 

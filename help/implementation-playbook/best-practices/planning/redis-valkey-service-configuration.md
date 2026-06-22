@@ -116,7 +116,7 @@ Ideally, L2 cache memory usage stabilizes below the threshold to avoid frequent 
 
 You can check L2 cache storage memory usage on each node of the cluster by running the following CLI command and reviewing the `/dev/shm` line.
 
-```bash
+```shell
 df -h /dev/shm
 ```
 
@@ -479,7 +479,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 1. Verify that the new instance is running, and note the port number.
 
-   ```bash
+   ```shell
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
@@ -554,7 +554,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 1. Verify that the new instance is running, and note the port number.
 
-   ```bash
+   ```shell
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 

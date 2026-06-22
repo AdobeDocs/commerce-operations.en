@@ -40,7 +40,7 @@ To avoid an issue with static content not being available on your website, follo
 
 In our developer documentation:
 
-* [Static Content Container](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content/)
+* [Static Content Container](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content)
 * [Static Content Signing](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/static-content-signing.html)
 * [Deploy variables - STATIC\_CONTENT\_SYMLINK](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#static_content_symlink)
 * [Deployment flow](../../../performance/deployment-flow.md)

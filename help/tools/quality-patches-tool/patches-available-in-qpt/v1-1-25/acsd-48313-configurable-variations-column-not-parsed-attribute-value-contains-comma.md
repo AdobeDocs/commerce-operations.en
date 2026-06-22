@@ -45,7 +45,7 @@ User should be able to import file.
 
 <u>Actual results</u>:
 
-```
+```text
 1. Column configurable_variations: Attribute with code "2cm" does not exist or is missing from product attribute set in row(s): 3
 2. Column configurable_variations: Attribute with code "5cm" does not exist or is missing from product attribute set in row(s): 3
 3. Column configurable_variations: Invalid option value for attribute "size" in row(s): 3

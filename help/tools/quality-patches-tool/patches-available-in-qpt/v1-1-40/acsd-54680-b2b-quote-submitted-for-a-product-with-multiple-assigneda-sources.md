@@ -50,7 +50,7 @@ The items quoted contains the ordered product.
 The items quoted page section is empty, and it is not possible to process the quote.
 `var/log/system.log` contains
 
-```
+```text
 report.CRITICAL: TypeError: number_format() expects parameter 1 to be float, null given in .../vendor/magento/module-negotiable-quote/Model/QuoteUpdatesInfo.php:232
 ```
 

@@ -36,7 +36,7 @@ JS issue for the rollback action in the Backups grid and the database rollback c
 1. Go to **System** > **Tools** > **Backups** and generate a DB backup.
 1. Open the browser console; you will see the following error: 
 
-   ```
+   ```text
    Uncaught SyntaxError: Unexpected token '&' (at (index):606:32)
 
    function eventListener8jtGaqtgG2 () {
@@ -50,7 +50,7 @@ JS issue for the rollback action in the Backups grid and the database rollback c
 
 1. The following error appears:
 
-   ```
+   ```graphql
    Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'delimiter' at line 1, query was: delimiter ;;
    ```
    

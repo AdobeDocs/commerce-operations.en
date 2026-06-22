@@ -41,7 +41,7 @@ B2B modules are installed and Company and Purchase Orders are enabled.
     1. Place the order using `placePurchaseOrder`.
     1. Add a comment to the purchase order using `addPurchaseOrderComment`.
     
-    ```
+    ```graphql
     mutation {
         addPurchaseOrderComment(
             input: { purchase_order_uid: "MQ==", comment: "Looks good to me" }
@@ -68,7 +68,7 @@ The `created_at` field returns the datetime of the purchase order comment.
 
 Displays null instead of the `created_at` date.
 
-```
+```json
 {
   "errors": [
     {

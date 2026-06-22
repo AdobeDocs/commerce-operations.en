@@ -40,7 +40,7 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in t
 
 * Email variable usage was deprecated back in 2.3.4 as part of a security risk mitigation in favor of a more strict variable syntax. This legacy behavior has been fully removed in this release as a continuation of that security risk mitigation.
 
-   As a result, email or newsletter templates that worked in previous versions may not work correctly after upgrading to Adobe Commerce 2.4.3-p2. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) for information about potential effects and guidelines for migrating affected templates.
+   As a result, email or newsletter templates that worked in previous versions may not work correctly after upgrading to Adobe Commerce 2.4.3-p2. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration) for information about potential effects and guidelines for migrating affected templates.
 
 * OAuth access tokens and password reset tokens are now encrypted when stored in the database. <!-- AC-520 1323-->
 
@@ -82,4 +82,4 @@ This release includes the following hotfix, and all hotfixes that have been rele
 
 The unsupported source expression `unsafe-inline` has been removed from the Content Security Policy `frame-ancestors` directive. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2025-05-28 17:01:56 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->

@@ -77,13 +77,13 @@ This configuration expands upon [nginx configuration](../../installation/prerequ
 1. Save your changes to the files and exit the text editor.
 1. Verify the server configuration:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. If successful, the following message displays:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -91,11 +91,11 @@ This configuration expands upon [nginx configuration](../../installation/prerequ
 
 1. Create symbolic link in the `/etc/nginx/sites-enabled` directory:
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
@@ -135,13 +135,13 @@ For more detail about the map directive, see [nginx documentation on the map dir
 1. Save your changes to the files and exit the text editor.
 1. Verify the server configuration:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. If successful, the following message displays:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -149,15 +149,15 @@ For more detail about the map directive, see [nginx documentation on the map dir
 
 1. Create symbolic links in the `/etc/nginx/sites-enabled` directory:
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/french.mysite.mg french.mysite.mg
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
@@ -247,7 +247,7 @@ You must update the Base URL for the `french` and the `german` websites in the C
 
 Run the following command to clean the `config` and `full_page` caches.
 
-```bash
+```shell
 bin/magento cache:clean config full_page
 ```
 

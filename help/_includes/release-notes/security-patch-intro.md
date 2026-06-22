@@ -10,5 +10,5 @@ These security patch release notes capture updates to enhance the security of yo
 
 Learn more about security patch releases:
 
-* [Adobe Commerce Security Patch Releases overview](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
+* [Adobe Commerce Security Patch Releases overview](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * Instructions for downloading and applying security patch releases are available in the [How to obtain and apply security patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in the _Adobe Commerce Knowledgebase_.

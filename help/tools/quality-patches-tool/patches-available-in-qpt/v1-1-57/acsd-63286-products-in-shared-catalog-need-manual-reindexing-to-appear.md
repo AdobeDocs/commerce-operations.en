@@ -35,13 +35,13 @@ When products are assigned to a shared catalog via API, they don't appear on the
 1. Create a simple product and assign it to a category.
 1. Execute partial reindex.
 
-    ```
+    ```shell
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
     ```
 
 1. Use the following API request to assign the created product to the shared catalog `pub/rest/all/V1/sharedCatalog/<id>/assignProducts`:
 
-    ```
+    ```json
     {
         "products":[{
             "sku": "24-MB06"
@@ -52,11 +52,11 @@ When products are assigned to a shared catalog via API, they don't appear on the
 
 1. Execute the following cron to clear up the queues and execute the partial reindex.
 
-    ```
+    ```shell
     bin/magento cron:run --group=consumers
     ```
 
-    ```
+    ```shell
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
     ```
 
@@ -64,7 +64,7 @@ When products are assigned to a shared catalog via API, they don't appear on the
 1. Check the frontend category page. The newly assigned products are not visible.
 1. Execute a manual reindex:
 
-    ```
+    ```shell
     bin/magento index:reindex
     ```
 

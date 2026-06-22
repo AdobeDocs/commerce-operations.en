@@ -1,11 +1,11 @@
 ---
-title: Final verification
+title: Verify Varnish Configuration
 description: Learn how to perform final verification of your Varnish configuration with Adobe Commerce. Discover testing steps and troubleshooting techniques.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
-# Final verification of Varnish configuration
+# Verify Varnish configuration {#final-verification}
 
 Now that you are using the `default.vcl` generated for you by Commerce, you can perform some final verifications to make sure that Varnish is working.
 
@@ -19,13 +19,13 @@ First, make sure you are using [developer mode](../cli/set-mode.md#change-to-dev
 
 For example,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Important headers:
 
-```
+```text
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS
@@ -67,7 +67,7 @@ Make sure the `<magento_root>/var/page_cache` directory is empty:
 1. Log in to your Commerce server, or switch to, the file system owner.
 1. Enter the following command:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/var/page_cache/*
    ```
 

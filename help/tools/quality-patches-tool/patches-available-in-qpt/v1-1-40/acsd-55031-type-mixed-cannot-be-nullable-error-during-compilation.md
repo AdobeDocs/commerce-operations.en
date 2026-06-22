@@ -41,7 +41,7 @@ No errors occur during compilation.
 
 The `var/log/system.log` file contains the error:
 
-```
+```text
 report.ERROR: Type "mixed" cannot be nullable
 ```
 

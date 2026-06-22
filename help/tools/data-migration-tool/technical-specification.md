@@ -22,7 +22,7 @@ The [system requirements](../../installation/system-requirements.md) for the [!D
 
 The following diagram represents directory structure of [!DNL Data Migration Tool]:
 
-```
+```shell
 
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
@@ -222,7 +222,7 @@ The migration process consists of steps.
 
 Step is a unit that provides functionality required for migration some separated data. Step can consist of one or more stages (integrity check, data, volume check, and delta).
 
-By default, there are several steps ([Map](#map-step), [EAV](#eav), [URL Rewrites](#url-rewrite-step), and so on). You can optionally add your own steps as well.
+By default, there are several steps ([Map](#map-step), [EAV](#eav-step), [URL Rewrites](#url-rewrite-step), and so on). You can optionally add your own steps as well.
 
 Steps related classes are located in the src/Migration/Step directory.
 
@@ -530,12 +530,12 @@ There are three types of tests in the [!DNL Data Migration Tool]:
 
 They are located in the tool's `tests/` directory, which is the same as the type of test (unit tests are located in the `tests/unit` directory). To launch the test, you should have phpunit installed. Change the current directory to the test directory and launch phpunit. For example:
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

@@ -1,0 +1,39 @@
+---
+name: New topic
+description: Create a request to add missing information.
+labels: ["new-topic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report this issue!
+        This request should only relate to the content of the experienceleague.adobe.com website.
+        Requests that do not comply with our
+        [Code of Conduct](https://github.com/AdobeDocs/commerce-operations.en/blob/main/code-of-conduct.md)
+        or do not contain enough information may be closed at the maintainers' discretion.
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the documentation you are requesting.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: What topic is missing?
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Content checklist
+      description: List specific information or details to include in this topic.
+      options:
+        - label: The topic provides an explanation of how ____ works.
+        - label: The topic provides steps for ____.
+        - label: The topic contains code samples that shows ____.
+        - label: Other (please specify in the Additional information field below).
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Any information you already know or other online resources that cover this topic.

@@ -37,7 +37,7 @@ Indexer temporary tables aren't cleaned up when the process was terminated due t
 1. Repeat the previous steps several times.
 1. Check for the following temporary tables that have been created in the database:
     
-    ```
+    ```text
     catalogrule_product__temp*
     catalogrule_product_price__temp*
     ```

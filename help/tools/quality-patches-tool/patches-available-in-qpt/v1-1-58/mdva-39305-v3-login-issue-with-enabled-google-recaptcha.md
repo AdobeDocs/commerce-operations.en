@@ -59,7 +59,7 @@ An error stating *Call to a member function isDisabled() on null* is thrown when
 
 1. Create a static block with the below content:
     
-    ```
+    ```text
     {{block class="Magento\Newsletter\Block\Subscribe" name="home.form.subscribe"
     template="Magento_Newsletter::subscribe.phtml"}}
     ```

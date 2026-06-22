@@ -1,11 +1,11 @@
 ---
-title: Use Redis for session storage
-description: Learn how to configure Redis for session storage in Adobe Commerce. Discover command-line setup, configuration options, and performance optimization techniques.
+title: Configure Redis for Session Storage
+description: Learn how to configure Redis for session storage in Adobe Commerce. Discover CLI setup, session parameters, and connection verification techniques.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
 ---
-# Use Redis for session storage
+# Configure Redis for session storage
 
 >[!IMPORTANT]
 >
@@ -15,7 +15,7 @@ Commerce now provides command-line options to configure Redis session storage. I
 
 Run the `setup:config:set` command and specify Redis-specific parameters.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -54,7 +54,7 @@ where
 
 The following example sets Redis as the session data store, sets the host to `127.0.0.1`, sets the log level to 4, and sets the database number to 2. All other parameters are set to the default value.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -98,13 +98,13 @@ To verify that Redis and Commerce are working together, log in to the server run
 
 ### Redis monitor command
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Sample session-storage output:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -115,7 +115,7 @@ Sample session-storage output:
 
 ### Redis ping command
 
-```bash
+```shell
 redis-cli ping
 ```
 

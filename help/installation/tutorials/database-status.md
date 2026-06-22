@@ -11,7 +11,7 @@ Before you run this command, you must [Create or update the deployment configura
 
 To check the status of the database.
 
-```bash
+```shell
 bin/magento setup:db:status
 ```
 
@@ -19,7 +19,7 @@ This command has no arguments or options.
 
 Sample output follows:
 
-```
+```text
 All modules are up to date.
 ```
 

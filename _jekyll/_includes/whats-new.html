@@ -33,10 +33,10 @@
       <td>
         {{ item.type | replace: "-", " " | capitalize }}
       </td>
-      {%- if item.link contains "git.corp" %}
-      <td><a href="https://github.com/{{ site.repo }}/commit/{{ item.merge_commit }}">commit</a></td>
-      {%- else %}
+      {%- if item.link contains "github.com" %}
       <td><a href="{{ item.link }}">pull request</a></td>
+      {%- else %}
+      <td><a href="https://github.com/{{ site.repo }}/commit/{{ item.merge_commit }}">commit</a></td>
       {%- endif %}
     </tr>
   {%- endfor %}

@@ -11,19 +11,19 @@ You must start a [message queue consumer](../queues/consumers.md) to enable asyn
 
 To view a list of all consumers:
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 To start message queue consumers:
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
 After consuming all available messages, the command terminates. You can run the command again manually or with a cron job. You can also run multiple instances of the `magento queue:consumers:start` command to process large message queues. For example, you can append `&` to the command to run it in the background, return to a prompt, and continue running commands:
 
-```bash
+```shell
 bin/magento queue:consumers:start <consumer_name> &
 ```
 

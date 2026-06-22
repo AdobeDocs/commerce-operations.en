@@ -4,6 +4,6 @@
 1. Switch to the [file system owner](../installation/prerequisites/file-system/overview.md).
 1. Change to the directory where you cloned the application. For example,
 
-   ```bash
+   ```shell
    cd /var/www/magento2
    ```

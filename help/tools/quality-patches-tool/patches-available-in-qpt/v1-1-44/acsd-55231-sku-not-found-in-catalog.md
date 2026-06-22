@@ -42,7 +42,7 @@ Getting *'the SKU was not found in the catalog'* error when searching for produc
 1. Generate a simple product with SKU *p12*, associate it with the category *c1*, and then opt for the newly created shared catalog in the [!UICONTROL Product in Shared Catalog] section.
 1. Run:
 
-    ```
+    ```shell
     bin/magento ind:rei 
     bin/magento c:f 
     bin/magento cron:run (multiple times)

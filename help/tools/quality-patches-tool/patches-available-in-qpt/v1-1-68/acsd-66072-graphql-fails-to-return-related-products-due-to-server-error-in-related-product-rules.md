@@ -48,14 +48,14 @@ Related products are not returned via GraphQL on the Product Detail Page due to 
 
 1. Run the following Magento CLI commands:
 
-    ```bash
+    ```shell
     bin/magento indexer:reindex
     bin/magento cache:clean
     ```
 
 1. Send a POST request to `../graphql` with the following payload:
 
-    ```
+    ```graphql
     query getRelatedProductsForProductPage($urlKey: String!) 
     {
         products(filter: { url_key: { eq: $urlKey } }) 
@@ -167,7 +167,7 @@ The query returns the related product (`config1`).
 
 The `var/log/exception.log` file contains:
 
-```
+```text
 report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/magento2ee/app/code/Magento/TargetRule/Model/ResourceModel/Index.php on line 557
 ```
 
