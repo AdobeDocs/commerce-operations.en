@@ -29,6 +29,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where changing a customer group in the Admin doesn't update catalog permissions on the Storefront, causing the catalog and cart to reflect outdated permissions.
+* **ACP2E-4401** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the Scheduled Update Preview of the Home Page link with configurable products redirects to the maintenance page instead of displaying the product list.
+* **ACP2E-4395** (for Adobe Commerce >=2.4.5 <2.4.9) - Giftcard API product creation will now display an error if no amounts are specified for the global scope.
+* **ACP2E-4468** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where Admin users with website scope permissions can't edit banner content.
+* **ACP2E-4630** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where long product names with custom options overlap adjacent columns or items in multi-page Invoice, Shipment, Credit Memo, and Return PDFs after page breaks, making line items unreadable.
+* **ACP2E-4680** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where non-salable or deleted products disappear from finalized negotiable quotes.
+* **ACP2E-4709** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixed an issue where CMS pages failed to save when using Page Builder.
+* **ACP2E-4786** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where exporting products fails to write files when the AWS S3 remote storage is configured, due to incorrect path resolution in the storage driver.
+* **ACP2E-4801** (for Adobe Commerce, B2B >=1.4.2 <1.5.3) - Fixes the issue where updating the bundle product option quantities via the Configure button in a negotiable quote from the Admin isn't applied, and changes are discarded.
+* **ACP2E-4815** (for Adobe Commerce and Magento Open Source >=2.4.6-p15 <2.4.7 || >=2.4.7-p1 <2.4.9) - Fixes multiple GraphQL issues that caused PHP exceptions in logs, correct association of orders with customer accounts created post‑order via GraphQL, and alignment of responses with GraphQL over HTTP specifications.
+* Versions updated: **ACSD-64212**, **ACSD-64523**, **ACSD-67347**
+* Replaced patches: **ACSD-67941**, **ACSD-64212**, **ACSD-68925**
+
 ## v1.1.80 {#v1-1-80}
 
 * **ACP2E-4239** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where Admin grid filters that use date attributes return incorrect results due to timezone differences between the selected date, stored UTC values, and the configured store timezone.
