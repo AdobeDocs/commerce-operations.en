@@ -4,7 +4,6 @@ description: Learn how to install and configure Valkey for caching and session s
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
 badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
-
 ---
 # Install and set up Valkey
 

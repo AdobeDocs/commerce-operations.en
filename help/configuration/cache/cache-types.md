@@ -10,9 +10,7 @@ A cache frontend is an interface between Commerce and the cache storage backend.
 
 This is useful when you want to use different cache backends or configurations for different types of cached data. For example, you might want `full_page` caching on a dedicated Redis database while using a separate database for `default` caching.
 
->[!NOTE]
->
->This topic applies to Adobe Commerce on cloud infrastructure and on-premises deployments. For Adobe Commerce on cloud installations, custom cache frontend configuration is an advanced application-level customization and should be implemented with the Commerce on Cloud Infrastructure Guide requirements in mind. See [Store Configuration Management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings)
+{{cloud-cache-config}}
 
 ## Use the default frontend
 

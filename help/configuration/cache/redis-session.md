@@ -7,11 +7,13 @@ badgePaas: label="On-premises" type="Informative" url="https://experienceleague.
 ---
 # Configure Redis for session storage
 
->[!IMPORTANT]
->
->You must [install Redis](config-redis.md#install-redis) before continuing.
+{{cloud-cache-config}}
 
 Commerce now provides command-line options to configure Redis session storage. In previous releases, you edited the `<Commerce install dir>app/etc/env.php` file. The command line provides validation and is the recommended configuration method, but you can still edit the `env.php` file.
+
+>[!IMPORTANT]
+>
+>Before you can configure session storage, you must have [Redis installed](config-redis.md#install-redis).
 
 Run the `setup:config:set` command and specify Redis-specific parameters.
 

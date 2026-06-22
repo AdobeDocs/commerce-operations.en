@@ -8,11 +8,13 @@ badgePaas: label="On-premises" type="Informative" url="https://experienceleague.
 
 # Configure Valkey for session storage
 
-Commerce provides command-line options to configure the Valkey session storage. Although you can configure caching by editing the `<Commerce-install-dir>app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
-
-You must [install Valkey](config-valkey.md#install-valkey) before continuing.
-
 {{cloud-cache-config}}
+
+Commerce provides command-line options to configure the Valkey session storage. Although you can configure session storage by editing the `<Commerce-install-dir>/app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
+
+>[!IMPORTANT]
+>
+>Before you can configure session storage, you must have [Valkey installed](config-valkey.md#install-valkey).
 
 ## Configure Valkey session storage
 

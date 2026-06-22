@@ -6,7 +6,7 @@ exl-id: 6effa069-c043-411a-b161-01210be17391
 ---
 # Caching overview and configuration options
 
-Adobe Commerce relies on a multi-layered caching architecture to reduce database load, minimize redundant processing, and accelerate page delivery. At the application level, Commerce maintains over a dozen [cache types](../cli/manage-cache.md#clean-and-flush-cache-types)---such as configuration, layout, block HTML, and collections---each of which you can route to a dedicated storage backend like [Redis](config-redis.md) or [Valkey](config-valkey.md). For full-page caching, Adobe strongly recommends [Varnish](config-varnish.md), an HTTP accelerator that serves cached pages directly from memory. Additional layers such as [L2 caching](level-two-cache.md) and [static content signing](static-content-signing.md) further improve performance for high-traffic, multi-node deployments.
+Adobe Commerce relies on a multi-layered caching architecture to reduce database load, minimize redundant processing, and accelerate page delivery. At the application level, Commerce maintains over a dozen [cache types](../cli/manage-cache.md#clean-and-flush-cache-types)—such as configuration, layout, block HTML, and collections—each of which you can route to a dedicated storage backend like [Redis](config-redis.md) or [Valkey](config-valkey.md). For full-page caching in on-premises deployments, Adobe strongly recommends [Varnish](config-varnish.md), an HTTP accelerator that serves cached pages directly from memory. Additional layers such as [L2 caching](level-two-cache.md) and [static content signing](static-content-signing.md) further improve performance for high-traffic, multi-node deployments.
 
 This guide explains how each caching layer works and shows you how to configure frontends, backends, and advanced options to match your deployment requirements.
 
@@ -20,7 +20,9 @@ A cache backend is the underlying storage mechanism for cached data. Commerce pr
 
 ## Full-page caching with Varnish
 
-[Varnish Cache](config-varnish.md) is an HTTP accelerator that caches full pages in memory. Adobe strongly recommends Varnish for production environments because it is significantly faster than the built-in full-page cache.
+{{varnish-config-cloud}}
+
+[Varnish Cache](config-varnish.md) is an HTTP accelerator that caches full pages in memory. For on-premises production environments, Adobe strongly recommends Varnish because it is significantly faster than the built-in full-page cache.
 
 >[!NOTE]
 >
@@ -45,14 +47,16 @@ A cache backend is the underlying storage mechanism for cached data. Commerce pr
 
 ## Configuration options
 
-Cache configuration is stored in two files:
+For frontend-to-type mapping and cache configuration syntax:
+
+**On-premises** -- Cache configuration is stored in two files:
 
 - `<magento_root>/app/etc/di.xml` -- The global dependency injection configuration. Modify this file to change the provided `default` cache frontend.
 - `<magento_root>/app/etc/env.php` -- Environment-specific configuration. Modify this file to configure custom cache frontends. This file overrides the equivalent configuration in `di.xml`.
 
-For details on frontend-to-type mapping and cache configuration syntax for Commerce on-premises deployments, see:
+For details, see:
 
-- [Configure cache frontends](cache-types.md) -- Associate a cache frontend with specific cache types
-- [Cache backend options](cache-options.md) -- Backend option reference
+- [Configure cache frontends](cache-types.md)—Associate a cache frontend with specific cache types
+- [Cache backend options](cache-options.md)—Backend option reference
 
-
+**Adobe Commerce on Cloud**—Configure caching with `CACHE_CONFIGURATION` in `.magento.env.yaml`. See [Best practices for Redis and Valkey service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
