@@ -70,7 +70,7 @@ The process can be summarized as follows:
 
 >[!NOTE]
 >
->-Except where noted, you must enter all commands discussed in this topic as a user with `root` privileges.
+>Except where noted, you must enter all commands discussed in this topic as a user with `root` privileges.
 
 ## Known issues
 
