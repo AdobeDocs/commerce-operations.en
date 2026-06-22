@@ -1,10 +1,10 @@
 # Snippets
 
-## Cache configuration instructions cloud {#cloud-cache-config}
+## Note with reference for Commerce on Cloud cache configuration instructions {#cloud-cache-config}
 
 >[!NOTE]
 >
->For Adobe Commerce on Cloud projects, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for caching configuration instructions.
+>For Adobe Commerce on Cloud projects, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for cache configuration instructions.
 
 ## Varnish configuration instructions cloud {#varnish-config-cloud}
 
