@@ -9,7 +9,12 @@ exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 The table below provides release notes and important information for Adobe Commerce on Premises and Adobe Commerce on Cloud products, services, and tools.
 
 >[!BEGINSHADEBOX]
-**Release notes for other products:** [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes), [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes).
+
+**Release notes for other products:**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+
 >[!ENDSHADEBOX]
 
 >[!TIP]
