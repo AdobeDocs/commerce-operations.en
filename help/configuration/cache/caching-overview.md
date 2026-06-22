@@ -3,6 +3,27 @@ title: Caching Overview and Configuration Options
 description: Learn about caching in Adobe Commerce, including backend storage, frontend configuration, and full-page caching with Varnish, Redis, Valkey, and L2 cache.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
+autotag-review: '2026-06-22T20:28:12.484Z'
+TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Caching overview and configuration options
 
@@ -20,9 +41,7 @@ A cache backend is the underlying storage mechanism for cached data. Commerce pr
 
 ## Full-page caching with Varnish
 
-{{varnish-config-cloud}}
-
-[Varnish Cache](config-varnish.md) is an HTTP accelerator that caches full pages in memory. For on-premises production environments, Adobe strongly recommends Varnish because it is significantly faster than the built-in full-page cache.
+[Varnish Cache](config-varnish.md) is an HTTP accelerator that caches full pages in memory. For on-premises production environments, Adobe strongly recommends Varnish because it is significantly faster than the built-in full-page cache. Commerce on Cloud environments use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) for full-page caching instead of Varnish.
 
 >[!NOTE]
 >
@@ -49,7 +68,7 @@ A cache backend is the underlying storage mechanism for cached data. Commerce pr
 
 For frontend-to-type mapping and cache configuration syntax:
 
-**On-premises** -- Cache configuration is stored in two files:
+**On-premises**—Cache configuration is stored in two files:
 
 - `<magento_root>/app/etc/di.xml` -- The global dependency injection configuration. Modify this file to change the provided `default` cache frontend.
 - `<magento_root>/app/etc/env.php` -- Environment-specific configuration. Modify this file to configure custom cache frontends. This file overrides the equivalent configuration in `di.xml`.

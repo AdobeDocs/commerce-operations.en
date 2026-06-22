@@ -3,7 +3,28 @@ title: Configure Varnish for Commerce
 description: Learn how to configure Varnish specifically for Adobe Commerce applications. Discover configuration file updates and management techniques.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-badgePaas: label="On-premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+autotag-review: '2026-06-22T21:51:51.247Z'
+TQID: 'https://experienceleague.adobe.com/6j-emNa41YXE1LLlpRypywTo8J95gI5aB4smuGnUj04'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Configure Varnish for Commerce
 
@@ -78,7 +99,7 @@ To export a Varnish configuration file from the Admin:
    ```
 
    ```shell
-   service httpd restart
+   systemctl restart nginx
    ```
 
 ## Cache Static Files

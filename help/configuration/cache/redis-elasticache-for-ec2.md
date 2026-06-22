@@ -2,6 +2,27 @@
 title: Configure Redis with AWS ElastiCache
 description: Learn how to use AWS ElastiCache as a Redis backend for Adobe Commerce on EC2. Discover command-line setup, configuration, and validation.
 feature: Configuration, Cache
+autotag-review: '2026-06-22T21:54:39.355Z'
+TQID: 'https://experienceleague.adobe.com/p4-Pyc3yWwokyFOAyAjN3r1Ic26brx83bPf-GZQNSN8'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 
 # Configure Redis with AWS ElastiCache
@@ -15,7 +36,7 @@ As of Commerce 2.4.3, instances hosted on Amazon EC2 may use an AWS ElastiCache 
 ## Prerequisites
 
 - **Create a Redis OSS serverless cache**—From the AWS Management Console, create the Redis cache in the same region and VPC of the EC2 instance. For instructions, see the [AWS Elasticache documentation](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html).
-  
+
 - **Verify the connection to your EC2 Commerce instance**
 
    - Open an SSH connection to your EC2 instance

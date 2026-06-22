@@ -13,7 +13,7 @@ badgePaas: label="Commerce on Cloud" type="Informative" url="https://experiencel
 
 # Best practices for Redis and Valkey service configuration
 
-Use these recommendations to configure Redis or Valkey caching and sessions for Adobe Commerce on cloud. For on-premises deployments, see [Configure caching](../../../configuration/cache/caching-overview.md) in the _Configuration Guide_.
+Use these recommendations to configure Redis or Valkey caching and sessions for Adobe Commerce on Cloud. For on-premises cache configuration, see [Cache backend options and storage reference](../../../configuration/cache/cache-options.md).
 
 - Configure L2 cache
 - Enable slave connection
@@ -982,3 +982,4 @@ See the following related topics:
 
 - [Set up Redis service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
 - [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+
