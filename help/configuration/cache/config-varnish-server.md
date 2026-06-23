@@ -28,7 +28,7 @@ topic_v2:
 ---
 # Configure nginx for Varnish caching {#configure-web-server-for-varnish-caching}
 
-When Varnish is used as the full-page cache in front of Adobe Commerce, Varnish typically listens on the public HTTP port and forwards requests to nginx on a non-default backend port such as 8080. Update the nginx site configuration for your Commerce origin server to listen on the backend port that Varnish will use. Continue to include the Commerce-provided nginx.conf.sample file from your nginx server block.
+When Varnish is used as the full-page cache in front of Adobe Commerce, Varnish typically listens on the public HTTP port and forwards requests to nginx on a non-default backend port such as 8080. Update the nginx site configuration for your Commerce origin server to listen on the backend port that Varnish will use.
 
 {{varnish-config-cloud}}
 
