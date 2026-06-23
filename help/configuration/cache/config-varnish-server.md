@@ -38,7 +38,7 @@ The following sections use port 8080 as an example.
 
 1. Open the nginx site configuration for your Adobe Commerce origin server in a text editor.
 
-  The location depends on your operating system and nginx layout. For example, Ubuntu often uses a file under /etc/nginx/sites-available/.For example, Ubuntu often uses a file under `/etc/nginx/sites-available/`.
+  The location depends on your operating system and nginx layout. For example, Ubuntu often uses a file under `/etc/nginx/sites-available/`.
 
 1. In the `server` block for the Commerce site, change the `listen` directive from the public HTTP port to the backend port that Varnish will use to reach nginx.
 
