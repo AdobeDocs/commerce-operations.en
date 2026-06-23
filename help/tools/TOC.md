@@ -20,6 +20,10 @@ feature: Configuration
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
+- [!DNL Core Version Tool] {#core-version-tool}
+    - {hide-from-toc} [Introduction](core-version-tool/intro.md)
+    - {hide-from-toc} [Workflow](core-version-tool/workflow.md)
+    - {hide-from-toc} [Troubleshooting](core-version-tool/troubleshooting.md)
 - CAPS {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
