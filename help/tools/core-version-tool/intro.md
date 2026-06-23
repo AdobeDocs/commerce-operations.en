@@ -59,4 +59,8 @@ Follow these guidelines:
 
 ## Start using the [!DNL CVT] tool
 
-To generate output and review command options, see [Generate a patch-status report](generate-report.md). To interpret report fields and status values, see [Understand patch-status results](understand-report-results.md). If a report contains unexpected results or the command does not complete successfully, see [[!DNL Core Version Tool] troubleshooting](troubleshooting.md).
+Use these topics to generate, interpret, and troubleshoot patch-status reports:
+
+- [Generate a patch-status report](generate-report.md) to run [!DNL CVT] and review command options.
+- [Understand patch-status results](understand-report-results.md) to interpret report fields and status values.
+- [[!DNL Core Version Tool] troubleshooting](troubleshooting.md) to resolve unexpected results or command errors.
