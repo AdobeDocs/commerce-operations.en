@@ -116,4 +116,4 @@ Where:
 >
 >The modern Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
 
-See the [Laminas documentation](https://docs.laminas.dev/) for Zend-based options. For Symfony Cache configuration, see the [Redis](redis-pg-cache.md) and [Valkey](valkey-pg-cache.md) documentation for Adobe Commerce.
+See the [Laminas documentation](https://docs.laminas.dev/) for Zend-based options. For Symfony Cache configuration, see the [Redis](redis-pg-cache.md) and [Valkey](valkey-pg-cache.md) articles in this documentation.
