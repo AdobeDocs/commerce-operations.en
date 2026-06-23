@@ -4,6 +4,80 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### June 18, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">Software lifecycle policy</a> with Cloud version upgrade enforcement dates, support period definitions (including security-only transitional period), an expanded end-of-support table for 2.4.4–2.4.9, PHP PCI guidance, and paths to migrate to Adobe Commerce as a Cloud Service or upgrade on PaaS.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### June 16, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated version of Composer to 2.10 in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System Requirements</a> tables for Cloud and On-Prem for Adobe Commerce 2.4.9, 2.4.8, and 2.4.7.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### June 15, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">Product availability</a> table with the latest Payment Services v2.15.0 release.</p>
+</td>
+      <td>
+        Major update, release notes
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a47aff5b5ae138748584cb5dbd646ca7b69e294a">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Commerce System Requirements</a> to clarify that the Commerce on Cloud template now provides a default services configuration that is compatible with the latest Commerce version for each release line.</p>
+</td>
+      <td>
+        Feedback, technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### June 12, 2026
 
 <table style="table-layout:auto;">
@@ -722,30 +796,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         New topic, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f14416d89140ee75ec437a42fbebae804282b72">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### April 20, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><ul>
-  <li>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">Lifecycle policy</a> with revised end-of-support table, extended support scope, and a new section on additional security fixes provisioning for 2.4.4 and 2.4.5.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy">Versioning policy</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">Release schedule</a> for isolated security fixes prerequisites and hotfix/individual patch delivery through the Quality Patches Tool; moved isolated security fixes detail into the shared security patch overview include.<br />- Refreshed the 2026 release calendar to match current schedule.</li>
-</ul>
-</td>
-      <td>
-        Technical, major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">commit</a></td>
     </tr>
   </tbody>
 </table>
