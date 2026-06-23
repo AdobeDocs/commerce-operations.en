@@ -40,15 +40,15 @@ If [!DNL CVT] does not return the expected patch-status report:
 **Possible causes:**
 
 - `composer.lock` is missing.
-- `composer.lock` does not match the installed Commerce codebase.
+- `composer.lock` does not match the installed Adobe Commerce codebase.
 - [!DNL CVT] is running outside the Adobe Commerce project root.
-- The installed Commerce version is not supported by the current patch registry.
+- The installed Adobe Commerce version is not supported by the current patch registry.
 
 **Solutions:**
 
-- Run [!DNL CVT] from the Commerce project root.
+- Run [!DNL CVT] from the Adobe Commerce project root.
 - Confirm that `composer.lock` is present and current.
-- Verify that the installed Commerce version is supported by the registry included with the tool.
+- Verify that the installed Adobe Commerce version is supported by the registry included with the tool.
 
 ### Patch registry cannot be fetched
 
@@ -135,7 +135,7 @@ If [!DNL CVT] does not return the expected patch-status report:
 **Solutions:**
 
 - Confirm that the system `patch` binary is installed.
-- Confirm that the user running [!DNL CVT] can read the Commerce project files.
+- Confirm that the user running [!DNL CVT] can read the Adobe Commerce project files.
 - Re-run [!DNL CVT] from a stable checkout or deployed codebase.
 - Preserve unknown patch results for support investigation.
 
@@ -175,4 +175,4 @@ Do not include secrets, credentials, private keys, or unrelated customer data in
 ## Related topics
 
 - [[!DNL CVT] introduction](intro.md)
-- [Workflow](workflow.md)
+- [Understand patch-status results](understand-report-results.md)
