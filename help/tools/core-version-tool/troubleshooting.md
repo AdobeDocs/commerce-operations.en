@@ -14,7 +14,7 @@ If the [!DNL CVT] tool does not return the expected patch-status report:
 - Confirm that the target installation uses a supported Adobe Commerce version and edition.
 - Confirm that `composer.lock` is present and matches the environment you want to inspect.
 - Confirm that PHP and the system `patch` binary are available.
-- Confirm that [!DNL CVT] can read the patch registry.
+- Confirm that [!DNL CVT] can read the patch registry file.
 - Review `warnings`, `missing_patches`, and `unknown_patches` in the output.
 - Check `var/log/patch_status.log` for the audit summary from the run, if the log file is created.
 
@@ -29,17 +29,17 @@ If the [!DNL CVT] tool cannot find the Adobe Commerce base version, check these 
 - `composer.lock` is missing.
 - `composer.lock` does not match the installed Adobe Commerce codebase.
 - Are you running the `patch-status` command outside the Adobe Commerce project root?
-- The installed Adobe Commerce version is not represented in `data/patch-registry.json`.
+- The installed Adobe Commerce version is not represented in the patch registry file.
 
 **Actions:**
 
 - Run the `patch-status` command from the Adobe Commerce project root.
 - Confirm that `composer.lock` is present and current.
-- Verify that the installed Adobe Commerce version is represented in `data/patch-registry.json`.
+- Verify that the installed Adobe Commerce version is represented in the patch registry file.
 
 ### Patch registry cannot be fetched
 
-If the [!DNL CVT] tool cannot fetch the latest patch registry, check network and cache settings:
+If the [!DNL CVT] tool cannot fetch the latest patch registry file, check network and cache settings:
 
 **Check:**
 
@@ -47,7 +47,7 @@ If the [!DNL CVT] tool cannot fetch the latest patch registry, check network and
 - The Adobe patch endpoint request times out.
 - `--no-cache` was used and the remote registry cannot be reached.
 - `PATCH_REGISTRY_URL` points to an unavailable registry or is not a valid HTTPS URL.
-If [!DNL CVT] cannot fetch the latest patch registry, check network and cache settings:
+- If the [!DNL CVT] tool cannot fetch the latest patch registry file, check network and cache settings:
 
 **Check:**
 
@@ -77,7 +77,7 @@ If the [!DNL CVT] tool cannot test one or more applicable patches, check patch-d
 - `PATCH_DIFF_BASE_URL` points to an unavailable patch-diff source or is not a valid HTTPS URL.
 - The cached patch diff is missing or not readable.
 - SHA-256 verification fails for a downloaded patch diff.
-- [!DNL CVT] cannot write to `var/patch_metadata/.patch_diffs/`.
+- The [!DNL CVT] tool cannot write to `var/patch_metadata/.patch_diffs/`.
 
 **Actions:**
 

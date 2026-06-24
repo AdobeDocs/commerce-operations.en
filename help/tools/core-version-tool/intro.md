@@ -9,13 +9,13 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 
 >[!IMPORTANT]
 >
->[!DNL CVT] is informational only. It does not apply patches, revert patches, or modify Adobe Commerce source files. It can write cache files, temporary dry-run files, and audit-log entries to support patch-status reporting.
+>The [!DNL CVT] tool is informational only. It does not apply patches, revert patches, or modify Adobe Commerce source files. It can write cache files, temporary dry-run files, and audit-log entries to support patch-status reporting.
 
 ## Tool overview
 
-[!DNL CVT] is a standalone executable included with each monthly Adobe Commerce security patch. When the patch is applied to an Adobe Commerce installation, the tool is installed at `vendor/bin/patch-status`. It requires PHP 8.1 or later and the system `patch` binary. It does not require Composer packages, non-standard PHP extensions, Adobe Commerce bootstrap, or a separate installation step.
+The [!DNL CVT] tool is a standalone executable included with each monthly Adobe Commerce security patch. When the patch is applied to an Adobe Commerce installation, the tool is installed at `vendor/bin/patch-status`. It requires PHP 8.1 or later and the system `patch` binary. It does not require Composer packages, non-standard PHP extensions, Adobe Commerce bootstrap, or a separate installation step.
 
-[!DNL CVT] can help you:
+The [!DNL CVT] tool can help you:
 
 - Detect applied security patches for a supported Adobe Commerce installation.
 - Identify missing patches in a monthly isolated security patch sequence.
@@ -25,7 +25,7 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 
 ## Availability
 
-[!DNL CVT] supports patch-status reporting for the following platforms and components when Adobe provides patch metadata for the installed version in `data/patch-registry.json`.
+The [!DNL CVT] tool supports patch-status reporting for the following platforms and components when Adobe provides patch metadata for the installed version in the patch registry file.
 
 | Platform or component | Availability |
 | --- | --- |
@@ -34,7 +34,7 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 | Adobe Commerce business-to-business (B2B) | Supported when installed |
 | Adobe Commerce Page Builder | Supported when installed |
 | Adobe Commerce Inventory | Supported when installed |
-| Additional components detected from `composer.lock` | Supported when represented in `data/patch-registry.json` |
+| Additional components detected from `composer.lock` | Supported when represented in the patch registry file |
 
 {style="table-layout:auto"}
 
@@ -49,7 +49,7 @@ Use the [!DNL CVT] tool when you need to:
 
 ## Guidelines for using results
 
-Treat [!DNL CVT] tool output as detection data that supports patch planning and security review.
+Treat the [!DNL CVT] tool output as detection data that supports patch planning and security review.
 
 Follow these guidelines:
 

@@ -18,7 +18,7 @@ Before running [!DNL CVT], confirm that:
 - The tool can write to `var/patch_metadata/` and `var/log/` if you want cache files and audit-log entries.
 - Credentials are available through `COMPOSER_AUTH` or `auth.json` if entitlement-gated patches apply to the installation.
 
-[!DNL CVT] checks `COMPOSER_AUTH`, the Adobe Commerce project `auth.json`, and the global Composer `auth.json` for entitlement-gated patch credentials.
+The [!DNL CVT] tool checks `COMPOSER_AUTH`, the Adobe Commerce project `auth.json`, and the global Composer `auth.json` for entitlement-gated patch credentials.
 
 ## Generate the report
 
@@ -108,9 +108,9 @@ The patch-status report groups patch results by the following values:
 
 | Patch status | Meaning |
 | --- | --- |
-| Applied | [!DNL CVT] detects the monthly security patch in the Adobe Commerce codebase. |
-| Missing | The patch applies to the installed Adobe Commerce version or component, but [!DNL CVT] does not detect it. |
-| Unknown | [!DNL CVT] cannot confirm the patch status from the available registry, patch diff, or detection result. |
+| Applied | The [!DNL CVT] tool detects the monthly security patch in the Adobe Commerce codebase. |
+| Missing | The patch applies to the installed Adobe Commerce version or component, but the [!DNL CVT] tool does not detect it. |
+| Unknown | The tool cannot confirm the patch status from the available registry, patch diff, or detection result. |
 
 {style="table-layout:auto"}
 
@@ -122,7 +122,7 @@ JSON output reports CVE status values in uppercase.
 | --- | --- |
 | `PROTECTED` | The applicable patch is detected for the CVE or component. |
 | `VULNERABLE` | An applicable patch is missing for the CVE or component. |
-| `UNKNOWN` | [!DNL CVT] cannot determine the CVE status from the available registry and detection data. |
+| `UNKNOWN` | The [!DNL CVT] tool cannot determine the CVE status from the available registry and detection data. |
 | `NOT_APPLICABLE` | The CVE applies to a component that is not installed, such as Adobe Commerce business-to-business (B2B), Adobe Commerce Page Builder, or Adobe Commerce Inventory. |
 
 {style="table-layout:auto"}
@@ -136,13 +136,13 @@ The report can include the following information:
 - **Installed components** - Adobe Commerce package areas detected from `composer.lock`.
 - **Applied patches** - Monthly security patches detected in the Adobe Commerce codebase.
 - **Missing patches** - Monthly security patches that apply but are not detected.
-- **Unknown patches** - Patches that [!DNL CVT] cannot classify.
+- **Unknown patches** - Patches that the [!DNL CVT] tool cannot classify.
 - **Vulnerability status by CVE** - CVE coverage mapped to protected, vulnerable, not applicable, or unknown status.
 - **Warnings** - Conditions that might affect the reliability or completeness of the report.
 
 ## Patch registry and cache
 
-The Patch registry contains the patch metadata that the [!DNL CVT] tool uses to determine which patches apply to an installed version. [!DNL CVT] uses a fresh registry cache when available, fetches the remote registry when needed, and can use a stale cache with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
+The patch registry file contains the patch metadata that the [!DNL CVT] tool uses to determine which patches apply to an installed version. The tool uses a fresh registry cache when available, fetches the remote registry when needed, and can use a stale cache with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
 
 ## Related topics
 
