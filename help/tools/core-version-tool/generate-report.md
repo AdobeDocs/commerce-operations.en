@@ -15,8 +15,10 @@ Before running [!DNL CVT], confirm that:
 - `composer.lock` is present and matches the environment you want to inspect.
 - PHP and the system `patch` binary are available.
 - You can read the project files from the environment where you run the command.
-- The tool can write to `var/patch_metadata/` and `var/log/`, if those directories are used by the installed version.
-- Any required credentials for authenticated patch downloads are configured in the environment.
+- The tool can write to `var/patch_metadata/` and `var/log/` if you want cache files and audit-log entries.
+- Credentials are available through `COMPOSER_AUTH` or `auth.json` if entitlement-gated patches apply to the installation.
+
+[!DNL CVT] checks `COMPOSER_AUTH`, the Adobe Commerce project `auth.json`, and the global Composer `auth.json` for entitlement-gated patch credentials.
 
 ## Generate the report
 
@@ -40,7 +42,7 @@ JSON is the default output format. CSV output is supported for scanners, dashboa
 | --- | --- |
 | `--root=PATH` | Specifies the path to the Adobe Commerce installation root. The default is the current directory. |
 | `--format=json\|csv` | Sets the output format. The default is `json`. |
-| `--no-cache` | Forces fresh fetches from remote sources and bypasses the local cache. |
+| `--no-cache` | Bypasses registry and patch-diff caches, forces fresh remote fetches, and exits with an error if the remote registry is unavailable. |
 | `--version`, `-V` | Prints the tool version. |
 | `--help`, `-h` | Prints the help message. |
 
@@ -140,11 +142,11 @@ The report can include the following information:
 
 ## Patch registry and cache
 
-`data/patch-registry.json` contains the patch metadata that [!DNL CVT] uses to determine which patches apply to an installed version. [!DNL CVT] fetches the latest registry from Adobe's CDN and can use the cached registry with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
+`data/patch-registry.json` contains the patch metadata that [!DNL CVT] uses to determine which patches apply to an installed version. [!DNL CVT] uses a fresh registry cache when available, fetches the remote registry when needed, and can use a stale cache with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
 
 ## Environment variable overrides
 
-Use environment variable overrides only when you need [!DNL CVT] to use a custom registry or patch-diff source.
+Use environment variable overrides only when you need [!DNL CVT] to use a custom registry or patch-diff source. Override values must be valid HTTPS URLs.
 
 | Environment variable | Description |
 | --- | --- |
