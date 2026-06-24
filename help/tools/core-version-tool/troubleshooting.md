@@ -9,7 +9,7 @@ Use this page to troubleshoot common [!DNL Core Version Tool] ([!DNL CVT]) issue
 
 ## Quick troubleshooting steps
 
-If [!DNL CVT] does not return the expected patch-status report:
+If the [!DNL CVT] tool does not return the expected patch-status report:
 
 - Confirm that the target installation uses a supported Adobe Commerce version and edition.
 - Confirm that `composer.lock` is present and matches the environment you want to inspect.
@@ -22,24 +22,24 @@ If [!DNL CVT] does not return the expected patch-status report:
 
 ### Base version cannot be detected
 
-If [!DNL CVT] cannot find the Adobe Commerce base version, check these conditions:
+If the [!DNL CVT] tool cannot find the Adobe Commerce base version, check these conditions:
 
 **Check:**
 
 - `composer.lock` is missing.
 - `composer.lock` does not match the installed Adobe Commerce codebase.
-- [!DNL CVT] is running outside the Adobe Commerce project root.
+- Are you running the `patch-status` command outside the Adobe Commerce project root?
 - The installed Adobe Commerce version is not represented in `data/patch-registry.json`.
 
 **Actions:**
 
-- Run [!DNL CVT] from the Adobe Commerce project root.
+- Run the `patch-status` command from the Adobe Commerce project root.
 - Confirm that `composer.lock` is present and current.
 - Verify that the installed Adobe Commerce version is represented in `data/patch-registry.json`.
 
 ### Patch registry cannot be fetched
 
-If [!DNL CVT] cannot fetch the latest patch registry, check network and cache settings:
+If the [!DNL CVT] tool cannot fetch the latest patch registry, check network and cache settings:
 
 **Check:**
 
@@ -51,14 +51,14 @@ If [!DNL CVT] cannot fetch the latest patch registry, check network and cache se
 
 **Actions:**
 
-- Re-run [!DNL CVT] when network connectivity is available.
-- Allow [!DNL CVT] to use the cached registry if a stale cache warning is acceptable for the scan.
+- Re-run the `patch-status` command when network connectivity is available.
+- Allow the [!DNL CVT] tool to use the cached registry if a stale cache warning is acceptable for the scan.
 - Remove `--no-cache` unless you require fresh remote fetches.
-- Confirm that [!DNL CVT] can read and write files in `var/patch_metadata/`.
+- Confirm that the [!DNL CVT] tool can read and write files in `var/patch_metadata/`.
 
 ### Patch diff cannot be fetched or verified
 
-If [!DNL CVT] cannot test one or more applicable patches, check patch-diff access:
+If the [!DNL CVT] tool cannot test one or more applicable patches, check patch-diff access:
 
 **Check:**
 
@@ -73,7 +73,7 @@ If [!DNL CVT] cannot test one or more applicable patches, check patch-diff acces
 
 - Confirm network connectivity and retry the command.
 - Confirm that required credentials for authenticated patch downloads are configured.
-- Confirm that [!DNL CVT] can write to `var/patch_metadata/.patch_diffs/`.
+- Confirm that the [!DNL CVT] tool can write to `var/patch_metadata/.patch_diffs/`.
 - Preserve the warning and output details if the patch remains classified as unknown.
 
 ### Missing or unknown patches are reported
@@ -97,14 +97,14 @@ If the report contains unexpected `missing_patches` or `unknown_patches` values,
 
 ### Output is not generated
 
-If [!DNL CVT] completes but the expected JSON or CSV output is missing, check the command and file permissions:
+If the [!DNL CVT] tool completes but the expected JSON or CSV output is missing, check the command and file permissions:
 
 **Actions:**
 
 - Use the default JSON output if CSV output is not required.
 - Use `--format=csv` to generate CSV output.
 - Write output to a directory where the current user has permission.
-- Confirm that [!DNL CVT] can write to `var/log/patch_status.log`.
+- Confirm that the [!DNL CVT] tool can write to `var/log/patch_status.log`.
 - Re-run the command and capture terminal output for troubleshooting.
 
 ## Getting help
@@ -114,8 +114,8 @@ When contacting Adobe Commerce support, provide only the details needed to inves
 Include:
 
 - Adobe Commerce version and edition
-- [!DNL CVT] version
-- Registry source from the [!DNL CVT] output
+- [!DNL CVT] tool version
+- Registry source from the [!DNL CVT] tool output
 - Relevant `applied_patches`, `missing_patches`, and `unknown_patches` values
 - Relevant warnings
 - Error message or command output
@@ -124,6 +124,6 @@ Do not include secrets, credentials, private keys, or unrelated customer data in
 
 ## Related topics
 
-- [[!DNL CVT] introduction](intro.md)
+- [Introduction](intro.md)
 - [Generate a patch-status report](generate-report.md)
-- [[!DNL Core Version Tool] release notes](release-notes.md)
+- [Release notes](release-notes.md)

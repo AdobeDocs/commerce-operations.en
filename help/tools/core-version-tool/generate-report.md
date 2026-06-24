@@ -155,6 +155,6 @@ Use environment variable overrides only when you need [!DNL CVT] to use a custom
 
 ## Related topics
 
-- [[!DNL CVT] introduction](intro.md)
-- [[!DNL Core Version Tool] troubleshooting](troubleshooting.md)
-- [[!DNL Core Version Tool] release notes](release-notes.md)
+- [Introduction](intro.md)
+- [Troubleshooting](troubleshooting.md)
+- [Release notes](release-notes.md)
