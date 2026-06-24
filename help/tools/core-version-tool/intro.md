@@ -1,11 +1,11 @@
 ---
 title: '[!DNL Core Version Tool]'
-description: Learn about the [!DNL Core Version Tool] for Adobe Commerce. Use vendor/bin/patch-status to check monthly isolated security patches.
+description: Learn about the [!DNL Core Version Tool] for Adobe Commerce and use vendor/bin/patch-status to check monthly security patch status.
 hide: true
 ---
 # [!DNL Core Version Tool]
 
-Monthly security patches for Adobe Commerce are non-cumulative and must be applied in sequence. The [!DNL Core Version Tool] ([!DNL CVT]) helps merchants verify patch coverage by reporting which monthly security patches are installed and which patches are missing from an Adobe Commerce installation.
+Monthly security patches for Adobe Commerce are non-cumulative and must be applied in sequence. The [!DNL Core Version Tool] ([!DNL CVT]) helps merchants verify patch coverage by reporting which monthly security patches are installed, which patches are missing, and which CVEs the installation is protected against.
 
 >[!IMPORTANT]
 >
@@ -13,7 +13,7 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 
 ## Tool overview
 
-[!DNL CVT] is a standalone executable included with each monthly security patch release as a single-file PHP script or PHAR. The tool is bundled at `vendor/bin/patch-status` and requires only PHP and the system `patch` binary. It does not require Composer packages, non-standard PHP extensions, Magento bootstrap, or a separate installation step.
+[!DNL CVT] is a standalone executable included with each monthly Adobe Commerce security patch. When the patch is applied to an Adobe Commerce installation, the tool is installed at `vendor/bin/patch-status`. It requires PHP 8.1 or later and the system `patch` binary. It does not require Composer packages, non-standard PHP extensions, Adobe Commerce bootstrap, or a separate installation step.
 
 [!DNL CVT] can help you:
 
@@ -33,6 +33,8 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 | [!DNL Magento Open Source] | Supported |
 | Adobe Commerce business-to-business (B2B) | Supported when installed |
 | Adobe Commerce Page Builder | Supported when installed |
+| Adobe Commerce Inventory | Supported when installed |
+| Additional components detected from `composer.lock` | Supported when represented in `data/patch-registry.json` |
 
 {style="table-layout:auto"}
 
@@ -57,10 +59,10 @@ Follow these guidelines:
 - Treat scan output as security-relevant operational data.
 - Share only the details needed for support or remediation.
 
-## Start using the [!DNL CVT] tool
+## Start using [!DNL CVT]
 
-Use these topics to generate, interpret, and troubleshoot patch-status reports:
+Use these topics to generate, troubleshoot, and track patch-status reporting:
 
-- [Generate a patch-status report](generate-report.md) to run [!DNL CVT] and review command options.
-- [Understand patch-status results](understand-report-results.md) to interpret report fields and status values.
+- [Generate a patch-status report](generate-report.md) to run [!DNL CVT], review command options, and interpret report results.
 - [[!DNL Core Version Tool] troubleshooting](troubleshooting.md) to resolve unexpected results or command errors.
+- [[!DNL Core Version Tool] release notes](release-notes.md) to review release updates.

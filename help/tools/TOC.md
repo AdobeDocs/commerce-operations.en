@@ -23,8 +23,8 @@ feature: Configuration
 - [!DNL Core Version Tool] {#core-version-tool}
     - {hide-from-toc} [Introduction](core-version-tool/intro.md)
     - {hide-from-toc} [Generate a patch-status report](core-version-tool/generate-report.md)
-    - {hide-from-toc} [Understand patch-status results](core-version-tool/understand-report-results.md)
     - {hide-from-toc} [Troubleshooting](core-version-tool/troubleshooting.md)
+    - {hide-from-toc} [Release notes](core-version-tool/release-notes.md)
 - CAPS {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)

@@ -1,6 +1,6 @@
 ---
 title: Generate a Patch-Status Report
-description: Learn how to use the [!DNL Core Version Tool] to generate an Adobe Commerce patch-status report and review command options.
+description: Learn how to use the [!DNL Core Version Tool] to generate Adobe Commerce patch-status reports in JSON or CSV format.
 hide: true
 ---
 # Generate a patch-status report
@@ -16,88 +16,145 @@ Before running [!DNL CVT], confirm that:
 - PHP and the system `patch` binary are available.
 - You can read the project files from the environment where you run the command.
 - The tool can write to `var/patch_metadata/` and `var/log/`, if those directories are used by the installed version.
+- Any required credentials for authenticated patch downloads are configured in the environment.
 
 ## Generate the report
 
 From the Adobe Commerce project root, run:
 
 ```bash
-php vendor/bin/patch-status
+vendor/bin/patch-status
 ```
 
-## Command reference
+To check a different Adobe Commerce installation, use the `--root` option:
 
-<!--To Do: Document any options available for the command -->
+```bash
+vendor/bin/patch-status --root=/path/to/commerce
+```
 
-Use the `patch-status` command to generate a patch-status report for the current Adobe Commerce project.
-
-| Command | Description |
-| --- | --- |
-| `php vendor/bin/patch-status` | Checks the current Adobe Commerce project and returns patch-status output in JSON format. |
-
-{style="table-layout:auto"}
+## Command options
 
 JSON is the default output format. CSV output is supported for scanners, dashboards, and compliance reports.
 
-### Options
-
 | Option | Description |
 | --- | --- |
-| `--no-registry-cache` | Forces [!DNL CVT] to fetch the latest patch registry from Adobe's CDN instead of using the cached registry. If the remote registry is unavailable, the command exits with an error. |
+| `--root=PATH` | Specifies the path to the Adobe Commerce installation root. The default is the current directory. |
+| `--format=json\|csv` | Sets the output format. The default is `json`. |
+| `--no-cache` | Forces fresh fetches from remote sources and bypasses the local cache. |
+| `--version`, `-V` | Prints the tool version. |
+| `--help`, `-h` | Prints the help message. |
 
 {style="table-layout:auto"}
 
-## Command examples and output
+## Review JSON and CSV output
 
-<!-- TODO: Replace the example output with final output from the released [!DNL CVT] package when available. Add CSV and --no-registry-cache examples after the final command syntax is available. -->
-
-The following example shows default JSON output:
+The following sample shows default JSON output.
 
 ```bash
-php vendor/bin/patch-status
+vendor/bin/patch-status
 ```
-
-Example JSON output:
 
 ```json
 {
-  "base_version": "2.4.8-p5",
-  "registry_source": "remote",
+  "base_version": "2.4.7-p9",
   "installed_components": {
-    "CE": "2.4.8-p5",
-    "EE": "2.4.8-p5"
+    "CE": "2.4.7-p9",
+    "EE": "2.4.7-p9",
+    "B2B": "1.5.2-p5"
   },
   "applied_patches": [
-    "248p5-2026-05-001-CE",
-    "248p5-2026-06-001-CE"
+    "247p9-2026-05-001-CE",
+    "247p9-2026-05-001-EE"
   ],
   "missing_patches": [
-    "248p5-2026-07-001-CE"
+    "247p9-2026-06-001-CE",
+    "247p9-2026-06-001-EE"
   ],
   "unknown_patches": [],
   "vulnerability_status": {
-    "CVE-2026-12345": {
+    "CVE-2026-12354": {
       "status": "PROTECTED",
-      "fixed_in": "248p5-2026-05-001-CE",
+      "fixed_in": "247p9-2026-05-001-CE",
       "area": "CE"
     },
-    "CVE-2026-12348": {
+    "CVE-2026-67890": {
       "status": "VULNERABLE",
-      "fixed_in": "248p5-2026-07-001-CE",
+      "fixed_in": "247p9-2026-06-001-CE",
       "area": "CE"
-    },
-    "CVE-2026-12350": {
-      "status": "NOT_APPLICABLE",
-      "fixed_in": "248p5-2026-05-001-B2B",
-      "area": "B2B"
     }
   },
+  "registry_source": "remote",
   "warnings": []
 }
 ```
 
+To generate CSV output, use the `--format=csv` option:
+
+```bash
+vendor/bin/patch-status --format=csv
+```
+
+CSV output produces one row per CVE and is suitable for spreadsheets, scanners, dashboards, and compliance tooling.
+
+## Understand report results
+
+Review missing and unknown patches before making security-status claims.
+
+### Patch status values
+
+The patch-status report groups patch results by the following values:
+
+| Patch status | Meaning |
+| --- | --- |
+| Applied | [!DNL CVT] detects the monthly security patch in the Adobe Commerce codebase. |
+| Missing | The patch applies to the installed Adobe Commerce version or component, but [!DNL CVT] does not detect it. |
+| Unknown | [!DNL CVT] cannot confirm the patch status from the available registry, patch diff, or detection result. |
+
+{style="table-layout:auto"}
+
+### CVE status values
+
+JSON output reports CVE status values in uppercase.
+
+| CVE status | Meaning |
+| --- | --- |
+| `PROTECTED` | The applicable patch is detected for the CVE or component. |
+| `VULNERABLE` | An applicable patch is missing for the CVE or component. |
+| `UNKNOWN` | [!DNL CVT] cannot determine the CVE status from the available registry and detection data. |
+| `NOT_APPLICABLE` | The CVE applies to a component that is not installed, such as Adobe Commerce business-to-business (B2B), Adobe Commerce Page Builder, or Adobe Commerce Inventory. |
+
+{style="table-layout:auto"}
+
+### Key output fields
+
+The report can include the following information:
+
+- **Base Adobe Commerce version** - The installed base version detected from `composer.lock`.
+- **Registry source** - Whether patch metadata came from `remote`, `cache`, or `stale_cache`.
+- **Installed components** - Adobe Commerce package areas detected from `composer.lock`.
+- **Applied patches** - Monthly security patches detected in the Adobe Commerce codebase.
+- **Missing patches** - Monthly security patches that apply but are not detected.
+- **Unknown patches** - Patches that [!DNL CVT] cannot classify.
+- **Vulnerability status by CVE** - CVE coverage mapped to protected, vulnerable, not applicable, or unknown status.
+- **Warnings** - Conditions that might affect the reliability or completeness of the report.
+
+## Patch registry and cache
+
+`data/patch-registry.json` contains the patch metadata that [!DNL CVT] uses to determine which patches apply to an installed version. [!DNL CVT] fetches the latest registry from Adobe's CDN and can use the cached registry with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
+
+## Environment variable overrides
+
+Use environment variable overrides only when you need [!DNL CVT] to use a custom registry or patch-diff source.
+
+| Environment variable | Description |
+| --- | --- |
+| `PATCH_REGISTRY_URL` | Overrides the default patch registry URL. |
+| `PATCH_DIFF_BASE_URL` | Overrides the default base URL for patch diff downloads. |
+
+{style="table-layout:auto"}
+
 ## Related topics
 
 - [[!DNL CVT] introduction](intro.md)
-- [Understand patch-status results](understand-report-results.md)
 - [[!DNL Core Version Tool] troubleshooting](troubleshooting.md)
+- [[!DNL Core Version Tool] release notes](release-notes.md)
