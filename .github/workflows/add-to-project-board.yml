@@ -12,5 +12,6 @@ on:
 
 jobs:
   call-workflow-add-to-project:
-    uses: AdobeDocs/commerce-php/.github/workflows/add-to-project_job.yml@main
+    if: github.event.repository.visibility == 'public'
+    uses: AdobeDocs/commerce-contributor/.github/workflows/add-to-project_job.yml@main
     secrets: inherit

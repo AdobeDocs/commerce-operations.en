@@ -2,8 +2,89 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 5 15:40:12 2026
+updated: Fri Jun 19 15:40:11 2026
 entries:
+- description: Updated [Software lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
+    with Cloud version upgrade enforcement dates, support period definitions (including
+    security-only transitional period), an expanded end-of-support table for 2.4.4–2.4.9,
+    PHP PCI guidance, and paths to migrate to Adobe Commerce as a Cloud Service or
+    upgrade on PaaS.
+  versions: ''
+  type: major-update
+  date: June 18, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1987
+  merge_commit: dc8326755ceee435f9980d7ea8003a6692ba1e92
+  contributor: meker_adobe
+  labels:
+  - hold for release
+  - major-update
+- description: Updated version of Composer to 2.10 in the [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    tables for Cloud and On-Prem for Adobe Commerce 2.4.9, 2.4.8, and 2.4.7.
+  versions: ''
+  type: technical
+  date: June 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2024
+  merge_commit: 23f2234eb2b9e11e36e49607b21c3c092266fec4
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: Updated [Product availability](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)
+    table with the latest Payment Services v2.15.0 release.
+  versions: ''
+  type: major-update, release-notes
+  date: June 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1927
+  merge_commit: a47aff5b5ae138748584cb5dbd646ca7b69e294a
+  contributor: del_adobe
+  labels:
+  - major-update
+  - release-notes
+- description: Updated the [Commerce System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    to clarify that the Commerce on Cloud template now provides a default services
+    configuration that is compatible with the latest Commerce version for each release
+    line.
+  versions: ''
+  type: feedback, technical
+  date: June 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2019
+  merge_commit: aaa05baf7a213a2f949e2eadbf72bc13e1ed247a
+  contributor: meker_adobe
+  labels:
+  - feedback
+  - technical
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.80](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2017
+  merge_commit: 6e585cb2150ca7dc2ae6ae883339ef9b894741f0
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Added the Search matching and ranking (Private Beta) program to [Beta
+    releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta),
+    including the layered match model, interaction with weights and merchandising
+    rules, and invitation instructions.
+  versions: ''
+  type: major-update
+  date: June 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1996
+  merge_commit: b364a26b6ad3e36652b8309dcb87268d522fa31c
+  contributor: emarr_adobe
+  labels:
+  - major-update
+- description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4706:
+    Target Rule indexer cron doesn''t pick products enabled only at store view scope](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 8, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1959
+  merge_commit: f1f9890a2a2b7dbe501037ca8dbe919865012b6f
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.79 fix for [ACP2E-4402:
     Target Rule incremental indexer doesn''t pick disabled products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402).'
   versions: ''

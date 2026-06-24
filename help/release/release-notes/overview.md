@@ -6,7 +6,16 @@ exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 
 # Release notes for Adobe Commerce
 
-Use the following table to find release notes and important information related to specific releases of all Adobe Commerce products, services, and tools.
+The table below provides release notes and important information for Adobe Commerce on Premises and Adobe Commerce on Cloud products, services, and tools.
+
+>[!BEGINSHADEBOX]
+
+**Release notes for other products:**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+
+>[!ENDSHADEBOX]
 
 >[!TIP]
 >
@@ -22,6 +31,8 @@ Use the following table to find release notes and important information related 
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward-incompatible changes</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Security patches</a></li>
+            <li><a href="../../lifecycle-policy.md">Software lifecycle policy</a></li>
+            <li><a href="../../version-upgrade-enforcement-policy.md">Cloud version upgrade enforcement policy</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
           </ul>

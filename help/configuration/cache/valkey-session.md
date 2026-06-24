@@ -3,15 +3,43 @@ title: Configure Valkey for Session Storage
 description: Learn how to configure Valkey for session storage in Adobe Commerce. Discover CLI setup, session parameters, and connection verification techniques.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
+badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+autotag-review: '2026-06-22T21:59:49.664Z'
+TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 
 # Configure Valkey for session storage
 
+{{cloud-cache-config}}
+
+Commerce provides command-line options to configure the Valkey session storage. Although you can configure session storage by editing the `<Commerce-install-dir>/app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
+
 >[!IMPORTANT]
 >
->You must [install Valkey](config-valkey.md#install-valkey) before continuing.
+>Before you can configure session storage, you must have [Valkey installed](config-valkey.md#install-valkey).
 
-Adobe Commerce provides command-line options to configure Valkey session storage.
+## Configure Valkey session storage
 
 Run the `setup:config:set` command and specify Valkey-specific parameters.
 
@@ -22,7 +50,6 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` enables Valkey session storage. If this feature is already enabled, omit this parameter.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` is a list of parameter/value pairs that configure session storage:
-
 
 >[!NOTE]
 >

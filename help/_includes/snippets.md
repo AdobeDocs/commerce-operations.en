@@ -1,5 +1,17 @@
 # Snippets
 
+## Commerce on Cloud cache configuration note with reference {#cloud-cache-config}
+
+>[!NOTE]
+>
+>For Adobe Commerce on Cloud projects, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for cache configuration instructions.
+
+## Commerce on Cloud Varnish configuration note with reference {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
+
 ## Adobe service version support {#supported-versions-only}
 
 >[!NOTE]
@@ -16,9 +28,7 @@
 
 ## Security patches for extended support {#extended-support}
 
->[!NOTE]
->
->Extended support security patches for 2.4.5 are available to Adobe Commerce customers only. These patches are not available for the Magento Open Source code base. See [Extended Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Commerce only {#commerce-only}
 
