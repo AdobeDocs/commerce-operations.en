@@ -1,50 +1,93 @@
 ---
-title: Configure Web Server for Varnish Caching
+title: Configure nginx for Varnish Caching
 description: Learn how to configure your web server to work with Varnish caching for Adobe Commerce. Discover port configuration and setup requirements.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
+badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+autotag-review: '2026-06-22T21:49:41.837Z'
+TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
-# Configure web server for Varnish Caching
+# Configure nginx for Varnish caching {#configure-web-server-for-varnish-caching}
 
-Configure your web server to listen on a port other than the default port 80 because Varnish responds directly to incoming HTTP requests, not the web server.
+When Varnish is used as the full-page cache in front of Adobe Commerce, Varnish typically listens on the public HTTP port and forwards requests to nginx on a non-default backend port such as 8080. Update the nginx site configuration for your Commerce origin server to listen on the backend port that Varnish will use.
+
+{{varnish-config-cloud}}
 
 The following sections use port 8080 as an example.
 
-**To change the Apache 2.4 listen port**:
+**Change the nginx listen port for the Commerce origin server**:
 
-1. Open `/etc/httpd/conf/httpd.conf` in a text editor.
-1. Locate the `Listen` directive.
-1. Change the value of the listen port to `8080`. (You can use any available listen port.)
-1. Save your changes to `httpd.conf` and exit the text editor.
+1. Open the nginx site configuration for your Adobe Commerce origin server in a text editor.
+
+  The location depends on your operating system and nginx layout. For example, Ubuntu often uses a file under `/etc/nginx/sites-available/`.
+
+1. In the `server` block for the Commerce site, change the `listen` directive from the public HTTP port to the backend port that Varnish will use to reach nginx.
+
+   For example, change
+
+   ```conf
+   server {
+       listen 80;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+   to:
+
+   ```conf
+   server {
+       listen 8080;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+1. Save the file.
+
+1. Verify the nginx configuration:
+
+   ```shell
+   nginx -t
+   ```
+
+1. Restart nginx:
+
+   ```shell
+   systemctl restart nginx
+   ```
 
 ## Modify the Varnish system configuration
 
-To modify the Varnish system configuration:
+After updating nginx to listen on the backend port, configure Varnish to forward requests to that host and port. For example:
 
-1. As a user with `root` privileges, open your Vanish configuration file in a text editor:
-
-   - CentOS 6: `/etc/sysconfig/varnish`
-   - CentOS 7: `/etc/varnish/varnish.params`
-   - Debian: `/etc/default/varnish`
-   - Ubuntu: `/etc/default/varnish`
-
-1. Set the Varnish listen port to 80:
-
-   ```conf
-   VARNISH_LISTEN_PORT=80
-   ```
-
-   For Varnish 4.x, make sure that DAEMON_OPTS contains the correct listening port for the `-a` parameter (even if VARNISH_LISTEN_PORT is set to the correct value):
-
-   ```conf
-   DAEMON_OPTS="-a :80 \
-      -T localhost:6082 \
-      -f /etc/varnish/default.vcl \
-      -S /etc/varnish/secret \
-      -s malloc,256m"
-   ```
-
-1. Save your changes to the Varnish configuration file and exit the text editor.
+```conf
+backend default {
+    .host = "192.0.2.55";
+    .port = "8080";
+}
+```
 
 ### Modify the default VCL
 
@@ -74,7 +117,7 @@ To minimally configure Varnish:
 
 1. Replace the value of `.port` with the web server's listen port (8080 in this example).
 
-   Example: Apache is installed on host 192.0.2.55 and Apache is listening on port 8080:
+   Example: nginx is installed on host 192.0.2.55 and listening on port 8080:
 
    ```conf
    backend default {
@@ -85,7 +128,7 @@ To minimally configure Varnish:
 
    >[!INFO]
    >
-   >If Varnish and Apache are running on the same host, Adobe recommends that you use an IP address or hostname and not `localhost`.
+   >If Varnish and nginx are running on the same host, Adobe recommends that you use an IP address or hostname and not `localhost`.
 
 1. Save your changes to `default.vcl` and exit the text editor.
 
@@ -156,11 +199,11 @@ Look for the following output in particular:
 ```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
-tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
+tcp        0      0 :::8080                     :::*                        LISTEN      26822/nginx
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-The preceding shows Varnish running on port 80 and Apache running on port 8080.
+The preceding shows Varnish running on port 80 and nginx running on port 8080.
 
 If you do not see output for `varnishd`, make sure that Varnish is running.
 
