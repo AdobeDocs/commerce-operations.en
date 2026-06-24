@@ -142,7 +142,7 @@ The report can include the following information:
 
 ## Patch registry and cache
 
-`data/patch-registry.json` contains the patch metadata that [!DNL CVT] uses to determine which patches apply to an installed version. [!DNL CVT] uses a fresh registry cache when available, fetches the remote registry when needed, and can use a stale cache with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
+The Patch registry contains the patch metadata that [!DNL CVT] uses to determine which patches apply to an installed version. [!DNL CVT] uses a fresh registry cache when available, fetches the remote registry when needed, and can use a stale cache with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
 
 ## Related topics
 
