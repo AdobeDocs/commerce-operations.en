@@ -9,7 +9,7 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 
 >[!IMPORTANT]
 >
->[!DNL CVT] is informational only. It does not apply patches, revert patches, or modify Adobe Commerce source files. It writes cache and audit-log files only to support patch-status reporting.
+>[!DNL CVT] is informational only. It does not apply patches, revert patches, or modify Adobe Commerce source files. It can write cache files, temporary dry-run files, and audit-log entries to support patch-status reporting.
 
 ## Tool overview
 
