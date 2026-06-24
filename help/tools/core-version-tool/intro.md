@@ -40,7 +40,7 @@ Monthly security patches for Adobe Commerce are non-cumulative and must be appli
 
 ## Common use cases
 
-Use [!DNL CVT] when you need to:
+Use the [!DNL CVT] tool when you need to:
 
 - Check whether an Adobe Commerce installation includes required isolated security patches.
 - Confirm whether skipped or incomplete patch sets leave CVE coverage incomplete.
@@ -49,11 +49,11 @@ Use [!DNL CVT] when you need to:
 
 ## Guidelines for using results
 
-Treat [!DNL CVT] output as detection data that supports patch planning and security review.
+Treat [!DNL CVT] tool output as detection data that supports patch planning and security review.
 
 Follow these guidelines:
 
-- Run [!DNL CVT] against a stable and supported Adobe Commerce installation.
+- Run the [!DNL CVT] tool against a stable and supported Adobe Commerce installation.
 - Review missing and unknown patches before making security-status claims.
 - Preserve JSON or CSV output for auditability and automation.
 - Treat scan output as security-relevant operational data.
@@ -63,6 +63,6 @@ Follow these guidelines:
 
 Use these topics to generate, troubleshoot, and track patch-status reporting:
 
-- [Generate a patch-status report](generate-report.md) to run [!DNL CVT], review command options, and interpret report results.
+- [Generate a patch-status report](generate-report.md) to run the [!DNL CVT] tool, review command options, and interpret report results.
 - [[!DNL Core Version Tool] troubleshooting](troubleshooting.md) to resolve unexpected results or command errors.
 - [[!DNL Core Version Tool] release notes](release-notes.md) to review release updates.
