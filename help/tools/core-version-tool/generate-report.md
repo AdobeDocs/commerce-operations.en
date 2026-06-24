@@ -140,7 +140,7 @@ The report can include the following information:
 
 ## Patch registry and cache
 
-`data/patch-registry.json` contains the patch metadata that [!DNL CVT] uses to determine which patches apply to an installed version. [!DNL CVT] fetches the latest registry from Adobe's CDN and can use the cached registry with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
+`data/patch-registry.json` contains the patch metadata that the [!DNL CVT] tool uses to determine which patches apply to an installed version. The tool fetches the latest registry from Adobe's CDN and can use the cached registry with a warning if the network is unavailable. Use `--no-cache` only when you require fresh remote fetches.
 
 ## Environment variable overrides
 
