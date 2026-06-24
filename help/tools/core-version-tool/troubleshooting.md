@@ -47,7 +47,17 @@ If [!DNL CVT] cannot fetch the latest patch registry, check network and cache se
 - The Adobe patch endpoint request times out.
 - `--no-cache` was used and the remote registry cannot be reached.
 - `PATCH_REGISTRY_URL` points to an unavailable registry or is not a valid HTTPS URL.
-- `var/patch_metadata/.patch_registry_cache.json` is missing, expired, or not readable.
+If [!DNL CVT] cannot fetch the latest patch registry, check network and cache settings:
+
+**Check:**
+
+- The network is unavailable.
+- The Adobe patch endpoint request times out.
+- `--no-cache` was used and the remote registry cannot be reached.
+
+>[!NOTE]
+>
+>If the registry file is missing or expired the tool downloads the latest registry from the remote host.
 
 **Actions:**
 
