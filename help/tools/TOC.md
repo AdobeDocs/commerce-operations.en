@@ -1004,6 +1004,7 @@ feature: Configuration
         - v1.1.80 {#v1-1-80}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
            - [ACP2E-4496: Analytics cron job degrades performance during execution](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
+           - [ACP2E-4488: Slow Admin product save/edit for large attribute sets](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
            - [ACP2E-4653: Cart pice rule category scope conditions missing from [!DNL REST] API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
            - [ACP2E-4472: Null quote created using the Login as Customer flow](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
            - [ACP2E-4808: Product weight displays without unit of measurement on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
