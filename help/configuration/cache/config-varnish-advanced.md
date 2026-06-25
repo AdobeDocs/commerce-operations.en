@@ -3,8 +3,30 @@ title: Advanced Varnish Configuration
 description: Learn how to configure advanced Varnish features for Adobe Commerce including health checks, grace, and saint modes. Discover VCL optimization techniques.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
+badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Advanced Varnish configuration
+
+{{varnish-config-cloud}}
 
 Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Commerce server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Commerce provides in the VCL (Varnish Configuration Language) file you download from the Admin.
 
