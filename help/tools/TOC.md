@@ -1004,6 +1004,10 @@ feature: Configuration
         - v1.1.80 {#v1-1-80}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
            - [ACSD-53502: **[!UICONTROL Add to Cart]** intermittently fails on iOS [!DNL Safari] due to New Relic script recursion](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
+           - [ACP2E-4813: USPS shipping methods unavailable or incorrect for multi-package orders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
+           - [ACP2E-4615: PayPal online order refunds fail with error *PayPal gateway rejects the request. Internal Error.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
+           - [ACP2E-4610: Slow execution of `sales_clean_quotes` cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
+           - [ACP2E-4626: Storefront JavaScript files loading twice causing duplicate loads and unstable behavior](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
            - [ACP2E-4552: GraphQL response does not return company status](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
            - [ACP2E-4496: Analytics cron job degrades performance during execution](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
            - [ACP2E-4488: Slow Admin product save/edit for large attribute sets](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
