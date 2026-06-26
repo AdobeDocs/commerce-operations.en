@@ -165,6 +165,10 @@ Staying on a supported Commerce release also requires supported platform depende
 
 You are responsible for maintaining all third-party dependencies and platform services on versions that are actively supported. See [System requirements](../installation/system-requirements.md) for the full list of tested and supported third-party technologies.
 
+>[!IMPORTANT]
+>
+>Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status.
+
 ## PHP end of life and PCI compliance
 
 You are responsible for monitoring the support status of PHP versions used in your environments.
