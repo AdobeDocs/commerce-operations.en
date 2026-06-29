@@ -27,8 +27,8 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.80 includes the following patches:
 
 1. **ACP2E-4239**: Fixes the issue where Admin grid filters using date attributes return incorrect results due to timezone differences between the selected date, stored UTC values, and the configured store timezone.
+1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: Fixes the issue where bundle product saleability is recalculated incorrectly after order cancellation.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: Fixes the issue where a null quote record is created in the `quote` database table during the **[!UICONTROL Login as Customer]** flow.
-1. **ACP2E-4481**: Fixes the issue where bundle product saleability isn't recalculated correctly after an order is canceled.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: Fixes the issue where saving or editing products in Admin is slow for products with large attribute sets.
 1. **ACP2E-4493**: Fixes the issue where the Sales Order Archive grid displays an incorrect order status when asynchronous indexing is enabled.
 1. **ACP2E-4496**: Fixes the issue where the analytics cron job causes performance degradation during execution, resulting in improved overall system performance.
