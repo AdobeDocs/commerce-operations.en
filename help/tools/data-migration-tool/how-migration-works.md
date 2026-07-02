@@ -12,10 +12,10 @@ The [!DNL Data Migration Tool] is a command-line interface (CLI) tool used for t
 
 ## Terminology
 
-*  **Modes** - an ordered set of operations for migrating data from Magento 1.x to Magento 2.x.
-*  **Steps** - the tasks in a mode that define the kinds of data to migrate.
-*  **Stages** - the tasks in step that validate, transfer, and verify the data.
-*  **Map files** - XML files that define the rules and connections between Magento 1.x and Magento 2.x data structures for completing the stages.
+* **Modes** - an ordered set of operations for migrating data from Magento 1.x to Magento 2.x.
+* **Steps** - the tasks in a mode that define the kinds of data to migrate.
+* **Stages** - the tasks in step that validate, transfer, and verify the data.
+* **Map files** - XML files that define the rules and connections between Magento 1.x and Magento 2.x data structures for completing the stages.
 
 ## Modes
 
@@ -77,7 +77,7 @@ More information on developing extensions for Magento 2 is available in the [PHP
 
 ### Themes and customizations
 
-Magento 2 uses new approaches and technologies that give merchants an unmatched ability to create innovative shopping experiences and scale to new levels. To take advantage of these advances, developers must make changes to their themes and customizations. Documentation is available online for creating Magento 2 [themes](https://developer.adobe.com/commerce/frontend-core/guide/themes), [layouts](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), and [customizations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage).
+Magento 2 uses new approaches and technologies that give merchants an unmatched ability to create innovative shopping experiences and scale to new levels. To take advantage of these advances, developers must make changes to their themes and customizations. Documentation is available online for creating Magento 2 [themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [layouts](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), and [customizations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage).
 
 ## Migration efforts
 
