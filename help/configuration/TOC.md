@@ -28,7 +28,7 @@ feature: Configuration
         + [Using environment variables](deployment/example-environment-variables.md)
 + Cache {#cache}
     + [Caching overview](cache/caching-overview.md)
-    + [Configure cache frontends](cache/cache-types.md)
+    + [Configure cache frontends and types](cache/cache-types.md)
     + [Cache backend options](cache/cache-options.md)
     + [L2 cache configuration](cache/level-two-cache.md)
     + Redis {#redis}

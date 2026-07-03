@@ -33,7 +33,7 @@ This guide explains how each caching layer works and shows you how to configure 
 
 ## Caching frontends
 
-A cache frontend is an interface between Commerce and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend.  For configuration details, see [Configure cache frontends](cache-types.md).
+A cache frontend is an interface between Commerce and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend. For configuration details, see [Configure cache frontends and types](cache-types.md).
 
 ## Caching backends
 
@@ -75,7 +75,7 @@ For frontend-to-type mapping and cache configuration syntax:
 
 For details, see:
 
-- [Configure cache frontends](cache-types.md)—Associate a cache frontend with specific cache types
+- [Configure cache frontends and types](cache-types.md)—Associate a cache frontend with specific cache types
 - [Cache backend options](cache-options.md)—Backend option reference
 
 **Adobe Commerce on Cloud**—Configure caching with `CACHE_CONFIGURATION` in `.magento.env.yaml`. See [Best practices for Redis and Valkey service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

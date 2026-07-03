@@ -1,5 +1,5 @@
 ---
-title: Configure Cache Frontends
+title: Configure Cache Frontends and Types
 description: Learn how to define cache frontends and associate them with cache types in Adobe Commerce. Discover configuration syntax for env.php and di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
@@ -25,11 +25,15 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
 ---
-# Configure cache frontends
+# Configure cache frontends and types
 
-A cache frontend is an interface between Commerce and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend.
+A cache frontend is an interface between Commerce cache types and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend.
 
-This is useful when you want to use different cache backends or configurations for different types of cached data. For example, you might want `full_page` caching on a dedicated Redis database while using a separate database for `default` caching.
+Use this relationship to decide where each cache type stores data:
+
+`cache type` -> `cache frontend` -> `cache backend`
+
+This is useful when you want to use different cache backends or configurations for different types of cached data. For example, you might assign the `full_page` cache type to a `page_cache` frontend that uses a dedicated Valkey database, while other cache types use the `default` frontend.
 
 {{cloud-cache-config}}
 
@@ -73,7 +77,8 @@ Where:
 
 >[!TIP]
 >
->**Modern Symfony Cache implementation (2.4.9+):** Starting with Commerce 2.4.9, you can use simplified backend types like `redis`, `valkey`, or `file` with the modern Symfony Cache implementation. See [Use Redis for default cache](redis-pg-cache.md) and [Use Valkey for default cache](valkey-pg-cache.md) for details.
+>Adobe Commerce 2.4.9 and later use simplified backend type names, such as `valkey` or `file`, with the Symfony Cache implementation. See [Cache backend options](cache-options.md) for backend examples and version-specific guidance.
+
 
 ### Step 2: Configure frontend and backend options
 
@@ -112,7 +117,7 @@ Where:
 >**Legacy vs Modern implementation:**
 >
 >- **Legacy (Zend-based)**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
->- **Modern (Symfony Cache)**: `'backend' => 'redis'` (recommended for Commerce 2.4.9+)
+>- **Modern (Symfony Cache)**: `'backend' => 'valkey'` for Commerce versions 2.4.9+ and current patch releases for the 2.4.5 - 2.4.8 release lines where Valkey is the supported cache backend.
 >
 >The modern Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
 
