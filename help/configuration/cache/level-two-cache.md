@@ -340,5 +340,3 @@ The `symfony_l2` backend also supports Valkey as the remote backend:
 For detailed configuration options, see:
 - [Redis cache configuration with Symfony Cache](redis-pg-cache.md)
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
-test
-test
