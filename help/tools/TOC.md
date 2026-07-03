@@ -1003,6 +1003,8 @@ feature: Configuration
            - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
         - v1.1.80 {#v1-1-80}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+           - [ACP2E-4239: Admin Grid Date filters return no results due to Timezone mismatch](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
+           - [ACP2E-4481: Bundle product saleability recalculated incorrectly after order cancel](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
            - [ACSD-53502: **[!UICONTROL Add to Cart]** intermittently fails on iOS [!DNL Safari] due to New Relic script recursion](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
            - [ACP2E-4813: USPS shipping methods unavailable or incorrect for multi-package orders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
            - [ACP2E-4615: PayPal online order refunds fail with error *PayPal gateway rejects the request. Internal Error.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
