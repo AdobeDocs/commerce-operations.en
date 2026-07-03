@@ -29,9 +29,9 @@ Use these recommendations to configure Valkey or Redis caching and sessions for 
 
 ## Configure L2 cache
 
-Configure the L2 cache by setting the `VALKEY_BACKEND` or `REDIS_BACKEND` or deployment variable in the `.magento.env.yaml` configuration file.
+Configure the L2 cache by setting the `VALKEY_BACKEND` or `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
-For Adobe Commerce 2.4.9 and versions later than 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, and 2.4.5-p16, configure L2 cache with Valkey . The Redis configuration examples on this page apply only to supported Adobe Commerce versions that use Redis. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
+For Adobe Commerce 2.4.9 and versions later than 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, and 2.4.5-p16, configure L2 cache with Valkey. The Redis configuration examples on this page apply only to supported Adobe Commerce versions that use Redis. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
 
 For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](../../../configuration/cache/level-two-cache.md).
 
