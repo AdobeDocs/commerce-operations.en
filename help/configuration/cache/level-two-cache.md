@@ -51,7 +51,7 @@ There are two L2 cache implementations available:
 
 >[!NOTE]
 >
->For Adobe Commerce on cloud, configure L2 cache by setting the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) deploy variable in `.magento.env.yaml`. See [Configure L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) for configuration examples.
+>For Adobe Commerce on Cloud, configure L2 cache by setting the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) deploy variable in `.magento.env.yaml`. See [Configure L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) for configuration examples.
 
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
@@ -189,6 +189,10 @@ The following code shows an example configuration:
 ## Modern Symfony L2 cache implementation
 
 Starting with Commerce 2.4.9, you can use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) which provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
+
+>[!NOTE]
+>
+>This functionality is currently available for Adobe Commerce On Premises 2.4.9 customers only. And will be enabled for Adobe Commerce On Cloud later in July 2026."
 
 ### Benefits of Symfony L2 cache
 

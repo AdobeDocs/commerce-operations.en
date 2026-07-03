@@ -37,6 +37,10 @@ topic_v2:
 
 Commerce provides command-line options to configure the Valkey default and page caching. Although you can configure caching by editing the `<Commerce-install-dir>app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
 
+>[!IMPORTANT]
+>
+>Valkey is required for cache configuration for Adobe Commerce 2.4.9 and patch releases later than 2.4.5-p16, 2.4.6-p14, and 2.4.7-p9, and 2.4.8-p4. See [System Requirements](../../installation/system-requirements.md) for supported cache services by release.
+
 {{cloud-cache-config}}
 
 **Prerequisite:**
