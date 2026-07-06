@@ -150,6 +150,24 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 * Verify you have environment management permissions
 * Ensure you have deployment permissions
 
+### GitHub integration errors
+
+#### "No Git credentials available for provider github. Install the CAPS GitHub app for this repository."
+
+**When it occurs:** During patch operations for projects connected to GitHub
+
+**Cause:** The [!DNL CAPS] GitHub App is not installed on your repository
+
+**Solution:** Follow the steps in [Set up the GitHub integration for CAPS](github-integration.md)
+
+#### "GitHub API request failed"
+
+**When it occurs:** During patch operations for projects connected to GitHub
+
+**Cause:** A temporary issue prevented [!DNL CAPS] from connecting to GitHub
+
+**Solution:** Wait a few minutes and retry the operation. If the error continues, contact [Adobe Commerce Cloud support](https://experienceleague.adobe.com/home#support)
+
 ### Resource and quota errors
 
 #### "Environment quota exceeded"

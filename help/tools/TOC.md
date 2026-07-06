@@ -31,6 +31,7 @@ color: red
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
     - {hide-from-toc} [Workflow](caps-tool/workflow.md)
+    - {hide-from-toc} [GitHub integration](caps-tool/github-integration.md)
     - {hide-from-toc} [Best practices](caps-tool/best-practices.md)
     - {hide-from-toc} [Troubleshooting](caps-tool/troubleshooting.md)
 - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
