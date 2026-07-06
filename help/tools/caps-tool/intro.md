@@ -13,6 +13,7 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 
 * **[How to access](access.md)**
 * **[Workflow](workflow.md)**
+* **[GitHub integration](github-integration.md)**
 * **[Best practices](best-practices.md)**
 * **[Troubleshooting](troubleshooting.md)**
 

@@ -87,6 +87,10 @@ This approach provides:
 
 **Environment activation** - The integration environment is activated to deploy the patched code
 
+>[!NOTE]
+>
+>If your project uses an external GitHub repository, [!DNL CAPS] handles authentication automatically using the [CAPS GitHub App](github-integration.md). No additional credentials are required.
+
 #### Stage 2c: Merge back to target environment
 
 **Environment checkout** - [!DNL CAPS] checks out your target environment locally
