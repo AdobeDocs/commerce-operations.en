@@ -29,6 +29,27 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.82 {#v1-1-82}
+
+* **ACP2E-4194** (for Adobe Commerce and Magento Open Source >=2.4.7-p10 <2.4.8 || >=2.4.8-p5 <2.4.9) - Fixes the issue where GraphQL responses return incorrect HTTP status codes for invalid, unauthorized, or malformed requests.
+* **ACP2E-4547** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where an admin user cannot use 'Add Products by SKU' in Admin to add products from the standard catalog to a negotiable quote for a company assigned to a customer group that is not linked to a shared catalog.
+* **ACP2E-4593** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where the CMS page displayed for website restrictions can be incorrect on secondary websites in multi-website deployments.
+* **ACP2E-4682** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where visiting a Storefront page that checks the quote isActive status creates empty quote records each time the page is loaded.
+* **ACP2E-4695** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the catalog rule indexer consumes excessive memory and fails to complete, causing instability and out-of-memory errors.
+* **ACP2E-4698** (for Adobe Commerce and Magento Open Source >=2.4.7-p9 <2.4.8 || >=2.4.8-p4 <2.4.9) - Fixes the issue where editing an image again in Page Builder text content can save an absolute media URL instead of preserving a portable media directive.
+* **ACP2E-4748** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue where reward points expiration can process slowly on stores with a large reward points history, causing delays in expiring reward points.
+* **ACP2E-4797** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where entering 4-byte Unicode characters in WYSIWYG editor or Page Builder content in the Admin is incorrectly blocked even when the database is configured to support utf8mb4.
+* **ACP2E-4799** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the 'requisition_lists GraphQL' query returns a 'total_count' value that reflects only the number of items on the current page instead of the total number of requisition lists that match the query criteria.
+* **ACP2E-4805** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where checkout API requests can become significantly slower for configurable products with many child products when the first salable child product appears late in the list.
+* **ACP2E-4840** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the quantity value requested in the 'products' GraphQL query returns null.
+* **ACP2E-4870** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where Product Alerts email notifications ignore store view email settings.
+* **ACP2E-4875** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where viewing customer accounts with large address books in the Admin can unexpectedly log out Admin users.
+* **ACP2E-4894** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue where new orders are delayed in appearing in the Admin order management grids when Asynchronous Indexing is enabled on high-volume stores.
+* **ACP2E-4981** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where Page Builder product carousels display products in an incorrect category position order and include configurable products when matching child products are individually visible.
+* Versions updated: **ACSD-45255**, **ACSD-50849**
+* Replaced patches: **ACSD-49970-V3**, **ACSD-50260-V2**, **ACSD-54966**, **ACSD-63325**, **ACSD-64212**, **ACSD-66865**, **ACSD-69237**
+* Deprecated patches: **ACP2E-4815**
+
 ## v1.1.81 {#v1-1-81}
 
 * **ACP2E-4300** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where changing a customer group in the Admin doesn't update catalog permissions on the Storefront, causing the catalog and cart to reflect outdated permissions.
