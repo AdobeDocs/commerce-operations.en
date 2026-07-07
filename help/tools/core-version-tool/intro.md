@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Core Version Tool]'
-description: Learn about the [!DNL Core Version Tool] for Adobe Commerce and use vendor/bin/patch-status to check monthly security patch status.
+title: '[!DNL Commerce Version Tool]'
+description: Learn about the [!DNL Commerce Version Tool] for Adobe Commerce and use vendor/bin/patch-status to check monthly security patch status.
 hide: true
 ---
-# [!DNL Core Version Tool]
+# [!DNL Commerce Version Tool]
 
-Monthly security patches for Adobe Commerce are non-cumulative and must be applied in sequence. The [!DNL Core Version Tool] ([!DNL CVT]) helps merchants verify patch coverage by reporting which monthly security patches are installed, which patches are missing, and which CVEs the installation is protected against.
+Monthly security patches for Adobe Commerce are non-cumulative and must be applied in sequence. The [!DNL Commerce Version Tool] ([!DNL CVT]) helps merchants verify patch coverage by reporting which monthly security patches are installed, which patches are missing, and which CVEs the installation is protected against.
 
 >[!IMPORTANT]
 >
@@ -59,10 +59,20 @@ Follow these guidelines:
 - Treat scan output as security-relevant operational data.
 - Share only the details needed for support or remediation.
 
+## Patch detection
+
+The [!DNL CVT] tool runs detection in two fixed steps. Both steps always run when you generate a patch-status report.
+
+- **Composer detection:** The tool reads the `composer.lock` file to determine the [!DNL Adobe Commerce] base version and installed component areas. If the tool cannot detect a base version, it exits with code `1`.
+
+- **Dry-run detection:** For each applicable patch, the tool uses a dry-run check against the patch changes to determine whether the patch is already applied, is not applied, or if the patch status is unknown. The tool handles patch dependencies during this check so that results reflect the installed component version.
+
+The report includes only patches that apply to the detected installation and installed components. If the tool cannot confirm whether an applicable patch is present, it classifies the patch as unknown.
+
 ## Start using [!DNL CVT]
 
 Use these topics to generate, troubleshoot, and track patch-status reporting:
 
 - [Generate a patch-status report](generate-report.md) to run the [!DNL CVT] tool, review command options, and interpret report results.
-- [[!DNL Core Version Tool] troubleshooting](troubleshooting.md) to resolve unexpected results or command errors.
-- [[!DNL Core Version Tool] release notes](release-notes.md) to review release updates.
+- [[!DNL Commerce Version Tool] troubleshooting](troubleshooting.md) to resolve unexpected results or command errors.
+- [[!DNL Commerce Version Tool] release notes](release-notes.md) to review release updates.

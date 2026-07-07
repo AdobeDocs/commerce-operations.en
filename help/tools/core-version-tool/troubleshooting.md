@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Core Version Tool] Troubleshooting'
-description: Learn how to troubleshoot [!DNL Core Version Tool] Composer detection, internal dry-run checks, registry cache, JSON output, and audit log issues.
+title: '[!DNL Commerce Version Tool] Troubleshooting'
+description: Learn how to troubleshoot [!DNL Commerce Version Tool] Composer detection, internal dry-run checks, registry cache, JSON output, and audit log issues.
 hide: true
 ---
-# [!DNL Core Version Tool] troubleshooting
+# [!DNL Commerce Version Tool] troubleshooting
 
-Use this page to troubleshoot common [!DNL Core Version Tool] ([!DNL CVT]) issues with Composer detection, registry loading, internal dry-run patch detection, output generation, and audit logging.
+Use this page to troubleshoot common [!DNL Commerce Version Tool] ([!DNL CVT]) issues with Composer detection, registry loading, internal dry-run patch detection, output generation, and audit logging.
 
 ## Quick troubleshooting steps
 
@@ -17,6 +17,12 @@ If the [!DNL CVT] tool does not return the expected patch-status report:
 - Confirm that [!DNL CVT] can read the patch registry file.
 - Review `warnings`, `missing_patches`, and `unknown_patches` in the output.
 - Check `var/log/patch_status.log` for the audit summary from the run, if the log file is created.
+
+>[!TIP]
+>
+> The log file is most helpful when you need to understand why a patch could not be classified. For each unknown patch, the log records the commands the tool tried and any errors or failures it encountered. 
+>
+> If you have issues fetching the registry or patch files, check the warnings field in the report. Those details do not appear in the log.
 
 ## Common issues and solutions
 
@@ -30,6 +36,18 @@ If the [!DNL CVT] tool cannot find the Adobe Commerce base version, check these 
 - `composer.lock` does not match the installed Adobe Commerce codebase.
 - Are you running the `patch-status` command outside the Adobe Commerce project root?
 - The installed Adobe Commerce version is not represented in the patch registry file.
+
+**Warning messages:**
+
+The tool emits the following strings in the warnings output field for this scenario:
+
+```shell-session
+No recognized Commerce base package found in composer.lock
+composer.lock exists but could not be read
+composer.lock could not be parsed as JSON
+```
+
+Any of these messages indicate that the tool cannot detect the base version and exits with code `1` and that no patch detection is performed.
 
 **Actions:**
 
@@ -49,15 +67,25 @@ If the [!DNL CVT] tool cannot fetch the latest patch registry file, check networ
 - `PATCH_REGISTRY_URL` points to an unavailable registry or is not a valid HTTPS URL.
 - If the [!DNL CVT] tool cannot fetch the latest patch registry file, check network and cache settings:
 
-**Check:**
-
-- The network is unavailable.
-- The Adobe patch endpoint request times out.
-- `--no-cache` was used and the remote registry cannot be reached.
-
 >[!NOTE]
 >
 >If the registry file is missing or expired the tool downloads the latest registry from the remote host.
+
+**Warning messages:**
+
+The tool emits the following strings in the warnings output field for this scenario:
+
+```shell-session
+Remote registry fetch failed (HTTP 403). Check PATCH_REGISTRY_URL (if set) and network connectivity.
+Remote registry response was not valid JSON; ignoring.
+Could not load remote registry. Using cached registry (3 hours old). CVE coverage may be incomplete.
+Patch registry could not be loaded.
+Could not fetch remote registry and --no-cache was set; aborting.
+```
+
+The stale cache message includes the actual age in hours, for example, `(3 hours old)`.
+
+The `patch registry could not be loaded` and `could not fetch remote registry` warnings indicate that the tool exited without running patch detection.
 
 **Actions:**
 
@@ -79,6 +107,21 @@ If the [!DNL CVT] tool cannot test one or more applicable patches, check patch-d
 - SHA-256 verification fails for a downloaded patch diff.
 - The [!DNL CVT] tool cannot write to `var/patch_metadata/.patch_diffs/`.
 
+**Warning messages:**
+
+The tool emits the following strings in the warnings output field for this scenario:
+
+```shell-session
+Patch 247p9-2026-05-001-EE requires authentication. Set credentials via COMPOSER_AUTH or auth.json.
+Could not fetch patch 247p9-2026-05-001-EE (HTTP 401). Check credentials (COMPOSER_AUTH / auth.json).
+Could not fetch patch 247p9-2026-05-001-EE (HTTP 404).
+Could not fetch or verify patch 247p9-2026-05-001-EE. Check network connectivity and credentials (COMPOSER_AUTH / auth.json).
+Could not fetch patch file for 247p9-2026-05-001-EE.
+SHA-256 verification failed for patch 247p9-2026-05-001-EE; discarding download.
+```
+
+The patch ID in each message is the actual registry entry ID, for example `247p9-2026-05-001-EE`. When SHA-256 verification fails, the tool discards the cached copy and will attempt a fresh download on the next run. No manual cache cleanup is needed.
+
 **Actions:**
 
 - Confirm network connectivity and retry the command.
@@ -96,6 +139,23 @@ If the report contains unexpected `missing_patches` or `unknown_patches` values,
 - A component-specific patch, such as Adobe Commerce business-to-business (B2B) or Adobe Commerce Page Builder, is missing.
 - `composer.lock` reports an installed component version that requires the patch.
 - A patch diff is unavailable or the detection result is inconclusive.
+
+**Warning messages:**
+
+The tool emits the following strings in the warnings output field for this scenario:
+
+```shell-session
+No patches found in registry for installed component versions (CE=2.4.7-p9)
+No file_name or sha256 for 247p9-2026-05-001-EE
+Registry entry '247p9-2026-05-001-EE' requires unknown patch '247p9-2026-04-001-EE'; skipping.
+descendant diffs unavailable for 247p9-2026-06-001-EE; dry-run for 247p9-2026-05-001-EE may be inaccurate
+Failed to reverse-apply 247p9-2026-06-001-EE when preparing dry-run for 247p9-2026-05-001-EE; result may be inaccurate
+Failed to forward-apply prerequisite 247p9-2026-04-001-EE when preparing dry-run for 247p9-2026-05-001-EE; result may be inaccurate
+```
+
+When you encounter `may be innaccurate` in a warning, the dry-run check still runs, but with reduced confidence. The patch could still be categorized in `applied_patches` or `missing_patches`, not necessarily `unknown_patches`.
+
+For unknown patches specifically, `var/log/patch_status.log` records the raw patch dry run output (forward and reverse), which indicate which files and chunks failed to match.
 
 **Actions:**
 

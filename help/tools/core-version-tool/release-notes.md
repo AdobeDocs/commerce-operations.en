@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Core Version Tool] Release Notes'
-description: Learn about [!DNL Core Version Tool] releases, including new patch-status reporting, CVE protection status, CSV output, and cache behavior.
+title: '[!DNL Commerce Version Tool] Release Notes'
+description: Learn about [!DNL Commerce Version Tool] releases, including new patch-status reporting, CVE protection status, CSV output, and cache behavior.
 feature: Release Notes
 hide: true
 ---
-# [!DNL Core Version Tool] release notes
+# [!DNL Commerce Version Tool] release notes
 
-These release notes describe updates for [!DNL Core Version Tool] ([!DNL CVT]).
+These release notes describe updates for [!DNL Commerce Version Tool] ([!DNL CVT]).
 
 ## Version 1.0.0 — June 2026 {#version-1-0-0}
 

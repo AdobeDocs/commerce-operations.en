@@ -1,11 +1,11 @@
 ---
 title: Generate a Patch-Status Report
-description: Learn how to use the [!DNL Core Version Tool] to generate Adobe Commerce patch-status reports in JSON or CSV format.
+description: Learn how to use the [!DNL Commerce Version Tool] to generate Adobe Commerce patch-status reports in JSON or CSV format.
 hide: true
 ---
 # Generate a patch-status report
 
-Use [!DNL Core Version Tool] ([!DNL CVT]) to generate a patch-status report for an Adobe Commerce installation. The report identifies applied, missing, and unknown monthly security patches and returns JSON output by default.
+Use [!DNL Commerce Version Tool] ([!DNL CVT]) to generate a patch-status report for an Adobe Commerce installation. The report identifies applied, missing, and unknown monthly security patches and returns JSON output by default.
 
 ## Prerequisites
 
