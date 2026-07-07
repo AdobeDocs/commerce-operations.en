@@ -34,12 +34,12 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACP2E-4194** (for Adobe Commerce and Magento Open Source >=2.4.7-p10 <2.4.8 || >=2.4.8-p5 <2.4.9) - Fixes the issue where GraphQL responses return incorrect HTTP status codes for invalid, unauthorized, or malformed requests.
 * **ACP2E-4547** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where an admin user cannot use 'Add Products by SKU' in Admin to add products from the standard catalog to a negotiable quote for a company assigned to a customer group that is not linked to a shared catalog.
 * **ACP2E-4593** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where the CMS page displayed for website restrictions can be incorrect on secondary websites in multi-website deployments.
-* **ACP2E-4682** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where visiting a Storefront page that checks the quote isActive status creates empty quote records each time the page is loaded.
+* **ACP2E-4682** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where visiting a storefront page that checks the quote `isActive` status creates empty quote records each time the page is loaded.
 * **ACP2E-4695** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the catalog rule indexer consumes excessive memory and fails to complete, causing instability and out-of-memory errors.
 * **ACP2E-4698** (for Adobe Commerce and Magento Open Source >=2.4.7-p9 <2.4.8 || >=2.4.8-p4 <2.4.9) - Fixes the issue where editing an image again in Page Builder text content can save an absolute media URL instead of preserving a portable media directive.
 * **ACP2E-4748** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue where reward points expiration can process slowly on stores with a large reward points history, causing delays in expiring reward points.
 * **ACP2E-4797** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where entering 4-byte Unicode characters in WYSIWYG editor or Page Builder content in the Admin is incorrectly blocked even when the database is configured to support utf8mb4.
-* **ACP2E-4799** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the 'requisition_lists GraphQL' query returns a 'total_count' value that reflects only the number of items on the current page instead of the total number of requisition lists that match the query criteria.
+* **ACP2E-4799** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the 'requisition_lists` GraphQL query returns a 'total_count' value that reflects only the number of items on the current page instead of the total number of requisition lists that match the query criteria.
 * **ACP2E-4805** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where checkout API requests can become significantly slower for configurable products with many child products when the first salable child product appears late in the list.
 * **ACP2E-4840** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the quantity value requested in the 'products' GraphQL query returns null.
 * **ACP2E-4870** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where Product Alerts email notifications ignore store view email settings.
@@ -52,7 +52,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.81 {#v1-1-81}
 
-* **ACP2E-4300** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where changing a customer group in the Admin doesn't update catalog permissions on the Storefront, causing the catalog and cart to reflect outdated permissions.
+* **ACP2E-4300** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where changing a customer group in the Admin doesn't update catalog permissions on the storefront, causing the catalog and cart to reflect outdated permissions.
 * **ACP2E-4401** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the Scheduled Update Preview of the Home Page link with configurable products redirects to the maintenance page instead of displaying the product list.
 * **ACP2E-4395** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where the Gift Card API product creation does not display an error when no amounts are specified for the global scope.
 * **ACP2E-4468** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where Admin users with website scope permissions can't edit banner content.
@@ -73,11 +73,11 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACP2E-4488** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where saving or editing products in Admin is slow for products with large attribute sets.
 * **ACP2E-4493** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where the Sales Order Archive grid displays an incorrect order status when asynchronous indexing is enabled.
 * **ACP2E-4496** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the analytics cron job causes performance degradation during execution, resulting in improved overall system performance.
-* **ACP2E-4533** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where placeholder images do not load on the Storefront when a store code is included in the URL.
+* **ACP2E-4533** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where placeholder images do not load on the storefront when a store code is included in the URL.
 * **ACP2E-4552** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where the company status is not returned in the GraphQL response.
 * **ACP2E-4610** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the sales_clean_quotes cron job has performance issues.
 * **ACP2E-4615** (for Adobe Commerce >=2.4.4-p13 <2.4.4-p17 || >=2.4.4-p18 <2.4.5 || >=2.4.5-p12 <2.4.6 || >=2.4.6-p10 <2.4.7 || >=2.4.7-p5 <2.4.9) - Fixes the issue where online order refunds fail with a PayPal error stating "PayPal gateway rejects the request. Internal Error.".
-* **ACP2E-4626** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where some Storefront JavaScript files are requested and executed twice, causing intermittent duplicate loads and unstable behavior.
+* **ACP2E-4626** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where some storefront JavaScript files are requested and executed twice, causing intermittent duplicate loads and unstable behavior.
 * **ACP2E-4653** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the Cart Price Rule condition attribute scope for "Category (Parent Only)" and "Category (Children Only)" is not exposed when retrieving or updating rules through the REST API.
 * **ACP2E-4808** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.10) - Fixes the issue where the Weight attribute on the storefront product page displays only a raw numeric value in the "Additional Information" or "More Information" section without the configured unit of measurement (lbs or kgs).
 * **ACP2E-4156** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where shipping address validation in the REST API does not adhere to the attribute configuration defined in Admin.
