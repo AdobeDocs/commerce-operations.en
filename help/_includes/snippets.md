@@ -1,5 +1,17 @@
 # Snippets
 
+## Commerce on Cloud cache configuration note with reference {#cloud-cache-config}
+
+>[!NOTE]
+>
+>For Adobe Commerce on Cloud projects, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for cache configuration instructions. Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) for supported cache services by release.
+
+## Commerce on Cloud Varnish configuration note with reference {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
+
 ## Adobe service version support {#supported-versions-only}
 
 >[!NOTE]

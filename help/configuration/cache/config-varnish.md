@@ -3,10 +3,33 @@ title: Configure and use Varnish
 description: Learn how to configure and use Varnish caching for Adobe Commerce. Discover HTTP acceleration, file storage, and performance optimization techniques.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Configure and use Varnish
 
-[Varnish Cache](https://www.varnish.org/) is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
+[Varnish Cache](https://www.varnish.org/) is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like nginx, Varnish was designed for use exclusively with the HTTP protocol.
 
 [System requirements](../../installation/system-requirements.md) lists the supported versions of Varnish.
 
@@ -47,9 +70,7 @@ The process can be summarized as follows:
 
 >[!NOTE]
 >
->- Except where noted, you must enter all commands discussed in this topic as a user with `root` privileges.
->
->- This topic is written for Varnish on CentOS and Apache 2.4. If you are setting up Varnish in a different environment, some commands may be different. Consult Varnish documentation for more information.
+>Except where noted, you must enter all commands discussed in this topic as a user with `root` privileges.
 
 ## Known issues
 
@@ -82,11 +103,10 @@ We know of the following issues with Varnish:
 
 ## Overview of Varnish caching
 
-Varnish caching works with Commerce using:
+In a typical nginx-based deployment, Varnish accepts incoming HTTP traffic on port 80 and forwards requests to nginx on a backend port such as 8080. Adobe Commerce provides `nginx.conf.sample` for the origin web server and generates the Varnish `default.vcl` from the Admin.
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) from the Magento 2 GitHub repository
-- `.htaccess` distributed configuration file for Apache provided with Commerce
-- `default.vcl` configuration for Varnish generated using the [Admin](../cache/configure-varnish-commerce.md)
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) provided with Adobe Commerce
+- `default.vcl` generated from the [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -108,7 +128,7 @@ This section uses a browser inspector to show how assets are delivered to the br
 
 The following figure shows an example using a browser inspector:
 
-![The first time a request is made for a cacheable object, Varnish delivers it to the browser](../../assets/configuration/varnish-apache-first-visit.png)
+![The first time a request is made for a cacheable object, Varnish delivers it to the browser](../../assets/configuration/varnish-webserver-first-visit.png)
 
 The preceding example shows a request for the storefront main page (`m2_ce_my`). CSS and JavaScript assets are cached on the client browser.
 
@@ -120,7 +140,7 @@ The preceding example shows a request for the storefront main page (`m2_ce_my`).
 
 If the same browser requests the same page again, these assets are delivered from the local browser cache, as the following figure shows.
 
-![The next time the same object is requested, assets load from the local browser cache](../../assets/configuration/varnish-apache-second-visit.png)
+![The next time the same object is requested, assets load from the local browser cache](../../assets/configuration/varnish-webserver-second-visit.png)
 
 Note the difference in response time between the first and second request. Again, static assets have a 200 (OK) response code because they are delivered from local cache for the first time.
 
