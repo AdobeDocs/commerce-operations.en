@@ -22,11 +22,11 @@ color: red
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
-- [!DNL Core Version Tool] {#core-version-tool}
-    - {hide-from-toc} [Introduction](core-version-tool/intro.md)
-    - {hide-from-toc} [Generate a patch-status report](core-version-tool/generate-report.md)
-    - {hide-from-toc} [Troubleshooting](core-version-tool/troubleshooting.md)
-    - {hide-from-toc} [Release notes](core-version-tool/release-notes.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+    - {hide-from-toc} [Introduction](commerce-version-tool/intro.md)
+    - {hide-from-toc} [Generate a patch-status report](commerce-version-tool/generate-report.md)
+    - {hide-from-toc} [Troubleshooting](commerce-version-tool/troubleshooting.md)
+    - {hide-from-toc} [Release notes](commerce-version-tool/release-notes.md)
 - CAPS {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
