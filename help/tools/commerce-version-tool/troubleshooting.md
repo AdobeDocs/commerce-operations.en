@@ -33,13 +33,13 @@ If the [!DNL CVT] tool cannot find the Adobe Commerce base version, check these 
 **Check:**
 
 - `composer.lock` is missing.
-- `composer.lock` does not match the installed Adobe Commerce codebase.
-- Are you running the `patch-status` command outside the Adobe Commerce project root?
-- The installed Adobe Commerce version is not represented in the patch registry file.
+- The `patch-status` command is running outside the Adobe Commerce project root (or `--root` points to the wrong path), so `composer.lock` isn't found.
+- `composer.lock` exists but isn't valid JSON, or can't be read.
+- `composer.lock` doesn't contain any of the recognized base packages (`magento/product-enterprise-edition`, `magento/product-community-edition`, `magento/magento2-base`).
 
 **Warning messages:**
 
-The tool emits the following strings in the warnings output field for this scenario:
+If `composer.lock` exists but is unreadable, unparseable, or does not contain a recognized base package, the tool emits one of the following strings in the warnings output field:
 
 ```shell-session
 No recognized Commerce base package found in composer.lock
@@ -47,13 +47,39 @@ composer.lock exists but could not be read
 composer.lock could not be parsed as JSON
 ```
 
-Any of these messages indicate that the tool cannot detect the base version and exits with code `1` and that no patch detection is performed.
+>[!NOTE]
+>
+> If `composer.lock` is missing entirely, the tool reports `base_version: "unknown"` with **no warning message at all**. Always check `base_version` in the output directly. Do not rely on the presence of a warning to find this issue.
+
+Any of the previously mentioned conditions indicate the tool cannot detect the base version. The tool exits with code `1` and no patch detection is performed.
 
 **Actions:**
 
-- Run the `patch-status` command from the Adobe Commerce project root.
-- Confirm that `composer.lock` is present and current.
-- Verify that the installed Adobe Commerce version is represented in the patch registry file.
+- Run the `patch-status` command from the [!DNL Adobe Commerce] project root, or pass the correct `--root`.
+- Confirm that `composer.lock` is present, current, and valid JSON.
+- Confirm the installation uses a supported Adobe Commerce edition so `composer.lock` contains one of the recognized base packages.
+
+### No patches apply to the installed version
+
+If [!DNL CVT] reports a valid `base_version` but the `applied_patches`, `missing_patches`, and `unknown_patches` are empty, then the installed version is not covered by the current patch registry.
+
+**Check:**
+
+- The installed [!DNL Adobe Commerce] version is not represented in the patch registry file. For example, a release newer than the registry's latest entries.
+
+**Warning messages:**
+
+```shell-session
+No patches found in registry for installed component versions (CE=2.4.7-p9)
+```
+
+This warning is different from "base version cannot be detected". The `base_version` is correct, the tool exits `0`, and there is nothing in the registry to compare against.
+
+**Actions:**
+
+- Confirm `base_version` in the output is what you expect.
+- Confirm `registry_source` is `remote` or a recent `cache`, not a stale one.
+- Contact Adobe Commerce support if the version should already be covered.
 
 ### Patch registry cannot be fetched
 
@@ -145,7 +171,6 @@ If the report contains unexpected `missing_patches` or `unknown_patches` values,
 The tool emits the following strings in the warnings output field for this scenario:
 
 ```shell-session
-No patches found in registry for installed component versions (CE=2.4.7-p9)
 No file_name or sha256 for 247p9-2026-05-001-EE
 Registry entry '247p9-2026-05-001-EE' requires unknown patch '247p9-2026-04-001-EE'; skipping.
 descendant diffs unavailable for 247p9-2026-06-001-EE; dry-run for 247p9-2026-05-001-EE may be inaccurate
@@ -156,6 +181,8 @@ Failed to forward-apply prerequisite 247p9-2026-04-001-EE when preparing dry-run
 When you encounter `may be inaccurate` in a warning, the dry-run check still runs, but with reduced confidence. The patch could still be categorized in `applied_patches` or `missing_patches`, not necessarily `unknown_patches`.
 
 For unknown patches specifically, `var/log/patch_status.log` records the raw patch dry run output (forward and reverse), which indicate which files and chunks failed to match.
+
+If you encounter a "No patches found" warning, refer to [no patches apply to the installed version](#no-patches-apply-to-the-installed-version) for guidance.
 
 **Actions:**
 
