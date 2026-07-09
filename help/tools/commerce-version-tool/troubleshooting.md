@@ -20,7 +20,7 @@ If the [!DNL CVT] tool does not return the expected patch-status report:
 
 >[!TIP]
 >
-> The log file is most helpful when you need to understand why a patch could not be classified. For each unknown patch, the log records the commands the tool tried and any errors or failures it encountered. 
+> The log file is most helpful when you need to understand why a patch could not be classified. For each unknown patch, the log records the raw output of the forward and reverse dry-run attempts, including any errors or hunk failures.
 >
 > If you have issues fetching the registry or patch files, check the warnings field in the report. Those details do not appear in the log.
 
@@ -120,7 +120,7 @@ Could not fetch patch file for 247p9-2026-05-001-EE.
 SHA-256 verification failed for patch 247p9-2026-05-001-EE; discarding download.
 ```
 
-The patch ID in each message is the actual registry entry ID, for example `247p9-2026-05-001-EE`. When SHA-256 verification fails, the tool discards the cached copy and will attempt a fresh download on the next run. No manual cache cleanup is needed.
+The patch ID in each message is the actual registry entry ID, for example `247p9-2026-05-001-EE`. `SHA-256 verification failed` means a freshly downloaded patch file did not match its expected checksum. The tool discards it without caching and classifies the patch `unknown` for this run. A corrupted *local* cache entry is detected and silently re-fetched within the same run with no warning. In both cases, no manual cache cleanup is needed.
 
 **Actions:**
 
@@ -153,7 +153,7 @@ Failed to reverse-apply 247p9-2026-06-001-EE when preparing dry-run for 247p9-20
 Failed to forward-apply prerequisite 247p9-2026-04-001-EE when preparing dry-run for 247p9-2026-05-001-EE; result may be inaccurate
 ```
 
-When you encounter `may be innaccurate` in a warning, the dry-run check still runs, but with reduced confidence. The patch could still be categorized in `applied_patches` or `missing_patches`, not necessarily `unknown_patches`.
+When you encounter `may be inaccurate` in a warning, the dry-run check still runs, but with reduced confidence. The patch could still be categorized in `applied_patches` or `missing_patches`, not necessarily `unknown_patches`.
 
 For unknown patches specifically, `var/log/patch_status.log` records the raw patch dry run output (forward and reverse), which indicate which files and chunks failed to match.
 
@@ -175,7 +175,7 @@ If the [!DNL CVT] tool completes but the expected JSON or CSV output is missing,
 - Use `--format=csv` to generate CSV output.
 - Confirm that the command output is not redirected or discarded by the shell, script, or scanner that runs the [!DNL CVT] tool.
 - Check `stderr` for `patch-status:` error messages.
-- Write output to a directory where the current user has permission.
+- If redirecting output to a file, for example `patch-status > report.json`, confirm the shell has write permission for that destination. The tool only writes to `stdout`.
 - Confirm that the [!DNL CVT] tool can write to `var/log/patch_status.log`.
 - Re-run the command and capture terminal output for troubleshooting.
 
