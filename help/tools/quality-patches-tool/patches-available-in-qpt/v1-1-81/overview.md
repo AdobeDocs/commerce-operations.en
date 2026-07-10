@@ -35,6 +35,5 @@ QPT v1.1.81 includes the following patches:
 1. **ACP2E-4709**: Fixes an issue where CMS pages fail to save when using Page Builder.
 1. **ACP2E-4786**: Fixes the issue where exporting products fails to write files when the AWS S3 remote storage is configured, due to incorrect path resolution in the storage driver.
 1. **ACP2E-4801**: Fixes the issue where updating the bundle product option quantities via the [!UICONTROL Configure] button in a negotiable quote from the [!UICONTROL Admin] isn't applied, and changes are discarded.
-1. **ACP2E-4815**: Fixes multiple GraphQL issues that caused PHP exceptions in logs, corrects the association of orders with customer accounts created post-order via GraphQL, and aligns responses with GraphQL over HTTP specifications.
 
 Use the menu on the left to navigate to a specific patch page.
