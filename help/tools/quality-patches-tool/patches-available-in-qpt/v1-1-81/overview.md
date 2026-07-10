@@ -26,7 +26,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.81 includes the following patches:
 
-1. **ACP2E-4300**: Fixes the issue where changing a customer group in the [!UICONTROL Admin] doesn't update catalog permissions on the Storefront, causing the catalog and cart to reflect outdated permissions.
+1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: Fixes the issue where changing a customer group in the Admin doesn't update catalog permissions on the Storefront, causing the catalog and cart to reflect outdated permissions.
 1. **ACP2E-4401**: Fixes the issue where the [!UICONTROL Scheduled Update Preview] of the Home Page link with configurable products redirects to the maintenance page instead of displaying the product list.
 1. **ACP2E-4395**: Giftcard API product creation will now display an error if no amounts are specified for the global scope.
 1. **ACP2E-4468**: Fixes the issue where [!UICONTROL Admin] users with website scope permissions can't edit banner content.
