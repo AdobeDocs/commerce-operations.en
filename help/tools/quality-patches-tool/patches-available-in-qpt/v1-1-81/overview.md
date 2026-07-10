@@ -32,9 +32,9 @@ QPT v1.1.81 includes the following patches:
 1. **ACP2E-4468**: Fixes the issue where [!UICONTROL Admin] users with website scope permissions can't edit banner content.
 1. **ACP2E-4630**: Fixes the issue where long product names with custom options overlap adjacent columns or items in multi-page Invoice, Shipment, Credit Memo, and Return PDFs after page breaks, making line items unreadable.
 1. **ACP2E-4680**: Fixes the issue where non-salable or deleted products disappear from finalized negotiable quotes.
-1. **ACP2E-4709**: Fixes an issue where CMS pages failed to save when using Page Builder.
+1. **ACP2E-4709**: Fixes an issue where CMS pages fail to save when using Page Builder.
 1. **ACP2E-4786**: Fixes the issue where exporting products fails to write files when the AWS S3 remote storage is configured, due to incorrect path resolution in the storage driver.
 1. **ACP2E-4801**: Fixes the issue where updating the bundle product option quantities via the [!UICONTROL Configure] button in a negotiable quote from the [!UICONTROL Admin] isn't applied, and changes are discarded.
-1. **ACP2E-4815**: Fixes multiple GraphQL issues that caused PHP exceptions in logs, correct association of orders with customer accounts created post-order via GraphQL, and alignment of responses with GraphQL over HTTP specifications.
+1. **ACP2E-4815**: Fixes multiple GraphQL issues that caused PHP exceptions in logs, corrects the association of orders with customer accounts created post-order via GraphQL, and aligns responses with GraphQL over HTTP specifications.
 
 Use the menu on the left to navigate to a specific patch page.
