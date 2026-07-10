@@ -1020,6 +1020,7 @@ feature: Configuration
            - [ACP2E-4156: [!DNL REST] API shipping address validation ignores Admin attribute configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
         - v1.1.81 {#v1-1-81}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+           - [ACP2E-4468: Website-scoped Admin users can't save Dynamic Blocks in Page Builder](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
