@@ -34,6 +34,6 @@ QPT v1.1.81 includes the following patches:
 1. **ACP2E-4680**: Fixes the issue where non-salable or deleted products disappear from finalized negotiable quotes.
 1. **ACP2E-4709**: Fixes an issue where CMS pages fail to save when using Page Builder.
 1. **ACP2E-4786**: Fixes the issue where exporting products fails to write files when the AWS S3 remote storage is configured, due to incorrect path resolution in the storage driver.
-1. **ACP2E-4801**: Fixes the issue where updating the bundle product option quantities via the [!UICONTROL Configure] button in a negotiable quote from the [!UICONTROL Admin] isn't applied, and changes are discarded.
+1. **[ACP2E-4801](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)**: Fixes the issue where updating the bundle product option quantities via the Configure button in a negotiable quote from the Admin isn't applied, and changes are discarded.
 
 Use the menu on the left to navigate to a specific patch page.
