@@ -2,7 +2,6 @@
 title: '[!DNL Commerce Version Tool] Release Notes'
 description: Learn about [!DNL Commerce Version Tool] releases, including new patch-status reporting, CVE protection status, CSV output, and cache behavior.
 feature: Release Notes
-hide: true
 TQID: 'https://experienceleague.adobe.com/38I3U5y9rmurP5gVhalfUq7DlcUb-JpF5eUam1nwEyk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

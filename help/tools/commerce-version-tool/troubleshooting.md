@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Commerce Version Tool] Troubleshooting'
 description: Learn how to troubleshoot [!DNL Commerce Version Tool] Composer detection, internal dry-run checks, registry cache, JSON output, and audit log issues.
-hide: true
 TQID: 'https://experienceleague.adobe.com/JwRSy7pfM89WoifYUzTVPhR-WrDIvj2A2B8SaEnmyWM'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

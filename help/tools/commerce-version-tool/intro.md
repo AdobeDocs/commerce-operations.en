@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Commerce Version Tool]'
 description: Learn about the [!DNL Commerce Version Tool] for Adobe Commerce and use vendor/bin/patch-status to check monthly security patch status.
-hide: true
 TQID: 'https://experienceleague.adobe.com/9lDQtCrcCSIFjt3jUJkqCo-rMlIhhy3tPTtPyT4wt1Q'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

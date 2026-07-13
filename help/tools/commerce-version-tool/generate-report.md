@@ -1,7 +1,6 @@
 ---
 title: Generate a Patch-Status Report
 description: Learn how to use the [!DNL Commerce Version Tool] to generate Adobe Commerce patch-status reports in JSON or CSV format.
-hide: true
 TQID: 'https://experienceleague.adobe.com/-lC-20YMpbTM3tTZjbBO5zD5gb9n7cRah5Ycy8wQoyw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
