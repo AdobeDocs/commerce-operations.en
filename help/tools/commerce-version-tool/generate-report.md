@@ -90,16 +90,8 @@ vendor/bin/patch-status
   ],
   "unknown_patches": [],
   "vulnerability_status": {
-    "CVE-2026-12354": {
-      "status": "PROTECTED",
-      "fixed_in": "247p9-2026-05-001-CE",
-      "area": "CE"
-    },
-    "CVE-2026-67890": {
-      "status": "VULNERABLE",
-      "fixed_in": "247p9-2026-06-001-CE",
-      "area": "CE"
-    }
+    "CVE-2026-12354": { "status": "PROTECTED" },
+    "CVE-2026-67890": { "status": "VULNERABLE" }
   },
   "registry_source": "remote",
   "warnings": []
