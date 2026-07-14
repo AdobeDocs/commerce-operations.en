@@ -46,7 +46,7 @@ php vendor/bin/patch-status
 To check a different Adobe Commerce installation, use the `--root` option:
 
 ```bash
-vendor/bin/patch-status --root=/path/to/commerce
+php vendor/bin/patch-status --root=/path/to/commerce
 ```
 
 ## Command options
@@ -100,7 +100,7 @@ php vendor/bin/patch-status
 To generate CSV output, use the `--format=csv` option:
 
 ```bash
-vendor/bin/patch-status --format=csv
+php vendor/bin/patch-status --format=csv
 ```
 
 CSV output produces one row per CVE and is suitable for spreadsheets, scanners, dashboards, and compliance tooling.
