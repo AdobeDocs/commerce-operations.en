@@ -2,6 +2,8 @@
 user-guide-title: Tools
 user-guide-description: Learn about the different tools you can use with Adobe Commerce, their uses, the installation process, and how to get access.
 feature: Configuration
+nduge: true
+color: red
 ---
 
 # Tools {#tools}
@@ -20,6 +22,11 @@ feature: Configuration
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+    - [Introduction](commerce-version-tool/intro.md)
+    - [Generate a patch-status report](commerce-version-tool/generate-report.md)
+    - [Troubleshooting](commerce-version-tool/troubleshooting.md)
+    - [Release notes](commerce-version-tool/release-notes.md)
 - CAPS {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
