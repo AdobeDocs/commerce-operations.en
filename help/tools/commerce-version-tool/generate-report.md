@@ -40,13 +40,13 @@ The [!DNL CVT] tool checks `COMPOSER_AUTH`, the Adobe Commerce project `auth.jso
 From the Adobe Commerce project root, run:
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 To check a different Adobe Commerce installation, use the `--root` option:
 
 ```bash
-vendor/bin/patch-status --root=/path/to/commerce
+php vendor/bin/patch-status --root=/path/to/commerce
 ```
 
 ## Command options
@@ -68,7 +68,7 @@ JSON is the default output format. CSV output is supported for scanners, dashboa
 The following sample shows default JSON output.
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 ```json
@@ -100,7 +100,7 @@ vendor/bin/patch-status
 To generate CSV output, use the `--format=csv` option:
 
 ```bash
-vendor/bin/patch-status --format=csv
+php vendor/bin/patch-status --format=csv
 ```
 
 CSV output produces one row per CVE and is suitable for spreadsheets, scanners, dashboards, and compliance tooling.
