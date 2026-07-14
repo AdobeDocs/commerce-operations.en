@@ -2,8 +2,52 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 26 17:41:06 2026
+updated: Mon Jul 13 15:49:49 2026
 entries:
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.81](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2065
+  merge_commit: 2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4493:
+    Sales Order Archive grid shows incorrect order status when Asynchronous Indexing
+    enabled](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 6, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2032
+  merge_commit: 2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4239:
+    Admin Grid Date filters return no results due to Timezone mismatch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 2, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2028
+  merge_commit: 58f157a5f863973df723a6bce5844883f2aa12f4
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4481:
+    Bundle product saleability recalculated incorrectly after order cancel](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2030
+  merge_commit: ccea0456268862ba11e77ef16318bc8b2d76b0b1
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4615:
     PayPal online order refunds fail with error "PayPal gateway rejects the request.
     Internal Error."](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615).'
