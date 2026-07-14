@@ -192,7 +192,7 @@ Starting with Commerce 2.4.9, you can use the Symfony Cache-based L2 cache imple
 
 >[!NOTE]
 >
->This functionality is currently available for Adobe Commerce On Premises 2.4.9 customers only. And will be enabled for Adobe Commerce On Cloud later in July 2026."
+>This functionality is currently available for Adobe Commerce On Premises 2.4.9 customers only. It will be enabled for Adobe Commerce on Cloud later in July 2026.
 
 ### Benefits of Symfony L2 cache
 
@@ -340,5 +340,3 @@ The `symfony_l2` backend also supports Valkey as the remote backend:
 For detailed configuration options, see:
 - [Redis cache configuration with Symfony Cache](redis-pg-cache.md)
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
-test
-test
