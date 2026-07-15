@@ -1028,6 +1028,8 @@ color: red
         - v1.1.81 {#v1-1-81}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
            - [ACP2E-4801: Bundle product option quantities don't update when reconfiguring a negotiable quote in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
+           - [ACP2E-4630: Long product names overlap adjacent columns in multi-page sales PDFs after page breaks](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
+           - [ACP2E-4680: Non-salable products disappear from finalized negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
            - [ACP2E-4300: Storefront catalog permissions not updating after Admin customer group change](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
