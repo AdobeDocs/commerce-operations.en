@@ -4,6 +4,96 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### July 16, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801: Bundle product option quantities don't update when reconfiguring a negotiable quote in Admin</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786: Product export fails when AWS S3 remote storage is configured</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### July 15, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630: Long product names overlap adjacent columns in multi-page sales PDFs after page breaks</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5581e6f7a507bb83a3fc0fd7229239137b15acd7">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### July 14, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: Storefront catalog permissions not updating after Admin customer group change</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680: Non-salable products disappear from finalized negotiable quotes</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro">Commerce Version Tool documentation</a> with availability, report generation, JSON and CSV output, troubleshooting, and release notes for monthly Adobe Commerce security patch-status reporting.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 10, 2026
 
 <table style="table-layout:auto;">
