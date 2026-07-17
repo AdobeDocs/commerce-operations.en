@@ -13,13 +13,13 @@ Generates data for a news digest at Best Practices. The default timeframe is sin
 **Usage:**
 
 ```sh
-rake whatsnew_bp
+bundle exec rake whatsnew_bp
 ```
 
 **With `since` argument:**
 
 ```sh
-rake whatsnew_bp since="jul 4"
+bundle exec rake whatsnew_bp since="jul 4"
 ```
 
 ### `get_released_versions`
@@ -29,7 +29,7 @@ Gets the last 10 released versions from the `magento/magento2` repository. Requi
 **Usage:**
 
 ```sh
-rake get_released_versions
+bundle exec rake get_released_versions
 ```
 
 **Output:** Generates `tmp/core-release.txt` with release tag names and dates.
@@ -41,7 +41,7 @@ Gets the date of the first merge into a specified branch. Requires [GitHub CLI](
 **Usage:**
 
 ```sh
-rake first_merge_date base=develop
+bundle exec rake first_merge_date base=develop
 ```
 
 **Arguments:**
@@ -53,13 +53,13 @@ rake first_merge_date base=develop
 To see all available rake tasks with their descriptions, use:
 
 ```sh
-rake --tasks
+bundle exec rake --tasks
 ```
 
 For more detailed information about a specific task, use:
 
 ```sh
-rake -T [task_name]
+bundle exec rake -T [task_name]
 ```
 
 ## Include relationships file format
