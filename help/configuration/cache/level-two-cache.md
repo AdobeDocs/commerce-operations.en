@@ -53,7 +53,7 @@ There are two L2 cache implementations available:
 
 >[!NOTE]
 >
->The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions earlier than 2.4.9, use [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
+>The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, Adobe recommends using [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
 
 Cache configuration instructions depend on your deployment type:
 
