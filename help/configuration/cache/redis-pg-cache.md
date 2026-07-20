@@ -239,6 +239,59 @@ Since it is a flag, you cannot disable it with a command. Manually set the confi
     ],
 ```
 
+## Performance optimization
+
+If you are using Symfony Cache, you can further optimize performance by configuring the Igbinary serializer, installing the igbinary PHP extension and phpredis extension, and enabling persistent connections.
+
+### Igbinary serializer
+
+The Igbinary serializer provides significant performance improvements over PHP's default serialization. It must be configured manually in `app/etc/env.php`:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary serialization
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
+            ]
+        ]
+    ]
+]
+```
+
+### Install the PHP Igbinary extension
+
+To use igbinary serialization, you must install the PHP Igbinary extension.
+
+**Using apt (recommended for Debian/Ubuntu)**:
+
+```bash
+sudo apt-get install php-igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+**Using pecl (alternative method)**:
+
+```bash
+sudo pecl install igbinary
+echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
+sudo phpenmod igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
 ### PHP Redis extension
 
 Use the native PHP Redis extension (`phpredis`) when your environment supports it:
@@ -263,6 +316,98 @@ echo "extension=redis.so" | sudo tee /etc/php/<version>/mods-available/redis.ini
 sudo phpenmod redis
 sudo systemctl restart php-fpm
 php -m | grep redis
+```
+
+**Performance comparison**:
+
+| Operation | Predis | phpredis | Improvement |
+|-----------|--------|----------|-------------|
+| Cache GET | 1-5ms | 0.5-2ms | 2-3x faster |
+| Cache SET | 2-6ms | 0.8-2.5ms | 2-3x faster |
+| Tag operations | 10-30ms | 3-10ms | 3-4x faster |
+
+### Persistent connections
+
+Persistent connections reuse existing Redis connections across requests, providing 5-15% faster cache operations. Configure in `app/etc/env.php`:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ]
+]
+```
+
+>[!IMPORTANT]
+>
+>Use a unique `persistent_id` for each cache type to prevent connection conflicts.
+
+### Complete optimized configuration
+
+Here's a production-ready Redis configuration combining all performance optimizations:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '1',
+                'compression_lib' => 'gzip',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+                'use_lua' => '1',
+                'use_lua_on_gc' => '1',
+                'preload_keys' => [
+                    'b0b_EAV_ENTITY_TYPES',
+                    'b0b_GLOBAL_PLUGIN_LIST',
+                    'b0b_DB_IS_UP_TO_DATE',
+                    'b0b_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '0',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ],
+    'allow_parallel_generation' => false
+]
 ```
 
 ## Verify the Redis connection

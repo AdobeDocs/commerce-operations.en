@@ -192,7 +192,7 @@ Starting with Commerce 2.4.9, you can use the Symfony Cache-based L2 cache imple
 
 >[!NOTE]
 >
->This functionality is currently available for Adobe Commerce on premises 2.4.9 customers only. It will be enabled for Adobe Commerce on cloud later in July 2026.
+>This functionality is currently available for Adobe Commerce On Premises 2.4.9 customers only. It will be enabled for Adobe Commerce on Cloud later in July 2026.
 
 ### Benefits of Symfony L2 cache
 
