@@ -192,7 +192,7 @@ The following code shows an example configuration:
 
 ## Modern Symfony L2 cache implementation
 
-In Commerce versions 2.4.9+, 2.4.8-p5+, 2.4.7-p9+, 2.4.6-p14+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache.  The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
+In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache.  The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
