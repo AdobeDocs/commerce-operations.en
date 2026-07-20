@@ -70,29 +70,31 @@ For environment configuration details, see [`REDIS_BACKEND`](https://experiencel
 
 ### Configure [!DNL Symfony] L2 cache
 
-Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. On Adobe Commerce on cloud infrastructure, configure this backend only after your project uses an `ece-tools` version that supports `symfony_l2` in `.magento.env.yaml`.
-
-The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. It does not replace Redis or Valkey as the remote cache service. For Adobe Commerce 2.4.9, configure `symfony_l2` with Valkey as the remote backend.
+Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. It does not replace Redis or Valkey as the remote cache service.
 
 >[!IMPORTANT]
 >
->Until `ece-tools` support is available for your project, do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
->
->Set the backend variable value to `symfony_l2`. The ECE-Tools package (`ece-tools`) recognizes only this value for the Symfony L2 cache backend; no other value enables this feature.
->
->ECE Tools package version 2002.2.12 and later, supports the Symfony L2 cache backend. To use it, configure the `VALKEY_BACKEND` variable.
+>Do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
 
-Setting the `VALKEY_BACKEND`  deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
+To use Symfony L2 cache for Adobe Commerce 2.4.9, complete these steps:
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-```
+- Ensure that the cloud project is using [ECE Tools package v2002.1.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
+
+- Set the deployment variable in the `.magento.env.yaml` file `VALKEY_BACKEND`=`symfony_l2`.
+
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
 
 >[!CAUTION]
 >
->Do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. `ece-tools` derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
+>When updating the `.magento.env.yaml` configuration, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. `ece-tools` derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
+
+Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
+
+
 
 
 ### L2 cache memory sizing for Adobe Commerce Cloud
