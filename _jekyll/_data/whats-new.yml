@@ -2,8 +2,279 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 19 15:40:11 2026
+updated: Fri Jul 17 15:39:58 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4801:
+    Bundle product option quantities don''t update when reconfiguring a negotiable
+    quote in Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2076
+  merge_commit: 31872eee953126b52f1c13444dd46140edc879c6
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4786:
+    Product export fails when AWS S3 remote storage is configured](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2075
+  merge_commit: b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4630:
+    Long product names overlap adjacent columns in multi-page sales PDFs after page
+    breaks](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2072
+  merge_commit: 5581e6f7a507bb83a3fc0fd7229239137b15acd7
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4300:
+    Storefront catalog permissions not updating after Admin customer group change](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2066
+  merge_commit: 2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4680:
+    Non-salable products disappear from finalized negotiable quotes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2073
+  merge_commit: 1448b291e70cdf515872f019028c15bd703f80fe
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Added [Commerce Version Tool documentation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)
+    with availability, report generation, JSON and CSV output, troubleshooting, and
+    release notes for monthly Adobe Commerce security patch-status reporting.
+  versions: ''
+  type: new-topic
+  date: July 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2047
+  merge_commit: 43571d84d9a27ffa113ba4f3a8a08883602211f6
+  contributor: meker_adobe
+  labels:
+  - hold for release
+  - new-topic
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.81](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2065
+  merge_commit: 2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4493:
+    Sales Order Archive grid shows incorrect order status when Asynchronous Indexing
+    enabled](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 6, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2032
+  merge_commit: 2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4239:
+    Admin Grid Date filters return no results due to Timezone mismatch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 2, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2028
+  merge_commit: 58f157a5f863973df723a6bce5844883f2aa12f4
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4481:
+    Bundle product saleability recalculated incorrectly after order cancel](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2030
+  merge_commit: ccea0456268862ba11e77ef16318bc8b2d76b0b1
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4615:
+    PayPal online order refunds fail with error "PayPal gateway rejects the request.
+    Internal Error."](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2037
+  merge_commit: 056f30558d8d9f3e218f589e2819ec5d8d6274e3
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACSD-53502:
+    Add to Cart intermittently fails on iOS Safari due to New Relic script recursion](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2043
+  merge_commit: 95cfe4554c4501fa9526e0c8b0c039cf99228207
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4626:
+    Storefront JavaScript files loading twice causing duplicate loads and unstable
+    behavior](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2038
+  merge_commit: 55fad95c3110f8150097f410115d89299b9e681b
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4813:
+    USPS shipping methods unavailable or incorrect for multi-package orders](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2042
+  merge_commit: 94b45f953d8a91814fa7359369f976e0cbd94a36
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4610:
+    Slow execution of sales_clean_quotes cron](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2036
+  merge_commit: a7e34f7858dd74cf1c4702dfc877a793094ad042
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4488:
+    Slow Admin product save/edit for large attribute sets](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 25, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2031
+  merge_commit: ac57acc5c527f1c7cc7dbd3198f23e75f08fe207
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4496:
+    Analytics cron job degrades performance during execution](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 25, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2033
+  merge_commit: 0b7826459c116ef03a34f0a01e5db235294c3cb1
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4552:
+    GraphQL response doesn''t return company status](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 25, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2035
+  merge_commit: 6988b8b17bd1f2161e8fd8c7dd128a75c0023de8
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4808:
+    Product weight displays without unit of measurement on Storefront](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 24, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2040
+  merge_commit: 538221930434b21b92d587fd889e556564a0a45c
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4472:
+    Null quote created using the "Login as Customer" flow](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 24, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2029
+  merge_commit: 49b49560901525aa9e635eb0ea6542339270cabf
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4653:
+    Cart Price Rule category scope conditions missing from REST API](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 24, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2039
+  merge_commit: f6f4ed205def1cc5f9932857d75222015683fd08
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Clarified cloud versus on-premises scope across cache configuration
+    topics in the [Configuration Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview)
+    and updated [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+    for Commerce on cloud deployments.
+  versions: ''
+  type: feedback
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/1896
+  merge_commit: 5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - feedback
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4156:
+    REST API shipping address validation ignores Admin attribute configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2041
+  merge_commit: 897bbc5b6624dfe17deac6ca878669a5245c34ea
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.80 fix for [ACP2E-4533:
+    Placeholder images fail to load on Storefront when URL includes store code](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533).'
+  versions: ''
+  type: new-topic, qpt
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2034
+  merge_commit: eb7012dd29323ae70a19c7b37ab82dac5215c705
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: Updated [Software lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)
     with Cloud version upgrade enforcement dates, support period definitions (including
     security-only transitional period), an expanded end-of-support table for 2.4.4–2.4.9,

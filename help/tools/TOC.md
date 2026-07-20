@@ -2,6 +2,8 @@
 user-guide-title: Tools
 user-guide-description: Learn about the different tools you can use with Adobe Commerce, their uses, the installation process, and how to get access.
 feature: Configuration
+nduge: true
+color: red
 ---
 
 # Tools {#tools}
@@ -20,6 +22,11 @@ feature: Configuration
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+    - [Introduction](commerce-version-tool/intro.md)
+    - [Generate a patch-status report](commerce-version-tool/generate-report.md)
+    - [Troubleshooting](commerce-version-tool/troubleshooting.md)
+    - [Release notes](commerce-version-tool/release-notes.md)
 - CAPS {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
@@ -1003,6 +1010,8 @@ feature: Configuration
            - [ACP2E-4601: Re-saving a payment authorization transaction self-reference parent_id and trigger an infinite loop/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
         - v1.1.80 {#v1-1-80}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+           - [ACP2E-4493: Sales Order Archive grid shows incorrect order status when Asynchronous Indexing enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)           - [ACP2E-4239: Admin Grid Date filters return no results due to Timezone mismatch](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
+           - [ACP2E-4481: Bundle product saleability recalculated incorrectly after order cancel](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
            - [ACSD-53502: **[!UICONTROL Add to Cart]** intermittently fails on iOS [!DNL Safari] due to New Relic script recursion](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
            - [ACP2E-4813: USPS shipping methods unavailable or incorrect for multi-package orders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
            - [ACP2E-4615: PayPal online order refunds fail with error *PayPal gateway rejects the request. Internal Error.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
@@ -1016,6 +1025,13 @@ feature: Configuration
            - [ACP2E-4808: Product weight displays without unit of measurement on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
            - [ACP2E-4533: Placeholder images fail to load on storefront when URL includes store code](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
            - [ACP2E-4156: [!DNL REST] API shipping address validation ignores Admin attribute configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
+        - v1.1.81 {#v1-1-81}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+           - [ACP2E-4786: Product export fails when AWS S3 remote storage is configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
+           - [ACP2E-4801: Bundle product option quantities don't update when reconfiguring a negotiable quote in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
+           - [ACP2E-4630: Long product names overlap adjacent columns in multi-page sales PDFs after page breaks](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
+           - [ACP2E-4680: Non-salable products disappear from finalized negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
+           - [ACP2E-4300: Storefront catalog permissions not updating after Admin customer group change](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
