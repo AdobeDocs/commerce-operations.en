@@ -192,7 +192,7 @@ Starting with Commerce 2.4.9, you can use the Symfony Cache-based L2 cache imple
 
 >[!NOTE]
 >
->For Adobe Commerce on Cloud, `ece-tools` manages this configuration automatically. Do not edit `app/etc/env.php` directly—deployment overwrites manual changes. See [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) instead.
+>For Adobe Commerce on Cloud, the ECE Tools package (`ece-tools`) manages this configuration automatically. Do not edit `app/etc/env.php` directly—deployment overwrites manual changes. For cloud configuration, see [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) instead.
 
 ### Benefits of Symfony L2 cache
 
