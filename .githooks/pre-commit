@@ -50,7 +50,10 @@ unless staged_images.empty?
   result = system("bundle exec rake images:optimize path=\"#{paths_arg}\"")
   Dir.chdir(project_root)
 
-  puts "Warning: Some images failed to optimize" unless result
+  unless result
+    puts "Aborting commit: image optimization failed."
+    exit 1
+  end
 
   # Re-stage optimized images
   staged_images.each do |image_path|
@@ -68,7 +71,7 @@ unless staged_svgs.empty?
     relative_path = to_relative_path.call(svg_path)
     output = `bundle exec rake images:check_size path=#{Shellwords.escape(relative_path)} 2>&1`
     puts output
-    svg_size_check_failed ||= output.include?('exceeds')
+    svg_size_check_failed ||= $?.exitstatus != 0 || output.include?('exceeds')
   end
   Dir.chdir(project_root)
 end
