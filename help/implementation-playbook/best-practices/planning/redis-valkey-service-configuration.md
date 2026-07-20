@@ -77,84 +77,22 @@ The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to
 >[!IMPORTANT]
 >
 >Until `ece-tools` support is available for your project, do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
+>
+>Set the backend variable value to exactly `symfony_l2`. `ece-tools` recognizes only this exact name for the Symfony L2 cache backend; no other value enables this feature.
+>
+>On the latest `ece-tools` version, `symfony_l2` is available as a cache backend, and requires a Valkey service. Set the Valkey backend variable to use it.
 
-When `ece-tools` support is available, set the Valkey backend variable to `symfony_l2` and define the L2 backend options in `CACHE_CONFIGURATION`.
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 1
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-```
-
-To enable stale cache for selected cache types with `symfony_l2`, define a second frontend with `use_stale_cache: true`, then map selected cache types to that frontend. Use distinct local cache directories and persistent IDs for each frontend.
+When `ece-tools` support is available, set the Valkey backend variable to `symfony_l2`. `ece-tools` automatically builds the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
 
 ```yaml
 stage:
   deploy:
     VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-        stale_cache_enabled:
-          backend: symfony_l2
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_stale
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1_stale
-            use_stale_cache: true
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        block_html:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
 ```
+
+>[!CAUTION]
+>
+>Do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. `ece-tools` derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
 
 
 ### L2 cache memory sizing for Adobe Commerce Cloud
