@@ -8,7 +8,7 @@
 
 ## Redis cache support {#redis-cache-support}
 
-Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must [setup Valkey and update the cache configuration to use it](config-valkey.md). See [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) for supported cache services by release.
+Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must [setup Valkey and update the cache configuration to use it](/help/configuration/cache/config-valkey.md). See [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) for supported cache services by release.
 
 ## Commerce on Cloud Varnish configuration note with reference {#varnish-config-cloud}
 
