@@ -9,6 +9,7 @@ feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects only."
+nudge: true
 ---
 
 # Best practices for Valkey and Redis service configuration
@@ -43,7 +44,7 @@ For implementation details, configuration examples, and deployment-specific guid
 
 >[!TAB Valkey configuration]
 
-For Valkey, use:
+For Valkey with the legacy cache implementation, use:
 
 ```yaml
 stage:
@@ -51,7 +52,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration details, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuration variables in the _Commerce on Cloud Infrastructure Guide_.
+For Valkey with the modern Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
 
 >[!TAB Redis configuration]
 
@@ -87,11 +88,11 @@ To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
       VALKEY_BACKEND: symfony_l2
   ```
 
+Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
+
 >[!CAUTION]
 >
 >When updating the `.magento.env.yaml` configuration, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. The ECE tools package derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
-
-Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
 
 ### L2 cache memory sizing for Adobe Commerce Cloud
 
@@ -1004,7 +1005,6 @@ stage:
         bot_lifetime: 7200
         max_lifetime: 2592000
         min_lifetime: 60
-
 ```
 
 >[!ENDTABS]
