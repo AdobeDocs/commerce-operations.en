@@ -35,7 +35,6 @@ For Adobe Commerce 2.4.9 and versions later than 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, 
 
 For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](../../../configuration/cache/level-two-cache.md).
 
-
 >[!IMPORTANT]
 >
 >Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
@@ -76,11 +75,11 @@ Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symf
 >
 >Do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
 
-To use Symfony L2 cache for Adobe Commerce 2.4.9, complete these steps:
+To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
 
 - Ensure that the cloud project is using [ECE Tools package v2002.1.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
 
-- Set the deployment variable in the `.magento.env.yaml` file `VALKEY_BACKEND`=`symfony_l2`.
+- Set the deployment variable in the `.magento.env.yaml` file: `VALKEY_BACKEND`=`symfony_l2`.
 
   ```yaml
   stage:
@@ -90,12 +89,9 @@ To use Symfony L2 cache for Adobe Commerce 2.4.9, complete these steps:
 
 >[!CAUTION]
 >
->When updating the `.magento.env.yaml` configuration, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. `ece-tools` derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
+>When updating the `.magento.env.yaml` configuration, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. The ECE tools package derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
 
 Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
-
-
-
 
 ### L2 cache memory sizing for Adobe Commerce Cloud
 
