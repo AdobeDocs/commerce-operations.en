@@ -43,11 +43,13 @@ The following table summarizes the available backend caches:
 | Backend | Description | Configuration guide |
 | ------- | ----------- | ------------------- |
 | File system | Default. Stores cache data in files under `var/cache/`. No configuration required. | N/A |
-| [Redis](config-redis.md) | In-memory data store for high-performance caching. | [Use Redis for default cache](redis-pg-cache.md)<br>**Note: Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) for supported cache services by release.|
+| [Redis](config-redis.md) | In-memory data store for high-performance caching. | [Use Redis for default cache](redis-pg-cache.md)|
 | [Valkey](config-valkey.md) | Open-source, Redis-compatible alternative. | [Use Valkey for default cache](valkey-pg-cache.md) |
 | [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Database-backed caching. | [Create custom cache engines](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (Adobe developer documentation) |
 
-{{redis-cache-support}}
+>[!IMPORTANT]
+>
+>{{redis-cache-support}}
 
 ## Implementation approaches
 
