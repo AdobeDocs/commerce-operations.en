@@ -43,7 +43,7 @@ For implementation details, configuration examples, and deployment-specific guid
 
 >[!TAB Valkey configuration]
 
-For Valkey, use:
+For Valkey with the legacy cache implementation, use:
 
 ```yaml
 stage:
@@ -51,7 +51,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration details, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuration variables in the _Commerce on Cloud Infrastructure Guide_.
+For Valkey with the modern Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
 
 >[!TAB Redis configuration]
 
