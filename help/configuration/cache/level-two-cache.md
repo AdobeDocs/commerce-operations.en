@@ -49,13 +49,17 @@ There are two L2 cache implementations available:
 | [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
 | [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance |
 
->[!NOTE]
->
->For Adobe Commerce on Cloud, configure L2 cache by setting the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) deploy variable in `.magento.env.yaml`. See [Configure L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) for configuration examples.
-
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
-Use the following example to modify or replace the existing cache section in the `app/etc/env.php` file.
+>[!NOTE]
+>
+>The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions earlier than 2.4.9, use [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
+
+Cache configuration instructions depend on your deployment type:
+
+- **For Adobe Commerce on Cloud**, configure L2 cache by setting the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) deploy variable in `.magento.env.yaml`. See [Configure L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) for configuration examples.
+
+- **For Adobe Commerce on-premises versions that support Redis**, use the following example to modify or replace the existing cache section in the `app/etc/env.php` file.
 
 ```php
 'cache' => [
@@ -85,7 +89,7 @@ Use the following example to modify or replace the existing cache section in the
     'type' => [
         'default' => ['frontend' => 'default'],
     ],
-],
+]
 ```
 
 Where:
@@ -98,7 +102,7 @@ Where:
   - `local_backend_options` is the local cache configuration.
   - `cache_dir` is a file cache-specific option for the directory where the local cache is stored.
 
-Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+For Adobe Commerce Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
 Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix ':hash' for preload keys.
 
@@ -188,7 +192,7 @@ The following code shows an example configuration:
 
 ## Modern Symfony L2 cache implementation
 
-Starting with Commerce 2.4.9, you can use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) which provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
+In Commerce versions 2.4.9+, 2.4.8-p5+, 2.4.7-p9+, 2.4.6-p14+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache.  The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
