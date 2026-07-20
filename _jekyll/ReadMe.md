@@ -4,6 +4,8 @@ This project uses Rake tasks to automate parts of the documentation workflow. Mo
 
 **For common tasks (rendering templates, managing includes, optimizing/auditing images, generating the What's New digest), see the [adobe-comdox-exl-rake-tasks README](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md).**
 
+> All `bundle exec rake` commands below must be run from within the `_jekyll/` directory, since that's where the Gemfile and Rakefile live.
+
 ## Repo-specific Rake tasks
 
 ### `whatsnew_bp`
