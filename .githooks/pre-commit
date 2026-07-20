@@ -78,7 +78,8 @@ end
 
 if svg_size_check_failed
   puts "Aborting commit: one or more staged SVGs exceed the size limit."
-  puts 'Convert the SVG to PNG with "bundle exec rake images:svg_to_png path=path/to/svg" and use the PNG instead.'
+  puts 'Convert the SVG to PNG with "cd _jekyll && bundle exec rake images:svg_to_png ' \
+       'path=path/to/svg" and use the PNG instead.'
   exit 1
 end
 
