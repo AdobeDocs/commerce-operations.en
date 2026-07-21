@@ -78,7 +78,7 @@ Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symf
 
 To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
 
-- Ensure that the cloud project is using [ECE Tools package v2002.1.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
+- Ensure that the cloud project is using [ECE Tools package v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
 
 - Set the deployment variable in the `.magento.env.yaml` file: `VALKEY_BACKEND`=`symfony_l2`.
 

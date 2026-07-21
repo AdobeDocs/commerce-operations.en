@@ -89,14 +89,17 @@ Uses simplified backend type names:
 
 | Backend | Type name |
 | ------- | --------- |
-| Redis | `redis` |
 | Valkey | `valkey` |
 | File system | `file` |
+
+>[!NOTE]
+>
+>The `redis` type name is also accepted, but Redis is not an officially supported cache service for Adobe Commerce 2.4.9 and later. Use `valkey` instead.
 
 **Example configuration:**
 
 ```php?start_inline=1
-'backend' => 'redis',
+'backend' => 'valkey',
 'backend_options' => [
     'server' => '127.0.0.1',
     'database' => '0',
