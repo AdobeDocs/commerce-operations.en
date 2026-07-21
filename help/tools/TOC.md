@@ -1028,6 +1028,7 @@ color: red
         - v1.1.81 {#v1-1-81}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
            - [ACP2E-4401: [!UICONTROL Scheduled Update Preview] of the [!UICONTROL Home Page] with configurable products redirects to the [!UICONTROL maintenance page]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
+           - [ACP2E-4468: Website-scoped Admin users can't save Dynamic Blocks in Page Builder](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
            - [ACP2E-4786: Product export fails when AWS S3 remote storage is configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
            - [ACP2E-4801: Bundle product option quantities don't update when reconfiguring a negotiable quote in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
            - [ACP2E-4630: Long product names overlap adjacent columns in multi-page sales PDFs after page breaks](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
