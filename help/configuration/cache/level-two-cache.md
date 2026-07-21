@@ -47,7 +47,7 @@ There are two L2 cache implementations available:
 | Implementation | Version | Description |
 | -------------- | ------- | ----------- |
 | [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
-| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | >=2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey only. |
+| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey only. |
 
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
