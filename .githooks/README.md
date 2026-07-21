@@ -8,6 +8,7 @@ This directory contains pre-commit hooks that automatically optimize images befo
 - **Run `image_optim`** to compress and optimize images
 - **Re-stage optimized images** automatically
 - **Ensure all committed images** are properly optimized
+- **Check staged SVGs** against a size limit and abort the commit if any SVG exceeds it
 
 ## Benefits
 
@@ -80,9 +81,16 @@ Image optimization complete!
 - **PNG**: Use for screenshots and UI elements (will be optimized automatically)
 - **JPEG**: Use for photographs (will be optimized automatically)
 - **GIF**: Use for animations (will be optimized automatically)
-- **SVG**: Use for icons and simple graphics (not processed by hooks, commit as-is)
+- **SVG**: Use for icons and simple graphics (not optimized, but checked against a size limit; commit fails if the limit is exceeded)
 
-The pre-commit hooks will automatically optimize PNG, JPEG, and GIF images on commit.
+The pre-commit hooks will automatically optimize PNG, JPEG, and GIF images on commit, and will check staged SVGs against a size limit (140 KB).
+
+If a staged SVG exceeds the limit, the commit is aborted. Convert it to PNG instead:
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=path/to/image.svg
+```
 
 ## Manual optimization
 
@@ -100,7 +108,7 @@ The hooks use the configuration file `_jekyll/.image_optim.yml` to customize opt
 - **PNG**: Uses `advpng`, `optipng`, and `pngquant`
 - **JPEG**: Uses `jhead`, `jpegoptim`, and `jpegtran`
 - **GIF**: Uses `gifsicle`
-- **SVG**: Not processed (excluded from detection to preserve vector graphics and animations)
+- **SVG**: Not optimized (excluded from `image_optim` to preserve vector graphics and animations), but checked against a 140 KB size limit
 
 ## Troubleshooting
 
@@ -116,6 +124,12 @@ The hooks use the configuration file `_jekyll/.image_optim.yml` to customize opt
 - Check that the `adobe-comdox-exl-rake-tasks` gem is installed (provides `image_optim`)
 - Review the `.image_optim.yml` configuration file
 
+### SVG exceeds size limit
+
+- The commit is aborted if a staged SVG exceeds 140 KB
+- Convert the SVG to PNG: `cd _jekyll && bundle exec rake images:svg_to_png path=path/to/image.svg`
+- Then stage the PNG in place of the SVG and commit again
+
 ### Performance issues
 
 - Adjust thread count in `_jekyll/.image_optim.yml`
@@ -125,16 +139,17 @@ The hooks use the configuration file `_jekyll/.image_optim.yml` to customize opt
 
 1. **Pre-commit trigger**: When you run `git commit`, the hook automatically executes
 2. **Image detection**: Scans staged files for image extensions
-3. **Optimization**: Runs `image_optim` on each staged image
+3. **Optimization**: Runs `image_optim` on each staged PNG, JPEG, or GIF
 4. **Re-staging**: Automatically adds optimized images back to the staging area
-5. **Commit proceeds**: If optimization succeeds, the commit continues normally
+5. **SVG size check**: Checks each staged SVG against the 140 KB size limit
+6. **Commit proceeds**: If optimization succeeds and no SVG exceeds the size limit, the commit continues normally; otherwise the commit is aborted
 
 ## Supported image formats
 
 - **PNG** (`.png`) - Lossless and lossy compression
 - **JPEG** (`.jpg`, `.jpeg`) - Lossy compression with metadata cleanup
 - **GIF** (`.gif`) - Animation and static optimization
-- **SVG** (`.svg`) - Not processed by hooks (commit as-is to preserve quality)
+- **SVG** (`.svg`) - Not optimized (commit as-is to preserve quality), but checked against a 140 KB size limit; the commit is aborted if the limit is exceeded
 
 ## Best practices
 
