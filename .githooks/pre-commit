@@ -27,30 +27,60 @@ exit 1 if $?.exitstatus != 0
 
 image_extensions = %w[.png .jpg .jpeg .gif]
 staged_images = staged_files.select { |f| image_extensions.include?(File.extname(f).downcase) }
+staged_svgs = staged_files.select { |f| File.extname(f).downcase == '.svg' }
 
-if staged_images.empty?
+if staged_images.empty? && staged_svgs.empty?
   puts "No images staged for commit. Skipping image optimization."
   exit 0
 end
 
-puts "Found #{staged_images.length} staged image(s). Running optimization..."
-
 # Build paths relative to _jekyll directory
-relative_paths = staged_images.map do |path|
+to_relative_path = lambda do |path|
   path.start_with?('_jekyll/') ? path[8..] : "../#{path}"
 end
 
-# Run optimization on all images at once
-Dir.chdir('_jekyll')
-paths_arg = relative_paths.map { |p| Shellwords.escape(p) }.join(' ')
-result = system("bundle exec rake images:optimize path=\"#{paths_arg}\"")
+unless staged_images.empty?
+  puts "Found #{staged_images.length} staged image(s). Running optimization..."
 
-puts "Warning: Some images failed to optimize" unless result
+  relative_paths = staged_images.map(&to_relative_path)
 
-# Re-stage optimized images
-Dir.chdir(project_root)
-staged_images.each do |image_path|
-  system("git add #{Shellwords.escape(image_path)}") if File.exist?(image_path)
+  # Run optimization on all images at once
+  Dir.chdir('_jekyll')
+  paths_arg = relative_paths.map { |p| Shellwords.escape(p) }.join(' ')
+  result = system("bundle exec rake images:optimize path=\"#{paths_arg}\"")
+  Dir.chdir(project_root)
+
+  unless result
+    puts "Aborting commit: image optimization failed."
+    exit 1
+  end
+
+  # Re-stage optimized images
+  staged_images.each do |image_path|
+    system("git add #{Shellwords.escape(image_path)}") if File.exist?(image_path)
+  end
+end
+
+svg_size_check_failed = false
+
+unless staged_svgs.empty?
+  puts "Found #{staged_svgs.length} staged SVG(s). Checking size limit..."
+
+  Dir.chdir('_jekyll')
+  staged_svgs.each do |svg_path|
+    relative_path = to_relative_path.call(svg_path)
+    output = `bundle exec rake images:check_size path=#{Shellwords.escape(relative_path)} 2>&1`
+    puts output
+    svg_size_check_failed ||= $?.exitstatus != 0 || output.include?('exceeds')
+  end
+  Dir.chdir(project_root)
+end
+
+if svg_size_check_failed
+  puts "Aborting commit: one or more staged SVGs exceed the size limit."
+  puts 'Convert the SVG to PNG with "cd _jekyll && bundle exec rake images:svg_to_png ' \
+       'path=path/to/svg" and use the PNG instead.'
+  exit 1
 end
 
 puts "Image optimization complete!"

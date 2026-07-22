@@ -9,6 +9,7 @@ feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects only."
+nudge: true
 ---
 
 # Best practices for Valkey and Redis service configuration
@@ -35,7 +36,6 @@ For Adobe Commerce 2.4.9 and versions later than 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, 
 
 For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](../../../configuration/cache/level-two-cache.md).
 
-
 >[!IMPORTANT]
 >
 >Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
@@ -44,7 +44,7 @@ For implementation details, configuration examples, and deployment-specific guid
 
 >[!TAB Valkey configuration]
 
-For Valkey, use:
+For Valkey with the legacy cache implementation, use:
 
 ```yaml
 stage:
@@ -52,7 +52,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration details, see [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) configuration variables in the _Commerce on Cloud Infrastructure Guide_.
+For Valkey with the modern Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
 
 >[!TAB Redis configuration]
 
@@ -70,92 +70,29 @@ For environment configuration details, see [`REDIS_BACKEND`](https://experiencel
 
 ### Configure [!DNL Symfony] L2 cache
 
-Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. On Adobe Commerce on cloud infrastructure, configure this backend only after your project uses an `ece-tools` version that supports `symfony_l2` in `.magento.env.yaml`.
-
-The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. It does not replace Redis or Valkey as the remote cache service. For Adobe Commerce 2.4.9, configure `symfony_l2` with Valkey as the remote backend.
+Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. It does not replace Redis or Valkey as the remote cache service.
 
 >[!IMPORTANT]
 >
->Until `ece-tools` support is available for your project, do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
+>Do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
 
-When `ece-tools` support is available, set the Valkey backend variable to `symfony_l2` and define the L2 backend options in `CACHE_CONFIGURATION`.
+To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 1
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-```
+- Ensure that the cloud project is using [ECE Tools package v2002.1.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
 
-To enable stale cache for selected cache types with `symfony_l2`, define a second frontend with `use_stale_cache: true`, then map selected cache types to that frontend. Use distinct local cache directories and persistent IDs for each frontend.
+- Set the deployment variable in the `.magento.env.yaml` file: `VALKEY_BACKEND`=`symfony_l2`.
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-        stale_cache_enabled:
-          backend: symfony_l2
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_stale
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1_stale
-            use_stale_cache: true
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        block_html:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-```
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
 
+Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
+
+>[!CAUTION]
+>
+>When updating the `.magento.env.yaml` configuration, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. The ECE tools package derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.
 
 ### L2 cache memory sizing for Adobe Commerce Cloud
 
@@ -1068,7 +1005,6 @@ stage:
         bot_lifetime: 7200
         max_lifetime: 2592000
         min_lifetime: 60
-
 ```
 
 >[!ENDTABS]
