@@ -1,9 +1,9 @@
 ---
-title: How [!DNL Cloud Automation Patching Service (CAPS)] workflow works
+title: '[!DNL Cloud Automation Patching Service (CAPS)] Workflow Overview'
 description: Learn about the [!DNL Cloud Automation Patching Service (CAPS)] workflow process, including terminology, workflow phases, and operations for automated patch management.
 hide: true
 ---
-# How the [!DNL Cloud Automation Patching Service (CAPS)] workflow works
+# [!DNL Cloud Automation Patching Service (CAPS)] workflow overview
 
 This topic provides a high-level overview of how patch operations work using [!DNL CAPS (Cloud Automation Patching Service)].
 
@@ -157,5 +157,6 @@ If either condition is not met, the patch application is blocked and the user is
 
 * [CAPS introduction](intro.md)
 * [How to access](access.md)
+* [GitHub integration](github-integration.md)
 * [Best practices](best-practices.md)
 * [Troubleshooting](troubleshooting.md)
