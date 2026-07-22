@@ -89,7 +89,7 @@ This approach provides:
 
 >[!NOTE]
 >
->If your project uses an external GitHub repository, [!DNL CAPS] handles authentication automatically using the [CAPS GitHub App](github-integration.md). No additional credentials are required.
+>If your project uses an external GitHub repository, [!DNL CAPS] handles authentication automatically using the [[!DNL CAPS] GitHub App](github-integration.md). No additional credentials are required.
 
 #### Stage 2c: Merge back to target environment
 
