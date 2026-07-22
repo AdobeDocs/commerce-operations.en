@@ -23,7 +23,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          11.8, 12.3<sup>1</sup>
+          12.3
       </td>
     </tr>
     <tr>
@@ -41,7 +41,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
     </tr>
     <tr>
@@ -59,7 +59,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
     </tr>
   </tbody>
@@ -122,7 +122,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -149,7 +149,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -215,7 +215,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -251,7 +251,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -317,7 +317,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -353,7 +353,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -419,7 +419,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -455,7 +455,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -530,7 +530,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
