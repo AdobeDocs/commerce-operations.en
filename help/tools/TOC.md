@@ -1027,6 +1027,7 @@ color: red
            - [ACP2E-4156: [!DNL REST] API shipping address validation ignores Admin attribute configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
         - v1.1.81 {#v1-1-81}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+           - [ACP2E-4395: Gift card products can be created via API without an amount in global scope](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)
            - [ACP2E-4401: [!UICONTROL Scheduled Update Preview] of the [!UICONTROL Home Page] with configurable products redirects to the [!UICONTROL maintenance page]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
            - [ACP2E-4468: Website-scoped Admin users can't save Dynamic Blocks in Page Builder](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
            - [ACP2E-4786: Product export fails when AWS S3 remote storage is configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
