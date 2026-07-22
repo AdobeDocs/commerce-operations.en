@@ -150,5 +150,6 @@ Before applying patches, ensure your environment is properly prepared:
 
 * [CAPS introduction](intro.md)
 * [How to access](access.md)
-* [Workflow](workflow.md)
+* [Workflow overview](workflow.md)
+* [GitHub integration](github-integration.md)
 * [Troubleshooting](troubleshooting.md)
