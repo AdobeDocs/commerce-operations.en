@@ -32,6 +32,10 @@ topic_v2:
 
 The Commerce application uses a low-level cache frontend and backend to provide access to cache storage. Commerce supports several caching backends and strategies, each suited to different use cases. This page describes the available backends and how they differ.
 
+>[!NOTE]
+>
+>[Varnish](config-varnish.md) handles full-page caching at the HTTP level and does not use the low-level cache backend.
+
 ## Backend cache options
 
 The following table summarizes the available backend caches:
@@ -39,13 +43,13 @@ The following table summarizes the available backend caches:
 | Backend | Description | Configuration guide |
 | ------- | ----------- | ------------------- |
 | File system | Default. Stores cache data in files under `var/cache/`. No configuration required. | N/A |
-| [Redis](config-redis.md) | In-memory data store for high-performance caching. | [Use Redis for default cache](redis-pg-cache.md) |
+| [Redis](config-redis.md) | In-memory data store for high-performance caching. | [Use Redis for default cache](redis-pg-cache.md)|
 | [Valkey](config-valkey.md) | Open-source, Redis-compatible alternative. | [Use Valkey for default cache](valkey-pg-cache.md) |
 | [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Database-backed caching. | [Create custom cache engines](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (Adobe developer documentation) |
 
->[!NOTE]
+>[!IMPORTANT]
 >
->[Varnish](config-varnish.md) handles full-page caching at the HTTP level and does not use the low-level cache backend.
+>{{redis-cache-support}}
 
 ## Implementation approaches
 
