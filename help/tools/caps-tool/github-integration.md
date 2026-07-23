@@ -32,7 +32,9 @@ If you no longer want [!DNL CAPS] to access your repository:
 1. Find `caps-connector` and click **[!UICONTROL Configure]**.
 1. Click **[!UICONTROL Uninstall]** and confirm.
 
-After uninstalling, [!DNL CAPS] patch operations on that repository fail. Contact [Adobe Commerce Cloud support](https://experienceleague.adobe.com/home#support) if you need assistance.
+>[!WARNING]
+>
+>If any CAPS apply or revert operations are still in progress when the GitHub App is uninstalled, those operations may fail. After uninstalling the app, users also cannot start new operations because the action buttons become inactive.
 
 ## Related topics
 
