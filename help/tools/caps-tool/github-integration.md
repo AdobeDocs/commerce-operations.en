@@ -11,7 +11,7 @@ If your Adobe Commerce Cloud project is connected to a GitHub repository, you mu
 ## Prerequisites
 
 * An active Adobe Commerce Cloud subscription
-* A [GitHub integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/integrations) already configured for your Adobe Commerce Cloud project
+* A [GitHub integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) already configured for your Adobe Commerce Cloud project
 * Owner or Admin access to the GitHub organization or repository
 
 ## Install the [!DNL CAPS] GitHub App
