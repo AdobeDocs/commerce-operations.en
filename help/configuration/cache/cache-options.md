@@ -118,3 +118,4 @@ For complete configuration options, see:
 - [L2 cache configuration](level-two-cache.md)
 
 See the [Laminas documentation](https://docs.laminas.dev/) for legacy Zend-based options.
+
