@@ -41,7 +41,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
     </tr>
     <tr>
@@ -167,7 +167,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -323,7 +323,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -488,7 +488,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -653,7 +653,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
