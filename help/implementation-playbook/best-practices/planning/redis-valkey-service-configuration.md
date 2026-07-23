@@ -90,6 +90,10 @@ To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
 
 Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`.
 
++>[!NOTE]
++>
++>Adobe Commerce 2.4.9 includes Symfony L2 cache improvements—including cache tag storage, invalidation, and compression—with patch ACP2E-5132, reducing disk I/O, eliminating stale cache entries, and reducing memory and network overhead. See [Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_.
+
 >[!CAUTION]
 >
 >When updating the `.magento.env.yaml` configuration, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. The ECE tools package derives these values automatically from your Valkey service relationship. Overriding them with an incorrect value causes deployment to fail with a cache connection error.

@@ -333,7 +333,7 @@ Configure separate frontends for stale cache support:
 >
 >The `remote_backend` option also accepts a value of `redis`. However, Redis is not an officially supported cache service for Adobe Commerce 2.4.9 and later. Adobe recommends configuring `symfony_l2` with `valkey` only. See [System Requirements](../../installation/system-requirements.md) for supported cache services by release.
 
-### Cache tag storage improvements
+### Enhanced Symfony L2 cache performance and reliability
 
 >[!NOTE]
 >
@@ -347,12 +347,22 @@ Optimized Symfony L2 cache behavior for Valkey-backed deployments by eliminating
 
 For deployments using the file-based cache (without Valkey), the local tag index continues to be maintained to support cache invalidation. The tag index is now written to the configured `cache_dir` instead of the previously hardcoded `var/cache` location, ensuring consistent cache directory usage and improved support for custom cache configurations.
 
+#### Improved cache invalidation
+
+Cache invalidation now uses TTL-based regeneration locks with proper L1 tag cleanup, eliminating stale cache entries that could previously persist after tag invalidation.
+
+#### Enabled compression by default
+
+Redis/Valkey compression (`compress_data`) is now enabled by default for Symfony L2 cache, reducing memory consumption and network traffic and aligning with the legacy cache implementation's default behavior.
+
 #### Impact
 
 - Eliminates redundant filesystem tag index writes for Valkey-backed Symfony L2 cache deployments.
 - Reduces disk I/O and improves cache write performance.
 - Prevents unnecessary growth of the `var/cache/symfony/tags/` directory.
 - Ensures file-based cache deployments consistently use the configured `cache_dir` while preserving cache invalidation behavior.
+- Eliminates stale cache entries via TTL-based regeneration locks and proper L1 tag cleanup.
+- Reduces memory consumption and network traffic with `compress_data` enabled by default.
 
 For detailed configuration options, see:
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
