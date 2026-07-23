@@ -46,14 +46,14 @@ There are two L2 cache implementations available:
 
 | Implementation | Version | Description |
 | -------------- | ------- | ----------- |
-| [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
-| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance |
+| [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
+| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey only. |
 
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
 >[!NOTE]
 >
->The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, Adobe recommends using [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
+>The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
 
 Cache configuration instructions depend on your deployment type:
 
@@ -192,20 +192,26 @@ The following code shows an example configuration:
 
 ## Modern Symfony L2 cache implementation
 
-In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache.  The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
+In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache. The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
 >For Adobe Commerce on Cloud, the ECE Tools package (`ece-tools`) manages this configuration automatically. Do not edit `app/etc/env.php` directly—deployment overwrites manual changes. For cloud configuration, see [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) instead.
 
+>[!IMPORTANT]
+>
+>{{redis-cache-support}}
+>
+>Because `symfony_l2` is available only in Adobe Commerce 2.4.9 and later, configure it with Valkey as the remote backend. Redis is not an officially supported remote backend for `symfony_l2`. See [System Requirements](../../installation/system-requirements.md) for supported cache services by release.
+
 ### Benefits of Symfony L2 cache
 
 - **Modern Architecture**: Built on Symfony Cache components (PSR-6 compliant)
 - **Better Performance**: Native support for Igbinary serialization, gzip compression, and Lua scripts
-- **Persistent Connections**: Reduces Redis or Valkey connection overhead with connection pooling
+- **Persistent Connections**: Reduces Valkey connection overhead with connection pooling
 - **Preload Keys**: Supports cache key preloading for critical data
 - **Stale Cache Support**: Full compatibility with the `use_stale_cache` option
-- **Simplified Configuration**: Cleaner backend type names (`redis`, `valkey`, `file`)
+- **Simplified Configuration**: Cleaner backend type names (`valkey`, `file`)
 
 ### Configuration example with Symfony L2 cache
 
@@ -217,8 +223,8 @@ Use the simplified `symfony_l2` backend type for L2 cache:
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                // L2 (Remote): Redis with Symfony Cache
-                'remote_backend' => 'redis',
+                // L2 (Remote): Valkey with Symfony Cache
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -263,7 +269,7 @@ Configure separate frontends for stale cache support:
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -282,7 +288,7 @@ Configure separate frontends for stale cache support:
         'stale_cache_enabled' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -316,31 +322,47 @@ Configure separate frontends for stale cache support:
 
 | Option | Type | Default | Description                                                       |
 |--------|------|---------|-------------------------------------------------------------------|
-| `remote_backend` | string | `'redis'` | Remote backend type: `redis`, `valkey`, or `file`                 |
-| `remote_backend_options` | array | `[]` | Remote backend configuration (see the Redis/Valkey documentation) |
+| `remote_backend` | string | `'valkey'` | Remote backend type: `valkey` or `file`. Use `valkey` for L2 cache. |
+| `remote_backend_options` | array | `[]` | Remote backend configuration (see the Valkey documentation) |
 | `local_backend` | string | `'file'` | Local backend type: `file` or `apcu`                              |
 | `local_backend_options` | array | `[]` | Local backend configuration                                       |
-| `cleanup_percentage` | integer | `90` | L1 cache cleanup threshold (1-100)                                |
+| `cleanup_percentage` | integer | `95` | L1 cache cleanup threshold (1-100)                                |
 | `use_stale_cache` | boolean | `false` | Enable stale cache for high availability                          |
 
-### Valkey support
+>[!NOTE]
+>
+>The `remote_backend` option also accepts a value of `redis`. However, Redis is not an officially supported cache service for Adobe Commerce 2.4.9 and later. Adobe recommends configuring `symfony_l2` with `valkey` only. See [System Requirements](../../installation/system-requirements.md) for supported cache services by release.
 
-The `symfony_l2` backend also supports Valkey as the remote backend:
+### Enhanced Symfony L2 cache performance and reliability
 
-```php
-'backend_options' => [
-    'remote_backend' => 'valkey',  // Use Valkey instead of Redis
-    'remote_backend_options' => [
-        'server' => 'localhost',
-        'database' => '0',
-        'port' => '6379',
-        'serializer' => 'igbinary',
-        'compression_lib' => 'gzip',
-    ],
-    // ... rest of configuration
-]
-```
+>[!NOTE]
+>
+>These improvements apply to Adobe Commerce 2.4.9 deployments using `symfony_l2` and are available with patch ACP2E-5132. See [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) for the latest patch release notes.
+
+#### Optimized Symfony L2 cache tag storage
+
+Optimized Symfony L2 cache behavior for Valkey-backed deployments by eliminating redundant filesystem tag index writes. Cache tags are now stored exclusively in Valkey, aligning Symfony L2 cache behavior with the legacy cache implementation. This reduces unnecessary disk I/O, improves cache write performance, and prevents growth of the `var/cache/symfony/tags/` directory.
+
+#### Improved file-based cache behavior
+
+For deployments using the file-based cache (without Valkey), the local tag index continues to be maintained to support cache invalidation. The tag index is now written to the configured `cache_dir` instead of the previously hardcoded `var/cache` location, ensuring consistent cache directory usage and improved support for custom cache configurations.
+
+#### Improved cache invalidation
+
+Cache invalidation now uses TTL-based regeneration locks with proper L1 tag cleanup, eliminating stale cache entries that could previously persist after tag invalidation.
+
+#### Enabled compression by default
+
+Redis/Valkey compression (`compress_data`) is now enabled by default for Symfony L2 cache, reducing memory consumption and network traffic and aligning with the legacy cache implementation's default behavior.
+
+#### Impact
+
+- Eliminates redundant filesystem tag index writes for Valkey-backed Symfony L2 cache deployments.
+- Reduces disk I/O and improves cache write performance.
+- Prevents unnecessary growth of the `var/cache/symfony/tags/` directory.
+- Ensures file-based cache deployments consistently use the configured `cache_dir` while preserving cache invalidation behavior.
+- Eliminates stale cache entries via TTL-based regeneration locks and proper L1 tag cleanup.
+- Reduces memory consumption and network traffic with `compress_data` enabled by default.
 
 For detailed configuration options, see:
-- [Redis cache configuration with Symfony Cache](redis-pg-cache.md)
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
