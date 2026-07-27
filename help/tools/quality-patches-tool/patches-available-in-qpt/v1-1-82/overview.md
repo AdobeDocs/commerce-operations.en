@@ -29,7 +29,7 @@ QPT v1.1.82 includes the following patches:
 1. **ACP2E-4815**: Fixes multiple GraphQL issues that caused PHP exceptions in logs, correct association of orders with customer accounts created post-order via GraphQL, and alignment of responses with GraphQL over HTTP specifications.
 1. **ACP2E-4194**: Fixes the issue where GraphQL responses return incorrect HTTP status codes for invalid, unauthorized, or malformed requests.
 1. **ACP2E-4547**: Fixes the issue where an admin user can't use **[!UICONTROL Add Products by SKU]** in the Admin to add products from the standard catalog to a negotiable quote for a company assigned to a customer group that isn't linked to a shared catalog.
-1. **ACP2E-4593**: Fixes the issue where the CMS page displayed for website restrictions is incorrect on secondary websites in multi-website deployments.
+1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: Fixes the issue where the CMS page displayed for website restrictions can be incorrect on secondary websites in multi-website deployments.
 1. **ACP2E-4682**: Fixes the issue where visiting a Storefront page that checks the quote `isActive` status creates empty quote records each time the page is loaded.
 1. **ACP2E-4695**: Fixes the issue where the catalog rule indexer consumes excessive memory and fails to complete, causing instability and out-of-memory errors.
 1. **ACP2E-4698**: Fixes the issue where editing an image again in Page Builder text content saves an absolute media URL instead of preserving a portable media directive.
