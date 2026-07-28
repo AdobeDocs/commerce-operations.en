@@ -39,7 +39,7 @@ QPT v1.1.82 includes the following patches:
 1. **ACP2E-4805**: Fixes the issue where checkout API requests become significantly slower for configurable products with many child products when the first salable child product appears late in the list.
 1. **ACP2E-4840**: Fixes the issue where the quantity value requested in the `products` GraphQL query returns *null*.
 1. **ACP2E-4870**: Fixes the issue where **[!UICONTROL Product Alerts]** email notifications ignore store view email settings.
-1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: Fixes the issue where viewing customer accounts with large address books in the Admin unexpectedly log out Admin users.
+1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: Fixes the issue where viewing customer accounts with large address books in the Admin unexpectedly logs out Admin users.
 1. **ACP2E-4894**: Fixes the issue where new orders are delayed in appearing in the Admin order management grids when **[!UICONTROL Asynchronous Indexing]** is enabled on high-volume stores.
 1. **ACP2E-4981**: Fixes the issue where Page Builder product carousels display products in an order that doesn't reflect the position set in the Admin, and include configurable products when matching child products are individually visible.
 
