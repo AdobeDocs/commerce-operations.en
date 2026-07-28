@@ -366,3 +366,4 @@ Redis/Valkey compression (`compress_data`) is now enabled by default for Symfony
 
 For detailed configuration options, see:
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
+

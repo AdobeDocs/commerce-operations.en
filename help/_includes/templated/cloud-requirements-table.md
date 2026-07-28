@@ -23,7 +23,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          12.3
+          12.3 (recommended), 11.8
       </td>
     </tr>
     <tr>
