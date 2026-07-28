@@ -47,7 +47,7 @@ Adobe Corporate Security now requires every Adobe-hosted environment to run supp
 
 Find your Adobe Commerce on Cloud version below to see what is required of you.
 
-| Your version | Action 1: Upgrade software dependencies | Action 2: Upgrade or migrate your commerce version |
+| Your version | [Action 1: Upgrade software dependencies](#action-1-upgrade-software-dependencies) | [Action 2: Upgrade or migrate your commerce version](#action-2-upgrade-or-migrate-your-commerce-version) |
 | --- | --- | --- |
 | 2.4.4 or 2.4.5 | Required. October 30th, 2026. | Required by June 1st, 2027 |
 | 2.4.6 or 2.4.7 | Required. October 30th, 2026, or May 31st, 2027, depending on the software. | Required by June 1st, 2028 |
