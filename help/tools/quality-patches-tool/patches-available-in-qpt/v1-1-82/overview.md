@@ -33,7 +33,7 @@ QPT v1.1.82 includes the following patches:
 1. **ACP2E-4682**: Fixes the issue where visiting a Storefront page that checks the quote `isActive` status creates empty quote records each time the page is loaded.
 1. **ACP2E-4695**: Fixes the issue where the catalog rule indexer consumes excessive memory and fails to complete, causing instability and out-of-memory errors.
 1. **ACP2E-4698**: Fixes the issue where editing an image again in Page Builder text content saves an absolute media URL instead of preserving a portable media directive.
-1. **ACP2E-4748**: Fixes the issue where reward points expiration processes slowly on stores with a large reward points history, causing delays in expiring reward points.
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: Fixes the issue where reward points expiration runs slowly on stores with a large reward points history, causing delays in expiring reward points.
 1. **ACP2E-4797**: Fixes the issue where entering 4-byte Unicode characters in the WYSIWYG editor or Page Builder content in the Admin is incorrectly blocked even when the database is configured to support `utf8mb4`.
 1. **ACP2E-4799**: Fixes the issue where the `requisition_lists` GraphQL query returns a `total_count` value that reflects only the number of items on the current page instead of the total number of requisition lists that match the query criteria.
 1. **ACP2E-4805**: Fixes the issue where checkout API requests become significantly slower for configurable products with many child products when the first salable child product appears late in the list.
