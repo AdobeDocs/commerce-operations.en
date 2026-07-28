@@ -196,7 +196,7 @@ In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation
 
 >[!IMPORTANT]
 >
->Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must set up Valkey and update the cache configuration to use `symfony_l2`. For Commerce on-premises, see [set up Valkey](config.valkey). For Commerce on Cloud, see [Set up Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} 
+>Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must set up Valkey and update the cache configuration to use `symfony_l2`. For Commerce on-premises, see [set up Valkey](config.valkey). For Commerce on Cloud, see [Set up Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} 
 >
 >Redis is not an officially supported remote backend for `symfony_l2`. If you are on a release that supports `symfony_l2`, you must use Valkey for caching. See [System Requirements](../../installation/system-requirements.md) for 
 
