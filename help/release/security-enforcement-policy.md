@@ -191,6 +191,8 @@ If an environment continues to remain non-compliant following traffic suspension
 
 ## How Adobe will help you
 
+Adobe offers tools and support to make your transition as smooth as possible, whether you upgrade or migrate.
+
 **Upgrade to Adobe Commerce on Cloud version 2.4.9:**
 
 * **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including time and cost scope. [Generate your upgrade compatibility report](https://supportinsights.adobe.com/commerce/tab/main).
