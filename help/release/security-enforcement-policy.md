@@ -156,7 +156,7 @@ Adobe will help you upgrade these software dependencies directly.
 
 ### Action 2: Upgrade to a supported Adobe Commerce version
 
- If you need to upgrade your Adobe Commerce on Cloud version, then you have two options:
+If you need to upgrade your Adobe Commerce on Cloud version, then you have two options:
 
 1. Upgrade to a supported Adobe Commerce on Cloud version
 1. Migrate to Adobe Commerce as a Cloud Service (SaaS platform)
