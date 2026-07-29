@@ -1,5 +1,5 @@
 ---
-title: "Cloud Security Enforcement Policy: Actions and Deadlines"
+title: "Security Enforcement Policy: Required Actions and Deadlines"
 description: Learn about security enforcement for unsupported Adobe Commerce on Cloud versions and software dependencies, including deadlines, required actions, and risks.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
 product_v2:
@@ -34,9 +34,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
+badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects only."
 hide: true
 ---
-# Cloud Security Enforcement Policy: actions and deadlines
+# Security Enforcement Policy: Required actions and deadlines
 
 Adobe enforces security requirements for Adobe Commerce on Cloud environments, including supported software dependency versions and supported Adobe Commerce versions. This page describes what is required, the enforcement dates, and what happens if requirements are not met.
 
@@ -62,11 +63,11 @@ In the following table, find your Adobe Commerce on Cloud version below to see w
 
 **Table 1: Required actions and deadlines by version**
 
-| Your version | [Upgrade third-party software dependencies](#action-1-upgrade-third-party-software-dependencies) | [Upgrade or migrate your Adobe Commerce version](#action-2-upgrade-to-a-supported-adobe-commerce-version) |
+| **Your version** | **[Action 1:<br>Upgrade third-party software dependencies](#action-1-upgrade-third-party-software-dependencies)** | **Action 2:<br>[Upgrade or migrate your Adobe Commerce version](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
 | --- | --- | --- |
-| 2.4.4 or 2.4.5 | Required. October 30, 2026. | Required by June 1, 2027 |
-| 2.4.6 or 2.4.7 | Required. October 30, 2026, or May 31, 2027, depending on the software. | Required by June 1, 2028 |
-| 2.4.8 or 2.4.9 | Required. October 30, 2026, or May 31, 2027, depending on the software. | Not required at this time |
+| 2.4.4 or 2.4.5 | Required action by October 30, 2026. | Required action by June 1, 2027 |
+| 2.4.6 or 2.4.7 | Required action by October 30, 2026, or May 31, 2027, depending on the software. | Required action by June 1, 2028 |
+| 2.4.8 or 2.4.9 | Required action by October 30, 2026, or May 31, 2027, depending on the software. | No action required at this time |
 
 ## Who does not need to take action
 
@@ -79,7 +80,7 @@ This notice does not apply to:
 
 You need help from your ecommerce admin to go through the following steps to check which version you are running in each of your Adobe Commerce on Cloud environments.
 
-#### Check Adobe Commerce on Cloud version
+#### Step 1: Check Adobe Commerce on Cloud version
 
 1. Log in to your Adobe Commerce Admin panel.
 
@@ -91,7 +92,7 @@ You need help from your ecommerce admin to go through the following steps to che
    bin/magento --version
    ```
 
-#### Check software dependency versions
+#### Step 2: Check software dependency versions
 
 1. Log in to the [Cloud Console](https://console.adobecommerce.com/).
 1. Open the relevant project, then select the environment you want to review.
