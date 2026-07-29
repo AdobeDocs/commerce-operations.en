@@ -1,5 +1,5 @@
 ---
-title: Security Enforcement: Unsupported versions and dependencies
+title: "Security Enforcement: Unsupported versions and dependencies"
 description: Learn about security enforcement for unsupported Adobe Commerce on Cloud versions and software dependencies, including deadlines, required actions, and risks.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
 product_v2:
