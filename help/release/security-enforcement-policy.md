@@ -60,7 +60,7 @@ Software that has passed end of vendor support no longer receives security patch
 
 >[!BEGINSHADEBOX]
 
-This notice does not apply to:
+**This notice does not apply to:**
 
 * Customers using Adobe Commerce as a Cloud Service
 * Customers using Adobe Commerce on Cloud version 2.4.8 or 2.4.9 with supported software dependencies in all environments
