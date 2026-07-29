@@ -43,11 +43,11 @@ Adobe enforces security requirements for Adobe Commerce on Cloud environments, i
 
 ## What is happening?
 
-Adobe Corporate Security policy requires that all Adobe-hosted environments for Adobe Commerce on Cloud run on secure and compliant software, including the following:
+Adobe Corporate Security policy requires that all Adobe-hosted environments for Adobe Commerce on Cloud run on secure and compliant software.
 
 1. Supported versions of all third-party software dependencies (PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)
 
-1. A secure and compliant version of Adobe Commerce on Cloud (version 2.4.8, 2.4.9, or the latest version)
+1. Adobe Commerce on Cloud (version 2.4.8, 2.4.9, or the latest version)
 
 This is to mitigate security risks in your ecommerce environments. Environments that do not meet these requirements by the deadlines in [Table 1](#determine-your-required-actions) will have inbound traffic suspended, taking the storefront offline. Please consider this notice as a security and compliance requirement with enforcement dates.
 
