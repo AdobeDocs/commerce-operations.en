@@ -339,7 +339,7 @@ Configure separate frontends for stale cache support:
 >
 >These improvements apply to Adobe Commerce 2.4.9 deployments using `symfony_l2` and are available with patch ACP2E-5132. See [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) for the latest patch release notes.
 
-Improved Symfony L2 cache scalability, reduced unnecessary filesystem I/O, and enhanced cache consistency and reliability.
+The most recent updates improve Symfony L2 cache scalability, reduced unnecessary filesystem I/O, and enhanced cache consistency and reliability.
 
 #### Optimized Symfony L2 cache tag storage
 
