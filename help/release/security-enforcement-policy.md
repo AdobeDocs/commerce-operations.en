@@ -36,7 +36,6 @@ level_v2:
     internal-label: Experienced
 color: blue
 ---
-
 # Security Enforcement: Unsupported versions and dependencies
 
 ## What is happening?
