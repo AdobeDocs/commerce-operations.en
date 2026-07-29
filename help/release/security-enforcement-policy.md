@@ -100,7 +100,7 @@ For each of your Adobe Commerce on Cloud projects, check the Adobe Commerce vers
 1. Log in to the [Cloud Console](https://console.adobecommerce.com/).
 1. Open the relevant project, then select the environment you want to review.
 1. Check the service configuration for that environment in the `.magento/services.yaml` file, which defines the supported service names and versions used by Adobe Commerce on cloud infrastructure.
-For detailed instructions, see [Configure services](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"} documentation.
+   For detailed instructions, see [Configure services](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"} documentation.
 
 ## Why this security mandate is important
 
