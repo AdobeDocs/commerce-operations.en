@@ -1,5 +1,5 @@
 ---
-title: "Security Enforcement: Unsupported versions and dependencies"
+title: Security Enforcement: Unsupported versions and dependencies
 description: Learn about security enforcement for unsupported Adobe Commerce on Cloud versions and software dependencies, including deadlines, required actions, and risks.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
 product_v2:
@@ -34,42 +34,30 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
+color: blue
 ---
 
-# Security enforcement notice: Required actions and deadlines
-
-This notice explains Adobe's security enforcement policy for Adobe Commerce on Cloud environments running unsupported versions or software dependencies. It covers what's required, the applicable deadlines, and what happens if you don't take action.
+# Security Enforcement: Unsupported versions and dependencies
 
 ## What is happening?
 
-Adobe Corporate Security policy requires that all Adobe-hosted environments run on the latest secure and compliant software, including both:
+Adobe Corporate Security policy requires that all Adobe-hosted environments for Adobe Commerce on Cloud run on secure and compliant software, including the following:
 
-1. Supported versions of all third-party software dependencies (PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)
+1. Supported versions of all 3rd party software dependencies (PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)
 
 1. A secure and compliant version of Adobe Commerce on Cloud (version 2.4.8, 2.4.9, or the latest version)
 
-This is to mitigate security risks for your ecommerce environments. Environments that do not meet these requirements by the deadlines below will have inbound traffic suspended, taking the storefront offline. Please consider this notice as a security and compliance requirement with enforcement dates.
+This is to mitigate security risks in your ecommerce environments. Environments that do not meet these requirements by the deadlines in [Table 1](#determine-your-required-actions)  will have inbound traffic suspended, taking the storefront offline. Please consider this notice as a security and compliance requirement with enforcement dates.
 
-You may be required to take two actions:
+You may be required to take two actions.
 
-1. Check if the third-party software dependencies are supported. If not, upgrade to a supported version.
+1. Check if the 3rd party software dependencies are supported. If not, upgrade to a supported version.
 
-2. Check if you need to upgrade your Adobe Commerce on Cloud version to a supported version.
-
-Software that has passed end of vendor support no longer receives security patches, meaning known security issues in that software cannot be fixed. In addition, as per Adobe's Lifecycle Policy, Adobe Commerce versions 2.4.4 through 2.4.7 now receive only limited, isolated security fixes for the core application. This limited support does not include quality fixes, compatibility support for application dependencies (for example, PHP), or platform dependency updates.
-
->[!BEGINSHADEBOX]
-
-**This notice does not apply to:**
-
-* Customers using Adobe Commerce as a Cloud Service
-* Customers using Adobe Commerce on Cloud version 2.4.8 or 2.4.9 with supported software dependencies in all environments
-
->[!ENDSHADEBOX]
+1. Check if you need to upgrade your Adobe Commerce on Cloud version to a supported version.
 
 ### Determine your required actions
 
-Find your Adobe Commerce on Cloud version below to see what is required of you.
+In the following table, find your Adobe Commerce on Cloud version below to see what is required of you.
 
 **Table 1: Required actions and deadlines by version**
 
@@ -79,28 +67,35 @@ Find your Adobe Commerce on Cloud version below to see what is required of you.
 | 2.4.6 or 2.4.7 | Required. October 30, 2026, or May 31, 2027, depending on the software. | Required by June 1, 2028 |
 | 2.4.8 or 2.4.9 | Required. October 30, 2026, or May 31, 2027, depending on the software. | Not required at this time |
 
-### How to check which versions you are running
+## Who does not need to take action
 
-For each of your Adobe Commerce on Cloud projects, check the Adobe Commerce version and software dependency versions running in each environment. These checks require developer or technical knowledge. Share this page with your development team or solution integrator so they can confirm which of your environments are affected.
+This notice does not apply to:
 
-#### Check your Adobe Commerce on Cloud version
+* Customers using Adobe Commerce as a Cloud Service
+* Customers using Adobe Commerce on Cloud version 2.4.8 or 2.4.9 with supported software dependencies in all environments
+
+### How to verify which versions you are running
+
+You need help from your eCommerce admin to go through the following steps to check which version you are running in each of your Adobe Commerce on Cloud environments.
+
+#### Check Adobe Commerce on Cloud version
 
 1. Log in to your Adobe Commerce Admin panel.
 
    The current version should display in the bottom right corner of any Admin page.
 
-1. If the version is hidden, use the [Adobe Commerce Command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} to run the version command:
+1. If the version is not displayed in the Admin, use the [Adobe Commerce Command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} to run the version command:
 
    ```shell
    bin/magento --version
    ```
 
-#### Check your software dependency versions
+#### Check software dependency versions
 
 1. Log in to the [Cloud Console](https://console.adobecommerce.com/).
 1. Open the relevant project, then select the environment you want to review.
 1. Check the service configuration for that environment in the `.magento/services.yaml` file, which defines the supported service names and versions used by Adobe Commerce on cloud infrastructure.
-   For detailed instructions, see [Configure services](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"} documentation.
+For detailed instructions, see [Configure services](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"} documentation.
 
 ## Why this security mandate is important
 
@@ -124,7 +119,7 @@ Continuing to run your ecommerce storefront on unsupported software creates a re
 
 ### Action 1: Upgrade third-party software dependencies
 
-Depending on the software, all unsupported software dependencies must be upgraded by the timelines shared in the table below. You can view your environments in the [Cloud Console](https://console.adobecommerce.com/). To verify the dependency versions running in each environment, see [Check your software dependency versions](#check-your-software-dependency-versions). Software dependency upgrades apply to all Adobe Commerce on Cloud versions 2.4.4 through 2.4.9.
+Depending on the software, all unsupported software dependencies must be upgraded based on the timelines shared in the table below. You can view your environments in the [Cloud Console](https://console.adobecommerce.com/). To verify the dependency versions running in each environment, see [Check your software dependency versions](#check-your-software-dependency-versions). Software dependency upgrades apply to all Adobe Commerce on Cloud versions 2.4.4 through 2.4.9.
 
 **Table 2: Software dependency upgrade requirements**
 
@@ -132,14 +127,14 @@ Depending on the software, all unsupported software dependencies must be upgrade
 | --- | --- | --- | --- |
 | PHP | 8.1 and below | 8.2 or higher | May 31, 2027 |
 | MariaDB/Galera | 10.5 and below | 10.6 or higher | October 30, 2026 |
-| MariaDB/Galera | Greater than 10.6 but lower than 10.11 | 10.11 or higher | May 31, 2027 |
-| Elasticsearch | any version | OpenSearch:<br><br>- versions 2.19 for 2.4.4 and 2.4.5 customers<br>- version 3 for 2.4.6 and above customers. | October 30, 2026 |
+| MariaDB/Galera | Greater than 10.5 but lower than 10.11 | 10.11 or higher | May 31, 2027 |
+| Elasticsearch | any version | OpenSearch:<br><br>- version 2.19 for 2.4.4 and 2.4.5 customers<br>- version 3 for 2.4.6 and above customers. | October 30, 2026 |
 | OpenSearch | 1.x | version 2.19 for 2.4.4 and 2.4.5 customers.<br>version 3 for 2.4.6 and above customers. | May 31, 2027 |
 | Redis | 5 and below | Valkey 8 or higher | May 31, 2027 |
 | RabbitMQ | 3.9 and below | 3.13 or higher | October 30, 2026 |
 | RabbitMQ | Greater than 3.9 but lower than 3.13 | 4.3 or higher | May 31, 2027 |
 
-#### Prepare to upgrade third-party software dependencies
+#### Preparing for a third-party software dependency upgrade
 
 Adobe will help you upgrade these software dependencies directly.
 
@@ -149,21 +144,23 @@ Adobe will help you upgrade these software dependencies directly.
 
 * **Testing:** Upgrade and validate a non-production environment before production. At minimum, validate checkout, search, cart, and any custom integrations. Requirements apply to all of your environments, so plan to upgrade every environment rather than production alone.
 
-* **Compatibility:** Most of these changes are version upgrades within the same software and carry low risk. The following require closer attention:
+* **Compatibility:** Most of these changes are version upgrades within the same software and carry low risk. The following warrant closer attention:
 
-   * **Elasticsearch to OpenSearch** and **Redis to Valkey** are migrations to different software rather than version upgrades. Custom code, extensions, or configuration referencing the original service may need updating.
-   * **PHP 8.1 to 8.2** can surface deprecations in custom code and third-party extensions. If you use third-party extensions, confirm with your extension vendors that their current releases support your target versions. If you work with a solution integrator, involve them in planning and validation.
+  * **Elasticsearch to OpenSearch** and **Redis to Valkey** are migrations to different software rather than version upgrades. Custom code, extensions, or configuration referencing the original service may need updating.
+  * **PHP 8.1 to 8.2** can surface deprecations in custom code and third-party extensions.
+
+If you use third-party extensions, confirm with your extension vendors that their current releases support your target versions. If you work with a solution integrator, involve them in planning and validation.
 
 ### Action 2: Upgrade to a supported Adobe Commerce version
 
-If you need to upgrade your Adobe Commerce on Cloud version, then you have two options:
+ If you need to upgrade your Adobe Commerce on Cloud version, then you have two options:
 
-1. Upgrade to a supported Adobe Commerce on Cloud version
-1. Migrate to Adobe Commerce as a Cloud Service (SaaS platform)
+1. [Upgrade to a supported Adobe Commerce on Cloud version](#upgrade-to-adobe-commerce-on-cloud-version-249)
+1. [Migrate to Adobe Commerce as a Cloud Service (SaaS platform)](#migrate-to-adobe-commerce-as-a-cloud-service)
 
 The enforcement date for your current version applies no matter which option you choose.
 
-**Table 3: Required action by current version**
+**Table 3: Guidelines and deadlines to upgrade to a supported Adobe Commerce on Cloud version**
 
 | Current version | Action | Enforcement Date |
 | --- | --- | --- |
@@ -171,14 +168,14 @@ The enforcement date for your current version applies no matter which option you
 | Using Adobe Commerce on Cloud version 2.4.6 or 2.4.7 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to Adobe Commerce as a Cloud Service | June 1, 2028 |
 | Using Adobe Commerce on Cloud versions 2.4.8 or 2.4.9 | No Adobe Commerce on Cloud version upgrade action is needed at this time. The software dependency deadlines in Action 1 still apply. | n/a |
 
-### Compare your options
+## Compare your options
 
 To decide which option fits your needs, see the following table comparing Adobe Commerce on Cloud version 2.4.9 with Adobe Commerce as a Cloud Service.
 
 **Table 4: Adobe Commerce on Cloud vs. Adobe Commerce as a Cloud Service**
 
 | | Adobe Commerce on Cloud version 2.4.9 | Adobe Commerce as a Cloud Service |
-|--- |--- | --- |
+|--- | --- | --- |
 | What it is | The latest Adobe Commerce release with full security coverage, quality fixes, and platform dependency updates. | Adobe's fully managed commerce platform, built for continuous innovation without the upgrade overhead. [Learn more](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview). |
 | Best for you if | You want to keep managing your own infrastructure, upgrades, and patches for now. You can migrate to Adobe Commerce as a Cloud Service whenever you're ready. | You want to leave upgrade cycles behind for good, lower your total cost of ownership, and get Adobe's newest capabilities automatically, with no extra effort. |
 | Key benefit | Meets the security requirements now while preserving your existing setup. | A lightning-fast, edge-delivery storefront, a highly scalable catalog, native digital asset management, and built-in generative AI, all on an infrastructure managed by Adobe. |
@@ -193,13 +190,13 @@ If an environment continues to remain non-compliant following traffic suspension
 
 Adobe offers tools and support to make your transition as smooth as possible, whether you upgrade or migrate.
 
-**Upgrade to Adobe Commerce on Cloud version 2.4.9:**
+### Upgrade to Adobe Commerce on Cloud version 2.4.9
 
 * **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including time and cost scope. [Generate your upgrade compatibility report](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Software Dependency Upgrade:** Since you cannot upgrade software dependencies directly, open a support ticket for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview).
+* **Software Dependency Upgrade:** Since you cannot upgrade software dependencies directly, [open a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
-**If you choose to migrate to Adobe Commerce as a Cloud Service:**
+### Migrate to Adobe Commerce as a Cloud Service
 
 Adobe provides tools that reduce the cost and time of migrating to Adobe Commerce as a Cloud Service. These tools apply to migration only. They are not used for a version upgrade on Adobe Commerce on Cloud. See the [migration overview](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview) for the full migration guide, including migration paths and phases.
 
@@ -210,3 +207,5 @@ Adobe provides tools that reduce the cost and time of migrating to Adobe Commerc
 * **Storefront and extension migration:** Adobe's [AI-assisted migration and developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/), including **Adobe Developer App Builder** and **Commerce Storefront powered by Edge Delivery Services**, help accelerate storefront modernization and extension re-platforming.
 
 If you have any questions, please contact your account team, Solution Account Manager, Renewal Specialist, or contact [Support Services](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+
+
