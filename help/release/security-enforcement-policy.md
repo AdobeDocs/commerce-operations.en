@@ -42,7 +42,7 @@ color: blue
 
 Adobe Corporate Security policy requires that all Adobe-hosted environments for Adobe Commerce on Cloud run on secure and compliant software, including the following:
 
-1. Supported versions of all 3rd party software dependencies (PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)
+1. Supported versions of all third-party software dependencies (PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)
 
 1. A secure and compliant version of Adobe Commerce on Cloud (version 2.4.8, 2.4.9, or the latest version)
 
@@ -50,7 +50,7 @@ This is to mitigate security risks in your ecommerce environments. Environments 
 
 You may be required to take two actions.
 
-1. Check if the 3rd party software dependencies are supported. If not, upgrade to a supported version.
+1. Check if the third-party software dependencies are supported. If not, upgrade to a supported version.
 
 1. Check if you need to upgrade your Adobe Commerce on Cloud version to a supported version.
 
@@ -206,5 +206,3 @@ Adobe provides tools that reduce the cost and time of migrating to Adobe Commerc
 * **Storefront and extension migration:** Adobe's [AI-assisted migration and developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/), including **Adobe Developer App Builder** and **Commerce Storefront powered by Edge Delivery Services**, help accelerate storefront modernization and extension re-platforming.
 
 If you have any questions, please contact your account team, Solution Account Manager, Renewal Specialist, or contact [Support Services](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
-
-
