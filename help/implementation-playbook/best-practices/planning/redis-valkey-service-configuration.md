@@ -92,7 +92,7 @@ Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically b
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 includes Symfony L2 cache improvements—including cache tag storage, invalidation, and compression—with patch ACP2E-5132, reducing disk I/O, eliminating stale cache entries, and reducing memory and network overhead. See [Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md) in the _Adobe Commerce Configuration Guide_. Patch ACP2E-5132 patch is included in Cloud Patches patches and applied automatically via ece-tools.
+>Adobe Commerce 2.4.9 includes Symfony L2 cache improvements—including optimized tag storage, a stale-cache regeneration lock, and fixes for stale tag memberships after retag, redundant remote writes on unchanged saves, and L1 size-based eviction (`cleanup_percentage`)—with patch ACP2E-5132, reducing disk I/O and unnecessary backend load while improving cache consistency and reliability. See [Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_. This patch is included in the Cloud Patches for Commerce package, which is installed and updated as a dependency of `ece-tools`. Update to the latest version of `ece-tools` to receive the patch; it is then applied automatically during deployment.
 
 #### Customize the Symfony L2 cache configuration
 
