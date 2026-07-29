@@ -71,7 +71,7 @@ Software that has passed end of vendor support no longer receives security patch
 
 Find your Adobe Commerce on Cloud version below to see what is required of you.
 
-> Table 1: Required actions and deadlines by version
+**Table 1: Required actions and deadlines by version**
 
 | Your version | [Upgrade third-party software dependencies](#action-1-upgrade-third-party-software-dependencies) | [Upgrade or migrate your Adobe Commerce version](#action-2-upgrade-to-a-supported-adobe-commerce-version) |
 | --- | --- | --- |
@@ -126,7 +126,7 @@ Continuing to run your ecommerce storefront on unsupported software creates a re
 
 Depending on the software, all unsupported software dependencies must be upgraded by the timelines shared in the table below. You can view your environments in the [Cloud Console](https://console.adobecommerce.com/). To verify the dependency versions running in each environment, see [Check your software dependency versions](#check-your-software-dependency-versions). Software dependency upgrades apply to all Adobe Commerce on Cloud versions 2.4.4 through 2.4.9.
 
-> Table 2: Software dependency upgrade requirements
+**Table 2: Software dependency upgrade requirements**
 
 | Dependency | Version | Must Upgrade to | Enforcement date |
 | --- | --- | --- | --- |
@@ -163,7 +163,7 @@ If you need to upgrade your Adobe Commerce on Cloud version, then you have two o
 
 The enforcement date for your current version applies no matter which option you choose.
 
-> Table 3: Required action by current version
+**Table 3: Required action by current version**
 
 | Current version | Action | Enforcement Date |
 | --- | --- | --- |
@@ -175,7 +175,7 @@ The enforcement date for your current version applies no matter which option you
 
 To decide which option fits your needs, see the following table comparing Adobe Commerce on Cloud version 2.4.9 with Adobe Commerce as a Cloud Service.
 
-> Table 4: Adobe Commerce on Cloud vs. Adobe Commerce as a Cloud Service
+**Table 4: Adobe Commerce on Cloud vs. Adobe Commerce as a Cloud Service**
 
 | | Adobe Commerce on Cloud version 2.4.9 | Adobe Commerce as a Cloud Service |
 |--- |--- | --- |
