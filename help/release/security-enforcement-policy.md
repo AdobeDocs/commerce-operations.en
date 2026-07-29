@@ -134,7 +134,7 @@ Depending on the software, all unsupported software dependencies must be upgrade
 | MariaDB/Galera | 10.5 and below | 10.6 or higher | October 30, 2026 |
 | MariaDB/Galera | Greater than 10.6 but lower than 10.11 | 10.11 or higher | May 31, 2027 |
 | Elasticsearch | any version | OpenSearch:<br><br>- versions 2.19 for 2.4.4 and 2.4.5 customers<br>- version 3 for 2.4.6 and above customers. | October 30, 2026 |
-| OpenSearch | 1.x | Versions 2.19 for 2.4.4 and 2.4.5 customers.<br>Version 3 for 2.4.6 and above customers. | May 31, 2027 |
+| OpenSearch | 1.x | version 2.19 for 2.4.4 and 2.4.5 customers.<br>version 3 for 2.4.6 and above customers. | May 31, 2027 |
 | Redis | 5 and below | Valkey 8 or higher | May 31, 2027 |
 | RabbitMQ | 3.9 and below | 3.13 or higher | October 30, 2026 |
 | RabbitMQ | Greater than 3.9 but lower than 3.13 | 4.3 or higher | May 31, 2027 |
