@@ -102,7 +102,7 @@ Where:
   - `local_backend_options` is the local cache configuration.
   - `cache_dir` is a file cache-specific option for the directory where the local cache is stored.
 
-For Adobe Commerce Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+For Adobe Commerce, Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
 Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix ':hash' for preload keys.
 
@@ -194,15 +194,11 @@ The following code shows an example configuration:
 
 In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache. The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
->[!NOTE]
->
->For Adobe Commerce on Cloud, the ECE Tools package (`ece-tools`) manages this configuration automatically. Do not edit `app/etc/env.php` directly—deployment overwrites manual changes. For cloud configuration, see [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) instead.
-
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must set up Valkey and update the cache configuration to use `symfony_l2`. For Commerce on-premises, see [set up Valkey](config-valkey.md). For Commerce on Cloud, see [Set up Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}
 >
->Because `symfony_l2` is available only in Adobe Commerce 2.4.9 and later, configure it with Valkey as the remote backend. Redis is not an officially supported remote backend for `symfony_l2`. See [System Requirements](../../installation/system-requirements.md) for supported cache services by release.
+>Redis is not an officially supported remote backend for `symfony_l2`. If you are on a release that supports `symfony_l2`, you must use Valkey for caching. See [System Requirements](../../installation/system-requirements.md) for 
 
 ### Benefits of Symfony L2 cache
 
@@ -214,6 +210,10 @@ In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation
 - **Simplified Configuration**: Cleaner backend type names (`valkey`, `file`)
 
 ### Configuration example with Symfony L2 cache
+
+>[!NOTE]
+>
+>For Adobe Commerce on Cloud, the ECE Tools package (`ece-tools`) manages the cache configuration automatically. Do not edit `app/etc/env.php` directly—deployment overwrites manual changes. For cloud configuration, see [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) instead.
 
 Use the simplified `symfony_l2` backend type for L2 cache:
 
