@@ -202,7 +202,7 @@ Adobe provides tools that reduce the cost and time of migrating to Adobe Commerc
 
 * **Migration assessment:** Rates the migration complexity of your customizations. See the [Migration Assessment Tool overview](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
-* **Data migration:** The [bulk and incremental data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data) moves your data to your new Adobe Commerce as a Cloud Service environment.
+* **Data migration:** The [bulk and incremental data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool) moves your data to your new Adobe Commerce as a Cloud Service environment.
 
 * Adobe's [AI-assisted migration and developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/), including **[!DNL Adobe Developer App Builder]** and **[!DNL Commerce Storefront powered by Edge Delivery Services]**, help accelerate storefront modernization and extension re-platforming.
 
