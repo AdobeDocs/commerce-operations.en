@@ -3,7 +3,6 @@ user-guide-title: Release information
 user-guide-description: Access all release information for Adobe Commerce patches and services in one place.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-nudge: true
 ---
 
 # Release Information {#release}
