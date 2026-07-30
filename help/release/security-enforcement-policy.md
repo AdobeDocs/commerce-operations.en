@@ -1,5 +1,5 @@
 ---
-title: "Security Enforcement Policy: Required Actions and Deadlines"
+title: "Security Policy: Required Actions and Deadlines"
 description: Learn about security enforcement for unsupported Adobe Commerce on Cloud versions and software dependencies, including deadlines, required actions, and risks.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
 product_v2:
@@ -34,7 +34,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects only."
+badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud version 2.4.4 - 2.4.9 only"
 hide: true
 ---
 # Security Enforcement Policy: Required actions and deadlines
@@ -59,17 +59,17 @@ You may be required to take two actions.
 
 Find your Adobe Commerce on Cloud version below to see what is required of you, and see the requirements for
 
-1. Third-party software dependencies 
+1. Third-party software dependencies
 
-1. Adobe Commerce on Cloud version 
+1. Adobe Commerce on Cloud version
 
-**Table 1: Required actions and deadlines by version**
-
-| Your version | Upgrade third-party software dependencies<br>(PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)<br>(*See details and next steps in [Action 1: Upgrade third-party software dependencies](#action-1-upgrade-third-party-software-dependencies)*  | Upgrade or migrate your Adobe Commerce version** *(See details and next steps in [Action 2: If you need to upgrade your Adobe Commerce on Cloud version]((#action-2-upgrade-to-a-supported-adobe-commerce-version)* |
+| Your version | Upgrade third-party software dependencies<br>(PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)<br>*See [Action 1: Upgrade third-party software dependencies](#action-1-upgrade-third-party-software-dependencies) for details and next steps.* | Upgrade or migrate your Adobe Commerce version<br>*See [Action 2: If you need to upgrade your Adobe Commerce on Cloud version](#action-2-if-you-need-to-upgrade-your-adobe-commerce-on-cloud-version) for details and next steps.* |
 | --- | --- | --- |
 | 2.4.4 or 2.4.5 | Required. October 30, 2026. | Required. June 1, 2027 |
 | 2.4.6 or 2.4.7 | Required. October 30, 2026, or May 31, 2027, depending on the software. | Required. June 1, 2028 |
 | 2.4.8 or 2.4.9 | Required. October 30, 2026, or May 31, 2027, depending on the software. | Not required at this time |
+
+**Table 1: Required actions and deadlines by version**
 
 ## Who does not need to take action
 
@@ -79,7 +79,7 @@ This notice does not apply to:
 
 ### How to check the versions you are running
 
-You need help from your eCommerce admin to go through the following steps to check which version you are running.  
+You need help from your eCommerce admin to go through the following steps to check which version you are running.
 
 **Your Adobe Commerce on Cloud version**
 
@@ -156,7 +156,7 @@ If you use third-party extensions, confirm with your extension vendors that thei
 
 ### Action 2: If you need to upgrade your Adobe Commerce on Cloud version:
 
-You have a choice to (i) upgrade to a supported Adobe Commerce on Cloud version or (ii) migrate to Adobe Commerce as a Cloud Service (Adobe’s fully managed commerce platform) 
+You have a choice to (i) upgrade to a supported Adobe Commerce on Cloud version or (ii) migrate to Adobe Commerce as a Cloud Service (Adobe's fully managed commerce platform)
 
 The enforcement date for your current version applies no matter which option you choose.
 
@@ -168,7 +168,7 @@ The enforcement date for your current version applies no matter which option you
 | Using Adobe Commerce on Cloud version 2.4.6 or 2.4.7 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to Adobe Commerce as a Cloud Service | June 1, 2028 |
 | Using Adobe Commerce on Cloud versions 2.4.8 or 2.4.9 | No Adobe Commerce on Cloud version upgrade action is needed at this time. The software dependency deadlines in Action 1 still apply. | n/a |
 
-See the following matrix for additional details on Adobe Commerce on Cloud version 2.4.9 and Adobe Commerce as a Cloud Service, so you can make an informed decision. 
+See the following matrix for additional details on Adobe Commerce on Cloud version 2.4.9 and Adobe Commerce as a Cloud Service, so you can make an informed decision.
 
 **Table 4: Upgrade to Adobe Commerce on Cloud vs. Migrate to Adobe Commerce as a Cloud Service**
 
