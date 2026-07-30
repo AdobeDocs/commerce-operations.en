@@ -57,7 +57,7 @@ You may be required to take two actions.
 
 1. Check if you need to upgrade your Adobe Commerce on Cloud version to a supported version.
 
-Find your Adobe Commerce on Cloud version below to see what is required of you, and see the requirements for
+Find your Adobe Commerce on Cloud version below to see what is required of you, and see the requirements for:
 
 1. Third-party software dependencies
 
@@ -75,7 +75,7 @@ Find your Adobe Commerce on Cloud version below to see what is required of you, 
 
 This notice does not apply to:
 
-* Customers on Adobe Commerce on Cloud version 2.4.8 or 2.4.9 and whose environments are running supported versions of 3rd party software
+* Customers on Adobe Commerce on Cloud version 2.4.8 or 2.4.9 and whose environments are running supported versions of third party software
 
 * Customers on [!DNL Adobe Commerce as a Cloud Service]
 
