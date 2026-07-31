@@ -2,6 +2,7 @@
 title: Upgrade a Git-Based Installation
 description: Upgrade an Adobe Commerce installation that you cloned from a git repository.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
+last-update: 2026-04-28
 ---
 # Upgrade a git-based installation
 

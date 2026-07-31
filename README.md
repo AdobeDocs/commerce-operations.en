@@ -53,10 +53,11 @@ After cloning the repository, run:
 
 ### What the hooks do
 
-- Automatically detect staged image files (PNG, JPG, JPEG, GIF, SVG)
-- Run `image_optim` to compress and optimize images
+- Automatically detect staged image files (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Run `image_optim` to compress and optimize raster images (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Re-stage optimized images automatically
-- Ensure all committed images are properly optimized
+- Ensure all committed raster images are properly optimized
+- Check staged SVGs against a size limit and abort the commit if an oversized SVG is referenced from `help/` (otherwise just warn)
 
 ### Benefits
 
