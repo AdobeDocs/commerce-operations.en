@@ -143,7 +143,7 @@ Depending on the software, all unsupported software dependencies must be upgrade
 
 Adobe will help you upgrade these software dependencies directly.
 
-* **Getting started:** Open a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) listing the environments you need upgraded and the dependencies involved. Open your ticket at least 30 days before your enforcement date so our team can schedule the work.
+* **Getting started:** Open a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) listing the environments you need upgraded and the dependencies involved. Open your ticket at least 30 days before your enforcement date so our team can schedule the work.
 
 * **Downtime:** Adobe will confirm the expected window with you when scheduling.
 
@@ -194,7 +194,7 @@ Adobe offers tools and support to make your transition as smooth as possible, wh
 
 * **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including time and cost scope. [Generate your upgrade compatibility report](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Software Dependency Upgrade:** Since you cannot upgrade software dependencies directly, [open a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+* **Software Dependency Upgrade:** Since you cannot upgrade software dependencies directly, [open a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
 **If you choose to migrate to Adobe Commerce as a Cloud Service**
 
