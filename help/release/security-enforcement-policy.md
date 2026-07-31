@@ -71,7 +71,7 @@ Find your Adobe Commerce on Cloud version below to see what is required of you, 
 
 **Table 1: Required actions and deadlines by version**
 
-If you need an extension, please get in touch with your account team, or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+If you need a deadline extension, contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 ## Who does not need to take action
 
