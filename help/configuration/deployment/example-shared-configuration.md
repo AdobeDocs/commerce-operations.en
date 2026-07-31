@@ -2,6 +2,7 @@
 title: Example using a shared configuration
 description: See an example of how to change settings in a development system with a shared configuration file.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
+last-update: 2026-04-28
 ---
 # Example using a shared configuration
 

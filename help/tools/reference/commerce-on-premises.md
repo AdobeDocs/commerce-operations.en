@@ -4,6 +4,7 @@ description: Learn about all available commands, arguments, and options for the 
 mini-toc-levels: 1
 exl-id: 06cd615b-94be-49d4-9bce-0a33ec9bfd5a
 recommendations: noDisplay, noCatalog
+last-update: 2026-05-12
 ---
 # bin/magento (Adobe Commerce on-premises)
 
