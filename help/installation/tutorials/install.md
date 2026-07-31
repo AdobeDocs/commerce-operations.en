@@ -2,6 +2,7 @@
 title: Install Adobe Commerce
 description: Follow these steps to install Adobe Commerce on infrastructure that you own.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
+last-update: 2026-04-28
 ---
 # Install Adobe Commerce
 

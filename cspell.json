@@ -1,1 +1,20 @@
-{"version":"0.2","language":"en","words":["Symfony","Valkey","env.php","fullpage","igbinary","pagecache","pecl","phpredis"],"ignorePaths":["node_modules","*.lock","_jekyll/_data"]}
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "env.php",
+        "fullpage",
+        "igbinary",
+        "Paas",
+        "pagecache",
+        "pecl",
+        "phpredis",
+        "Symfony",
+        "Valkey"
+    ],
+    "ignorePaths": [
+        "node_modules",
+        "*.lock",
+        "_jekyll/_data"
+    ]
+}
