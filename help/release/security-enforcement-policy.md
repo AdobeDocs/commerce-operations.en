@@ -124,7 +124,7 @@ Continuing to run your ecommerce storefront on unsupported software creates a re
 
 ### Action 1: Upgrade third-party software dependencies
 
-Depending on the software, all unsupported software dependencies must be upgraded by the timelines shared in the table below. You can view your environments in the [Cloud Console](https://console.adobecommerce.com/), and check the dependency versions running using these [instructions](#check-software-dependency-versions). Software dependency upgrades apply to all Adobe Commerce on Cloud versions 2.4.4 through 2.4.9.
+Depending on the software, all unsupported software dependencies must be upgraded by the timelines shared in the table below. You can view your environments in the [Cloud Console](https://console.adobecommerce.com/), and check the dependency versions running using these [instructions](#how-to-check-the-versions-you-are-running). Software dependency upgrades apply to all Adobe Commerce on Cloud versions 2.4.4 through 2.4.9.
 
 | Dependency | Version | Must upgrade to | Enforcement date |
 | --- | --- | --- | --- |
