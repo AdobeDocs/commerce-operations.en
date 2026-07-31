@@ -37,7 +37,7 @@ QPT v1.1.82 includes the following patches:
 1. **ACP2E-4797**: Fixes the issue where entering 4-byte Unicode characters in the WYSIWYG editor or Page Builder content in the Admin is incorrectly blocked even when the database is configured to support `utf8mb4`.
 1. **ACP2E-4799**: Fixes the issue where the `requisition_lists` GraphQL query returns a `total_count` value that reflects only the number of items on the current page instead of the total number of requisition lists that match the query criteria.
 1. **ACP2E-4805**: Fixes the issue where checkout API requests become significantly slower for configurable products with many child products when the first salable child product appears late in the list.
-1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**: Fixes the issue where the quantity value requested in the 'products' GraphQL query returns null.
+1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**: Fixes the issue where the quantity value requested in the `products` GraphQL query returns null.
 1. **ACP2E-4870**: Fixes the issue where **[!UICONTROL Product Alerts]** email notifications ignore store view email settings.
 1. **ACP2E-4875**: Fixes the issue where viewing customer accounts with large address books in the Admin unexpectedly logs out admin users.
 1. **ACP2E-4894**: Fixes the issue where new orders are delayed in appearing in the Admin order management grids when **[!UICONTROL Asynchronous Indexing]** is enabled on high-volume stores.
