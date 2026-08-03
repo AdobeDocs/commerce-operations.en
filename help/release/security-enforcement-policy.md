@@ -58,13 +58,13 @@ To keep your ecommerce environment secure and compliant, make sure it uses:
 1. Supported versions of all third-party software dependencies: PHP, MariaDB, Elasticsearch/OpenSearch, Redis, and RabbitMQ
 1. A secure and supported version of Adobe Commerce on Cloud: version 2.4.8, 2.4.9, or the latest supported version
 
+To review your environment and plan any necessary work, follow the guidance in the following sections. If an environment does not meet the security requirements by the deadlines in [Table 1](#step-2-identify-any-required-dependency-upgrades) and [Table 2](#step-2-choose-upgrade-or-migrate-path), Adobe suspends inbound traffic to the affected environment, taking the storefront offline.
+
 If you need a deadline extension, contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 ## Who does not need to take action
 
-To review your environment and plan any necessary work, follow the guidance in the following sections. If an environment does not meet the security requirements by the deadlines in [Table 1](#step-2-identify-any-required-dependency-upgrades) and [Table 2](#step-2-choose-upgrade-or-migrate-path), Adobe suspends inbound traffic to the affected environment, taking the storefront offline.
-
-If your environments run supported versions of Adobe Commerce on Cloud and third-party software, you meet security requirements. You do not need to take any further action.
+If your environments run supported versions of Adobe Commerce on Cloud and third-party software or you are using Adobe Commerce as a Cloud Service, you do not need to take any further action.
 
 ## Action 1: Upgrade third-party software dependencies {#upgrade-third-party-software-dependencies}
 
