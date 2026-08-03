@@ -136,20 +136,7 @@ The following diagram summarizes this process:
      ```shell
      bin/magento --version
      ```
-
-Use this version to determine your next step:
-
-* If your environment already runs a supported version—2.4.8, 2.4.9, or the latest supported version—no further steps are required for Action 2.
-* If your environment runs an unsupported version—2.4.4 through 2.4.7—an upgrade or migration is needed. Continue to [Step 2](#step-2-choose-upgrade-or-migrate-path) to choose the path that best fits your environment.
-
-### Step 2: Choose the upgrade or migration path {#step-2-choose-upgrade-or-migrate-path}
-
-You can choose between two paths:
-
-1. [Upgrade to a supported Adobe Commerce on Cloud version](#upgrade-to-a-supported-adobe-commerce-on-cloud-version)
-1. [Migrate to Adobe Commerce as a Cloud Service (SaaS)](#migrate-to-adobe-commerce-as-a-cloud-service)
-
-Your enforcement date stays the same no matter which path you choose.
+Use this version to determine whether any action is required.
 
 **Table 2: Adobe Commerce on Cloud version upgrade requirements**
 
@@ -159,7 +146,14 @@ Your enforcement date stays the same no matter which path you choose.
 | Version 2.4.6 or 2.4.7 | Continue using a supported version of your current release line while planning your next step.<br><br>Reason: Version 2.4.6 receives extended support through August 30, 2027, and only limited, isolated security fixes for the core application until May 31, 2028. Version 2.4.7 receives standard support through May 31, 2027, and extended support through May 31, 2028.<br><br>See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2028 |
 | Version 2.4.8 or 2.4.9 | No Adobe Commerce on Cloud version upgrade action is needed. The third-party software dependency deadlines in [Action 1](#upgrade-third-party-software-dependencies) still apply. | Not applicable |
 
-To help you decide the best path, review the following comparison table.
+### Step 2: Choose the upgrade or migration path {#step-2-choose-upgrade-or-migrate-path}
+
+If you need to upgrade your Adobe Commerce on Cloud version, then you have two options:
+
+1. [Upgrade to a supported Adobe Commerce on Cloud version](#upgrade-to-a-supported-adobe-commerce-on-cloud-version)
+1. [Migrate to Adobe Commerce as a Cloud Service (SaaS)](#migrate-to-adobe-commerce-as-a-cloud-service)
+
+Your enforcement date stays the same no matter which path you choose. To help you decide the best path, use the following table to compare your options:
 
 **Table 3: Adobe Commerce on Cloud compared to [!DNL Adobe Commerce as a Cloud Service]**
 
