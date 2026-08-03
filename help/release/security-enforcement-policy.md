@@ -33,8 +33,8 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-badgePaas: label="Adobe Commerce on Cloud version 2.4.4-2.4.9 only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects only."
-nudge: true
+badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud version 2.4.4 - 2.4.9 only"
+color: blue
 ---
 
 # Security and compliance notice: Required actions and deadlines
@@ -58,7 +58,9 @@ To keep your ecommerce environment secure and compliant, make sure it uses:
 1. Supported versions of all third-party software dependencies: PHP, MariaDB, Elasticsearch/OpenSearch, Redis, and RabbitMQ
 1. A secure and supported version of Adobe Commerce on Cloud: version 2.4.8, 2.4.9, or the latest supported version
 
-Adobe is enforcing these requirements because software that has reached end of vendor support no longer receives security updates or patches, leaving known vulnerabilities unresolved. Staying on supported software helps you maintain PCI compliance and protect your business and your customers' data.
+If you need a deadline extension, contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+
+## Who does not need to take action
 
 To review your environment and plan any necessary work, follow the guidance in the following sections. If an environment does not meet the security requirements by the deadlines in [Table 1](#step-2-identify-any-required-dependency-upgrades) and [Table 2](#step-2-choose-upgrade-or-migrate-path), Adobe suspends inbound traffic to the affected environment, taking the storefront offline.
 
