@@ -136,6 +136,8 @@ Check which Adobe Commerce on Cloud version your environments run. If any enviro
 1. If the version is hidden from the Admin panel:
     * Connect to the [remote environment](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment).
     * Use the Adobe Commerce [Command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) to check the version.
+    * Connect to the [remote environment](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment).
+    * Use the Adobe Commerce [Command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) to check the version.
 
    ```shell
    bin/magento --version
