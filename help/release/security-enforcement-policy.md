@@ -35,7 +35,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
 badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud version 2.4.4 - 2.4.9 only"
-nudge: true
+color: blue
 ---
 # Security Policy: Required actions and deadlines
 
@@ -70,6 +70,8 @@ Find your Adobe Commerce on Cloud version below to see what is required of you, 
 | 2.4.8 or 2.4.9 | Required by October 30, 2026, or May 31, 2027, depending on the software. | Not required at this time |
 
 **Table 1: Required actions and deadlines by version**
+
+If you need a deadline extension, contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 ## Who does not need to take action
 
