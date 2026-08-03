@@ -3,7 +3,7 @@ user-guide-title: Release information
 user-guide-description: Access all release information for Adobe Commerce patches and services in one place.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-color: blue
+nudge: true
 ---
 
 # Release Information {#release}
@@ -48,8 +48,7 @@ color: blue
 - [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
-  - [Security Policy: Required actions and deadlines](security-enforcement-policy.md)
-  - [Security and compliance notice](security-compliance-notice.md)
+  - [Security and compliance notice](security-enforcement-policy.md)
   - [Version upgrade enforcement policy](version-upgrade-enforcement-policy.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)
