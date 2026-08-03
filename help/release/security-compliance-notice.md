@@ -46,7 +46,7 @@ badgePaas: label="Adobe Commerce on Cloud version 2.4.4-2.4.9 only" type="Inform
 
 Ecommerce relies on trust, and that trust depends on security. As the security threat landscape continues to evolve, Adobe is strengthening security requirements for Adobe Commerce on Cloud to help customers better protect their storefronts, applications, and sensitive data.
 
-Security is critical for ecommerce businesses: online transactions involve sensitive personal and business data, and a breach can expose you to financial and legal risk. Platform-as-a-service (PaaS) environments face unique challenges due to the shared responsibility model, application-layer dependencies, and extensive third-party integrations. To address these evolving risks, Adobe is introducing enhanced security requirements that strengthen the security posture of Adobe Commerce on Cloud (PaaS) customers while aligning with industry best practices.
+Security is critical for ecommerce businesses: online transactions involve sensitive personal and business data, and a breach can expose you to financial and legal risk. Adobe Commerce on Cloud environments face unique challenges due to the shared responsibility model, application-layer dependencies, and extensive third-party integrations. To address these evolving risks, Adobe is introducing enhanced security requirements that strengthen the security posture of Adobe Commerce on Cloud (PaaS) customers while aligning with industry best practices.
 
 Adobe supports this shared approach through:
 
@@ -55,7 +55,7 @@ Adobe supports this shared approach through:
 * Lifecycle enforcement policies
 * Out-of-band hotfixes for critical security issues
 
-While Adobe takes the necessary steps to keep customers secure, the [Shared Responsibility model for Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) requires that customers use supported versions of Adobe Commerce on Cloud and third-party software, apply patches, audit third-party extensions, and secure custom code.
+While Adobe customers secure, the [Shared Responsibility model for Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) requires that customers use supported versions of Adobe Commerce on Cloud and third-party software, apply patches, audit third-party extensions, and secure custom code.
 
 This page outlines the actions required for Adobe Commerce on Cloud PaaS environments running versions 2.4.4 through 2.4.9. It also provides the applicable enforcement dates and consequences of noncompliance.
 
@@ -67,6 +67,8 @@ To keep your ecommerce environment secure and compliant, make sure it uses:
 1. A secure and supported version of Adobe Commerce on Cloud: version 2.4.8, 2.4.9, or the latest supported version
 
 Adobe is enforcing these requirements because software that has reached end of vendor support no longer receives security updates or patches, leaving known vulnerabilities unresolved. Staying on supported software helps you maintain PCI compliance and protect your business and your customers' data.
+
+Use the guidelines below to check whether your ecommerce environment meets these security requirements, and the actions to take if it doesn't. If an environment doesn't meet the requirements by the deadlines in [Table 1](#table-1-software-dependency-upgrade-requirements) and [Table 2](#table-2-adobe-commerce-on-cloud-version-upgrade-requirements), Adobe suspends inbound traffic, which takes the storefront offline.
 
 To review your environment and plan any necessary work, follow the guidance below. If an environment does not meet the security requirements by the deadlines in [Table 1](#step-2-identify-any-required-dependency-upgrades) and [Table 2](#step-2-choose-upgrade-or-migrate-path), Adobe suspends inbound traffic to the affected environment, taking the storefront offline.
 
@@ -155,7 +157,7 @@ Your enforcement date stays the same no matter which path you choose.
 
 | Current version of Adobe Commerce on Cloud | Required action and reason | Enforcement date |
 | --- | --- | --- |
-| Version 2.4.4 or 2.4.5 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to Adobe Commerce as a Cloud Service.<br><br>Reason: Versions 2.4.4 and 2.4.5 receive only limited, isolated security fixes for the core application until May 31, 2027. This doesn't include quality fixes, compatibility support for application dependencies (for example, PHP), or platform dependency updates. See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2027 |
+| Version 2.4.4 or 2.4.5 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest supported version) or migrate to Adobe Commerce as a Cloud Service.<br><br>Reason: Versions 2.4.4 and 2.4.5 receive only limited, isolated security fixes for the core application until May 31, 2027. This doesn't include quality fixes, compatibility support for application dependencies (for example, PHP), or platform dependency updates. See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2027 |
 | Version 2.4.6 or 2.4.7 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to Adobe Commerce as a Cloud Service.<br><br>Reason: Version 2.4.6 receives extended support through August 30, 2027, and only limited, isolated security fixes for the core application until May 31, 2028. Version 2.4.7 receives standard support through May 31, 2027, and extended support through May 31, 2028.<br><br>See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2028 |
 | Version 2.4.8 or 2.4.9 | No Adobe Commerce on Cloud version upgrade action is needed. The third-party software dependency deadlines in Action 1 still apply.<br><br>Reason: Versions 2.4.8 and 2.4.9 are supported. | Not applicable |
 
@@ -163,9 +165,9 @@ To help you decide the best path, review the following comparison table.
 
 **Table 3: Adobe Commerce on Cloud compared to Adobe Commerce as a Cloud Service**
 
-| | Adobe Commerce on Cloud version 2.4.9 | Adobe Commerce as a Cloud Service |
+| | Adobe Commerce on Cloud version 2.4.9<br>or the latest supported version | Adobe Commerce as a Cloud Service |
 | --- | --- | --- |
-| **What it is** | The latest Adobe Commerce release with full security coverage, quality fixes, and platform dependency updates. | Adobe's fully managed commerce platform, built for continuous innovation without the upgrade overhead. [Learn more](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview). |
+| **What it is** | The current Adobe Commerce release with full security coverage, quality fixes, and platform dependency updates. | Adobe's fully managed commerce platform, built for continuous innovation without the upgrade overhead. [Learn more](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview). |
 | **Best for you if** | You want to keep the existing PaaS deployment model while managing your application upgrades, custom code, extensions, integrations, and patches. | You want to reduce recurring core-version upgrade work, lower your total cost of ownership, and receive ongoing platform updates managed by Adobe. |
 | **Key benefit** | Meets the security requirements while preserving your existing setup. | Support for edge-delivery storefront experiences, Adobe-managed catalog and commerce services, native digital asset management, and access to available Adobe AI capabilities, all on infrastructure managed by Adobe. |
 
@@ -208,4 +210,3 @@ If you need help upgrading dependencies, Adobe Commerce on Cloud version, or mig
 >* [Lifecycle policy](lifecycle-policy.md)
 >* [Version upgrade enforcement policy for Adobe Commerce on Cloud](version-upgrade-enforcement-policy.md)
 >* [Shared responsibility security and operational model](../security-and-compliance/shared-responsibility.md)
-
