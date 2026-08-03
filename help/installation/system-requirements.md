@@ -2,6 +2,7 @@
 title: System Requirements
 description: Learn about software dependencies and system requirements for Adobe Commerce. See tested configurations for compatibility with your deployment environment.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
+last-update: 2026-07-23
 ---
 # System requirements
 
@@ -31,9 +32,6 @@ The following tables summarize the system requirements for the latest release of
 The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with the latest Commerce version for each release line.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
-
-**<sup>1</sup>Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9**
-Compatibility between MariaDB 12.3 and Adobe Commerce 2.4.9 will be confirmed following the official release of MariaDB 12.3, anticipated in the May–June timeframe.
 
 For default configuration, the services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 For more details, refer to [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in the *Commerce on Cloud Infrastructure* guide.
@@ -226,4 +224,5 @@ For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.ado
 >
 >There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in the _Commerce Support Knowledge Base_.
 
-<!-- Last updated from includes: 2026-06-01 15:26:19 -->
+<!-- Last updated from includes: 2026-07-22 16:57:39 -->
+

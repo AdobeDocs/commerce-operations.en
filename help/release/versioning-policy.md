@@ -2,6 +2,7 @@
 title: Release policy
 description: Learn about Adobe Commerce release types, marketing versus module versioning, patch and security releases, betas, hotfixes, and the overall release policy.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
+last-update: 2026-06-18
 ---
 # Adobe Commerce release policy
 
@@ -75,4 +76,5 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 Created by non-Adobe personnel to fix an issue or modify the Adobe Commerce code for various reasons.
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->
+

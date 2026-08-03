@@ -107,7 +107,7 @@ Where:
 - `<frontend_option>`, `<frontend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the frontend cache on creation.
 
 - `<backend_type>` -- The low-level backend cache type. You can specify:
-    - **Modern Symfony Cache (2.4.9+, recommended)**: Simplified names like `redis`, `valkey`, or `file`
+    - **Modern Symfony Cache (2.4.9+, recommended)**: Simplified names like `valkey` or `file`
     - **Legacy (Zend-based)**: Full class name compatible with `Zend_Cache_Backend` that implements `Zend_Cache_Backend_Interface`
 
 - `<backend_option>`, `<backend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the backend cache on creation.

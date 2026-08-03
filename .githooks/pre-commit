@@ -7,8 +7,20 @@
 # Pre-commit hook for image optimization
 # This hook automatically optimizes images before they are committed
 
-require 'fileutils'
-require 'shellwords'
+require 'tmpdir'
+require 'open3'
+require_relative 'svg_link_checker'
+
+begin
+  require 'colorator'
+rescue LoadError
+  # colorator isn't guaranteed to be on the load path outside Bundler; fall back to no-op color methods.
+  class String
+    def red = self
+    def yellow = self
+    def bold = self
+  end
+end
 
 # Get the directory where this hook is located
 hook_dir = File.dirname(__FILE__)
@@ -17,41 +29,165 @@ project_root = File.expand_path('..', hook_dir)
 Dir.chdir(project_root)
 
 unless Dir.exist?('_jekyll')
-  puts "Error: Could not find _jekyll directory."
+  puts 'Error: Could not find _jekyll directory.'
   exit 1
 end
 
 # Get staged image files
-staged_files = `git diff --cached --name-only --diff-filter=ACM`.split("\n")
-exit 1 if $?.exitstatus != 0
+staged_out, staged_status = Open3.capture2('git', 'diff', '--cached', '--name-only', '--diff-filter=ACM')
+exit 1 unless staged_status.success?
+staged_files = staged_out.split("\n")
 
 image_extensions = %w[.png .jpg .jpeg .gif]
 staged_images = staged_files.select { |f| image_extensions.include?(File.extname(f).downcase) }
+staged_svgs = staged_files.select { |f| File.extname(f).downcase == '.svg' }
 
-if staged_images.empty?
-  puts "No images staged for commit. Skipping image optimization."
+if staged_images.empty? && staged_svgs.empty?
+  puts 'No images staged for commit. Skipping image optimization.'
   exit 0
 end
 
-puts "Found #{staged_images.length} staged image(s). Running optimization..."
-
 # Build paths relative to _jekyll directory
-relative_paths = staged_images.map do |path|
+to_relative_path = lambda do |path|
   path.start_with?('_jekyll/') ? path[8..] : "../#{path}"
 end
 
-# Run optimization on all images at once
-Dir.chdir('_jekyll')
-paths_arg = relative_paths.map { |p| Shellwords.escape(p) }.join(' ')
-result = system("bundle exec rake images:optimize path=\"#{paths_arg}\"")
+unless staged_images.empty?
+  puts "Found #{staged_images.length} staged image(s). Running optimization..."
 
-puts "Warning: Some images failed to optimize" unless result
+  relative_paths = staged_images.map(&to_relative_path)
 
-# Re-stage optimized images
-Dir.chdir(project_root)
-staged_images.each do |image_path|
-  system("git add #{Shellwords.escape(image_path)}") if File.exist?(image_path)
+  # Run optimization on all images at once. Pass `path=...` as a single argv entry (no shell), so
+  # the whole space-separated list reaches the rake task intact; going through a shell would split
+  # it into separate tokens and rake would treat every path after the first as a bogus task name.
+  Dir.chdir('_jekyll')
+  paths_arg = relative_paths.join(' ')
+  result = system('bundle', 'exec', 'rake', 'images:optimize', "path=#{paths_arg}")
+  Dir.chdir(project_root)
+
+  unless result
+    puts 'Aborting commit: image optimization failed.'
+    exit 1
+  end
+
+  # Re-stage optimized images
+  staged_images.each do |image_path|
+    system('git', 'add', '--', image_path) if File.exist?(image_path)
+  end
 end
 
-puts "Image optimization complete!"
+svg_size_check_failed = false
+svg_size_check_errored = false
+oversized_svgs = []
+
+unless staged_svgs.empty?
+  puts "Found #{staged_svgs.length} staged SVG(s). Checking size limit..."
+
+  # Check the staged blob content, not the working tree file, so a further unstaged edit to an
+  # already-staged SVG can't hide an oversized file from (or falsely flag) this check.
+  Dir.mktmpdir do |tmp_dir|
+    staged_svgs.each_with_index do |svg_path, index|
+      # `:path` reads the staged (index) blob rather than the working-tree file.
+      staged_content, show_status = Open3.capture2('git', 'show', ":#{svg_path}")
+      unless show_status.success?
+        puts "Error: failed to read staged content for #{svg_path}."
+        svg_size_check_errored = true
+        next
+      end
+
+      # Prefix with the loop index so two staged SVGs with the same basename in different
+      # directories (e.g. a/icon.svg and b/icon.svg) don't overwrite each other's temp file.
+      tmp_svg = File.join(tmp_dir, "#{index}_#{File.basename(svg_path)}")
+      File.binwrite(tmp_svg, staged_content)
+
+      # capture2e merges stderr into stdout (the rake task prints diagnostics to both).
+      output, check_status = Open3.capture2e(
+        'bundle', 'exec', 'rake', 'images:check_size', "path=#{tmp_svg}", chdir: '_jekyll'
+      )
+      puts output.gsub(tmp_svg, svg_path)
+
+      if !check_status.success?
+        svg_size_check_errored = true
+      elsif output.match?(/Found \d+ oversized SVG images?/)
+        svg_size_check_failed = true
+        oversized_svgs << svg_path
+      end
+    end
+  end
+end
+
+if svg_size_check_errored
+  puts 'Aborting commit: failed to run the SVG size check (see output above).'
+  exit 1
+end
+
+if svg_size_check_failed
+  # Exact, copy-pasteable conversion command for a given SVG. rake runs from _jekyll, so the path
+  # is relative to _jekyll (e.g. ../help/assets/image.svg), which is what to_relative_path returns.
+  conversion_command = lambda do |svg_path|
+    "cd _jekyll && bundle exec rake images:svg_to_png path=#{to_relative_path.call(svg_path)}"
+  end
+
+  linked_oversized_svgs = []
+  unlinked_oversized_svgs = []
+
+  oversized_svgs.each do |svg_path|
+    basename = File.basename(svg_path)
+    svg_abs = File.expand_path(svg_path, project_root)
+    pattern = SvgLinkChecker.candidate_grep_pattern(basename)
+    # Pass the regex as a literal argument (no shell involved) so its backslashes and `|`
+    # reach git grep exactly as written, regardless of shell-escaping quirks.
+    output, status = Open3.capture2('git', 'grep', '--cached', '-l', '-E', pattern, '--', 'help')
+    grep_status = status.exitstatus
+
+    if grep_status > 1
+      puts "Error: failed to search staged help/ content for #{basename} (git grep exit #{grep_status})."
+      exit 1
+    end
+
+    # Confirm each candidate actually references THIS SVG (not a same-named file elsewhere) by
+    # resolving the relative reference against the candidate file's directory.
+    linking_files = output.split("\n").select do |md|
+      md_content, md_status = Open3.capture2('git', 'show', ":#{md}")
+      next false unless md_status.success?
+
+      md_dir = File.dirname(File.expand_path(md, project_root))
+      SvgLinkChecker.reference_resolves_to?(md_content, md_dir, basename, svg_abs, project_root)
+    end
+
+    if linking_files.empty?
+      unlinked_oversized_svgs << svg_path
+    else
+      linked_oversized_svgs << [svg_path, linking_files]
+    end
+  end
+
+  unless unlinked_oversized_svgs.empty?
+    warn ''
+    warn '!' * 60
+    warn 'WARNING: one or more staged SVGs exceed the size limit.'.yellow.bold
+    unlinked_oversized_svgs.each do |svg_path|
+      warn "  #{svg_path} is not linked from any file in help/.".yellow
+      warn "    You can convert it to PNG with: #{conversion_command.call(svg_path)}".yellow
+    end
+    warn '!' * 60
+    warn ''
+  end
+
+  unless linked_oversized_svgs.empty?
+    puts ''
+    puts '!' * 60
+    puts 'Aborting commit: one or more staged SVGs exceed the size limit.'.red.bold
+    linked_oversized_svgs.each do |svg_path, linking_files|
+      puts "  #{svg_path} is linked from:".red
+      linking_files.each { |md| puts "    - #{md}".red }
+      puts "    You can convert it to PNG with: #{conversion_command.call(svg_path)}".red
+    end
+    puts '!' * 60
+    puts ''
+    exit 1
+  end
+end
+
+puts 'Pre-commit image checks complete!'
 exit 0

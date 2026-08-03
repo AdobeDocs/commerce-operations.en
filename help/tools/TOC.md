@@ -1027,15 +1027,24 @@ color: red
            - [ACP2E-4156: [!DNL REST] API shipping address validation ignores Admin attribute configuration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
         - v1.1.81 {#v1-1-81}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+           - [ACP2E-4395: Gift card products can be created via API without an amount in global scope](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)
+           - [ACP2E-4401: [!UICONTROL Scheduled Update Preview] of the [!UICONTROL Home Page] with configurable products redirects to the [!UICONTROL maintenance page]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
+           - [ACP2E-4468: Website-scoped Admin users can't save Dynamic Blocks in Page Builder](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
            - [ACP2E-4786: Product export fails when AWS S3 remote storage is configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
            - [ACP2E-4801: Bundle product option quantities don't update when reconfiguring a negotiable quote in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
            - [ACP2E-4630: Long product names overlap adjacent columns in multi-page sales PDFs after page breaks](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
            - [ACP2E-4680: Non-salable products disappear from finalized negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
            - [ACP2E-4300: Storefront catalog permissions not updating after Admin customer group change](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
+           - [ACP2E-4709: CMS pages don't save in Page Builder when the page hierarchy includes double quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
+        - v1.1.82 {#v1-1-82}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+           - [ACP2E-4547: Admin can't add a default-catalog product to a quote when it isn't assigned to the user's shared catalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
+           - [ACP2E-4805: Checkout requests slow down for configurable products when the first salable child appears later in the list](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
+           - [ACP2E-4748: Reward points expiration runs slowly on stores with a large reward points history](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
+           - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
-    - [Adobe Commerce Beta (on-premises)](reference/commerce-on-premises-beta.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}
     - [Introduction](observation-for-adobe-commerce/intro.md)
