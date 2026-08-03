@@ -22,7 +22,9 @@ jobs:
           fetch-depth: 0
 
       - name: Ensure local main ref exists
-        run: git fetch origin main:main
+        run: |
+          git fetch origin +refs/heads/main:refs/remotes/origin/main
+          git show-ref --verify --quiet refs/heads/main || git branch main origin/main
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
