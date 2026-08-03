@@ -34,6 +34,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
 badgePaas: label="Adobe Commerce on Cloud version 2.4.4-2.4.9 only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects only."
+nudge: true
 ---
 
 # Security and compliance: Required actions and deadlines
@@ -44,20 +45,11 @@ badgePaas: label="Adobe Commerce on Cloud version 2.4.4-2.4.9 only" type="Inform
 >
 > This guidance does not apply to Adobe Commerce as a Cloud Service (SaaS) environments or Adobe Commerce on-premises deployments.
 
-Ecommerce relies on trust, and that trust depends on security. As the security threat landscape continues to evolve, Adobe is strengthening security requirements for Adobe Commerce on Cloud to help customers better protect their storefronts, applications, and sensitive data.
+Ecommerce depends on trust, and that trust depends on security. Online transactions involve sensitive personal and business data, and a breach can create significant financial and legal risks. Adobe Commerce on Cloud PaaS environments face distinct security challenges arising from the shared responsibility model, application-layer dependencies, and extensive third-party integrations. To help customers address these risks, Adobe is introducing enhanced security requirements aligned with industry best practices. These requirements are designed to strengthen the protection of storefronts, applications, and sensitive data.
 
-Security is critical for ecommerce businesses: online transactions involve sensitive personal and business data, and a breach can expose you to financial and legal risk. Adobe Commerce on Cloud environments face unique challenges due to the shared responsibility model, application-layer dependencies, and extensive third-party integrations. To address these evolving risks, Adobe is introducing enhanced security requirements that strengthen the security posture of Adobe Commerce on Cloud (PaaS) customers while aligning with industry best practices.
+Staying secure is a shared responsibility. While Adobe works to continually harden the platform, customers must run supported versions of Adobe Commerce on Cloud and third-party software, apply patches promptly, audit third-party extensions, and secure custom code.
 
-Adobe supports this shared approach through:
-
-* Security patches and, when needed, independently released isolated security patch files for faster remediation of critical vulnerabilities
-* Cloud Patches for Commerce package to deliver required patches and help keep Adobe Commerce on Cloud environments aligned with supported security requirements
-* Lifecycle enforcement policies
-* Out-of-band hotfixes for critical security issues
-
-While Adobe customers secure, the [Shared Responsibility model for Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) requires that customers use supported versions of Adobe Commerce on Cloud and third-party software, apply patches, audit third-party extensions, and secure custom code.
-
-This page outlines the actions required for Adobe Commerce on Cloud PaaS environments running versions 2.4.4 through 2.4.9. It also provides the applicable enforcement dates and consequences of noncompliance.
+This page outlines the actions all customers on Adobe Commerce on Cloud (version 2.4.4 to 2.4.9) need to take to ensure that their ecommerce environments remain secure, along with the enforcement dates, and what to expect when the security requirements are not met.
 
 ## Actions required to maintain a secure and compliant environment
 
