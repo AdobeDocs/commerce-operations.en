@@ -38,7 +38,7 @@ Security is one of the top reasons for upgrading because 83% of security inciden
 - **Patch releases**—Include security, performance, quality, and high-priority bug fixes.
 - **Security patch releases**—Include fixes and enhancements to keep your site secure and are easier to implement.
 
-If you are on Adobe Commerce on Cloud version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](../release/security-compliance-notice.md) for required actions and deadlines to keep your environment secure and compliant.
+If you are on Adobe Commerce on Cloud version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](../release/security-enforcement-policy.md) for required actions and deadlines to keep your environment secure and compliant.
 
 ### Performance
 

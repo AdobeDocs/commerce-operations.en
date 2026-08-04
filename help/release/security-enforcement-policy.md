@@ -53,7 +53,7 @@ At Adobe, we proactively address the evolving risks and ensure that we set up ou
 * Annual patch releases with long term support
 * Streamlined lifecycle policies for each release with a 3-year support window
 
-While Adobe takes the necessary steps to keep our customers secure, the [shared responsibility model](../security-and-compliance/shared-responsibility.md) for Adobe Commerce on Cloud requires that our customers always be on a supported version of Adobe Commerce on Cloud and third-party software, apply application patches, audit third-party extensions, and secure custom code. Software that has passed end of vendor support no longer receives security patches, leaving security issues in the software unaddressed. Continuing to run your ecommerce storefront on unsupported software creates a real and growing security risk.
+While Adobe takes the necessary steps to keep our customers secure, the [shared responsibility model](../security-and-compliance/security-and-compliance/shared-responsibility.md) for Adobe Commerce on Cloud requires that our customers always be on a supported version of Adobe Commerce on Cloud and third-party software, apply application patches, audit third-party extensions, and secure custom code. Software that has passed end of vendor support no longer receives security patches, leaving security issues in the software unaddressed. Continuing to run your ecommerce storefront on unsupported software creates a real and growing security risk.
 
 This page outlines the actions all customers on Adobe Commerce on Cloud (version 2.4.4 through 2.4.9) need to take to ensure that their ecommerce environments remain secure, along with the enforcement dates, and what to expect when the security requirements are not met.
 

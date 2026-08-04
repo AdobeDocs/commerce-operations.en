@@ -84,7 +84,7 @@ See the following resources for information about available Adobe Commerce versi
 - [Released Versions](../../../release/versions.md)
 - [Product Availability](../../../release/product-availability.md) (Adobe Commerce services and Adobe-authored extensions)
 - [Adobe Commerce lifecycle policy](../../../release/lifecycle-policy.md)
-- [Security and compliance notice](../../../release/security-compliance-notice.md) (Adobe Commerce on Cloud versions 2.4.4 through 2.4.9)
+- [Security and compliance notice](../../../release/security-enforcement-policy.md) (Adobe Commerce on Cloud versions 2.4.4 through 2.4.9)
 - [Upgrade Guide](../../../upgrade/overview.md)
 - [How to apply patches](../../../upgrade/patches/overview.md)
 
