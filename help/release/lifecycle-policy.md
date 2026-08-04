@@ -7,7 +7,7 @@ nudge: true
 
 # Adobe Commerce lifecycle policy
 
-To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three-year standard support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of software support](#end-of-software-support) table.
+To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three-year standard support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of support dates](#end-of-support-dates) table.
 
 Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are in the three-year or extended support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
 
@@ -167,7 +167,7 @@ You are responsible for maintaining all third-party dependencies and platform se
 
 >[!IMPORTANT]
 >
->Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status. See the [Security and Compliance Notice](../security-and-compliance/security-compliance-notice.md) for how these upgrades are scheduled and the support available to you throughout the process.
+>Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status. See the [Security and Compliance Notice](security-enforcement-policy.md) for how these upgrades are scheduled and the support available to you throughout the process.
 
 ## PHP end of life and PCI compliance
 
