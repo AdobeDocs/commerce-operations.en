@@ -6,7 +6,7 @@ nudge: false
 
 # Version upgrade enforcement policy for Adobe Commerce on Cloud
 
-When regular support and extended support end for an Adobe Commerce version, Adobe reserves the right to decommission Adobe Commerce on Cloud environments still running that unsupported version. Version upgrade enforcement applies to Adobe Commerce on Cloud environments only; on-premises customers manage their own infrastructure. Adobe provides advance notice and support resources well ahead of these dates to help you plan your upgrade or migration.
+When regular support and extended support end for an Adobe Commerce version, Adobe reserves the right to decommission Adobe Commerce on Cloud environments still running that unsupported version. Version upgrade enforcement applies only to Adobe Commerce on Cloud environments. On-premises customers manage their own infrastructure. Adobe provides advance notice and support resources well ahead of these dates to help you plan your upgrade or migration.
 
 You must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line.
 
@@ -14,13 +14,13 @@ The following sections explain why Adobe enforces upgrades, how enforcement date
 
 >[!NOTE]
 >
->This topic covers Cloud upgrade enforcement only. For support tier definitions, the [end of support dates](lifecycle-policy.md#end-of-support-dates) table, [security-only transitional provisions](lifecycle-policy.md#security-only-transitional-period), [third-party software dependencies](lifecycle-policy.md#platform-dependencies), [PHP end of life and PCI compliance](lifecycle-policy.md#php-end-of-life-and-pci-compliance), and [upgrade and migration options](lifecycle-policy.md#upgrade-and-migration-options), see the [lifecycle policy](lifecycle-policy.md). In addition to upgrading to a supported Adobe Commerce version, Adobe also requires you to keep third-party software dependencies on actively supported versions. For the specific required actions and deadlines that apply to Adobe Commerce on Cloud versions 2.4.4 through 2.4.9, see the [Security and Compliance Notice](security-compliance-notice.md).
+>This topic covers Cloud upgrade enforcement only. See the [lifecycle policy](lifecycle-policy.md) for support tier definitions, [end of support dates](lifecycle-policy.md#end-of-support-dates), [security-only transitional provisions](lifecycle-policy.md#security-only-transitional-period), [third-party software dependencies](lifecycle-policy.md#platform-dependencies), [PHP end of life and PCI compliance](lifecycle-policy.md#php-end-of-life-and-pci-compliance), and [upgrade and migration options](lifecycle-policy.md#upgrade-and-migration-options). In addition to upgrading to a supported Adobe Commerce version, Adobe also requires you to keep third-party software dependencies on actively supported versions. For the specific required actions and deadlines that apply to Adobe Commerce on Cloud versions 2.4.4 through 2.4.9, see the [Security and Compliance Notice](security-compliance-notice.md).
 
 ## Why Adobe is introducing this policy
 
 Adobe is responsible for the security and compliance of the hosted platform infrastructure that Adobe Commerce on Cloud customers run on. This includes keeping all underlying software dependencies up to date, applying security patches, and meeting compliance standards, such as PCI, that customers rely on.
 
-When security support for underlying software dependencies is officially ended by vendors, Adobe can no longer provide the required level of security coverage and platform support. Continuing to run stores on unsupported infrastructure puts customers, their shoppers, and Adobe at unacceptable risk. Adobe is therefore introducing a formal version upgrade enforcement policy that defines when Adobe Commerce on Cloud environments running unsupported Commerce versions will be decommissioned–along with the support Adobe provides to help you plan your upgrade or migration. See the [Security and Compliance Notice](security-compliance-notice.md) for more information.
+When vendors officially end security support for underlying software dependencies, Adobe can no longer provide the required level of security coverage and platform support. Continuing to run stores on unsupported infrastructure puts customers, their shoppers, and Adobe at unacceptable risk. Adobe is therefore introducing a formal version upgrade enforcement policy that defines when Adobe Commerce on Cloud environments running unsupported Commerce versions are decommissioned—along with the support Adobe provides to help you plan your upgrade or migration. See the [Security and Compliance Notice] for more information.
 
 ## How upgrade enforcement dates are calculated
 
