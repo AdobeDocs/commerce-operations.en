@@ -33,6 +33,7 @@ Merchants are responsible for the following:
 >
 >* [Software lifecycle policy](../release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
 >* [Cloud version upgrade enforcement policy](../release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions
+>* [Security and compliance notice](../release/security-compliance-notice.md) — required actions and deadlines for Adobe Commerce on Cloud versions 2.4.4 through 2.4.9
 
 {{supported-versions-only}}
 

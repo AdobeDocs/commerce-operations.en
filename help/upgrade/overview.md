@@ -33,10 +33,12 @@ Upgrading empowers your business to stay nimble in the fast-paced and ever-chang
 
 ### Security
 
-Security is one of the top reasons for upgrading because 83% of security incidents occur on outdated software. According to [IBM](https://www.ibm.com/reports/data-breach), the average cost of a data breach is $3.86 million—far greater than what it costs to mitigate this risk through upgrading. Adobe offers two ways to keep your store secure throughout the year: 
+Security is one of the top reasons for upgrading because 83% of security incidents occur on outdated software. According to [IBM](https://www.ibm.com/reports/data-breach), the average cost of a data breach is $3.86 million—far greater than what it costs to mitigate this risk through upgrading. Adobe offers two ways to keep your store secure throughout the year:
 
 - **Patch releases**—Include security, performance, quality, and high-priority bug fixes.
 - **Security patch releases**—Include fixes and enhancements to keep your site secure and are easier to implement.
+
+If you are on Adobe Commerce on Cloud version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](../release/security-compliance-notice.md) for required actions and deadlines to keep your environment secure and compliant.
 
 ### Performance
 

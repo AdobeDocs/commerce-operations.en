@@ -12,6 +12,7 @@ This section contains information about security, privacy, and regulation compli
 -  [Adobe Product Security](https://helpx.adobe.com/security.html): Learn about the latest patches, security updates, and best practices for Adobe Commerce.
 -  [Adobe Trust Center](https://www.adobe.com/trust.html): Access the latest available information on the operational health, security, privacy, and compliance of all Adobe cloud services.
 -  [Site-Wide Analysis Tool](../tools/site-wide-analysis-tool/dashboard.md): View streamlined security insights about your Adobe Commerce site, including security scans, end-of-life services, and security recommendations.
+- [Security and Compliance Notice](../release/security-compliance-notice.md): Learn about required actions and deadlines for Adobe Commerce on Cloud versions 2.4.4 through 2.4.9 to stay secure and compliant.
 
 ## Compliance
 

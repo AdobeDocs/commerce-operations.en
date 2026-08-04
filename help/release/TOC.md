@@ -48,7 +48,7 @@ nudge: true
 - [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
-  - [Security and compliance notice](security-enforcement-policy.md)
+  - [Security and compliance notice](security-compliance-notice.md)
   - [Version upgrade enforcement policy](version-upgrade-enforcement-policy.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)

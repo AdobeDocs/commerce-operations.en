@@ -65,7 +65,7 @@ To keep your ecommerce environment secure and compliant, all customers on Adobe 
 
 1. A secure and supported version of Adobe Commerce on Cloud
 
-Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environments. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline and would need a short extension, please contact your account team or Adobe [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environments. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline and need a short extension, please contact your account team or Adobe [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 **Table 1: Security requirements and deadlines**
 
@@ -121,11 +121,11 @@ Adobe will help you upgrade these software dependencies directly.
 
 If you use third-party extensions, confirm with your vendors that their current releases support your target software versions. If you work with a solution integrator, involve them early in upgrade planning, testing, and validation.
 
-### Action 2: Check Commerce on Cloud version and upgrade to a supported version {#upgrade-or-migrate-your-adobe-commerce-version}
+### Action 2: Check Commerce on Cloud version and upgrade to a supported version
 
 Check which Adobe Commerce on Cloud version your environments run. If any environment is not on a supported version, you can upgrade to version 2.4.9 or the latest supported version, or migrate to [!DNL Adobe Commerce as a Cloud Service].
 
-### Step 1: Check your Adobe Commerce on Cloud version and required action
+#### Step 1: Check your Adobe Commerce on Cloud version and required action
 
 1. Sign in to your Adobe Commerce Admin panel.
 
@@ -194,10 +194,6 @@ Adobe provides tools that reduce the cost and time of migrating to [!DNL Adobe C
 * **AI-assisted migration and developer tools:** Adobe Developer App Builder and Commerce Storefront powered by Edge Delivery Services help accelerate storefront modernization and extension re-platforming.
 
  If you have questions, get in touch with your account team or contact [Support Services](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
-
->[!IMPORTANT]
->
->Adobe provides advance notifications and a data-export window before environment deactivation so you can retrieve your data. After an environment is decommissioned, the hosted data and assets are permanently deleted and cannot be restored.
 
 >[!MORELIKETHIS]
 >

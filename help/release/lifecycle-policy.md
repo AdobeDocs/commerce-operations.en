@@ -27,15 +27,15 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 
 >[!NOTE]
 >
->Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to decommission them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud to help every customer stay on a secure, supported platform. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to decommission them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. If you are on version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](security-compliance-notice.md) for the specific actions and deadlines that apply to your environment.
 
 ## Security-only transitional period
 
-A one-time, time-limited transitional period available only for versions 2.4.4, 2.4.5, and 2.4.6 whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only. Adobe Commerce quality fixes are not provided. This period is not equivalent to standard or extended support and will not be extended further. Treat it as a migration period, not as a long-term support tier.
+A one-time, time-limited transitional period available only for versions 2.4.4, 2.4.5, and 2.4.6 whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only (no quality fixes).
 
 >[!IMPORTANT]
 >
->The security-only transitional period is a one-time exception. It will not be extended beyond the published dates. Treat the security-only period as migration time, not as a long-term support tier.
+>The security-only transitional period is a one-time exception. It will not be extended beyond the published dates. Treat the security-only period as migration time, not as a long-term support tier. Contact your account team if you'd like help building a migration plan.
 
 ## End of support dates
 
@@ -167,7 +167,7 @@ You are responsible for maintaining all third-party dependencies and platform se
 
 >[!IMPORTANT]
 >
->Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status.
+>Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status. See the [Security and Compliance Notice]for how these upgrades are scheduled and the support available to you throughout the process.
 
 ## PHP end of life and PCI compliance
 
