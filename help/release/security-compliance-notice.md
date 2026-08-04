@@ -150,7 +150,7 @@ Check required actions for your Adobe Commerce version in the table below.
 | Version 2.4.6 or 2.4.7 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to [!DNL Adobe Commerce as a Cloud Service].<br>Reason: version 2.4.6 receives extended support through August 30, 2027, and receives only limited, isolated security fixes for the core application until May 31, 2028. Version 2.4.7 receives standard support through May 31, 2027, and extended support through May 31, 2028. See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2028 |
 | Version 2.4.8 or 2.4.9 | No Adobe Commerce on Cloud version upgrade action is needed. The third-party software dependency deadlines in Action 1 still apply.<br>Reason: No deadline has been set. | Not required at this time |
 
-### Step 2: Determine the upgrade or migration path
+#### Step 2: Determine the upgrade or migration path
 
 If you need to upgrade your Adobe Commerce on Cloud version, then you have two options:
 
