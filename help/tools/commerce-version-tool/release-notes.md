@@ -29,7 +29,7 @@ These release notes describe updates for [!DNL Commerce Version Tool] ([!DNL CVT
 
 ### New features
 
-- **Composer-replaced module detection** - Reads the `replace` section of `composer.json` and recognizes core modules that an installation has intentionally removed (declared at version `*`). Patches that apply only to removed modules are now classified as not applicable, and their CVEs resolve to `NOT_APPLICABLE` instead of being reported as `UNKNOWN` or `VULNERABLE`. Adds a new `not_applicable_patches` field to the JSON and CSV output.
+- **Composer `replace` support** - Adds support for installations that remove core modules through composer `replace`, with improved patch detection accuracy for those modules.
 
 ### Improvements
 
