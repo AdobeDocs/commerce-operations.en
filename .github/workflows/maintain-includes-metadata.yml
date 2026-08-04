@@ -4,25 +4,7 @@ on:
   schedule:
     - cron: '0 6 * * 1-5'  # 6:00 AM UTC, Monday-Friday
   workflow_dispatch:
-    inputs:
-      assignees:
-        description: 'Comma-separated GitHub usernames to assign the PR to'
-        type: string
-        default: meker_adobe
-      reviewers:
-        description: 'Comma-separated GitHub usernames to request review from'
-        type: string
-        default: shevtsov_adobe
   workflow_call:
-    inputs:
-      assignees:
-        description: 'Comma-separated GitHub usernames to assign the PR to'
-        type: string
-        default: meker_adobe
-      reviewers:
-        description: 'Comma-separated GitHub usernames to request review from'
-        type: string
-        default: shevtsov_adobe
     secrets:
       SCCM_GITHUB_APP_ID:
         required: true
@@ -83,5 +65,4 @@ jobs:
 
             This refreshes `last-update` front matter for topics whose transcluded include content changed.
           labels: devops, maintenance
-          assignees: ${{ inputs.assignees || 'meker_adobe' }}
-          reviewers: ${{ inputs.reviewers || 'shevtsov_adobe' }}
+          assignees: shevtsov_adobe
