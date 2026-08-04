@@ -25,6 +25,17 @@ topic_v2:
 
 These release notes describe updates for [!DNL Commerce Version Tool] ([!DNL CVT]).
 
+## Version 1.0.2 — August 2026 {#version-1-0-2}
+
+### New features
+
+- **Composer-replaced module detection** - Reads the `replace` section of `composer.json` and recognizes core modules that an installation has intentionally removed (declared at version `*`). Patches that apply only to removed modules are now classified as not applicable, and their CVEs resolve to `NOT_APPLICABLE` instead of being reported as `UNKNOWN` or `VULNERABLE`. Adds a new `not_applicable_patches` field to the JSON and CSV output.
+
+### Improvements
+
+- **Accurate version reporting** - The tool now reports the version that matches its release tag.
+- **In-place updates within monthly patches** - A monthly Adobe Commerce security patch can now update an already-installed [!DNL CVT] tool instead of failing when the tool is already present.
+
 ## Version 1.0.0 — June 2026 {#version-1-0-0}
 
 ### New features
