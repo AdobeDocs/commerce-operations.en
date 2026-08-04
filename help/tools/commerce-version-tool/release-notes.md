@@ -31,11 +31,6 @@ These release notes describe updates for [!DNL Commerce Version Tool] ([!DNL CVT
 
 - **Composer `replace` support** - Adds support for installations that remove core modules through composer `replace`, with improved patch detection accuracy for those modules.
 
-### Improvements
-
-- **Accurate version reporting** - The tool now reports the version that matches its release tag.
-- **In-place updates within monthly patches** - A monthly Adobe Commerce security patch can now update an already-installed [!DNL CVT] tool instead of failing when the tool is already present.
-
 ## Version 1.0.0 — June 2026 {#version-1-0-0}
 
 ### New features
