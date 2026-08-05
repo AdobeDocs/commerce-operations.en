@@ -1,5 +1,5 @@
 ---
-title: "Required actions and deadlines to remain secure and compliant"
+title: "Required actions and deadlines to secure Commerce environments"
 description: Learn about security enforcement for unsupported Adobe Commerce on Cloud versions and software dependencies, including deadlines, required actions, and risks.
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -33,17 +33,15 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud version 2.4.4 through 2.4.9 only"
+badgePaas: label="Adobe Commerce on Cloud 2.4.4 - 2.4.9only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud version 2.4.4 through 2.4.9 only"
 nudge: true
 ---
 
-# Required actions and deadlines to remain secure and compliant
+# Required actions and deadlines to secure Commerce environments
 
 >[!NOTE]
 >
 > **Applies to:** Adobe Commerce on Cloud (PaaS) environments running Adobe Commerce versions 2.4.4 through 2.4.9.
->
-> This guidance does not apply to [!DNL Adobe Commerce as a Cloud Service] (SaaS) environments or Adobe Commerce on-premises deployments.
 
 The cybersecurity landscape is fundamentally changing, and the defensive mechanisms enterprises have in place need to rapidly evolve. Security is critical for ecommerce businesses because online transactions require them to handle sensitive personal and business data, exposing them to financial and identity risks in the event of a breach. PaaS ecommerce environments have a shared responsibility model where the customer is responsible for security and maintenance of application layer dependencies, integrations with third-party software, and deployment pipelines.
 
@@ -70,9 +68,13 @@ To keep your ecommerce environment secure and mitigate risks, all customers on A
 
 1. Supported versions of all 3rd party software dependencies (PHP, MariaDB, Elasticsearch, OpenSearch, Redis, RabbitMQ)
 
-1. A secure and supported version of Adobe Commerce on Cloud. Fully supported versions include 2.4.8, 2.4.9, or the latest available release. See the lifecycle policy [here](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy).
+1. A secure and supported version of Adobe Commerce on Cloud. Fully supported versions include 2.4.8, 2.4.9, or the latest available release. See the [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) documentation.
 
 Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environment. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline and would need a short extension, please contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+
+>[!NOTE]
+>
+> This guidance does not apply to [!DNL Adobe Commerce as a Cloud Service] (SaaS) environments or Adobe Commerce on-premises deployments.
 
 **Table 1: Security requirements and deadlines**
 
