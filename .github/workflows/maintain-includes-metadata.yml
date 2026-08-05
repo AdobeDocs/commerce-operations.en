@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: '0 6 * * 1-5'  # 6:00 AM UTC, Monday-Friday
   workflow_dispatch:
-  workflow_call:
-    secrets:
-      SCCM_GITHUB_APP_ID:
-        required: true
-      SCCM_GITHUB_APP_PRIVATE_KEY:
-        required: true
 
 concurrency:
   group: maintain-includes-metadata
