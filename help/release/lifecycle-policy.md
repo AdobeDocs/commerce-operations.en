@@ -168,6 +168,7 @@ You are responsible for maintaining all third-party dependencies and platform se
 >[!IMPORTANT]
 >
 >Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe will be forced to take appropriate action to guarantee security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure. As a result your ecommerce storefront will go offline.
+
 If an environment continues to remain non-compliant following traffic suspension, Adobe may terminate cloud services, initiating the decommissioning process. As a result of decommissioning, all data and assets within the hosted ecommerce environment, including all instances, environments, and branches, will be permanently deleted and cannot be restored. See the [Required actions and deadlines to secure Commerce environments](security-enforcement-policy.md) for how these upgrades are scheduled and the support available to you throughout the process.
 
 ## PHP end of life and PCI compliance
