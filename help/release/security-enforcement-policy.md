@@ -1,5 +1,5 @@
 ---
-title: "Security and Compliance: Required Actions and Deadlines"
+title: "Required actions and deadlines to remain secure and compliant"
 description: Learn about security enforcement for unsupported Adobe Commerce on Cloud versions and software dependencies, including deadlines, required actions, and risks.
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -37,7 +37,7 @@ badgePaas: label="Adobe Commerce on Cloud only" type="Informative" url="https://
 nudge: true
 ---
 
-# Security and compliance notice: Required actions and deadlines
+# Required actions and deadlines to remain secure and compliant
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ nudge: true
 >
 > This guidance does not apply to [!DNL Adobe Commerce as a Cloud Service] (SaaS) environments or Adobe Commerce on-premises deployments.
 
-The cybersecurity landscape is fundamentally changing, and the defensive mechanisms enterprises have in place need to rapidly evolve. Security is critical for e-commerce businesses because online transactions require them to handle sensitive personal and business data, exposing them to financial and identity risks in the event of a breach. PaaS ecommerce environments have a shared responsibility model where the customer is responsible for security and maintenance of application layer dependencies, integrations with third-party software, and deployment pipelines.
+The cybersecurity landscape is fundamentally changing, and the defensive mechanisms enterprises have in place need to rapidly evolve. Security is critical for ecommerce businesses because online transactions require them to handle sensitive personal and business data, exposing them to financial and identity risks in the event of a breach. PaaS ecommerce environments have a shared responsibility model where the customer is responsible for security and maintenance of application layer dependencies, integrations with third-party software, and deployment pipelines.
 
 At Adobe, we remain committed to addressing the evolving risks and ensuring that we setup our Adobe Commerce on Cloud customers to the highest security standards. This includes:
 
@@ -60,11 +60,11 @@ At Adobe, we remain committed to addressing the evolving risks and ensuring that
 5. Annual patch releases with long term support
 
 
-While Adobe takes the necessary steps to keep our customers secure, the shared responsibility model for Adobe Commerce on Cloud requires that our customers always be on a supported version of Adobe Commerce on Cloud and third-party software, apply application patches, audit third-party extensions, and secure custom code. Software that has passed end of vendor support no longer receives security patches, leaving security issues in the software unaddressed. Continuing to run your eCommerce storefront on unsupported software creates a real and growing security risk.
+While Adobe takes the necessary steps to keep our customers secure, the shared responsibility model for Adobe Commerce on Cloud requires that our customers always be on a supported version of Adobe Commerce on Cloud and third-party software, apply application patches, audit third-party extensions, and secure custom code. Software that has passed end of vendor support no longer receives security patches, leaving security issues in the software unaddressed. Continuing to run your ecommerce storefront on unsupported software creates a real and growing security risk.
 
 This page outlines the actions all customers on Adobe Commerce on Cloud (version 2.4.4 to 2.4.9) need to take to ensure their ecommerce environment remains secure, along with the enforcement dates and what to expect when the security requirements are not met.
 
-## Actions required to maintain a secure, compliant environment
+## Actions required to maintain a secure and compliant environment
 
 To keep your ecommerce environment secure and mitigate risks, all customers on Adobe Commerce on Cloud (version 2.4.4 to 2.4.9) are required to use:
 
@@ -72,7 +72,7 @@ To keep your ecommerce environment secure and mitigate risks, all customers on A
 
 1. A secure and supported version of Adobe Commerce on Cloud. Fully supported versions include 2.4.8, 2.4.9, or the latest available release. See the lifecycle policy [here](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy).
 
-Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environment. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline and would need a short extension, please contact your account team or Adobe Support.
+Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environment. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline and would need a short extension, please contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 **Table 1: Security requirements and deadlines**
 
@@ -84,7 +84,7 @@ Follow the guidelines below to check if you need to take action to secure your A
 
 ## Detailed steps to secure your environment
 
-Engage your eCommerce admin to go through the following steps.
+Engage your ecommerce admin to go through the following steps.
 
 ### Action 1: Verify and upgrade third-party software dependencies
 
@@ -92,7 +92,7 @@ Check that your environment is running vendor-supported versions of the followin
 
 #### Step 1: Check your third-party software dependency versions
 
-1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console).
+1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console). You can see all your environments in the Cloud Console.
 2. Open the relevant project, then select the environment you want to review.
 3. Check the service configuration for that environment in the `.magento/services.yaml` file, which defines the supported service names and versions used by Adobe Commerce on Cloud.
 4. Check the dependency versions each environment is running using the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
@@ -127,7 +127,7 @@ Adobe will help you upgrade these software dependencies directly.
   * **Elasticsearch to OpenSearch** and **Redis to Valkey** are migrations to different software rather than version upgrades. Custom code, extensions, or configuration referencing the original service may need an update.
   * Upgrading from **PHP 8.1 to 8.2** can surface deprecations in custom code and third-party extensions.
 
-If you use third-party extensions, confirm with your vendors that their current releases support your target versions. If you work with a solution integrator, involve them in  planning and validation.
+If you use third-party extensions, confirm with your vendors that their current releases support your target versions. If you work with a solution integrator, involve them in planning and validation.
 
 ### Action 2: Check your Adobe Commerce on Cloud version and upgrade to a supported version
 
@@ -174,17 +174,17 @@ The following table helps you compare your options and determine the best path f
 
 Adobe remains committed to supporting you in executing the steps you need to take to adopt a supported version of 3rd party software, upgrade to the latest version of Adobe Commerce on Cloud or migrate to Adobe Commerce as a Cloud Service.  If you have concerns about meeting the deadline and need a short extension, contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
-If an environment has not met the security requirements by the enforcement dates shared above, Adobe will be forced to take appropriate action to guarantee security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure, and as a result your eCommerce storefront will go offline.
+If an environment has not met the security requirements by the enforcement dates shared above, Adobe will be forced to take appropriate action to guarantee security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure, and as a result your ecommerce storefront will go offline.
 
-If an environment continues to remain non-compliant following traffic suspension, Adobe may terminate cloud services, initiating the decommissioning process. As a result of decommissioning, all data and assets within the hosted eCommerce environment, including all instances, environments, and branches, will be permanently deleted and cannot be restored.
+If an environment continues to remain non-compliant following traffic suspension, Adobe may terminate cloud services, initiating the decommissioning process. As a result of decommissioning, all data and assets within the hosted ecommerce environment, including all instances, environments, and branches, will be permanently deleted and cannot be restored.
 
-## Resources to support you with upgrade or migration
+## Resources to support you with upgrades or migration
 
 **If you choose to upgrade to Adobe Commerce on Cloud version 2.4.9:**
 
 * **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including identifying what modules and files require updates, number of critical issues, and so on. [Generate your Upgrade Compatibility Report](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Software dependency upgrade:** Since you cannot upgrade software dependencies directly, open a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) for Adobe to handle the upgrade for you. For details, see [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+* **Software dependency upgrade:** Since you cannot upgrade software dependencies directly, open a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
 **If you choose to migrate to [!DNL Adobe Commerce as a Cloud Service]:**
 
