@@ -58,7 +58,7 @@ At Adobe, we remain committed to addressing the evolving risks and ensuring that
 5. Annual patch releases with long term support
 
 
-While Adobe takes the necessary steps to keep our customers secure, the shared responsibility model for Adobe Commerce on Cloud requires that our customers always be on a supported version of Adobe Commerce on Cloud and third-party software, apply application patches, audit third-party extensions, and secure custom code. Software that has passed end of vendor support no longer receives security patches, leaving security issues in the software unaddressed. Continuing to run your ecommerce storefront on unsupported software creates a real and growing security risk.
+While Adobe takes the necessary steps to help keep our customers secure, the shared responsibility model for Adobe Commerce on Cloud requires that our customers always be on a supported version of Adobe Commerce on Cloud and third-party software, apply application patches, audit third-party extensions, and secure custom code. Software that has passed end of vendor support no longer receives security patches, leaving security issues in the software unaddressed. Continuing to run your ecommerce storefront on unsupported software creates a real and growing security risk.
 
 This page outlines the actions all customers on Adobe Commerce on Cloud (version 2.4.4 to 2.4.9) need to take to ensure their ecommerce environment remains secure, along with the enforcement dates and what to expect when the security requirements are not met.
 
@@ -94,7 +94,7 @@ Check that your environment is running vendor-supported versions of the followin
 
 #### Step 1: Check your third-party software dependency versions
 
-1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console). You can see all your environments in the Cloud Console.
+1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console).
 2. Open the relevant project, then select the environment you want to review.
 3. Check the service configuration for that environment in the `.magento/services.yaml` file, which defines the supported service names and versions used by Adobe Commerce on Cloud.
 4. Check the dependency versions each environment is running using the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
@@ -176,7 +176,7 @@ The following table helps you compare your options and determine the best path f
 
 Adobe remains committed to supporting you in executing the steps you need to take to adopt a supported version of 3rd party software, upgrade to the latest version of Adobe Commerce on Cloud or migrate to Adobe Commerce as a Cloud Service.  If you have concerns about meeting the deadline and need a short extension, contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
-If an environment has not met the security requirements by the enforcement dates shared above, Adobe will be forced to take appropriate action to guarantee security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure, and as a result your ecommerce storefront will go offline.
+If an environment has not met the security requirements by the enforcement dates shared above, Adobe will be forced to take appropriate action to maintain security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure, and as a result your ecommerce storefront will go offline.
 
 If an environment continues to remain non-compliant following traffic suspension, Adobe may terminate cloud services, initiating the decommissioning process. As a result of decommissioning, all data and assets within the hosted ecommerce environment, including all instances, environments, and branches, will be permanently deleted and cannot be restored.
 
