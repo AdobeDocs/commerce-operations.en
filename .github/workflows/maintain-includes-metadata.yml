@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   maintain-metadata:
-    if: github.repository_owner == 'Adobe-Enterprise-Docs'
+    if: github.repository_owner == 'Adobe-Enterprise-Docs' && endsWith(github.repository, '.en')
     runs-on: ubuntu-latest
     permissions:
       contents: read
