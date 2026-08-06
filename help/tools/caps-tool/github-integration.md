@@ -11,7 +11,8 @@ If your Adobe Commerce Cloud project is connected to a GitHub repository, you mu
 ## Prerequisites
 
 * An active Adobe Commerce Cloud subscription
-* A [GitHub integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) already configured for your Adobe Commerce Cloud project
+* A [GitHub integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) already configured for your Adobe Commerce Cloud project, with its [`fetch-branches` option enabled](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL CAPS] creates and pushes temporary integration-environment branches, so patch operations fail to create the environment when this option is disabled.
+* A repository hosted on [!DNL github.com]. GitHub integrations configured with a custom domain are not supported.
 * Owner or Admin access to the GitHub organization or repository
 
 ## Install the [!DNL CAPS] GitHub App
@@ -28,7 +29,9 @@ Once installed, [!DNL CAPS] automatically detects your GitHub connection and use
 
 If you no longer want [!DNL CAPS] to access your repository:
 
-1. In GitHub, go to **[!UICONTROL Settings]** > **[!UICONTROL Applications]** > **[!UICONTROL Installed GitHub Apps]**.
+1. In GitHub, open the settings for the account that owns the installation:
+   * For an **organization-owned** repository: **[!UICONTROL Organization settings]** > **[!UICONTROL Third-party Access]** > **[!UICONTROL GitHub Apps]**.
+   * For a **personal** repository: **[!UICONTROL Settings]** > **[!UICONTROL Applications]** > **[!UICONTROL Installed GitHub Apps]**.
 1. Find `caps-connector` and click **[!UICONTROL Configure]**.
 1. Click **[!UICONTROL Uninstall]** and confirm.
 

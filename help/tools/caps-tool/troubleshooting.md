@@ -168,6 +168,14 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 
 **Solution:** Wait a few minutes and retry the operation. If the error continues, contact [Adobe Commerce Cloud support](https://experienceleague.adobe.com/home#support)
 
+#### "Environment not created within timeout" (GitHub-connected project)
+
+**When it occurs:** During integration-environment creation
+
+**Cause:** The project's GitHub integration has the `fetch-branches` option disabled, so the temporary branches [!DNL CAPS] pushes are not synced and the integration environment is never created.
+
+**Solution:** Enable the integration's [`fetch-branches` option](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), then retry the operation. See [Set up the GitHub integration for [!DNL CAPS]](github-integration.md).
+
 ### Resource and quota errors
 
 #### "Environment quota exceeded"
