@@ -2,8 +2,76 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jul 24 16:38:13 2026
+updated: Mon Aug 3 14:17:36 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4547:
+    Admin can''t add a default-catalog product to a quote when it isn''t assigned
+    to the user''s shared catalog](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 31, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2096
+  merge_commit: 6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Security Policy: Required Actions and Deadlines](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy)
+    for Adobe Commerce on Cloud customers to explain requirements, timelines, and
+    instructions for upgrading Adobe Commerce on Cloud deployments running unsupported
+    versions or third-party software dependencies.'
+  versions: ''
+  type: new-topic
+  date: July 30, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2118
+  merge_commit: b7649aae1f8cab020c1081db2b2363bca22adfed
+  contributor: meker_adobe
+  labels:
+  - new-topic
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4805:
+    Checkout requests slow down for configurable products when the first salable child
+    appears later in the list](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2104
+  merge_commit: 1b5fb4826f6599d7b7609dedfeb545f29454ba4d
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4748:
+    Reward points expiration runs slowly on stores with a large reward points history](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2101
+  merge_commit: 30fe149f9743ceca7f40374246b4fc9b9503c590
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4875:
+    Admin users logged out when opening customer accounts with large address books](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2107
+  merge_commit: 3174f84e0a8c64aaed50cc075a9287bc011778ef
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.82](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2093
+  merge_commit: ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
     with MariaDB Cloud version support details for Adobe Commerce 2.4.9 (12.3 recommended,
     11.8 supported).

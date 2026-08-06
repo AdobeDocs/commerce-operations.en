@@ -1,0 +1,60 @@
+<mxfile host="Electron">
+  <diagram name="Adobe Commerce Version Check" id="version-check-diagram">
+    <mxGraphModel dx="1094" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nodeA" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C4C6CC;strokeColor=#3D4049;strokeWidth=1.5;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=14;arcSize=12;" value="&lt;font face=&quot;Adobe Clean&quot;&gt;Check your Adobe Commerce on Cloud version&lt;/font&gt;" vertex="1">
+          <mxGeometry height="72" width="260" x="104" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nodeB" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B8CCE0;strokeColor=#003D87;strokeWidth=1.5;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=14;" value="&lt;font face=&quot;Adobe Clean&quot;&gt;Supported version?&lt;br&gt;2.4.8, 2.4.9, or the latest&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Adobe Clean&quot;&gt;version&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="134" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nodeC" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8D9C8;strokeColor=#5A7D5A;strokeWidth=1.5;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=14;arcSize=12;" value="&lt;font face=&quot;Adobe Clean&quot;&gt;No further action needed&lt;/font&gt;" vertex="1">
+          <mxGeometry height="51" width="214" x="8" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="nodeD" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B8CCE0;strokeColor=#003D87;strokeWidth=1.5;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=14;" value="&lt;font face=&quot;Adobe Clean&quot;&gt;Choose your path&lt;/font&gt;" vertex="1">
+          <mxGeometry height="162" width="162" x="272" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="nodeE" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C4C6CC;strokeColor=#3D4049;strokeWidth=1.5;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=14;arcSize=12;" value="Upgrade to a 2.4.8, 2.4.9, or latest&lt;div&gt;Adobe Commerce on Cloud version&lt;/div&gt;" vertex="1">
+          <mxGeometry height="93" width="260" x="73" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="nodeF" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C4C6CC;strokeColor=#3D4049;strokeWidth=1.5;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=14;arcSize=12;" value="&lt;font face=&quot;Adobe Clean&quot;&gt;Migrate to Adobe Commerce&lt;br&gt;&lt;/font&gt;&lt;font face=&quot;Adobe Clean&quot;&gt;as a Cloud Service&lt;/font&gt;" vertex="1">
+          <mxGeometry height="93" width="260" x="383" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeAB" edge="1" parent="1" source="nodeA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#3A414A;strokeWidth=1.5;endArrow=block;endFill=1;" target="nodeB">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeBC" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#3A414A;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=13;labelBackgroundColor=#FFFFFF;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="nodeC" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="234" y="394" />
+              <mxPoint x="115" y="394" />
+            </Array>
+            <mxPoint x="234" y="354" as="sourcePoint" />
+            <mxPoint x="115" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edgeBD" edge="1" parent="1" source="nodeB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#3A414A;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#3A3F4A;fontFamily=Helvetica;fontSize=13;labelBackgroundColor=#FFFFFF;" target="nodeD" value="&lt;font face=&quot;Adobe Clean&quot;&gt;No: 2.4.4–2.4.7&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeDE" edge="1" parent="1" source="nodeD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#3A414A;strokeWidth=1.5;endArrow=block;endFill=1;" target="nodeE">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="590" />
+              <mxPoint x="203" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edgeDF" edge="1" parent="1" source="nodeD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#3A414A;strokeWidth=1.5;endArrow=block;endFill=1;" target="nodeF">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="590" />
+              <mxPoint x="502" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

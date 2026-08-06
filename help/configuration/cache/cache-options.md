@@ -49,7 +49,7 @@ The following table summarizes the available backend caches:
 
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must set up Valkey and update the cache configuration to use it. For Commerce on-premises, see [set up Valkey](config-valkey.md). For Commerce on Cloud, see [Set up Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}.
 
 ## Implementation approaches
 
