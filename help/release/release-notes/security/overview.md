@@ -14,4 +14,3 @@ The Adobe Commerce security patch release notes provide information about the la
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
-
