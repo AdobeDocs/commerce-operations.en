@@ -4,6 +4,7 @@ description: Learn about code management best practices for the development phas
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
+last-update: 2024-11-25
 ---
 # Code management best practices for Adobe Commerce
 

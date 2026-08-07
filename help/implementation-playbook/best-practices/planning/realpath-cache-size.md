@@ -11,7 +11,7 @@ Realpath cache caches the real file system paths of filenames referenced instead
 
 To improve Commerce performance, use the following recommended settings to configure the `realpath_cache` settings in the `php.ini` file: 
 
-- Set the cache size to 10 MB (`realpath cache_size=10M`)
+- Set the cache size to 10 MB (`realpath_cache_size=10M`)
 - Set time to live (ttl) to 7200 seconds (`realpath_cache_ttl=7200`) 
 
 For configuration instructions, see [How to set PHP options](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
