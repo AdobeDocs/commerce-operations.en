@@ -32,7 +32,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.82 {#v1-1-82}
 
 * **ACP2E-4194** (for Adobe Commerce and Magento Open Source >=2.4.7-p10 <2.4.8 || >=2.4.8-p5 <2.4.9) - Fixes the issue where GraphQL responses return incorrect HTTP status codes for invalid, unauthorized, or malformed requests.
-* **ACP2E-4547** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where an admin user cannot use 'Add Products by SKU' in Admin to add products from the standard catalog to a negotiable quote for a company assigned to a customer group that is not linked to a shared catalog.
+* **ACP2E-4547** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where an admin user cannot use 'Add Products By SKU' in Admin to add products from the default catalog to an order for a company assigned to a customer group that is not linked to a shared catalog.
 * **ACP2E-4593** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where the CMS page displayed for website restrictions can be incorrect on secondary websites in multi-website deployments.
 * **ACP2E-4682** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where visiting a storefront page that checks the quote `isActive` status creates empty quote records each time the page is loaded.
 * **ACP2E-4695** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the catalog rule indexer consumes excessive memory and fails to complete, causing instability and out-of-memory errors.

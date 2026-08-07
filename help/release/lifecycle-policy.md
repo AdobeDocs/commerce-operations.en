@@ -7,7 +7,7 @@ nudge: true
 
 # Adobe Commerce lifecycle policy
 
-To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three-year standard support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of software support](#end-of-software-support) table.
+To streamline the Adobe Commerce lifecycle policy and support the mission-critical needs of customers, Adobe offers a three-year standard support window from the General Availability (GA) date for each version and releases quality fixes during this period. For dates and details on the end of software support for each release, see the [End of support dates](#end-of-support-dates) table.
 
 Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are in the three-year or extended support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
 
@@ -27,15 +27,15 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 
 >[!NOTE]
 >
->Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and reserves the right to decommission them. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. See [Cloud version upgrade enforcement policy](version-upgrade-enforcement-policy.md) for enforcement dates, affected versions, and what happens if you remain on an unsupported version.
+>Adobe is introducing an enforced version upgrade policy for Adobe Commerce on Cloud to help every customer stay on a secure, supported platform. Starting **June 1, 2027**, Adobe will no longer maintain Cloud environments running unsupported Commerce versions and will be forced to take appropriate action to guarantee security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure. As a result, your ecommerce storefront will go offline. If you run on Cloud, you must move to a supported Adobe Commerce version or migrate to [!DNL Adobe Commerce as a Cloud Service] before the published [end of extended support](lifecycle-policy.md#end-of-support-dates) date for your release line. If you are on version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](security-enforcement-policy.md) for the specific actions and deadlines that apply to your environment.
 
 ## Security-only transitional period
 
-A one-time, time-limited transitional period available only for versions 2.4.4, 2.4.5, and 2.4.6 whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only. Adobe Commerce quality fixes are not provided. This period is not equivalent to standard or extended support and will not be extended further. Treat it as a migration period, not as a long-term support tier.
+A one-time, time-limited transitional period available only for versions 2.4.4, 2.4.5, and 2.4.6 whose extended support ended in 2025 or 2026. The security-only transitional period provides limited isolated security fixes only (no quality fixes).
 
 >[!IMPORTANT]
 >
->The security-only transitional period is a one-time exception. It will not be extended beyond the published dates. Treat the security-only period as migration time, not as a long-term support tier.
+>The security-only transitional period is a one-time exception. It will not be extended beyond the published dates. Treat the security-only period as migration time, not as a long-term support tier. Contact your account team if you'd like help building a migration plan.
 
 ## End of support dates
 
@@ -167,7 +167,9 @@ You are responsible for maintaining all third-party dependencies and platform se
 
 >[!IMPORTANT]
 >
->Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe reserves the right to enforce an upgrade of the affected software dependency, or to decommission the instance if an upgrade is not possible — regardless of your Adobe Commerce version support status.
+>Running unsupported dependency versions may result in a security vulnerability on your Cloud instance that Adobe is unable to resolve. In such cases, Adobe will be forced to take appropriate action to maintain the security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure. As a result, your ecommerce storefront will go offline.
+>
+>If an environment continues to remain non-compliant following traffic suspension, Adobe may terminate cloud services, initiating the decommissioning process. As a result of decommissioning, all data and assets within the hosted ecommerce environment, including all instances, environments, and branches, will be permanently deleted and cannot be restored. See the [Required actions and deadlines to secure Commerce environments](security-enforcement-policy.md) for how these upgrades are scheduled and the support available to you throughout the process.
 
 ## PHP end of life and PCI compliance
 
