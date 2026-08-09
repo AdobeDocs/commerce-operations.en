@@ -2,6 +2,7 @@
 title: Complete Prerequisites
 description: Prepare your Adobe Commerce project for an upgrade by completing these prerequisite steps.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
+last-update: 2026-04-28
 ---
 # Complete upgrade prerequisites
 

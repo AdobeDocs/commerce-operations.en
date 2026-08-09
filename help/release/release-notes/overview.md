@@ -31,8 +31,9 @@ The table below provides release notes and important information for Adobe Comme
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward-incompatible changes</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Security patches</a></li>
-            <li><a href="../../lifecycle-policy.md">Software lifecycle policy</a></li>
-            <li><a href="../../version-upgrade-enforcement-policy.md">Cloud version upgrade enforcement policy</a></li>
+            <li><a href="../lifecycle-policy.md">Software lifecycle policy</a></li>
+            <li><a href="../version-upgrade-enforcement-policy.md">Cloud version upgrade enforcement policy</a></li>
+            <li><a href="../security-enforcement-policy.md">Security and compliance notice</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
           </ul>
