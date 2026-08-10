@@ -25,6 +25,13 @@ topic_v2:
 
 These release notes describe updates for [!DNL Commerce Version Tool] ([!DNL CVT]).
 
+Support is provided for the latest released. Release notes for older versions are provided for reference.
+Updates include:
+
+![New](../assets/new.svg) New features
+![Fix](../assets/fix.svg) Fixes and improvements
+![Bug](../assets/bug.svg) Known issues
+
 ## Version 1.0.2 — August 2026 {#version-1-0-2}
 
 ### New features
