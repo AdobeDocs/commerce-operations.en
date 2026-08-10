@@ -1039,6 +1039,10 @@ color: red
         - v1.1.82 {#v1-1-82}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
            - [ACP2E-4870: Product alert emails ignore store view email settings](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
+           - [ACP2E-4799: GraphQL query requisition_lists returns incorrect total_count with pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
+           - [ACP2E-4797: Admin WYSIWYG editor and Page Builder block 4-byte Unicode characters when utf8mb4 is supported](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+           - [ACP2E-4682: Storefront pages that check quote isActive create empty quote records](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
+           - [ACP2E-4593: Wrong Website Restriction CMS page served on the secondary website in multi-website storefronts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
            - [ACP2E-4547: Admin can't add a default-catalog product to a quote when it isn't assigned to the user's shared catalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
            - [ACP2E-4805: Checkout requests slow down for configurable products when the first salable child appears later in the list](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
            - [ACP2E-4748: Reward points expiration runs slowly on stores with a large reward points history](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
