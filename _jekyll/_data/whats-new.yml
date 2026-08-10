@@ -2,8 +2,18 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Aug 3 14:17:36 2026
+updated: Fri Aug 7 15:57:00 2026
 entries:
+- description: Corrected the B2B extension version support matrix in [Product availability](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)
+    for Adobe Commerce 2.4.6, 2.4.7, and 2.4.8.
+  versions: ''
+  type: technical
+  date: August 6, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2142
+  merge_commit: 50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5
+  contributor: chernenk_adobe
+  labels:
+  - technical
 - description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4547:
     Admin can''t add a default-catalog product to a quote when it isn''t assigned
     to the user''s shared catalog](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547).'
