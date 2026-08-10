@@ -6,8 +6,10 @@ extensions:
   Adobe I/O Events for Adobe Commerce:
     docs:
       Composer: https://developer.adobe.com/commerce/extensibility/events/installation/
-      Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes/
+      Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 1.22.0
       - core: 2.4.8
         version: 1.8+
       - core: 2.4.7
@@ -21,8 +23,10 @@ extensions:
   Adobe Commerce Admin UI SDK:
     docs:
       Composer: https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/
-      Release Notes: https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/
+      Release Notes: https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 4.2.1
       - core: 2.4.8
         version: 2.0+
       - core: 2.4.7
@@ -36,8 +40,10 @@ extensions:
   Adobe Commerce Webhooks:
     docs:
       Composer: https://developer.adobe.com/commerce/extensibility/webhooks/installation/
-      Release Notes: https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/
+      Release Notes: https://developer.adobe.com/commerce/extensibility/webhooks/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 1.19.0
       - core: 2.4.8
         version: 1.5+
       - core: 2.4.7
@@ -47,12 +53,14 @@ extensions:
       - core: 2.4.5
         version: 1.2+
       - core: 2.4.4
-        version: 1.2+
+        version: not supported
   Adobe Experience Manager Assets Integration for Commerce:
     docs:
-      Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce
-      Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes
+      Composer: https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-commerce
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 1.4.1
       - core: 2.4.8
         version: 1.0.20+
       - core: 2.4.7
@@ -68,6 +76,8 @@ extensions:
       Marketplace: https://commercemarketplace.adobe.com/magento-audiences.html
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 2.4.0
       - core: 2.4.8
         version: 1.0.0+
       - core: 2.4.7
@@ -83,6 +93,8 @@ extensions:
       Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 1.5.3
       - core: 2.4.8
         version: 1.5.3
       - core: 2.4.7
@@ -98,67 +110,60 @@ extensions:
       Marketplace: https://commercemarketplace.adobe.com/magento-experience-platform-connector.html
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 3.6.0
       - core: 2.4.8
-        version: 3.4.0
+        version: 3.6.0
       - core: 2.4.7
-        version: 3.4.0
+        version: 3.6.0
       - core: 2.4.6
-        version: 3.4.0
+        version: 3.6.0
       - core: 2.4.5
-        version: 3.4.0
+        version: 3.6.0
       - core: 2.4.4
-        version: 3.4.0
-  Page Builder:
-    docs:
-      User Guide: https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview
-      Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes
-    support:
-      - core: 2.4.8
-        version: '-'
-      - core: 2.4.7
-        version: '-'
-      - core: 2.4.6
-        version: 1.7.3
-      - core: 2.4.5
-        version: 1.7.2
-      - core: 2.4.4
-        version: 1.7.1
+        version: 3.6.0
 services:
   Catalog Service:
     docs:
       Overview: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 3.5.0
       - core: 2.4.8
-        version: 3.3.0
+        version: 3.5.0
       - core: 2.4.7
-        version: 3.0.3
+        version: 3.5.0
       - core: 2.4.6
-        version: 3.0.3
+        version: 3.5.0
       - core: 2.4.5
-        version: 3.0.3
+        version: 3.5.0
       - core: 2.4.4
-        version: 3.0.3
+        version: 3.5.0
   Live Search:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 4.7.2
       - core: 2.4.8
-        version: 4.7.0
+        version: 4.7.2
       - core: 2.4.7
-        version: 4.7.0
+        version: 4.7.2
       - core: 2.4.6
-        version: 4.7.0
+        version: 4.7.2
       - core: 2.4.5
-        version: 4.7.0
+        version: 4.7.2
       - core: 2.4.4
-        version: 4.7.0
+        version: 4.7.2
   Payment Services:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 2.15.0 (PHP 8.4)
       - core: 2.4.8
         version: 2.15.0 (PHP 8.4)
       - core: 2.4.7
@@ -174,6 +179,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-product-recommendations.html
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes
     support:
+      - core: 2.4.9 (latest)
+        version: 6.7.0
       - core: 2.4.8
         version: 6.7.0
       - core: 2.4.7
