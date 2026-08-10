@@ -28,20 +28,19 @@ These release notes describe updates for [!DNL Commerce Version Tool] ([!DNL CVT
 Support is provided for the latest released. Release notes for older versions are provided for reference.
 Updates include:
 
-![New](../assets/new.svg) New features
-![Fix](../assets/fix.svg) Fixes and improvements
-![Bug](../assets/bug.svg) Known issues
+![New](../../assets/new.svg) New features
+![Fix](../../assets/fix.svg) Fixes and improvements
+![Bug](../../assets/bug.svg) Known issues
 
 ## Version 1.0.2 — August 2026 {#version-1-0-2}
 
 ### New features
 
-- **Composer `replace` support**—Added support for installations that remove core modules through composer `replace`, with improved patch detection accuracy for those modules. <!-- ACSEC-527 -->
+![New](../../assets/new.svg) **Composer `replace` support**—Added support for installations that remove core modules through composer `replace`, with improved patch detection accuracy for those modules. <!-- ACSEC-527 -->
 
 ## Version 1.0.0 — June 2026 {#version-1-0-0}
 
-### New features
-
+![New](../../assets/new.svg) Updates include:
 - **Patch status reporting** - Reports which monthly Adobe Commerce security patches are applied, missing, or could not be classified for an Adobe Commerce installation.
 - **CVE protection status** - Maps patch results to per-CVE protection status values: `PROTECTED`, `VULNERABLE`, `UNKNOWN`, and `NOT_APPLICABLE`.
 - **Multi-component support** - Detects installed Adobe Commerce components from `composer.lock`, including Adobe Commerce business-to-business (B2B), Adobe Commerce Page Builder, Adobe Commerce Inventory, and other components represented in the patch registry file.
