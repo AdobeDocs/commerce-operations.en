@@ -987,7 +987,7 @@
   OpenSearch: '2.19'
   OpenSearch Cloud: '2'
   PHP: '8.1'
-  RabbitMQ: '3.9'
+  RabbitMQ: '3.13, 3.9'
   Redis: '7.2'
   Varnish: '7.7'
 2.4.4-p17:
