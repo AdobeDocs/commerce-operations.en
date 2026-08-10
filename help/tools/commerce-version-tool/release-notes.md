@@ -36,7 +36,7 @@ Updates include:
 
 ### New features
 
-- **Composer `replace` support** - Adds support for installations that remove core modules through composer `replace`, with improved patch detection accuracy for those modules.
+- **Composer `replace` support**—Added support for installations that remove core modules through composer `replace`, with improved patch detection accuracy for those modules.
 
 ## Version 1.0.0 — June 2026 {#version-1-0-0}
 
