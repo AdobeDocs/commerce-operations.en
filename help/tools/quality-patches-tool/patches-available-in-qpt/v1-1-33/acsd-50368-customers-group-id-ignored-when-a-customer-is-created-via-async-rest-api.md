@@ -80,7 +80,7 @@ bin/magento setup:upgrade --keep-generated
 
     ```shell
     curl --location 'https://site.test/rest/default/V1/bulk/b101ddcb-b7fd-4208-a2a6-2e84c9e61bcd/detailed-status' \
-    --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNjc5NDMzNzcxLCJleHAiOjE2Nzk0MzczNzF9.xau6KyILrkdCY_8K8aMlH4TmqcCXdH4Zcst_CLhdxYY' \
+    --header 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
     --header 'Cookie: PHPSESSID=844fltmqq1g15qe4ju3l00tiai
     ```
 
