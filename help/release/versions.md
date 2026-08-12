@@ -7,7 +7,7 @@ last-update: 2026-06-02
 ---
 # Released versions
 
-This page lists released versions of Adobe Commerce. It contains release dates for every minor, patch, and security release and dates for the end of **_regular_** support. It does not list dates for the end of **_extended_** support.
+This page lists released versions of Adobe Commerce. It contains release dates for every minor, patch, and security release, and dates for the end of **_regular_** support. It does not list dates for the end of **_extended_** support.
 
 >[!BEGINSHADEBOX]
 
