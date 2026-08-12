@@ -773,7 +773,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          3.9
+          3.13, 3.9
       </td>
       <td>
           3.9
