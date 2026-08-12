@@ -2,6 +2,7 @@
 title: Product Availability
 description: Learn about what Adobe Commerce features are currently supported and check their compatibility with specific Adobe Commerce releases.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
+last-update: 2026-08-10
 ---
 # Product Availability
 
@@ -38,4 +39,4 @@ The following table shows the version support for each service relative to the A
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-04-28 12:43:37 -->
+<!-- Last updated from includes: 2026-08-10 14:35:30 -->

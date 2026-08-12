@@ -5,6 +5,7 @@
   <thead>
     <tr>
       <th>Adobe Commerce versions</th>
+      <th>2.4.9 (latest)</th>
       <th>2.4.8</th>
       <th>2.4.7</th>
       <th>2.4.6</th>
@@ -16,11 +17,12 @@
   <tbody>
       <tr>
           <td>Catalog Service</td>
-          <td>3.3.0</td>
-          <td>3.0.3</td>
-          <td>3.0.3</td>
-          <td>3.0.3</td>
-          <td>3.0.3</td>
+          <td>3.5.0</td>
+          <td>3.5.0</td>
+          <td>3.5.0</td>
+          <td>3.5.0</td>
+          <td>3.5.0</td>
+          <td>3.5.0</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Overview</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Release Notes</a><br/>
@@ -28,11 +30,12 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.7.0</td>
-          <td>4.7.0</td>
-          <td>4.7.0</td>
-          <td>4.7.0</td>
-          <td>4.7.0</td>
+          <td>4.7.2</td>
+          <td>4.7.2</td>
+          <td>4.7.2</td>
+          <td>4.7.2</td>
+          <td>4.7.2</td>
+          <td>4.7.2</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Release Notes</a><br/>
@@ -45,6 +48,7 @@
           <td>2.15.0 (PHP 8.4)</td>
           <td>2.15.0 (PHP 8.4)</td>
           <td>2.15.0 (PHP 8.4)</td>
+          <td>2.15.0 (PHP 8.4)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Release Notes</a><br/>
@@ -52,6 +56,7 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
+          <td>6.7.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
