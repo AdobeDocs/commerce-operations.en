@@ -97,7 +97,7 @@ Check that your environment is running vendor-supported versions of the followin
 1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console) where you can see all of your Cloud projects.
 2. Open the relevant project, then select the environment you want to review.
 3. Open "Containers" tab, where you can see a list of all the services currently in use on the selected environment.
-4. Click each service link to check the exact version currently running on the environment.
+4. Click each service link to check the exact version currently running in the environment.
 See the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) for more details.
 
 All unsupported software dependencies must be upgraded to the versions outlined by the timelines shared in Table 2 below.
