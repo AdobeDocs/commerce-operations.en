@@ -2,7 +2,7 @@
 
 ## 2.4.9
 
-Regular support for the 2.4.9 release line ends in May, 2029.
+Regular support for the 2.4.9 release line ends on May&nbsp;31, 2029.
 
 <table>
   <thead>
@@ -23,7 +23,7 @@ Regular support for the 2.4.9 release line ends in May, 2029.
 
 ## 2.4.8
 
-Regular support for the 2.4.8 release line ends on April&nbsp;11, 2028.
+Regular support for the 2.4.8 release line ends on May&nbsp;31, 2028.
 
 <table>
   <thead>
@@ -74,7 +74,8 @@ Regular support for the 2.4.8 release line ends on April&nbsp;11, 2028.
 
 ## 2.4.7
 
-Regular support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
+Regular support for the 2.4.7 release line ends on May&nbsp;31, 2027.
+Extended support for the 2.4.7 release line ends on May&nbsp;31, 2028.
 
 <table>
   <thead>
@@ -155,7 +156,9 @@ Regular support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
 
 ## 2.4.6
 
-Regular support for the 2.4.6 release line ends on August&nbsp;11, 2026.
+Regular support for the 2.4.6 release line ended on August&nbsp;11, 2026.
+Extended support for the 2.4.6 release line ends on August&nbsp;31, 2027.
+Additional security fixes provisioning for the 2.4.6 release line ends on May&nbsp;31, 2028.
 
 <table>
   <thead>
@@ -267,8 +270,8 @@ Regular support for the 2.4.6 release line ends on August&nbsp;11, 2026.
 ## 2.4.5
 
 Regular support for the 2.4.5 release line ended on August&nbsp;12, 2025.
-Extended support for the 2.4.5 release line ends on August&nbsp;11, 2026.
-Additional security fixes provisioning for the 2.4.5 release line ends in May, 2027.
+Extended support for the 2.4.5 release line ended on August&nbsp;11, 2026.
+Additional security fixes provisioning for the 2.4.5 release line ends on May&nbsp;31, 2027.
 
 <table>
   <thead>
@@ -393,7 +396,7 @@ Additional security fixes provisioning for the 2.4.5 release line ends in May, 2
 
 Regular support for the 2.4.4 release line ended on April&nbsp;12, 2025.
 Extended support for the 2.4.4 release line ended on April&nbsp;14, 2026.
-Additional security fixes provisioning for the 2.4.4 release line ends in May, 2027.
+Additional security fixes provisioning for the 2.4.4 release line ends on May&nbsp;31, 2027.
 
 <table>
   <thead>

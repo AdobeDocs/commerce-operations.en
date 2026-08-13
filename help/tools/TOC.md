@@ -1039,6 +1039,8 @@ color: red
         - v1.1.82 {#v1-1-82}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
            - [ACP2E-4695: Catalog rule indexer out-of-memory failures caused by excessive memory usage](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
+           - [ACP2E-4698: Page Builder Text inline editing saves absolute media URLs instead of the portable directive](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
+           - [ACP2E-4894: New orders appear in the Admin Orders grid with a delay when asynchronous indexing is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
            - [ACP2E-4870: Product alert emails ignore store view email settings](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
            - [ACP2E-4799: GraphQL query requisition_lists returns incorrect total_count with pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
            - [ACP2E-4797: Admin WYSIWYG editor and Page Builder block 4-byte Unicode characters when utf8mb4 is supported](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
