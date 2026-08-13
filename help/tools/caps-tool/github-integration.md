@@ -17,7 +17,7 @@ If your Adobe Commerce Cloud project is connected to a GitHub repository, you mu
 
 ## Install the [!DNL CAPS] GitHub App
 
-1. Open the [CAPS GitHub App installation page](https://github.com/apps/caps-connector).
+1. Open the [CAPS GitHub App installation page](https://github.com/apps/adobe-commerce-patching-automation).
 1. Click **[!UICONTROL Install]**.
 1. Select the GitHub organization that owns your Adobe Commerce repository.
 1. Under **[!UICONTROL Repository access]**, select **[!UICONTROL Only select repositories]** and choose the repository for your Adobe Commerce project.
@@ -32,7 +32,7 @@ If you no longer want [!DNL CAPS] to access your repository:
 1. In GitHub, open the settings for the account that owns the installation:
    * For an **organization-owned** repository: **[!UICONTROL Organization settings]** > **[!UICONTROL Third-party Access]** > **[!UICONTROL GitHub Apps]**.
    * For a **personal** repository: **[!UICONTROL Settings]** > **[!UICONTROL Applications]** > **[!UICONTROL Installed GitHub Apps]**.
-1. Find `caps-connector` and click **[!UICONTROL Configure]**.
+1. Find `adobe-commerce-patching-automation` and click **[!UICONTROL Configure]**.
 1. Click **[!UICONTROL Uninstall]** and confirm.
 
 >[!WARNING]
