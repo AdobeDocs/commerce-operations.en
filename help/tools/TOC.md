@@ -1038,6 +1038,7 @@ color: red
            - [ACP2E-4709: CMS pages don't save in Page Builder when the page hierarchy includes double quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
         - v1.1.82 {#v1-1-82}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+           - [ACP2E-4695: Catalog rule indexer out-of-memory failures caused by excessive memory usage](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
            - [ACP2E-4194: GraphQL requests with unknown filter names cause PHP exception logs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
            - [ACP2E-4698: Page Builder Text inline editing saves absolute media URLs instead of the portable directive](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
            - [ACP2E-4894: New orders appear in the Admin Orders grid with a delay when asynchronous indexing is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
