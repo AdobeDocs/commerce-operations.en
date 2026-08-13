@@ -43,12 +43,12 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Release Notes</a><br/>
