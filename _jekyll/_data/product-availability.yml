@@ -60,7 +60,7 @@ extensions:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 1.4.1
+        version: 1.4.4
       - core: 2.4.8
         version: 1.0.20+
       - core: 2.4.7

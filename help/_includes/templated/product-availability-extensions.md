@@ -56,7 +56,7 @@
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets Integration for Commerce</td>
-          <td>1.4.1</td>
+          <td>1.4.4</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
