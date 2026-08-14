@@ -94,10 +94,11 @@ Check that your environment is running vendor-supported versions of the followin
 
 #### Step 1: Check your third-party software dependency versions
 
-1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console) where you can see all of your environments.
+1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console) where you can see all of your Cloud projects.
 2. Open the relevant project, then select the environment you want to review.
-3. Check the service configuration for that environment in the `.magento/services.yaml` file, which defines the supported service names and versions used by Adobe Commerce on Cloud.
-4. Check the dependency versions each environment is running using the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+3. Open "Containers" tab, where you can see a list of all the services currently in use on the selected environment.
+4. Click each service link to check the exact version currently running in the environment.
+See the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) for more details.
 
 All unsupported software dependencies must be upgraded to the versions outlined by the timelines shared in Table 2 below.
 
@@ -184,7 +185,7 @@ If an environment continues to remain non-compliant following traffic suspension
 
 **If you choose to upgrade to Adobe Commerce on Cloud version 2.4.9:**
 
-* **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including identifying what modules and files require updates, number of critical issues, and so on. [Generate your Upgrade Compatibility Report](https://supportinsights.adobe.com/commerce/tab/main).
+* **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including identifying what modules and files require updates, number of critical issues, and so on. See the [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) documentation for details on how to generate your upgrade compatibility report.
 
 * **Software dependency upgrade:** Since you cannot upgrade software dependencies directly, open a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
