@@ -163,17 +163,17 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 2.15.0 (PHP 8.4)
+        version: 2.16.1
       - core: 2.4.8
-        version: 2.15.0 (PHP 8.4)
+        version: 2.16.1
       - core: 2.4.7
-        version: 2.15.0 (PHP 8.4)
+        version: 2.16.1
       - core: 2.4.6
-        version: 2.15.0 (PHP 8.4)
+        version: 2.16.1
       - core: 2.4.5
-        version: 2.15.0 (PHP 8.4)
+        version: 2.16.1
       - core: 2.4.4
-        version: 2.15.0 (PHP 8.4)
+        version: 2.16.1
   Product Recommendations:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-product-recommendations.html
