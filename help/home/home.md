@@ -2,7 +2,7 @@
 title: Operational Guides Home
 description: Learn about Adobe Commerce system administration and operational concepts. Browse comprehensive guides for planning, configuring, and maintaining your Commerce deployment.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-last-update: 2026-08-12
+last-update: 2026-08-14
 ---
 
 # Adobe Commerce Operational Guides
