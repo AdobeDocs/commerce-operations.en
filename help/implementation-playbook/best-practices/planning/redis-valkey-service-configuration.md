@@ -536,8 +536,6 @@ stage:
         # add other cache types as needed...
 ```
 
->[!ENDTABS]
-
 >[!NOTE]
 >
 >If the source frontend is configured with additional backend options, copy those options to `stale_cache_enabled` so that the new frontend maintains the same behavior.
