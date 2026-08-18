@@ -356,7 +356,7 @@ There are two L2 cache implementations available for Adobe Commerce on cloud inf
 
 >[!TAB Valkey configuration]
 
-For Valkey with the legacy cache implementation, use:
+On Adobe Commerce versions 2.4.8 or earlier, use this configuration for Valkey with the legacy cache implementation:
 
 ```yaml
 stage:
@@ -364,7 +364,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For Valkey with the modern Symfony L2 cache implementation:
+On Adobe Commerce version 2.4.9 and later, use this configuration for Valkey with the modern Symfony L2 cache implementation:
 
 ```yaml
 stage:
@@ -388,13 +388,51 @@ For environment configuration details, see [`REDIS_BACKEND`](https://experiencel
 
 ### Preload keys
 
-For Adobe Commerce 2.4.8 and earlier, preload keys are effective only with the `RemoteSynchronizedCache` cache implementation.
-
-If you are upgrading to Adobe Commerce 2.4.9 and later, remove any preload keys from the `.magento.env.yaml` file after migration.
-
 Magento usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
-
 You can identify frequently used keys by monitoring active commands on Redis or Valkey:
+
+>[!BEGINTABS]
+
+>[!TAB Valkey preload key configuration]
+
+The preload keys are configured in the `.magento.env.yaml` configuration file.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: 'symlink_l2'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
+          backend_options:
+            preload_keys: # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
+
+To list the keys, run the following command:
+
+```terminal
+valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
+```
+
+After 10 seconds, press **[!UICONTROL Ctrl+C]**. Then run the following command:
+
+```terminal
+cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
+```
+
+This log lists the keys you can preload. To see the content of a key, run the following command:
+
+```terminal
+valkey-cli -p 6370 -n 1 hgetall "<key_name>"
+```
+
+>[!TAB Redis preload key configuration]
 
 The preload keys are configured in the `.magento.env.yaml` configuration file.
 
@@ -432,6 +470,9 @@ This log lists the keys you can preload. To see the content of a key, run the fo
 ```terminal
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
+
+>[!ENDTABS]
+
 
 ### Enable stale cache
 
