@@ -78,7 +78,7 @@ Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later t
 
 >[!NOTE]
 >
->Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Not all releases introduce major BICs.
+>Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Not all releases introduce major BICs.
 
 ## Alpha disclaimer {#alpha}
 

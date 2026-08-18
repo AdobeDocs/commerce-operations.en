@@ -32,11 +32,11 @@ Another related option for keeping the data external to commerce but allowing yo
 
 For example, you can `stitch` together old orders from an external database, perhaps the old Magento 1 site that is decommissioned. Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
 
-For more information about using API mesh with GraphQL, see [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+For more information about using API mesh with GraphQL, see [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migrate legacy data with extension attributes
 
-If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Using extension attributes to save additional data offers the following advantages:
+If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes){target="_blank"}. Using extension attributes to save additional data offers the following advantages:
 
 - You can control the data being persisted and the database structure, which ensures that the data is saved with the correct column type and proper indexes.
 - Most entities in [!DNL Adobe Commerce] support the use of extension attributes.
@@ -71,7 +71,7 @@ Adobe recommends following these steps when you add a column to a core database 
 
 1. Create a file called `db_schema.xml` in the `etc` folder, and make the appropriate changes. 
 
-    If applicable, generate a `db_schema_whitelist.json` file. See [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} for more information.
+    If applicable, generate a `db_schema_whitelist.json` file. See [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"} for more information.
 
 ### Potential impacts
 

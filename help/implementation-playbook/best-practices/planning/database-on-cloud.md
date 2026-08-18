@@ -31,7 +31,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Change the storage engine to InnoDB
 
-In the `db_schema.xml` file declaring the table, set the `engine` attribute value for the corresponding `table` node to `innodb`. For reference, see [Configure declarative schema > table node](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in our developer documentation.
+In the `db_schema.xml` file declaring the table, set the `engine` attribute value for the corresponding `table` node to `innodb`. For reference, see [Configure declarative schema > table node](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) in our developer documentation.
 
 The declarative scheme was introduced in Adobe Commerce on cloud infrastructure version 2.3.
 

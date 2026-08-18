@@ -111,7 +111,7 @@ Language packages are located in a directory under `app/i18n/<VendorName>` in th
 
 - Required license files
 - `composer.json`
-- `registration.php` that [registers](https://developer.adobe.com/commerce/php/development/build/component-registration/) the language package
+- `registration.php` that [registers](https://developer.adobe.com/commerce/php/development/build/component-registration) the language package
 - [`language.xml`](#language-package-languagexml) meta-information file
 
 >[!INFO]
@@ -125,8 +125,8 @@ To create these files:
    For example, Commerce language packages are located in `app/i18n/magento`
 
 1. Add required license files.
-1. Add [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) that specifies dependencies for your language package.
-1. Register the language package with [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)
+1. Add [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration) that specifies dependencies for your language package.
+1. Register the language package with [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)
 1. Add `language.xml` meta-information file as discussed in the next section.
 
 #### Language package language.xml

@@ -44,7 +44,7 @@ The following sections include best practice information for the planning phase.
     <td>Use the cache management tools to improve the performance of your site.</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Full-page caching</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">Full-page caching</a></td>
     <td>Learn how to work with public data when implementing caching in your Adobe Commerce extension.</td>
   </tr>
   <tr>

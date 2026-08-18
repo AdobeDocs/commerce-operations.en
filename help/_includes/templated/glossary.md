@@ -129,7 +129,7 @@ Custom attributes are a type of Entity-Attribute-Value (EAV) attribute.
 
 For integrations like Google Shopping ads Channel and Amazon Sales Channel, you map Commerce attributes to attributes in the third-party to properly display and sell products, display ads.
 
-Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Term attributes:_
 
@@ -254,7 +254,7 @@ _noun_
 Bulk operations are actions that are performed on a large scale.
 Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
 
-Learn more: [DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+Learn more: [DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)
 
 _Term attributes:_
 
@@ -709,7 +709,7 @@ Stores the entity id, attribute name, and value as a triple, which allows new en
 In encoding, the number of attributes that can be used to describe entities can scale extensively, but the number that applies to a given entity is minimized.
 This data model is flexible, but can be slow.
 
-Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Term attributes:_
 
@@ -745,7 +745,7 @@ _noun_
 
 Extend functionality and often use more complex data types than custom attributes. These attributes do not appear on the GUI.
 
-Learn more: [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+Learn more: [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes)
 
 _Term attributes:_
 

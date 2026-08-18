@@ -50,7 +50,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
    ]
 ```
 
-See [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/) in the _Module Reference Guide_.
+See [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order) in the _Module Reference Guide_.
 
 **To disable AsyncOrder**:
 
@@ -156,7 +156,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
    ]
 ```
 
-See [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/) in the _Module Reference Guide_.
+See [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating) in the _Module Reference Guide_.
 
 ### Fixed Product Tax
 

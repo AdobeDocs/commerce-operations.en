@@ -60,7 +60,7 @@ Prevent these issues by defining a primary key for any tables that don't have on
 
    When you add the node, replace the `referenceID` and `column name` variables with your custom custom values.
 
-For more information, see [Configure declarative schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in our developer documentation.    
+For more information, see [Configure declarative schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) in our developer documentation.    
 
 ## Identify and remove duplicate indexes
 

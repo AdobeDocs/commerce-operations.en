@@ -49,9 +49,9 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in t
 
 * Swagger is now disabled by default when Adobe Commerce is in production mode. <!-- AC-1450-->
 
-* Developers can now configure the size limit for arrays accepted by Adobe Commerce RESTful endpoints on a per-endpoint basis. See [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security/). <!-- AC-465-->
+* Developers can now configure the size limit for arrays accepted by Adobe Commerce RESTful endpoints on a per-endpoint basis. See [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security). <!-- AC-465-->
 
-* Added mechanisms for limiting the size and number of resources that a user can request through a web API on a system-wide basis, and for overriding the defaults on individual modules. This enhancement resolves the issue addressed by `MC-43048__set_rate_limits__2.4.3.patch`. See [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security/). <!-- AC-1120-->
+* Added mechanisms for limiting the size and number of resources that a user can request through a web API on a system-wide basis, and for overriding the defaults on individual modules. This enhancement resolves the issue addressed by `MC-43048__set_rate_limits__2.4.3.patch`. See [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security). <!-- AC-1120-->
 
 
 ## 2.4.3-p1
@@ -75,7 +75,7 @@ This release includes the following hotfix, and all hotfixes that have been rele
 
 **Session IDs have been removed from the database**. This code change may result in breaking changes if merchants have customizations or installed extensions that use the raw session IDs stored in the database. <!-- MC-40976-->
 
-**Restricted admin access to Media Gallery folders**. Default Media Gallery permissions now allow only directory operations (view, upload, delete, and create) that are allowed explicitly by configuration. Admin users can no longer access media assets through the Media Gallery that were uploaded outside of the `catalog/category` or `wysiwyg` directories. Administrators who want to access media assets must move them to an explicitly allowed folder or adjust their configuration settings. See [Modify Media Library folder permissions](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
+**Restricted admin access to Media Gallery folders**. Default Media Gallery permissions now allow only directory operations (view, upload, delete, and create) that are allowed explicitly by configuration. Admin users can no longer access media assets through the Media Gallery that were uploaded outside of the `catalog/category` or `wysiwyg` directories. Administrators who want to access media assets must move them to an explicitly allowed folder or adjust their configuration settings. See [Modify Media Library folder permissions](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions). <!-- B2B-1897-->
 
 **Lowered limits to GraphQL query complexity**. The GraphQL maximum allowed query complexity has been lowered to prevent Denial-of-Service (DOS) attacks. See [GraphQL security configuration](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 

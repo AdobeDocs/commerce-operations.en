@@ -4,7 +4,7 @@ This release includes the following highlights:
 
 * **Managing encryption keys and re-encrypting data**—Redesigned managing encryption keys to improve usability and eliminate previous limitations and bugs.<!-- AC-12679 -->
 
-  New CLI commands are now available for [changing](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) keys and [re-encrypting](https://developer.adobe.com/commerce/php/development/security/data-encryption/) certain system configuration, payment, and custom field data. Changing keys in the Admin UI is no longer supported in this release. You must use the CLI commands.
+  New CLI commands are now available for [changing](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) keys and [re-encrypting](https://developer.adobe.com/commerce/php/development/security/data-encryption) certain system configuration, payment, and custom field data. Changing keys in the Admin UI is no longer supported in this release. You must use the CLI commands.
 
 * **Fix for [CVE-2025-24434](https://nvd.nist.gov/vuln/detail/CVE-2025-24434)**—Resolves an authorization vulnerability.
 

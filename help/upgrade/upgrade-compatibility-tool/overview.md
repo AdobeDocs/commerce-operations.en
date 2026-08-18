@@ -41,7 +41,7 @@ To connect with the [!DNL Upgrade Compatibility Tool] team, contact us on the En
 
 The [!DNL Upgrade Compatibility Tool] uses rules defined within our [Coding Standards](https://developer.adobe.com/commerce/php/coding-standards/) to ensure that your project is following Adobe Commerce best practices and to help you improve and extend the [!DNL Upgrade Compatibility Tool].
 
-Refer to the [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) topic for more information on contributing coding standards.
+Refer to the [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) topic for more information on contributing coding standards.
 
 ## Resources
 
