@@ -43,7 +43,7 @@ For most environments, the following timeline describes how long patch operation
 
 ### Patch application errors
 
-#### "The patch cannot be applied because [!DNL CAPS] has detected these issues with your codebase or the patch file"
+#### "The patch cannot be applied because [!DNL Patching Automation] has detected these issues with your codebase or the patch file"
 
 **When it occurs:** During preliminary check
 
@@ -56,7 +56,7 @@ For most environments, the following timeline describes how long patch operation
 * Verify the patch is compatible with your Adobe Commerce version
 * Consider resolving conflicts manually or contact support
 
-#### "This patch was not managed by [!DNL CAPS]. Cannot revert"
+#### "You're trying to revert a patch that wasn't applied through [!DNL Patching Automation]. It is likely the patch was applied manually."
 
 **When it occurs:** During revert operations
 
@@ -152,7 +152,7 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 
 ### GitHub integration errors
 
-#### "No Git credentials available for provider github. Install the CAPS GitHub App for this repository"
+#### "No Git credentials available for provider "github". Install the Patching Automation GitHub app for this repository"
 
 **When it occurs:** During patch operations for projects connected to GitHub
 
