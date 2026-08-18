@@ -1001,6 +1001,7 @@ color: red
            - [ACP2E-4706: Target Rule indexer cron doesn't pick products enabled only at store view scope](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
            - [ACP2E-4402: Target Rule incremental indexer doesn't pick disabled products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
            - [ACP2E-4505: Circular category dependency from saving a category with stale data in a duplicate browser tab](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+           - [ACP2E-4531: CMS hierarchy doesn't update the hierarchical URL when the child page URL key changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
            - [ACP2E-4720: Free shipping cart price rules do not reset for fixed-price bundle products with ship items separately](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
            - [AC-10698: Transaction prices and totals aren't sent to Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
            - [ACP2E-4475: Order or filter by price not working for out-of-stock bundle products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
