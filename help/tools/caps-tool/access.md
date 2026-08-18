@@ -1,5 +1,5 @@
 ---
-title: How to access [!DNL Cloud Automation Patching Service (CAPS)]
+title: How to Access [!DNL Cloud Automation Patching Service (CAPS)]
 description: Learn how to access and use [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
 ---
@@ -52,6 +52,7 @@ For production environments, additional safeguards apply:
 ## Related topics
 
 * [CAPS introduction](intro.md)
-* [Workflow](workflow.md)
+* [Workflow overview](workflow.md)
+* [GitHub integration](github-integration.md)
 * [Best practices](best-practices.md)
 * [Troubleshooting](troubleshooting.md)

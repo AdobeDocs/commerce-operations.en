@@ -12,7 +12,8 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 ## [!DNL CAPS] topics
 
 * **[How to access](access.md)**
-* **[Workflow](workflow.md)**
+* **[Workflow overview](workflow.md)**
+* **[GitHub integration](github-integration.md)**
 * **[Best practices](best-practices.md)**
 * **[Troubleshooting](troubleshooting.md)**
 
@@ -35,7 +36,7 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 * **Safety features**
   * Creates temporary integration environments for testing
   * Validates patch compatibility before application
-  * Provides automatic rollback on validation failures
+  * Keeps your target environment unchanged until the patch passes validation in the temporary environment
   * Applies patches to the `m2-hotfixes` folder with automatic removal during reversion
 
 ## Integrations with Adobe Commerce Cloud
