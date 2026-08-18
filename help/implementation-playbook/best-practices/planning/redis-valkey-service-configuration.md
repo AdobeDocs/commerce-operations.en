@@ -119,7 +119,7 @@ To provision a dedicated instance for sessions, follow the steps below:
 
 1. Request a new Valkey instance dedicated to sessions on Production and Staging environments.
 
-   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
    This update does not cause any downtime, but it requires a deployment to activate the new service.
 
@@ -805,7 +805,7 @@ stage:
 
         stale_cache_enabled: # New frontend with stale cache enabled only for selected cache types.
           id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
-          backend: \Magento\Framework\Cache\Backend\symfony_l2
+          backend: symfony_l2
           backend_options:
             remote_backend: \Magento\Framework\Cache\Backend\Valkey
             remote_backend_options:
@@ -896,7 +896,7 @@ stage:
 
         stale_cache_enabled: # New frontend with stale cache enabled only for selected cache types.
           id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
-          backend: \Magento\Framework\Cache\Backend\symfony_l2
+          backend: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
           backend_options:
             remote_backend: \Magento\Framework\Cache\Backend\Redis
             remote_backend_options:
