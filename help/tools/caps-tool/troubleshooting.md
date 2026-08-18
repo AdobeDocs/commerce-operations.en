@@ -16,6 +16,10 @@ When using [!DNL Patching Automation] for patch operations, you can encounter er
 * Examine error logs for technical details
 * Follow the solutions provided in this guide
 
+>[!TIP]
+>
+>In the Cloud Console, deployment logs are available from your project's Activity feed — even after a temporary integration environment has been deleted.
+
 ### Patch operations duration
 
 For most environments, the following timeline describes how long patch operations should take, but it could take longer depending on environment size and complexity:
@@ -40,6 +44,20 @@ For most environments, the following timeline describes how long patch operation
 * **"Patch has been reverted"** - You're trying to revert a patch that's already been reverted. The system detected the patch is not currently applied. No action is needed.
 
 ## Common error messages and solutions
+
+>[!NOTE]
+>
+>Not every possible error is listed below. An unlisted failure during preliminary check appears as the generic "Error during preliminary check"; an unlisted failure during validation appears as the generic "Error during post-processing" — contact support with the exact error text either way. During patching, an unanticipated failure shows the raw underlying error message directly instead of either generic fallback.
+
+### Environment readiness errors
+
+#### "The last deployment was not successful. Please ensure the environment is stable before applying or reverting patches."
+
+**When it occurs:** At the start of preliminary check, before any patch-specific validation
+
+**Cause:** Your target environment's most recent deployment did not complete successfully
+
+**Solution:** Redeploy your target environment and confirm the deployment completes successfully (check its deployment log in the Cloud Console) before retrying the patch operation.
 
 ### Patch application errors
 
@@ -94,11 +112,11 @@ For most environments, the following timeline describes how long patch operation
 >
 > [!DNL Patching Automation] does not automatically enable maintenance mode or disable cron jobs - these must be done externally by you
 
-#### "Patch has been applied, but failed health check. Please consider reverting"
+#### "The patch operation completed but the environment health check failed. This indicates potential issues with the deployment. Please review the environment status and consider reverting the change."
 
-**When it occurs:** After patch application during validation
+**When it occurs:** After patch application or reversion, during validation
 
-**Cause:** The patch was applied successfully, but health checks failed
+**Cause:** The patch was applied or reverted successfully, but the subsequent health check failed
 
 **Solutions:**
 
@@ -108,34 +126,6 @@ For most environments, the following timeline describes how long patch operation
 * Contact support if you need assistance
 
 ### Authentication and access errors
-
-#### "Authentication failed for Adobe Commerce repository"
-
-**When it occurs:** During any stage
-
-**Cause:** Invalid or expired Adobe Commerce repository credentials
-
-**Solutions:**
-
-There are two recommended options for resolving this issue:
-
-**Option 1: Fix `env:COMPOSER_AUTH` environment level variable (Recommended)**
-
-* Ensure that you have set up the correct credentials for `env:COMPOSER_AUTH`.
-* Access global configuration by clicking on the gear icon at the top left of your cloud project UI, then select the **Variables** tab.
-* Make sure you select _Available during buildtime_ and deselect _Available during runtime_.
-
-If Option 1 doesn't resolve your issue, proceed with Option 2.
-
-**Option 2: Create and deploy `auth.json` file manually**
-
-* SSH into your server.
-* Retrieve contents of your current `env:COMPOSER_AUTH` variable using:  
-   `echo $COMPOSER_AUTH`
-* Copy all contents from step above (in JSON format).
-* Create a new file named `auth.json` with these contents.
-* Commit this newly created `auth.json` file to the root directory of your repository.
-* Trigger a new deployment.
 
 #### "Insufficient permissions for environment access"
 
@@ -176,33 +166,28 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 
 **Solution:** Enable the integration's [`fetch-branches` option](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), then retry the operation. See [Set up the GitHub integration for [!DNL Patching Automation]](github-integration.md).
 
-### Resource and quota errors
+### Environment activation errors
 
-#### "Environment quota exceeded"
+#### "Unable to activate integration environment."
 
-**When it occurs:** During environment creation
+**When it occurs:** During patching, when Patching Automation cannot activate the temporary integration environment it needs to safely test the patch.
 
-**Cause:** You've reached your environment limit
+**Cause:** Depends on the additional details shown alongside the error:
 
-**Solutions:**
+**If the details mention Composer or Adobe Commerce packages:**
 
-* Deactivate unused environments
-* Clean up old branches and deployments
-* Contact support to request quota increase
-* Consider upgrading your plan
+* Log in to [https://account.magento.com/](https://account.magento.com/) (or have your account owner do so) and confirm your account has access to the Commerce Enterprise codebase.
+* Verify your project's Composer public/private key pair is correct — see [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Check that the package named in the error is available for your Commerce version — see [Adobe Commerce packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
-#### "Insufficient resources for operation"
+**If the details mention environment slots or resources:**
 
-**When it occurs:** During any stage
+* In the Cloud Console, go to your project overview and review your environments and their status. Deactivate or delete any unused integration environments (select the environment, go to Settings > General, and change status to inactive) — or use `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>` if you prefer the CLI.
+* Verify your project has sufficient resources (e.g., disk space).
+* Ensure the parent environment is stable (no active deployment) at the time of the operation.
+* Contact support if you need to increase your environment limit.
 
-**Cause:** Your environment lacks sufficient CPU, memory, or storage
-
-**Solutions:**
-
-* Check your environment resource usage
-* Free up resources by cleaning up files
-* Wait for resources to become available
-* Contact support if resource issues persist
+**For any other cause:** review the detailed error logs in the Patching Automation UI, or contact support with the exact error text.
 
 ## Getting help
 
