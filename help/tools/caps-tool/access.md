@@ -12,7 +12,7 @@ hide: true
 ### Who can use [!DNL Patching Automation]
 
 * **Project admin** - Can apply or revert patches on all environments
-* **Contributor** - Can apply or revert patches on their assigned environments  
+* **Contributor** - Can apply or revert patches on their assigned environments
 * **Viewer** - Can only view the project and environments, no actions allowed
 
 ### How to request access to a project
@@ -39,7 +39,7 @@ The Patching Automation tool is available from the Site-Wide Analysis Tool dashb
 
 ## Production environment access
 
-For production environments, additional safeguards apply:
+For production environments, additional safeguards apply by default:
 
 * **Maintenance mode** - Must be enabled
 * **Cron jobs** - Must be disabled
@@ -48,6 +48,10 @@ For production environments, additional safeguards apply:
 >[!IMPORTANT]
 >
 >Production environment patching requires proper preparation and safeguards to prevent accidental disruptions.
+
+>[!NOTE]
+>
+>You can skip the maintenance-mode and cron-job checks by selecting the override checkbox in the UI ("I want to skip maintenance mode and cron checks before applying patches to production environment"). Only use this if you understand the risk of patching production without those safeguards in place.
 
 ## Related topics
 

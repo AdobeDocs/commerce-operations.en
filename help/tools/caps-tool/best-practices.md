@@ -7,15 +7,15 @@ hide: true
 
 Following best practices is essential for successful and safe patch operations with [!DNL Adobe Commerce Patching Automation]. This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
 
-## Pre-Patch Best Practices
+## Pre-patch best practices
 
-### Environment Readiness
+### Environment readiness
 
 **Best Practice:** Always prepare your environment thoroughly before applying patches to ensure successful operations and minimize risks.
 
 Before applying patches, ensure your environment is properly prepared:
 
-* **Adobe Commerce Cloud Account**
+* **Adobe Commerce Cloud account**
   * Active Adobe Commerce Cloud subscription
   * Valid Adobe Commerce license
   * Repository access credentials configured
@@ -28,8 +28,8 @@ Before applying patches, ensure your environment is properly prepared:
   * Stable parent environment for synchronization
 
 * **Production environment preparation** (for production patching)
-  * Maintenance mode can be enabled
-  * Cron jobs can be disabled
+  * Maintenance mode must be enabled
+  * Cron jobs must be disabled
   * Maintenance window procedures established
   * Rollback procedures documented
   * Stakeholder communication plan ready

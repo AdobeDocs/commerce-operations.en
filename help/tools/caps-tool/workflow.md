@@ -22,9 +22,9 @@ This topic provides a high-level overview of how patch operations work using [!D
 
 [!DNL Patching Automation] supports two main *operations* for managing patches in your Adobe Commerce Cloud environment:
 
-* **Apply operation** - adds patch changes to your codebase through a safe, validated process. Patches are applied by placing patch files in the 'm2-hotfixes' folder.
+* **Apply operation** - adds patch changes to your codebase through a safe, validated process. Patches are applied by placing patch files in the `m2-hotfixes` folder.
 
-* **Revert operation** - removes previously applied patches from your codebase by removing patch files from the 'm2-hotfixes' folder.
+* **Revert operation** - removes previously applied patches from your codebase by removing patch files from the `m2-hotfixes` folder.
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ The Patching phase applies or reverts the patch in a temporary integration envir
 This approach provides:
 
 * **Safety** - keeps your target environment untouched until the integration environment deploys successfully and passes its health check
-* **Testing** - in a real environment before affecting production  
+* **Testing** - performed in a real environment before affecting production
 * **Rollback capability** - if issues are detected
 * **Isolation** - for each patch operation
 
@@ -81,7 +81,7 @@ This approach provides:
 
 **Safe testing** - The patch is applied to the integration environment, not directly to your target environment
 
-**File management** - Patch files are placed in the `m2-hotfixes/` directory
+**File management** - Patch files are placed in the `m2-hotfixes` folder
 
 **Git operations** - Changes are committed and pushed to the integration environment branch
 
@@ -105,15 +105,13 @@ This approach provides:
 
 **Verification** - The service verifies that the merge was successful and the environments are in sync
 
-**Environment cleanup** - The temporary integration environment is deleted to free up resources
-
-## Integration environment lifecycle
+### Integration environment lifecycle
 
 Integration environments have a specific lifecycle during the patching stage:
 
 * **Creation** - Created at the start of the patching stage
 * **Active period** - Remain active during patch application and testing
-* **Cleanup** - Automatically deleted after successful merge or if the operation fails
+* **Cleanup** - Deleted immediately if the operation fails during the Patching phase, before merge; otherwise deleted during the Validation phase, after merge, whether or not validation passes
 
 ### Phase 3: Validation
 
@@ -134,7 +132,7 @@ The Validation phase ensures the patched application works correctly and perform
 
 * "Job completed successfully" - Patch applied without issues
 * "Patch has been applied" - Patch was already present (no action needed)
-* Patch file successfully placed in 'm2-hotfixes' folder
+* Patch file successfully placed in `m2-hotfixes` folder
 * All validation checks pass
 * Application health checks successful
 
@@ -142,7 +140,7 @@ The Validation phase ensures the patched application works correctly and perform
 
 * "Job completed successfully" - Patch reverted without issues
 * "Patch has been reverted" - Patch was already reverted (no action needed)
-* Patch file successfully removed from 'm2-hotfixes' folder
+* Patch file successfully removed from `m2-hotfixes` folder
 * All validation checks pass
 * Application health checks successful
 
@@ -157,7 +155,7 @@ Before applying patches to production environments, the service checks for two c
 * **Maintenance mode** - The store must be in maintenance mode
 * **Cron jobs disabled** - Cron jobs must be disabled
 
-If either condition is not met, the patch application is blocked and the user is notified.
+If either condition is not met, the patch application is blocked and the user is notified — unless you select the override checkbox in the UI to skip these checks and proceed anyway.
 
 ## Related topics
 

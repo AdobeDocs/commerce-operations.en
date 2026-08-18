@@ -111,6 +111,7 @@ For most environments, the following timeline describes how long patch operation
 * Enable maintenance mode for your production store
 * Disable cron jobs in your production environment
 * Verify both conditions are met before retrying
+* Alternatively, select the override checkbox in the UI to skip these checks and proceed anyway — only if you understand the risk of patching production without those safeguards in place
 
 >[!IMPORTANT]
 >
@@ -124,10 +125,11 @@ For most environments, the following timeline describes how long patch operation
 
 **Solutions:**
 
-* Review application logs for specific errors
-* Test critical functionality manually
-* Consider reverting the patch if issues persist
-* Contact support if you need assistance
+* Test your storefront and critical checkout/admin flows now to confirm whether customers are actually affected
+* Review the application and deployment logs for your environment, available from your project's Activity feed in the Cloud Console
+* Try redeploying the environment manually — this can resolve transient deployment or infrastructure issues
+* If the patch itself is the cause, revert it — either through the Revert operation in [!DNL Patching Automation], if available, or manually by removing the patch file from the `m2-hotfixes` folder and redeploying
+* If none of the above resolves it, contact support with your Project ID, Environment ID, and this exact message — the last operation didn't complete cleanly, so support may need to confirm the environment's state
 
 ### Authentication and access errors
 
