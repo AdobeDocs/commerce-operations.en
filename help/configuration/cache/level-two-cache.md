@@ -42,20 +42,29 @@ With L2 caching, each web node stores frequently accessed data locally and uses 
 
 Commerce stores the hashed data version in the remote cache, with the suffix `:hash` appended to the regular key. When the local cache is outdated, the data is fetched from the remote machine through a cache adapter.
 
-There are two L2 cache implementations available:
+There are two L2 cache implementations available in Adobe Commerce:
+
 
 | Implementation | Version | Description |
 | -------------- | ------- | ----------- |
 | [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
 | [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey only. |
 
+
+| Commerce version | RemoteSynchronizedCache with Valkey | Recommended configuration |
+| -------------- | ----------------------------------- | ------------------------- |
+| 2.4.8 and earlier<br>(if Valkey is supported) | Supported legacy L2 path | `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'` |
+| 2.4.9 and later | Not supported | `VALKEY_BACKEND: 'symfony_l2'` |
+
+Symfony L2 cache is the recommended implementation for Adobe Commerce 2.4.9 and later releases. It provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
+
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
->[!NOTE]
->
->The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
+The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
 
-Cache configuration instructions depend on your deployment type:
+Cache configuration instructions depend on your deployment type.
+
+>[BEGIN ]
 
 - **For Adobe Commerce on Cloud**, configure L2 cache by setting the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) or [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) deploy variable in `.magento.env.yaml`. See [Configure L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) for configuration examples.
 

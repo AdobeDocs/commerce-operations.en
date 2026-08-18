@@ -16,182 +16,30 @@ nudge: true
 
 Use these recommendations to configure Valkey or Redis caching and sessions for Adobe Commerce on cloud infrastructure. For on-premises cache configuration, see [Cache backend options and storage reference](../../../configuration/cache/cache-options.md).
 
-- Configure L2 cache, including [!DNL Symfony] L2 cache
+>[!NOTE]
+>
+>This guide covers the Redis or Valkey application cache and session backends only. Full-page caching (Fastly on Adobe Commerce on Cloud, or Varnish on-premises) is a separate caching layer that stores full HTTP responses before Adobe Commerce and avoids using Redis or Valkey for storage. Configuration changes in this guide don't affect full-page cache behavior, and full-page cache configuration doesn't affect the settings described here.
+
 - Enable read-only replica connection
-- Preload keys
-- Enable stale cache
 - Separate cache and session
 - Compress the cache
+- Enable asynchronous freeing
+- Enable multithreaded I/O
+- Increase client timeouts and retries
+- Configure L2 cache, including preload keys, stale cache, and [!DNL Symfony] L2 cache
 - Review configuration examples
 
 >[!NOTE]
 >
 >Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
 
-## Configure L2 cache
-
-Configure the L2 cache by setting the `VALKEY_BACKEND` or `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
-
-For Adobe Commerce 2.4.9 and versions later than 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, and 2.4.5-p16, configure L2 cache with Valkey. The Redis configuration examples on this page apply only to supported Adobe Commerce versions that use Redis. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
-
-For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](../../../configuration/cache/level-two-cache.md).
-
->[!IMPORTANT]
->
->Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
-
->[!BEGINTABS]
-
->[!TAB Valkey configuration]
-
-For Valkey with the legacy cache implementation, use:
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-```
-
-For Valkey with the modern Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
-
->[!TAB Redis configuration]
-
-For Redis, use:
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-```
-
-For environment configuration details, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
-
->[!ENDTABS]
-
-### Configure [!DNL Symfony] L2 cache
-
-Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. It does not replace Redis or Valkey as the remote cache service.
-
->[!IMPORTANT]
->
->Do not configure `symfony_l2` manually in `app/etc/env.php` as a persistent configuration for Adobe Commerce on cloud infrastructure. Deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache. This fallback can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
-
-To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
-
-- Ensure that the cloud project is using [ECE Tools package v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
-
-- Set the deployment variable in the `.magento.env.yaml` file: `VALKEY_BACKEND`=`symfony_l2`.
-
-  ```yaml
-  stage:
-    deploy:
-      VALKEY_BACKEND: symfony_l2
-  ```
-
-Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. Defining `CACHE_CONFIGURATION` is optional and needed only if you want to customize specific backend options.
-
->[!NOTE]
->
->Patch ACP2E-5132 for Adobe Commerce 2.4.9 improves Symfony L2 cache performance and reliability—optimized tag storage, a stale-cache regeneration lock, and fixes for stale tag memberships after retagging, redundant remote writes on unchanged saves, and L1 size-based eviction (`cleanup_percentage`). This reduces disk I/O and backend load while improving cache consistency. See [Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_.
->
->The patch is included in the [Cloud Patches for Commerce package](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (a dependency of `ece-tools`) and is applied automatically during deployment when you update to the latest `ece-tools` version. Update to the latest version of `ece-tools` to receive the patch.
-
-#### Customize the Symfony L2 cache configuration
-
-`ece-tools` automatically derives the Valkey connection details (`server`, `port`, `database`, `serializer`, `compression_lib`, `persistent_id`) for the `default` and `stale_cache_enabled` frontends. To customize other backend options—such as the local cache directory—define `CACHE_CONFIGURATION` with `_merge: true` alongside `VALKEY_BACKEND: symfony_l2`. Values you define here override the corresponding auto-generated defaults; any options you omit continue to use the values that `ece-tools` derives automatically.
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-        stale_cache_enabled:
-          backend: symfony_l2
-          backend_options:
-            remote_backend: valkey
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1_stale
-            use_stale_cache: true
-```
-
->[!CAUTION]
->
->When defining `CACHE_CONFIGURATION` for `symfony_l2`, do not override `server` or `port` unless you are intentionally pointing to a cache endpoint other than your project's Valkey service. The ECE Tools package derives these values automatically from your Valkey service relationship.
->
->If you override `server`, its value must be `localhost` when connecting to the project's Valkey service. Providing an incorrect `server` or `port` value causes deployment to fail with a cache connection error.
-
-### L2 cache memory sizing for Adobe Commerce Cloud
-
-L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) as its storage mechanism. Unlike specialized key-value stores, tmpfs has no key eviction policy, so memory usage can grow unbounded. To prevent exhaustion, Adobe Commerce automatically clears the L2 storage when usage reaches a configurable threshold (95% by default). You can control memory consumption by requesting a larger `/dev/shm` mount or by lowering the cleanup threshold.
-
-Adjust the maximum L2 cache memory usage based on your project requirements. Use one of the following methods:
-
-- Create a support ticket to adjust the `/dev/shm` mount size. For this scenario, Adobe recommends setting the `/dev/shm` mount size to 15 GB.
-- Adjust the `cleanup_percentage` property at the application level to cap storage usage and free memory available for other services.
-   You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
-
->[!NOTE]
->
->The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
-
-The following examples show the configuration code in the `.magento.env.yaml` file:
-
->[!BEGINTABS]
-
->[!TAB Valkey configuration]
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            cleanup_percentage: 90
-```
-
->[!TAB Redis configuration]
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            cleanup_percentage: 90
-```
-
->[!ENDTABS]
-
-Cache requirements vary based on your project configuration and custom third-party code. Size L2 cache memory so that the cache can operate without frequent threshold hits.
-
-Ideally, L2 cache memory usage stabilizes below the threshold to avoid frequent storage clearing.
-
-You can check L2 cache storage memory usage on each node of the cluster by running the following CLI command and reviewing the `/dev/shm` line.
-
-```shell
-df -h /dev/shm
-```
-
-Usage can vary across nodes, but it should converge to a similar value.
-
 ## Enable slave connection
 
-Enable the read-only replica connection in the `.magento.env.yaml` file to let Adobe Commerce use an additional cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
+Enable the slave connection in the `.magento.env.yaml` file. This change allows Adobe Commerce to use an additional cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
+
+>[!NOTE]
+>
+>Whether a slave connection (read-only replica) is available depends on your project's topology (for example, single-node versus split or HA architecture) and on the `ece-tools` version. Before relying on this setting, confirm that a slave relationship exists for your service by running `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp` and checking for a `USE_SLAVE_CONNECTION` entry. To confirm whether your topology provisions a replica endpoint, upgrade `ece-tools` and redeploy, or contact Adobe Commerce Support if no `USE_SLAVE_CONNECTION` entry is present.
 
 >[!BEGINTABS]
 
@@ -221,286 +69,15 @@ For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION]
 
 >[!ENDTABS]
 
-## Preload keys
-
-Magento usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
-
-You can identify frequently used keys by monitoring active commands on Redis or Valkey:
-
->[!BEGINTABS]
-
->[!TAB Valkey preload key configuration]
-
-The preload keys are configured in the `.magento.env.yaml` configuration file.
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
-          backend_options:
-            preload_keys: # List the keys to be preloaded
-              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
-              - '061_GLOBAL_PLUGIN_LIST:hash'
-              - '061_DB_IS_UP_TO_DATE:hash'
-              - '061_SYSTEM_DEFAULT:hash'
-```
-
-To list the keys, run the following command:
-
-```terminal
-valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
-```
-
-After 10 seconds, press **[!UICONTROL Ctrl+C]**. Then run the following command:
-
-```terminal
-cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
-```
-
-This log lists the keys you can preload. To see the content of a key, run the following command:
-
-```terminal
-valkey-cli -p 6370 -n 1 hgetall "<key_name>"
-```
-
->[!TAB Redis preload key configuration]
-
-The preload keys are configured in the `.magento.env.yaml` configuration file.
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
-          backend_options:
-            preload_keys: # List the keys to be preloaded
-              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
-              - '061_GLOBAL_PLUGIN_LIST:hash'
-              - '061_DB_IS_UP_TO_DATE:hash'
-              - '061_SYSTEM_DEFAULT:hash'
-```
-
-To list the keys, run the following command:
-
-```terminal
-redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
-```
-
-After 10 seconds, press **[!UICONTROL Ctrl+C]**. Then run the following command:
-
-```terminal
-cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
-```
-
-This log lists the keys you can preload. To see the content of a key, run the following command:
-
-```terminal
-redis-cli -p 6370 -n 1 hgetall "<key_name>"
-```
-
->[!ENDTABS]
-
-## Enable stale cache
-
-Stale cache is an L2 cache feature of `RemoteSynchronizedCache`. When enabled, Adobe Commerce can serve an existing local cache value from `/dev/shm` while another request is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
-
-### How it works
-
-With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When the remote copy is unavailable and a regeneration lock already exists for that key, concurrent requests can receive the previous local value instead of waiting until the fresh value is written.
-
-To enable stale cache, configure it in the `.magento.env.yaml` file.
-
->[!BEGINTABS]
-
-
->[!TAB Configure stale cache for Valkey]
-
-For Valkey:
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            use_stale_cache: true
-```
-
->[!TAB Configure stale cache for Redis]
-
-For Redis:
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            use_stale_cache: true
-```
-
->[!ENDTABS]
-
->[!NOTE]
->
->The `full_page` cache type is not relevant to Adobe Commerce on Cloud infrastructure projects because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
-
->[!WARNING]
->
->The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types generally work as expected with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API (for example `$this->cache->save()`) without a dedicated cache frontend, those entries can also serve stale values during regeneration.
->
->
->If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as is commonly [done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options).
-
-### Enabling stale cache per cache type individually
-
-You can enable stale cache only for selected cache types by defining a dedicated cache frontend in `.magento.env.yaml` and mapping the selected cache types to it.
-
-To work correctly, the custom frontend must be defined as a complete frontend under `CACHE_CONFIGURATION.frontend`. Defining only `use_stale_cache: true` for a new frontend name is not enough.
-
-**Example configurations**
-
->[!BEGINTABS]
-
->[!TAB Configure stale cache for Valkey]
-
-For Valkey:
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default: # In this frontend, we keep stale cache set to false.
-          id_prefix: '001_'
-          backend_options:
-            use_stale_cache: false
-
-        # Now, create a new frontend called 'stale_cache_enabled'.
-        # It must contain the same backend connection settings as the frontend 'default':
- 
-        stale_cache_enabled:
-          id_prefix: '001_'
-          backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-          backend_options:
-            remote_backend: '\Magento\Framework\Cache\Backend\Valkey'
-            remote_backend_options:
-              server: localhost
-              port: 6370 # Use the same port used by the frontend 'default' in env.php
-              database: 1
-              load_from_slave:
-                server: localhost
-                port: 26370 # Use the same port used by the frontend 'default' in env.php
-              retry_reads_on_master: 1
-              read_timeout: 10
-            local_backend: 'Cm_Cache_Backend_File'
-            local_backend_options:
-              cache_dir: /dev/shm/
-            use_stale_cache: true # stale cache here is enabled
-
-      # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
-
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-        # add other cache types as needed...
-```
-
->[!TAB Configure stale cache for Redis]
-
-For Redis:
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default: # In this frontend, we keep stale cache set to false.
-          id_prefix: '001_'
-          backend_options:
-            use_stale_cache: false
-
-        # Now, create a new frontend called 'stale_cache_enabled'.
-        # It must contain the same backend connection settings as the frontend 'default':
-
-        stale_cache_enabled:
-          id_prefix: '001_'
-          backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-          backend_options:
-            remote_backend: '\Magento\Framework\Cache\Backend\Redis'
-            remote_backend_options:
-              server: localhost
-              port: 6370 # Use the same port used by the frontend 'default' in env.php
-              database: 1
-              load_from_slave:
-                server: localhost
-                port: 26370 # Use the same port used by the frontend 'default' in env.php
-              retry_reads_on_master: 1
-              read_timeout: 10
-            local_backend: 'Cm_Cache_Backend_File'
-            local_backend_options:
-              cache_dir: /dev/shm/
-            use_stale_cache: true # stale cache here is enabled
-
-      # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
-
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-        # add other cache types as needed...
-```
-
->[!ENDTABS]
-
->[!NOTE]
->
->If the source frontend is configured with additional backend options like compression, retries, preload keys, or other tuning values, copy those options to `stale_cache_enabled` so that the new frontend maintains the same behavior.
-
-
 ## Separate cache and session instances
 
 Separating the cache from the sessions allows you to manage them independently. It reduces contention between cache and session traffic, prevents cache-related pressure from affecting sessions, and allows each Redis or Valkey instance to be sized and tuned for its own workload.
 
-Follow the steps below to provision a dedicated instance for sessions:
+>[!IMPORTANT]
+>
+>Provisioning a dedicated session instance on Production and Staging isn't self-service. It requires submitting an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with your updated `.magento/services.yaml` and `.magento.app.yaml` files, as described in step 3 below.
+
+To provision a dedicated instance for sessions, follow the steps below:
 
 >[!BEGINTABS]
 
@@ -542,7 +119,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 1. Request a new Valkey instance dedicated to sessions on Production and Staging environments.
 
-   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
    This update does not cause any downtime, but it requires a deployment to activate the new service.
 
@@ -617,7 +194,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 1. Request a new Redis instance dedicated to sessions on Production and Staging environments.
 
-   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+   Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
    This update does not cause any downtime, but it requires a deployment to activate the new service.
 
@@ -659,7 +236,7 @@ Follow the steps below to provision a dedicated instance for sessions:
 
 ## Cache compression
 
-If you use more than 6 GB of Redis or Valkey `maxmemory`, you can enable cache compression to reduce the space consumed by keys. Be aware that this setting trades client-side performance for memory savings. If you have spare CPU capacity, consider enabling it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) or [Use Valkey for session storage](../../../configuration/cache/valkey-session.md) in the _Configuration Guide_.
+If you use more than 6 GB of Redis or Valkey `maxmemory`, you can enable cache compression to reduce the space consumed by keys. Be aware that this setting exchanges client-side performance for memory savings. If you have spare CPU capacity, consider enabling it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) or [Use Valkey for session storage](../../../configuration/cache/valkey-session.md) in the _Configuration Guide_.
 
 ```yaml
 stage:
@@ -677,7 +254,7 @@ stage:
 
 ## Enable asynchronous freeing
 
-To enable `lazyfree` on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting that the following Redis or Valkey configuration be applied to your environments:
+To enable `lazyfree` on Adobe Commerce cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting that the following Redis or Valkey configuration be applied to your environments:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -699,7 +276,7 @@ When `lazyfree` is enabled, Redis or Valkey offloads memory reclamation to backg
 
 ## Enable multithreaded I/O
 
-To enable Redis I/O threading on Adobe Commerce on cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the I/O threading configuration below. This configuration can improve throughput by offloading socket reads and writes and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+To enable Redis I/O threading on Adobe Commerce cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) requesting the I/O threading configuration below. This configuration can improve throughput by offloading socket reads, writes, and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
 
 >[!BEGINTABS]
 
@@ -757,6 +334,339 @@ These settings can reduce intermittent connection and read-timeout errors during
 >
 >These settings can help with brief congestion, but they do not fix persistent overload.
 
+## Configure L2 cache
+
+Configure the L2 cache by setting the `VALKEY_BACKEND` or `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
+
+There are two L2 cache implementations available for Adobe Commerce on cloud infrastructure.
+
+- Legacy implementation uses `RemoteSynchronizedCache` with `Cm_Cache_Backend_File` for local storage
+- Modern implementation uses `symfony_l2` with PSR-6 compliance and enhanced performance. The modern implementation supports Valkey only.
+
+| Commerce version | RemoteSynchronizedCache with Valkey | Recommended configuration |
+| -------------- | ----------------------------------- | ------------------------- |
+| 2.4.8 and earlier<br>(if Valkey is supported) | Supported legacy L2 path | `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'` |
+| 2.4.9 and later | Not supported | `VALKEY_BACKEND: 'symfony_l2'` |
+
+>[!IMPORTANT]
+>
+>Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
+
+>[!BEGINTABS]
+
+>[!TAB Valkey configuration]
+
+For Valkey with the legacy cache implementation, use:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+For Valkey with the modern Symfony L2 cache implementation:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: 'symfony_l2'
+```
+
+>[!TAB Redis configuration]
+
+On version 2.4.8 and earlier Commerce versions that support Redis, use:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+For environment configuration details, see [`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
+
+>[!ENDTABS]
+
+### Preload keys
+
+For Adobe Commerce 2.4.8 and earlier, preload keys are effective only with the `RemoteSynchronizedCache` cache implementation.
+
+If you are upgrading to Adobe Commerce 2.4.9 and later, remove any preload keys from the `.magento.env.yaml` file after migration.
+
+Magento usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
+
+You can identify frequently used keys by monitoring active commands on Redis or Valkey:
+
+The preload keys are configured in the `.magento.env.yaml` configuration file.
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
+          backend_options:
+            preload_keys: # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
+
+To list the keys, run the following command:
+
+```terminal
+redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
+```
+
+After 10 seconds, press **[!UICONTROL Ctrl+C]**. Then run the following command:
+
+```terminal
+cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
+```
+
+This log lists the keys you can preload. To see the content of a key, run the following command:
+
+```terminal
+redis-cli -p 6370 -n 1 hgetall "<key_name>"
+```
+
+### Enable stale cache
+
+Stale cache is an L2 cache feature that lets Adobe Commerce serve an existing local cache value from `/dev/shm` while another request is already regenerating the same entry. This prevents concurrent requests from waiting. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
+
+For Adobe Commerce 2.4.9 and later, set `VALKEY_BACKEND: symfony_l2` in the `.magento.env.yaml` file:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+```
+
+`ece-tools` automatically generates both a `default` frontend and a `stale_cache_enabled` frontend, and maps common cache types—such as `layout`, `block_html`, `full_page`, and `translate`—to the stale-enabled frontend. No manual `use_stale_cache` or frontend configuration is required for these types. This automatic mapping is itself an example of selective stale cache enablement: only specific cache types use the stale-enabled frontend, not all of them. To customize which types map to `stale_cache_enabled`, or to add types beyond the defaults, see [Customize the Symfony L2 cache configuration](#customize-the-symfony-l2-cache-configuration).
+
+The following legacy configuration applies to Adobe Commerce 2.4.8 and earlier, which use `RemoteSynchronizedCache` and require manual stale cache and frontend configuration. The same selective-over-global recommendation applies here.
+
+#### How it works (legacy `RemoteSynchronizedCache`)
+
+With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When the remote copy is unavailable and a regeneration lock already exists for that key, concurrent requests can receive the previous local value instead of waiting until the fresh value is written.
+
+To enable stale cache for 2.4.8 and earlier versions, configure it in the `.magento.env.yaml` file.
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            use_stale_cache: true
+```
+
+>[!WARNING]
+>
+>The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types work as expected with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API (for example `$this->cache->save()`) without a dedicated cache frontend, those entries can also serve stale values during regeneration.
+>
+>
+>If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as shown below.
+
+#### Enabling stale cache per cache type individually (legacy)
+
+You can enable stale cache only for selected cache types by defining a dedicated cache frontend in `.magento.env.yaml` and mapping the selected cache types to it. This manual approach applies to the legacy `RemoteSynchronizedCache` backend; `symfony_l2` performs this mapping automatically, as described above.
+
+To work correctly, the custom frontend must be defined as a complete frontend under `CACHE_CONFIGURATION.frontend`. Defining only `use_stale_cache: true` for a new frontend name is not enough.
+
+**Example configurations**
+
+For Redis on versions 2.4.8 and earlier, the following configuration enables stale cache for the `layout`, `reflection`, `config_integration`, `config_integration_api`, and `translate` cache types, while leaving others using the default frontend with stale cache disabled.:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default: # In this frontend, we keep stale cache set to false.
+          id_prefix: '001_'
+          backend_options:
+            use_stale_cache: false
+
+        # Now, create a new frontend called 'stale_cache_enabled'.
+        # It must contain the same backend connection settings as the frontend 'default':
+
+        stale_cache_enabled:
+          id_prefix: '001_'
+          backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+          backend_options:
+            remote_backend: '\Magento\Framework\Cache\Backend\Redis'
+            remote_backend_options:
+              server: localhost
+              port: 6370 # Use the same port used by the frontend 'default' in env.php
+              database: 1
+              load_from_slave:
+                server: localhost
+                port: 26370 # Use the same port used by the frontend 'default' in env.php
+              retry_reads_on_master: 1
+              read_timeout: 10
+            local_backend: 'Cm_Cache_Backend_File'
+            local_backend_options:
+              cache_dir: /dev/shm/
+            use_stale_cache: true # stale cache here is enabled
+
+      # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
+
+      type:
+        default:
+          frontend: default
+        layout:
+          frontend: stale_cache_enabled
+        reflection:
+          frontend: stale_cache_enabled
+        config_integration:
+          frontend: stale_cache_enabled
+        config_integration_api:
+          frontend: stale_cache_enabled
+        translate:
+          frontend: stale_cache_enabled
+        # add other cache types as needed...
+```
+
+>[!ENDTABS]
+
+>[!NOTE]
+>
+>If the source frontend is configured with additional backend options, copy those options to `stale_cache_enabled` so that the new frontend maintains the same behavior.
+
+### Configure [!DNL Symfony] L2 cache
+
+Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. **It does not replace Redis or Valkey as the remote cache service.**
+
+>[!IMPORTANT]
+>
+>Configure `symfony_l2` through the `.magento.env.yaml` deployment variable so `ece-tools` applies and maintains the setting during deployment. Do not configure `symfony_l2` manually in `app/etc/env.php`, because deployment can overwrite manual `env.php` changes. If `ece-tools` does not apply `symfony_l2`, Commerce can fall back to file-based cache, which can increase disk I/O, add file system replication overhead on multi-node environments, and degrade performance.
+
+To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
+
+- Ensure that the cloud project is using [ECE Tools package v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
+
+- Set the deployment variable in the `.magento.env.yaml` file: `VALKEY_BACKEND`=`symfony_l2`.
+
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
+
+Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the full L2 cache configuration from your Valkey service connection details, including `default` and `stale_cache_enabled` frontends, with common cache types already mapped. Defining `CACHE_CONFIGURATION` is optional and needed only if you want to customize specific backend options.
+
+>[!NOTE]
+>
+>Patch ACP2E-5132 for Adobe Commerce 2.4.9 improves Symfony L2 cache performance and reliability by optimizing tag storage, adding a stale-cache regeneration lock, and fixing issues with stale tag memberships after retagging, redundant remote writes on unchanged saves, and L1 size-based eviction (`cleanup_percentage`). This reduces disk I/O and backend load while improving cache consistency. See [Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_.
+>
+>The patch is included in the [Cloud Patches for Commerce package](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (a dependency of `ece-tools`) and is applied automatically during deployment when you update to the latest `ece-tools` version. Update to the latest version of `ece-tools` to receive the patch.
+
+#### Customize the Symfony L2 cache configuration
+
+`ece-tools` automatically derives the Valkey connection details (`server`, `port`, `database`, `serializer`, `compression_lib`, `persistent_id`) for the `default` and `stale_cache_enabled` frontends. To customize other backend options—such as the local cache directory—define `CACHE_CONFIGURATION` with `_merge: true` alongside `VALKEY_BACKEND: symfony_l2`. Values you define here override the corresponding auto-generated defaults; any options you omit continue to use the values that `ece-tools` derives automatically.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1
+        stale_cache_enabled:
+          backend: symfony_l2
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1_stale
+            use_stale_cache: true
+```
+
+>[!CAUTION]
+>
+>When defining `CACHE_CONFIGURATION` for `symfony_l2`, only override `server` or `port` if you are intentionally pointing to a cache endpoint other than your project's Valkey service. The ECE Tools package derives these values automatically from your Valkey service relationship.
+>
+>If you override `server`, its value must be `localhost` when connecting to the project's Valkey service. Providing an incorrect `server` or `port` value causes deployment to fail with a cache connection error.
+
+### L2 cache memory sizing for Adobe Commerce Cloud
+
+L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) as its storage mechanism. Unlike specialized key-value stores, tmpfs has no key eviction policy, so memory usage can grow unbounded. To prevent exhaustion, Adobe Commerce automatically clears the L2 storage when usage reaches a configurable threshold (95% by default). You can control memory consumption by requesting a larger `/dev/shm` mount or by lowering the cleanup threshold.
+
+Adjust the maximum L2 cache memory usage based on your project requirements. Use one of the following methods:
+
+- To adjust the `/dev/shm` mount size, create a support ticket. For this scenario, Adobe recommends setting the `/dev/shm` mount size to 15 GB.
+- Adjust the `cleanup_percentage` property at the application level to cap storage usage and free memory available for other services.
+   You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
+
+The following examples show the configuration code in the `.magento.env.yaml` file:
+
+>[!BEGINTABS]
+
+>[!TAB Valkey configuration]
+
+For Commerce 2.4.9 and later, use the following configuration to set the cleanup threshold to 90%:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: 'symfony_l2'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+>[!TAB Redis configuration]
+
+For Commerce 2.4.8 and earlier, use the following configuration to set the cleanup threshold to 90%:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+>[!ENDTABS]
+
+Cache requirements vary based on your project configuration and custom third-party code. Size L2 cache memory so that the cache can operate without frequent threshold hits.
+
+Ideally, L2 cache memory usage stabilizes below the threshold to avoid frequent storage clearing.
+
+You can check L2 cache storage memory usage on each node of the cluster by running the following CLI command and reviewing the `/dev/shm` line.
+
+```shell
+df -h /dev/shm
+```
+
+Usage varies across nodes, but converges to a similar value.
+
 ## Configuration examples
 
 Use the following examples as a starting point for your Redis or Valkey service configurations.
@@ -773,7 +683,7 @@ stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
     VALKEY_USE_SLAVE_CONNECTION: true # Enables read-only replica connection logic in Magento. It also works in a split architecture.
-    VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+    VALKEY_BACKEND: `symfony_l2` # Use symfony_l2 for Adobe Commerce 2.4.9 and later
     CACHE_CONFIGURATION:
       _merge: true
       frontend:
@@ -810,6 +720,8 @@ stage:
 ```
 
 >[!TAB Redis]
+
+Use the following configuration for Redis on Adobe Commerce 2.4.8 and earlier:
 
 ```yaml
 stage:
@@ -867,7 +779,7 @@ stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
     VALKEY_USE_SLAVE_CONNECTION: true # Enables read-only replica connection logic in Magento. It also works in a split architecture
-    VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+    VALKEY_BACKEND: symfony_l2 # Use symfony_l2 for Adobe Commerce 2.4.9 and later
     CACHE_CONFIGURATION:
       _merge: true
       frontend:
@@ -893,7 +805,7 @@ stage:
 
         stale_cache_enabled: # New frontend with stale cache enabled only for selected cache types.
           id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
-          backend: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+          backend: \Magento\Framework\Cache\Backend\symfony_l2
           backend_options:
             remote_backend: \Magento\Framework\Cache\Backend\Valkey
             remote_backend_options:
@@ -984,7 +896,7 @@ stage:
 
         stale_cache_enabled: # New frontend with stale cache enabled only for selected cache types.
           id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
-          backend: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+          backend: \Magento\Framework\Cache\Backend\symfony_l2
           backend_options:
             remote_backend: \Magento\Framework\Cache\Backend\Redis
             remote_backend_options:
