@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)] Best Practices Guide'
-description: Learn best practices for using [!DNL Cloud Automation Patching Service (CAPS)] effectively and safely
+title: '[!DNL Adobe Commerce Patching Automation] Best Practices Guide'
+description: Learn best practices for using [!DNL Adobe Commerce Patching Automation] effectively and safely
 hide: true
 ---
-# [!DNL Cloud Automation Patching Service (CAPS)] best practices guide
+# [!DNL Adobe Commerce Patching Automation] best practices guide
 
-Following best practices is essential for successful and safe patch operations with [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
+Following best practices is essential for successful and safe patch operations with [!DNL Adobe Commerce Patching Automation]. This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
 
 ## Pre-Patch Best Practices
 
@@ -135,7 +135,7 @@ Before applying patches, ensure your environment is properly prepared:
 
 ## Summary of key best practices
 
-### Critical best practices for [!DNL CAPS] success
+### Critical best practices for [!DNL Patching Automation] success
 
 * Always test in pre-production before applying patches to production environments
 * Enable maintenance mode and disable cron jobs for production patch operations
@@ -148,7 +148,7 @@ Before applying patches, ensure your environment is properly prepared:
 
 ## Related topics
 
-* [CAPS introduction](intro.md)
+* [Patching Automation introduction](intro.md)
 * [How to access](access.md)
 * [Workflow overview](workflow.md)
 * [GitHub integration](github-integration.md)

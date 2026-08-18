@@ -1,15 +1,15 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)]'
-description: Learn about [!DNL Cloud Automation Patching Service (CAPS)], its uses, how to access it, and best practices for automated patching
+title: '[!DNL Adobe Commerce Patching Automation]'
+description: Learn about [!DNL Adobe Commerce Patching Automation], its uses, how to access it, and best practices for automated patching
 hide: true
 ---
-# [!DNL Cloud Automation Patching Service (CAPS)]
+# [!DNL Adobe Commerce Patching Automation]
 
-The [!DNL Cloud Automation Patching Service] ([!DNL CAPS]) is a tool that automates the process of applying and reverting patches for Adobe Commerce on Cloud environments. It offers Commerce project administrators a streamlined workflow to apply and revert patches that includes built-in validation and health checks to ensure that Cloud environments remains stable and secure.
+[!DNL Adobe Commerce Patching Automation] (formerly [!DNL Cloud Automation Patching Service], or [!DNL CAPS]) is a tool that automates the process of applying and reverting patches for Adobe Commerce on Cloud environments. It offers Commerce project administrators a streamlined workflow to apply and revert patches that includes built-in validation and health checks to ensure that Cloud environments remain stable and secure.
 
 This guide is designed for Adobe Commerce Cloud merchants and partners who want to streamline their patching process, reduce the risk of patch-related issues, improve their environment's security and stability, and automate routine patch operations.
 
-## [!DNL CAPS] topics
+## [!DNL Patching Automation] topics
 
 * **[How to access](access.md)**
 * **[Workflow overview](workflow.md)**
@@ -41,17 +41,17 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 
 ## Integrations with Adobe Commerce Cloud
 
-[!DNL CAPS] is fully integrated with Adobe Commerce Cloud infrastructure and works seamlessly with your existing cloud environments. It leverages cloud-native features for optimal performance, provides detailed logging and monitoring, and integrates with Adobe Commerce Cloud support tools.
+[!DNL Patching Automation] is fully integrated with Adobe Commerce Cloud infrastructure and works seamlessly with your existing cloud environments. It leverages cloud-native features for optimal performance, provides detailed logging and monitoring, and integrates with Adobe Commerce Cloud support tools.
 
 ## Video Tutorial
 
-Learn about the Adobe Cloud Automated Patching Service and how this tool helps users quickly find and apply security patches. The following video covers how to access it through the SWAT dashboard, choose your project and environment, and apply patches with one click.
+Learn about [!DNL Adobe Commerce Patching Automation] and how this tool helps users quickly find and apply security patches. The following video covers how to access it through the SWAT dashboard, choose your project and environment, and apply patches with one click.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Common use cases
 
 * **Security patches** - Quickly apply critical security updates
-* **Patch rollback** - Safely revert problematic patches applied through [!DNL CAPS]
+* **Patch rollback** - Safely revert problematic patches applied through the service
 * **Security compliance** - Maintain security standards with automated patching
 * **Operational stability** - Ensure environment stability through automated validation

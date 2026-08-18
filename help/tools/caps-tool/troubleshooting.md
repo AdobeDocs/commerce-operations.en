@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)] Troubleshooting Guide'
-description: Troubleshoot common issues and error messages in [!DNL Cloud Automation Patching Service (CAPS)]
+title: '[!DNL Adobe Commerce Patching Automation] Troubleshooting Guide'
+description: Troubleshoot common issues and error messages in [!DNL Adobe Commerce Patching Automation]
 hide: true
 ---
-# [!DNL Cloud Automation Patching Service (CAPS)] troubleshooting guide
+# [!DNL Adobe Commerce Patching Automation] troubleshooting guide
 
-When using [!DNL CAPS] for patch operations, you can encounter error messages and issues that can prevent successful patch application or reversion. This guide provides solutions for the most common problems.
+When using [!DNL Patching Automation] for patch operations, you can encounter error messages and issues that can prevent successful patch application or reversion. This guide provides solutions for the most common problems.
 
 ## Quick troubleshooting steps
 
@@ -60,7 +60,7 @@ For most environments, the following timeline describes how long patch operation
 
 **When it occurs:** During revert operations
 
-**Cause:** You're trying to revert a patch that wasn't applied through [!DNL CAPS]
+**Cause:** You're trying to revert a patch that wasn't applied through [!DNL Patching Automation]
 
 **Solution:** Use the same method that was used to apply the patch originally, or contact support for manual assistance
 
@@ -78,7 +78,7 @@ For most environments, the following timeline describes how long patch operation
 * Retry the patch operation
 * Contact support if sync issues persist
 
-#### "Production environment safeguards not met"
+#### "Cannot create patch job in production environment when cron is enabled and maintenance mode is disabled. Please enable maintenance mode and disable cron jobs before applying patches."
 
 **When it occurs:** During preliminary check for production environments
 
@@ -92,7 +92,7 @@ For most environments, the following timeline describes how long patch operation
 
 >[!IMPORTANT]
 >
-> [!DNL CAPS] does not automatically enable maintenance mode or disable cron jobs - these must be done externally by you
+> [!DNL Patching Automation] does not automatically enable maintenance mode or disable cron jobs - these must be done externally by you
 
 #### "Patch has been applied, but failed health check. Please consider reverting"
 
@@ -156,15 +156,15 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 
 **When it occurs:** During patch operations for projects connected to GitHub
 
-**Cause:** The [!DNL CAPS] GitHub App is not installed on your repository
+**Cause:** The [!DNL Patching Automation] GitHub App is not installed on your repository
 
-**Solution:** Follow the steps in [Set up the GitHub integration for [!DNL CAPS]](github-integration.md)
+**Solution:** Follow the steps in [Set up the GitHub integration for [!DNL Patching Automation]](github-integration.md)
 
 #### "GitHub API request failed"
 
 **When it occurs:** During patch operations for GitHub-connected projects
 
-**Cause:** A temporary issue prevented [!DNL CAPS] from connecting to GitHub
+**Cause:** A temporary issue prevented the service from connecting to GitHub
 
 **Solution:** Wait a few minutes and retry the operation. If the error continues, contact [Adobe Commerce Cloud support](https://experienceleague.adobe.com/home#support)
 
@@ -172,9 +172,9 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 
 **When it occurs:** During integration-environment creation
 
-**Cause:** The project's GitHub integration has the `fetch-branches` option disabled, so the temporary branches [!DNL CAPS] pushes are not synced and the integration environment is never created.
+**Cause:** The project's GitHub integration has the `fetch-branches` option disabled, so the temporary branches the service pushes are not synced and the integration environment is never created.
 
-**Solution:** Enable the integration's [`fetch-branches` option](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), then retry the operation. See [Set up the GitHub integration for [!DNL CAPS]](github-integration.md).
+**Solution:** Enable the integration's [`fetch-branches` option](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), then retry the operation. See [Set up the GitHub integration for [!DNL Patching Automation]](github-integration.md).
 
 ### Resource and quota errors
 
@@ -222,7 +222,7 @@ When contacting support, provide:
 
 * **Project ID** - Your Adobe Commerce Cloud project identifier
 * **Environment ID** - The specific environment where the issue occurred
-* **Operation ID** - The [!DNL CAPS] operation identifier
+* **Operation ID** - The [!DNL Patching Automation] operation identifier
 * **Error details** - Complete error messages and logs
 * **Steps to reproduce** - What you were doing when the error occurred
 * **Previous attempts** - What you've already tried to resolve the issue
@@ -239,7 +239,7 @@ For more detailed technical information:
 
 * [Adobe Commerce Cloud documentation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce Installation Guide](/help/installation/overview.md)
-* [CAPS introduction](intro.md)
+* [Patching Automation introduction](intro.md)
 * [How to access](access.md)
 * [Workflow overview](workflow.md)
 * [GitHub integration](github-integration.md)

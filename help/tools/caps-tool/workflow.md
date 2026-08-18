@@ -1,15 +1,15 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)] Workflow Overview'
-description: Learn about the [!DNL Cloud Automation Patching Service (CAPS)] workflow process, including terminology, workflow phases, and operations for automated patch management.
+title: '[!DNL Adobe Commerce Patching Automation] Workflow Overview'
+description: Learn about the [!DNL Adobe Commerce Patching Automation] workflow process, including terminology, workflow phases, and operations for automated patch management.
 hide: true
 ---
-# [!DNL Cloud Automation Patching Service (CAPS)] workflow overview
+# [!DNL Adobe Commerce Patching Automation] workflow overview
 
-This topic provides a high-level overview of how patch operations work using [!DNL CAPS (Cloud Automation Patching Service)].
+This topic provides a high-level overview of how patch operations work using [!DNL Adobe Commerce Patching Automation].
 
 ## Terminology
 
-* **Operations** - the main actions performed by [!DNL CAPS]:
+* **Operations** - the main actions performed by the service:
   * Apply
   * Revert
 * **Phases** - the three phases of the workflow:
@@ -20,7 +20,7 @@ This topic provides a high-level overview of how patch operations work using [!D
 
 ## Operations
 
-[!DNL CAPS] supports two main *operations* for managing patches in your Adobe Commerce Cloud environment:
+[!DNL Patching Automation] supports two main *operations* for managing patches in your Adobe Commerce Cloud environment:
 
 * **Apply operation** - adds patch changes to your codebase through a safe, validated process. Patches are applied by placing patch files in the 'm2-hotfixes' folder.
 
@@ -28,11 +28,11 @@ This topic provides a high-level overview of how patch operations work using [!D
 
 >[!IMPORTANT]
 >
->Revert operations are only available for patches that were originally applied through [!DNL CAPS]. Patches applied manually or through other methods cannot be reverted using this service.
+>Revert operations are only available for patches that were originally applied through [!DNL Patching Automation]. Patches applied manually or through other methods cannot be reverted using this service.
 
 ## Phases
 
-The [!DNL CAPS] workflow uses three *phases* that are always executed in this order to ensure that patches are applied safely and reliably:
+The [!DNL Patching Automation] workflow uses three *phases* that are always executed in this order to ensure that patches are applied safely and reliably:
 
 * **Preliminary check** - validates patch compatibility and environment readiness.
 * **Patching** - applies or reverts the patch in an integration environment.
@@ -58,7 +58,7 @@ The Preliminary Check phase validates that the patch can be safely applied to yo
 
 ### Phase 2: Patching
 
-The Patching phase applies or reverts the patch in a temporary integration environment for testing. During this stage, [!DNL CAPS] creates a temporary test environment to safely apply and test the patch before making changes to your actual environment.
+The Patching phase applies or reverts the patch in a temporary integration environment for testing. During this stage, the service creates a temporary test environment to safely apply and test the patch before making changes to your actual environment.
 
 This approach provides:
 
@@ -69,13 +69,13 @@ This approach provides:
 
 #### Stage 2a: Integration environment creation
 
-**Branch creation** - [!DNL CAPS] creates a temporary integration environment branch named `{target-environment}-CAPS-{patch-id}`
+**Branch creation** - [!DNL Patching Automation] creates a temporary integration environment branch named `{target-environment}-CAPS-{patch-id}`
 
 **Environment setup** - The integration environment is created as a child of your target environment
 
 **Code synchronization** - The integration environment inherits the exact state of your target environment
 
-**Resource requirements** - [!DNL CAPS] creates a temporary environment using the codebase from your target environment. According to Adobe Commerce Cloud documentation, each environment (including integration environments) has separate storage allocation based on your contracted storage plan. The amount of storage you contracted represents the total storage for each environment. In most cases, you will not face any issues with resource limitations. If you encounter any error with resource limitations, please check your application size and your contracted storage in your plan.
+**Resource requirements** - The service creates a temporary environment using the codebase from your target environment. According to Adobe Commerce Cloud documentation, each environment (including integration environments) has separate storage allocation based on your contracted storage plan. The amount of storage you contracted represents the total storage for each environment. In most cases, you will not face any issues with resource limitations. If you encounter any error with resource limitations, please check your application size and your contracted storage in your plan.
 
 #### Stage 2b: Patch application in integration environment
 
@@ -89,11 +89,11 @@ This approach provides:
 
 >[!NOTE]
 >
->If your project uses an external GitHub repository, [!DNL CAPS] handles authentication automatically using the [[!DNL CAPS] GitHub App](github-integration.md). No additional credentials are required.
+>If your project uses an external GitHub repository, the service handles authentication automatically using the [[!DNL Patching Automation] GitHub App](github-integration.md). No additional credentials are required.
 
 #### Stage 2c: Merge back to target environment
 
-**Environment checkout** - [!DNL CAPS] checks out your target environment locally
+**Environment checkout** - The service checks out your target environment locally
 
 **Merge operation** - The integration environment branch is merged into the target environment
 
@@ -101,7 +101,7 @@ This approach provides:
 
 **Deployment** - The merged changes are deployed to your target environment
 
-**Verification** - [!DNL CAPS] verifies that the merge was successful and the environments are in sync
+**Verification** - The service verifies that the merge was successful and the environments are in sync
 
 **Environment cleanup** - The temporary integration environment is deleted to free up resources
 
@@ -142,11 +142,11 @@ The Validation phase ensures the patched application works correctly and perform
 
 ## Production environment safeguards
 
-[!DNL CAPS] includes specific safeguards for production environments to prevent accidental disruptions and ensure patches are safely validated beforehand.
+[!DNL Patching Automation] includes specific safeguards for production environments to prevent accidental disruptions and ensure patches are safely validated beforehand.
 
 ### Preconditions for production patching
 
-Before applying patches to production environments, [!DNL CAPS] checks for two critical conditions:
+Before applying patches to production environments, the service checks for two critical conditions:
 
 * **Maintenance mode** - The store must be in maintenance mode
 * **Cron jobs disabled** - Cron jobs must be disabled
@@ -155,7 +155,7 @@ If either condition is not met, the patch application is blocked and the user is
 
 ## Related topics
 
-* [CAPS introduction](intro.md)
+* [Patching Automation introduction](intro.md)
 * [How to access](access.md)
 * [GitHub integration](github-integration.md)
 * [Best practices](best-practices.md)

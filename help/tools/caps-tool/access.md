@@ -1,15 +1,15 @@
 ---
-title: How to Access [!DNL Cloud Automation Patching Service (CAPS)]
-description: Learn how to access and use [!DNL Cloud Automation Patching Service (CAPS)]
+title: How to Access [!DNL Adobe Commerce Patching Automation]
+description: Learn how to access and use [!DNL Adobe Commerce Patching Automation]
 hide: true
 ---
-# How to access [!DNL Cloud Automation Patching Service (CAPS)]
+# How to access [!DNL Adobe Commerce Patching Automation]
 
 ## Prerequisites
 
-[!DNL CAPS] uses the role-based access control from Adobe Commerce Cloud. Your access level in the Cloud Console determines what you can do with [!DNL CAPS].
+[!DNL Patching Automation] uses the role-based access control from Adobe Commerce Cloud. Your access level in the Cloud Console determines what you can do with the service.
 
-### Who can use [!DNL CAPS]
+### Who can use [!DNL Patching Automation]
 
 * **Project admin** - Can apply or revert patches on all environments
 * **Contributor** - Can apply or revert patches on their assigned environments  
@@ -17,19 +17,19 @@ hide: true
 
 ### How to request access to a project
 
-If you do not see any projects in the [!DNL CAPS] user interface, you need to request access from the appropriate person:
+If you do not see any projects in the [!DNL Patching Automation] user interface, you need to request access from the appropriate person:
 
 * Contact the account owner or project admin of the project
 * They will grant you the appropriate role through the Cloud Console
-* Once granted access, you can log in to the Cloud Console to use [!DNL CAPS]
+* Once granted access, you can log in to the Cloud Console to use the service
 
 >[!NOTE]
 >
->[!DNL CAPS] follows the same permission model as Adobe Commerce Cloud, so your access level in the Cloud Console determines what you can do with [!DNL CAPS].
+>[!DNL Patching Automation] follows the same permission model as Adobe Commerce Cloud, so your access level in the Cloud Console determines what you can do with the service.
 
-## Accessing [!DNL CAPS]
+## Accessing [!DNL Patching Automation]
 
-The CAPS tool is available from the Site-Wide Analysis Tool dashboard at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Under the Patching Automation tab, you can select your project and environment.
+The Patching Automation tool is available from the Site-Wide Analysis Tool dashboard at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Under the Patching Automation tab, you can select your project and environment.
 
 1. Navigate to Site-Wide Analysis Tool at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
 1. Click on the [!UICONTROL Patching Automation] tab in the interface.
@@ -51,7 +51,7 @@ For production environments, additional safeguards apply:
 
 ## Related topics
 
-* [CAPS introduction](intro.md)
+* [Patching Automation introduction](intro.md)
 * [Workflow overview](workflow.md)
 * [GitHub integration](github-integration.md)
 * [Best practices](best-practices.md)
