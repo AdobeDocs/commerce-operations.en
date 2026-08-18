@@ -29,6 +29,10 @@ For most environments, the following timeline describes how long patch operation
 * **Post-processing:** 10-40 minutes
 * **Total:** 15-60 minutes
 
+>[!NOTE]
+>
+>Post-processing time is estimated from your environment's own deployment history, so it may fall outside the range above for unusually fast- or slow-deploying environments.
+
 ### Cancel a patch in progress
 
 >[!WARNING]

@@ -62,7 +62,7 @@ The Patching phase applies or reverts the patch in a temporary integration envir
 
 This approach provides:
 
-* **Safety** - keeps your target environment untouched until the patch is validated
+* **Safety** - keeps your target environment untouched until the integration environment deploys successfully and passes its health check
 * **Testing** - in a real environment before affecting production  
 * **Rollback capability** - if issues are detected
 * **Isolation** - for each patch operation
@@ -86,6 +86,8 @@ This approach provides:
 **Git operations** - Changes are committed and pushed to the integration environment branch
 
 **Environment activation** - The integration environment is activated to deploy the patched code
+
+**Health check** - Once activated, [!DNL Patching Automation] confirms that the integration environment deployed successfully and is healthy — the application starts, and its database and cache connections are reachable — before proceeding to merge
 
 >[!NOTE]
 >
@@ -119,8 +121,12 @@ The Validation phase ensures the patched application works correctly and perform
 
 **What happens:**
 
-* **Application health check** - verifies the application starts and runs properly
+* **Application health check** - verifies the application starts and runs properly, and that its database and cache connections are reachable
 * **Cleanup** - removes temporary environment, updates logs, notifies completion
+
+>[!IMPORTANT]
+>
+>Unlike Phases 1 and 2, this health check runs *after* the patch has already been merged into your target environment. If it fails, the merge is not automatically rolled back — your target environment may be left in a broken state, and manual intervention (such as reverting the patch) is required to restore it. See [Troubleshooting](troubleshooting.md) for what to do if this happens.
 
 ## Success indicators
 
