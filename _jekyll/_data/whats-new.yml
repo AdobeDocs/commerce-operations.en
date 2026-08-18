@@ -2,8 +2,301 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jul 17 15:39:58 2026
+updated: Fri Aug 14 16:15:30 2026
 entries:
+- description: Updated steps for how customers can check the version of their service
+    dependencies in Cloud UI, and updated the link to the guide on how customers can
+    generate an upgrade compatibility report for their store, in [Verify and upgrade
+    third-party software dependencies](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies).
+  versions: ''
+  type: technical
+  date: August 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2157
+  merge_commit: 54ac98c35e1f161f390587601484db4e3294b6af
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4194:
+    GraphQL requests with unknown filter names cause PHP exception logs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 13, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2095
+  merge_commit: d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4695:
+    Catalog rule indexer out-of-memory failures caused by excessive memory usage](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 13, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2099
+  merge_commit: dc891435d573c4c333e58e25b2dbe003ffa08f27
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Fixed typos in EOS dates for Adobe Commerce 2.4.5 and 2.4.6 versions.
+  versions: ''
+  type: technical
+  date: August 13, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2156
+  merge_commit: 8de65d309dcd4158627910ce5c0b87966db5c948
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: Removed PHP 8.4 as a supported PHP version in the [2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer),
+    because it is not recommended for production use and only present for upgrade
+    compatibility.
+  versions: ''
+  type: release-notes, technical
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2153
+  merge_commit: 603bb70012a2f92ceeaad644d5252c4677a1a47c
+  contributor: chernenk_adobe
+  labels:
+  - release-notes
+  - technical
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4894:
+    New orders appear in the Admin Orders grid with a delay when asynchronous indexing
+    is enabled](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2108
+  merge_commit: ad40d94c1618f7e423fd6a773185b8fba48c2c72
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4698:
+    Page Builder Text inline editing saves absolute media URLs instead of the portable
+    directive](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2100
+  merge_commit: 68e5e99ac0717b0e358acd6acf9934044a917a82
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Corrected and completed end-of-support, extended-support, and additional
+    security fixes provisioning dates for several Adobe Commerce release lines on
+    the [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)
+    page.
+  versions: ''
+  type: technical
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2155
+  merge_commit: fc5a7f7a466e6419a3e712bcbec4224f98f8c480
+  contributor: shevtsov_adobe
+  labels:
+  - technical
+- description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    to add RabbitMQ 3.13 as a supported version for Adobe Commerce 2.4.4-p18 (latest),
+    resolving a blocker for the Debian OS upgrade path.
+  versions: ''
+  type: technical
+  date: August 11, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2148
+  merge_commit: 046d641dc45b269c6495bef0c06c53bdc500227b
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4797:
+    Admin WYSIWYG editor and Page Builder block 4-byte Unicode characters when utf8mb4
+    is supported](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2102
+  merge_commit: c97bb9c77eb0ec4bbc92d042cfa9fd440e970ca7
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4682:
+    Storefront pages that check quote isActive create empty quote records](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2098
+  merge_commit: ceac870e3ccb9eeee64e3b574aaccd33c6ab69d0
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4799:
+    GraphQL query requisition_lists returns incorrect total_count with pagination](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2103
+  merge_commit: 19f854db1a0ff78d0a6dca070b4b6db09d3de83e
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4870:
+    Product Alerts emails ignore store view email settings](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2106
+  merge_commit: 907df07e641ab7124353f89ca799f92d097aa54f
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Updated the [Product availability](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)
+    table with Adobe Commerce 2.4.9 support and removed the Page Builder entry, which
+    has been part of the core product since 2.4.3.
+  versions: ''
+  type: major-update
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2145
+  merge_commit: a5120adab9f624677447889722359951e775c3f3
+  contributor: shevtsov_adobe
+  labels:
+  - major-update
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4593:
+    Wrong Website Restriction CMS page served on the secondary website in multi-website
+    storefronts](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 9, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2097
+  merge_commit: 86c85db0098192092241b680d38b882f1a52b578
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Corrected the B2B extension version support matrix in [Product availability](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)
+    for Adobe Commerce 2.4.6, 2.4.7, and 2.4.8.
+  versions: ''
+  type: technical
+  date: August 6, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2142
+  merge_commit: 50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4547:
+    Admin can''t add a default-catalog product to a quote when it isn''t assigned
+    to the user''s shared catalog](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 31, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2096
+  merge_commit: 6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Security Policy: Required Actions and Deadlines](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy)
+    for Adobe Commerce on Cloud customers to explain requirements, timelines, and
+    instructions for upgrading Adobe Commerce on Cloud deployments running unsupported
+    versions or third-party software dependencies.'
+  versions: ''
+  type: new-topic
+  date: July 30, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2118
+  merge_commit: b7649aae1f8cab020c1081db2b2363bca22adfed
+  contributor: meker_adobe
+  labels:
+  - new-topic
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4805:
+    Checkout requests slow down for configurable products when the first salable child
+    appears later in the list](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2104
+  merge_commit: 1b5fb4826f6599d7b7609dedfeb545f29454ba4d
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4748:
+    Reward points expiration runs slowly on stores with a large reward points history](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2101
+  merge_commit: 30fe149f9743ceca7f40374246b4fc9b9503c590
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4875:
+    Admin users logged out when opening customer accounts with large address books](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2107
+  merge_commit: 3174f84e0a8c64aaed50cc075a9287bc011778ef
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.82](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2093
+  merge_commit: ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    with MariaDB Cloud version support details for Adobe Commerce 2.4.9 (12.3 recommended,
+    11.8 supported).
+  versions: ''
+  type: technical
+  date: July 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2090
+  merge_commit: eaf47339d87d296799367f699f9322c14e6ee780
+  contributor: shevtsov_adobe
+  labels:
+  - technical
+- description: Updated the [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    topic with the latest Commerce on Cloud service versions, including a RabbitMQ
+    4.3 update and confirmed compatibility with MariaDB 12.3.
+  versions: ''
+  type: major-update
+  date: July 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2088
+  merge_commit: 6607852ba3221a1120f3c88007c106ed9704dcec
+  contributor: shevtsov_adobe
+  labels:
+  - major-update
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4401:
+    Scheduled Update preview of the home page with configurable products redirects
+    to the maintenance page](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2069
+  merge_commit: 41aac13f73ff0836f93b8ec30a709bd89fa34a94
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4468:
+    Website-scoped Admin users can''t save Dynamic Blocks in Page Builder](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2071
+  merge_commit: f5fbe594284c05aaa9b2461e3628a3444229efb6
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.81 fix for [ACP2E-4801:
     Bundle product option quantities don''t update when reconfiguring a negotiable
     quote in Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801).'

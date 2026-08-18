@@ -269,17 +269,17 @@ _AC-16533_
 
 #### PHP 8.5 compatibility
 
-Adobe Commerce 2.4.9 now supports PHP 8.5 and PHP 8.4, allowing you to run your store on the latest secure and compliant PHP versions. All core features, bundled extensions (including Page Builder, B2B, Braintree, and more), and Adobe SaaS services are compatible with PHP 8.5.
+Adobe Commerce 2.4.9 now supports PHP 8.5, allowing you to run your store on the latest secure and compliant PHP versions. All core features, bundled extensions (including Page Builder, B2B, Braintree, and more), and Adobe SaaS services are compatible with PHP 8.5.
 
-- PHP 8.5 and 8.4 are fully supported.
-- PHP 8.3 is allowed for upgrade purposes only (not recommended for production).
+- PHP 8.5 is fully supported.
+- PHP 8.4 is allowed for upgrade purposes only (not recommended for production).
 - Ensures PCI compliance and future-proofs your Adobe Commerce installation.
 
 _AC-15615_
 
 #### PHP 8.2 support removed
 
-Starting with Adobe Commerce 2.4.9, PHP 8.2 is no longer supported. The platform now targets PHP 8.3 and later, with core code, dependencies, and tooling updated to run cleanly and reliably on PHP 8.4 and 8.5.
+Starting with Adobe Commerce 2.4.9, PHP 8.2 and PHP 8.3 are no longer supported. The platform now targets PHP 8.4 and later, with core code, dependencies, and tooling updated to run cleanly and reliably on 8.5.
 
 _AC-15758_
 

@@ -1,0 +1,37 @@
+---
+---
+# End of support dates
+
+{% assign releases = site.data.release.core-releases -%}
+{%- assign versions = "2.4.9,2.4.8,2.4.7,2.4.6,2.4.5,2.4.4" | split: "," -%}
+<table>
+  <thead>
+    <tr>
+      <th>Release</th>
+      <th>General Availability</th>
+      <th>End of standard support</th>
+      <th>End of extended support</th>
+      <th>End of security-only period</th>
+      <th><a href="version-upgrade-enforcement-policy.md">Version upgrade enforcement date (Cloud only)</a></th>
+    </tr>
+  </thead>
+  <tbody>
+  {%- for version in versions %}
+  {%- assign release = releases[version] -%}
+  {%- assign ga_date = nil -%}
+  {%- for patch_release in release.releases %}
+    {%- if patch_release.tagName == version -%}
+    {%- assign ga_date = patch_release.publishedAt -%}
+    {%- endif %}
+  {%- endfor %}
+    <tr>
+        <td>Adobe Commerce {{ version }}</td>
+        <td>{{ ga_date | date: "%B&nbsp;%e, %Y" }}</td>
+        <td>{{ release.end-of-support | date: "%B&nbsp;%e, %Y" }}</td>
+        <td>{%- if release.end-of-extended-support %}{{ release.end-of-extended-support | date: "%B&nbsp;%e, %Y" }}{%- else %}TBD{%- endif %}</td>
+        <td>{%- if release.end-of-security-fixes-provisioning %}{{ release.end-of-security-fixes-provisioning | date: "%B&nbsp;%e, %Y" }}{%- else %}N/A{%- endif %}</td>
+        <td>{%- if release.version-upgrade-enforcement-date %}{{ release.version-upgrade-enforcement-date | date: "%B&nbsp;%e, %Y" }}{%- else %}TBD{%- endif %}</td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
