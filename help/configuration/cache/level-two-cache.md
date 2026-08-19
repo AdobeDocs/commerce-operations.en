@@ -229,7 +229,7 @@ If you are upgrading an on-premises installation from the legacy `RemoteSynchron
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud environments that set the `VALKEY_BACKEND: symfony_l2` deploy variable have their full L2 configuration, including the `stale_cache_enabled` frontend, generated automatically by ECE Tools. See [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache) for Cloud-specific behavior.
+>Adobe Commerce on Cloud environments that set the `VALKEY_BACKEND: symfony_l2` deploy variable have their full L2 configuration, including the `stale_cache_enabled` frontend, generated automatically by `ece-tools`. See [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache) for Cloud-specific behavior.
 
 - **Redis is not a supported remote backend for `symfony_l2`.** Migrate to Valkey as part of this change. See [set up Valkey](config-valkey.md).
 
@@ -237,7 +237,7 @@ If you are upgrading an on-premises installation from the legacy `RemoteSynchron
 
 >[!NOTE]
 >
->This example is for on-premises `app/etc/env.php` configuration. For Adobe Commerce on Cloud, cache configuration is managed automatically by ECE Tools. Instead of editing `env.php` directly, see [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache).
+>This example is for on-premises `app/etc/env.php` configuration. For Adobe Commerce on Cloud, cache configuration is managed automatically by `ece-tools`. Instead of editing `env.php` directly, see [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache).
 
 In the `app/etc/env.php` file, use the simplified `symfony_l2` backend type for L2 cache. This example does not include the `preload_keys` configuration, which is not recommended with `symfony_l2`. For details, see [Migrating from RemoteSynchronizedCache to Symfony L2](#migrating-from-remotesynchronizedcache-to-symfony-l2).
 
