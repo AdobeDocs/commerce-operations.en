@@ -34,7 +34,7 @@ Adobe Commerce uses multiple caching layers to reduce repeated processing, lower
 - **L2 caching** can add a local cache on each web node in front of shared remote cache storage.
 - **Static content caching** allows browsers to reuse CSS, JavaScript, images, and other static resources.
 
-This page provides a conceptual overview of these layers and links to their configuration guidance. For backend choices, implementation details, and version-specific settings, see Cache backend options and storage reference.
+This page provides a conceptual overview of these layers and links to their configuration guidance. For backend choices, implementation details, and version-specific settings, see [Cache backend options and storage reference](cache-options.md).
 
 ## Caching layers
 
