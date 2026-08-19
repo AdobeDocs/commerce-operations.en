@@ -14,7 +14,7 @@ Extensions include:
 -  Themes (change the look and feel of your storefront and Admin)
 -  Language packages (localize the storefront and Admin)
 
-This topic explains how to use the command-line interface to manage third-party extensions that you purchase from the Commerce Marketplace for _on-premises_ projects. For cloud infrastructure projects, see [Manage extensions](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+This topic explains how to use the command-line interface to manage third-party extensions that you purchase from the Commerce Marketplace for _on-premises_ projects. For cloud infrastructure projects, see [Manage extensions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions).
 
 You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
 

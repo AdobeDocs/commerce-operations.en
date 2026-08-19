@@ -150,7 +150,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Find large MySQL tables
 
-To identify the large tables, connect to the database as described in the [Connect to the database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) article, and run the following command. Use `project_id` for the production environment. For staging environments, use `[project_id]_stg`, `[project_id]_stg2`.
+To identify the large tables, connect to the database as described in the [Connect to the database](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) article, and run the following command. Use `project_id` for the production environment. For staging environments, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

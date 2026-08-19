@@ -29,7 +29,7 @@ Post-launch support and maintenance are crucial to ensure your Adobe Commerce st
 
   >[!TIP]
   >
-  >See [performance monitoring](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance) in the _Cloud Guide_.
+  >See [performance monitoring](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) in the _Cloud Guide_.
 
 
 - **Optimizing database performance**: To optimize database performance in Adobe Commerce Cloud, implement the following:
@@ -60,7 +60,7 @@ These monitoring steps help maintain optimal CDN performance and address issues 
 
 >[!TIP]
 >
->See [Fastly services overview](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) in the _Cloud Guide_.
+>See [Fastly services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) in the _Cloud Guide_.
 
 #### Regular security monitoring
 
@@ -96,7 +96,7 @@ To monitor error logging in Adobe Commerce Cloud, Adobe provides several tools a
 
 >[!TIP]
 >
->For more details on logging and error tracking practices in Adobe Commerce Cloud, see [New Relic log management](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) and [exception monitoring](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>For more details on logging and error tracking practices in Adobe Commerce Cloud, see [New Relic log management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) and [exception monitoring](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
 
 ### Security and updates
 
@@ -116,7 +116,7 @@ To stay updated and ensure the security of your Adobe Commerce Cloud system, her
 
 >[!TIP]
 >
->For further details and step-by-step instructions on applying patches and maintaining security, see [security patch release notes](../../../release/release-notes/security/overview.md) and [How to Apply Security Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). You should also review [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) reports.
+>For further details and step-by-step instructions on applying patches and maintaining security, see [security patch release notes](../../../release/release-notes/security/overview.md) and [How to Apply Security Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches). You should also review [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) reports.
 
 #### PCI compliance
 
@@ -126,7 +126,7 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Use secure transmission protocols**: Always transmit payment data over secure protocols like TLS, with encryption and proper key management.
 
-- **Utilize web application firewall (WAF)**: The Fastly-powered WAF service helps meet PCI DSS 6.6 requirements and protects against common vulnerabilities by blocking malicious traffic before it reaches your site. See more information [here](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) and [here](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
+- **Utilize web application firewall (WAF)**: The Fastly-powered WAF service helps meet PCI DSS 6.6 requirements and protects against common vulnerabilities by blocking malicious traffic before it reaches your site. See more information [here](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) and [here](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service).
 
 - **Limit access**: Ensure that only authorized personnel have access to sensitive payment data, and [apply access control to reduce the risk of exposure](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
 
@@ -196,9 +196,9 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Auto-scaling for traffic handling**:
   
-  - Adobe Commerce Cloud supports auto-scaling to dynamically adjust server resources (for example, web nodes) based on real-time traffic demands, ensuring that your store can handle high visitor volumes without manual intervention. See [autoscaling](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling) in the _Cloud Guide_.
+  - Adobe Commerce Cloud supports auto-scaling to dynamically adjust server resources (for example, web nodes) based on real-time traffic demands, ensuring that your store can handle high visitor volumes without manual intervention. See [autoscaling](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling) in the _Cloud Guide_.
   
-  - Web and service tiers can scale independently, adding more web nodes for increased traffic and scaling database or service nodes for backend performance during peak periods. See [scaled architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) in the _Cloud Guide_.
+  - Web and service tiers can scale independently, adding more web nodes for increased traffic and scaling database or service nodes for backend performance during peak periods. See [scaled architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) in the _Cloud Guide_.
 
 - **Performance monitoring**:
   

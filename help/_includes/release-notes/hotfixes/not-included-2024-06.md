@@ -18,22 +18,22 @@ Option 1:
    
    * [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#adobe-commerce-244-p9)
 
-1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) released on July 17, 2024.
+1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) released on July 17, 2024.
 
 1. [Rotate](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) encryption keys.
 
 Option 2:
 
-1. Apply the [isolated patch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102).
+1. Apply the [isolated patch](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136).
 
 1. [Rotate](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) encryption keys.
 
 **For customers who have already applied a security patch released on June 11, 2024 or the isolated patch released on June 28, 2024:**
 
-1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) released on July 17, 2024.
+1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) released on July 17, 2024.
 
 1. [Rotate](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) encryption keys.
 
 **For customers who have already 1) applied a security patch released on June 11, 2024 or, 2) the isolated patch released on June 28, 2024, and 3) rotated their encryption keys:**
   
-1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) released on July 17, 2024.
+1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) released on July 17, 2024.

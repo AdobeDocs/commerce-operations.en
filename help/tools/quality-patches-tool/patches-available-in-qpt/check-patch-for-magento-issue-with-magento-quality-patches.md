@@ -49,9 +49,9 @@ Please refer to [Software Update Guide > Patching](https://experienceleague.adob
 
 ### How to install and use QPT for Adobe Commerce on cloud infrastructure
 
-Please refer to [Cloud for Adobe Commerce > Apply patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in our developer documentation for details on how to install and use QPT for applying and reverting patches on Adobe Commerce on cloud infrastructure.
+Please refer to [Cloud for Adobe Commerce > Apply patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in our developer documentation for details on how to install and use QPT for applying and reverting patches on Adobe Commerce on cloud infrastructure.
 
 ## Related reading
 
 * [Quality Patches Tool release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in our developer documentation.
-* [How to apply composer patches provided by Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) in the support knowledge base.
+* [How to apply composer patches provided by Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in the support knowledge base.

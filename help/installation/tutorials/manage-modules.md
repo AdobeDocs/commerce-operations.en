@@ -23,7 +23,7 @@ Where
 
 >[!NOTE]
 >
->You cannot enable or disable modules directly on cloud projects. You must run these commands locally and then push changes to the `app/etc/config.php` file for an environment. See [Pro project workflow: Deployment workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>You cannot enable or disable modules directly on cloud projects. You must run these commands locally and then push changes to the `app/etc/config.php` file for an environment. See [Pro project workflow: Deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Module enable, disable
 

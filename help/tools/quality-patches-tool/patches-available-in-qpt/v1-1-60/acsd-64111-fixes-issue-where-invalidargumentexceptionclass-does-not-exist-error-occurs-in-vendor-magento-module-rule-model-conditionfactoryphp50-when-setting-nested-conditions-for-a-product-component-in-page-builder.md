@@ -1,5 +1,6 @@
 ---
 title: 'ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* error when setting nested conditions for a Product component in [!DNL Page Builder]'
+description: Apply the ACSD-64111 patch to fix the Adobe Commerce issue where adding a Conditions Combination to a Products widget condition in Page Builder throws an InvalidArgumentException because the Class does not exist in vendor/magento/module-rule/Model/ConditionFactory.php.
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
@@ -53,7 +54,7 @@ The below exception is recorded in the logs:
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 
 ## Related reading

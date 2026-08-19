@@ -34,7 +34,7 @@ There can be times when intensive sales on a storefront occur at the same time t
 
 >[!WARNING]
 >
->The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) doesn't support `Developer` mode.
+>The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test) doesn't support `Developer` mode.
 
 ## Asynchronous configuration save
 
@@ -63,7 +63,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Deferred stock update
 
-In times of intensive sales, Commerce can defer stock updates related to orders. This minimizes the number of operations and speeds up the order placement process. However, this option is risky and can only be used when Backorders are activated in the store, because this option can lead to negative stock quantities. This option can bring significant performance improvement on Checkout flows for stores that can easily re-fill their stock on demand. To activate deferred stock updates on your site, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]**. See [Managing Inventory](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) in the _Adobe Commerce User Guide_ for more information.
+In times of intensive sales, Commerce can defer stock updates related to orders. This minimizes the number of operations and speeds up the order placement process. However, this option is risky and can only be used when Backorders are activated in the store, because this option can lead to negative stock quantities. This option can bring significant performance improvement on Checkout flows for stores that can easily re-fill their stock on demand. To activate deferred stock updates on your site, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]**. See [Managing Inventory](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud) in the _Adobe Commerce User Guide_ for more information.
 
 >[!INFO]
 >
@@ -89,7 +89,7 @@ To improve the storefront responsiveness of your [!DNL Commerce] instance, go to
 
 >[!INFO]
 >
->The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) doesn't support `Developer` mode.
+>The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test) doesn't support `Developer` mode.
 
 When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option, you allow Commerce to merge all JS resources into one or a set of bundles that are loaded in storefront pages. Bundling JS results in fewer requests to the server, which improves page performance. It also helps the browser cache JS resources on the first call and reuse them for all further browsing. This option also brings lazy evaluation, as all JS is loaded as text. It initiates analysis and evaluation of code only after specific actions are triggered on the page. However, this setting isn't recommended for stores where the first page load time is extremely critical, because all JS content will be loaded on the first call.
 

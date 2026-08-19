@@ -27,7 +27,7 @@ Since there are many different types of patches and many ways to apply them, how
 
 1. **Security patches** are part of the static code base of an Adobe Commerce release.
 1. **Composer patches** through `composer install` and `composer update` plugins such as [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. All **required patches** included in the [Cloud Patches for Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) package.
+1. All **required patches** included in the [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) package.
 1. Selected **quality patches** included in the [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Custom patches** and Adobe Commerce Support patches in the `/m2-hotfixes` directory in alphabetical order by patch name.
 
@@ -359,7 +359,7 @@ Like with Adobe Commerce on cloud infrastructure, this article assumes that your
 
 This way you can centrally manage all your patches for all your installations and you can better guarantee the security and stability of your Adobe Commerce stores. Use the following methods to check patch status:
 
-- [Cloud infrastructure projects](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
+- [Cloud infrastructure projects](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [On-premises projects](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Code examples

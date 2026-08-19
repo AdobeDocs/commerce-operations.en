@@ -48,7 +48,7 @@ You are redirected to the product listing page.
 To apply individual patches, use the following links depending on your deployment type:
 
 * Adobe Commerce on-premise: [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in our developer documentation.
-* Adobe Commerce on our cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in our developer documentation.
+* Adobe Commerce on our cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in our developer documentation.
 
 ## Related reading
 

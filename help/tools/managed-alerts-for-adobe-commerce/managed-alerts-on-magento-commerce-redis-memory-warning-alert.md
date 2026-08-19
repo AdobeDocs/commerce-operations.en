@@ -36,7 +36,7 @@ You will receive an alert in [!DNL New Relic] if you have signed up to [Managed 
 
 Follow these steps to identify and troubleshoot the cause.
 
-1. Check if [!DNL Redis] Used Memory is increasing or decreasing by going to [one.newrelic.com](https://login.newrelic.com/login) > **Infrastructure** > **Third-party services** page, select the [!DNL Redis] dashboard. If it is stable or increasing, [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) to have your cluster upsized, or increase the `maxmemory` limit to the next level.
+1. Check if [!DNL Redis] Used Memory is increasing or decreasing by going to [one.newrelic.com](https://login.newrelic.com/login) > **Infrastructure** > **Third-party services** page, select the [!DNL Redis] dashboard. If it is stable or increasing, [submit a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to have your cluster upsized, or increase the `maxmemory` limit to the next level.
 1. If you cannot identify the cause of increased [!DNL Redis] memory consumption, review recent trends to identify issues with recent code deployments or configuration changes (for example, new customer groups and large changes to the catalog). It is recommended that you review the past seven days of activity for any correlations in code deployments or changes.
 1. Check for misbehaving third party extensions:
     * Try to find a correlation with recently installed third party extensions and the time the issue started.

@@ -99,4 +99,4 @@ Make sure the `<magento_root>/var/page_cache` directory is empty:
 
 >[!TIP]
 >
->If you encounter 503 (Backend Fetch Failed) errors, see [Troubleshooting 503 (Service Unavailable) errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in the _Adobe Commerce Help Center_.
+>If you encounter 503 (Backend Fetch Failed) errors, see [Troubleshooting 503 (Service Unavailable) errors](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors) in the _Adobe Commerce Help Center_.

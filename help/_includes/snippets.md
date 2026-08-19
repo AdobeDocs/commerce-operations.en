@@ -14,7 +14,7 @@ Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later t
 
 >[!NOTE]
 >
->If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
+>If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
 
 ## Adobe service version support {#supported-versions-only}
 

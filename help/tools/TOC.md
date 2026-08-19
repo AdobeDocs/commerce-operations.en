@@ -1100,6 +1100,6 @@ color: red
         - [Data that requires manual migration](data-migration-tool/migrate-data/manual.md)
         - [Post-data migration steps](data-migration-tool/migrate-data/post-migration.md)
     - Resources {#resources}
-        - [Troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+        - [Troubleshooting](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
         - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
