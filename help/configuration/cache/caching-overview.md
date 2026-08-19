@@ -79,11 +79,11 @@ The following configuration tasks vary by deployment type.
 
 | Task | On-premises | Cloud infrastructure |
 | --- | --- | --- |
-| Application cache backends | [Cache backend options and storage reference](cache-options.md) | [Best practices for Redis and Valkey service configuration](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
+| Application cache backends | [Cache backend options and storage reference](cache-options.md) | [Best practices for Valkey and Redis service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
 | HTTP full-page caching | [Configure Varnish](config-varnish.md) | [Fastly services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 The following tasks apply to all deployment types:
 
 - **Configure cache types and frontends** [Configure cache frontends and types](cache-types.md) to associate cache types with cache frontends.
 - **Configure L2 caching**—[L2 cache configuration](level-two-cache.md).
-- **Configure browser cache invalidation for static content**—[Static content signing and browser cache invalidation](static-content-signing.md#browser-cache-invalidation).
+- **Configure browser cache invalidation for static content**—[Static content signing and browser cache invalidation](static-content-signing.md).

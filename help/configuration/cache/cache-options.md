@@ -30,7 +30,7 @@ topic_v2:
 
 >[!NOTE]
 >
->This page documents on-premises `app/etc/env.php` configuration. 
+>This page documents on-premises `app/etc/env.php` configuration.
 >
 >For [!DNL Adobe Commerce on Cloud] projects, the `ece-tools` package generates the resulting `app/etc/env.php` configuration during deployment based on the deploy variable configuration in `.magento.env.yaml`. You do not edit the `env.php` file.  See [Best Practices for Valkey and Redis Service Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) and [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
 
@@ -163,6 +163,6 @@ For Cloud projects, configure L2 caching through the deployment variables descri
 
 #### L2 cache configuration
 
-- For **[!DNL Adobe Commerce] on-premises** configuration details, see [L2 cache configuration](level-two-cache.md).
+- For **[!DNL Adobe Commerce on-premises]** configuration details, see [L2 cache configuration](level-two-cache.md).
 
 - For **[!DNL Adobe Commerce on Cloud]**, configure L2 caching through the appropriate deployment variable rather than editing `app/etc/env.php` directly. See [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"} in the _Adobe Commerce on Cloud_ documentation.
