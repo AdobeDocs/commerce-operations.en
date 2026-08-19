@@ -33,7 +33,7 @@ The tool is aimed to enable you to self-serve with patches for issues you might 
 
 >[!NOTE]
 >
->QPT is for quality patches only. Security patches are available in the [Magento Security Center](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+>QPT is for quality patches only. Security patches are available in the [Magento Security Center](/help/release/release-notes/overview.md).
 
 ## Patches available in Quality Patches Tool
 
@@ -45,7 +45,7 @@ The installation and usage commands are different for Adobe Commerce on-premises
 
 ### How to install and use QPT for Adobe Commerce on-premises
 
-Please refer to [Software Update Guide > Patching](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in our developer documentation for details on how to install and use QPT for applying and reverting patches.
+Please refer to [Software Update Guide > Patching](/help/tools/quality-patches-tool/usage.md) in our developer documentation for details on how to install and use QPT for applying and reverting patches.
 
 ### How to install and use QPT for Adobe Commerce on cloud infrastructure
 
@@ -53,5 +53,5 @@ Please refer to [Cloud for Adobe Commerce > Apply patches](https://experiencelea
 
 ## Related reading
 
-* [Quality Patches Tool release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in our developer documentation.
+* [Quality Patches Tool release notes](/help/tools/quality-patches-tool/release-notes.md) in our developer documentation.
 * [How to apply composer patches provided by Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in the support knowledge base.

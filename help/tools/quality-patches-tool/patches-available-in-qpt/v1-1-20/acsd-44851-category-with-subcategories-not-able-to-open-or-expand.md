@@ -8,7 +8,7 @@ type: Troubleshooting
 ---
 # ACSD-44851: Category with subcategories not able to open or expand
 
-The ACSD-44851 patch solves the issue where the user is unable to open or expand a category with subcategories. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-44851. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-44851 patch solves the issue where the user is unable to open or expand a category with subcategories. This patch is available when the [Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20 is installed. The patch ID is ACSD-44851. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 

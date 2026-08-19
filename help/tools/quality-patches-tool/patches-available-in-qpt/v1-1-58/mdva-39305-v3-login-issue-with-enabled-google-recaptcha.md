@@ -14,7 +14,7 @@ type: Troubleshooting
 
 The MDVA-39305-V3 patch fixes the issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. This patch also fixes the issue where a form can be submitted before [!DNL Google reCAPTCHA] fully loads. Additionally, it fixes the error *Call to a member function isDisabled() on null* when blocks are used in non-default locations on a CMS page.
 
-This patch was added in the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 release. It was updated in the QPT 1.1.58 release to include new Adobe Commerce versions 2.4.7 - 2.4.7-p4. The patch ID is MDVA-39305-V3. Please note that the issue was fixed in Adobe Commerce versions 2.4.4, 2.4.5-p2, and 2.4.7.
+This patch was added in the [Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48 release. It was updated in the QPT 1.1.58 release to include new Adobe Commerce versions 2.4.7 - 2.4.7-p4. The patch ID is MDVA-39305-V3. Please note that the issue was fixed in Adobe Commerce versions 2.4.4, 2.4.5-p2, and 2.4.7.
 
 ## Affected products and versions
 
@@ -28,7 +28,7 @@ This patch was added in the [Quality Patches Tool (QPT)](https://experienceleagu
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new Quality Patches Tool releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Use the patch ID as a search keyword to locate the patch.
+>The patch might become applicable to other versions with new Quality Patches Tool releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Use the patch ID as a search keyword to locate the patch.
 
 ## Issues
 

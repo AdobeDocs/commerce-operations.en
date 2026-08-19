@@ -114,7 +114,7 @@ The following options specify the user information and credentials for the Admin
 
 You can create the Admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#sample-localhost-installations).
 
-The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](/help/tools/reference/commerce-on-premises.md).
 
 |Name|Value|Required?|
 |--- |--- |--- |

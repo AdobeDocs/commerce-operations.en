@@ -67,7 +67,7 @@ To share your feedback as you use this beta feature, send an email to [commerce-
 
 The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
 
-In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). This service supports Commerce project administrators with a streamlined patching workflow that includes:
+In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](/help/tools/site-wide-analysis-tool/dashboard.md). This service supports Commerce project administrators with a streamlined patching workflow that includes:
 
 - Automated patch installation
 - Rollback recovery

@@ -55,4 +55,4 @@ Since Commerce stores all used password hashes versions together with the passwo
 
 ## Implementation
 
-The `\Magento\Framework\Encryption\Encryptor` class is responsible for password hash generation and verification. The [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) command upgrades a customer password hash to the latest hash algorithm.
+The `\Magento\Framework\Encryption\Encryptor` class is responsible for password hash generation and verification. The [`bin/magento customer:hash:upgrade`](/help/tools/reference/commerce-on-premises.md#customerhashupgrade) command upgrades a customer password hash to the latest hash algorithm.

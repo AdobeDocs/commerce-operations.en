@@ -10,13 +10,13 @@ Option 1:
 
 1. Apply one of the security patches released on June 11, 2024:
 
-   * [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#adobe-commerce-247-p1)
+   * [2.4.7-p1](/help/release/release-notes/security/2-4-7-patches.md#adobe-commerce-247-p1)
    
-   * [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p6)
+   * [2.4.6-p6](/help/release/release-notes/security/2-4-6-patches.md#adobe-commerce-246-p6)
    
-   * [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p8)
+   * [2.4.5-p8](/help/release/release-notes/security/2-4-5-patches.md#adobe-commerce-245-p8)
    
-   * [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#adobe-commerce-244-p9)
+   * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
 1. Apply the [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) released on July 17, 2024.
 

@@ -45,4 +45,4 @@ Adobe notifies customers about new patch releases through the following channels
 
 >[!NOTE]
 >
-> For release dates for every minor, patch, and security release and dates for the end of regular support, see [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+> For release dates for every minor, patch, and security release and dates for the end of regular support, see [Released versions](/help/release/versions.md).

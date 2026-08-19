@@ -5,7 +5,7 @@ exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
 ---
 # Understand the scope of upgrading
 
-Review the [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) to understand the scope of a release, including enhancements, bug fixes, and known issues that might impact third-party and custom modules.
+Review the [release notes](/help/release/release-notes/overview.md) to understand the scope of a release, including enhancements, bug fixes, and known issues that might impact third-party and custom modules.
 
 ## Backward-incompatible changes
 
@@ -20,7 +20,7 @@ Adobe Commerce Marketplace's new compatibility policy ensures that _all_ listed 
 
 ## Custom Modules
 
-All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Also, ensure that you're following [best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) for module development.
+All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](/help/release/release-notes/overview.md). Also, ensure that you're following [best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) for module development.
 
 ## [!DNL Upgrade Compatibility Tool]
 

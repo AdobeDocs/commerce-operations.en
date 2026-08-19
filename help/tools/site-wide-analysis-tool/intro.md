@@ -31,10 +31,10 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
     - Shows the overall health of your system with notifications of detected issues and specific recommendations by priority.<br>
     It also includes a historical chart to track how your website's health changes over time.
     - Shows the **[!UICONTROL Security Center Widget]** that provides links to the following resources:
-        - [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+        - [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](/help/installation/system-requirements.md)
         - [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html)
         - [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)
-        - [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations)
+        - [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](/help/tools/site-wide-analysis-tool/recommendations.md)
         
 - **Information** - Provides customer contact information and a summary of current tickets, with detailed information about each installed Adobe Commerce product.
 
@@ -54,13 +54,13 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
 View important insights about your site in one place. [!DNL Site-Wide Analysis Tool] allows you to get direct access to and information from the [!UICONTROL Security Center Widget], [!DNL Upgrade Compatibility Tool], and [!DNL Managed Alerts].
 
 - **[!UICONTROL Security Center Widget]** - Displays security insights for your site.<br>
-The security information includes [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations).
+The security information includes [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](/help/installation/system-requirements.md), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](/help/tools/site-wide-analysis-tool/recommendations.md).
 
   The [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) provides Adobe Commerce and Magento Open-Source customers with real-time insights into their store's security posture by proactively detecting malware and alerting them if their store is compromised.
 
 - **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)** - Checks your Adobe Commerce instance against the upgrade version and flags critical issues, errors, and warnings to fix before upgrading. Addressing these issues streamlines the upgrade process."
 
-- **[[!DNL Managed Alerts]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)** - Monitor key metrics (CPU, application performance, disk, memory, and database health), and provides clear troubleshooting steps to help merchants stay ahead of issues and avoid downtime.
+- **[[!DNL Managed Alerts]](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)** - Monitor key metrics (CPU, application performance, disk, memory, and database health), and provides clear troubleshooting steps to help merchants stay ahead of issues and avoid downtime.
 
 ## Who is this guide for?
 

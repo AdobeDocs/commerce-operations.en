@@ -95,7 +95,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 >[!INFO]
 >
->See [Optimize resource files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) for more information about optimizing CSS and Javascript.
+>See [Optimize resource files](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md) for more information about optimizing CSS and Javascript.
 
 ### Bundling tips {#bundling-tips}
 

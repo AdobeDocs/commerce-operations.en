@@ -9,7 +9,7 @@ You are among the 240,000 merchants worldwide who put their trust in our eCommer
 
 ## How to get the software
 
-Check the availability and compatibility of Adobe-authored extensions and Commerce Services for Adobe Commerce and Magento Open Source on our [product availability page](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Check the availability and compatibility of Adobe-authored extensions and Commerce Services for Adobe Commerce and Magento Open Source on our [product availability page](/help/release/product-availability.md).
 
 >[!NOTE]
 >

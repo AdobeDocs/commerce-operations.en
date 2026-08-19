@@ -252,7 +252,7 @@ This release introduces a new full page cache configuration setting that helps t
 
 ### Hotfixes included in this release
 
-Adobe Commerce 2.4.6-p3 includes resolution of the performance degradation fixed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times) Knowledge Base article.
+Adobe Commerce 2.4.6-p3 includes resolution of the performance degradation fixed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md) Knowledge Base article.
 
 ### Known issues
 
@@ -281,7 +281,7 @@ The value of `fastcgi_pass` in the `nginx.sample` file has been returned to it's
 
 ### Hotfixes included in this release
 
-Adobe Commerce 2.4.6-p2 includes resolution of the performance degradation that was addressed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times) Knowledge Base article.
+Adobe Commerce 2.4.6-p2 includes resolution of the performance degradation that was addressed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md) Knowledge Base article.
 
 ## 2.4.6-p1
 
