@@ -30,7 +30,9 @@ topic_v2:
 
 >[!NOTE]
 >
->This page documents on-premises `app/etc/env.php` configuration.  The `ece-tools` package generates the resulting `app/etc/env.php` configuration during deployment. For [!DNL Adobe Commerce on Cloud] projects, the `ece-tools` package generates the resulting `app/etc/env.php` configuration during deployment based on the deploy variable configuration in `.magento.env.yaml`. See [Best Practices for Valkey and Redis Service Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) and [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
+>This page documents on-premises `app/etc/env.php` configuration. 
+>
+>For [!DNL Adobe Commerce on Cloud] projects, the `ece-tools` package generates the resulting `app/etc/env.php` configuration during deployment based on the deploy variable configuration in `.magento.env.yaml`. You do not edit the `env.php` file.  See [Best Practices for Valkey and Redis Service Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) and [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
 
 The Commerce application uses a low-level cache frontend and backend to provide access to cache storage. Commerce supports several caching backends and strategies, each suited to different use cases. This page describes the available backends and how they differ.
 
