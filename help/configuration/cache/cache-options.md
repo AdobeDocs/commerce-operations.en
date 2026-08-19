@@ -47,8 +47,8 @@ The following table summarizes the available backend caches:
 | Backend | Description | Configuration guide |
 | ------- | ----------- | ------------------- |
 | File system | Default. Stores cache data in files under `var/cache/`. No configuration required. | N/A |
-| [Redis](config-redis.md) | In-memory data store for high-performance caching. | [Use Redis for default cache](redis-pg-cache.md) |
-| [Valkey](config-valkey.md) | Open-source, Redis-compatible alternative. | [Use Valkey for default cache](valkey-pg-cache.md) |
+| Redis | In-memory data store for high-performance caching. | [Use Redis for default cache](redis-pg-cache.md) |
+| Valkey | Open-source, Redis-compatible alternative. | [Use Valkey for default cache](valkey-pg-cache.md) |
 | Database | Custom cache engine backed by a database | [Create custom cache engines](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching){target="_blank"} (Adobe Developer documentation) |
 
 >[!IMPORTANT]
