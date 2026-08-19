@@ -51,8 +51,6 @@ There are two L2 cache implementations available in Adobe Commerce:
 
 Symfony L2 cache is the recommended implementation for Adobe Commerce 2.4.9 and later releases. It provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
-Symfony L2 cache is the recommended implementation for Adobe Commerce 2.4.9 and later releases. It provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
-
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
 The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with the [Modern Symfony L2 cache implementation](#modern-symfony-l2-cache-implementation).
