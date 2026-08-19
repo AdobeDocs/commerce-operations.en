@@ -205,7 +205,7 @@ A list of downloadable domains available in this node. Additional domains can be
 ]
 ```
 
-Learn more about [Downloadable Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Learn more about [Downloadable Domains](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd).
 
 ## install
 

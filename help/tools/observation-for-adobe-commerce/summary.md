@@ -66,7 +66,7 @@ The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the 
 
 ![CPU usage](../../assets/tools/cpu-usage.jpg)
 
-If the **[!UICONTROL CPU Usage]** frame is blank, it is an indication that the infrastructure application of [!DNL New Relic] is not enabled. If your site is on Starter, you do not see this information. If your site is on Pro, open a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to have [!DNL New Relic Infrastructure] enabled for your site.
+If the **[!UICONTROL CPU Usage]** frame is blank, it is an indication that the infrastructure application of [!DNL New Relic] is not enabled. If your site is on Starter, you do not see this information. If your site is on Pro, open a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) to have [!DNL New Relic Infrastructure] enabled for your site.
 
 ## [!UICONTROL Average Response Time]
 

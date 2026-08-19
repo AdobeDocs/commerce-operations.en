@@ -20,4 +20,4 @@ definition: |
 
   For integrations like Google Shopping ads Channel and Amazon Sales Channel, you map Commerce attributes to attributes in the third-party to properly display and sell products, display ads.
 
-  Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+  Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)

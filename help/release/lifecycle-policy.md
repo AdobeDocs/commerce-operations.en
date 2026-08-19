@@ -16,7 +16,7 @@ Adobe does not provide security and quality fixes for third-party services and s
 
 The standard three-year support period from the General Availability (GA) date. Standard support includes quality fixes, security patches, and full Adobe Commerce on-call support.
 
-- **Quality fixes** – Customers can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+- **Quality fixes** – Customers can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
 
 - **Security fixes** – Adobe provides security fixes through cumulative security patches and non-cumulative [isolated security patch files](versioning-policy.md#isolated-security-patch-file) for the three-year support period.
 

@@ -237,8 +237,8 @@ For more detailed technical information:
 
 ### Related topics
 
-* [Adobe Commerce Cloud documentation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce Installation Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud documentation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce Installation Guide](/help/installation/overview.md)
 * [CAPS introduction](intro.md)
 * [How to access](access.md)
 * [Workflow overview](workflow.md)

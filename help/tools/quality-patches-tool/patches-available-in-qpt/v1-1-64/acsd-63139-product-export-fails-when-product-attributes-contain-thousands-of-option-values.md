@@ -41,7 +41,7 @@ The product export fails when product attributes contain thousands of option val
    bin/magento cron:install
    ```
 
-1. Configure [!DNL RabbitMQ] by following the instructions in [[!DNL RabbitMQ] prerequisites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq).
+1. Configure [!DNL RabbitMQ] by following the instructions in [[!DNL RabbitMQ] prerequisites](/help/installation/prerequisites/rabbitmq.md).
 1. Open the `php.ini` file, set the memory limit to 4G, and restart the PHP service.
 1. In the Admin Panel, go to **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. In the *[!UICONTROL Export Settings]* section, set **[!UICONTROL Entity Type]** to *Products*, scroll to the bottom and click **[!UICONTROL Continue]**.
@@ -68,7 +68,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 

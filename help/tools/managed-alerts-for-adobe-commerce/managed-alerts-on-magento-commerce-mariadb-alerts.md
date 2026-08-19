@@ -23,7 +23,7 @@ You will receive a managed alert in [!DNL New Relic] if you have signed up to [M
  **Do!**
 
 * Abort any deployment scheduled until this alert is cleared.
-* Put your site into maintenance mode immediately if your site is or becomes completely unresponsive. For steps, refer to [Enable or disable maintenance mode](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in the Commerce Installation Guide. Make sure to add your IP to the exempt IP address list to ensure that you are still able to access your site for troubleshooting. For steps, refer to [Maintain the list of exempt IP addresses](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
+* Put your site into maintenance mode immediately if your site is or becomes completely unresponsive. For steps, refer to [Enable or disable maintenance mode](/help/installation/tutorials/maintenance-mode.md) in the Commerce Installation Guide. Make sure to add your IP to the exempt IP address list to ensure that you are still able to access your site for troubleshooting. For steps, refer to [Maintain the list of exempt IP addresses](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses).
 * End any scripts such as imports that may be the cause of the alert if site performance is impacted.
 
  **Don't!**
@@ -38,7 +38,7 @@ You will receive a managed alert in [!DNL New Relic] if you have signed up to [M
 
 If you receive a DML Queries Critical alert, start at step one. If you receive a DML Queries Warning alert, start at step two.
 
-1. Check if an Adobe Commerce support ticket exists. For steps, refer to our knowledge base [Track your support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Support may have received a [!DNL New Relic] threshold alert, created a ticket and started working on the issue. If no ticket exists, create one. The ticket should have the following information:
+1. Check if an Adobe Commerce support ticket exists. For steps, refer to our knowledge base [Track your support tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Support may have received a [!DNL New Relic] threshold alert, created a ticket and started working on the issue. If no ticket exists, create one. The ticket should have the following information:
     * Contact Reason: select **[!UICONTROL New Relic MariaDB alert received]**.
     * Description of the alert.
     * [[!DNL New Relic] Incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). This is included in your [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md).

@@ -77,7 +77,7 @@ _noun_
 
 ADMIN variables are project environment variables to override the configuration settings for the Admin user account to access the Admin UI.
 
-Learn more: [ADMIN variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+Learn more: [ADMIN variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
 
 _Term attributes:_
 
@@ -129,7 +129,7 @@ Custom attributes are a type of Entity-Attribute-Value (EAV) attribute.
 
 For integrations like Google Shopping ads Channel and Amazon Sales Channel, you map Commerce attributes to attributes in the third-party to properly display and sell products, display ads.
 
-Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Term attributes:_
 
@@ -254,7 +254,7 @@ _noun_
 Bulk operations are actions that are performed on a large scale.
 Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
 
-Learn more: [DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+Learn more: [DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)
 
 _Term attributes:_
 
@@ -441,7 +441,7 @@ _noun_
 
 Cloud variables are environment variables specific to Adobe Commerce on cloud infrastructure and use the **`MAGENTO_CLOUD`** prefix.
 
-Learn more: [Cloud variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
+Learn more: [Cloud variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 _Term attributes:_
 
@@ -612,7 +612,7 @@ _noun_
 
 A deploy key is your project SSH public key and enables read-only or read-write (if enabled) access to a Git repository.
 
-Learn more: [Secure connections](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
+Learn more: [Secure connections](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)
 
 _Term attributes:_
 
@@ -681,7 +681,7 @@ _noun_
 
 A set of scripts and tools designed to manage and deploy the Commerce application. This package simplifies many Adobe Commerce on cloud infrastructure processes, including deploying to a Docker environment, managing crons, verifying project configuration, and applying Adobe patches.
 
-Learn more: [ece-tools package](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+Learn more: [ece-tools package](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 _Term attributes:_
 
@@ -709,7 +709,7 @@ Stores the entity id, attribute name, and value as a triple, which allows new en
 In encoding, the number of attributes that can be used to describe entities can scale extensively, but the number that applies to a given entity is minimized.
 This data model is flexible, but can be slow.
 
-Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Term attributes:_
 
@@ -745,7 +745,7 @@ _noun_
 
 Extend functionality and often use more complex data types than custom attributes. These attributes do not appear on the GUI.
 
-Learn more: [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+Learn more: [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes)
 
 _Term attributes:_
 
@@ -1080,7 +1080,7 @@ _noun_
 
 Origin cloaking is a security feature that allows Adobe Commerce on cloud infrastructure to block any non-Fastly traffic to prevent DDoS attacks, going to the cloud infrastructure (origin).
 
-Learn more: [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+Learn more: [Fastly origin cloaking](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 _Term attributes:_
 

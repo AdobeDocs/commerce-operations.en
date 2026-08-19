@@ -263,7 +263,7 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 and later**: The [!DNL Customer Grid] indexer supports both [!UICONTROL Update on Save] and [!UICONTROL Update by Schedule] modes, and defaults to [!UICONTROL Update by Schedule].
 >
->See [Best practices for indexer configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in the _Implementation Playbook_.
+>See [Best practices for indexer configuration](/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md) in the _Implementation Playbook_.
 
 >[!INFO]
 >

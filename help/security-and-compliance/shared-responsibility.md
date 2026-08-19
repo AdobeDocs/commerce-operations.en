@@ -25,7 +25,7 @@ Merchants are responsible for the following:
 * Ensuring secure application development
 * Obtaining PCI certification if requested by the merchant's payment processor
 * Reacting and responding to security incidents
-* Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
+* Maintaining all third-party dependencies, platform services, and Adobe Commerce Services extensions on versions that are actively supported. Adobe does not provide security support or assistance for deployments running unsupported dependency versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](/help/release/product-availability.md) for supported versions.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ The merchant is responsible for following security best practices for their cust
    * Adobe Commerce Services extensions
    * All third-party extensions and custom integrations
 
-   Adobe does not provide support for deployments running unsupported versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) for supported versions.
+   Adobe does not provide support for deployments running unsupported versions. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) and the [Product availability matrix](/help/release/product-availability.md) for supported versions.
 
 ## Cloud service provider responsibilities
 

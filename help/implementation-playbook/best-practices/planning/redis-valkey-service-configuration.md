@@ -94,7 +94,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-For environment variable configuration details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+For environment variable configuration details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!TAB Redis configuration]
 
@@ -106,7 +106,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!ENDTABS]
 

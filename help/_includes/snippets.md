@@ -4,7 +4,7 @@
 
 >[!NOTE]
 >
->For Adobe Commerce on Cloud projects, see [Best practices for Redis and Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) for cache configuration instructions. 
+>For Adobe Commerce on Cloud projects, see [Best practices for Redis and Valkey service configuration](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) for cache configuration instructions. 
 
 ## Redis cache support {#redis-cache-support}
 
@@ -14,7 +14,7 @@ Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later t
 
 >[!NOTE]
 >
->If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
+>If your Commerce project is deployed on cloud, full-page caching uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) instead of Varnish. The topics in this section apply to on-premises installations only.
 
 ## Adobe service version support {#supported-versions-only}
 
@@ -28,7 +28,7 @@ Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later t
 >
 >Running unsupported versions may expose your store to security vulnerabilities, and Adobe cannot provide security patches for dependencies no longer maintained by their vendors.
 >
->For the full list of supported versions, see the [Product availability matrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+>For the full list of supported versions, see the [Product availability matrix](/help/release/product-availability.md).
 
 ## Security patches for extended support {#extended-support}
 
@@ -78,7 +78,7 @@ Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later t
 
 >[!NOTE]
 >
->Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Not all releases introduce major BICs.
+>Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Not all releases introduce major BICs.
 
 ## Alpha disclaimer {#alpha}
 
@@ -126,7 +126,7 @@ Before you can run indexers in parallel mode, you must enable Process Control su
 
 * **Added support for Apache ActiveMQ Artemis  STOMP protocol**
 
-  Added support for the ActiveMQ Artemis open-source message broker through the Simple Text Oriented Messaging Protocol (STOMP). It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations. See [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) in the *Commerce Configuration Guide*.
+  Added support for the ActiveMQ Artemis open-source message broker through the Simple Text Oriented Messaging Protocol (STOMP). It delivers a reliable and scalable messaging system, offering flexibility for STOMP-based integrations. See [Apache ActiveMQ Artemis](/help/configuration/queues/message-queue-framework.md#apache-activemq-artemis-stomp) in the *Commerce Configuration Guide*.
 
 ## Checkout page fails to load static.min.js and mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 

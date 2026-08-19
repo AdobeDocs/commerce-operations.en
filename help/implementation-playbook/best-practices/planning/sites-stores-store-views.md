@@ -35,5 +35,5 @@ Websites and stores are multipliers for catalog data, so having many websites an
 
 ## Additional information
 
-- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Set up multiple websites or stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Set up multiple websites or stores](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)
