@@ -9,7 +9,7 @@ extensions:
       Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 1.22.0
+        version: 1.22.1
       - core: 2.4.8
         version: 1.8+
       - core: 2.4.7
