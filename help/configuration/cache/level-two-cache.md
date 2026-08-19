@@ -47,13 +47,15 @@ There are two L2 cache implementations available in Adobe Commerce:
 | Implementation | Version | Description |
 | -------------- | ------- | ----------- |
 | [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
-| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey only. |
+| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey. |
+
+Symfony L2 cache is the recommended implementation for Adobe Commerce 2.4.9 and later releases. It provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
 Symfony L2 cache is the recommended implementation for Adobe Commerce 2.4.9 and later releases. It provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
 
 ## Legacy L2 cache configuration (RemoteSynchronizedCache)
 
-The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
+The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with the [Modern Symfony L2 cache implementation](#modern-symfony-l2-cache-implementation).
 
 >[!NOTE]
 >
@@ -98,13 +100,13 @@ Where:
 - `backend_options` is the L2 cache configuration.
   - `remote_backend` is the remote cache implementation: Redis or MySQL.
   - `remote_backend_options` is the remote cache configuration.
-  - `local_backend` is the local cache implementation: `Cm_Cache_Backend_File`
+  - `local_backend` is the local cache implementation: `Cm_Cache_Backend_File`.
   - `local_backend_options` is the local cache configuration.
   - `cache_dir` is a file cache-specific option for the directory where the local cache is stored.
 
-For Adobe Commerce versions earlier than 2.4.9 that support Redis, Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+For Adobe Commerce versions earlier than 2.4.9 that support Redis, Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`.
 
-Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix ':hash' for preload keys.
+Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix `:hash` for preload keys.
 
 ## Stale cache options
 
@@ -128,7 +130,7 @@ Adobe recommends enabling the `use_stale_cache` option only for cache types that
 
 Adobe does not recommend enabling the `use_stale_cache` option for the `default` cache type.
 
-The following code shows an example configuration:
+The following code shows an example configuration for the legacy `RemoteSynchronizedCache` backend. For a `symfony_l2` example, see [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
 
 ```php
 'cache' => [
@@ -196,16 +198,42 @@ In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation
 
 >[!IMPORTANT]
 >
->Redis is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. If you're upgrading past these versions, set up Valkey and update your cache configuration to use `symfony_l2`. See [set up Valkey](config-valkey.md) and [System Requirements](../../installation/system-requirements.md).
+>Redis is not supported as a remote cache backend starting with:
+>
+>- Adobe Commerce 2.4.9 and later
+>- 2.4.8-p4 and later patches
+>- 2.4.7-p9 and later patches
+>- 2.4.6-p14 and later patches
+>- 2.4.5-p16 and later patches
+>
+>If you're upgrading past these versions, set up Valkey and update your cache configuration to use `symfony_l2`. See [set up Valkey](config-valkey.md) and [System Requirements](../../installation/system-requirements.md).
 
 ### Benefits of Symfony L2 cache
 
-- **Modern Architecture**: Built on Symfony Cache components (PSR-6 compliant)
-- **Better Performance**: Native support for Igbinary serialization, gzip compression, and Lua scripts
-- **Persistent Connections**: Reduces Valkey connection overhead with connection pooling
-- **Preload Keys**: Supports cache key preloading for critical data
-- **Stale Cache Support**: Full compatibility with the `use_stale_cache` option
-- **Simplified Configuration**: Cleaner backend type names (`valkey`, `file`)
+- **Modern architecture:** built on Symfony Cache components (PSR-6 compliant)
+- **Better performance:** native support for Igbinary serialization, gzip compression, and Lua scripts
+- **Persistent connections:** reduces Valkey connection overhead with connection pooling
+- **Preload keys:** supports cache key preloading for critical data
+- **Stale cache support:** full compatibility with the `use_stale_cache` option
+- **Simplified configuration:** cleaner backend type names (`valkey`, `file`)
+
+### Migrating from RemoteSynchronizedCache to Symfony L2
+
+If you are upgrading an on-premises installation from the legacy `RemoteSynchronizedCache` backend to `symfony_l2`, review the following before updating `app/etc/env.php`. Changing only the `backend` value is not sufficient. The configuration structure, key names, and some default behaviors differ.
+
+- **The configuration structure changes.** `remote_backend`, `remote_backend_options`, and `local_backend` use different values under `symfony_l2`. For example, `remote_backend` becomes `'valkey'` instead of a fully qualified class name. Use the [configuration example](#configuration-example-with-symfony-l2-cache) below as your starting point rather than editing your existing legacy configuration in place.
+
+- **`preload_keys` is not recommended with `symfony_l2`.** If your legacy configuration includes `preload_keys`, remove it as part of the migration. Preloading keys does not improve performance under `symfony_l2` and can increase load on Valkey by triggering additional, unnecessary key lookups.
+
+- **Compression requires an explicit flag.** Setting `compression_lib` alone does not enable compression under `symfony_l2`. See [Backend options for Symfony L2 cache](#backend-options-for-symfony-l2-cache) for the required `compress_data` setting.
+
+- **Stale cache is not enabled by default for manually configured on-premises deployments.** `use_stale_cache` defaults to `false` under `symfony_l2` (see the [backend options table](#backend-options-for-symfony-l2-cache)). If your legacy configuration used the `stale_cache_enabled` frontend, you must explicitly recreate it using the pattern in [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
+
+>[!NOTE]
+>
+>Adobe Commerce on Cloud environments that set the `VALKEY_BACKEND: symfony_l2` deploy variable have their full L2 configuration, including the `stale_cache_enabled` frontend, generated automatically by ECE Tools. See [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache) for Cloud-specific behavior.
+
+- **Redis is not a supported remote backend for `symfony_l2`.** Migrate to Valkey as part of this change. See [set up Valkey](config-valkey.md).
 
 ### Migrating from RemoteSynchronizedCache to Symfony L2
 
@@ -349,7 +377,7 @@ Use the following example to configure separate frontends for `symfony_l2` stale
 
 >[!NOTE]
 >
->- The `remote_backend` option also accepts a value of `redis`. However, Redis is not an officially supported cache service for Adobe Commerce 2.4.9 and later. Adobe recommends configuring `symfony_l2` with `valkey` only. See [System Requirements](../../installation/system-requirements.md) for supported cache services by release.
+>- The `remote_backend` option also accepts a value of `redis`, but Redis is not officially supported (see the note above under [Modern Symfony L2 cache implementation](#modern-symfony-l2-cache-implementation)).
 >
 >- `frontend_options.write_control`, used in the legacy `RemoteSynchronizedCache` configuration, does not apply to `symfony_l2`.
 
@@ -369,19 +397,19 @@ Optimized Symfony L2 cache behavior for Valkey-backed deployments by eliminating
 
 For deployments using the file-based cache (without Valkey), the local tag index continues to be maintained to support cache invalidation. The tag index is now written to the configured `cache_dir` instead of the previously hardcoded `var/cache` location, ensuring consistent cache directory usage and improved support for custom cache configurations.
 
-#### Fixed stale tag memberships after retag
+#### Stale tag membership fix after retagging
 
 Retagging a cache entry could leave it associated with tags it no longer belonged to. Stale tag memberships are now cleared on retag, so cache entries are invalidated only by the tags currently assigned to them.
 
-#### Fixed redundant remote write on unchanged save
+#### Redundant remote write fix for unchanged saves
 
 Saving a cache entry with unchanged content still triggered a write to the remote (Valkey) backend. Saves are now skipped when the content is unchanged, reducing unnecessary remote writes.
 
-#### Fixed L1 size-based eviction (cleanup_percentage)
+#### L1 size-based eviction fix (cleanup_percentage)
 
 The `cleanup_percentage` threshold used for L1 size-based eviction did not consistently trigger cleanup. L1 cache eviction now correctly honors the configured `cleanup_percentage`.
 
-#### Added regeneration lock for stale cache
+#### Regeneration lock for stale cache
 
 When `use_stale_cache` is enabled and the remote copy of an entry is temporarily unavailable, only one process now acquires a short-lived lock to regenerate that entry. Other concurrent requests for the same entry continue to serve the existing local value instead of regenerating it themselves, reducing regeneration stampedes and redundant backend load.
 
@@ -397,3 +425,10 @@ When `use_stale_cache` is enabled and the remote copy of an entry is temporarily
 For detailed configuration options, see:
 
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
+
+>[!MORELIKETHIS]
+>
+>- [Caching overview and configuration options](caching-overview.md)
+>- [Cache backend options and storage reference](cache-options.md)
+>- [Configure cache frontends and types](cache-types.md)
+>- [Configure Redis for default and page cache](redis-pg-cache.md)
