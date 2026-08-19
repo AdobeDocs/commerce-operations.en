@@ -20,7 +20,7 @@ Use these recommendations to configure Valkey or Redis caching and sessions for 
 >
 >This guide covers the Redis or Valkey application cache and session backends only. Full-page caching (Fastly on Adobe Commerce on Cloud, or Varnish on-premises) is a separate caching layer that stores full HTTP responses before Adobe Commerce and avoids using Redis or Valkey for storage. Configuration changes in this guide don't affect full-page cache behavior, and full-page cache configuration doesn't affect the settings described here.
 
-- Enable read-only replica connection
+- Enable slave connection
 - Separate cache and session
 - Compress the cache
 - Enable asynchronous freeing
@@ -356,7 +356,7 @@ There are two L2 cache implementations available for Adobe Commerce on cloud inf
 
 >[!TAB Valkey configuration]
 
-On Adobe Commerce versions 2.4.8 or earlier, use this configuration for Valkey with the legacy cache implementation:
+On Commerce 2.4.8 and earlier versions that support Valkey, use this configuration:
 
 ```yaml
 stage:
