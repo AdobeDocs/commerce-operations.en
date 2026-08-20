@@ -3,7 +3,7 @@ title: Software lifecycle policy
 description: Learn about key dates for end of software support for Adobe Commerce releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-17
+last-update: 2026-08-19
 ---
 
 # Adobe Commerce lifecycle policy
