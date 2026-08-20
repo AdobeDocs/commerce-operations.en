@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.5 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-last-update: 2026-06-18
+last-update: 2026-08-19
 ---
 
 # Release notes for Adobe Commerce 2.4.5 security patches

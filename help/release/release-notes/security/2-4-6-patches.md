@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.6 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-06-18
+last-update: 2026-08-19
 ---
 
 # Release notes for Adobe Commerce 2.4.6 security patches
