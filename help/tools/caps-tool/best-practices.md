@@ -22,14 +22,14 @@ Before applying patches, ensure your environment is properly prepared:
   * Project and environment permissions
 
 * **Environment resources**
-  * Available environment slots for temporary testing
+  * Available environment slots for the temporary integration environment
   * Sufficient storage, CPU, and memory resources
   * Network access to Adobe repositories
   * Stable parent environment for synchronization
 
 * **Production environment preparation** (for production patching)
-  * Maintenance mode must be enabled
-  * Cron jobs must be disabled
+  * Maintenance mode recommended to be enabled
+  * Cron jobs recommended to be disabled
   * Maintenance window procedures established
   * Rollback procedures documented
   * Stakeholder communication plan ready

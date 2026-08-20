@@ -31,12 +31,11 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 * **Automated patching service with structured workflow**
   * **Preliminary check** - Validates patch compatibility and environment readiness
   * **Patching** - Applies or reverts patches automatically in integration environments
-  * **Validation** - Performs health checks and ensures critical functionalities are not impacted
+  * **Validation** - Performs a health check to confirm the application starts and that its database and cache connections are reachable
 
 * **Safety features**
-  * Creates temporary integration environments for testing
   * Validates patch compatibility before application
-  * Validates the patch in a temporary integration environment before your target environment is touched, then performs a final health check immediately after deployment
+  * Applies the patch in a temporary integration environment first — confirming it deploys successfully and passes a health check — before merging into your target environment, then performs a final health check immediately after deployment
   * Applies patches to the `m2-hotfixes` folder with automatic removal during reversion
 
 ## Integrations with Adobe Commerce Cloud
@@ -45,7 +44,7 @@ This guide is designed for Adobe Commerce Cloud merchants and partners who want 
 
 ## Video Tutorial
 
-Learn about [!DNL Adobe Commerce Patching Automation] and how this tool helps users quickly find and apply security patches. The following video covers how to access it through the SWAT dashboard, choose your project and environment, and apply patches with one click.
+Learn about [!DNL Adobe Commerce Patching Automation] and how this tool helps users quickly find and apply security patches. The following video covers how to access it through the Site-Wide Analysis Tool (SWAT) dashboard, choose your project and environment, and apply patches with one click.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
@@ -54,4 +53,4 @@ Learn about [!DNL Adobe Commerce Patching Automation] and how this tool helps us
 * **Security patches** - Quickly apply critical security updates
 * **Patch rollback** - Safely revert problematic patches applied through the service
 * **Security compliance** - Maintain security standards with automated patching
-* **Operational stability** - Ensure environment stability through automated validation
+* **Operational stability** - Confirms the application starts and passes a health check after each patch operation

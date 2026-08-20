@@ -29,9 +29,13 @@ If you do not see any projects in the [!DNL Patching Automation] user interface,
 
 ## Accessing [!DNL Patching Automation]
 
-The Patching Automation tool is available from the Site-Wide Analysis Tool dashboard at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Under the Patching Automation tab, you can select your project and environment.
+[!DNL Patching Automation] is available as a tab within the [!DNL Site-Wide Analysis Tool] dashboard. You can access it two ways:
 
-1. Navigate to Site-Wide Analysis Tool at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
+* **Directly** - Navigate to [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
+* **From your Admin Panel** - On the Admin sidebar, go to **Reports** > **System Insights** > **Site-Wide Analysis Tool**. See [How to access the Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) for prerequisites and permission setup.
+
+Once you're in the dashboard:
+
 1. Click on the [!UICONTROL Patching Automation] tab in the interface.
 1. Select the project and environment where you want to apply patches.
 1. Review available patches and their compatibility status.

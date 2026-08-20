@@ -58,12 +58,11 @@ The Preliminary Check phase validates that the patch can be safely applied to yo
 
 ### Phase 2: Patching
 
-The Patching phase applies or reverts the patch in a temporary integration environment for testing. During this stage, the service creates a temporary test environment to safely apply and test the patch before making changes to your actual environment.
+The Patching phase applies or reverts the patch in a temporary integration environment. During this stage, the service creates a temporary integration environment to safely apply the patch, confirm it deploys successfully, and verify it passes a health check — before making any changes to your actual environment.
 
 This approach provides:
 
 * **Safety** - keeps your target environment untouched until the integration environment deploys successfully and passes its health check
-* **Testing** - performed in a real environment before affecting production
 * **Rollback capability** - if issues are detected
 * **Isolation** - for each patch operation
 
@@ -73,9 +72,11 @@ This approach provides:
 
 **Environment setup** - The integration environment is created as a child of your target environment
 
-**Code synchronization** - The integration environment inherits the exact state of your target environment
+**Code synchronization** - The integration environment inherits the exact code state of your target environment (the same codebase)
 
-**Resource requirements** - The service creates a temporary environment using the codebase from your target environment. According to Adobe Commerce Cloud documentation, each environment (including integration environments) has separate storage allocation based on your contracted storage plan. The amount of storage you contracted represents the total storage for each environment. In most cases, you will not face any issues with resource limitations. If you encounter any error with resource limitations, please check your application size and your contracted storage in your plan.
+**No data cloning** - The integration environment does not receive a copy of the target environment's data (database, media, or other stored content) — only the codebase is used to apply and verify the patch
+
+**Resource requirements** - Your Cloud project's total storage capacity is defined in your contract (check via your account page or `magento-cloud subscription:info`). Each environment's disk allocation is configured separately, via the `disk` property in `.magento.app.yaml`/`.magento/services.yaml` — see [Manage disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) for details. If a patch operation fails due to storage limitations, check your integration environment's disk usage (`magento-cloud db:size` / `magento-cloud mount:size`) against its configured allocation.
 
 #### Stage 2b: Patch application in integration environment
 
@@ -91,15 +92,17 @@ This approach provides:
 
 >[!NOTE]
 >
->If your project uses an external GitHub repository, the service handles authentication automatically using the [[!DNL Patching Automation] GitHub App](github-integration.md). No additional credentials are required.
+>If your project uses an external GitHub repository, the service handles authentication automatically using the [[!DNL Patching Automation] GitHub App](github-integration.md). No additional credentials are required beyond installing the App.
 
 #### Stage 2c: Merge back to target environment
+
+**Sync check** - Before merging, the service confirms the integration environment is still active, in sync with the target environment, and healthy — if the target has changed during patching, the operation stops here instead of merging
 
 **Environment checkout** - The service checks out your target environment locally
 
 **Merge operation** - The integration environment branch is merged into the target environment
 
-**Conflict resolution** - If any conflicts occur, they are resolved automatically when possible
+**Conflict handling** - If a merge conflict occurs, the operation fails and is reported as an error — it is not resolved automatically
 
 **Deployment** - The merged changes are deployed to your target environment
 
@@ -115,12 +118,12 @@ Integration environments have a specific lifecycle during the patching stage:
 
 ### Phase 3: Validation
 
-The Validation phase ensures the patched application works correctly and performs health checks.
+The Validation phase confirms the patched application starts successfully and passes a health check.
 
 **What happens:**
 
 * **Application health check** - verifies the application starts and runs properly, and that its database and cache connections are reachable
-* **Cleanup** - removes temporary environment, updates logs, notifies completion
+* **Cleanup** - removes the temporary integration environment and updates the job status to reflect completion. The environment's activity remains visible in your project's Activity feed.
 
 >[!IMPORTANT]
 >
@@ -146,16 +149,18 @@ The Validation phase ensures the patched application works correctly and perform
 
 ## Production environment safeguards
 
-[!DNL Patching Automation] includes specific safeguards for production environments to prevent accidental disruptions and ensure patches are safely validated beforehand.
+Applying or reverting patches on a production environment carries more risk than on other environments, so [!DNL Patching Automation] includes two safeguards specific to production.
 
-### Preconditions for production patching
+### Confirmation before starting
 
-Before applying patches to production environments, the service checks for two critical conditions:
+Before any apply or revert operation starts on a production environment, you're asked to confirm in a dialog — this protects against accidentally starting a job on production.
 
-* **Maintenance mode** - The store must be in maintenance mode
-* **Cron jobs disabled** - Cron jobs must be disabled
+### Recommended preconditions
 
-If either condition is not met, the patch application is blocked and the user is notified — unless you select the override checkbox in the UI to skip these checks and proceed anyway.
+We recommend enabling maintenance mode and disabling cron jobs before patching a production environment. By default, the service checks for both and blocks the operation with a notification if either isn't met. If you understand the risk of proceeding without them, you can skip this check using the override checkbox in the UI.
+
+* **Maintenance mode** - Recommended to be enabled
+* **Cron jobs** - Recommended to be disabled
 
 ## Related topics
 

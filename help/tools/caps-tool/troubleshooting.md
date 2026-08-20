@@ -90,15 +90,26 @@ For most environments, the following timeline describes how long patch operation
 
 #### "Environment is not in sync with parent"
 
-**When it occurs:** During validation
+**When it occurs:** During validation, in the pre-merge sync check — before the integration environment is merged into your target environment
 
-**Cause:** Your integration environment differs from the parent environment
+**Cause:** Your integration environment differs from the parent environment, usually because the target environment changed while the patch was being tested
 
 **Solutions:**
 
-* Sync your environment with the parent branch
-* Retry the patch operation
+* Retry the patch operation once the target environment is stable
+* Avoid making changes to the target environment while a patch operation is in progress
 * Contact support if sync issues persist
+
+#### "Post-merge verification failed: environments are not in sync after merge."
+
+**When it occurs:** During validation, after the integration environment has already been merged into your target environment
+
+**Cause:** The two environments' code still doesn't match after merging, usually a temporary Platform.sh API propagation delay rather than a real conflict
+
+**Solutions:**
+
+* Wait a few minutes and check the environment status again — this often resolves on its own
+* Contact support if the environments still don't match after a few minutes
 
 #### "Cannot create patch job in production environment when cron is enabled and maintenance mode is disabled. Please enable maintenance mode and disable cron jobs before applying patches."
 
@@ -133,9 +144,9 @@ For most environments, the following timeline describes how long patch operation
 
 ### Authentication and access errors
 
-#### "Insufficient permissions for environment access"
+#### "Access denied"
 
-**When it occurs:** During environment creation or access
+**When it occurs:** During environment creation or access, when your account lacks the required permissions
 
 **Cause:** Your user account lacks necessary permissions
 
