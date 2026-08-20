@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 41f875af-9d65-4d4f-af5c-6ad887eeaf0d
 last-update: 2026-05-12
 ---
-# Adobe Commerce packages
+# Magento Open Source packages
 
 {{$include /help/_includes/templated/release/packages/open-source.md}}
 
