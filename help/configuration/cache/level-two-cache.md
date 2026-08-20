@@ -33,7 +33,7 @@ topic_v2:
 ---
 # L2 cache configuration for performance optimization
 
-L2 (two-level) caching reduces network traffic between the remote cache storage (Redis or Valkey) and the Commerce application by adding a local cache layer on each web node. A standard Commerce instance transfers around 300 KB per request, and traffic can quickly grow to over 1000 requests in some situations.
+L2 (two-level) caching reduces the amount of data transferred between the remote cache storage (Redis or Valkey) and the Commerce application by adding a local cache layer on each web node. Each web node still checks the remote cache on every read to validate its local copy, so L2 caching does not reduce the number of remote cache calls; it reduces the size of each call, since only a short hash is exchanged unless the local copy is outdated. A standard Commerce instance transfers around 300 KB per request, and traffic can quickly grow to over 1000 requests in some situations.
 
 With L2 caching, each web node stores frequently accessed data locally and uses the remote cache for two purposes:
 
@@ -104,7 +104,7 @@ Where:
 
 For Adobe Commerce versions earlier than 2.4.9 that support Redis, Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`.
 
-Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix `:hash` for preload keys.
+The [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature is a separate, independent mechanism that can be used with or without L2 caching. Where L2 caching reduces the size of each remote cache call, cache preload reduces the *number* of remote cache calls, by fetching a fixed list of cache IDs in a single pipelined batch instead of one round trip per ID. Adobe recommends enabling it, as it drastically decreases the number of round trips to Redis. Do not forget to add the suffix `:hash` for preload keys.
 
 ## Stale cache options
 
