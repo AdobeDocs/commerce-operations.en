@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### August 19, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the Commerce caching documentation with clearer on-premises vs. Cloud guidance and new migration guidance for moving to Valkey with Symfony L2 cache:<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview">Caching overview and configuration options</a>.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types">Configure cache frontends and types</a>.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options">Cache backend options and storage reference</a>.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2 cache configuration for performance optimization</a> with guidance for migrating from <code>RemoteSynchronizedCache</code> to Symfony L2 cache.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Best Practices for Valkey and Redis Service Configuration</a> with Cloud-specific migration steps to Valkey with Symfony L2 cache.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 14, 2026
 
 <table style="table-layout:auto;">

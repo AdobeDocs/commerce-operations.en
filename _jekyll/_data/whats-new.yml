@@ -2,8 +2,25 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 14 16:15:30 2026
+updated: Fri Aug 21 15:56:52 2026
 entries:
+- description: Updated the Commerce caching documentation with clearer on-premises
+    vs. Cloud guidance and new migration guidance for moving to Valkey with Symfony
+    L2 cache:<br/>- Updated [Caching overview and configuration options](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview).<br/>-
+    Updated [Configure cache frontends and types](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types).<br/>-
+    Updated [Cache backend options and storage reference](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options).<br/>-
+    Updated [L2 cache configuration for performance optimization](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache)
+    with guidance for migrating from `RemoteSynchronizedCache` to Symfony L2 cache.<br/>-
+    Updated [Best Practices for Valkey and Redis Service Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+    with Cloud-specific migration steps to Valkey with Symfony L2 cache.
+  versions: ''
+  type: major-update
+  date: August 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2167
+  merge_commit: 3a840b544de95a4bb17ef49d0325b16d461aecaa
+  contributor: meker_adobe
+  labels:
+  - major-update
 - description: Updated steps for how customers can check the version of their service
     dependencies in Cloud UI, and updated the link to the guide on how customers can
     generate an upgrade compatibility report for their store, in [Verify and upgrade
