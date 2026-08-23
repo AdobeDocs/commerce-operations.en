@@ -40,9 +40,13 @@ For implementation details, configuration examples, and deployment-specific guid
 >
 >Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
 
+>[!NOTE]
+>
+>Setting `VALKEY_BACKEND` or `REDIS_BACKEND` configures the L2 cache backend, but it does not determine whether Adobe Commerce actually uses Redis or Valkey as the remote cache service. The class value you assign (for example, `\Magento\Framework\Cache\Backend\Redis` or `symfony_l2`) doesn't select the service either. Adobe Commerce uses whichever service—Redis or Valkey—is available in your environment, and Redis takes priority if both are available. For example, `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\Redis'` uses Redis if it's available, and falls back to Valkey only if Redis is not available.
+
 >[!BEGINTABS]
 
->[!TAB Valkey configuration]
+>[!TAB Using VALKEY_BACKEND]
 
 For Valkey with the legacy cache implementation, use:
 
@@ -54,7 +58,7 @@ stage:
 
 For Valkey with the modern Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
 
->[!TAB Redis configuration]
+>[!TAB Using REDIS_BACKEND]
 
 For Redis, use:
 
@@ -88,7 +92,7 @@ To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
       VALKEY_BACKEND: symfony_l2
   ```
 
-Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. Defining `CACHE_CONFIGURATION` is optional and needed only if you want to customize specific backend options.
+Setting the `VALKEY_BACKEND` deployment variable to `symfony_l2` automatically builds the full L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend, with cacheable types such as `layout`, `block_html`, `full_page`, and `translate` already mapped to the stale-enabled frontend. Defining `CACHE_CONFIGURATION` is optional and needed only if you want to customize specific backend options.
 
 >[!NOTE]
 >
@@ -147,7 +151,7 @@ The following examples show the configuration code in the `.magento.env.yaml` fi
 
 >[!BEGINTABS]
 
->[!TAB Valkey configuration]
+>[!TAB Using VALKEY_BACKEND]
 
 ```yaml
 stage:
@@ -161,7 +165,7 @@ stage:
             cleanup_percentage: 90
 ```
 
->[!TAB Redis configuration]
+>[!TAB Using REDIS_BACKEND]
 
 ```yaml
 stage:
@@ -193,9 +197,13 @@ Usage can vary across nodes, but it should converge to a similar value.
 
 Enable the read-only replica connection in the `.magento.env.yaml` file to let Adobe Commerce use an additional cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
 
+>[!IMPORTANT]
+>
+>Unlike `VALKEY_BACKEND` and `REDIS_BACKEND`, the `VALKEY_USE_SLAVE_CONNECTION` and `REDIS_USE_SLAVE_CONNECTION` variables are tied to a specific service. Set the variable that matches the cache service actually available in your environment—not necessarily the same service implied by whichever `*_BACKEND` variable you used to configure L2 cache.
+
 >[!BEGINTABS]
 
->[!TAB Valkey configuration]
+>[!TAB Using VALKEY_USE_SLAVE_CONNECTION]
 
 For Valkey, use:
 
@@ -207,7 +215,7 @@ stage:
 
 For environment variable configuration details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
->[!TAB Redis configuration]
+>[!TAB Using REDIS_USE_SLAVE_CONNECTION]
 
 For Redis, use:
 
@@ -229,7 +237,7 @@ You can identify frequently used keys by monitoring active commands on Redis or 
 
 >[!BEGINTABS]
 
->[!TAB Valkey preload key configuration]
+>[!TAB Preload keys with VALKEY_BACKEND]
 
 The preload keys are configured in the `.magento.env.yaml` configuration file.
 
@@ -268,7 +276,7 @@ This log lists the keys you can preload. To see the content of a key, run the fo
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
->[!TAB Redis preload key configuration]
+>[!TAB Preload keys with REDIS_BACKEND]
 
 The preload keys are configured in the `.magento.env.yaml` configuration file.
 
@@ -311,18 +319,18 @@ redis-cli -p 6370 -n 1 hgetall "<key_name>"
 
 ## Enable stale cache
 
-Stale cache is an L2 cache feature of `RemoteSynchronizedCache`. When enabled, Adobe Commerce can serve an existing local cache value from `/dev/shm` while another request is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
+Stale cache is an L2 cache feature supported by both the `RemoteSynchronizedCache` and `symfony_l2` implementations. When enabled, Adobe Commerce can serve an existing local cache value from `/dev/shm` while another request is already regenerating the same entry, instead of making every concurrent request wait. This reduces cache stampedes and lock contention during regeneration of expensive cache entries.
 
 ### How it works
 
-With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When the remote copy is unavailable and a regeneration lock already exists for that key, concurrent requests can receive the previous local value instead of waiting until the fresh value is written.
+L2 cache maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When the remote copy is unavailable and a regeneration lock already exists for that key, concurrent requests can receive the previous local value instead of waiting until the fresh value is written.
 
 To enable stale cache, configure it in the `.magento.env.yaml` file.
 
 >[!BEGINTABS]
 
 
->[!TAB Configure stale cache for Valkey]
+>[!TAB Configure stale cache with VALKEY_BACKEND]
 
 For Valkey:
 
@@ -338,7 +346,7 @@ stage:
             use_stale_cache: true
 ```
 
->[!TAB Configure stale cache for Redis]
+>[!TAB Configure stale cache with REDIS_BACKEND]
 
 For Redis:
 
@@ -377,7 +385,7 @@ To work correctly, the custom frontend must be defined as a complete frontend un
 
 >[!BEGINTABS]
 
->[!TAB Configure stale cache for Valkey]
+>[!TAB Configure stale cache with VALKEY_BACKEND]
 
 For Valkey:
 
@@ -395,7 +403,7 @@ stage:
 
         # Now, create a new frontend called 'stale_cache_enabled'.
         # It must contain the same backend connection settings as the frontend 'default':
- 
+
         stale_cache_enabled:
           id_prefix: '001_'
           backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
@@ -433,7 +441,7 @@ stage:
         # add other cache types as needed...
 ```
 
->[!TAB Configure stale cache for Redis]
+>[!TAB Configure stale cache with REDIS_BACKEND]
 
 For Redis:
 
@@ -503,7 +511,6 @@ Separating the cache from the sessions allows you to manage them independently. 
 Follow the steps below to provision a dedicated instance for sessions:
 
 >[!BEGINTABS]
-
 
 >[!TAB Valkey]
 
@@ -766,7 +773,7 @@ Use the following examples as a starting point for your Redis or Valkey service 
 
 >[!BEGINTABS]
 
->[!TAB Valkey configuration example]
+>[!TAB Example using VALKEY_BACKEND]
 
 ```yaml
 stage:
@@ -809,7 +816,7 @@ stage:
         min_lifetime: 60
 ```
 
->[!TAB Redis]
+>[!TAB Example using REDIS_BACKEND]
 
 ```yaml
 stage:
@@ -860,7 +867,7 @@ stage:
 
 >[!BEGINTABS]
 
->[!TAB Valkey]
+>[!TAB Example using VALKEY_BACKEND]
 
 ```yaml
 stage:
@@ -951,7 +958,7 @@ stage:
         min_lifetime: 60
 ```
 
->[!TAB Redis]
+>[!TAB Example using REDIS_BACKEND]
 
 ```yaml
 stage:
