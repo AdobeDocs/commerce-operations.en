@@ -16,7 +16,7 @@ nudge: true
 
 Use these recommendations to configure Valkey or Redis caching and sessions for Adobe Commerce on cloud infrastructure. For on-premises cache configuration, see [Cache backend options and storage reference](../../../configuration/cache/cache-options.md).
 
-- Configure L2 cache, including [!DNL Symfony] L2 cache
+- Configure L2 cache, including Symfony L2 cache
 - Enable read-only replica connection
 - Preload keys
 - Enable stale cache
@@ -48,7 +48,7 @@ For implementation details, configuration examples, and deployment-specific guid
 
 >[!TAB Using VALKEY_BACKEND]
 
-For Valkey with the legacy cache implementation, use:
+For Valkey with the `RemoteSynchronizedCache` implementation, use:
 
 ```yaml
 stage:
@@ -56,7 +56,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For Valkey with the modern Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
+For Valkey with the Symfony L2 cache implementation, see [Configure Symfony L2 cache](#configure-symfony-l2-cache).
 
 >[!TAB Using REDIS_BACKEND]
 
@@ -72,7 +72,7 @@ For environment configuration details, see [`REDIS_BACKEND`](https://experiencel
 
 >[!ENDTABS]
 
-### Configure [!DNL Symfony] L2 cache
+### Configure Symfony L2 cache
 
 Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symfony_l2` backend is the cache implementation that Adobe Commerce uses to manage L1 and L2 cache behavior. It does not replace Redis or Valkey as the remote cache service.
 
@@ -1058,5 +1058,3 @@ See the following related topics:
 - [Set up Valkey service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
 - [Set up Redis service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
 - [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
-
-

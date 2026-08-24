@@ -50,7 +50,7 @@ Commerce provides command-line options to configure the Redis page and default c
 
 Adobe Commerce has used these Redis cache backend implementations:
 
-- **Legacy Redis backend** (`Cm_Cache_Backend_Redis`) - Deprecated implementation used in older Redis configurations.
+- **Deprecated Redis backend** (`Cm_Cache_Backend_Redis`) - Used in older Redis configurations; no longer recommended.
 - **Redis backend** (`Magento\Framework\Cache\Backend\Redis`) - Backend used by the command-line configuration in this topic for default and page cache.
 - **L2 cache backend** (`Magento\Framework\Cache\Backend\RemoteSynchronizedCache`) - Two-level cache implementation that uses Redis as the remote backend and local file cache storage to synchronize cache data across nodes. See [Two-level cache configuration](level-two-cache.md).
 

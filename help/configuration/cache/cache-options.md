@@ -1,6 +1,6 @@
 ---
 title: Cache Backend Options and Storage Reference
-description: Learn about cache backend options in Adobe Commerce, including file system, Redis, Valkey, and database storage. Discover legacy and modern approaches.
+description: Learn about cache backend options in Adobe Commerce, including file system, Redis, Valkey, and database storage. Discover Zend-based and Symfony Cache options.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."
@@ -57,7 +57,7 @@ Commerce supports two backend implementation approaches. The approach you choose
 
 >[!BEGINTABS]
 
->[!TAB Legacy Zend-based cache (2.4.8 and earlier)]
+>[!TAB Zend-based cache (2.4.8 and earlier)]
 
 Uses full class names for the backend configuration:
 
@@ -79,11 +79,11 @@ These are compatible with the `Zend_Cache_Backend` interface.
 ],
 ```
 
->[!TAB Modern Symfony cache (2.4.9 and later, recommended)]
+>[!TAB Symfony Cache (2.4.9 and later, recommended)]
 
 >[!TIP]
 >
->The modern Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
+>The Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
 
 Uses simplified backend type names:
 
@@ -116,6 +116,3 @@ For complete configuration options, see:
 - [Use Redis for default cache](redis-pg-cache.md)
 - [Use Valkey for default cache](valkey-pg-cache.md)
 - [L2 cache configuration](level-two-cache.md)
-
-See the [Laminas documentation](https://docs.laminas.dev/) for legacy Zend-based options.
-

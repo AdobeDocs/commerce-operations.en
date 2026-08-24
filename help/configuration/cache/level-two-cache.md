@@ -1,6 +1,6 @@
 ---
 title: L2 Cache Configuration for Performance Optimization
-description: Learn how to configure L2 cache in Adobe Commerce to reduce network traffic and improve performance. Discover legacy and Symfony implementation options.
+description: Learn how to configure L2 cache in Adobe Commerce to reduce network traffic and improve performance. Discover RemoteSynchronizedCache and Symfony L2 options.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Premises projects only."
@@ -46,14 +46,14 @@ There are two L2 cache implementations available:
 
 | Implementation | Version | Description |
 | -------------- | ------- | ----------- |
-| [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
-| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance. Supports Valkey only. |
+| [`RemoteSynchronizedCache`](#remotesynchronizedcache-l2-cache-configuration) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
+| [Symfony L2 (`symfony_l2`)](#symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance, Valkey only |
 
-## Legacy L2 cache configuration (RemoteSynchronizedCache)
+## RemoteSynchronizedCache L2 cache configuration
 
 >[!NOTE]
 >
->The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with [Symfony 2 for L2 cache](#modern-symfony-l2-cache-implementation).
+>The `RemoteSynchronizedCache` L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with [Symfony L2 cache](#symfony-l2-cache-implementation).
 
 Cache configuration instructions depend on your deployment type:
 
@@ -190,19 +190,19 @@ The following code shows an example configuration:
 ],
 ```
 
-## Modern Symfony L2 cache implementation
+## Symfony L2 cache implementation
 
-In Commerce versions 2.4.9+, use the Symfony Cache-based L2 cache implementation (`symfony_l2` backend) instead of the legacy L2 cache. The Symfony L2 cache provides a modern, PSR-6 compliant caching implementation with significant performance improvements over the traditional `RemoteSynchronizedCache`.
+In Commerce versions 2.4.9+, use the Symfony L2 cache implementation (`symfony_l2` backend) instead of `RemoteSynchronizedCache`. Symfony L2 cache provides a PSR-6 compliant caching implementation with significant performance improvements over `RemoteSynchronizedCache`.
 
 >[!IMPORTANT]
 >
 >Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p5. If you are upgrading to a version that does not support Redis, you must set up Valkey and update the cache configuration to use `symfony_l2`. For Commerce on-premises, see [set up Valkey](config-valkey.md). For Commerce on Cloud, see [Set up Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}
 >
->Redis is not an officially supported remote backend for `symfony_l2`. If you are on a release that supports `symfony_l2`, you must use Valkey for caching. See [System Requirements](../../installation/system-requirements.md) for 
+>Redis is not an officially supported remote backend for `symfony_l2`. If you are on a release that supports `symfony_l2`, you must use Valkey for caching. See [System Requirements](../../installation/system-requirements.md).
 
 ### Benefits of Symfony L2 cache
 
-- **Modern Architecture**: Built on Symfony Cache components (PSR-6 compliant)
+- **PSR-6 architecture**: Built on Symfony Cache components (PSR-6 compliant)
 - **Better Performance**: Native support for Igbinary serialization, gzip compression, and Lua scripts
 - **Persistent Connections**: Reduces Valkey connection overhead with connection pooling
 - **Preload Keys**: Supports cache key preloading for critical data
@@ -343,7 +343,7 @@ The most recent updates improve Symfony L2 cache scalability, reduced unnecessar
 
 #### Optimized Symfony L2 cache tag storage
 
-Optimized Symfony L2 cache behavior for Valkey-backed deployments by eliminating redundant filesystem tag index writes. Cache tags are now stored exclusively in Valkey, aligning Symfony L2 cache behavior with the legacy cache implementation. This reduces unnecessary disk I/O, improves cache write performance, and prevents growth of the `var/cache/symfony/tags/` directory.
+Optimized Symfony L2 cache behavior for Valkey-backed deployments by eliminating redundant filesystem tag index writes. Cache tags are now stored exclusively in Valkey, aligning Symfony L2 cache behavior with the `RemoteSynchronizedCache` implementation. This reduces unnecessary disk I/O, improves cache write performance, and prevents growth of the `var/cache/symfony/tags/` directory.
 
 #### Improved file-based cache behavior
 
@@ -376,4 +376,3 @@ When `use_stale_cache` is enabled and the remote copy of an entry is temporarily
 
 For detailed configuration options, see:
 - [Valkey cache configuration with Symfony Cache](valkey-pg-cache.md)
-

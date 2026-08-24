@@ -53,15 +53,15 @@ Commerce provides command-line options to configure the Valkey default and page 
 
 >[!TAB Zend Cache (2.4.8 and earlier)]
 
-- **Zend Cache (2.4.8 and earlier)** — Legacy Valkey backend for Commerce 2.4.8 and earlier:
-  - **Legacy Valkey backend** — Uses the full class path (`Magento\Framework\Cache\Backend\Valkey`)
+- **Zend Cache (2.4.8 and earlier)** — Valkey backend for Commerce 2.4.8 and earlier:
+  - **Zend-based Valkey backend** — Uses the full class path (`Magento\Framework\Cache\Backend\Valkey`)
   - **Preload keys** — Supports preloading frequently used cache keys
   - **Lua scripts** — Lua for garbage collection
   - **Compression** — Supports data compression
 
 >[!TAB Symfony Cache (2.4.9+)]
 
-- **Symfony Cache (2.4.9+)** — Starting with Commerce 2.4.9, Symfony Cache provides a modern, PSR-6 compliant caching implementation for Valkey with significant performance improvements:
+- **Symfony Cache (2.4.9+)** — Starting with Commerce 2.4.9, Symfony Cache provides a PSR-6 compliant caching implementation for Valkey with significant performance improvements:
   - **Automatic Valkey pipelining** — Batches multiple operations into single requests, reducing latency
   - **PSR-6 TagAwareAdapter** — Efficient tag-based cache invalidation with atomic operations
   - **Igbinary serialization** — Binary serialization reduces cache entry size by 45% and improves speed by 5-10%

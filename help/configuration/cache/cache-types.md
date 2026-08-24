@@ -107,18 +107,18 @@ Where:
 - `<frontend_option>`, `<frontend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the frontend cache on creation.
 
 - `<backend_type>` -- The low-level backend cache type. You can specify:
-    - **Modern Symfony Cache (2.4.9+, recommended)**: Simplified names like `valkey` or `file`
-    - **Legacy (Zend-based)**: Full class name compatible with `Zend_Cache_Backend` that implements `Zend_Cache_Backend_Interface`
+    - **Symfony Cache (2.4.9+, recommended)**: Simplified names like `valkey` or `file`
+    - **Zend-based**: Full class name compatible with `Zend_Cache_Backend` that implements `Zend_Cache_Backend_Interface`
 
 - `<backend_option>`, `<backend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the backend cache on creation.
 
 >[!NOTE]
 >
->**Legacy vs Modern implementation:**
+>**Zend-based vs Symfony Cache implementation:**
 >
->- **Legacy (Zend-based)**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
->- **Modern (Symfony Cache)**: `'backend' => 'valkey'` for Commerce versions 2.4.9+ and current patch releases for the 2.4.5 - 2.4.8 release lines where Valkey is the supported cache backend.
+>- **Zend-based**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
+>- **Symfony Cache**: `'backend' => 'valkey'` for Commerce versions 2.4.9+ and current patch releases for the 2.4.5 - 2.4.8 release lines where Valkey is the supported cache backend.
 >
->The modern Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
+>The Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
 
 See the [Laminas documentation](https://docs.laminas.dev/) for Zend-based options. For Symfony Cache configuration, see the [Redis](redis-pg-cache.md) and [Valkey](valkey-pg-cache.md) articles in this documentation.
