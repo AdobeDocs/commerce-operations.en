@@ -120,7 +120,7 @@ The location depends on how you installed the Commerce software. If you cloned t
 
 ## To change the directory from your module
 
-1. [Create a module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Create a module](https://developer.adobe.com/commerce/php/development/build/component-file-structure)
 1. In your module `etc/di.xml` add instructions:
 
    ```xml

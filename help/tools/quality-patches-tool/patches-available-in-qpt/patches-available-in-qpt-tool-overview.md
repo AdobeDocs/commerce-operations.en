@@ -50,7 +50,7 @@ Please refer to [Commerce > Tools > Usage](../usage.md) in our developer documen
 
 ### How to install and use QPT for Adobe Commerce on cloud infrastructure
 
-Please refer to [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in our developer documentation for details on how to install and use QPT for applying and reverting patches on Adobe Commerce on cloud infrastructure.
+Please refer to [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in our developer documentation for details on how to install and use QPT for applying and reverting patches on Adobe Commerce on cloud infrastructure.
 
 ## Related reading
 

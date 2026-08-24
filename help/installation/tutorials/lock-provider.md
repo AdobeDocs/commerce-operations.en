@@ -2,7 +2,7 @@
 title: Configure the lock provider
 description: Follow these steps to prevent the duplicate cron jobs and cron groups from running on your Adobe Commerce deployment.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-last-update: 2026-04-28
+last-update: 2026-08-19
 ---
 # Configure the lock provider
 
@@ -21,7 +21,7 @@ Configure a lock provider to prevent the launch of duplicate cron jobs and cron 
 
 Adobe Commerce uses the database to save locks by default. If you have multiple nodes on your servers, we recommend using Zookeeper as the lock provider.
 
-If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud).
 
 ### Command usage
 

@@ -17,9 +17,9 @@ Adobe Commerce on cloud infrastructure 2.4.x and later
 
 Upgrade the services and components used by Adobe Commerce before they reach or are close to the end of life date. This helps keep up with PCI compliance and decrease security vulnerabilities. 
 
-Customers on Starter plans can self-serve on services upgrades. Refer to [Change service version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) for details on how to do this.  
+Customers on Starter plans can self-serve on services upgrades. Refer to [Change service version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) for details on how to do this.  
 
-Customers on Pro plans can only self-serve on services upgrades in their [Integration environment](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). For services upgrades on Production, you must [submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the upgrade.
+Customers on Pro plans can only self-serve on services upgrades in their [Integration environment](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242). For services upgrades on Production, you must [submit a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting the upgrade.
 
 >[!WARNING]
 >

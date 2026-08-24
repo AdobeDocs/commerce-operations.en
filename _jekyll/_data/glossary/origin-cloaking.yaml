@@ -10,4 +10,4 @@ relatedTerms:
 definition: |
   Origin cloaking is a security feature that allows Adobe Commerce on cloud infrastructure to block any non-Fastly traffic to prevent DDoS attacks, going to the cloud infrastructure (origin).
 
-  Learn more: [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+  Learn more: [Fastly origin cloaking](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)

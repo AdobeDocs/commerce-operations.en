@@ -42,7 +42,7 @@ To prevent performance issues when using triggers, follow these guidelines:
 
 - If you have custom triggers that write some data when the trigger is executed, move this logic to write directly to the audit tables instead. For example, by adding an additional query in the application code, after the query you aimed to create the trigger for.
 - Review existing custom triggers and consider removing them and writing directly to the tables from the application side. Check for existing triggers in your database by using the [`SHOW TRIGGERS` SQL Statement](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- For additional assistance, questions, or concerns, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- For additional assistance, questions, or concerns, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Slave connections
 
@@ -56,7 +56,7 @@ Adobe Commerce on cloud infrastructure, Pro architecture only
 
 ### Configuration
 
-In the Adobe Commerce on cloud infrastructure, you can override the default configuration for the MYSQL slave connection by setting the [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) variable. Set this variable to `true` to automatically use a read-only connection to the database.
+In the Adobe Commerce on cloud infrastructure, you can override the default configuration for the MYSQL slave connection by setting the [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) variable. Set this variable to `true` to automatically use a read-only connection to the database.
 
 **To enable the MySQL slave connection**:
 

@@ -35,7 +35,7 @@ Learn more about preparing Commerce projects for high-traffic periods:
 
 - [Holiday Readiness](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [Holiday Shopping Analysis](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
-- [Surge Capacity Increase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
+- [Surge Capacity Increase](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
 ### Load testing
 
@@ -45,12 +45,12 @@ Use GTmetrix to simulate heavy traffic and analyze site performance to get clear
 
 Learn more about testing Adobe Commerce projects:
 
-- [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html)  (cloud infrastructure)
+- [Testing guidance](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/guidance)  (cloud infrastructure)
 - [Application testing](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identify and resolve performance issues
 
-Address performance issues by using various tools like New Relic and Observation for Adobe Commerce to detect bottlenecks and optimize Commerce sites effectively. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) is included with Adobe Commerce on cloud infrastructure, and [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) is included for both cloud and on-premises deployments.
+Address performance issues by using various tools like New Relic and Observation for Adobe Commerce to detect bottlenecks and optimize Commerce sites effectively. [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) is included with Adobe Commerce on cloud infrastructure, and [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) is included for both cloud and on-premises deployments.
 
 Use these tools to analyze site performance and identify performance issues related to:
 
@@ -63,7 +63,7 @@ For example, you can closely examine transactions with a focus on product detail
 
 Learn more about managing site performance:
 
-- [Performance monitoring](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (cloud infrastructure)
+- [Performance monitoring](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) (cloud infrastructure)
 - [Configuration best practices](/help/performance/configuration.md)
 - [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -75,7 +75,7 @@ Addressing MySQL performance issues by implementing database clustering and quer
 
 High-traffic websites often face database bottlenecks, primarily caused by reliance on a single MySQL server. You can address these bottlenecks by implementing database clustering, a distributed architecture that improves performance and ensures high availability.
 
-Database clustering minimizes the impact of database-related issues during peak traffic periods by enabling multiple web nodes to connect to multiple MySQL servers. Use tools like Galera Cluster to set up database clustering for Commerce sites. Galera Cluster is included with [Adobe Commerce projects deployed on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
+Database clustering minimizes the impact of database-related issues during peak traffic periods by enabling multiple web nodes to connect to multiple MySQL servers. Use tools like Galera Cluster to set up database clustering for Commerce sites. Galera Cluster is included with [Adobe Commerce projects deployed on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture).
 
 #### Optimizing MySQL queries
 
@@ -105,6 +105,6 @@ Also, you can use Observation for Adobe Commerce to view cron-related performanc
 Learn more about Adobe Commerce cron implementation:
 
 - [Cron (scheduled tasks)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) in the _Commerce Admin Systems User Guide_
-- [Application configuration – crons property](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (cloud infrastructure)
-- [Configure and run crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (on premises)
+- [Application configuration – crons property](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) (cloud infrastructure)
+- [Configure and run crons](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) (on premises)
 - [Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (See the [!UICONTROL Cron] and [!UICONTROL MySQL] tabs.)

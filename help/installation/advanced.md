@@ -2,7 +2,7 @@
 title: Advanced on-premises installation
 description: Learn about advanced installation scenarios for Adobe Commerce on-premises deployments. Discover complex configurations and custom setup options.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-last-update: 2026-04-28
+last-update: 2026-08-19
 ---
 # Advanced on-premises installation
 
@@ -114,7 +114,7 @@ The following options specify the user information and credentials for the Admin
 
 You can create the Admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#sample-localhost-installations).
 
-The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](/help/tools/reference/commerce-on-premises.md).
 
 |Name|Value|Required?|
 |--- |--- |--- |

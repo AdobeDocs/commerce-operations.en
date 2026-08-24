@@ -56,7 +56,7 @@ Adobe Commerce 2.3.5.
 The status table includes:
 
 -  **Type**:
-    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) package are optional for Adobe Commerce installations.
+    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) package are optional for Adobe Commerce installations.
     -  `Deprecated` — Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
 
 -  **Status**:

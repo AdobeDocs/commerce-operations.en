@@ -10,7 +10,7 @@ Beginning with the `ece-tools` package 2002.1.5, you can use an environment vari
 
 ## Environment variable
 
-The `REMOTE_STORAGE` variable is used during the [deploy phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) of a cloud infrastructure project.
+The `REMOTE_STORAGE` variable is used during the [deploy phase](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) of a cloud infrastructure project.
 
 ### `REMOTE_STORAGE`
 
@@ -34,7 +34,7 @@ stage:
 
 ### Set variable with Cloud CLI
 
-Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) so that files are not shared between Production, Staging, and Integration environments. Setting the variables at the environment level gives the flexibility of only using remote storage on select environments, such as excluding the integration environment use of remote storage.
+Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) so that files are not shared between Production, Staging, and Integration environments. Setting the variables at the environment level gives the flexibility of only using remote storage on select environments, such as excluding the integration environment use of remote storage.
 
 **To add the remote storage variable using the Cloud CLI**:
 
@@ -83,7 +83,7 @@ Alternatively, you can use the Project Web Interface to add the variable to the 
 
 ### Use optional authentication
 
-The `key` and `secret` are optional. When you create the variable, you can hide the `key` and `secret` by selecting the `sensitive` option. With this setting, the values are not visible in the web interface. See [Variable visibility](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in the _Commerce on Cloud Infrastructure guide_.
+The `key` and `secret` are optional. When you create the variable, you can hide the `key` and `secret` by selecting the `sensitive` option. With this setting, the values are not visible in the web interface. See [Variable visibility](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) in the _Commerce on Cloud Infrastructure guide_.
 
 If you want to use an a different authentication method, omit the `key` and `secret` from the JSON configuration,. Configure the alternative authentication method, and verify that the server is authorized to the S3 bucket.
 
@@ -105,7 +105,7 @@ After enabling the Remote Storage module, synchronize the current media files to
 
 If you choose to use the remote storage solution with an Adobe Commerce on cloud infrastructure project, use the [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) guidance in the _Fastly_ documentation to ensure that Fastly Image Optimization works with AWS S3.
 
-Be prepared with your [Fastly credentials](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). On Pro projects, use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
+Be prepared with your [Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). On Pro projects, use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
 
 Continue setting up remote storage for cloud projects with the following tasks:
 

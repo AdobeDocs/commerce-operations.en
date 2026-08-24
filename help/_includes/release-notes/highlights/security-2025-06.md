@@ -16,6 +16,6 @@ This release includes the following highlights:
 
 >[!BEGINSHADEBOX]
 
-The fix for CVE-2025-47110 is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
+The fix for CVE-2025-47110 is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181) for details.
 
 >[!ENDSHADEBOX]

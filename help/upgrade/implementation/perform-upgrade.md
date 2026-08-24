@@ -13,7 +13,7 @@ You can upgrade _on-premises_ deployments of the Adobe Commerce application from
 
 >[!NOTE]
 >
->- For Adobe Commerce on cloud infrastructure projects, see [Upgrade Commerce version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in the Cloud Guide.
+>- For Adobe Commerce on cloud infrastructure projects, see [Upgrade Commerce version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) in the Cloud Guide.
 >- Do not use this method to upgrade if you cloned the GitHub repository. See [Upgrade a git-based installation](../developer/git-installs.md).
 
 The following instructions show you how to upgrade using the Composer package manager. Adobe Commerce 2.4.2 introduced support for Composer 2. If you are attempting to upgrade from <2.4.1, you must first upgrade to a version that is compatible with Composer 2 (for example, 2.4.2) using Composer 1 _before_ upgrading to Composer 2 for >2.4.2 upgrades. In addition, you must be running a [supported version](../../installation/system-requirements.md) of PHP.

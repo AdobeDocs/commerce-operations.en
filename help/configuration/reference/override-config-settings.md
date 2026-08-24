@@ -11,7 +11,7 @@ You can override the value of _any_ configuration setting using environment vari
 
 >[!TIP]
 >
->Check out the [Configure environments](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) topic in the _Commerce on Cloud Infrastructure guide_.
+>Check out the [Configure environments](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) topic in the _Commerce on Cloud Infrastructure guide_.
 
 ## Environment variables
 
@@ -247,6 +247,6 @@ A step-by-step example is shown in [Set configuration values using environment v
 >
 >- To use values that you set in the `$_ENV` array, you must set `variables_order = "EGPCS"`(Environment, Get, Post, Cookie, and Server) in your `php.ini` file. For details, see [PHP documentation](https://www.php.net/manual/en/ini.core.php).
 >
->- For Adobe Commerce on cloud infrastructure, if you are attempting to override configuration settings using the [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), you must prepend the variable name with `env:`. For example:
+>- For Adobe Commerce on cloud infrastructure, if you are attempting to override configuration settings using the [Project Web Interface](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), you must prepend the variable name with `env:`. For example:
 >
 >![Environment variable example](../../assets/configuration/cloud-console-envvariable.png)

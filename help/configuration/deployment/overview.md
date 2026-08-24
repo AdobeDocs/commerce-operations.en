@@ -38,7 +38,7 @@ We use the following terms to describe the systems involved with deployment.
 
 - **Staging system**—_Optional_. You can optionally set up a staging system to use for final testing of all integrated code, including User Acceptance Testing (UAT). Set up a staging system the same way you set up a production system. Except for the fact that staging is not your live store and does not process orders from customers, it is identical to production.
 
-- **Production system**—Your live store. You should make minimal direct configuration changes here, and certainly nothing that has not been tested on a Staging instance. If possible, make configuration changes with [Data Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) that have been tested on a Staging/Development instance.
+- **Production system**—Your live store. You should make minimal direct configuration changes here, and certainly nothing that has not been tested on a Staging instance. If possible, make configuration changes with [Data Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) that have been tested on a Staging/Development instance.
 
 ## Other deployment methods
 

@@ -29,7 +29,7 @@ Post-launch support and maintenance are crucial to ensure your Adobe Commerce st
 
   >[!TIP]
   >
-  >See [performance monitoring](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance) in the _Cloud Guide_.
+  >See [performance monitoring](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) in the _Cloud Guide_.
 
 
 - **Optimizing database performance**: To optimize database performance in Adobe Commerce Cloud, implement the following:
@@ -60,7 +60,7 @@ These monitoring steps help maintain optimal CDN performance and address issues 
 
 >[!TIP]
 >
->See [Fastly services overview](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) in the _Cloud Guide_.
+>See [Fastly services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) in the _Cloud Guide_.
 
 #### Regular security monitoring
 
@@ -96,7 +96,7 @@ To monitor error logging in Adobe Commerce Cloud, Adobe provides several tools a
 
 >[!TIP]
 >
->For more details on logging and error tracking practices in Adobe Commerce Cloud, see [New Relic log management](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) and [exception monitoring](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>For more details on logging and error tracking practices in Adobe Commerce Cloud, see [New Relic log management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) and [exception monitoring](/help/tools/site-wide-analysis-tool/exceptions.md).
 
 ### Security and updates
 
@@ -106,17 +106,17 @@ To stay updated and ensure the security of your Adobe Commerce Cloud system, her
 
 - **Subscribe to Adobe Commerce security alerts**: Stay informed about security vulnerabilities by [registering for notifications from Adobe](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
 
-- **Check release notes**: Regularly review [security patch release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview), which are tagged with "-pN" for versions (e.g., 2.3.5-p1), and contain critical fixes and improvements.
+- **Check release notes**: Regularly review [security patch release notes](/help/release/release-notes/security/overview.md), which are tagged with "-pN" for versions (e.g., 2.3.5-p1), and contain critical fixes and improvements.
 
 - **Apply security patches promptly**: Apply security patches as soon as they are available. This includes updating to the latest versions or applying specific patch files.
 
 - **Use cloud patches**: For Adobe Commerce Cloud, security patches can be bundled within the Cloud Tools Suite. Be sure to upgrade the suite or the Commerce version to receive these fixes.
 
-- **Automated patch management**: Consider using tools like the centralized patcher to [manage and apply patches across multiple stores automatically](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
+- **Automated patch management**: Consider using tools like the centralized patcher to [manage and apply patches across multiple stores automatically](/help/implementation-playbook/best-practices/maintenance/patching-at-scale.md).
 
 >[!TIP]
 >
->For further details and step-by-step instructions on applying patches and maintaining security, see [security patch release notes](../../../release/release-notes/security/overview.md) and [How to Apply Security Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). You should also review [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) reports.
+>For further details and step-by-step instructions on applying patches and maintaining security, see [security patch release notes](../../../release/release-notes/security/overview.md) and [How to Apply Security Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches). You should also review [Site-Wide Analysis Tool](/help/tools/site-wide-analysis-tool/access.md) reports.
 
 #### PCI compliance
 
@@ -126,11 +126,11 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Use secure transmission protocols**: Always transmit payment data over secure protocols like TLS, with encryption and proper key management.
 
-- **Utilize web application firewall (WAF)**: The Fastly-powered WAF service helps meet PCI DSS 6.6 requirements and protects against common vulnerabilities by blocking malicious traffic before it reaches your site. See more information [here](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) and [here](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
+- **Utilize web application firewall (WAF)**: The Fastly-powered WAF service helps meet PCI DSS 6.6 requirements and protects against common vulnerabilities by blocking malicious traffic before it reaches your site. See more information [here](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md) and [here](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service).
 
-- **Limit access**: Ensure that only authorized personnel have access to sensitive payment data, and [apply access control to reduce the risk of exposure](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
+- **Limit access**: Ensure that only authorized personnel have access to sensitive payment data, and [apply access control to reduce the risk of exposure](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md).
 
-- **Regular security scanning**: Perform regular PCI ASV scans and [monitor your environment](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) to address potential vulnerabilities.
+- **Regular security scanning**: Perform regular PCI ASV scans and [monitor your environment](/help/security-and-compliance/shared-responsibility.md) to address potential vulnerabilities.
 
 >[!TIP]
 >
@@ -196,9 +196,9 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Auto-scaling for traffic handling**:
   
-  - Adobe Commerce Cloud supports auto-scaling to dynamically adjust server resources (for example, web nodes) based on real-time traffic demands, ensuring that your store can handle high visitor volumes without manual intervention. See [autoscaling](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling) in the _Cloud Guide_.
+  - Adobe Commerce Cloud supports auto-scaling to dynamically adjust server resources (for example, web nodes) based on real-time traffic demands, ensuring that your store can handle high visitor volumes without manual intervention. See [autoscaling](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling) in the _Cloud Guide_.
   
-  - Web and service tiers can scale independently, adding more web nodes for increased traffic and scaling database or service nodes for backend performance during peak periods. See [scaled architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) in the _Cloud Guide_.
+  - Web and service tiers can scale independently, adding more web nodes for increased traffic and scaling database or service nodes for backend performance during peak periods. See [scaled architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) in the _Cloud Guide_.
 
 - **Performance monitoring**:
   

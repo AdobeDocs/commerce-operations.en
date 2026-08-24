@@ -44,7 +44,7 @@ For the custom role needing [!DNL Site-Wide Analysis Tool] access, do the follow
 
 >[!NOTE]
 >
->If you have verified that the user account has permission to access the [!DNL Site-Wide Analysis Tool] and the user receives a 403 error when trying to access the tool from the [!UICONTROL Admin], your instance of Adobe Commerce on cloud infrastructure could have HTTP access control enabled. The [!DNL Site-Wide Analysis Tool] Dashboard is NOT supported if you have HTTP Auth enabled. For more information about resolving this issue, see our [Support article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>If you have verified that the user account has permission to access the [!DNL Site-Wide Analysis Tool] and the user receives a 403 error when trying to access the tool from the [!UICONTROL Admin], your instance of Adobe Commerce on cloud infrastructure could have HTTP access control enabled. The [!DNL Site-Wide Analysis Tool] Dashboard is NOT supported if you have HTTP Auth enabled. For more information about resolving this issue, see our [Support article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Step 2: Access [!DNL Site-Wide Analysis Tool]
 

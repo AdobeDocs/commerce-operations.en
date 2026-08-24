@@ -35,7 +35,7 @@ topic_v2:
 
 >[!WARNING]
 >
->We _strongly recommend_ you use Varnish in production. The built-in full-page caching—to either the file system or [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)—is much slower than Varnish, and Varnish is designed to accelerate HTTP traffic.
+>We _strongly recommend_ you use Varnish in production. The built-in full-page caching—to either the file system or [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching)—is much slower than Varnish, and Varnish is designed to accelerate HTTP traffic.
 
 For more information about Varnish, see:
 

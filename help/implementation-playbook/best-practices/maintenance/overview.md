@@ -67,7 +67,7 @@ The following sections include best practice information for the maintenance pha
 | [Audit frontend performance](frontend-performance.md)                                                                                           | Identify and address issues that negatively impact site performance by using web performance tools.       |
 | [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)                                                               | Tips for maintaining your Adobe Commerce sites to maximize business value and uptime.                     |
 | [Use the [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)  | View important insights about your Adobe Commerce site in one place.                                      |
-| [Monitor performance, disk space, and logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Use New Relic to monitor key performance insights about your Adobe Commerce on cloud infrastructure site. |
+| [Monitor performance, disk space, and logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | Use New Relic to monitor key performance insights about your Adobe Commerce on cloud infrastructure site. |
 | [Respond to security incidents](respond-to-security-incident.md)                                                                                | Use New Relic to monitor key performance insights about your Adobe Commerce on cloud infrastructure site. |
 
 ### Upgrades

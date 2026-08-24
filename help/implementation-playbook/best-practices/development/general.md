@@ -44,7 +44,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ## Versioning
 
 Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](https://semver.org/).
-Dependencies on the Adobe Commerce codebase SHOULD follow the [Module Version Dependencies guidelines](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+Dependencies on the Adobe Commerce codebase SHOULD follow the [Module Version Dependencies guidelines](https://developer.adobe.com/commerce/php/development/versioning/dependencies).
 
 ## REVISION CONTROL
 
@@ -52,7 +52,7 @@ Commits MUST be accompanied by meaningful commit messages.
 
 ## Security
 
-1. [Non-secure functions](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) SHOULD NOT be used.
-1. [XSS-prevention strategies](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) SHOULD be applied.
-1. [Content Security Policies](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) SHOULD be applied.
+1. [Non-secure functions](https://developer.adobe.com/commerce/php/development/security/non-secure-functions) SHOULD NOT be used.
+1. [XSS-prevention strategies](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting) SHOULD be applied.
+1. [Content Security Policies](https://developer.adobe.com/commerce/php/development/security/content-security-policies) SHOULD be applied.
 1. New Adobe Commerce instances SHOULD be delivered on the latest security release of a version that has not yet reached the "End of Security Fixes" date. See [Adobe Commerce Software Lifecycle Policy](../../../release/lifecycle-policy.md).

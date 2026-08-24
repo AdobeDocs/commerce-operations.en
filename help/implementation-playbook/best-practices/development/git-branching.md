@@ -34,7 +34,7 @@ Each development phase should have a corresponding branch in Git to track code c
 
 >[!TIP]
 >
->Adobe Commerce on cloud infrastructure projects contain specific branches that correspond to different environments. See the [Pro project workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) and [Starter project workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) in the _Cloud Guide_.
+>Adobe Commerce on cloud infrastructure projects contain specific branches that correspond to different environments. See the [Pro project workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) and [Starter project workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) in the _Cloud Guide_.
 
 ## Branch strategies
 

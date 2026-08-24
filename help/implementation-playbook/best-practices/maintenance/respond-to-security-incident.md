@@ -67,9 +67,9 @@ The first step of incident analysis is to gather as many facts as possible, as q
 
   Use the **Security** tab in the tool to get a clear view of potential security issues to help identify root causes and keep sites performing optimally.
 
-- Analyze logs with [New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
+- Analyze logs with [New Relic Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  Adobe Commerce on cloud infrastructure Pro projects include the [New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) service. The service is pre-configured to aggregate all log data from your Staging and Production environments to display it in a centralized log management dashboard where you can search and visualize aggregated data.
+  Adobe Commerce on cloud infrastructure Pro projects include the [New Relic Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) service. The service is pre-configured to aggregate all log data from your Staging and Production environments to display it in a centralized log management dashboard where you can search and visualize aggregated data.
 
   For other Commerce projects, you can set up and use the [New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) service to complete the following tasks:
   - Use [New Relic queries](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) to search aggregated log data.
@@ -87,9 +87,9 @@ Continue to closely monitor the site after the incident as many sites get compro
 
 - [Review Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Verify that Admin security settings follow security best practices.
 
-- [Review user accounts for Adobe Commerce on cloud infrastructure projects](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)—Remove old, unused, or suspicious accounts and rotate passwords for all cloud project Admin users. Ensure that account security settings are configured correctly.
+- [Review user accounts for Adobe Commerce on cloud infrastructure projects](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)—Remove old, unused, or suspicious accounts and rotate passwords for all cloud project Admin users. Ensure that account security settings are configured correctly.
 
-- [Audit SSH keys](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) for Adobe Commerce on cloud infrastructure—Review, delete, and rotate SSH keys.
+- [Audit SSH keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) for Adobe Commerce on cloud infrastructure—Review, delete, and rotate SSH keys.
 
 ### Audit code
 

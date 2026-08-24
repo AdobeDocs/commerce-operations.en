@@ -11,7 +11,7 @@ type: Troubleshooting
 The ACSD-63283 patch fixes the issue where ordering items from the [!UICONTROL Gift Registry] causes an exception and ensures [!UICONTROL Gift Registry Updates] include only the correct items. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63283. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 >[!NOTE] 
->This patch replaces and extends the [ACSD-56280](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT patch.
+>This patch replaces and extends the [ACSD-56280](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed.md) QPT patch.
 
 ## Affected products and versions
 
@@ -58,7 +58,7 @@ Customer B receives the email with items from all gift registries.
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 
 ## Related reading

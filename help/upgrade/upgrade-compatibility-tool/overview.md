@@ -41,13 +41,13 @@ To connect with the [!DNL Upgrade Compatibility Tool] team, contact us on the En
 
 The [!DNL Upgrade Compatibility Tool] uses rules defined within our [Coding Standards](https://developer.adobe.com/commerce/php/coding-standards/) to ensure that your project is following Adobe Commerce best practices and to help you improve and extend the [!DNL Upgrade Compatibility Tool].
 
-Refer to the [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) topic for more information on contributing coding standards.
+Refer to the [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) topic for more information on contributing coding standards.
 
 ## Resources
 
 See the following resources to help you understand Adobe Commerce upgrades:
 
 - The [upgrade guide](../overview.md) provides an overview of the typical Adobe Commerce upgrade journey and best practices to follow along that journey.
-- The [upcoming releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) page provides the dates for scheduled and upcoming releases.
+- The [upcoming releases](/help/release/schedule.md) page provides the dates for scheduled and upcoming releases.
 - The [community resources](https://developer.adobe.com/commerce/contributor/community/) page is to place to start discussions, or finding more information.
 - Check the [related tools](../upgrade-compatibility-tool/related-tools.md) page for useful tools in your typical upgrade journey.

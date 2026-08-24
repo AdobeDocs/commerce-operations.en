@@ -31,7 +31,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Change the storage engine to InnoDB
 
-In the `db_schema.xml` file declaring the table, set the `engine` attribute value for the corresponding `table` node to `innodb`. For reference, see [Configure declarative schema > table node](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in our developer documentation.
+In the `db_schema.xml` file declaring the table, set the `engine` attribute value for the corresponding `table` node to `innodb`. For reference, see [Configure declarative schema > table node](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) in our developer documentation.
 
 The declarative scheme was introduced in Adobe Commerce on cloud infrastructure version 2.3.
 
@@ -53,9 +53,9 @@ To determine which search engine is currently in use, run the following command:
 
 For configuration instructions, see the Developer Guide for Adobe Commerce on cloud:
 
-- [Set up the OpenSearch service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Set up the OpenSearch service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Set up the Elasticsearch service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Set up the Elasticsearch service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## Avoid custom triggers
 
@@ -70,7 +70,7 @@ To learn about alternatives to using custom triggers, see [MySQL triggers](mysql
 
 ## Upgrade [!DNL ECE-Tools] to version 2002.0.21 or higher {#ece-tools-version}
 
-To avoid potential issues with cron deadlocks, upgrade ECE-Tools to version 2002.0.21 or higher. For instructions, see [Update `ece-tools` version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in our developer documentation.
+To avoid potential issues with cron deadlocks, upgrade ECE-Tools to version 2002.0.21 or higher. For instructions, see [Update `ece-tools` version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) in our developer documentation.
 
 ## Switch indexer mode safely
 

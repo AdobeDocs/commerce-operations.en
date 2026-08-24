@@ -13,7 +13,7 @@ If necessary, copy the existing `index.php` entry point script for your website 
 
    Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.
 
-   Additional tasks are required to set up Adobe Commerce on cloud infrastructure. After you complete the tasks discussed in this topic, see [Set up multiple websites or stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in the _Commerce on Cloud Infrastructure guide_.
+   Additional tasks are required to set up Adobe Commerce on cloud infrastructure. After you complete the tasks discussed in this topic, see [Set up multiple websites or stores](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) in the _Commerce on Cloud Infrastructure guide_.
 
 - You use one virtual host per website; the virtual host configuration file is `/etc/httpd/httpd.conf`
 
@@ -104,7 +104,7 @@ Unless you have DNS set up for your stores' URLs, you must add a static route to
 >[!INFO]
 >
 >- Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.
->- Additional tasks are required to set up Adobe Commerce on cloud infrastructure; see [Set up multiple Cloud websites or stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in the _Commerce on Cloud Infrastructure guide_.
+>- Additional tasks are required to set up Adobe Commerce on cloud infrastructure; see [Set up multiple Cloud websites or stores](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) in the _Commerce on Cloud Infrastructure guide_.
 
 ### Troubleshooting
 
