@@ -194,7 +194,7 @@ df -h /dev/shm
 
 Usage can vary across nodes, but it should converge to a similar value.
 
-## Enable slave connection
+## Enable read-only replica connection {#enable-slave-connection}
 
 Enable the read-only replica connection in the `.magento.env.yaml` file to let Adobe Commerce use an additional cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
 
