@@ -356,7 +356,7 @@ Use the following example to configure separate frontends for `symfony_l2` stale
 
 >[!NOTE]
 >
->These improvements apply to Adobe Commerce 2.4.9 deployments using `symfony_l2` and are available in patch ACP2E-5132. For Adobe Commerce on-premises, apply this patch using the Quality Patches Tool (QPT). For Adobe Commerce on Cloud, this patch is delivered automatically via [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
+>These improvements apply to Adobe Commerce 2.4.9 deployments using `symfony_l2` and are available in patch ACP2E-5132. For Adobe Commerce on-premises, apply this patch using the Quality Patches Tool (QPT). For Adobe Commerce on Cloud, this patch is delivered automatically via the [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) package when you upgrade to the latest version of ece-tools.
 
 The most recent updates improve Symfony L2 cache scalability, reduced unnecessary filesystem I/O, and enhanced cache consistency and reliability.
 
