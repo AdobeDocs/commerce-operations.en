@@ -42,7 +42,7 @@ topic_v2:
 Use these recommendations when configuring Redis or Valkey for Adobe Commerce application cache, session storage, and L2 cache for Adobe Commerce on Cloud deployments.
 
 - Configure L2 cache, including Symfony L2 cache
-- Enable read-only replica connection
+- On Cloud Pro environments, enable read-only replica (slave) connection. This capability is not available on Starter environments.
 - Preload keys
 - Enable stale cache
 - Separate cache and session
