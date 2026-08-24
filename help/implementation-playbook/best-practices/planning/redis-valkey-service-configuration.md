@@ -202,6 +202,10 @@ Enable the read-only replica connection in the `.magento.env.yaml` file to let A
 >
 >Unlike `VALKEY_BACKEND` and `REDIS_BACKEND`, the `VALKEY_USE_SLAVE_CONNECTION` and `REDIS_USE_SLAVE_CONNECTION` variables are tied to a specific service. Set the variable that matches the cache service actually available in your environment—not necessarily the same service implied by whichever `*_BACKEND` variable you used to configure L2 cache.
 
+>[!NOTE]
+>
+>Whether a replica connection is available depends on your project's topology (for example, single-node versus split or HA architecture) and on the `ece-tools` version. Before relying on this setting, confirm that a replica relationship exists for your service by running `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp` and checking for a `USE_SLAVE_CONNECTION` entry. To confirm whether your topology provisions a replica endpoint, upgrade `ece-tools` and redeploy, or contact Adobe Commerce Support if no `USE_SLAVE_CONNECTION` entry is present.
+
 >[!BEGINTABS]
 
 >[!TAB Using VALKEY_USE_SLAVE_CONNECTION]
@@ -349,11 +353,23 @@ stage:
 
 >[!TAB Configure stale cache with REDIS_BACKEND]
 
-Enable the replica connection in the `.magento.env.yaml` file. This change allows Adobe Commerce to use an additional cache connection for reads while continuing to use the primary endpoint for writes. This configuration can reduce read load on the primary cache service and distribute read traffic more effectively.
+For Redis:
 
->[!NOTE]
->
->Whether a replica connection is available depends on your project's topology (for example, single-node versus split or HA architecture) and on the `ece-tools` version. Before relying on this setting, confirm that a replica relationship exists for your service by running `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp` and checking for a `USE_SLAVE_CONNECTION` entry. To confirm whether your topology provisions a replica endpoint, upgrade `ece-tools` and redeploy, or contact Adobe Commerce Support if no `USE_SLAVE_CONNECTION` entry is present.
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            use_stale_cache: true
+```
+
+>[!ENDTABS]
+
+>[!WARNING]
 >
 >If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as is commonly [done on-premises](../../../configuration/cache/level-two-cache.md#stale-cache-options).
 
@@ -439,33 +455,51 @@ stage:
           backend_options:
             use_stale_cache: false
 
->[!BEGINTABS]
+        # Now, create a new frontend called 'stale_cache_enabled'.
+        # It must contain the same backend connection settings as the frontend 'default':
 
->[!TAB Valkey configuration]
+        stale_cache_enabled:
+          id_prefix: '001_'
+          backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+          backend_options:
+            remote_backend: '\Magento\Framework\Cache\Backend\Redis'
+            remote_backend_options:
+              server: localhost
+              port: 6370 # Use the same port used by the frontend 'default' in env.php
+              database: 1
+              load_from_slave:
+                server: localhost
+                port: 26370 # Use the same port used by the frontend 'default' in env.php
+              retry_reads_on_master: 1
+              read_timeout: 10
+            local_backend: 'Cm_Cache_Backend_File'
+            local_backend_options:
+              cache_dir: /dev/shm/
+            use_stale_cache: true # stale cache here is enabled
 
-For Valkey, use:
+      # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
 
-```yaml
-stage:
-  deploy:
-    VALKEY_USE_SLAVE_CONNECTION: true
+      type:
+        default:
+          frontend: default
+        layout:
+          frontend: stale_cache_enabled
+        reflection:
+          frontend: stale_cache_enabled
+        config_integration:
+          frontend: stale_cache_enabled
+        config_integration_api:
+          frontend: stale_cache_enabled
+        translate:
+          frontend: stale_cache_enabled
+        # add other cache types as needed...
 ```
-
-For environment variable configuration details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
-
->[!TAB Redis configuration]
-
-For Redis, use:
-
-```yaml
-stage:
-  deploy:
-    REDIS_USE_SLAVE_CONNECTION: true
-```
-
-For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+>If the source frontend is configured with additional backend options like compression, retries, preload keys, or other tuning values, copy those options to `stale_cache_enabled` so that the new frontend maintains the same behavior.
 
 ## Separate cache and session instances
 
@@ -476,6 +510,8 @@ Cache and session configuration are independent. `SESSION_CONFIGURATION` does no
 >Provisioning a dedicated session instance on Production and Staging isn't self-service. It requires submitting an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with your updated `.magento/services.yaml` and `.magento.app.yaml` files, as described in step 3 below.
 
 To provision a dedicated instance for sessions, follow the steps below:
+
+>[!BEGINTABS]
 
 >[!TAB Valkey]
 
@@ -579,12 +615,12 @@ To provision a dedicated instance for sessions, follow the steps below:
 1. Update the `.magento.app.yaml` configuration file.
 
    ```yaml
-      relationships:
-        database: "mysql:mysql"
-        redis: "redis:redis"
-        redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-        search: "search:elasticsearch"
-        rabbitmq: "rabbitmq:rabbitmq"
+   relationships:
+     database: "mysql:mysql"
+     redis: "redis:redis"
+     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+     search: "search:elasticsearch"
+     rabbitmq: "rabbitmq:rabbitmq"
    ```
 
 1. Request a new Redis instance dedicated to sessions on Production and Staging environments.
