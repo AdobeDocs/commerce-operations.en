@@ -37,7 +37,7 @@ L2 (two-level) caching reduces network traffic between the remote cache storage 
 
 With L2 caching, each web node stores frequently accessed data locally and uses the remote cache for two purposes:
 
-- Checking the cache data version to ensure the latest cache is stored locally
+- Checking the cache data version to ensure that the latest cache is stored locally
 - Transferring updated cache data from the remote store to the local machine
 
 Commerce stores the hashed data version in the remote cache, with the suffix `:hash` appended to the regular key. When the local cache is outdated, the data is fetched from the remote machine through a cache adapter.
@@ -47,11 +47,9 @@ There are two L2 cache implementations available in Adobe Commerce:
 | Implementation | Version | Description |
 | -------------- | ------- | ----------- |
 | [`RemoteSynchronizedCache`](#remotesynchronizedcache-l2-cache-configuration) | <2.4.9 | Zend-based two-level cache with `Cm_Cache_Backend_File` for local storage |
-| [Symfony L2 (`symfony_l2`)](#symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance and enhanced performance, Valkey only |
+| [Symfony L2 (`symfony_l2`)](#symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-based L2 with PSR-6 compliance, Valkey only |
 
 ## RemoteSynchronizedCache L2 cache configuration
-
-The Legacy L2 cache configuration instructions apply to older versions of Adobe Commerce. If you are on Adobe Commerce versions 2.4.9 or later, use Valkey with the [Modern Symfony L2 cache implementation](#modern-symfony-l2-cache-implementation).
 
 >[!NOTE]
 >
@@ -104,13 +102,13 @@ Where:
 
 For Adobe Commerce versions earlier than 2.4.9 that support Redis, Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`.
 
-Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it drastically decreases the pressure on Redis. Do not forget to add the suffix `:hash` for preload keys.
+Adobe recommends using the [`cache preload`](redis-pg-cache.md#redis-preload-feature) feature, as it reduces the load on Redis. Ensure that you add the suffix `:hash` for preload keys.
 
 ## Stale cache options
 
-Starting with Commerce 2.4, the `use_stale_cache` option can improve performance in specific cases by serving previously cached data while new cache data is generated in a parallel process. The recommended cache types and trade-offs described in this section apply to both the legacy `RemoteSynchronizedCache` and `symfony_l2` implementations. For a `symfony_l2` configuration example, see [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
+Starting with Commerce 2.4, the `use_stale_cache` option can improve performance in specific cases by serving previously cached data while new cache data is generated in a parallel process. The recommended cache types and trade-offs described in this section apply to both the `RemoteSynchronizedCache` and `symfony_l2` implementations. For a `symfony_l2` configuration example, see [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
 
-Generally, the trade-off with lock waiting is acceptable from a performance perspective. However, as the number of blocks or cache entries grows, lock waits take more time. In some scenarios, the wait can be up to **the number of keys** x **lookup timeout** for the process. In rare cases, a merchant can have hundreds of keys in the `Block/Config` cache, so even a small lookup timeout for a lock can cost seconds.
+Generally, the trade-off with lock waiting is acceptable from a performance perspective. However, as the number of blocks or cache entries grows, lock waits take more time. In some scenarios, the wait can be up to **the number of keys** x **lookup timeout** for the process. In rare cases, a user can have hundreds of keys in the `Block/Config` cache, so even a small lookup timeout for a lock can cost seconds.
 
 >[!IMPORTANT]
 >
@@ -128,7 +126,7 @@ Adobe recommends enabling the `use_stale_cache` option only for cache types that
 
 Adobe does not recommend enabling the `use_stale_cache` option for the `default` cache type.
 
-The following code shows an example configuration for the legacy `RemoteSynchronizedCache` backend. For a `symfony_l2` example, see [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
+The following code shows an example configuration for the `RemoteSynchronizedCache` backend. For a `symfony_l2` example, see [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
 
 ```php
 'cache' => [
@@ -192,7 +190,7 @@ The following code shows an example configuration for the legacy `RemoteSynchron
 
 ## Symfony L2 cache implementation
 
-In Commerce versions 2.4.9+, use the Symfony L2 cache implementation (`symfony_l2` backend) instead of `RemoteSynchronizedCache`. Symfony L2 cache provides a PSR-6 compliant caching implementation with significant performance improvements over `RemoteSynchronizedCache`.
+In Commerce versions 2.4.9+, use the Symfony L2 cache implementation (`symfony_l2` backend) instead of `RemoteSynchronizedCache`. Symfony L2 cache provides a PSR-6 compliant caching implementation using Valkey.
 
 >[!IMPORTANT]
 >
@@ -208,15 +206,15 @@ In Commerce versions 2.4.9+, use the Symfony L2 cache implementation (`symfony_l
 
 ### Migrating from RemoteSynchronizedCache to Symfony L2
 
-If you are upgrading an on-premises installation from the legacy `RemoteSynchronizedCache` backend to `symfony_l2`, review the following before updating `app/etc/env.php`. Changing only the `backend` value is not sufficient. The configuration structure, key names, and some default behaviors differ.
+If you are upgrading an on-premises installation from the `RemoteSynchronizedCache` backend to `symfony_l2`, review the following before updating `app/etc/env.php`. Changing only the `backend` value is not sufficient. The configuration structure, key names, and some default behaviors differ.
 
-- **The configuration structure changes.** `remote_backend`, `remote_backend_options`, and `local_backend` use different values under `symfony_l2`. For example, `remote_backend` becomes `'valkey'` instead of a fully qualified class name. Use the [configuration example](#configuration-example-with-symfony-l2-cache) below as your starting point rather than editing your existing legacy configuration in place.
+- **The configuration structure changes.** `remote_backend`, `remote_backend_options`, and `local_backend` use different values under `symfony_l2`. For example, `remote_backend` becomes `'valkey'` instead of a fully qualified class name. Use the [configuration example](#configuration-example-with-symfony-l2-cache) below as your starting point rather than editing your existing `RemoteSynchronizedCache` configuration in place.
 
-- **`preload_keys` is not recommended with `symfony_l2`.** If your legacy configuration includes `preload_keys`, remove it as part of the migration. Preloading keys does not improve performance under `symfony_l2` and can increase load on Valkey by triggering additional, unnecessary key lookups.
+- **`preload_keys` is not recommended with `symfony_l2`.** If your `RemoteSynchronizedCache` configuration includes `preload_keys`, remove it as part of the migration. Preloading keys does not improve performance under `symfony_l2` and can increase load on Valkey by triggering additional, unnecessary key lookups.
 
 - **Compression requires an explicit flag.** Setting `compression_lib` alone does not enable compression under `symfony_l2`. See [Backend options for Symfony L2 cache](#backend-options-for-symfony-l2-cache) for the required `compress_data` setting.
 
-- **Stale cache is not enabled by default for manually configured on-premises deployments.** `use_stale_cache` defaults to `false` under `symfony_l2` (see the [backend options table](#backend-options-for-symfony-l2-cache)). If your legacy configuration used the `stale_cache_enabled` frontend, you must explicitly recreate it using the pattern in [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
+- **Manually configured on-premises deployments do not enable stale cache by default.** `use_stale_cache` defaults to `false` under `symfony_l2` (see the [backend options table](#backend-options-for-symfony-l2-cache)). If your `RemoteSynchronizedCache` configuration used the `stale_cache_enabled` frontend, you must explicitly recreate it using the pattern in [Symfony L2 cache with stale cache](#symfony-l2-cache-with-stale-cache).
 
 >[!NOTE]
 >
@@ -228,7 +226,7 @@ If you are upgrading an on-premises installation from the legacy `RemoteSynchron
 
 >[!NOTE]
 >
->This example is for on-premises `app/etc/env.php` configuration. For Adobe Commerce on Cloud, cache configuration is managed automatically by `ece-tools`. Instead of editing `env.php` directly, see [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache).
+>This example is for on-premises `app/etc/env.php` configuration. For Adobe Commerce on Cloud, `ece-tools` manages cache configuration automatically. Instead of editing `env.php` directly, see [Configure Symfony L2 cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache).
 
 In the `app/etc/env.php` file, use the simplified `symfony_l2` backend type for L2 cache. This example does not include the `preload_keys` configuration, which is not recommended with `symfony_l2`. For details, see [Migrating from RemoteSynchronizedCache to Symfony L2](#migrating-from-remotesynchronizedcache-to-symfony-l2).
 
@@ -343,14 +341,14 @@ Use the following example to configure separate frontends for `symfony_l2` stale
 | `cleanup_percentage` | integer | `95` | L1 cache cleanup threshold (1-100) |
 | `use_stale_cache` | boolean | `false` | Enable stale cache for high availability |
 | `compress_data` | boolean | `false` | Enables compression when combined with `compression_lib`. Setting `compression_lib` alone does not enable compression. |
-| `persistent` | boolean | `true` | Controls persistent connections to the remote backend. Set to `false` (`'0'`) to match legacy Zend cache behavior, which defaults to non-persistent connections. |
+| `persistent` | boolean | `true` | Controls persistent connections to the remote backend. Set to `false` (`'0'`) to match Zend cache behavior, which defaults to non-persistent connections. |
 
 
 >[!NOTE]
 >
->- The `remote_backend` option also accepts a value of `redis`, but Redis is not officially supported (see the note above under [Modern Symfony L2 cache implementation](#modern-symfony-l2-cache-implementation)).
+>- The `remote_backend` option also accepts a value of `redis`, but Redis is not officially supported (see the note above under [Symfony L2 cache implementation](#symfony-l2-cache-implementation)).
 >
->- `frontend_options.write_control`, used in the legacy `RemoteSynchronizedCache` configuration, does not apply to `symfony_l2`.
+>- `frontend_options.write_control`, used in the `RemoteSynchronizedCache` configuration, does not apply to `symfony_l2`.
 
 ### Enhanced Symfony L2 cache performance and reliability
 
@@ -358,7 +356,7 @@ Use the following example to configure separate frontends for `symfony_l2` stale
 >
 >These improvements apply to Adobe Commerce 2.4.9 deployments using `symfony_l2` and are available in patch ACP2E-5132. For Adobe Commerce on-premises, apply this patch using the Quality Patches Tool (QPT). For Adobe Commerce on Cloud, this patch is delivered automatically via the [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) package when you upgrade to the latest version of ece-tools.
 
-The most recent updates improve Symfony L2 cache scalability, reduced unnecessary filesystem I/O, and enhanced cache consistency and reliability.
+The most recent updates improve Symfony L2 cache scalability, reduce unnecessary filesystem I/O, and enhance cache consistency and reliability.
 
 #### Improved file-based cache behavior
 
@@ -366,7 +364,7 @@ For deployments using the file-based cache (without Valkey), the local tag index
 
 #### Stale tag membership fix after retagging
 
-Retagging a cache entry could leave it associated with tags it no longer belonged to. Stale tag memberships are now cleared on retag, so cache entries are invalidated only by the tags currently assigned to them.
+Retagging a cache entry can leave it associated with tags it no longer belongs to. Stale tag memberships are now cleared on retag, so cache entries are invalidated only by the tags currently assigned to them.
 
 #### Redundant remote write fix for unchanged saves
 
