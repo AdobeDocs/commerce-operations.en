@@ -29,10 +29,7 @@ If you do not see any projects in the [!DNL Patching Automation] user interface,
 
 ## Accessing [!DNL Patching Automation]
 
-[!DNL Patching Automation] is available as a tab within the [!DNL Site-Wide Analysis Tool] dashboard. You can access it two ways:
-
-* **Directly** - Navigate to [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
-* **From your Admin Panel** - On the Admin sidebar, go to **Reports** > **System Insights** > **Site-Wide Analysis Tool**. See [How to access the Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) for prerequisites and permission setup.
+[!DNL Patching Automation] is available as a tab within the [!DNL Site-Wide Analysis Tool] dashboard. You can access it from your Admin Panel by going to **Reports** > **System Insights** > **Site-Wide Analysis Tool** on the Admin sidebar. See [How to access the Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) for prerequisites and permission setup.
 
 Once you're in the dashboard:
 

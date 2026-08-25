@@ -5,7 +5,7 @@ hide: true
 ---
 # [!DNL Adobe Commerce Patching Automation]
 
-[!DNL Adobe Commerce Patching Automation] (formerly [!DNL Cloud Automation Patching Service], or [!DNL CAPS]) is a tool that automates the process of applying and reverting patches for Adobe Commerce on Cloud environments. It offers Commerce project administrators a streamlined workflow to apply and revert patches. Built-in validation and health checks help ensure Cloud environments remain stable and secure.
+[!DNL Adobe Commerce Patching Automation] is a tool that automates the process of applying and reverting patches for Adobe Commerce on Cloud environments. It offers Commerce project administrators a streamlined workflow to apply and revert patches. Built-in validation and health checks help ensure Cloud environments remain stable and secure.
 
 This guide is designed for Adobe Commerce Cloud merchants and partners who want to streamline their patching process, reduce the risk of patch-related issues, improve their environment's security and stability, and automate routine patch operations.
 

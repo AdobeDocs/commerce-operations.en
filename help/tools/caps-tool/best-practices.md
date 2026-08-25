@@ -18,11 +18,11 @@ Before applying patches, ensure your environment is properly prepared:
 * **Adobe Commerce Cloud account**
   * Active Adobe Commerce Cloud subscription
   * Valid Adobe Commerce license
-  * Repository access credentials configured
+  * [Composer authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configured to access the Adobe Commerce repository
   * Project and environment permissions
 
 * **Environment resources**
-  * Available environment slots for the temporary integration environment
+  * The project has capacity to create an additional active integration environment for the patch operation — see [Manage branches with the Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) for information about active environment limits
   * Sufficient storage, CPU, and memory resources
   * Network access to Adobe repositories
   * Stable parent environment for synchronization
