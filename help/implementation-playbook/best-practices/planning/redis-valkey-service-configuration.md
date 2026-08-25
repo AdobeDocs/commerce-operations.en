@@ -57,17 +57,13 @@ Use these recommendations when configuring Redis or Valkey for Adobe Commerce ap
 
 Configure the L2 cache by setting the `VALKEY_BACKEND` or `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
-For Adobe Commerce 2.4.9 and versions later than 2.4.8-p4, 2.4.7-p9, 2.4.6-p14, and 2.4.5-p16, configure L2 cache with Valkey. The Redis configuration examples on this page apply solely to supported Adobe Commerce versions that use Redis. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
-
 For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](../../../configuration/cache/level-two-cache.md).
 
 >[!IMPORTANT]
 >
->Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
+>The Redis configuration examples on this page apply solely to supported Adobe Commerce versions that use Redis. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
 
->[!NOTE]
->
->Setting `VALKEY_BACKEND` or `REDIS_BACKEND` configures the L2 cache backend, but it does not determine whether Adobe Commerce uses Redis or Valkey as the remote cache service. The class value you assign (for example, `\Magento\Framework\Cache\Backend\Redis` or `symfony_l2`) doesn't select the service either. Adobe Commerce uses whichever service—Redis or Valkey—is available in your environment, and Redis takes priority if both are available. For example, `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\Redis'` uses Redis if it's available, and falls back to Valkey only if Redis is not available.
+Setting `VALKEY_BACKEND` or `REDIS_BACKEND` configures the L2 cache backend, but it does not determine whether Adobe Commerce uses Redis or Valkey as the remote cache service. The class value you assign (for example, `\Magento\Framework\Cache\Backend\Redis` or `symfony_l2`) does not select the service either. Adobe Commerce uses whichever service—Redis or Valkey—is available in your environment, and Redis takes priority if both are available. For example, `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\Redis'` uses Redis if it's available, and falls back to Valkey only if Redis is not available.
 
 >[!BEGINTABS]
 
