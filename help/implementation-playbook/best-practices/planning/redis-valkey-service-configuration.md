@@ -144,10 +144,6 @@ These recommendations cover the following:
 
 Redis is not supported for cache configuration in Adobe Commerce 2.4.9 and in patch releases where system requirements specify Valkey. Always verify the exact Commerce version, patch level, and service version in the [Cache backend options and storage reference](/help/configuration/cache/cache-options.md) and [System requirements](/help/installation/system-requirements.md).
 
->[!NOTE]
->
->The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
-
 The following examples show the configuration code in the `.magento.env.yaml` file:
 
 >[!BEGINTABS]
