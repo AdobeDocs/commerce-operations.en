@@ -685,7 +685,7 @@ stage:
 
 ## Enable asynchronous freeing
 
-To enable `lazyfree` on Adobe Commerce cloud infrastructure, submit an [Adobe Commerce Support ticket](/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting that the following Redis or Valkey configuration be applied to your environments:
+To enable `lazyfree` on Adobe Commerce cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) requesting that the following Redis or Valkey configuration be applied to your environments:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -707,7 +707,7 @@ When `lazyfree` is enabled, Redis or Valkey offloads memory reclamation to backg
 
 ## Enable multithreaded I/O
 
-To enable Redis I/O threading on Adobe Commerce cloud infrastructure, submit an [Adobe Commerce Support ticket](/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting the I/O threading configuration below. This configuration can improve throughput by offloading socket reads, writes, and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
+To enable Redis I/O threading on Adobe Commerce cloud infrastructure, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) requesting the I/O threading configuration below. This configuration can improve throughput by offloading socket reads, writes, and command parsing from the main thread, at the cost of higher CPU usage. Validate under load and monitor your hosts.
 
 >[!BEGINTABS]
 
