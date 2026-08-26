@@ -2,7 +2,7 @@
 title: Security patch release notes
 description: Review Adobe Commerce security patch release notes for supported versions, including security improvements, fixes, and what each patch release contains.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-last-update: 2026-06-18
+last-update: 2026-08-19
 ---
 
 # Security patch release notes

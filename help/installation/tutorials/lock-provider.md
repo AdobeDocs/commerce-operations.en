@@ -2,7 +2,7 @@
 title: Configure the lock provider
 description: Follow these steps to prevent the duplicate cron jobs and cron groups from running on your Adobe Commerce deployment.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-last-update: 2026-04-28
+last-update: 2026-08-19
 ---
 # Configure the lock provider
 
