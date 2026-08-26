@@ -27,7 +27,7 @@ color: red
     - [Generate a patch-status report](commerce-version-tool/generate-report.md)
     - [Troubleshooting](commerce-version-tool/troubleshooting.md)
     - [Release notes](commerce-version-tool/release-notes.md)
-- CAPS {#caps-tool}
+- Patching Automation {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
     - {hide-from-toc} [Workflow overview](caps-tool/workflow.md)
