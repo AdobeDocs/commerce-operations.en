@@ -8,7 +8,7 @@ type: Troubleshooting
 ---
 # ACSD-61134: *[!UICONTROL Braintree Vault]* payment method automatically deselected in checkout workflow
 
-The ACSD-61134 patch fixes the issue where the *[!UICONTROL Braintree Vault]* payment method is automatically deselected in the checkout workflow when a shopper updates their billing address by deselecting the *[!UICONTROL My billing and shipping address are the same]* checkbox. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54 is installed. The patch ID is ACSD-61134. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7-beta1.
+The ACSD-61134 patch fixes the issue where the *[!UICONTROL Braintree Vault]* payment method is automatically deselected in the checkout workflow when a shopper updates their billing address by deselecting the *[!UICONTROL My billing and shipping address are the same]* checkbox. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61134. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7-beta1.
 
 ## Affected products and versions
 
@@ -49,7 +49,7 @@ The selected payment method is unchecked.
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 

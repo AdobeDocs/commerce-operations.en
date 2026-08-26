@@ -30,7 +30,7 @@ For example, if you are running a profile similar to B2B Medium, you can overrid
 
 A large number of product SKUs, websites, customer groups, or shared catalogs will impact the running time of the Product Price and Catalog Rule indexers. This is because by default, all websites are assigned to all customer groups (shared catalogs).
 
-To decrease indexation time, you can [exclude certain websites from customer groups (shared catalogs)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+To decrease indexation time, you can [exclude certain websites from customer groups (shared catalogs)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites).
 
 ## Set up Redis
 

@@ -44,7 +44,7 @@ The following sections include best practice information for the planning phase.
     <td>Use the cache management tools to improve the performance of your site.</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Full-page caching</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">Full-page caching</a></td>
     <td>Learn how to work with public data when implementing caching in your Adobe Commerce extension.</td>
   </tr>
   <tr>
@@ -70,11 +70,11 @@ The following sections include best practice information for the planning phase.
     <td colspan="2"><em>Services configuration</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Set up Fastly</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Set up Fastly</a></td>
     <td>Configure Fastly services for your Adobe Commerce on cloud infrastructure project.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">Configure notification channels for New Relic</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">Configure notification channels for New Relic</a></td>
     <td>Access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.</td>
   </tr>
   <tr>

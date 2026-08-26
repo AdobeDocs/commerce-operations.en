@@ -13,4 +13,4 @@ definition: |
   In encoding, the number of attributes that can be used to describe entities can scale extensively, but the number that applies to a given entity is minimized.
   This data model is flexible, but can be slow.
 
-  Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+  Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)

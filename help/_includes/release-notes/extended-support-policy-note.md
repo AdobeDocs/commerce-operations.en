@@ -8,5 +8,5 @@
 >
 >See also:
 >
->- [Software lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) — end-of-support dates, extended support, and security-only transitional provisions
->- [Cloud version upgrade enforcement policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — enforcement dates and required actions
+>- [Software lifecycle policy](/help/release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
+>- [Cloud version upgrade enforcement policy](/help/release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions

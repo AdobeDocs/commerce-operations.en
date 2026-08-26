@@ -27,55 +27,63 @@ topic_v2:
 ---
 # Caching overview and configuration options
 
-Adobe Commerce relies on a multi-layered caching architecture to reduce database load, minimize redundant processing, and accelerate page delivery. At the application level, Commerce maintains over a dozen [cache types](../cli/manage-cache.md#clean-and-flush-cache-types)—such as configuration, layout, block HTML, and collections—each of which you can route to a dedicated storage backend like [Redis](config-redis.md) or [Valkey](config-valkey.md). For full-page caching in on-premises deployments, Adobe strongly recommends [Varnish](config-varnish.md). Commerce on Cloud deployments use Fastly. Additional layers such as [L2 caching](level-two-cache.md) and [static content signing](static-content-signing.md) further improve performance for high-traffic, multi-node deployments.
+Adobe Commerce uses multiple caching layers to reduce repeated processing, lower database load, and improve response times. These layers operate at different points in request and asset delivery:
 
-This guide explains how each caching layer works and shows you how to configure frontends, backends, and advanced options to match your deployment requirements.
+- **Application caching** stores generated or processed data using Commerce cache types.
+- **HTTP full-page caching** stores complete HTTP responses before they reach the Commerce application.
+- **L2 caching** can add a local cache on each web node in front of shared remote cache storage.
+- **Static content caching** allows browsers to reuse CSS, JavaScript, images, and other static resources.
 
-## Caching frontends
+This page provides a conceptual overview of these layers and links to their configuration guidance. For backend choices, implementation details, and version-specific settings, see [Cache backend options and storage reference](cache-options.md).
 
-A cache frontend is an interface between Commerce and the cache storage backend. You can define multiple frontends, each with different backend settings, and then assign specific [cache types](../cli/manage-cache.md#clean-and-flush-cache-types) to each frontend. For configuration details, see [Configure cache frontends and types](cache-types.md).
+## Caching layers
 
-## Caching backends
+### Application caching
 
-A cache backend is the underlying storage mechanism for cached data. Commerce provides a default file-system backend, but you can configure other backends such as Redis or Valkey for improved performance and scalability. For details on the available options, see [Cache backend options](cache-options.md).
+Commerce application caching is organized as:
 
-## Full-page caching with Varnish
+>[!BEGINSHADEBOX]
 
-[Varnish Cache](config-varnish.md) is an HTTP accelerator that caches full pages in memory. For on-premises production environments, Adobe strongly recommends Varnish because it is significantly faster than the built-in full-page cache. Commerce on Cloud environments use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) for full-page caching instead of Varnish.
+cache type → cache frontend → cache backend
+
+>[!ENDSHADEBOX]
+
+A **cache type** identifies the kind of data being cached, such as configuration, layout, block HTML, or full-page content. A **cache frontend** connects one or more cache types to storage. A **cache backend** provides the storage implementation.
+
+You can assign different cache types to different frontends when separate cache settings or storage are required. For configuration details, see [Configure cache frontends and types](cache-types.md).
+
+### Full-page HTTP caching
+
+HTTP full-page caching stores complete responses at the HTTP or CDN layer. For production deployments:
+
+- **Adobe Commerce on-premises**—Adobe recommends [Varnish](config-varnish.md) for full-page caching. Varnish operates as a reverse proxy in front of the web server.
+- **Adobe Commerce on Cloud infrastructure** uses [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} for the edge and full-page caching layer. Cloud infrastructure does not use a separately managed Varnish service.
 
 >[!NOTE]
 >
->Varnish operates as a reverse proxy in front of your web server and does not require changes to the Commerce cache backend configuration.
+>Changing the Commerce application cache backend does not configure Varnish or Fastly. Full-page HTTP caching is configured and managed separately from the low-level application cache.
 
-## L2 (two-level) caching
+### L2 caching
 
-[L2 cache](level-two-cache.md) stores cache data locally on each web node while using a remote cache (Redis or Valkey) as the source of truth. This reduces network traffic between your web nodes and the remote cache, which improves performance for high-traffic sites.
+L2, or two-level, caching adds a local cache on each Commerce web node while retaining shared remote cache storage. Frequently accessed data can be served locally, reducing communication with the remote cache in multi-node deployments.
 
-## Static content caching
+L2 configuration and supported implementations vary by Commerce version and deployment type. For details, see [L2 cache configuration](level-two-cache.md).
 
-[Static content signing](static-content-signing.md) invalidates the browser cache for static resources (CSS, JavaScript, images) by embedding a deployment version in file URLs.
+### Static content caching
 
-## Caching terminology
+Commerce can improve browser caching for static resources such as CSS, JavaScript, and images by adding a deployment version to their URLs. When the content changes, the URL changes, causing the browser to request the new resource instead of using an older cached copy.
 
-[!DNL Commerce] uses the following caching terminology:
+## Deployment-specific configuration
 
-- **Frontend** -- An interface or gateway to cache storage, implemented by [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Cache types** -- One of the built-in types provided with [!DNL Commerce] (such as `config`, `layout`, `block_html`, `full_page`) or a [custom type](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Backend** -- Specifies the details of [cache storage](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implemented by [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend).
-- **Two-level backend** -- Stores cache records in two backends: a local (fast) cache and a remote (shared) cache. See [L2 cache configuration](level-two-cache.md).
+The following configuration tasks vary by deployment type.
 
-## Configuration options
+| Task | On-premises | Cloud infrastructure |
+| --- | --- | --- |
+| Application cache backends | [Cache backend options and storage reference](cache-options.md) | [Best practices for Valkey and Redis service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
+| HTTP full-page caching | [Configure Varnish](config-varnish.md) | [Fastly services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
-For frontend-to-type mapping and cache configuration syntax:
+The following tasks apply to all deployment types:
 
-**On-premises**—Cache configuration is stored in two files:
-
-- `<magento_root>/app/etc/di.xml` -- The global dependency injection configuration. Modify this file to change the provided `default` cache frontend.
-- `<magento_root>/app/etc/env.php` -- Environment-specific configuration. Modify this file to configure custom cache frontends. This file overrides the equivalent configuration in `di.xml`.
-
-For details, see:
-
-- [Configure cache frontends and types](cache-types.md)—Associate a cache frontend with specific cache types
-- [Cache backend options](cache-options.md)—Backend option reference
-
-**Adobe Commerce on Cloud**—Configure caching with `CACHE_CONFIGURATION` in `.magento.env.yaml`. See [Best practices for Redis and Valkey service configuration](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
+- **Configure cache types and frontends** [Configure cache frontends and types](cache-types.md) to associate cache types with cache frontends.
+- **Configure L2 caching**—[L2 cache configuration](level-two-cache.md).
+- **Configure browser cache invalidation for static content**—[Static content signing and browser cache invalidation](static-content-signing.md).

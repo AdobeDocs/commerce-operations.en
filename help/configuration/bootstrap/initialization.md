@@ -67,7 +67,7 @@ We have the following entry point applications (that is, applications defined by
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) operates as follows:
 
-1. Determines the [application area](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Determines the [application area](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 1. Starts the front controller and routing systems in order to find and execute a controller action.
 1. Uses an HTTP response object to return result obtained from the controller action.
 1. Error handling (in the following priority order):

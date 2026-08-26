@@ -12,6 +12,45 @@ require 'yaml'
 require 'colorator'
 require 'date'
 require 'json'
+require 'net/http'
+require 'uri'
+
+# Fetches a URL, following redirects. Release notes pages are requested with a
+# ".md" suffix, which several ExL/developer.adobe.com doc platforms use to
+# serve a plain-markdown rendering of the page.
+def http_get(uri)
+  Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == 'https', read_timeout: 15) do |http|
+    http.get(uri.request_uri, 'User-Agent' => 'commerce-operations-availability-check')
+  end
+end
+
+def fetch_url(url, redirects_left = 5)
+  response = http_get(URI.parse(url))
+  return response.body if response.is_a?(Net::HTTPSuccess)
+
+  if response.is_a?(Net::HTTPRedirection)
+    raise "Too many redirects for #{url}" if redirects_left.zero?
+
+    return fetch_url(URI.join(url, response['location']).to_s, redirects_left - 1)
+  end
+
+  raise "HTTP #{response.code} for #{url}"
+end
+
+# Release notes pages list versions newest-first as markdown headings (for
+# example "## Version 1.22.0" or "## Live Search 4.7.2"). The page title is
+# always the first heading, so the latest version is the first version number
+# found in a heading after it. Pages with no version number in any heading
+# (for example, changelogs organized by month) return nil so the caller can
+# flag the entry for manual review instead of guessing.
+def latest_version_from_release_notes(markdown)
+  headings = markdown.each_line.map(&:strip).select { |line| line.start_with?('#') }
+  headings.drop(1).each do |heading|
+    match = heading.match(/(\d+\.\d+(?:\.\d+)?)/)
+    return match[1] if match
+  end
+  nil
+end
 
 desc 'Generate data for a news digest at Best Practices.
       Default timeframe is since last update.
@@ -65,4 +104,131 @@ task :first_merge_date do
   merged_at=`gh pr list --search 'is:pr is:merged base:#{base_branch} sort:merged_at' --limit 1 --json mergedAt --jq '.[0].mergedAt'`
   date_only = DateTime.parse(merged_at).strftime('%Y-%m-%d')
   puts "The first merge date for a PR in the branch #{base_branch.magenta} is #{date_only.green}"
+end
+
+# Finds the "- core: ... (latest)" support row for a product entry.
+def latest_support_row(entry)
+  (entry['support'] || []).find { |row| row['core'].to_s.include?('latest') }
+end
+
+# Returns the "(latest)" support row's version, for example "2.15.0", or nil
+# if it isn't a clean full version number. A suffix like "1.8+" or an
+# annotation like "(PHP 8.4)" should never appear on the "(latest)" row, so an
+# entry with one is flagged for manual review instead of guessing.
+def resolve_current_version(entry)
+  current = latest_support_row(entry)
+  return nil unless current
+
+  version = current['version'].to_s
+  version if version.match?(/\A\d+\.\d+(?:\.\d+)?\z/)
+end
+
+def detect_latest_version(release_notes_url)
+  markdown_url = "#{release_notes_url.split('#').first.chomp('/')}.md"
+  latest_version_from_release_notes(fetch_url(markdown_url))
+rescue StandardError => e
+  raise "failed to check #{release_notes_url} (#{e.message})"
+end
+
+# Wraps detect_latest_version so callers get a uniform [:review, message] or
+# [:ok, version] result instead of having to rescue exceptions themselves.
+def detect_or_review(name, release_notes_url)
+  detected = detect_latest_version(release_notes_url)
+  no_version_msg = "#{name}: could not find a version number in #{release_notes_url}"
+  return [:review, no_version_msg] unless detected
+
+  [:ok, detected]
+rescue StandardError => e
+  [:review, "#{name}: #{e.message}"]
+end
+
+# The line range covering a top-level product entry: from its own "Name:"
+# key up to (but not including) the next line indented 2 spaces or less,
+# which marks the start of the next product (or the next top-level category).
+def entry_line_bounds(raw_lines, name)
+  start_index = raw_lines.index { |line| line.strip == "#{name}:" }
+  raise "could not locate the entry for #{name}" unless start_index
+
+  end_index = (start_index + 1...raw_lines.size).find { |i| raw_lines[i] =~ /^ {0,2}\S/ } || raw_lines.size
+  start_index...end_index
+end
+
+# Rewrites the "version:" line that immediately follows the product's own
+# "- core: ... (latest)" line, in place, leaving the rest of the file (and its
+# comments/formatting) untouched. Scoped to the product's own line range so a
+# skipped or unrelated entry elsewhere in the file can never be targeted.
+def update_latest_version_line(raw_lines, name, old_value, new_value)
+  bounds = entry_line_bounds(raw_lines, name)
+  latest_index = bounds.find { |i| raw_lines[i] =~ /-\s*core:.*\(latest\)/ }
+  raise "could not locate the '(latest)' line for #{name}" unless latest_index
+
+  version_line_index = latest_index + 1
+  version_line = raw_lines[version_line_index]
+  raise "expected a 'version:' line after the '(latest)' entry for #{name}" unless version_line =~ /^\s*version:/
+
+  raw_lines[version_line_index] = version_line.sub(old_value, new_value)
+end
+
+def resolve_current_version_or_review(name, entry)
+  release_notes_url = entry.dig('docs', 'Release Notes')
+  current_version = release_notes_url && resolve_current_version(entry)
+  return [:review, "#{name}: no Release Notes URL or unusable '(latest)' version"] unless current_version
+
+  [:ok, release_notes_url, current_version]
+end
+
+def check_product_availability_entry(name, entry, raw_lines)
+  status, info, old_value = resolve_current_version_or_review(name, entry)
+  return [status, info] if status == :review
+
+  release_notes_url = info
+  status, detected = detect_or_review(name, release_notes_url)
+  return [status, detected] if status == :review
+  return [:unchanged, nil] if detected == old_value
+
+  update_latest_version_line(raw_lines, name, old_value, detected)
+  [:changed, "#{name}: #{old_value} -> #{detected} (per #{release_notes_url})"]
+rescue StandardError => e
+  [:review, "#{name}: #{e.message}"]
+end
+
+def write_availability_report(report_file, changed, needs_review)
+  File.open(report_file, 'w') do |f|
+    f.puts '### Product availability version check'
+    page_url = 'https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability'
+    f.puts "\nUpdates the [Product Availability](#{page_url}) page."
+    f.puts(changed.any? ? "\n**Updated:**" : "\nNo version updates needed.")
+    changed.each { |c| f.puts "- #{c}" }
+    next unless needs_review.any?
+
+    f.puts "\n**Needs manual review:**"
+    needs_review.each { |r| f.puts "- #{r}" }
+  end
+end
+
+desc 'Check whether the "2.4.9 (latest)" version listed for each service/extension in _data/product-availability.yml
+      matches the latest version published in its linked release notes, updating the file when a newer version is
+      found. Entries that cannot be confidently checked are written to tmp/product-availability-report.md for
+      manual review.'
+task :check_product_availability_versions do
+  data_file = '_data/product-availability.yml'
+  report_file = 'tmp/product-availability-report.md'
+  Dir.mkdir('tmp') unless Dir.exist?('tmp')
+
+  data = YAML.load_file(data_file)
+  raw_lines = File.readlines(data_file)
+  entries = %w[extensions services].flat_map { |category| (data[category] || {}).to_a }
+
+  changed = []
+  needs_review = []
+
+  entries.each do |name, entry|
+    status, message = check_product_availability_entry(name, entry, raw_lines)
+    changed << message if status == :changed
+    needs_review << message if status == :review
+  end
+
+  File.write(data_file, raw_lines.join) if changed.any?
+  write_availability_report(report_file, changed, needs_review)
+  puts File.read(report_file)
 end

@@ -68,7 +68,7 @@ To keep your ecommerce environment secure and mitigate risks, all customers on A
 
 1. Supported versions of all 3rd party software dependencies (PHP, MariaDB, Elasticsearch, OpenSearch, Redis, RabbitMQ)
 
-1. A secure and supported version of Adobe Commerce on Cloud. Fully supported versions include 2.4.8, 2.4.9, or the latest available release. See the [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) documentation.
+1. A secure and supported version of Adobe Commerce on Cloud. Fully supported versions include 2.4.8, 2.4.9, or the latest available release. See the [Lifecycle policy](/help/release/lifecycle-policy.md) documentation.
 
 Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environment. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline, please contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) as soon as possible.
 
@@ -94,10 +94,11 @@ Check that your environment is running vendor-supported versions of the followin
 
 #### Step 1: Check your third-party software dependency versions
 
-1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console) where you can see all of your environments.
+1. Sign in to the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console) where you can see all of your Cloud projects.
 2. Open the relevant project, then select the environment you want to review.
-3. Check the service configuration for that environment in the `.magento/services.yaml` file, which defines the supported service names and versions used by Adobe Commerce on Cloud.
-4. Check the dependency versions each environment is running using the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+3. Open "Containers" tab, where you can see a list of all the services currently in use on the selected environment.
+4. Click each service link to check the exact version currently running in the environment.
+See the instructions in [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) for more details.
 
 All unsupported software dependencies must be upgraded to the versions outlined by the timelines shared in Table 2 below.
 
@@ -151,8 +152,8 @@ Check the required actions for your Adobe Commerce version in the table below.
 
 | Current version of Adobe Commerce on Cloud | Required action | Deadline |
 | --- |--- |--- |
-| Version 2.4.4 or 2.4.5 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to [!DNL Adobe Commerce as a Cloud Service].<br>Reason: Versions 2.4.4 and 2.4.5 will receive only limited, isolated security fixes for the core application until May 31, 2027. This does not include quality fixes, compatibility support for application dependencies (for example, PHP), or platform dependency updates. See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2027 |
-| Version 2.4.6 or 2.4.7 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to [!DNL Adobe Commerce as a Cloud Service].<br>Reason: Version 2.4.6 will receive extended support through August 30, 2027, and will receive only limited, isolated security fixes for the core application until May 31, 2028. Version 2.4.7 will receive standard support through May 31, 2027, and extended support through May 31, 2028. See Adobe's [Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | June 1, 2028 |
+| Version 2.4.4 or 2.4.5 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to [!DNL Adobe Commerce as a Cloud Service].<br>Reason: Versions 2.4.4 and 2.4.5 will receive only limited, isolated security fixes for the core application until May 31, 2027. This does not include quality fixes, compatibility support for application dependencies (for example, PHP), or platform dependency updates. See Adobe's [Lifecycle Policy](/help/release/lifecycle-policy.md). | June 1, 2027 |
+| Version 2.4.6 or 2.4.7 | Upgrade to Adobe Commerce on Cloud version 2.4.9 (or the latest version) or migrate to [!DNL Adobe Commerce as a Cloud Service].<br>Reason: Version 2.4.6 will receive extended support through August 30, 2027, and will receive only limited, isolated security fixes for the core application until May 31, 2028. Version 2.4.7 will receive standard support through May 31, 2027, and extended support through May 31, 2028. See Adobe's [Lifecycle Policy](/help/release/lifecycle-policy.md). | June 1, 2028 |
 | Version 2.4.8 or 2.4.9 | No Adobe Commerce on Cloud version upgrade action is needed. The third-party software dependency deadlines in Action 1 still apply.<br>Reason: No deadline has been set. | Not Applicable |
 
 #### Step 2: Determine the upgrade or migration path
@@ -184,7 +185,7 @@ If an environment continues to remain non-compliant following traffic suspension
 
 **If you choose to upgrade to Adobe Commerce on Cloud version 2.4.9:**
 
-* **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including identifying what modules and files require updates, number of critical issues, and so on. [Generate your Upgrade Compatibility Report](https://supportinsights.adobe.com/commerce/tab/main).
+* **Upgrade Compatibility Report:** Adobe provides a detailed report identifying exactly what your upgrade to Adobe Commerce version 2.4.9 requires, including identifying what modules and files require updates, number of critical issues, and so on. See the [Site-Wide Analysis Tool](/help/tools/site-wide-analysis-tool/access.md) documentation for details on how to generate your upgrade compatibility report.
 
 * **Software dependency upgrade:** Since you cannot upgrade software dependencies directly, open a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) for Adobe to handle the upgrade for you. For details, see [Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 

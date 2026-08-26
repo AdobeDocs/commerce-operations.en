@@ -24,7 +24,7 @@ The following sections include best practice information for the launch phase.
 | [Secure your Commerce site and infrastructure](security-best-practices.md)                                                         | Harden the security posture of Commerce installations to protect the Commerce storefront, admin, infrastructure, and data against unauthorized access and cyber attacks. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configure Google reCAPTCHA for Admin access and various storefront actions initiated by registered customers.                                                            |
 | [Configure web crawlers](robots-txt.md)                                                                                            | Pass instructions about your Adobe Commerce site to web crawlers.                                                                                                        |
-| [Verify security configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)   | Review checklist items before launching an Adobe Commerce on cloud infrastructure site.                                                                                  |
+| [Verify security configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)   | Review checklist items before launching an Adobe Commerce on cloud infrastructure site.                                                                                  |
 
 ## Performance Monitoring
 

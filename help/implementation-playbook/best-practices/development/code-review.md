@@ -43,7 +43,7 @@ Also, consider the following points when when implementing code review processes
 
 Style can be tested automatically by running the PhpStorm inspection (see below).
 
-Make sure to configure [PHPMD and PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) and to run the [Coding Standard](https://github.com/magento/magento-coding-standard) tool from the CLI (also below). There is some overlap, but both also have unique tests.
+Make sure to configure [PHPMD and PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection) and to run the [Coding Standard](https://github.com/magento/magento-coding-standard) tool from the CLI (also below). There is some overlap, but both also have unique tests.
 
 ### Convention and structure
 

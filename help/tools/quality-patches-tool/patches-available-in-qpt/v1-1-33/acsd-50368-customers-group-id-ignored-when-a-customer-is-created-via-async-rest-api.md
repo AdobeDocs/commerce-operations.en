@@ -10,9 +10,9 @@ type: Troubleshooting
 
 >[!NOTE]
 >
->The ACSD-50368 patch is partially deprecated, as this issue is addressed by the mandatory security patch [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) for versions above 2.4.4.
+>The ACSD-50368 patch is partially deprecated, as this issue is addressed by the mandatory security patch [APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149) for versions above 2.4.4.
 
-The ACSD-50368 patch fixes the issue where customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33 is installed. The patch ID is ACSD-50368. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7. 
+The ACSD-50368 patch fixes the issue where customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33 is installed. The patch ID is ACSD-50368. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7. 
 
 ## Affected products and versions
 
@@ -47,7 +47,7 @@ bin/magento setup:upgrade --keep-generated
 
     ```shell
     curl --location 'https://site.test/rest/default/async/V1/customers' \
-    --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNjc5NDMzNzcxLCJleHAiOjE2Nzk0MzczNzF9.xau6KyILrkdCY_8K8aMlH4TmqcCXdH4Zcst_CLhdxYY' \
+    --header 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
     --header 'Content-Type: application/json' \
     --header 'Cookie: PHPSESSID=844fltmqq1g15qe4ju3l00tiai' \
     --data-raw '{
@@ -80,7 +80,7 @@ bin/magento setup:upgrade --keep-generated
 
     ```shell
     curl --location 'https://site.test/rest/default/V1/bulk/b101ddcb-b7fd-4208-a2a6-2e84c9e61bcd/detailed-status' \
-    --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNjc5NDMzNzcxLCJleHAiOjE2Nzk0MzczNzF9.xau6KyILrkdCY_8K8aMlH4TmqcCXdH4Zcst_CLhdxYY' \
+    --header 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
     --header 'Cookie: PHPSESSID=844fltmqq1g15qe4ju3l00tiai
     ```
 
@@ -120,13 +120,13 @@ The group_id is set to default 1 for the new customer.
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

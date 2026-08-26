@@ -15,7 +15,7 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
             <li><a href="https://blog.adobe.com/">Adobe Developers Blog</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview">Adobe Help Center</a></li>
             <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe Security Bulletin</a></li>
             <li><a href="https://developer.adobe.com/commerce/">Adobe Commerce on Adobe Developer Site</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce on cloud or on-premises release notes</a></li>
@@ -36,9 +36,9 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
       <td><strong>Calendars and Policy</strong>
         <p>Review details about Adobe Commerce releases and policies.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce Software End of Support FAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-eos-policy-faq">Adobe Commerce Software End of Support FAQ</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements">Commerce Marketplace policy</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">FAQ for New Adobe Commerce Release Strategy, Updated Lifecycle Policy, and Extended Support</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy">FAQ for New Adobe Commerce Release Strategy, Updated Lifecycle Policy, and Extended Support</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Lifecycle policy</a></li>
             <li><a href="../../release/schedule.md">Release schedule</a></li>
             <li><a href="../../release/versioning-policy.md">Release types</a></li>
@@ -60,10 +60,10 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
           <ul>
             <li><a href="recommended-upgrade-paths.md">Recommended upgrade paths</a></li>
             <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 Technical Upgrade Workshop recording</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Accessing pre-releases</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release">Accessing pre-releases</a></li>
             <li><a href="../../release/beta.md">Beta releases overview</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">Backward incompatible development</a></li>
-            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes">Backward incompatible changes</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward incompatible changes</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Upgrade Plan Checklist</a></li>
             <li><a href="../prepare/best-practices.md">Upgrade Best Practices</a></li>
             <li><a href="../../release/product-availability.md">Software availability</a></li>

@@ -45,7 +45,7 @@ The `config.php` file contains a list of installed modules. Adobe Commerce provi
 Examples:
 
 - Uninstall components: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Check status of components: [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Check status of components: [`bin/magento module:status`](/help/tools/reference/commerce-on-premises.md#modulestatus)
 - Enable or disable components: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

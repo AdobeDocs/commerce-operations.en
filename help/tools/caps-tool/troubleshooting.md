@@ -150,6 +150,32 @@ If Option 1 doesn't resolve your issue, proceed with Option 2.
 * Verify you have environment management permissions
 * Ensure you have deployment permissions
 
+### GitHub integration errors
+
+#### "No Git credentials available for provider github. Install the CAPS GitHub App for this repository"
+
+**When it occurs:** During patch operations for projects connected to GitHub
+
+**Cause:** The [!DNL CAPS] GitHub App is not installed on your repository
+
+**Solution:** Follow the steps in [Set up the GitHub integration for [!DNL CAPS]](github-integration.md)
+
+#### "GitHub API request failed"
+
+**When it occurs:** During patch operations for GitHub-connected projects
+
+**Cause:** A temporary issue prevented [!DNL CAPS] from connecting to GitHub
+
+**Solution:** Wait a few minutes and retry the operation. If the error continues, contact [Adobe Commerce Cloud support](https://experienceleague.adobe.com/home#support)
+
+#### "Environment not created within timeout" (GitHub-connected project)
+
+**When it occurs:** During integration-environment creation
+
+**Cause:** The project's GitHub integration has the `fetch-branches` option disabled, so the temporary branches [!DNL CAPS] pushes are not synced and the integration environment is never created.
+
+**Solution:** Enable the integration's [`fetch-branches` option](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), then retry the operation. See [Set up the GitHub integration for [!DNL CAPS]](github-integration.md).
+
 ### Resource and quota errors
 
 #### "Environment quota exceeded"
@@ -211,9 +237,10 @@ For more detailed technical information:
 
 ### Related topics
 
-* [Adobe Commerce Cloud documentation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce Installation Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud documentation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce Installation Guide](/help/installation/overview.md)
 * [CAPS introduction](intro.md)
 * [How to access](access.md)
-* [Workflow](workflow.md)
+* [Workflow overview](workflow.md)
+* [GitHub integration](github-integration.md)
 * [Best practices](best-practices.md)

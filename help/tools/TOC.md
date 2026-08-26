@@ -30,7 +30,8 @@ color: red
 - CAPS {#caps-tool}
     - {hide-from-toc} [Introduction](caps-tool/intro.md)
     - {hide-from-toc} [Access](caps-tool/access.md)
-    - {hide-from-toc} [Workflow](caps-tool/workflow.md)
+    - {hide-from-toc} [Workflow overview](caps-tool/workflow.md)
+    - {hide-from-toc} [GitHub integration](caps-tool/github-integration.md)
     - {hide-from-toc} [Best practices](caps-tool/best-practices.md)
     - {hide-from-toc} [Troubleshooting](caps-tool/troubleshooting.md)
 - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
@@ -1000,6 +1001,7 @@ color: red
            - [ACP2E-4706: Target Rule indexer cron doesn't pick products enabled only at store view scope](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
            - [ACP2E-4402: Target Rule incremental indexer doesn't pick disabled products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
            - [ACP2E-4505: Circular category dependency from saving a category with stale data in a duplicate browser tab](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+           - [ACP2E-4531: CMS hierarchy doesn't update the hierarchical URL when the child page URL key changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
            - [ACP2E-4720: Free shipping cart price rules do not reset for fixed-price bundle products with ship items separately](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
            - [AC-10698: Transaction prices and totals aren't sent to Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
            - [ACP2E-4475: Order or filter by price not working for out-of-stock bundle products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
@@ -1039,6 +1041,15 @@ color: red
         - v1.1.82 {#v1-1-82}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
            - [ACP2E-4840: GraphQL products query returns null quantity for in-stock products on custom inventory stocks](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
+           - [ACP2E-4695: Catalog rule indexer out-of-memory failures caused by excessive memory usage](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
+           - [ACP2E-4194: GraphQL requests with unknown filter names cause PHP exception logs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
+           - [ACP2E-4698: Page Builder Text inline editing saves absolute media URLs instead of the portable directive](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
+           - [ACP2E-4894: New orders appear in the Admin Orders grid with a delay when asynchronous indexing is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
+           - [ACP2E-4870: Product alert emails ignore store view email settings](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
+           - [ACP2E-4799: GraphQL query requisition_lists returns incorrect total_count with pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
+           - [ACP2E-4797: Admin WYSIWYG editor and Page Builder block 4-byte Unicode characters when utf8mb4 is supported](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+           - [ACP2E-4682: Storefront pages that check quote isActive create empty quote records](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
+           - [ACP2E-4593: Wrong Website Restriction CMS page served on the secondary website in multi-website storefronts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
            - [ACP2E-4547: Admin can't add a default-catalog product to a quote when it isn't assigned to the user's shared catalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
            - [ACP2E-4805: Checkout requests slow down for configurable products when the first salable child appears later in the list](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
            - [ACP2E-4748: Reward points expiration runs slowly on stores with a large reward points history](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
@@ -1090,6 +1101,6 @@ color: red
         - [Data that requires manual migration](data-migration-tool/migrate-data/manual.md)
         - [Post-data migration steps](data-migration-tool/migrate-data/post-migration.md)
     - Resources {#resources}
-        - [Troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+        - [Troubleshooting](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
         - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
