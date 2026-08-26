@@ -17,7 +17,7 @@ hide: true
 
 ### How to request access to a project
 
-If you do not see any projects in the [!DNL Patching Automation] user interface, you need to request access from the appropriate person:
+If you do not see any projects in the [!DNL Patching Automation] user interface, request access from the appropriate person:
 
 * Contact the account owner or project admin of the project
 * They will grant you the appropriate role through the Cloud Console
@@ -52,7 +52,7 @@ For production environments, additional safeguards apply by default:
 
 >[!NOTE]
 >
->You can skip the maintenance-mode and cron-job checks by selecting the override checkbox in the UI ("I want to skip maintenance mode and cron checks before applying patches to production environment"). Only use this if you understand the risk of patching production without those safeguards in place.
+>You can skip the maintenance-mode and cron-job checks by selecting the override checkbox in the UI (*[!UICONTROL I want to skip maintenance mode and cron checks before applying patches to production environment]*). Only use this if you understand the risk of patching production without those safeguards in place.
 
 ## Related topics
 

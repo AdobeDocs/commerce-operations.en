@@ -74,9 +74,9 @@ This approach provides:
 
 **Code synchronization** - The integration environment inherits the exact code state of your target environment (the same codebase)
 
-**No data cloning** - The integration environment does not receive a copy of the target environment's data (database, media, or other stored content) — only the codebase is used to apply and verify the patch
+**No data cloning** - The integration environment does not receive a copy of the target environment's data (database, media, or other stored content)—only the codebase is used to apply and verify the patch
 
-**Resource requirements** - Your Cloud project's total storage capacity is defined in your contract (check via your account page or `magento-cloud subscription:info`). Each environment's disk allocation is configured separately, via the `disk` property in `.magento.app.yaml`/`.magento/services.yaml` — see [Manage disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) for details. If a patch operation fails due to storage limitations, check your integration environment's disk usage (`magento-cloud db:size` / `magento-cloud mount:size`) against its configured allocation.
+**Resource requirements** - Your Cloud project's total storage capacity is defined in your contract. (Check via your account page or `magento-cloud subscription:info`). Each environment's disk allocation is configured separately, via the `disk` property in `.magento.app.yaml`/`.magento/services.yaml`. See [Manage disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) for details. If a patch operation fails due to storage limitations, check your integration environment's disk usage (`magento-cloud db:size` / `magento-cloud mount:size`) against its configured allocation.
 
 #### Stage 2b: Patch application in integration environment
 
@@ -88,7 +88,7 @@ This approach provides:
 
 **Environment activation** - The integration environment is activated to deploy the patched code
 
-**Health check** - Once activated, [!DNL Patching Automation] confirms that the integration environment deployed successfully and is healthy — the application starts, and its database and cache connections are reachable — before proceeding to merge
+**Health check** - Once activated, [!DNL Patching Automation] confirms the following before proceeding to merge:  the integration environment deployed successfully and is healthy, the application starts, and its database and cache connections are reachable.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ This approach provides:
 
 #### Stage 2c: Merge back to target environment
 
-**Sync check** - Before merging, the service confirms the integration environment is still active, in sync with the target environment, and healthy — if the target has changed during patching, the operation stops here instead of merging
+**Sync check** - Before merging, the service confirms that the integration environment is still active, in sync with the target environment, and healthy. If the target has changed during patching, the operation stops here instead of merging
 
 **Environment checkout** - The service checks out your target environment locally
 
@@ -114,11 +114,11 @@ Integration environments have a specific lifecycle during the patching stage:
 
 * **Creation** - Created at the start of the patching stage
 * **Active period** - Remain active during patch application and testing
-* **Cleanup** - Deleted immediately if the operation fails during the Patching phase, before merge; otherwise deleted during the Validation phase, after merge, whether or not validation passes
+* **Cleanup** - Deleted immediately if the operation fails during the Patching phase, before merge. Otherwise deleted during the Validation phase, after merge, whether or not validation passes
 
 ### Phase 3: Validation
 
-The Validation phase confirms the patched application starts successfully and passes a health check.
+The Validation phase confirms that the patched application starts successfully and passes a health check.
 
 **What happens:**
 
@@ -127,7 +127,7 @@ The Validation phase confirms the patched application starts successfully and pa
 
 >[!IMPORTANT]
 >
->Unlike Phases 1 and 2, this health check runs *after* the patch has already been merged into your target environment. If it fails, the merge is not automatically rolled back — your target environment may be left in a broken state, and manual intervention (such as reverting the patch) is required to restore it. See [Troubleshooting](troubleshooting.md) for what to do if this happens.
+>Unlike Phases 1 and 2, this health check runs *after* the patch has already been merged into your target environment. If it fails, the merge is not automatically rolled back. Your target environment can be left in a broken state, and manual intervention (such as reverting the patch) is required to restore it. See [Troubleshooting](troubleshooting.md) for what to do if this happens.
 
 ## Success indicators
 
@@ -153,11 +153,11 @@ Applying or reverting patches on a production environment carries more risk than
 
 ### Confirmation before starting
 
-Before any apply or revert operation starts on a production environment, you're asked to confirm in a dialog — this protects against accidentally starting a job on production.
+Before any apply or revert operation starts on a production environment, you're prompted to confirm the operation in a dialog. This confirmation step protects against accidentally starting a job on production.
 
 ### Recommended preconditions
 
-We recommend enabling maintenance mode and disabling cron jobs before patching a production environment. By default, the service checks for both and blocks the operation with a notification if either isn't met. If you understand the risk of proceeding without them, you can skip this check using the override checkbox in the UI.
+Adobe recommends enabling maintenance mode and disabling cron jobs before patching a production environment. By default, [!DNL Patching Automation] verifies that both conditions are met and blocks the operation with a notification if either condition is not met. If you understand the risks of proceeding without maintenance mode or with cron jobs enabled, select the override checkbox in the UI to bypass this check.
 
 * **Maintenance mode** - Recommended to be enabled
 * **Cron jobs** - Recommended to be disabled

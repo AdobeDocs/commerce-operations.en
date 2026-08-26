@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] Best Practices Guide'
-description: Learn best practices for using [!DNL Adobe Commerce Patching Automation] effectively and safely
+description: "Learn how to use [!DNL Adobe Commerce Patching Automation] to plan, validate, and apply patches safely, minimizing deployment risk and service interruptions."
 hide: true
 ---
 # [!DNL Adobe Commerce Patching Automation] best practices guide
@@ -28,11 +28,11 @@ Before applying patches, ensure your environment is properly prepared:
   * Stable parent environment for synchronization
 
 * **Production environment preparation** (for production patching)
-  * Maintenance mode recommended to be enabled
-  * Cron jobs recommended to be disabled
-  * Maintenance window procedures established
-  * Rollback procedures documented
-  * Stakeholder communication plan ready
+  * Enable maintenance mode
+  * Disable Cron jobs
+  * Establish maintenance window procedures
+  * Document rollback procedures
+  * Prepare stakeholder communication plan
 
 ## Patch application best practices
 

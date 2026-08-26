@@ -104,12 +104,12 @@ For most environments, the following timeline describes how long patch operation
 
 **When it occurs:** During validation, after the integration environment has already been merged into your target environment
 
-**Cause:** The two environments' code still doesn't match after merging, usually a temporary Platform.sh API propagation delay rather than a real conflict
+**Cause:** The code in the two environments' code does not match after merging, usually a temporary Platform.sh API propagation delay rather than a real conflict
 
 **Solutions:**
 
-* Wait a few minutes and check the environment status again — this often resolves on its own
-* Contact support if the environments still don't match after a few minutes
+* Wait a few minutes and check the environment status again. This issue often resolves on its own
+* If the environments still do not match after a few minutes, contact Adobe Support.
 
 #### "Cannot create patch job in production environment when cron is enabled and maintenance mode is disabled. Please enable maintenance mode and disable cron jobs before applying patches."
 
@@ -122,7 +122,7 @@ For most environments, the following timeline describes how long patch operation
 * Enable maintenance mode for your production store
 * Disable cron jobs in your production environment
 * Verify both conditions are met before retrying
-* Alternatively, select the override checkbox in the UI to skip these checks and proceed anyway — only if you understand the risk of patching production without those safeguards in place
+* Alternatively, select the override checkbox in the UI to skip these checks and proceed anyway. Only use the override option if you understand the risk of patching production without those safeguards in place
 
 >[!IMPORTANT]
 >
@@ -136,17 +136,17 @@ For most environments, the following timeline describes how long patch operation
 
 **Solutions:**
 
-* Test your storefront and critical checkout/admin flows now to confirm whether customers are actually affected
-* Review the application and deployment logs for your environment, available from your project's Activity feed in the Cloud Console
-* Try redeploying the environment manually — this can resolve transient deployment or infrastructure issues
-* If the patch itself is the cause, revert it — either through the Revert operation in [!DNL Patching Automation], if available, or manually by removing the patch file from the `m2-hotfixes` folder and redeploying
-* If none of the above resolves it, contact support with your Project ID, Environment ID, and this exact message — the last operation didn't complete cleanly, so support may need to confirm the environment's state
+* Test the storefront and critical checkout and Admin workflows to confirm whether customers are actually affected
+* In the Cloud Console, review the environment status and inspect the application and deployment logs in the projects **Activity** feed. Look for errors associated with patch operation or deployment.
+* Trigger a manual redeployment to determine whether the health-check failure was caused by a transient deployment or infrastructure issue.
+* If the issue persists, revert the patch. If the patch is managed by [!DNL Patching Automation] and the operation is available, select [!UICONTROL Revert]. If the patch is a custom patch in the `m2-hotfixes` directory, delete the patch file from the project repository. Commit and push the change, then redeploy the environment.
+* If the issue persists, contact Adobe Support.Include the following information in your support request: support Project ID, Environment ID, and this exact message: the last operation didn't complete cleanly, so support may need to confirm the environment's state.
 
 ### Authentication and access errors
 
 #### "Access denied"
 
-**When it occurs:** During environment creation or access, when your account lacks the required permissions
+**When it occurs:** When your account lacks the required permissions during environment creation or access
 
 **Cause:** Your user account lacks necessary permissions
 
@@ -179,7 +179,7 @@ For most environments, the following timeline describes how long patch operation
 
 **When it occurs:** During integration-environment creation
 
-**Cause:** The project's GitHub integration has the `fetch-branches` option disabled, so the temporary branches the service pushes are not synced and the integration environment is never created.
+**Cause:** The project's GitHub integration has the `fetch-branches` option disabled. As a result, the temporary branches pushed by the service are not synchronized, and the integration environment is never created.
 
 **Solution:** Enable the integration's [`fetch-branches` option](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), then retry the operation. See [Set up the GitHub integration for [!DNL Patching Automation]](github-integration.md).
 
@@ -187,7 +187,7 @@ For most environments, the following timeline describes how long patch operation
 
 #### "Unable to activate integration environment."
 
-**When it occurs:** During patching, when Patching Automation cannot activate the temporary integration environment it needs to safely test the patch.
+**When it occurs:** When [!DNL Patching Automation] cannot activate the temporary integration environment required to test the patch safely.
 
 **Cause:** Depends on the additional details shown alongside the error:
 
@@ -195,14 +195,18 @@ For most environments, the following timeline describes how long patch operation
 
 * Log in to [https://account.magento.com/](https://account.magento.com/) (or have your account owner do so) and confirm your account has access to the Commerce Enterprise codebase.
 * Verify your project's Composer public/private key pair is correct — see [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Check that the package named in the error is available for your Commerce version — see [Adobe Commerce packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
+* Sign in to [https://account.magento.com/](https://account.magento.com/) (or ask your account owner to do so) and confirm your account has access to the Commerce Enterprise codebase.
+* Verify that your project's Composer public and private authentication keys are correct. See [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Confirm that the package named in the error message is available for your Commerce version. See [Adobe Commerce packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **If the details mention environment slots or resources:**
 
-* In the Cloud Console, go to your project overview and review your environments and their status. Deactivate or delete any unused integration environments (select the environment, go to Settings > General, and change status to inactive) — or use `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>` if you prefer the CLI.
-* Verify your project has sufficient resources (e.g., disk space).
-* Ensure the parent environment is stable (no active deployment) at the time of the operation.
-* Contact support if you need to increase your environment limit.
+* In the Cloud Console, open the project overview and review the environments and their statuses. Deactivate or delete any unused integration environments: Select the environment. Go to **[!UICONTROL Settings] > [!UICONTROL General]**. Set the environment status to inactive.
+
+  Alternatively, use the CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>` 
+* Verify that our project has sufficient resources, for example disk space.
+* Ensure that the parent environment is stable (no active deployment) at the time of the operation.
+* Contact Adobe Support if you need to increase your environment limit.
 
 **For any other cause:** review the detailed error logs in the Patching Automation UI, or contact support with the exact error text.
 

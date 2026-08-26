@@ -17,7 +17,7 @@ If your Adobe Commerce Cloud project is connected to a GitHub repository, you mu
 
 ## Install the [!DNL Patching Automation] GitHub App
 
-You can start the installation either from [!DNL Patching Automation] itself — click **[!UICONTROL Install GitHub App]** in the UI, which redirects you to the installation page — or by navigating directly to the installation page.
+You can start the installation from [!DNL Patching Automation] by clicking **[!UICONTROL Install GitHub App]** in the UI, which redirects you to the installation page, or by navigating directly to the installation page.
 
 1. Open the [Patching Automation GitHub App installation page](https://github.com/apps/adobe-commerce-patching-automation).
 1. Click **[!UICONTROL Install]**.
