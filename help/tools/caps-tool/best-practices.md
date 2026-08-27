@@ -1,38 +1,38 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)] Best Practices Guide'
-description: Learn best practices for using [!DNL Cloud Automation Patching Service (CAPS)] effectively and safely
+title: '[!DNL Adobe Commerce Patching Automation] Best Practices Guide'
+description: "Learn how to use [!DNL Adobe Commerce Patching Automation] to plan, validate, and apply patches safely, minimizing deployment risk and service interruptions."
 hide: true
 ---
-# [!DNL Cloud Automation Patching Service (CAPS)] best practices guide
+# [!DNL Adobe Commerce Patching Automation] best practices guide
 
-Following best practices is essential for successful and safe patch operations with [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
+Following best practices is essential for successful and safe patch operations with [!DNL Adobe Commerce Patching Automation]. This guide provides comprehensive best practices for effective patch operations, environment management, and operational excellence.
 
-## Pre-Patch Best Practices
+## Pre-patch best practices
 
-### Environment Readiness
+### Environment readiness
 
 **Best Practice:** Always prepare your environment thoroughly before applying patches to ensure successful operations and minimize risks.
 
 Before applying patches, ensure your environment is properly prepared:
 
-* **Adobe Commerce Cloud Account**
+* **Adobe Commerce Cloud account**
   * Active Adobe Commerce Cloud subscription
   * Valid Adobe Commerce license
-  * Repository access credentials configured
+  * [Composer authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configured to access the Adobe Commerce repository
   * Project and environment permissions
 
 * **Environment resources**
-  * Available environment slots for temporary testing
+  * The project has capacity to create an additional active integration environment for the patch operation — see [Manage branches with the Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) for information about active environment limits
   * Sufficient storage, CPU, and memory resources
   * Network access to Adobe repositories
   * Stable parent environment for synchronization
 
 * **Production environment preparation** (for production patching)
-  * Maintenance mode can be enabled
-  * Cron jobs can be disabled
-  * Maintenance window procedures established
-  * Rollback procedures documented
-  * Stakeholder communication plan ready
+  * Enable maintenance mode
+  * Disable Cron jobs
+  * Establish maintenance window procedures
+  * Document rollback procedures
+  * Prepare stakeholder communication plan
 
 ## Patch application best practices
 
@@ -135,7 +135,7 @@ Before applying patches, ensure your environment is properly prepared:
 
 ## Summary of key best practices
 
-### Critical best practices for [!DNL CAPS] success
+### Critical best practices for [!DNL Patching Automation] success
 
 * Always test in pre-production before applying patches to production environments
 * Enable maintenance mode and disable cron jobs for production patch operations
@@ -148,7 +148,7 @@ Before applying patches, ensure your environment is properly prepared:
 
 ## Related topics
 
-* [CAPS introduction](intro.md)
+* [Patching Automation introduction](intro.md)
 * [How to access](access.md)
 * [Workflow overview](workflow.md)
 * [GitHub integration](github-integration.md)

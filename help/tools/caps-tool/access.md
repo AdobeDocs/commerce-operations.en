@@ -1,37 +1,38 @@
 ---
-title: How to Access [!DNL Cloud Automation Patching Service (CAPS)]
-description: Learn how to access and use [!DNL Cloud Automation Patching Service (CAPS)]
+title: How to Access [!DNL Adobe Commerce Patching Automation]
+description: Learn how to access and use [!DNL Adobe Commerce Patching Automation]
 hide: true
 ---
-# How to access [!DNL Cloud Automation Patching Service (CAPS)]
+# How to access [!DNL Adobe Commerce Patching Automation]
 
 ## Prerequisites
 
-[!DNL CAPS] uses the role-based access control from Adobe Commerce Cloud. Your access level in the Cloud Console determines what you can do with [!DNL CAPS].
+[!DNL Patching Automation] uses the role-based access control from Adobe Commerce Cloud. Your access level in the Cloud Console determines what you can do with the service.
 
-### Who can use [!DNL CAPS]
+### Who can use [!DNL Patching Automation]
 
 * **Project admin** - Can apply or revert patches on all environments
-* **Contributor** - Can apply or revert patches on their assigned environments  
+* **Contributor** - Can apply or revert patches on their assigned environments
 * **Viewer** - Can only view the project and environments, no actions allowed
 
 ### How to request access to a project
 
-If you do not see any projects in the [!DNL CAPS] user interface, you need to request access from the appropriate person:
+If you do not see any projects in the [!DNL Patching Automation] user interface, request access from the appropriate person:
 
 * Contact the account owner or project admin of the project
 * They will grant you the appropriate role through the Cloud Console
-* Once granted access, you can log in to the Cloud Console to use [!DNL CAPS]
+* Once granted access, you can log in to the Cloud Console to use the service
 
 >[!NOTE]
 >
->[!DNL CAPS] follows the same permission model as Adobe Commerce Cloud, so your access level in the Cloud Console determines what you can do with [!DNL CAPS].
+>[!DNL Patching Automation] follows the same permission model as Adobe Commerce Cloud, so your access level in the Cloud Console determines what you can do with the service.
 
-## Accessing [!DNL CAPS]
+## Accessing [!DNL Patching Automation]
 
-The CAPS tool is available from the Site-Wide Analysis Tool dashboard at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Under the Patching Automation tab, you can select your project and environment.
+[!DNL Patching Automation] is available as a tab within the [!DNL Site-Wide Analysis Tool] dashboard. You can access it from your Admin Panel by going to **Reports** > **System Insights** > **Site-Wide Analysis Tool** on the Admin sidebar. See [How to access the Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) for prerequisites and permission setup.
 
-1. Navigate to Site-Wide Analysis Tool at [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
+Once you're in the dashboard:
+
 1. Click on the [!UICONTROL Patching Automation] tab in the interface.
 1. Select the project and environment where you want to apply patches.
 1. Review available patches and their compatibility status.
@@ -39,7 +40,7 @@ The CAPS tool is available from the Site-Wide Analysis Tool dashboard at [https:
 
 ## Production environment access
 
-For production environments, additional safeguards apply:
+For production environments, additional safeguards apply by default:
 
 * **Maintenance mode** - Must be enabled
 * **Cron jobs** - Must be disabled
@@ -49,9 +50,13 @@ For production environments, additional safeguards apply:
 >
 >Production environment patching requires proper preparation and safeguards to prevent accidental disruptions.
 
+>[!NOTE]
+>
+>You can skip the maintenance-mode and cron-job checks by selecting the override checkbox in the UI (*[!UICONTROL I want to skip maintenance mode and cron checks before applying patches to production environment]*). Only use this if you understand the risk of patching production without those safeguards in place.
+
 ## Related topics
 
-* [CAPS introduction](intro.md)
+* [Patching Automation introduction](intro.md)
 * [Workflow overview](workflow.md)
 * [GitHub integration](github-integration.md)
 * [Best practices](best-practices.md)
