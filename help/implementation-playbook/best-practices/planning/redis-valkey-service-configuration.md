@@ -574,7 +574,7 @@ To provision a dedicated instance for sessions, follow the steps below:
        min_lifetime: 60
    ```
 
-1. Remove sessions from the [default database](/help/configuration/cache/redis-pg-cache.md) (`db 0`) on the Valkey cache instance.
+1. Remove sessions from the default database (`db 0`) on the Valkey cache instance.
 
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -649,7 +649,7 @@ To provision a dedicated instance for sessions, follow the steps below:
        min_lifetime: 60
    ```
 
-1. Remove sessions from the [default database](/help/configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis cache instance.
+1. Remove sessions from the default database (`db 0`) on the Redis cache instance.
 
    ```terminal
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -719,7 +719,6 @@ For Valkey:
 ```text
 io-threads-do-reads yes
 io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
-events-per-io-thread 2
 ```
 
 >[!ENDTABS]
