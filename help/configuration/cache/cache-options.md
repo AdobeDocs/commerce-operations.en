@@ -102,9 +102,9 @@ Use the full Redis class name only on releases where Redis is supported:
 
 >[!TAB Symfony Cache (2.4.9 and later, recommended)]
 
->[!TIP]
+>[!NOTE]
 >
->The Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
+>The Symfony Cache implementation provides PSR-6 adapter support compatible with Adobe Commerce. Its performance characteristics depend on the configured serializer, compression, Lua support, connection management, workload, and deployment environment. No benchmark comparison has been performed yet.
 
 ```php?start_inline=1
 'cache' => [
