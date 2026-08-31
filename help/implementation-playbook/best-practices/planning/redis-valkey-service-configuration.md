@@ -228,7 +228,7 @@ For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION]
 
 ## Preload keys
 
-Magento usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
+Magento usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Adobe Commerce fetches in a single pipeline on first access during a request. Adobe Commerce then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
 
 You can identify frequently used keys by monitoring active commands on Redis or Valkey:
 
@@ -830,7 +830,7 @@ If you are migrating an existing Adobe Commerce on Cloud project from `RemoteSyn
 
 Preload keys can be applied to a `symfony_l2` configuration if you use the correct placement (under `backend_options` or `remote_backend_options`). However, Adobe does not recommend using preload keys with `symfony_l2`. The `symfony_l2` preload implementation fetches keys one at a time, so it does not reduce round trips the way it does for `RemoteSynchronizedCache`, and it can increase load on Valkey without a performance benefit.
 
-The preload feature lets you provide a list of frequently used keys that Magento fetches in a single pipeline on first access during a request. Magento then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
+The preload feature lets you provide a list of frequently used keys that Adobe Commerce fetches in a single pipeline on first access during a request. Adobe Commerce then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
 
 You can identify frequently used keys by monitoring active commands on Redis or Valkey:
 
@@ -893,7 +893,7 @@ The following configuration applies to Adobe Commerce 2.4.8 and earlier, which u
 
 #### How the RemoteSynchronizedCache backend works
 
-With `RemoteSynchronizedCache`, Magento maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When the remote copy is unavailable and a regeneration lock already exists for that key, concurrent requests can receive the previous local value instead of waiting until the fresh value is written.
+With `RemoteSynchronizedCache`, Adobe Commerce maintains two copies of each cache entry: a local copy in `/dev/shm` and a remote copy in Redis or Valkey. When the remote copy is unavailable and a regeneration lock already exists for that key, concurrent requests can receive the previous local value instead of waiting until the fresh value is written.
 
 To enable stale cache for 2.4.8 and earlier versions, configure it in the `.magento.env.yaml` file.
 
@@ -911,7 +911,7 @@ stage:
 
 >[!WARNING]
 >
->The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Magento core cache types work as expected with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API (for example `$this->cache->save()`) without a dedicated cache frontend, those entries can also serve stale values during regeneration.
+>The configuration above enables stale cache on the `default` cache frontend, which applies stale-cache behavior to all cache entries that use that frontend. Adobe Commerce core cache types work as expected with this setting. However, if your project includes custom code or extensions that write to the cache through the generic `\Magento\Framework\App\Cache` API (for example `$this->cache->save()`) without a dedicated cache frontend, those entries can also serve stale values during regeneration.
 >
 >
 >If this results in unexpected behavior in your customizations, leave stale cache disabled on the `default` frontend and enable it only for selected cache types, as shown below.

@@ -99,7 +99,7 @@ The `type` configuration maps a cache type to a frontend:
 
 Where:
 
-- `<frontend_type>` -- The low-level frontend cache type. Specify a class name compatible with `Zend\Cache\Core`.
+- `<frontend_type>` -- The low-level frontend cache type. Specify a class name compatible with `Zend_Cache_Core`.
   If omitted, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) is used.
 
 - `<frontend_option>`, `<frontend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the frontend cache on creation.
@@ -117,7 +117,7 @@ Where:
 >- **Zend-based**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
 >- **Symfony Cache**: `'backend' => 'valkey'` for Commerce versions 2.4.9+ and current patch releases for the 2.4.5 - 2.4.8 release lines where Valkey is the supported cache backend.
 >
->The Symfony Cache implementation provides better performance through PSR-6 compliance, Igbinary serialization, gzip compression, Lua scripts, and persistent connections.
+>The Symfony Cache implementation provides PSR-6 adapter support compatible with Adobe Commerce. Its performance characteristics depend on the configured serializer, compression, Lua support, connection management, workload, and deployment environment. No benchmark comparison has been performed yet.
 
 >[!MORELIKETHIS]
 >
