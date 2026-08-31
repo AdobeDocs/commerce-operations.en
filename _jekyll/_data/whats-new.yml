@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 21 15:56:52 2026
+updated: Mon Aug 31 13:10:08 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4840:
+    GraphQL products query returns null quantity for in-stock products on custom inventory
+    stocks](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840).'
+  versions: ''
+  type: new-topic, qpt
+  date: August 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2105
+  merge_commit: edfc38af34925749c5acb36d2c0bcfc5d16a577a
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: Updated the Commerce caching documentation with clearer on-premises
     vs. Cloud guidance and new migration guidance for moving to Valkey with Symfony
     L2 cache:<br/>- Updated [Caching overview and configuration options](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview).<br/>-
