@@ -30,7 +30,7 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.7.2</td>
+          <td>4.7.3</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
           <td>4.7.2</td>

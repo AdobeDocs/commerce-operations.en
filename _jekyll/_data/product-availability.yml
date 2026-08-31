@@ -146,7 +146,7 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 4.7.2
+        version: 4.7.3
       - core: 2.4.8
         version: 4.7.2
       - core: 2.4.7
