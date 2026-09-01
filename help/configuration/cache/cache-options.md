@@ -1,6 +1,6 @@
 ---
 title: Cache Backend Options and Storage Reference
-description: Learn about cache backend options in Adobe Commerce, including file system, Redis, Valkey, and database storage. Discover Zend-based and Symfony Cache options.
+description: "Learn about cache backend options in Adobe Commerce, including file system, Redis, Valkey, and database storage. Discover Zend-based (RemoteSynchronizedCache) and Symfony Cache options."
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on-premises projects only."

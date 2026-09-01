@@ -57,13 +57,11 @@ Use these recommendations when configuring Redis or Valkey for Adobe Commerce ap
 
 Configure the L2 cache by setting the `VALKEY_BACKEND` or `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
-For implementation details, configuration examples, and deployment-specific guidance, see [L2 cache configuration for performance optimization](../../../configuration/cache/level-two-cache.md).
-
 >[!IMPORTANT]
 >
 >The Redis configuration examples on this page apply solely to supported Adobe Commerce versions that use Redis. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release. Redis cache is not supported for Adobe Commerce 2.4.9, or for patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4. Use Valkey for cache configuration where Redis is not supported. See [System Requirements](../../../installation/system-requirements.md) for supported cache services by release.
 
-Setting `VALKEY_BACKEND` or `REDIS_BACKEND` configures the L2 cache backend, but it does not determine whether Adobe Commerce uses Redis or Valkey as the remote cache service. The class value you assign (for example, `\Magento\Framework\Cache\Backend\Redis` or `symfony_l2`) does not select the service either. Adobe Commerce uses whichever service—Redis or Valkey—is available in your environment, and Redis takes priority if both are available. For example, `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\Redis'` uses Redis if it's available, and falls back to Valkey only if Redis is not available.
+Setting `VALKEY_BACKEND` or `REDIS_BACKEND` configures the L2 cache backend, but it does not determine whether Adobe Commerce uses Redis or Valkey as the remote cache service. The class value you assign (for example, `\Magento\Framework\Cache\Backend\Redis` or `symfony_l2`) does not select the service either. Adobe Commerce uses whichever service—Redis or Valkey—is available in your environment, and Redis takes priority if both are available. For example, `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\Redis'` uses Redis when available, and falls back to Valkey only if Redis is not available.
 
 >[!BEGINTABS]
 
@@ -228,7 +226,7 @@ For environment variable configuration details, see [REDIS_USE_SLAVE_CONNECTION]
 
 ## Preload keys
 
-Magento usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Adobe Commerce fetches in a single pipeline on first access during a request. Adobe Commerce then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
+Adobe Commerce usually loads cache entries from Redis or Valkey one key at a time. The preload feature lets you provide a list of frequently used keys that Adobe Commerce fetches in a single pipeline on first access during a request. Adobe Commerce then keeps the fetched values in PHP memory for the rest of that request, which reduces repeated round trips to Redis or Valkey and can improve request bootstrap performance for those keys.
 
 You can identify frequently used keys by monitoring active commands on Redis or Valkey:
 
@@ -325,7 +323,6 @@ L2 cache maintains two copies of each cache entry: a local copy in `/dev/shm` an
 To enable stale cache, configure it in the `.magento.env.yaml` file.
 
 >[!BEGINTABS]
-
 
 >[!TAB Configure stale cache with VALKEY_BACKEND]
 
@@ -499,7 +496,7 @@ Cache and session configuration are independent. `SESSION_CONFIGURATION` does no
 
 >[!IMPORTANT]
 >
->Provisioning a dedicated session instance on Production and Staging isn't self-service. It requires submitting an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) with your updated `.magento/services.yaml` and `.magento.app.yaml` files, as described in step 3 below.
+>To provision a dedicated session instance on Production and Staging environemnts, you must submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) with your updated `.magento/services.yaml` and `.magento.app.yaml` files, as described in step 3 below.
 
 To provision a dedicated instance for sessions, follow the steps below:
 
@@ -992,7 +989,7 @@ Adobe Commerce 2.4.9 and later support the `symfony_l2` cache backend. The `symf
 
 To use `symfony_l2` cache for Adobe Commerce 2.4.9, complete these steps:
 
-- Ensure that the cloud project is using [`ece-tools` package v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) or later.
+- Update to the latest version of the [`ece-tools` package](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). You must use ECE Tools package v2002.2.13 or later.
 
 - Set the deployment variable in the `.magento.env.yaml` file: `VALKEY_BACKEND`=`symfony_l2`.
 
