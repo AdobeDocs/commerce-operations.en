@@ -17,7 +17,7 @@
   <tbody>
       <tr>
           <td>Catalog Service</td>
-          <td>3.5.0</td>
+          <td>3.6.0</td>
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>3.5.0</td>
