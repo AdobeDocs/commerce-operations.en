@@ -56,7 +56,7 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.7.0</td>
+          <td>6.8.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
