@@ -25,6 +25,23 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
+### Attribute ranking (Public Beta) {#attribute-ranking-public-beta}
+
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
+
+[!DNL Adobe Commerce Optimizer] merchandising rules now support **attribute ranking**, which applies a **Boost**, **Bury**, or **Hide** action automatically to products that match one or more attribute conditions—such as brand, category, or manufacturer—without requiring individual SKU selection. Attribute ranking appears in the rule editor alongside intelligent ranking and manual ranking. Use it with **All product listings**, **category rules**, and **search rules**.
+
+**Key benefits**
+
+- Scale merchandising across large catalogs by targeting attribute values instead of individual SKUs.
+- Boost, bury, or hide every matching product with a single rule, for example promoting an entire brand or suppressing a discontinued color.
+- Combine attribute conditions with intelligent ranking: matched products take priority, and unmatched products continue to be ordered by your ranking strategy.
+- Set boost or bury strength per condition to fine-tune how strongly the rule affects matching products.
+
+To learn more, see [Attribute ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) in the merchandising rules guide.
+
+To share feedback about this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
 ### Search matching and ranking (Private Beta)
 
 Adobe is improving how product discovery ranks search results for [!DNL Live Search] on [!DNL Adobe Commerce] and for [!DNL Adobe Commerce Optimizer]. The update prioritizes **exact and near phrase matches**, then matches where **all query terms appear in the same searchable attribute**, and finally **cross-field** matches (including behavior that supports autocomplete-style suggestions). That layered model helps high-intent queries surface the most relevant products first while still returning useful alternatives.
