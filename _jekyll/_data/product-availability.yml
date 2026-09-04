@@ -9,7 +9,7 @@ extensions:
       Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 1.22.1
+        version: 1.22.2
       - core: 2.4.8
         version: 1.8+
       - core: 2.4.7
@@ -180,7 +180,7 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 6.7.0
+        version: 6.8.0
       - core: 2.4.8
         version: 6.7.0
       - core: 2.4.7
