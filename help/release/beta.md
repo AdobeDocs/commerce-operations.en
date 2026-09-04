@@ -29,7 +29,7 @@ See the following sections for a list of active beta programs.
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
-[!DNL Adobe Commerce Optimizer] merchandising rules now support **attribute ranking**, which automatically applies a **Boost**, **Bury**, or **Hide** action to every product that matches one or more attribute conditions—such as brand, category, or manufacturer—without requiring you to select individual SKUs. Attribute ranking appears in the rule editor alongside intelligent ranking and manual ranking, and is available for **All product listings**, **category rules**, and **search rules**.
+[!DNL Adobe Commerce Optimizer] merchandising rules now support **attribute ranking**, which applies a **Boost**, **Bury**, or **Hide** action automatically to products that match one or more attribute conditions—such as brand, category, or manufacturer—without requiring individual SKU selection. Attribute ranking appears in the rule editor alongside intelligent ranking and manual ranking. Use it with **All product listings**, **category rules**, and **search rules**.
 
 **Key benefits**
 
@@ -40,7 +40,7 @@ See the following sections for a list of active beta programs.
 
 To learn more, see [Attribute ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) in the merchandising rules guide.
 
-To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+To share feedback about this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Search matching and ranking (Private Beta)
 
