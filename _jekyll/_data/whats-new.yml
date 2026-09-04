@@ -2,7 +2,7 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Aug 31 13:10:08 2026
+updated: Fri Sep 4 15:56:55 2026
 entries:
 - description: 'Added detailed description of the QPT 1.1.82 fix for [ACP2E-4840:
     GraphQL products query returns null quantity for in-stock products on custom inventory
