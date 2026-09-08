@@ -21,7 +21,7 @@ When using [!DNL Patching Automation] for patch operations, you can encounter er
 
 ### Patch operations duration
 
-For most environments, the following timeline describes the duration of patch operations, but it takes longer depending on environment size and complexity:
+For most environments, the following timeline describes the duration of patch operations, but it can take longer depending on environment size and complexity:
 
 * **Pre-processing:** 2-5 minutes
 * **Patching:** 5-15 minutes
