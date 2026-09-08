@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] Workflow Overview'
 description: Learn about the [!DNL Adobe Commerce Patching Automation] workflow process, including terminology, workflow phases, and operations for automated patch management.
-hide: true
 ---
 # [!DNL Adobe Commerce Patching Automation] workflow overview
 

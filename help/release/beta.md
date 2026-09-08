@@ -78,31 +78,6 @@ To learn more, see [Recommendation filters — Price](https://experienceleague.a
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
-### Cloud Automation Patching Service (Private Beta)
-
-[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-
-The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
-
-In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](/help/tools/site-wide-analysis-tool/dashboard.md). This service supports Commerce project administrators with a streamlined patching workflow that includes:
-
-- Automated patch installation
-- Rollback recovery
-- Post-deployment verification.
-
-The service ensures that you can maintain secure, stable, and updated environments with minimal manual effort and risk.
-
-The beta includes the following features:
-
-- **Automate patch installation**: Simplify and automate the process of patching critical vulnerabilities across environments.
-- **Minimize risk**: Prevent site outages with post-deployment health check and rollback capabilities.
-
->[!NOTE]
->
->Since the Cloud Automation Patching Service applies isolated security patches automatically, you must have the [Contributor or Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
-
-To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
-
 ### Merchant Productivity AI Assistant (Public Beta)
 
 The Merchant Productivity AI Assistant is a conversational interface embedded in the Adobe Commerce Admin that helps merchants complete routine tasks and access business insights on demand using natural language. It enables merchants to manage promotions, update product catalog information, and retrieve operational data–such as recent orders or active promotions–directly within their existing workflows. The assistant also provides in-context guidance to help merchants navigate and use the Admin more efficiently.
