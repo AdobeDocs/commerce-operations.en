@@ -87,7 +87,7 @@ This approach provides:
 
 **Environment activation** — The integration environment is activated to deploy the patched code
 
-**Health check** — Once activated, [!DNL Patching Automation] confirms the following before proceeding to merge:  the integration environment deployed successfully and is healthy, the application starts, and its database and cache connections are reachable.
+**Health check** — Once activated, [!DNL Patching Automation] confirms the following before proceeding to merge: the integration environment deployed successfully and is healthy, the application starts, and its database and cache connections are reachable.
 
 >[!NOTE]
 >
