@@ -206,7 +206,7 @@ When using the preload feature with an L2 cache, you must add the `:hash` suffix
 
 ### Parallel generation
 
-Starting with the Commerce 2.4.0 release, Adobe introduced the `allow_parallel_generation` option for users who want to eliminate waiting for locks. It is disabled by default, and Adobe recommends disabling it until you have excessive configurations and/or blocks.
+Adobe Commerce provides the `allow_parallel_generation` option for users who want to eliminate waiting for locks. It is disabled by default, and Adobe recommends disabling it until you have excessive configurations and/or blocks.
 
 **To enable parallel generation**:
 

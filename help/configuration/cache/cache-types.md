@@ -112,12 +112,7 @@ Where:
 
 >[!NOTE]
 >
->**Zend-based vs Symfony Cache implementation:**
->
->- **Zend-based**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
->- **Symfony Cache**: `'backend' => 'valkey'` for Commerce versions 2.4.9+ and current patch releases for the 2.4.5 - 2.4.8 release lines where Valkey is the supported cache backend.
->
->The Symfony Cache implementation provides PSR-6 adapter support compatible with Adobe Commerce. Its performance characteristics depend on the configured serializer, compression, Lua support, connection management, workload, and deployment environment. No benchmark comparison has been performed yet.
+>For backend value formats, such as Zend-based class names versus Symfony Cache simplified names like `valkey` or `file`, see [Cache backend options](cache-options.md).
 
 >[!MORELIKETHIS]
 >
