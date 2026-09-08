@@ -5,7 +5,7 @@ description: Learn how to install the [!DNL Adobe Commerce Patching Automation] 
 
 # Set up the GitHub integration for [!DNL Patching Automation]
 
-If your Adobe Commerce Cloud project is connected to a GitHub repository, you must install the [!DNL Patching Automation] GitHub App before you can use the service to apply or revert patches. The app grants the service the access it needs to make changes to your repository on your behalf.
+If your Adobe Commerce Cloud project is connected to a GitHub repository, you must install the [!DNL Patching Automation] GitHub App before you can use the service to apply or revert patches. The app grants the service the access it needs to make changes to your repository.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ The [!DNL Patching Automation] UI shows the current status of your GitHub connec
 
 * **[!UICONTROL Refresh]** / **[!UICONTROL Refresh status]** - Re-checks the connection status without making any changes.
 * **[!UICONTROL Reinstall]** - Shown if the installation is no longer valid (for example, if it was suspended, or the repository connected to your Cloud project changed). Starts the same installation flow described above.
-* **[!UICONTROL Unlink GitHub App]** - Removes [!DNL Patching Automation]'s saved connection to the GitHub App. This does **not** uninstall the app from your GitHub repository — to fully remove access, see the Uninstall section below.
+* **[!UICONTROL Unlink GitHub App]** - Removes [!DNL Patching Automation]'s saved connection to the GitHub App. This action does **not** uninstall the app from your GitHub repository — to remove access fully, see the Uninstall section below.
 
 ## Uninstall the [!DNL Patching Automation] GitHub App
 
@@ -46,7 +46,7 @@ If you no longer want the service to access your repository:
 
 >[!WARNING]
 >
->If any apply or revert operations are still in progress when the GitHub App is uninstalled, those operations may fail. After uninstalling the app, users also cannot start new operations because the action buttons become inactive.
+>If any apply or revert operations are still in progress when the GitHub App is uninstalled, those operations may fail. After uninstalling the app, users cannot start new operations because the action buttons become inactive.
 
 ## Related topics
 

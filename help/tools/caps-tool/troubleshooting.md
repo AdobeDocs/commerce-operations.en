@@ -21,7 +21,7 @@ When using [!DNL Patching Automation] for patch operations, you can encounter er
 
 ### Patch operations duration
 
-For most environments, the following timeline describes how long patch operations should take, but it could take longer depending on environment size and complexity:
+For most environments, the following timeline describes the duration of patch operations, but it can take longer depending on environment size and complexity:
 
 * **Pre-processing:** 2-5 minutes
 * **Patching:** 5-15 minutes
@@ -36,7 +36,7 @@ For most environments, the following timeline describes how long patch operation
 
 >[!WARNING]
 >
->Once a patch operation begins, it should be allowed to complete. The system includes cleanup procedures that run even if operations fail. Interrupting the process may leave your environment in an inconsistent state.
+>Once a patch operation begins, it should be allowed to complete. The system includes cleanup procedures that run even if operations fail. Interrupting the process can leave your environment in an inconsistent state.
 
 ## Common success messages
 
@@ -50,7 +50,7 @@ For most environments, the following timeline describes how long patch operation
 
 >[!NOTE]
 >
->Not every possible error is listed below. An unlisted failure during preliminary check appears as the generic "Error during preliminary check"; an unlisted failure during validation appears as the generic "Error during post-processing" — contact support with the exact error text either way. During patching, an unanticipated failure shows the raw underlying error message directly instead of either generic fallback.
+>Not every possible error is listed below. Unlisted failures during preliminary check or validation appear as generic errors. Contact support with the exact error text. During patching, an unanticipated failure shows the raw underlying error message directly instead of either generic fallback.
 
 ### Environment readiness errors
 
@@ -107,7 +107,7 @@ For most environments, the following timeline describes how long patch operation
 
 **Solutions:**
 
-* Wait a few minutes and check the environment status again. This issue often resolves on its own
+* Wait a few minutes and check the environment status again. This issue often resolves automatically
 * If the environments still do not match after a few minutes, contact Adobe Support.
 
 #### "Cannot create patch job in production environment when cron is enabled and maintenance mode is disabled. Please enable maintenance mode and disable cron jobs before applying patches."
@@ -125,7 +125,7 @@ For most environments, the following timeline describes how long patch operation
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation] does not automatically enable maintenance mode or disable cron jobs - these must be done externally by you
+> [!DNL Patching Automation] does not automatically enable maintenance mode or disable cron jobs. Complete these procedures manually.
 
 #### "The patch operation completed but the environment health check failed. This indicates potential issues with the deployment. Please review the environment status and consider reverting the change."
 
@@ -135,11 +135,11 @@ For most environments, the following timeline describes how long patch operation
 
 **Solutions:**
 
-* Test the storefront and critical checkout and Admin workflows to confirm whether customers are actually affected
+* Test the storefront and critical checkout and Admin workflows to confirm whether customers are affected
 * In the Cloud Console, review the environment status and inspect the application and deployment logs in the projects **Activity** feed. Look for errors associated with patch operation or deployment.
-* Trigger a manual redeployment to determine whether the health-check failure was caused by a transient deployment or infrastructure issue.
-* If the issue persists, revert the patch. If the patch is managed by [!DNL Patching Automation] and the operation is available, select [!UICONTROL Revert]. If the patch is a custom patch in the `m2-hotfixes` directory, delete the patch file from the project repository. Commit and push the change, then redeploy the environment.
-* If the issue persists, contact Adobe Support.Include the following information in your support request: support Project ID, Environment ID, and this exact message: the last operation didn't complete cleanly, so support may need to confirm the environment's state.
+* Trigger a manual redeployment to determine whether a transient deployment or infrastructure issue caused the health-check failure.
+* If the issue persists, revert the patch. If [!DNL Patching Automation] manages the patch and the operation is available, select [!UICONTROL Revert]. If the patch is a custom patch in the `m2-hotfixes` directory, delete the patch file from the project repository. Commit and push the change, then redeploy the environment.
+* If the issue persists, contact Adobe Support. Include the following information in your support request: support Project ID, Environment ID, and this exact message: the last operation didn't complete cleanly, so support needs to confirm the environment's state.
 
 ### Authentication and access errors
 
@@ -192,18 +192,16 @@ For most environments, the following timeline describes how long patch operation
 
 **If the details mention Composer or Adobe Commerce packages:**
 
-* Log in to [https://account.magento.com/](https://account.magento.com/) (or have your account owner do so) and confirm your account has access to the Commerce Enterprise codebase.
-* Verify your project's Composer public/private key pair is correct — see [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Sign in to [https://account.magento.com/](https://account.magento.com/) (or ask your account owner to do so) and confirm your account has access to the Commerce Enterprise codebase.
+* Log in to [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) (or have your account owner do so) and confirm your account has access to the Commerce Enterprise codebase.
 * Verify that your project's Composer public and private authentication keys are correct. See [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Confirm that the package named in the error message is available for your Commerce version. See [Adobe Commerce packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **If the details mention environment slots or resources:**
 
-* In the Cloud Console, open the project overview and review the environments and their statuses. Deactivate or delete any unused integration environments: Select the environment. Go to **[!UICONTROL Settings] > [!UICONTROL General]**. Set the environment status to inactive.
+* In the Cloud Console, open the project overview and review the environments and their statuses. Deactivate or delete any unused integration environments: Select the environment. Go to **[!UICONTROL Settings] > [!UICONTROL General]**. To deactivate the environment, set the status to inactive.
 
-  Alternatively, use the CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>` 
-* Verify that our project has sufficient resources, for example disk space.
+  Alternatively, use the CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
+* Verify that the project has sufficient resources, for example disk space.
 * Ensure that the parent environment is stable (no active deployment) at the time of the operation.
 * Contact Adobe Support if you need to increase your environment limit.
 
