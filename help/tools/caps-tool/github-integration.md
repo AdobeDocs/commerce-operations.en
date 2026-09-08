@@ -30,7 +30,7 @@ Once installed, the service automatically detects your GitHub connection and use
 
 The [!DNL Patching Automation] UI shows the current status of your GitHub connection, with actions available depending on that status:
 
-* **[!UICONTROL Refresh]** / **[!UICONTROL Refresh status]** — Re-checks the connection status without making any changes.
+* **[!UICONTROL Refresh]** / **[!UICONTROL Refresh status]** - Re-checks the connection status without making any changes.
 * **[!UICONTROL Reinstall]** - Shown if the installation is no longer valid (for example, if it was suspended, or the repository connected to your Cloud project changed). Starts the same installation flow described above.
 * **[!UICONTROL Unlink GitHub App]** - Removes [!DNL Patching Automation]'s saved connection to the GitHub App. This action does **not** uninstall the app from your GitHub repository — to remove access fully, see the Uninstall section below.
 
