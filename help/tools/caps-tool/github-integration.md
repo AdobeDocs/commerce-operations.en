@@ -46,7 +46,7 @@ If you no longer want the service to access your repository:
 
 >[!WARNING]
 >
->If any apply or revert operations are still in progress when the GitHub App is uninstalled, those operations fail. After uninstalling the app, users cannot start new operations because the action buttons become inactive.
+>If any apply or revert operations are still in progress when the GitHub App is uninstalled, those operations may fail. After uninstalling the app, users cannot start new operations because the action buttons become inactive.
 
 ## Related topics
 
