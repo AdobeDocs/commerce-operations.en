@@ -57,7 +57,7 @@ The Preliminary Check phase validates that the patch can be safely applied to yo
 
 ### Phase 2: Patching
 
-The Patching phase applies or reverts the patch in a temporary integration environment. During this stage, the service creates a temporary integration environment to safely apply the patch, confirm it deploys successfully, and verify it passes a health check — before making any changes to your actual environment.
+The Patching phase applies or reverts the patch in a temporary integration environment. During this stage, the service creates a temporary integration environment to apply the patch safely, confirm it deploys successfully, and verify it passes a health check — before making any changes to your actual environment.
 
 This approach provides:
 
@@ -67,27 +67,27 @@ This approach provides:
 
 #### Stage 2a: Integration environment creation
 
-**Branch creation** - [!DNL Patching Automation] creates a temporary integration environment branch named `{target-environment}-CAPS-{patch-id}`
+**Branch creation** — [!DNL Patching Automation] creates a temporary integration environment branch named `{target-environment}-CAPS-{patch-id}`
 
-**Environment setup** - The integration environment is created as a child of your target environment
+**Environment setup** — The integration environment is created as a child of your target environment
 
-**Code synchronization** - The integration environment inherits the exact code state of your target environment (the same codebase)
+**Code synchronization** — The integration environment inherits the exact code state of your target environment (the same codebase)
 
-**No data cloning** - The integration environment does not receive a copy of the target environment's data (database, media, or other stored content)—only the codebase is used to apply and verify the patch
+**No data cloning** — The integration environment does not receive a copy of the target environment's data (database, media, or other stored content)—only the codebase is used to apply and verify the patch
 
-**Resource requirements** - Your Cloud project's total storage capacity is defined in your contract. (Check via your account page or `magento-cloud subscription:info`). Each environment's disk allocation is configured separately, via the `disk` property in `.magento.app.yaml`/`.magento/services.yaml`. See [Manage disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) for details. If a patch operation fails due to storage limitations, check your integration environment's disk usage (`magento-cloud db:size` / `magento-cloud mount:size`) against its configured allocation.
+**Resource requirements** — Your Cloud project's total storage capacity is defined in your contract. (Check via your account page or `magento-cloud subscription:info`). Each environment's disk allocation is configured separately, via the `disk` property in `.magento.app.yaml`/`.magento/services.yaml`. See [Manage disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) for details. If a patch operation fails due to storage limitations, check your integration environment's disk usage (`magento-cloud db:size` / `magento-cloud mount:size`) against its configured allocation.
 
 #### Stage 2b: Patch application in integration environment
 
-**Safe testing** - The patch is applied to the integration environment, not directly to your target environment
+**Safe testing** — The patch is applied to the integration environment, not directly to your target environment
 
-**File management** - Patch files are placed in the `m2-hotfixes` folder
+**File management** — Patch files are placed in the `m2-hotfixes` folder
 
-**Git operations** - Changes are committed and pushed to the integration environment branch
+**Git operations** — Changes are committed and pushed to the integration environment branch
 
-**Environment activation** - The integration environment is activated to deploy the patched code
+**Environment activation** — The integration environment is activated to deploy the patched code
 
-**Health check** - Once activated, [!DNL Patching Automation] confirms the following before proceeding to merge:  the integration environment deployed successfully and is healthy, the application starts, and its database and cache connections are reachable.
+**Health check** — Once activated, [!DNL Patching Automation] confirms the following before proceeding to merge:  the integration environment deployed successfully and is healthy, the application starts, and its database and cache connections are reachable.
 
 >[!NOTE]
 >
@@ -95,17 +95,17 @@ This approach provides:
 
 #### Stage 2c: Merge back to target environment
 
-**Sync check** - Before merging, the service confirms that the integration environment is still active, in sync with the target environment, and healthy. If the target has changed during patching, the operation stops here instead of merging
+**Sync check** — Before merging, the service confirms that the integration environment is still active, in sync with the target environment, and healthy. If the target has changed during patching, the operation stops here instead of merging
 
-**Environment checkout** - The service checks out your target environment locally
+**Environment checkout** — The service checks out your target environment locally
 
-**Merge operation** - The integration environment branch is merged into the target environment
+**Merge operation** — The integration environment branch is merged into the target environment
 
-**Conflict handling** - If a merge conflict occurs, the operation fails and is reported as an error — it is not resolved automatically
+**Conflict handling** — If a merge conflict occurs, the operation fails and is reported as an error — it is not resolved automatically
 
-**Deployment** - The merged changes are deployed to your target environment
+**Deployment** — The merged changes are deployed to your target environment
 
-**Verification** - The service verifies that the merge was successful and the environments are in sync
+**Verification** — The service verifies that the merge was successful and the environments are in sync
 
 ### Integration environment lifecycle
 

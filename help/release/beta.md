@@ -10,12 +10,12 @@ badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/
 Beta programs for [Adobe Commerce product solutions](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions) are a way for merchants to get access to prerelease features and code, provide feedback, and guide the future of Adobe Commerce. There are two types of beta programs:
 
 - Public Beta: A public beta program is available to all Adobe Commerce customers and partners
-- Private Beta: A private beta program may require an approval based on qualifying criteria to participate
+- Private Beta: A private beta program requires approval based on qualifying criteria to participate
 
 >[!IMPORTANT]
 >
 >**Legal Disclaimer**<br/>
->Beta releases include prerelease features and code that may contain defects and are provided "AS IS" without warranty of any kind. Adobe has the sole discretion whether to make beta releases generally available. Adobe has no obligation to maintain, correct, update, change, modify, support (via Adobe Support Services or otherwise), or deliver such beta releases by any specific date. Should a beta release become generally available, it may be subject to additional terms and conditions, including applicable fees. Beta releases are subject to change without notice, including discontinuation. Customers are advised to use caution and not to rely in any way on the uninterrupted or error-free functioning or performance of the beta releases.  Accordingly, any use of the beta releases is entirely at the customer's own risk. 
+>Beta releases include prerelease features and code that may contain defects and are provided "AS IS" without warranty of any kind. Adobe has discretion whether to make beta releases generally available. Adobe has no obligation to maintain, correct, update, change, modify, support (via Adobe Support Services or otherwise), or deliver such beta releases by any specific date. Should a beta release become generally available, it may be subject to additional terms and conditions, including applicable fees. Beta releases are subject to change without notice, including discontinuation. Customers are advised to use caution and not to rely in any way on the uninterrupted or error-free functioning or performance of the beta releases.  Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 ## Benefits of participating
 
@@ -29,14 +29,14 @@ See the following sections for a list of active beta programs.
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
-[!DNL Adobe Commerce Optimizer] merchandising rules now support **attribute ranking**, which applies a **Boost**, **Bury**, or **Hide** action automatically to products that match one or more attribute conditions—such as brand, category, or manufacturer—without requiring individual SKU selection. Attribute ranking appears in the rule editor alongside intelligent ranking and manual ranking. Use it with **All product listings**, **category rules**, and **search rules**.
+[!DNL Adobe Commerce Optimizer] Merchandising rules now support **attribute ranking**, which automatically applies a **Boost**, **Bury**, or **Hide** action to products matching attribute conditions—such as brand, category, or manufacturer—without requiring individual SKU selection. Attribute ranking appears in the rule editor alongside intelligent ranking and manual ranking. Use it with **All product listings**, **category rules**, and **search rules**.
 
 **Key benefits**
 
 - Scale merchandising across large catalogs by targeting attribute values instead of individual SKUs.
 - Boost, bury, or hide every matching product with a single rule, for example promoting an entire brand or suppressing a discontinued color.
-- Combine attribute conditions with intelligent ranking: matched products take priority, and unmatched products continue to be ordered by your ranking strategy.
-- Set boost or bury strength per condition to fine-tune how strongly the rule affects matching products.
+- Combine attribute conditions with intelligent ranking: Matched products take priority, and your ranking strategy continues to order unmatched products.
+- Set boost or bury strength per condition to fine-tune how the rule affects matching products.
 
 To learn more, see [Attribute ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) in the merchandising rules guide.
 
@@ -44,7 +44,7 @@ To share feedback about this beta feature, send an email to [commerce-storefront
 
 ### Search matching and ranking (Private Beta)
 
-Adobe is improving how product discovery ranks search results for [!DNL Live Search] on [!DNL Adobe Commerce] and for [!DNL Adobe Commerce Optimizer]. The update prioritizes **exact and near phrase matches**, then matches where **all query terms appear in the same searchable attribute**, and finally **cross-field** matches (including behavior that supports autocomplete-style suggestions). That layered model helps high-intent queries surface the most relevant products first while still returning useful alternatives.
+Adobe is improving how product discovery ranks search results for [!DNL Live Search] on [!DNL Adobe Commerce] and for [!DNL Adobe Commerce Optimizer]. The update prioritizes **exact and near phrase matches**, then matches where **all query terms appear in the same searchable attribute**, and finally **cross-field** matches (including behavior that supports autocomplete-style suggestions). That layered model helps high-intent queries display the most relevant products first while still returning useful alternatives.
 
 The same relevance model interacts with **search weights**, **intelligent ranking**, **synonyms**, and **merchandising rules** (pin, boost, bury). German storefronts can use **decompounding** for compound words, with the same overall prioritization approach.
 
@@ -57,7 +57,7 @@ The same relevance model interacts with **search weights**, **intelligent rankin
 
 Learn more about search matching and ranking strategy in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching) and [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
-To request an invitation to this private beta, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
+To request an invitation to this private beta, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). The Adobe team responds with next steps and eligibility requirements.
 
 ### Recommendation price filters (Public Beta) {#recommendation-price-filters-public-beta}
 
@@ -77,31 +77,6 @@ You can define **static** ranges with fixed minimum and maximum values in your s
 To learn more, see [Recommendation filters — Price](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price) in the merchant guide and [Product Recommendations setup](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/) in the storefront drop-in guide.
 
 To share your feedback as you use this beta feature, send an email to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Cloud Automation Patching Service (Private Beta)
-
-[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-
-The [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automates the process of applying isolated security patches to your [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) environments.
-
-In October 2025, the beta release of the Cloud Automation Patching Service will be added to the [Site-Wide Analysis tool dashboard](/help/tools/site-wide-analysis-tool/dashboard.md). This service supports Commerce project administrators with a streamlined patching workflow that includes:
-
-- Automated patch installation
-- Rollback recovery
-- Post-deployment verification.
-
-The service ensures that you can maintain secure, stable, and updated environments with minimal manual effort and risk.
-
-The beta includes the following features:
-
-- **Automate patch installation**: Simplify and automate the process of patching critical vulnerabilities across environments.
-- **Minimize risk**: Prevent site outages with post-deployment health check and rollback capabilities.
-
->[!NOTE]
->
->Since the Cloud Automation Patching Service applies isolated security patches automatically, you must have the [Contributor or Project Admin role](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) to use it.
-
-To participate in this beta, complete and submit the [Cloud Automation Patching Service - Beta Signup Form](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Merchant Productivity AI Assistant (Public Beta)
 
