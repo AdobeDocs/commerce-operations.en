@@ -36,7 +36,7 @@ For most environments, the following timeline describes the duration of patch op
 
 >[!WARNING]
 >
->Once a patch operation begins, it should be allowed to complete. The system includes cleanup procedures that run even if operations fail. Interrupting the process leaves your environment in an inconsistent state.
+>Once a patch operation begins, it should be allowed to complete. The system includes cleanup procedures that run even if operations fail. Interrupting the process can leave your environment in an inconsistent state.
 
 ## Common success messages
 
