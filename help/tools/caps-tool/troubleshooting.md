@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] Troubleshooting Guide'
 description: Troubleshoot common issues and error messages in [!DNL Adobe Commerce Patching Automation]
-hide: true
 ---
 # [!DNL Adobe Commerce Patching Automation] troubleshooting guide
 

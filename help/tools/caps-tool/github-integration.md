@@ -1,7 +1,6 @@
 ---
 title: Set Up the GitHub Integration for [!DNL Adobe Commerce Patching Automation]
 description: Learn how to install the [!DNL Adobe Commerce Patching Automation] GitHub App to enable patch operations for GitHub-connected Adobe Commerce Cloud projects.
-hide: true
 ---
 
 # Set up the GitHub integration for [!DNL Patching Automation]

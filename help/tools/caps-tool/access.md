@@ -1,7 +1,6 @@
 ---
 title: How to Access [!DNL Adobe Commerce Patching Automation]
 description: Learn how to access and use [!DNL Adobe Commerce Patching Automation]
-hide: true
 ---
 # How to access [!DNL Adobe Commerce Patching Automation]
 
