@@ -57,7 +57,15 @@ Adobe recommends enabling persistence for sessions to copy Valkey data to disk. 
 
 You can also enable both the RDB and AOF options at the same time. For additional details including the advantages and disadvantages of the persistence options, see the [Valkey Persistence documentation](https://valkey.io/topics/persistence/).
 
-For the cache instance, set up the instance so that it is large enough to store your entire Commerce cache. Size requirements depend on different factors like the number of products and store views. As a starting point, you can use the size of the cache folder on your file system. For example, if the `var/cache` folder on your file system is 5 GB, set up your Valkey instance with at least 5 GB to start. Persistence is not required for the cache instance because the Commerce cache can be restored.
+For the cache instance, set up the instance so that it is large enough to store your entire Commerce cache.
+
+- Size requirements depend on different factors like the number of products and store views.
+
+  As a starting point, you can use the size of the cache folder on your file system. For example, if the `var/cache` folder on your file system is 5 GB, set up your Valkey instance with at least 5 GB to start.
+
+- Persistence is not required for the cache instance because the Commerce cache can be restored.
+
+  See the [Valkey cache guide](https://valkey.io/docs/latest/develop/use/) for more information.
 
 For performance tuning, you can enable the following settings for asynchronous deletion. These settings do not change the behavior of Valkey.
 

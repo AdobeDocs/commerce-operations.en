@@ -49,7 +49,7 @@ Installing and configuring the Redis software is beyond the scope of this guide.
 
 Depending on your installation, you can usually find your Redis configuration in one of the following files: `/etc/redis/redis.conf` or `/etc/redis/<port>.conf`
 
-To optimize the Redis instance for your requirements, you get best results by using a dedicated instance for each session, Commerce cache and FPC.
+To optimize the Redis instance for your requirements, you get best results by using a dedicated instance for each session, Commerce cache, and full-page cache (FPC).
 
 For sessions, Adobe recommends that you enable persistence to copy Redis data to disk using either of the following persistence options: regular Redis Database Backup (RDB) snapshots, or Append Only File (AOF) persistence logs.
 
@@ -57,9 +57,17 @@ For sessions, Adobe recommends that you enable persistence to copy Redis data to
 
 - **Append Only File** (AOF) stores each write operation sent to Redis in a journal file. Redis reads this file on restart only and uses it to restore the original dataset.
 
-You can also enable both the RDB and AOF options at the same time. For additional details including the advantages and disadvantages of the persistence options, see the [Redis Persistence documentation](https://redis.io/topics/persistence).
+You can also enable both the RDB and AOF options at the same time. For additional details including the advantages and disadvantages of the persistence options, see the [Redis Persistence documentation](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/).
 
-For the cache instance, set up the instance so that it is large enough to store your entire Commerce cache. Size requirements depend on different factors like the number of products and store views. As a starting point, you can use the size of the cache folder on your file system. For example, if the `var/cache` folder on your file system is 5 GB, set up your Redis instance with at least 5 GB to start. Persistence is not required for the cache instance because the Commerce cache can be restored. See [Redis cache guide](https://redis.io/docs/latest/develop/use/).
+For the cache instance, set up the instance so that it is large enough to store your entire Commerce cache.
+
+- Size requirements depend on different factors like the number of products and store views.
+
+  As a starting point, use the size of the `var/cache` folder on your file system. For example, if `var/cache` is 5 GB, set up your Redis instance with at least 5 GB to start.
+
+- Persistence is not required for the cache instance because the Commerce cache can be restored.
+
+  See the [Redis cache guide](https://redis.io/docs/latest/develop/use/) for more information.
 
 For performance tuning, you can enable the following settings for asynchronous deletion. These settings do not change the behavior of Redis.
 
