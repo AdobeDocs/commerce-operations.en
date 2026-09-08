@@ -50,7 +50,7 @@ For most environments, the following timeline describes the duration of patch op
 
 >[!NOTE]
 >
->Not every possible error is listed below. Unlisted failures during preliminary check or validation appear as generic errors; contact support with the exact error text. During patching, an unanticipated failure shows the raw underlying error message directly instead of either generic fallback.
+>Not every possible error is listed below. Unlisted failures during preliminary check or validation appear as generic errors. Contact support with the exact error text. During patching, an unanticipated failure shows the raw underlying error message directly instead of either generic fallback.
 
 ### Environment readiness errors
 
