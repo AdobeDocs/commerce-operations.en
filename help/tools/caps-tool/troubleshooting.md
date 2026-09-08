@@ -193,7 +193,6 @@ For most environments, the following timeline describes the duration of patch op
 **If the details mention Composer or Adobe Commerce packages:**
 
 * Log in to [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) (or have your account owner do so) and confirm your account has access to the Commerce Enterprise codebase.
-* Verify your project's Composer public/private key pair is correct — see [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Verify that your project's Composer public and private authentication keys are correct. See [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Confirm that the package named in the error message is available for your Commerce version. See [Adobe Commerce packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
