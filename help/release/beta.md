@@ -35,7 +35,7 @@ See the following sections for a list of active beta programs.
 
 - Scale merchandising across large catalogs by targeting attribute values instead of individual SKUs.
 - Boost, bury, or hide every matching product with a single rule, for example promoting an entire brand or suppressing a discontinued color.
-- Combine attribute conditions with intelligent ranking: Matched products take priority, and your ranking strategy continues to order unmatched products.
+- Combine attribute conditions with intelligent ranking: matched products take priority, and your ranking strategy continues to order unmatched products.
 - Set boost or bury strength per condition to fine-tune how the rule affects matching products.
 
 To learn more, see [Attribute ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) in the merchandising rules guide.
