@@ -111,7 +111,7 @@ extensions:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 3.6.0
+        version: 3.6.1
       - core: 2.4.8
         version: 3.6.0
       - core: 2.4.7

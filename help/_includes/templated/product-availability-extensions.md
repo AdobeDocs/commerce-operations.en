@@ -95,7 +95,7 @@
       </tr>
       <tr>
           <td>Data Connection</td>
-          <td>3.6.0</td>
+          <td>3.6.1</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
