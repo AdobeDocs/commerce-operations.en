@@ -17,7 +17,7 @@
   <tbody>
       <tr>
           <td>Catalog Service</td>
-          <td>3.5.0</td>
+          <td>3.6.0</td>
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>3.5.0</td>
@@ -30,7 +30,7 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.7.2</td>
+          <td>4.7.3</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.7.0</td>
+          <td>6.8.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>

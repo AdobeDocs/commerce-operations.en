@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
 description: Learn about [!DNL Adobe Commerce Patching Automation], its uses, how to access it, and best practices for automated patching
-hide: true
 ---
 # [!DNL Adobe Commerce Patching Automation]
 

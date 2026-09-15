@@ -17,7 +17,7 @@
   <tbody>
       <tr>
           <td>Adobe I/O Events for Adobe Commerce</td>
-          <td>1.22.1</td>
+          <td>1.22.2</td>
           <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -95,7 +95,7 @@
       </tr>
       <tr>
           <td>Data Connection</td>
-          <td>3.6.0</td>
+          <td>3.6.1</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
           <td>3.6.0</td>

@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] Best Practices Guide'
 description: "Learn how to use [!DNL Adobe Commerce Patching Automation] to plan, validate, and apply patches safely, minimizing deployment risk and service interruptions."
-hide: true
 ---
 # [!DNL Adobe Commerce Patching Automation] best practices guide
 
