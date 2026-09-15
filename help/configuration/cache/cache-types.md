@@ -97,11 +97,22 @@ The `type` configuration maps a cache type to a frontend:
 ],
 ```
 
-In this example, Commerce assigns the `full_page` cache type to the `page_cache` frontend. The frontend determines which backend configuration stores that cache type.
+Where:
+
+- `<frontend_type>` -- The low-level frontend cache type. Specify a class name compatible with `Zend_Cache_Core`.
+  If omitted, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) is used.
+
+- `<frontend_option>`, `<frontend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the frontend cache on creation.
+
+- `<backend_type>` -- The low-level backend cache type. You can specify:
+    - **Symfony Cache (2.4.9+, recommended)**: Simplified names like `valkey` or `file`
+    - **Zend-based**: Full class name compatible with `Zend_Cache_Backend` that implements `Zend_Cache_Backend_Interface`
+
+- `<backend_option>`, `<backend_option_value>` -- The name and value of options the Commerce framework passes as an associative array to the backend cache on creation.
 
 >[!NOTE]
 >
->The `full_page` key represents a Commerce application cache type. HTTP full-page caching through Varnish or Fastly is a separate caching layer. See [Caching overview and configuration options](caching-overview.md).
+>For backend value formats, such as Zend-based class names versus Symfony Cache simplified names like `valkey` or `file`, see [Cache backend options](cache-options.md).
 
 >[!MORELIKETHIS]
 >
