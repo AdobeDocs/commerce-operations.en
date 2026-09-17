@@ -130,4 +130,4 @@ The fixes for CVE-2025-47110 and VULN-31547 are also available as an isolated pa
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

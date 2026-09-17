@@ -279,4 +279,4 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 One of the security bug fixes included the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->
