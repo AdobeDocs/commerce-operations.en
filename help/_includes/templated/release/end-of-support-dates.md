@@ -8,7 +8,7 @@
       <th>End of standard support</th>
       <th>End of extended support</th>
       <th>End of security-only period</th>
-      <th><a href="version-upgrade-enforcement-policy.md">Version upgrade enforcement date (Cloud only)</a></th>
+      <th>Version upgrade enforcement date (Cloud only)</th>
     </tr>
   </thead>
   <tbody>

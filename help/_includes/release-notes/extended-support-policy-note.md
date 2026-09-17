@@ -9,4 +9,4 @@
 >See also:
 >
 >- [Software lifecycle policy](/help/release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
->- [Cloud version upgrade enforcement policy](/help/release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions
+>- [Required actions and deadlines to secure Commerce environments](/help/release/security-enforcement-policy.md) — enforcement dates and required actions
