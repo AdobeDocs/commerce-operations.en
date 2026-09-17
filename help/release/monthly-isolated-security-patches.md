@@ -1,12 +1,12 @@
 ---
 title: "Monthly Security Isolated Patching Policy"
-description: "Learn about Adobe Commerce's monthly isolated security patch policy, which delivers targeted CVE fixes on the second Tuesday of each month between full security patch releases.".
+description: "Learn about Adobe Commerce's monthly isolated security patches, delivered on Patch Tuesday to provide targeted CVE fixes between security patch releases."
 solution: "Commerce"
 product: "Adobe Commerce"
-role: Admin, Developer
+role: [Admin, Developer]
 level: "Experienced"
 topic: "Security"
-keywords: monthly isolated security patches, Adobe Commerce, Cloud Patches, Commerce Version Tool
+keywords: [monthly isolated security patches, Adobe Commerce, Cloud Patches, Commerce Version Tool]
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
