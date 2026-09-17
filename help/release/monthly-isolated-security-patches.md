@@ -1,6 +1,6 @@
 ---
 title: "Monthly Security Isolated Patching Policy"
-description: "To get critical security fixes to Adobe Commerce customers faster while ensuring that customers can apply the patch quickly and promptly, Adobe Commerce now delivers monthly isolated security patches on every Patch Tuesday (the second Tuesday of the month). See the Adobe Commerce release schedule for dates."
+description: "Learn about Adobe Commerce's monthly isolated security patch policy, which delivers targeted CVE fixes on the second Tuesday of each month between full security patch releases.".
 solution: "Commerce"
 product: "Adobe Commerce"
 role: [Admin, Developer]
@@ -39,11 +39,11 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-badgePaas: label="Adobe Commerce on Cloud and On-premises2.4.4 - 2.4.9 only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud and On-premises version 2.4.4 through 2.4.9 only"
----
-# Monthly Security Isolated Patching Policy
 
-To help Adobe Commerce customers apply critical security fixes sooner, Adobe Commerce now delivers monthly isolated security patches on Patch Tuesday (the second Tuesday of the month). See the [Adobe Commerce release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) for dates.
+---
+# Monthly isolated security patching policy
+
+To help Adobe Commerce customers apply critical security fixes sooner, Adobe Commerce now delivers monthly isolated security patches on Patch Tuesday (the second Tuesday of the month). See the [Adobe Commerce release schedule](schedule.md) for dates. These patches are available for Adobe Commerce on Cloud infrastructure, Adobe Commerce on-premises, and Magento Open Source installations.
 
 An isolated security patch file contains only the code needed to resolve one or more specific security vulnerabilities, delivered as a narrowly scoped code-diff file rather than a full Composer package. Because the changes are specific to security vulnerabilities, they can be reviewed, tested, and applied faster than a security patch release, without triggering the broader dependency resolution and regression testing that a security patch version upgrade requires. Every monthly isolated security patch file is folded into the next full security patch release, so customers can get all the released isolated patch files through the next security patch (`-pN`) release.
 
@@ -54,16 +54,16 @@ Isolated security patches are one of several types of patches Adobe Commerce pro
 | **Patch type** | **Purpose** | **Cumulative?** | **Typical delivery** | **Role** |
 | --- | --- | --- | --- | --- |
 | Security patch release (-pN) | Security and compliance update for a supported release line | Yes—establishes the current security baseline | Composer package | Primary supported security baseline |
-| Isolated security patch file | Targeted fix for one or more CVEs | No—apply isolated patches in sequence | Standalone patch file, commonly a ZIP. Some fixes may also be included in Cloud Patches for Commerce  | Faster interim remediation between security patch releases |
-| Cloud Patches for Commerce | Required, critical fixes (including security fixes) and Cloud-specific changes | Package-version dependent | Cloud Patches for Commerce package managed through ECE-Tools  | Applied automatically during Cloud deployment |
+| Isolated security patch file | Targeted fix for one or more CVEs | No—apply isolated patches in sequence | Standalone patch file, commonly a ZIP. Some fixes may also be included in Cloud Patches for Commerce | Faster interim remediation between security patch releases |
+| Cloud Patches for Commerce | Required, critical fixes (including security fixes) and Cloud-specific changes | Package-version dependent | Cloud Patches for Commerce package managed through ECE-Tools | Applied automatically during Cloud deployment |
 | Quality Patches Tool (QPT) patch | Optional, targeted quality or compatibility fix for a specific issue | Patch-chain dependent | QPT package | Delivers targeted quality fixes |
-| Hotfix | Urgent, narrowly scoped fix (for example, a zero-day) | Case-specific | ZIP/diff  or Standalone package via QPT | Urgent, high-impact issues |
+| Hotfix | Urgent, narrowly scoped fix (for example, a zero-day) | Case-specific | ZIP/diff or Standalone package via QPT | Urgent, high-impact issues |
 
 The two types of security patches play different roles:
 
-- **Isolated patches** contain only vulnerability fixes and are not cumulative. They don't bundle previously released isolated patch files. Merchants must apply patches in order, as each new patch assumes earlier ones are in place. To apply an isolated security patch, the installation must be on the latest security-only patch release for its supported line, because isolated fixes are tested exclusively against that version.
+* **Isolated patches** contain only vulnerability fixes and are not cumulative. They don't bundle previously released isolated patch files. Merchants must apply patches in order, as each new patch assumes earlier ones are in place. To apply an isolated security patch, the installation must be on the latest security-only patch release for its supported line, because isolated fixes are tested exclusively against that version.
 
-- **Security patches (`-pN`)** are released annually for all supported release lines and deployed through Composer. They include all previously released security, compliance, and quality hotfixes. Adobe may release additional security patches if necessary.
+* **Security patches (`-pN`)** are released annually for all supported release lines and deployed through Composer. They include all previously released security, compliance, and quality hotfixes. Adobe may release additional security patches if necessary.
 
 ## Monthly isolated patch benefits
 
@@ -71,35 +71,49 @@ Vulnerability discovery has accelerated across the industry. AI-assisted analysi
 
 The goal is speed without unnecessary overhead. A ready fix does not sit in queue until the next security patch release, and merchants do not patch more often than necessary. Isolated security patch files resolve that tension: each is a narrow, security-only diff — far simpler to review and apply than a security patch release, because its scope is deliberately limited.
 
-This approach works because single-purpose patches skip the dependency resolution and full regression testing required for Composer releases, allowing them to be built, validated against a known baseline, and shipped quickly. On Cloud infrastructure, these fixes are bundled into Cloud Patches for Commerce —  a package merchants update as part of their Composer and deployment workflow. Once updated, the fix applies automatically during deployment with no separate patch file to locate or apply. The manual patch-file workflow described in security bulletins is for on-premises and Magento Open Source installations that do not run the Cloud pipeline.
+This approach works because single-purpose patches skip the dependency resolution and full regression testing required for Composer releases, allowing them to be built, validated against a known baseline, and shipped quickly. On Cloud infrastructure, these fixes are bundled into Cloud Patches for Commerce — a package merchants update as part of their Composer and deployment workflow. Once updated, the fix applies automatically during deployment with no separate patch file to locate or apply. The manual patch-file workflow described in security bulletins is for on-premises and Magento Open Source installations that do not run the Cloud pipeline.
 
 Instead of managing changes through git, Cloud customers can also apply or revert patches using the Adobe Commerce Patching Automation tool.
 
-## How to apply monthly isolated patches
+## Apply monthly isolated patches
 
 To apply the monthly isolated security patch file and stay current on the latest fixes, follow the process below:
 
-1. **Check the release schedule.** New monthly isolated patch files ship according to the release schedule. Review the corresponding security bulletin for affected components and CVEs — each bulletin links to release notes with step-by-step instructions for installing that month's isolated patch file.
+1. **Check the release schedule.** New monthly isolated patch files ship according to the release schedule.
 
-2. **Check the security status of your Commerce installation using the [Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).** The tool reports which monthly patches are currently installed, which are missing, and which CVEs the installation remains exposed to. This provides a definitive assessment of what action is required, rather than relying on the version number alone.
+   Review the corresponding security bulletin for affected components and CVEs. Each bulletin links to release notes with step-by-step instructions for installing that month's isolated patch file.
 
-3. **Confirm your baseline.** Isolated patches are only tested against the latest security-only `-p` release for your line. If you're behind on that baseline, apply it first.
+1. Check the security status of your Commerce installation using the [Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).
 
-4. **Apply all missing patches in order.** Because they are not cumulative, you cannot skip to the newest file.
+   The tool reports which monthly patches are currently installed, which are missing, and which CVEs the installation remains exposed to. This provides a definitive assessment of what action is required, rather than relying on the version number alone.
+
+1. Confirm your baseline version.
+
+   Isolated patches are only tested against the latest security-only `-p` release for your line. If you're behind on that baseline, apply it first.
+
+1. Apply all missing patches in order.
+
+   Because they are not cumulative, you cannot skip to the newest file.
 
    >[!NOTE]
    >
-   >**Cloud customers:** Check your installed Cloud Patches [version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) first.  The fix may already be included and applying it manually can create a conflict, or duplicate the fix.
+   >**Cloud customers:** Check your installed Cloud Patches [version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) first. The fix may already be included and applying it manually can create a conflict, or duplicate the fix.
 
-5. **Match files to your installed components.** Apply only the file that corresponds to your CE, EE, B2B, or other component version.
+1. Match files to your installed components.
 
-6. **Re-run the Commerce Version Tool to confirm.** Verify the new patch shows as installed and the relevant CVEs now report as protected.
+   Apply only the file that corresponds to your CE, EE, B2B, or other component version.
 
-7. **Test, then deploy.** Validate in staging before promoting to production, per your normal change process.
+1. Re-run the Commerce Version Tool to confirm.
 
-Cloud customers can also use [Adobe Commerce Patching automation  ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro)to apply or revert patches through the Admin panel instead of the manual git and Composer steps above.
+   Verify the new patch shows as installed and the relevant CVEs now report as protected.
 
-## What this means for you, by deployment type
+1. Test, then deploy.
+
+   Validate in staging before promoting to production, per your normal change process.
+
+Cloud customers can also use [Adobe Commerce Patching automation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) to apply or revert patches through the Admin panel instead of the manual git and Composer steps above.
+
+## Patch requirements by deployment type
 
 | **You run…** | **What changes for you** |
 | --- | --- |
@@ -110,36 +124,34 @@ Cloud customers can also use [Adobe Commerce Patching automation  ](https://expe
 
 Monthly isolated security patching is a new release policy. The following questions address common concerns.
 
-**Do I need every previous isolated patch applied, or just the latest security patch release?**
+### Do I need every previous isolated patch applied, or just the latest security patch release?
 
 You need both. Before applying an isolated patch, update to the latest security-only `-p` release baseline. Each patch is tested only against that baseline. Isolated patches are not cumulative, so apply any missed patches in sequence.
 
-For example, if you're on the current `-p` release baseline but missed July and August's isolated patches,  apply July, then August, then September. The next full `-p` release resets the sequence because it includes all previously issued isolated fixes.
+For example, if you're on the current `-p` release baseline but missed July and August's isolated patches, apply July, then August, then September. The next full `-p` release resets the sequence because it includes all previously issued isolated fixes.
 
-**Applying separate patch files is more manual work than one Composer update. Why not just ship a Composer package?**
+### Applying separate patch files is more manual work than one Composer update. Why not just ship a Composer package?
 
- In an installation with multiple components—CE, EE, B2B, and PageBuilder—a monthly release might require separate patch files because each file targets a specific installed component version. Combining all fixes into one Composer package would reintroduce dependency-resolution issues and require full-surface regression testing—the risks isolated patches are designed to avoid. Cloud customers do not apply patches manually; Cloud Patches delivers the same fixes through the existing deployment pipeline.
+ In an installation with multiple components—CE, EE, B2B, and Page Builder—a monthly release might require separate patch files because each file targets a specific installed component version. Combining all fixes into one Composer package would reintroduce dependency-resolution issues and require full-surface regression testing—the risks isolated patches are designed to avoid. Cloud customers do not need to apply patches manually. The Cloud Patches tool delivers the same fixes through the existing deployment pipeline.
 
-**With patches layered on patches, how do I know what security state my installation is in?**
+### With patches layered on patches, how do I know what security state my installation is in?
 
- With the release of monthly security patches, Adobe Commerce introduced the **[Commerce Version tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)**, a standalone utility that reports which patches are installed or missing and which CVEs your installation is protected against. Rather than relying on version numbers, the tool reads patch metadata and provides machine-readable output for reporting and continuous integration (CI).
+ With the release of monthly security patches, Adobe Commerce introduced the [Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro), a standalone utility that reports which patches are installed or missing and which CVEs your installation is protected against. Rather than relying on version numbers, the tool reads patch metadata and provides machine-readable output for reporting and continuous integration (CI).
 
-**Does this mean Adobe has stepped back from cumulative, versioned security releases?**
+### Does this mean Adobe has stepped back from cumulative, versioned security releases?
 
-No — the annual `-p` release remains the primary, cumulative security checkpoint. Isolated patches supplement that cadence for CVEs that can't safely wait for it; they don't replace it. If you apply the scheduled security patch release for your line each year, you remain on a fully supported path and receive every fix that was ever issued as an isolated file in between.
+No. The annual `-p` release remains the primary, cumulative security checkpoint. Isolated patches supplement that cadence for CVEs that cannot safely wait for it. They do not replace `-p` releases. If you apply the scheduled security patch release for your line each year, you remain on a fully supported path and receive every fix that was ever issued as an isolated file in between.
 
-**Doesn't shipping fixes outside of Composer make a default install less secure?**
+### Doesn't shipping fixes outside of Composer make a default install less secure?
 
-No. The delivery mechanism does not affect the fix's security outcome. An isolated patch applies the same code change later included in a full patch (`-p`) release whether it is delivered as a Composer package or a standalone file has no bearing on its effectiveness. **Merchants who do not apply the patch remain at their existing security baseline until the next schedule**d security release. Applying isolated patches can reduce exposure by delivering fixes sooner, rather than waiting for a full release cycle.
+No. The delivery mechanism does not affect the fix's security outcome. An isolated patch applies the same code change later included in a full patch (`-p`) release. Whether the fix is delivered as a Composer package or a standalone file has no bearing on its effectiveness. Merchants who do not apply the patch remain at their existing security baseline until the next scheduled security release. Applying isolated patches can reduce exposure by delivering fixes sooner, rather than waiting for a full release cycle.
 
-## Resources
+## More help on this topic
 
-- [Software lifecycle policy](lifecycle-policy.md)
-
-- [Release policy](versioning-policy.md)
-
-- [Patch release schedule](schedule.md)
-
-- [Commerce Version Tool](../tools/commerce-version-tool/intro.md)
-
-- [Adobe Security Bulletins and Advisories](https://helpx.adobe.com/security/security-bulletin.html)
+>[!MORELIKETHIS]
+>
+>* [Software lifecycle policy](lifecycle-policy.md)
+>* [Release policy](versioning-policy.md)
+>* [Patch release schedule](schedule.md)
+>* [Commerce Version Tool](../tools/commerce-version-tool/intro.md)
+>* [Adobe Security Bulletins and Advisories](https://helpx.adobe.com/security/security-bulletin.html)
