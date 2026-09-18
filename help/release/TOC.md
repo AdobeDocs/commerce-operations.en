@@ -49,7 +49,7 @@ nudge: true
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
   - [Required actions and deadlines to secure Commerce environments](security-enforcement-policy.md)
-  - [Version upgrade enforcement policy](version-upgrade-enforcement-policy.md)
+  - [Monthly security isolated patching policy](monthly-isolated-security-patches.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)
 - [Features by version](features.md)

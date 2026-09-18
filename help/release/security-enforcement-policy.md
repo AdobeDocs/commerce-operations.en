@@ -204,5 +204,4 @@ Adobe provides tools that reduce the cost and time of migrating to [!DNL Adobe C
 >[!MORELIKETHIS]
 >
 >* [Lifecycle policy](lifecycle-policy.md)
->* [Version upgrade enforcement policy for Adobe Commerce on Cloud](version-upgrade-enforcement-policy.md)
 >* [Shared responsibility security and operational model](../security-and-compliance/shared-responsibility.md)
