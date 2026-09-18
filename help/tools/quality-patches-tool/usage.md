@@ -1,11 +1,11 @@
 ---
-title: Usage
+title: Installation and usage
 description: Learn how to use the Quality Patches Tool to apply and manage patches for Adobe Commerce. Discover testing, application, and patch management techniques.
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
 ---
-# Usage
+# Installation and usage
 
 The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) delivers individual patches developed by Adobe and the Magento Open Source community. It allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce. You can apply patches to Adobe Commerce projects regardless of who developed the patch. For example, you can apply a patch developed by the community to Adobe Commerce projects.
 
