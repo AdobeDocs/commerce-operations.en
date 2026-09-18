@@ -30,7 +30,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Admin UI SDK</td>
-          <td>4.2.1</td>
+          <td>5.0.0</td>
           <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
