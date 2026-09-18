@@ -70,9 +70,9 @@ This approach works because single-purpose patches skip the dependency resolutio
 
 To apply the monthly isolated security patch file and stay current on the latest fixes, follow the process below:
 
-1. **Check the [release schedule.](schedule.md)** New monthly isolated patch files ship according to the release schedule.
+1. **Check the [release schedule](schedule.md).**
 
-   Review the corresponding security bulletin for affected components and CVEs. Each bulletin links to release notes with step-by-step instructions for installing that month's isolated patch file.
+   New monthly isolated patch files ship according to the release schedule. Review the corresponding security bulletin for affected components and CVEs. Each bulletin links to release notes with step-by-step instructions for installing that month's isolated patch file.
 
 1. **Check the security status of your Commerce installation using the [Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).**
 
