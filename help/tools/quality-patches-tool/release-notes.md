@@ -29,6 +29,29 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.83 {#v1-1-83}
+
+* **AC-18128** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where order dates and order comment timestamps returned by GraphQL can display incorrect calendar dates in non-English locale settings.
+* **AC-18096** (for Adobe Commerce and Magento Open Source >=2.4.8-p1 <2.4.10) - Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (/) to dash-separated (-).
+* **AC-17975** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes multiple PHP 8.5 compatibility issues affecting Admin workflows, checkout authentication, CAPTCHA processing, category management, configuration pages, and command-line operations in certain PHP environments.
+* **ACP2E-4639** (for Adobe Commerce, B2B >=1.3.4 <1.5.3) - Fixes the issue  where the requisition list items type was misspelled in the GraphQL schema, while the older items field and RequistionListItems type remain available but are deprecated.
+* **ACP2E-4838** (for Adobe Commerce >=2.4.4 <2.4.10) - Fixes the issue where an Admin user with restricted permissions cannot delete customers from the Customers grid.
+* **ACP2E-4877** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where orders placed using Payment on Account could not be edited in Admin while in Pending status.
+* **ACP2E-4908** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where large catalogs could cause excessive memory use in Redis or Valkey because separate layout cache entries were created for each product in each store view.
+* **AC-12854** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where reordering an order in the admin creates a new order number with a -1 suffix instead of assigning the next sequential order number.
+* **ACP2E-4977** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where invoice and credit memo grand totals for configurable products do not include Fixed Product Tax (FPT), resulting in totals lower than the order total.
+* **AC-16530** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the shopping cart did not consistently reflect scheduled updates to catalog price rules.
+* **AC-11389** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where discounts, taxes, and order totals are calculated incorrectly in some rounding scenarios.
+* **ACP2E-4998** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the POST /V1/products/tier-prices REST API request failed for the entire request when one SKU in the payload did not exist, preventing valid SKUs from being updated.
+* **ACP2E-5015** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where saving a shared catalog in the Admin can unintentionally remove assigned products and pricing when required catalog data is unavailable.
+* **AC-14940** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where clicking Reset Password for a customer account in the Admin did not send the password reset email in some store-related cases.
+* **ACP2E-5101** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where installing B2B module failed when indexers were set to Update on Schedule.
+* **ACP2E-5205** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue when category loading takes a considerable amount of time or causes a timeout when a large number of categories and products are involved. Also, product count is properly displayed for each category leaf.
+* **ACP2E-3211** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where adding the same product to the cart at the same time on the Storefront creates separate items in the cart for the same SKU instead of combining them into a single item.
+* **ACP2E-5223** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where the Catalog Permissions index includes websites that are excluded from a customer group.
+* Versions updated: **MDVA-42855-V2**, **ACSD-55100**, **ACSD-61845**, **ACP2E-4732**, **ACP2E-4156**
+* Replaced patches: **ACSD-67643**
+
 ## v1.1.82 {#v1-1-82}
 
 * **ACP2E-4194** (for Adobe Commerce and Magento Open Source >=2.4.7-p10 <2.4.8 || >=2.4.8-p5 <2.4.9) - Fixes the issue where GraphQL responses return incorrect HTTP status codes for invalid, unauthorized, or malformed requests.
