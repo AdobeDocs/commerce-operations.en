@@ -31,8 +31,8 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.83 {#v1-1-83}
 
-* **AC-18128** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where order dates and order comment timestamps returned by GraphQL can display incorrect calendar dates in non-English locale settings.
-* **AC-18096** (for Adobe Commerce and Magento Open Source >=2.4.8-p1 <2.4.10) - Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (/) to dash-separated (-).
+* **AC-18128** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.8-p6) - Fixes the issue where order dates and order comment timestamps returned by GraphQL can display incorrect calendar dates in non-English locale settings.
+* **AC-18096** (for Adobe Commerce and Magento Open Source >2.4.8 <=2.4.9-p1) - Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (/) to dash-separated (-).
 * **AC-17975** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes multiple PHP 8.5 compatibility issues affecting Admin workflows, checkout authentication, CAPTCHA processing, category management, configuration pages, and command-line operations in certain PHP environments.
 * **ACP2E-4639** (for Adobe Commerce, B2B >=1.3.4 <1.5.3) - Fixes the issue  where the requisition list items type was misspelled in the GraphQL schema, while the older items field and RequistionListItems type remain available but are deprecated.
 * **ACP2E-4838** (for Adobe Commerce >=2.4.4 <2.4.10) - Fixes the issue where an Admin user with restricted permissions cannot delete customers from the Customers grid.
