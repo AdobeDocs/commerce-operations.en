@@ -50,14 +50,16 @@ The table below provides release notes and important information for Adobe Comme
     </tr>
     <tr>
       <td><strong>Services for Adobe Commerce</strong>
-        <p>Learn about the latest improvements to innovative Commerce merchandising services.</p>
+        <p>Learn about the latest improvements and innovations in Commerce services.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Catalog Service</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Payment Services</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Product Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS Data Export Service</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">Services Connector</a></li>
           </ul>
         </td>
