@@ -2,8 +2,32 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 11 15:56:49 2026
+updated: Fri Sep 25 17:53:40 2026
 entries:
+- description: Added [Monthly isolated security patching policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/monthly-isolated-security-patches),
+    explaining how Adobe Commerce delivers targeted, isolated CVE fixes on Patch Tuesday
+    between full security patch releases, and how to apply and verify them.
+  versions: ''
+  type: new-topic
+  date: September 18, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2201
+  merge_commit: 681f7f0589aed8787aaf165d36ac00f670d751ce
+  contributor: meker_adobe
+  labels:
+  - new-topic
+- description: Corrected the [Redis/Valkey service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+    guide to clarify that the `VALKEY_BACKEND` and `REDIS_BACKEND` deploy variables
+    don't determine which cache service Adobe Commerce actually uses, and that `VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`
+    must match the service actually available in the environment.
+  versions: ''
+  type: technical
+  date: September 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2177
+  merge_commit: 49781ad38a266fffa1be080b5a093327a28cf6a6
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - technical
 - description: Adobe Commerce Patching Automation is now generally available. See
     the [documentation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro)
     to learn more.
