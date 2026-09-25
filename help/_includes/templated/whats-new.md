@@ -4,6 +4,50 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 18, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Monthly isolated security patching policy</a>, explaining how Adobe Commerce delivers targeted, isolated CVE fixes on Patch Tuesday between full security patch releases, and how to apply and verify them.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### September 15, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Corrected the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey service configuration</a> guide to clarify that the <code>VALKEY_BACKEND</code> and <code>REDIS_BACKEND</code> deploy variables don't determine which cache service Adobe Commerce actually uses, and that <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> must match the service actually available in the environment.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### September 8, 2026
 
 <table style="table-layout:auto;">
@@ -374,102 +418,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         New topic, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 27, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">Overview: Quality Patches Tool (QPT) v1.1.82</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 23, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a> with MariaDB Cloud version support details for Adobe Commerce 2.4.9 (12.3 recommended, 11.8 supported).</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 22, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a> topic with the latest Commerce on Cloud service versions, including a RabbitMQ 4.3 update and confirmed compatibility with MariaDB 12.3.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 21, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: Scheduled Update preview of the home page with configurable products redirects to the maintenance page</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.81 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468: Website-scoped Admin users can't save Dynamic Blocks in Page Builder</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">commit</a></td>
     </tr>
   </tbody>
 </table>
