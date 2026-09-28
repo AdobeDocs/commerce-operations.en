@@ -23,6 +23,11 @@ Adobe Commerce uses the database to save locks by default. If you have multiple 
 
 If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud).
 
+>[!NOTE]
+>
+>There is a [known limitation](https://mariadb.com/docs/galera-cluster/reference/mariadb-galera-cluster-known-limitations) in use of db lock provider with Galera Cluster.
+>Therefore, we recommend avoiding the database lock provider with Galera Cluster for Adobe Commerce on-premises.
+
 ### Command usage
 
 ```shell
