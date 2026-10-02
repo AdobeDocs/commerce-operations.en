@@ -18,7 +18,7 @@ QPT v1.1.83 includes the following patches:
 1. **ACP2E-4838**: Fixes the issue where an Admin user with restricted permissions can't delete customers from the Customers grid.
 1. **ACP2E-4877**: Fixes the issue where orders placed using **[!UICONTROL Payment on Account]** couldn't be edited in Admin while in *Pending* status.
 1. **ACP2E-4908**: Fixes the issue where large catalogs cause excessive memory use in Redis or Valkey because separate layout cache entries were created for each product in each store view.
-1. **AC-12854**: Fixes the issue where reordering an order in the Admin creates a new order number with a *-1* suffix instead of assigning the next sequential order number.
+1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: Fixes the issue where reordering an order in the admin creates a new order number with a -1 suffix instead of assigning the next sequential order number.
 1. **ACP2E-4977**: Fixes the issue where invoice and credit memo grand totals for configurable products don't include **[!UICONTROL Fixed Product Tax]** (FPT), resulting in totals lower than the order total.
 1. **AC-16530**: Fixes the issue where the shopping cart didn't consistently reflect scheduled updates to catalog price rules.
 1. **AC-11389**: Fixes the issue where discounts, taxes, and order totals are calculated incorrectly in some rounding scenarios.
