@@ -16,7 +16,7 @@ QPT v1.1.83 includes the following patches:
 1. **AC-18096**: Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (`/`) to dash-separated (`-`).
 1. **ACP2E-4639**: Fixes the issue  where the requisition list items type was misspelled in the GraphQL schema, while the older items field and `RequistionListItems` type remain available but are deprecated.
 1. **ACP2E-4838**: Fixes the issue where an Admin user with restricted permissions can't delete customers from the Customers grid.
-1. **ACP2E-4877**: Fixes the issue where orders placed using **[!UICONTROL Payment on Account]** couldn't be edited in Admin while in *Pending* status.
+1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: Fixes the issue where orders placed using Payment on Account could not be edited in Admin while in Pending status.
 1. **ACP2E-4908**: Fixes the issue where large catalogs cause excessive memory use in Redis or Valkey because separate layout cache entries were created for each product in each store view.
 1. **AC-12854**: Fixes the issue where reordering an order in the Admin creates a new order number with a *-1* suffix instead of assigning the next sequential order number.
 1. **ACP2E-4977**: Fixes the issue where invoice and credit memo grand totals for configurable products don't include **[!UICONTROL Fixed Product Tax]** (FPT), resulting in totals lower than the order total.
