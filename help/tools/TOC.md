@@ -1057,6 +1057,8 @@ color: red
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
            - [AC-12854: Admin reorder uses the original order number with a -1 suffix](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
+        - v1.1.84 {#v1-1-84}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
