@@ -12,3 +12,4 @@ Gemfile.lock
 .env
 .scout
 .vscode
+AGENTS.md
