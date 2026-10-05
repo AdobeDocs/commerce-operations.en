@@ -11,7 +11,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.84 includes the following patches:
 
-1. **ACP2E-4913**: Fixes the issue where shipping and invoicing operations fail due to a deadlock.
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: Fixes the issue where shipping and invoicing operations fail due to a deadlock.
 1. **ACP2E-5005**: Fixes the issue where the quantity of a bundle product option in a negotiable quote reverts to its previous value when the bundle product is reconfigured in the Admin, and the quantity is edited.
 1. **ACP2E-5009**: Fixes the issue where data migration from Magento Open Source to Adobe Commerce doesn't correctly migrate category scheduled design changes and product **[!UICONTROL Special Price]** scheduled updates, causing some scheduled updates to be missing or skipped during migration, and improves migration performance.
 1. **ACP2E-5017**: Fixes the issue where querying customer role through GraphQL returns an *Internal server error* when the customer isn't assigned to a company.
