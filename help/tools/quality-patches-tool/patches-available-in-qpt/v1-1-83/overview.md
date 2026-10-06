@@ -24,7 +24,7 @@ QPT v1.1.83 includes the following patches:
 1. **AC-11389**: Fixes the issue where discounts, taxes, and order totals are calculated incorrectly in some rounding scenarios.
 1. **ACP2E-4998**: Fixes the issue where the `POST /V1/products/tier-prices` REST API request failed for the entire request when one SKU in the payload didn't exist, preventing valid SKUs from being updated.
 1. **ACP2E-5015**: Fixes the issue where saving a shared catalog in the Admin can unintentionally remove assigned products and pricing when required catalog data is unavailable.
-1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: Fixes the issue where clicking Reset Password for a customer account in the Admin did not send the password reset email in some store-related cases.
+1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: Fixes the issue where clicking [!UICONTROL Reset Password] for a customer account in the Admin does not send the password reset email in some store-related cases.
 1. **ACP2E-5101**: Fixes the issue where installing B2B module failed when indexers were set to **[!UICONTROL Update on Schedule]**.
 1. **ACP2E-5205**: Fixes the issue when category loading takes a considerable amount of time or causes a timeout when a large number of categories and products are involved. Also, product count is now properly displayed for each category leaf.
 1. **ACP2E-3211**: Fixes the issue where adding the same product to the cart at the same time on the storefront creates separate items in the cart for the same SKU instead of combining them into a single item.
