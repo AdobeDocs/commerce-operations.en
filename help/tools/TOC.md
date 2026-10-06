@@ -1056,6 +1056,7 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [AC-18128: GraphQL order dates and comment timestamps are incorrect for non-English locales](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
