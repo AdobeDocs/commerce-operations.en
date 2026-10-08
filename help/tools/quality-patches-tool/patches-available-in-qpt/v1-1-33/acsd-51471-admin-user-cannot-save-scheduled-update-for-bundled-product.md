@@ -3,6 +3,17 @@ title: 'ACSD-51471: Admin user cannot save scheduled update for bundled product'
 description: Apply the ACSD-51471 patch to fix the Adobe Commerce issue where an admin user cannot save a scheduled update for a bundled product that uses a simple product with a scheduled update.
 exl-id: d8134111-63f0-4476-a407-677bda52fa90
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-51471: Admin user cannot save scheduled update for bundled product
 

@@ -1,10 +1,22 @@
 ---
-title: "MDVA-42950: Videos don't play on the product page"
+title: 'MDVA-42950: Videos don''t play on the product page'
 description: The MDVA-42950 patch solves the issue where videos are not being played on the product page. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-42950. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
 exl-id: 61c36dc5-0015-431d-84c1-0726bb310cd6
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-42950: Videos don't play on the product page
 
