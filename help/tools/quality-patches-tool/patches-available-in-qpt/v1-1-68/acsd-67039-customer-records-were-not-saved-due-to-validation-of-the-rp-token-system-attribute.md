@@ -1,10 +1,29 @@
 ---
-title: "ACSD-67039: Customer records weren't saved due to rp_token system attribute validation"
+title: 'ACSD-67039: Customer records weren''t saved due to rp_token system attribute validation'
 description: Apply the ACSD-67039 patch to fix the Adobe Commerce issue where encoding diacritics causes validation breaks on rp_token.
 feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-67039: Customer records weren't saved due to `rp_token` system attribute validation
 

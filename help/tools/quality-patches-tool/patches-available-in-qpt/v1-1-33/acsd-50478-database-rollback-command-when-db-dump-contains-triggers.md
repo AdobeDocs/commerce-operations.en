@@ -3,6 +3,17 @@ title: 'ACSD-50478: JS issue for rollback action in backups grid and database ro
 description: Apply the ACSD-50478 patch to fix the JS issue for the rollback action in the backups grid and the database rollback command for a case when the DB dump contains triggers and a *delimiter* SQL command.
 exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-50478: JS issue for rollback action in backups grid and database rollback command
 

@@ -5,6 +5,25 @@ feature: Orders, Companies, Purchase Orders
 role: Admin, Developer
 exl-id: 13830361-dd0c-486f-b07f-34280a17ab76
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: e9004f3c-09ae-5d24-acd2-fa0987fdb66e
+    internal-label: Companies
+subfeature_v2:
+  - id: 2d6d41d4-a5c1-5baf-8dbe-bf7300b68bb3
+    internal-label: Purchase Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-54989: Company admin cannot order when *[!UICONTROL Enable Purchase Orders]* set to *Yes* and *[!UICONTROL Purchase Order]* set to *No*
 

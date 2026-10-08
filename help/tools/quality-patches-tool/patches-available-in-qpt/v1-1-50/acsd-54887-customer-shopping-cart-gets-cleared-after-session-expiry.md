@@ -5,6 +5,20 @@ feature: Shopping Cart
 role: Admin, Developer
 exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-54887: Customer shopping cart gets cleared after customer session has expired
 

@@ -5,6 +5,23 @@ feature: Cache, Data Import/Export
 role: Admin
 exl-id: eafc69ab-ec81-4192-85f8-a235f0a131a9
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-51149: Scheduled [!UICONTROL ImportExport] with enabled [!UICONTROL Catalog Permissions] invalidates indexers
 

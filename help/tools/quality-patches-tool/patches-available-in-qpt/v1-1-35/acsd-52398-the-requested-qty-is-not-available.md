@@ -5,6 +5,22 @@ feature: Shopping Cart, Quotes, Products
 role: Admin
 exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-52398: Requested qty not available when trying to update quantity of bundled product
 

@@ -5,6 +5,25 @@ feature: Catalog Management, Products, Search
 role: Admin
 exl-id: d494d263-016b-43fd-aa87-0d74eadc4a6a
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-43983: Products set as "Not Visible Individually" appear in search results
 

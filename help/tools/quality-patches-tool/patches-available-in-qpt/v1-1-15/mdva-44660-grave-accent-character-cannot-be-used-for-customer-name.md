@@ -1,10 +1,25 @@
 ---
-title: "MDVA-44660: Grave accent character cannot be used for customer's name"
+title: 'MDVA-44660: Grave accent character cannot be used for customer''s name'
 description: The MDVA-44660 patch fixes the issue where the grave accent character cannot be used for a customer's name. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 is installed. The patch ID is MDVA-44660. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
 exl-id: 603161bf-fac3-4571-b872-d98de1bdf6b4
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-44660: Grave accent character (&grave;) cannot be used for customer's name
 

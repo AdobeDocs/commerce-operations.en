@@ -3,6 +3,31 @@ title: B2B Extension configuration paths reference
 description: Learn about B2B Extension configuration paths and values for Adobe Commerce. Discover company, payment, quote, and B2B-specific configuration options.
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e9004f3c-09ae-5d24-acd2-fa0987fdb66e
+    internal-label: Companies
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # B2B Extension configuration paths reference
 

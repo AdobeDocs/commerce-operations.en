@@ -5,6 +5,23 @@ feature: Products, Price Indexer
 role: Admin
 exl-id: 1a173ca7-f99e-42d8-87d7-81a6b33f2d4d
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b0d35b91-b9b0-5983-b37c-f35bd2650b53
+    internal-label: Price Indexer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-51265: Optimize reindexing for bundled products
 

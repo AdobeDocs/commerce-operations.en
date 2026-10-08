@@ -5,6 +5,29 @@ feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
 exl-id: 2cb3b4ac-38df-4832-b894-b34bb3d7bbc6
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+  - id: ed510963-0b8c-4764-86f6-f3c7735bc334
+    internal-label: Page Builder
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-47988: product export trims HTML tags from page builder product description
 

@@ -4,6 +4,18 @@ description: Learn how to prepare for escalating a partner issue with an Adobe A
 role: User
 feature: Best Practices
 exl-id: 9ead032b-93f5-4327-9f01-5320270025ce
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Partner escalation best practices
 
