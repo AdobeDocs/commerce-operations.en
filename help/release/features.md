@@ -3,7 +3,7 @@ title: Product features
 description: Learn what Adobe Commerce features are available by specific release version.
 recommendations: noCatalog
 exl-id: ad1c22a3-74bd-4742-a025-6c326a3e4ab6
-last-update: 2026-01-20T00:00:00.000Z
+last-update: 2026-01-20
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

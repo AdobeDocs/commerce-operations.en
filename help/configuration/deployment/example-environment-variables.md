@@ -2,7 +2,7 @@
 title: Example using environment variables
 description: See an example of how to set shared, system-specific, and sensitive values in your development system using environment variables.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

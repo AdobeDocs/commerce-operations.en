@@ -2,7 +2,7 @@
 title: Advanced on-premises installation
 description: Learn about advanced installation scenarios for Adobe Commerce on-premises deployments. Discover complex configurations and custom setup options.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-last-update: 2026-08-19T00:00:00.000Z
+last-update: 2026-08-19
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

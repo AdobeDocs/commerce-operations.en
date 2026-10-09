@@ -2,7 +2,7 @@
 title: Configure the store
 description: Learn how to configure your Adobe Commerce store from the command line after deployment configuration and database schema setup, including secure install options.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

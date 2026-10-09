@@ -2,7 +2,7 @@
 title: Configure message consumers
 description: Follow these steps to configure the behavior of Adobe Commerce message queue consumers.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
