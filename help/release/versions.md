@@ -3,7 +3,7 @@ title: Released versions
 description: Learn when specific versions of Adobe Commerce were released.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-last-update: 2026-08-12T00:00:00.000Z
+last-update: 2026-08-12
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

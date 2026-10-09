@@ -3,7 +3,7 @@ title: Glossary
 description: Learn about key terms and definitions used in Adobe Commerce implementation projects. Discover essential vocabulary for developers, merchants, and technical teams.
 exl-id: 82abd8c3-fb5a-4599-8435-f1f2f6122397
 recommendations: noDisplay, noCatalog
-last-update: 2026-08-19T00:00:00.000Z
+last-update: 2026-08-19
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
