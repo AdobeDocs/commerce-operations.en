@@ -5,6 +5,18 @@ feature: Configuration
 role: Admin
 exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-47332: cron fails with error reported only when running between 00:00 to 00:59 UTC
 
