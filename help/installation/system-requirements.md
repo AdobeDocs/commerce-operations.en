@@ -2,7 +2,18 @@
 title: System Requirements
 description: Learn about software dependencies and system requirements for Adobe Commerce. See tested configurations for compatibility with your deployment environment.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-09-18
+last-update: 2026-09-18T00:00:00.000Z
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # System requirements
 
