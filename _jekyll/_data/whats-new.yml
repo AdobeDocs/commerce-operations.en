@@ -2,8 +2,51 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 2 15:56:45 2026
+updated: Fri Oct 9 15:56:51 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-5101:
+    Adobe Commerce B2B installation fails when indexers use Update by Schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 9, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2227
+  merge_commit: aae0dcd4753bf36df994a76e1311057fce65e32a
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-5223:
+    Catalog Permissions index includes websites excluded from customer groups](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 9, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2229
+  merge_commit: 4a441aea67627b23c7f6a79c20317404283243f7
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [AC-12854: Admin
+    reorder uses the original order number with a -1 suffix](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 8, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2220
+  merge_commit: '087b7f48c2864837d394c6a9a72f9b30d6db3d90'
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.84](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 5, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2231
+  merge_commit: 7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.83](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview).'
   versions: ''
   type: new-topic, qpt
