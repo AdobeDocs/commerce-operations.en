@@ -1,10 +1,35 @@
 ---
-title: "ACSD-51636: Company admin can't add new users from the customer account section"
+title: 'ACSD-51636: Company admin can''t add new users from the customer account section'
 description: Apply the ACSD-51636 patch to fix the Adobe Commerce issue where the company admin can't add new users from the customer account section despite having all necessary roles and permissions.
 feature: Admin Workspace, B2B, Companies, Customer Service
 role: Admin
 exl-id: 46e79ae3-ea24-4cb2-b06e-e82cec33b16c
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e9004f3c-09ae-5d24-acd2-fa0987fdb66e
+    internal-label: Companies
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: deedbb4d-f1b7-58ea-a34a-de1f481f9d4c
+    internal-label: Customer Service
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-51636: Company admin can't add new users from the customer account section
 
