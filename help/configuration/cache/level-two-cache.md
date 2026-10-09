@@ -1,6 +1,6 @@
 ---
 title: L2 Cache Configuration for Performance Optimization
-description: "Learn how to configure L2 cache in Adobe Commerce on-premises to reduce network traffic and improve performance. Compare the legacy RemoteSynchronizedCache implementation with the modern Symfony L2 implementation."
+description: Learn how to configure L2 cache in Adobe Commerce on-premises to reduce network traffic and improve performance. Compare the legacy RemoteSynchronizedCache implementation with the modern Symfony L2 implementation.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 badgePaas: label="On Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Premises projects only."
@@ -17,6 +17,11 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -25,6 +30,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation

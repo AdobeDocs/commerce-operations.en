@@ -5,6 +5,20 @@ feature: Checkout, Orders
 role: Admin
 exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-46617: "[!UICONTROL Continue to Checkout]" button greyed out when subtotal greater than "[!UICONTROL Minimum Order Amount]"
 
