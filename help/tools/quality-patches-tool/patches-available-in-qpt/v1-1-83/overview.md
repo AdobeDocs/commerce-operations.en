@@ -28,6 +28,6 @@ QPT v1.1.83 includes the following patches:
 1. **ACP2E-5101**: Fixes the issue where installing B2B module failed when indexers were set to **[!UICONTROL Update on Schedule]**.
 1. **ACP2E-5205**: Fixes the issue when category loading takes a considerable amount of time or causes a timeout when a large number of categories and products are involved. Also, product count is now properly displayed for each category leaf.
 1. **ACP2E-3211**: Fixes the issue where adding the same product to the cart at the same time on the storefront creates separate items in the cart for the same SKU instead of combining them into a single item.
-1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: Fixes the issue where the Catalog Permissions index includes websites that are excluded from a customer group.
+1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: Fixes the issue where the **[!UICONTROL Catalog Permissions]** index includes websites that are excluded from a customer group.
 
 Use the menu on the left to navigate to a specific patch page.
