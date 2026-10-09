@@ -1,10 +1,31 @@
 ---
-title: "MDVA-43731: Search Synonyms don't work when value is added in 'Minimum Terms to Match'"
+title: 'MDVA-43731: Search Synonyms don''t work when value is added in ''Minimum Terms to Match'''
 description: The MDVA-43731 patch fixes the issue where Search Synonyms stop working when a value is added in "Minimum Terms to Match". This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-43731. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Cache, Marketing Tools, Search
 role: Admin
 exl-id: 1eada0cd-c0ab-4f0f-b6bf-7c10e1df07ce
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-43731: Search Synonyms don't work when value is added in 'Minimum Terms to Match'
 
