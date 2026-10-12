@@ -1,10 +1,29 @@
 ---
 title: 'ACSD-66865: Saving a [!UICONTROL Catalog Price Rule] invalidates indexers and provides an alternative to reindex only affected products'
-description: Apply the ACSD-66865 patch to fix the Adobe Commerce issue where  saving a [!UICONTROL Catalog Price Rules] invalidates indexers and provides an alternative to reindex only affected products.
+description: "Apply the ACSD-66865 patch to fix the Adobe Commerce issue where \_saving a [!UICONTROL Catalog Price Rules] invalidates indexers and provides an alternative to reindex only affected products."
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 68baf176-ee6e-4ba8-8a34-8adb8d1e16fe
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b0d35b91-b9b0-5983-b37c-f35bd2650b53
+    internal-label: Price Indexer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-66865: Saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products
 

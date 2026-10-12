@@ -1,10 +1,28 @@
 ---
-title: "ACSD-47875: Can't add product to cart for store view scope with inventory management"
+title: 'ACSD-47875: Can''t add product to cart for store view scope with inventory management'
 description: Apply the ACSD-47875 patch to fix the Adobe Commerce issue where a product cannot be added to a customer cart from Admin for a particular store view scope with inventory management.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
 exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-47875: Can't add product to cart for store view scope with inventory management
 
