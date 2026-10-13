@@ -3,7 +3,7 @@ title: PHP settings
 description: Follow these steps to install required PHP extensions and configure required PHP settings for on-premises installations of Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-last-update: 2026-05-12T00:00:00.000Z
+last-update: 2026-05-12
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
