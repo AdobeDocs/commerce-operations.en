@@ -1,10 +1,27 @@
 ---
-title: "MDVA-43167: Admin order grid mass action doesn't apply for multi-page"
+title: 'MDVA-43167: Admin order grid mass action doesn''t apply for multi-page'
 description: The MDVA-43167 patch fixes the issue where the admin order grid mass action doesn't apply for multi-page when the admin user selects all orders. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16 is installed. The patch ID is MDVA-43167. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-43167: Admin order grid mass action doesn't apply for multi-page
 
