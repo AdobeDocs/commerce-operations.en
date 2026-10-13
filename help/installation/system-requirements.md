@@ -237,4 +237,4 @@ For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.ado
 >
 >A known issue with Xdebug can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in the _Commerce Support Knowledge Base_.
 
-<!-- Last updated from includes: 2026-10-07 13:03:29 -->
+<!-- Last updated from includes: 2026-10-13 09:11:06 -->
