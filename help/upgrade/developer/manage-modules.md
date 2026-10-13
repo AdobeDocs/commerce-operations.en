@@ -3,7 +3,7 @@ title: Manage Modules and Extensions (developer)
 description: Manage Adobe Commerce modules and extensions using the command-line interface and Composer package manager.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

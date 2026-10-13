@@ -2,7 +2,7 @@
 title: Example using CLI commands
 description: See an example of how to set shared, system-specific, and sensitive values in your development system using the command line.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

@@ -3,7 +3,7 @@ title: Configure Nginx for your search engine
 description: Follow these steps to configure a search engine with the Nginx web server for on-premises installations of Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

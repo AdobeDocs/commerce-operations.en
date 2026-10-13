@@ -2,7 +2,7 @@
 title: MySQL guidelines
 description: Follow these steps to install and configure MySQL and MariaDB for on-premises installations of Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
