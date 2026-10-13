@@ -3,7 +3,7 @@ title: Configure Apache for your search engine
 description: Follow these steps to configure a search engine with the Apache web server for on-premises installations of Adobe Commerce.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
