@@ -3,7 +3,7 @@ title: Magento Open Source packages
 description: Learn about all dependencies and third-party licenses used in Magento Open Source.
 recommendations: noCatalog
 exl-id: 41f875af-9d65-4d4f-af5c-6ad887eeaf0d
-last-update: 2026-08-20T00:00:00.000Z
+last-update: 2026-08-20
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
