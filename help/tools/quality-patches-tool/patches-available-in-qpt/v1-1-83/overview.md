@@ -31,7 +31,7 @@ QPT v1.1.83 includes the following patches:
 1. **AC-17975**: Fixes multiple PHP 8.5 compatibility issues affecting Admin workflows, checkout authentication, CAPTCHA processing, category management, configuration pages, and command-line operations in certain PHP environments.
 1. **AC-18128**: Fixes the issue where order dates and order comment timestamps returned by GraphQL display incorrect calendar dates in non-English locale settings.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (/) to dash-separated (-).
-1. **ACP2E-4639**: Fixes the issue  where the requisition list items type was misspelled in the GraphQL schema, while the older items field and `RequistionListItems` type remain available but are deprecated.
+1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: Fixes the issue where the requisition list items type is misspelled in the GraphQL schema. The older `items` field and `RequistionListItems` type remain available but are deprecated.
 1. **ACP2E-4838**: Fixes the issue where an Admin user with restricted permissions can't delete customers from the Customers grid.
 1. **ACP2E-4877**: Fixes the issue where orders placed using **[!UICONTROL Payment on Account]** couldn't be edited in Admin while in *Pending* status.
 1. **ACP2E-4908**: Fixes the issue where large catalogs cause excessive memory use in Redis or Valkey because separate layout cache entries were created for each product in each store view.
