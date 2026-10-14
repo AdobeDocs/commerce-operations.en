@@ -4,6 +4,15 @@ description: Apply the ACSD-50895 patch to fix the Adobe Commerce issue where [!
 role: Admin
 exl-id: 871e2ca1-dc10-435c-9325-62f5b9b673ad
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-50895: [!DNL Google Analytics] 3 GTM tags are not fired if [!DNL Google Analytics] 4 GTM is not configured
 
