@@ -32,17 +32,17 @@ level_v2:
 >All Adobe Commerce on-premises customers running versions 2.4.6 are strongly
 >advised to migrate their database servers to a compatible MariaDB version.
 >
->Adobe Commerce on Cloud customers must keep platform dependencies on supported versions. See [Platform dependencies](../../lifecycle-policy.md#platform-dependencies) in the lifecycle policy.
+>Adobe Commerce on Cloud customers must keep platform dependencies on supported versions. See [Platform dependencies](/help/release/lifecycle-policy.md#platform-dependencies) in the lifecycle policy.
 >
->Adobe Commerce 2.4.6 is on [extended support](../../lifecycle-policy.md#extended-support) through **August 30, 2027**, followed by a [security-only transitional period](../../lifecycle-policy.md#security-only-transitional-period) through **May 31, 2028**. These provisions are available to Adobe Commerce customers only. They do not extend support for third-party dependencies such as MySQL.
+>Adobe Commerce 2.4.6 is on [extended support](/help/release/lifecycle-policy.md#extended-support) through **August 30, 2027**, followed by a [security-only transitional period](/help/release/lifecycle-policy.md#security-only-transitional-period) through **May 31, 2028**. These provisions are available to Adobe Commerce customers only. They do not extend support for third-party dependencies such as MySQL.
 >
->If you run Adobe Commerce on Cloud, you must upgrade to a supported release or migrate to [!DNL Adobe Commerce as a Cloud Service] before the **June 1, 2028** [version upgrade enforcement date](../../security-enforcement-policy.md). See the [end of support dates](../../lifecycle-policy.md#end-of-support-dates) table for full lifecycle dates.
+>If you run Adobe Commerce on Cloud, you must upgrade to a supported release or migrate to [!DNL Adobe Commerce as a Cloud Service] before the **June 1, 2028** [version upgrade enforcement date](../../security-enforcement-policy.md). See the [end of support dates](/help/release/lifecycle-policy.md#end-of-support-dates) table for full lifecycle dates.
 
 ## 2.4.6-p15
 
 The Adobe Commerce 2.4.6-p15 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 

@@ -36,7 +36,7 @@ level_v2:
 
 The Adobe Commerce 2.4.7-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
