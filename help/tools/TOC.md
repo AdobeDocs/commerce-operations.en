@@ -1056,6 +1056,7 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [ACP2E-4998: Missing SKU prevents bulk tier price updates for valid products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)
            - [ACP2E-4639: Requisition list items type misspelled in Adobe Commerce GraphQL schema](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
            - [ACP2E-5223: Catalog Permissions index includes websites excluded from customer groups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
            - [ACP2E-5101: Adobe Commerce B2B installation fails when indexers use Update by Schedule](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
