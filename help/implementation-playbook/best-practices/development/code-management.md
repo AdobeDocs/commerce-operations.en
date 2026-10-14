@@ -4,7 +4,7 @@ description: Learn about code management best practices for the development phas
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-last-update: 2024-11-25T00:00:00.000Z
+last-update: 2024-11-25
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

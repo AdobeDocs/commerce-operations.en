@@ -2,7 +2,7 @@
 title: Adobe Commerce packages
 description: Learn about all dependencies and third-party licenses used in Adobe Commerce.
 exl-id: b5571640-9726-4ec3-af5b-d10085f89838
-last-update: 2026-05-12T00:00:00.000Z
+last-update: 2026-05-12
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

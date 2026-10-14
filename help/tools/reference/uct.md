@@ -4,7 +4,7 @@ description: Learn about all available commands, arguments, and options for the 
 mini-toc-levels: 1
 exl-id: f20d284d-bf77-4633-a274-a1568de76471
 recommendations: noDisplay, noCatalog
-last-update: 2026-05-12T00:00:00.000Z
+last-update: 2026-05-12
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -21,4 +21,4 @@ level_v2:
 
 {{$include /help/_includes/templated/reference/cli/uct.md}}
 
-<!-- Last updated from includes: 2026-05-06 15:25:12 -->
+<!-- Last updated from includes: 2026-10-13 09:11:06 -->
