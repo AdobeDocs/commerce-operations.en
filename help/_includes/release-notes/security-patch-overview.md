@@ -20,5 +20,4 @@ Isolated security patch files are non-cumulative, standalone patch files that in
 
 To apply an isolated security patch file, customers must be on the latest security-only patch release (the latest -p version) for their supported release line, as isolated security patch files are tested exclusively against that version.
 
-See the [Security Center](https://helpx.adobe.com/security/products/magento.html) to find the latest security updates available for Adobe Commerce.
-
+See [Adobe Security Bulletins and Advisories](https://www.adobe.com/trust/security/bulletins-and-advisories.html) to find the latest security updates available for Adobe Commerce.

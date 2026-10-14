@@ -32,7 +32,20 @@ Redis cache is not supported for Adobe Commerce 2.4.9, or patch releases later t
 
 ## Security patches for extended support {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**Extended support** security patches are available to Adobe Commerce customers only. They are not available for the Magento Open Source code base.
+>
+>**Adobe Commerce on Cloud (release lines 2.4.4–2.4.6)** — Upgrade to a supported release or migrate to [!DNL Adobe Commerce as a Cloud Service] before your version upgrade enforcement date. Transitional support provisions do not replace Cloud upgrade enforcement.
+>
+>See also:
+>
+>- [Software lifecycle policy](/help/release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
+>- [Required actions and deadlines to secure Commerce environments](/help/release/security-enforcement-policy.md) — enforcement dates and required actions
+
+## Adobe Security Bulletin APSB26-49 {#security-bulletin-apsb26-49}
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html).
 
 ## Commerce only {#commerce-only}
 

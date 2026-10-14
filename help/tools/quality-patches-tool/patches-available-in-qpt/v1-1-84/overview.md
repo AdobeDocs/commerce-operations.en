@@ -4,6 +4,23 @@ description: This sub-section provides a detailed description of the issues fixe
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84
 
@@ -25,7 +42,7 @@ QPT v1.1.84 includes the following patches:
 1. **ACP2E-5242**: Fixes the issue where checking product availability while adding items to the cart displays an error indicating that the website can't be found.
 1. **ACP2E-5263**: Fixes the issue where exporting products to a CSV file can stop before all products are included, resulting in an incomplete file.
 1. **ACP2E-5034**: Fixes the issue where negotiable quote management incorrectly resets totals to *zero* when recalculating a quote after selecting a shipping method, discards updates to bundle product option quantities made through the **[!UICONTROL Configure]** action in the Admin, and doesn't correctly reflect item-level discounts applied to dynamic price bundle products in quote subtotals.
-1. **ACP2E-4741**: Fixes the issue where a product disappears from the storefront after a product linked to it as a [!UICONTROL Related Product], [!UICONTROL Up-Sell], or Cross-Sell is saved while a non-default stock and source are in use.
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Fixes the issue where a product disappears from the Storefront after a product linked to it as a Related Product, Up-Sell, or Cross-Sell is saved while a non-default stock and source are in use.
 1. **ACP2E-5079**: Fixes the issue where evaluating a customer segment assigned to multiple websites returns matching customers only from the first website when customer accounts are shared globally.
 1. **ACP2E-5127**: Fixes the issue where editing a company account in the Admin panel with a non-default locale resets its **[!UICONTROL Credit Limit]** to *zero*.
 1. **AC-15494**: Fixes the issue where the products query returns product names with HTML-escaped special characters instead of their original characters.
