@@ -1,10 +1,31 @@
 ---
-title: "ACSD-52689: Images can't upload to Amazon S3 storage via REST API"
+title: 'ACSD-52689: Images can''t upload to Amazon S3 storage via REST API'
 description: Apply the ACSD-52689 patch to fix the Adobe Commerce issue where the images can't be uploaded to Amazon S3 storage via REST API.
 feature: REST, Storage, Iaas
 role: Admin
 exl-id: 4d7a8ea7-2856-4b40-a922-fdd356dcaea4
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-52689: Images can't upload to Amazon S3 storage via REST API
 
