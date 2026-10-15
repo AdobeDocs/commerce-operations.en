@@ -1,10 +1,27 @@
 ---
-title: "ACSD-51845: Can't update subsequent products with tier prices & different attribute sets via asynch bulk [!DNL API]"
+title: 'ACSD-51845: Can''t update subsequent products with tier prices & different attribute sets via asynch bulk [!DNL API]'
 description: Apply the ACSD-51845 patch to fix the Adobe Commerce issue where you can't update subsequent products with tier prices and different attribute sets via asynchronous bulk [!DNL REST API].
 feature: REST, Products
 role: Admin
 exl-id: 83d97946-83da-4c1b-8f2a-21a64ee84e93
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-51845: Can't update subsequent products with tier prices & different attribute sets via asynch bulk [!DNL API]
 
