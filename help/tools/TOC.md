@@ -1057,6 +1057,11 @@ color: red
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
            - [AC-14940: Password reset email is not sent after a customer's store view is deleted](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
+           - [ACP2E-3211: Parallel add-to-cart requests create separate items for the same SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)
+           - [ACP2E-5015: Shared catalog save removes product assignments and pricing after a session read error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)
+           - [AC-18096: Sales GraphQL date fields return an incorrect localized format](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
+           - [AC-18128: GraphQL order dates and comment timestamps are incorrect for non-English locales](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
+           - [ACP2E-4838: Restricted Admin user can't delete customers from an allowed website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
            - [ACP2E-4998: Missing SKU prevents bulk tier price updates for valid products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)
            - [ACP2E-4639: Requisition list items type misspelled in Adobe Commerce GraphQL schema](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
            - [ACP2E-5223: Catalog Permissions index includes websites excluded from customer groups](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
@@ -1064,6 +1069,8 @@ color: red
            - [AC-12854: Admin reorder uses the original order number with a -1 suffix](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+           - [ACP2E-5143: GraphQL route query renders unrequested CMS page content](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
+           - [ACP2E-4741: Saving a linked product hides another product from the storefront with custom stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

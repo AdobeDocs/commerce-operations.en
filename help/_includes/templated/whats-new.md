@@ -4,6 +4,136 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 16, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: Shared catalog save removes product assignments and pricing after a session read error</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Parallel add-to-cart requests create separate items for the same SKU</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc196176d3fe1af2805f6733aae99d88563a2532">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 14, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998">ACP2E-4998: Missing SKU prevents bulk tier price updates for valid products</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c881ed90036eae94fc5ecb5a86bfab6a8343f9f1">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838">ACP2E-4838: Restricted Admin user can't delete customers from an allowed website</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/828758f6d2a65776578db16ab18a35fa20383e39">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.84 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741">ACP2E-4741: Saving a linked product hides another product from the storefront with custom stock</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e826183cf7e720ab4ab8e824f2bb6c8cd27e3477">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.84 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143">ACP2E-5143: GraphQL route query renders unrequested CMS page content</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30dceea6191f7cdd9e00a23ba71de49806295ef5">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128">AC-18128: GraphQL order dates and comment timestamps are incorrect for non-English locales</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9573db54f723502aed37dd91f58091bf1cdb7510">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096">AC-18096: Sales GraphQL date fields return an incorrect localized format</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e402772c2b4de56f3b83702a82f8328a6e0ef848">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 13, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added documentation for the 2.4.10-alpha1 release:<br />- Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce release notes</a> with release highlights and fixed issues.<br />- Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source release notes</a> with release highlights and fixed issues.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a> with separate cloud and on-premises dependency tables for 2.4.10-alpha.<br />- Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI reference</a> to version 3.0.28.</p>
+</td>
+      <td>
+        Major update, new topic, release notes
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/78a34dc069a30b72a1e0baff36085a2458a05983">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added the 2.4.10-alpha1 release to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Released versions</a> topic.</p>
+</td>
+      <td>
+        Release notes
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b045cf0b6bd0e74da1cfbaafe6b5493934f31039">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639">ACP2E-4639: Requisition list items type misspelled in Adobe Commerce GraphQL schema</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b18103789197712c457854d2c78c678e974e357">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 9, 2026
 
 <table style="table-layout:auto;">
@@ -206,134 +336,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 14, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated steps for how customers can check the version of their service dependencies in Cloud UI, and updated the link to the guide on how customers can generate an upgrade compatibility report for their store, in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">Verify and upgrade third-party software dependencies</a>.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/54ac98c35e1f161f390587601484db4e3294b6af">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 13, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.82 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194: GraphQL requests with unknown filter names cause PHP exception logs</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.82 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695: Catalog rule indexer out-of-memory failures caused by excessive memory usage</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc891435d573c4c333e58e25b2dbe003ffa08f27">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Fixed typos in EOS dates for Adobe Commerce 2.4.5 and 2.4.6 versions.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8de65d309dcd4158627910ce5c0b87966db5c948">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 12, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Removed PHP 8.4 as a supported PHP version in the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9 release notes</a>, because it is not recommended for production use and only present for upgrade compatibility.</p>
-</td>
-      <td>
-        Release notes, technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.82 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894: New orders appear in the Admin Orders grid with a delay when asynchronous indexing is enabled</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.82 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698: Page Builder Text inline editing saves absolute media URLs instead of the portable directive</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Corrected and completed end-of-support, extended-support, and additional security fixes provisioning dates for several Adobe Commerce release lines on the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Released versions</a> page.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5a7f7a466e6419a3e712bcbec4224f98f8c480">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 11, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a> to add RabbitMQ 3.13 as a supported version for Adobe Commerce 2.4.4-p18 (latest), resolving a blocker for the Debian OS upgrade path.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/046d641dc45b269c6495bef0c06c53bdc500227b">commit</a></td>
     </tr>
   </tbody>
 </table>
