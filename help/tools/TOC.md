@@ -1056,6 +1056,7 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [ACP2E-4877: Edit button missing for pending Payment on Account orders in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
            - [AC-14940: Password reset email is not sent after a customer's store view is deleted](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
            - [ACP2E-3211: Parallel add-to-cart requests create separate items for the same SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)
            - [ACP2E-5015: Shared catalog save removes product assignments and pricing after a session read error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)
