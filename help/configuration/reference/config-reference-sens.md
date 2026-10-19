@@ -181,8 +181,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **Inventory**.
 
-| Name | Config path | Commerce version support| Encrypted? | System-specific? | Sensitive? | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
+| Name | Config path | Commerce version support| Encrypted? | System-specific? | Sensitive? |
+|--------------|--------------|--------------|--------------|--------------|--------------|
 | Google API key | `cataloginventory/source_selection_distance_based_google/api_key` |  | Encrypted | | Sensitive |
 
 ### XML sitemap sensitive and system-specific paths

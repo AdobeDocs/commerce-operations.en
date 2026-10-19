@@ -212,4 +212,4 @@ If you cannot migrate to [!DNL Adobe Commerce as a Cloud Service] immediately, y
 
 Note that this path does not eliminate future upgrade obligations. Customers with Adobe Commerce on Cloud deployments must continue upgrading as release lines reach their version upgrade enforcement dates.
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->
