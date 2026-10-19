@@ -2,8 +2,138 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 9 15:56:51 2026
+updated: Fri Oct 16 15:57:13 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-5015:
+    Shared catalog save removes product assignments and pricing after a session read
+    error](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2225
+  merge_commit: 5277785149087405dfe01a3e059d7f617869fbf2
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-3211:
+    Parallel add-to-cart requests create separate items for the same SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2228
+  merge_commit: fc196176d3fe1af2805f6733aae99d88563a2532
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-4998:
+    Missing SKU prevents bulk tier price updates for valid products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2224
+  merge_commit: c881ed90036eae94fc5ecb5a86bfab6a8343f9f1
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-4838:
+    Restricted Admin user can''t delete customers from an allowed website](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2217
+  merge_commit: 828758f6d2a65776578db16ab18a35fa20383e39
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-4741:
+    Saving a linked product hides another product from the storefront with custom
+    stock](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2247
+  merge_commit: e826183cf7e720ab4ab8e824f2bb6c8cd27e3477
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5143:
+    GraphQL route query renders unrequested CMS page content](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2242
+  merge_commit: 30dceea6191f7cdd9e00a23ba71de49806295ef5
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [AC-18128: GraphQL
+    order dates and comment timestamps are incorrect for non-English locales](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2252
+  merge_commit: 9573db54f723502aed37dd91f58091bf1cdb7510
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [AC-18096: Sales
+    GraphQL date fields return an incorrect localized format](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2253
+  merge_commit: e402772c2b4de56f3b83702a82f8328a6e0ef848
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: Added documentation for the 2.4.10-alpha1 release:<br/>- Added [Adobe
+    Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10)
+    with release highlights and fixed issues.<br/>- Added [Magento Open Source release
+    notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10)
+    with release highlights and fixed issues.<br/>- Updated [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    with separate cloud and on-premises dependency tables for 2.4.10-alpha.<br/>-
+    Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct)
+    to version 3.0.28.
+  versions: ''
+  type: major-update, new-topic, release-notes
+  date: October 13, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2260
+  merge_commit: 78a34dc069a30b72a1e0baff36085a2458a05983
+  contributor: shevtsov_adobe
+  labels:
+  - hold for release
+  - major-update
+  - new-topic
+  - release-notes
+- description: Added the 2.4.10-alpha1 release to the [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)
+    topic.
+  versions: ''
+  type: release-notes
+  date: October 13, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2272
+  merge_commit: b045cf0b6bd0e74da1cfbaafe6b5493934f31039
+  contributor: shevtsov_adobe
+  labels:
+  - release-notes
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-4639:
+    Requisition list items type misspelled in Adobe Commerce GraphQL schema](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 13, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2216
+  merge_commit: 9b18103789197712c457854d2c78c678e974e357
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-5101:
     Adobe Commerce B2B installation fails when indexers use Update by Schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101).'
   versions: ''
