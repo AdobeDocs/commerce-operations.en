@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.7 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-08-19
+last-update: 2026-10-14
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -36,7 +36,7 @@ level_v2:
 
 The Adobe Commerce 2.4.7-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 

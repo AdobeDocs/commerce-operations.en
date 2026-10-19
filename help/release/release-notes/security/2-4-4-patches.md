@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.4 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-last-update: 2026-08-19
+last-update: 2026-10-14
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -24,15 +24,15 @@ level_v2:
 
 ## 2.4.4-p18
 
-Adobe Commerce 2.4.4-p18 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+Adobe Commerce 2.4.4-p18 is an [extended support security release](/help/release/lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
 ## 2.4.4-p17
 
-Adobe Commerce 2.4.4-p17 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+Adobe Commerce 2.4.4-p17 is an [extended support security release](/help/release/lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
 
@@ -40,7 +40,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## 2.4.4-p16
 
-Adobe Commerce 2.4.4-p16 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+Adobe Commerce 2.4.4-p16 is an [extended support security release](/help/release/lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
@@ -58,7 +58,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## 2.4.4-p15
 
-Adobe Commerce 2.4.4-p15 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+Adobe Commerce 2.4.4-p15 is an [extended support security release](/help/release/lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
@@ -66,7 +66,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## 2.4.4-p14
 
-Adobe Commerce 2.4.4-p14 is an [extended support security release](../../lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
+Adobe Commerce 2.4.4-p14 is an [extended support security release](/help/release/lifecycle-policy.md#security-only-transitional-period) that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
