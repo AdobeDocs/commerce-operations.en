@@ -5,6 +5,31 @@ feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
 exl-id: 2fb7ca37-78cc-45f4-86a3-d922cf4d1457
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 76cfaac4-e563-56dd-8938-708bf8b84956
+    internal-label: Attributes
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: ed510963-0b8c-4764-86f6-f3c7735bc334
+    internal-label: Page Builder
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-54018: Performance issue with catalog widget product List
 
