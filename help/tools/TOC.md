@@ -1056,6 +1056,10 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [ACP2E-4977: Configurable product invoice and credit memo totals exclude Fixed Product Tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
+           - [AC-11389: Order totals vary based on the order products are added to the cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
+           - [ACP2E-4877: Edit button missing for pending Payment on Account orders in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
+           - [AC-14940: Password reset email is not sent after a customer's store view is deleted](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
            - [ACP2E-3211: Parallel add-to-cart requests create separate items for the same SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)
            - [ACP2E-5015: Shared catalog save removes product assignments and pricing after a session read error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)
            - [AC-18096: Sales GraphQL date fields return an incorrect localized format](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
@@ -1069,6 +1073,7 @@ color: red
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
            - [ACP2E-4913: REST API shipment and invoice creation is not retried after a database deadlock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
+           - [ACP2E-5017: GraphQL customer role query fails for customers without a company](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
            - [ACP2E-5143: GraphQL route query renders unrequested CMS page content](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
            - [ACP2E-4741: Saving a linked product hides another product from the storefront with custom stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
