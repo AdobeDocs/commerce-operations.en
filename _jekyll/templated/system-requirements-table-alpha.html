@@ -1,0 +1,26 @@
+---
+---
+# System requirements 2.4.10-alpha
+
+{%- assign version = "2.4.10-alpha" %}
+{%- assign requirements = site.data.system-requirements[version] %}
+{%- if requirements %}
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>Software dependencies</th>
+      <th>{{version}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for requirement in requirements %}
+    <tr>
+      <td><span class="uicontrol">[!DNL {{requirement[0]}}]</span></td>
+      <td>{{requirement[1]}}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+{%- endif %}

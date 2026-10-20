@@ -1,10 +1,25 @@
 ---
 title: 'MDVA-39305: Login issue with enabled Google reCAPTCHA'
-description: Apply the MDVA-39305 patch to fix the Adobe Commerce issue where registered customers are not able to log in when Google reCAPTCHA is enabled. 
+description: Apply the MDVA-39305 patch to fix the Adobe Commerce issue where registered customers are not able to log in when Google reCAPTCHA is enabled.
 feature: Console
 role: Admin
 exl-id: c40fd84a-73dc-42bd-8cda-58738615fbba
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-39305: Login issue with enabled Google reCAPTCHA
 
