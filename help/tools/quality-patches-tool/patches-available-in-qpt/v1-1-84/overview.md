@@ -35,7 +35,7 @@ QPT v1.1.84 includes the following patches:
 1. **ACP2E-5027**: Fixes the issue where indexers remain stuck in a loop and reindexing doesn't complete when file locking is enabled.
 1. **ACP2E-5029**: Fixes the issue where changes to catalog price rules don't appear in **[!DNL Live Search]** until a manual resynchronization is performed.
 1. **ACP2E-5041**: Fixes the issue where saving a product during a scheduled update causes the storefront to show the regular price instead of the **[!UICONTROL Special Price]** after the update ends.
-1. **ACP2E-5059**: Fixes the issue where customers receive duplicate order confirmation emails for the same order.
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: Fixes the issue where customers receive duplicate order confirmation emails for the same order.
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: Fixes the issue where handled errors from GraphQL requests for the shopping cart are incorrectly recorded in exception logs as application errors.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: Fixes the issue where the GraphQL `route` query renders full CMS page content when only routing metadata is requested, increasing the number of database queries for CMS pages that contain Page Builder widgets.
 1. **ACP2E-5183**: Fixes the issue where static content deployment fails on PHP 8.5 while compiling a `LESS` file that uses the `@magento_import` directive.
