@@ -5,6 +5,27 @@ feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
 exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8b440f30-6794-5ed6-981f-391de4e9b0cc
+    internal-label: Themes
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-66118: Updating **[!UICONTROL Store View Code]** clears **[!UICONTROL Design Configuration]** settings if **[!UICONTROL Configuration Cache]** isn’t refreshed
 
