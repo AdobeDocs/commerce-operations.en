@@ -46,6 +46,8 @@ end
 def latest_version_from_release_notes(markdown)
   headings = markdown.each_line.map(&:strip).select { |line| line.start_with?('#') }
   headings.drop(1).each do |heading|
+    next if heading.match?(/(?:\b|(?<=\d))(?:alpha|beta)(?:\b|\d)/i)
+
     match = heading.match(/(\d+\.\d+(?:\.\d+)?)/)
     return match[1] if match
   end

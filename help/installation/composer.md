@@ -2,6 +2,17 @@
 title: Quick start on-premises installation
 description: Learn how to install Adobe Commerce on your own infrastructure using Composer. Discover quick start steps and configuration requirements.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Quick start on-premises installation
 
