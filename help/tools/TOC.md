@@ -1072,6 +1072,7 @@ color: red
            - [AC-12854: Admin reorder uses the original order number with a -1 suffix](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+           - [ACP2E-5079: Customer segments match only the first website with global account sharing](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
            - [ACP2E-5059: Concurrent cron jobs send duplicate order confirmation emails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
            - [ACP2E-5122: Handled GraphQL cart errors are incorrectly written to the exception log](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
            - [ACP2E-4913: REST API shipment and invoice creation is not retried after a database deadlock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
