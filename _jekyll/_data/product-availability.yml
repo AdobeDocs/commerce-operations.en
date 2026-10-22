@@ -105,6 +105,23 @@ extensions:
         version: 1.3.4
       - core: 2.4.4
         version: 1.3.3
+  Catalog Enrichment:
+    docs:
+      Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/guide-overview#install-enrichment-extension
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/release-notes
+    support:
+      - core: 2.4.9 (latest)
+        version: 2.1.1
+      - core: 2.4.8
+        version: 2.1.1
+      - core: 2.4.7
+        version: 2.1.1
+      - core: 2.4.6
+        version: not supported
+      - core: 2.4.5
+        version: not supported
+      - core: 2.4.4
+        version: not supported
   Data Connection:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-experience-platform-connector.html
