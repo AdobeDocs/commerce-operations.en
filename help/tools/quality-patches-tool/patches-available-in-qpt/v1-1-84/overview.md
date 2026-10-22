@@ -28,8 +28,8 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.84 includes the following patches:
 
+1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: Fixes the issue where the quantity of a bundle product option in a negotiable quote reverts to its previous value when the bundle product is reconfigured in the Admin, and the quantity is edited.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: Fixes the issue where REST API shipment and invoice creation fails permanently after a database deadlock.
-1. **ACP2E-5005**: Fixes the issue where the quantity of a bundle product option in a negotiable quote reverts to its previous value when the bundle product is reconfigured in the Admin, and the quantity is edited.
 1. **ACP2E-5009**: Fixes the issue where data migration from Magento Open Source to Adobe Commerce doesn't correctly migrate category scheduled design changes and product **[!UICONTROL Special Price]** scheduled updates, causing some scheduled updates to be missing or skipped during migration, and improves migration performance.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Fixes the issue where querying the customer `role` through GraphQL returns *Internal server error* when the customer is not assigned to a company.
 1. **ACP2E-5027**: Fixes the issue where indexers remain stuck in a loop and reindexing doesn't complete when file locking is enabled.
@@ -44,7 +44,6 @@ QPT v1.1.84 includes the following patches:
 1. **ACP2E-5034**: Fixes the issue where negotiable quote management incorrectly resets totals to *zero* when recalculating a quote after selecting a shipping method, discards updates to bundle product option quantities made through the **[!UICONTROL Configure]** action in the Admin, and doesn't correctly reflect item-level discounts applied to dynamic price bundle products in quote subtotals.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Fixes the issue where a product disappears from the Storefront after a product linked to it as a Related Product, Up-Sell, or Cross-Sell is saved while a non-default stock and source are in use.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: Fixes the issue where editing a company account in the Admin with a non-default locale resets its **[!UICONTROL Credit Limit]** to `0`.
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Fixes the issue where a product disappears from the storefront after a product linked to it as a [!UICONTROL Related Product], [!UICONTROL Up-Sell], or [!UICONTROL Cross-Sell] is saved while a non-default stock and source are in use.
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**: Fixes the issue where a customer segment assigned to multiple websites returns matching customers only from the first website when customer accounts are shared globally.
 1. **AC-15494**: Fixes the issue where the products query returns product names with HTML-escaped special characters instead of their original characters.
 
