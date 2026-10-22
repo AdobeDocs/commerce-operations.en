@@ -1,10 +1,25 @@
 ---
-title: "ACSD-48404: *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* causes error when pressing browser's back button"
+title: 'ACSD-48404: *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* causes error when pressing browser''s back button'
 description: Apply the ACSD-48404 patch to fix the Adobe Commerce issue where *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* causes an error when pressing the browser's back button.
 feature: Categories
 role: Admin
 exl-id: 8c08f0e2-d4f9-4ac8-b8e8-85b4a7de98fb
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-48404: *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* causes error when pressing browser's back button
 

@@ -70,7 +70,7 @@ To keep your ecommerce environment secure and mitigate risks, all customers on A
 
 1. A secure and supported version of Adobe Commerce on Cloud. Fully supported versions include 2.4.8, 2.4.9, or the latest available release. See the [Lifecycle policy](/help/release/lifecycle-policy.md) documentation.
 
-Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environment. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below will have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline, please contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) as soon as possible.
+Follow the guidelines below to check if you need to take action to secure your Adobe Commerce on Cloud environment. Environments that do not meet the security requirements by the deadlines outlined in Table 1 below may have Admin access suspended, while the storefront remains online, and/or have inbound traffic suspended, taking the storefront offline. If you have concerns about meeting the deadline, please contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) as soon as possible.
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ The following table helps you compare your options and determine the best path f
 
 Adobe remains committed to supporting you in executing the steps you need to take to adopt a supported version of 3rd party software, upgrade to the latest version of Adobe Commerce on Cloud or migrate to Adobe Commerce as a Cloud Service.  If you have concerns about meeting the deadline and need a short extension, please contact your account team or [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) as soon as possible.
 
-If an environment has not met the security requirements by the enforcement dates shared above, Adobe will be forced to take appropriate action to maintain security of the Adobe Commerce platform and its customers. This includes suspending traffic to the affected infrastructure, and as a result your Commerce storefront will go offline.
+If an environment has not met the security requirements by the enforcement dates shared above, Adobe will be forced to take appropriate action to maintain security of the Adobe Commerce platform and its customers. This may include suspending access to the Adobe Commerce Admin for all users on the affected environment, while the storefront remains online, and/or suspending traffic to the affected infrastructure, which will result in your Commerce storefront going offline.
 
 If an environment continues to remain non-compliant following traffic suspension, Adobe may terminate the cloud services, initiating the decommissioning process. As a result of decommissioning, all data and assets within the hosted commerce environment, including all instances, environments, and branches, will be permanently deleted and cannot be restored.
 
