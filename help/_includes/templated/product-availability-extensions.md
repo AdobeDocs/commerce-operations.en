@@ -102,8 +102,8 @@
           <td>not supported</td>
           <td>not supported</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/guide-overview#install-enrichment-extension">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/release-notes">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
