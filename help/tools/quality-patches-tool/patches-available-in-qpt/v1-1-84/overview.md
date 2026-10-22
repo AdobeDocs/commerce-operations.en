@@ -44,7 +44,7 @@ QPT v1.1.84 includes the following patches:
 1. **ACP2E-5034**: Fixes the issue where negotiable quote management incorrectly resets totals to *zero* when recalculating a quote after selecting a shipping method, discards updates to bundle product option quantities made through the **[!UICONTROL Configure]** action in the Admin, and doesn't correctly reflect item-level discounts applied to dynamic price bundle products in quote subtotals.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Fixes the issue where a product disappears from the Storefront after a product linked to it as a Related Product, Up-Sell, or Cross-Sell is saved while a non-default stock and source are in use.
 1. **ACP2E-5079**: Fixes the issue where evaluating a customer segment assigned to multiple websites returns matching customers only from the first website when customer accounts are shared globally.
-1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: Fixes the issue where editing a company account in the Admin with a non-default locale resets its [!UICONTROL Credit Limit] to `0`.
+1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: Fixes the issue where editing a company account in the Admin with a non-default locale resets its **[!UICONTROL Credit Limit]** to `0`.
 1. **AC-15494**: Fixes the issue where the products query returns product names with HTML-escaped special characters instead of their original characters.
 
 Use the menu on the left to navigate to a specific patch page.
