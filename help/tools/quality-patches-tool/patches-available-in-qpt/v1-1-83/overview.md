@@ -28,7 +28,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.83 includes the following patches:
 
-1. **AC-17975**: Fixes multiple PHP 8.5 compatibility issues affecting Admin workflows, checkout authentication, CAPTCHA processing, category management, configuration pages, and command-line operations in certain PHP environments.
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: Fixes the issue where CLI commands, category editing, Design Configuration, and AJAX customer login fail in Adobe Commerce 2.4.9 when PHP 8.5 is used.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: Fixes the issue where orders placed using Payment on Account could not be edited in Admin while in *Pending* status.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (/) to dash-separated (-).
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: Fixes the issue where order dates and order comment timestamps returned by GraphQL can display incorrect calendar dates in non-English locale settings.
