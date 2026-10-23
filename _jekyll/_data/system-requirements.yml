@@ -7,6 +7,21 @@
 # <Commerce Version>
 #     <Service Name>: <Service Version>, <Service Version 2>
 #     <Service Name> Cloud: <Service Version>, <Service Version 2>
+2.4.10-alpha:
+  ActiveMQ Artemis: 2.54.0 (latest)
+  AWS Aurora (MySQL): 8.0.mysql_aurora.3.12+
+  AWS ElastiCache: ElastiCache version 9.0 for Valkey
+  AWS MQ: '4'
+  AWS OpenSearch: Opensearch 3.5
+  Composer: 2.10.2+
+  MariaDB: '12.3'
+  MySQL: '8.4'
+  nginx: 1.30.2
+  OpenSearch: 3.7+
+  PHP: '8.5'
+  RabbitMQ: '4.3'
+  Valkey: '9.0'
+  Varnish: '9'
 2.4.9:
   ActiveMQ Artemis: '2'
   AWS Aurora (MySQL): '8.0.mysql_aurora.3.12 or latest available'

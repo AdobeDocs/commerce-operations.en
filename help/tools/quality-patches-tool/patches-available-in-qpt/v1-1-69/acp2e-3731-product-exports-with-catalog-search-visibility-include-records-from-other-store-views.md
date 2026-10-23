@@ -5,6 +5,20 @@ feature: Data Import/Export
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e363e63c-26fb-43eb-86f7-30057f7d9897
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views
 
