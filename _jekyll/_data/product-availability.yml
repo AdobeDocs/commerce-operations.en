@@ -111,11 +111,11 @@ extensions:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 2.1.1
+        version: 2.1.2
       - core: 2.4.8
-        version: 2.1.1
+        version: 2.1.2
       - core: 2.4.7
-        version: 2.1.1
+        version: 2.1.2
       - core: 2.4.6
         version: not supported
       - core: 2.4.5

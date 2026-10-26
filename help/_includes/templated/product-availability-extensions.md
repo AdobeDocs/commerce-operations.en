@@ -95,9 +95,9 @@
       </tr>
       <tr>
           <td>Catalog Enrichment</td>
-          <td>2.1.1</td>
-          <td>2.1.1</td>
-          <td>2.1.1</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
           <td>not supported</td>
           <td>not supported</td>
           <td>not supported</td>
