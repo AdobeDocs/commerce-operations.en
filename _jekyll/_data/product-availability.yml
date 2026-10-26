@@ -163,7 +163,7 @@ services:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 2.16.1
+        version: 2.17.0
       - core: 2.4.8
         version: 2.16.1
       - core: 2.4.7
