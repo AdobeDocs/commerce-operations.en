@@ -1073,6 +1073,10 @@ color: red
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
            - [ACP2E-5027: Indexers don't finish when application locking uses the file lock provider](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
+           - [ACP2E-5263: Product CSV export stops early and omits products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
+           - [ACP2E-5009: Content Staging migration creates invalid updates and slows setup:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
+           - [ACP2E-5005: Bundle product quantities don't update in Admin negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
+           - [ACP2E-5127: Saving a company with a non-English Admin locale resets Credit Limit to zero](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
            - [ACP2E-5079: Customer segments match only the first website with global account sharing](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
            - [ACP2E-5059: Concurrent cron jobs send duplicate order confirmation emails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
            - [ACP2E-5122: Handled GraphQL cart errors are incorrectly written to the exception log](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
