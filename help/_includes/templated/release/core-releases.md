@@ -1,5 +1,26 @@
 # Released versions
 
+## 2.4.10
+
+The date when support of the 2.4.10 release line ends has not been set yet.
+
+<table>
+  <thead>
+    <tr>
+      <th>Patch version</th>
+      <th>Release date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">2.4.10-alpha1</a>
+        </td>
+        <td>October&nbsp;13, 2026</td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
+
 ## 2.4.9
 
 Regular support for the 2.4.9 release line ends on May&nbsp;31, 2029.
