@@ -2,8 +2,151 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 16 15:57:13 2026
+updated: Fri Oct 23 15:56:48 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5263:
+    Product CSV export stops early and omits products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2245
+  merge_commit: b9382dc0f240bcebddcb833940f6074854949964
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5127:
+    Saving a company with a non-English Admin locale resets Credit Limit to zero](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2249
+  merge_commit: 67377f54c43f6dc50cb33aafbd003d4b365cbaf5
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5005:
+    Bundle product quantities don''t update in Admin negotiable quotes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2234
+  merge_commit: d6fa3a2ebb8591baad26251a7e0adde24b7adab6
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5009:
+    Content Staging migration creates invalid updates and slows setup:upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2235
+  merge_commit: 9ee0ee2a0dd1f55f4b49b6023d69f61065387d49
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5079:
+    Customer segments match only the first website with global account sharing](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2248
+  merge_commit: b243d218091c48dc97f2ff7ffa3e79325aa889c5
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-4913:
+    REST API shipment and invoice creation isn''t retried after a database deadlock](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2233
+  merge_commit: bf4c32b6c0780b2f6f8dbccd27f4d7bba3579520
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5017:
+    GraphQL customer role query fails for customers without a company](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2236
+  merge_commit: a5cc23e2d9c50215402b7454267cfe7a3c3201cd
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5122:
+    Handled GraphQL cart errors are incorrectly written to the exception log](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2241
+  merge_commit: ba9e8ab95a6e8f079953f6de8906512f64ade22f
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5059:
+    Concurrent cron jobs send duplicate order confirmation emails](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2240
+  merge_commit: 7e234cf6acf7fa74f7f5eff0e39f606123dcc485
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [AC-14940: Password
+    reset email isn''t sent after a customer''s store view is deleted](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2226
+  merge_commit: 7ab75a56bd8ca9bc9bcc96dc21678c99711b6ef3
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [AC-11389: Order
+    totals vary based on the order products are added to the cart](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2223
+  merge_commit: 3e45719183a23e37a98a94aca955b902f5e795ed
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-4877:
+    Edit button missing for pending Payment on Account orders in Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2218
+  merge_commit: 620de17746347e5cb352b2c9f6a345bd5b41accb
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-4977:
+    Configurable product invoice and credit memo totals exclude Fixed Product Tax](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2221
+  merge_commit: fd42ed03b4661e13c24dd3ce8df29375ae1c9e32
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-5015:
     Shared catalog save removes product assignments and pricing after a session read
     error](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015).'
