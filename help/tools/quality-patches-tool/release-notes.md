@@ -31,6 +31,23 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where attribute labels on the Compare Products page display translations from a different store view instead of the current store view.
+* **ACP2E-5075** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where a fixed-amount cart price rule with a category condition incorrectly applied a discount to all children of a dynamic-price bundle product when the rule matched only the bundle parent product.
+* **ACP2E-5077** (for Adobe Commerce and Magento Open Source >=2.4.7-p7 <2.4.10) - Fixes the issue where concurrent customerCart GraphQL queries or POST /V1/carts/mine REST requests create duplicate active carts for customers who do not already have an active cart.
+* **ACP2E-5088** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where a customer's persistent shopping cart is cleared when their session expires.
+* **ACP2E-3991** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue where the client IP address is not determined correctly.
+* **ACP2E-5092** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where the Company Profile page and the Admin Customer Edit page display an error when a company address saved without a region later has a region added to its country.
+* **ACP2E-5124** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where the Import button remains available in the validation results after validation fails when the Validation Strategy is set to Stop on Error.
+* **AC-17456** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where editing the Global scope on the Design Configuration page in the Admin Panel returns an HTTP 500 error on PHP 8.4 and 8.5.
+* **ACP2E-5212** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where Quick Order accepts non-CSV files renamed with a .csv extension.
+* **ACP2E-5300** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where keyword searches for multiple space-separated or comma-separated order numbers in the Admin Panel Orders grid return no matching orders.
+* **ACP2E-5354** (for Adobe Commerce, B2B >=1.5.3 <1.5.4) - Fixes the issue where updating a customer through the REST API causes a customer associated with a company account to appear multiple times in the Admin Customers grid.
+* **ACP2E-5208** (for Adobe Commerce, B2B >=1.5.1 <1.5.4) - Fixes the issue where Requisition List section reloads on every Storefront page navigation, even when no changes have been made.
+* Versions updated: **ACP2E-4894**
+* Replaced patches: **ACP2E-4626**
+
 ## v1.1.84 {#v1-1-84}
 
 * **ACP2E-4913** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where shipping and invoicing operations fail due to a deadlock.
