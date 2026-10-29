@@ -1056,6 +1056,7 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [AC-17975: PHP 8.5 compatibility issues affect CLI commands, category editing, Design Configuration, and customer login](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
            - [AC-16530: Shopping cart shows inconsistent prices after a scheduled catalog price rule update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
            - [ACP2E-4977: Configurable product invoice and credit memo totals exclude Fixed Product Tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
            - [AC-11389: Order totals vary based on the order products are added to the cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
