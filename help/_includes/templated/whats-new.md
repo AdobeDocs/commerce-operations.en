@@ -4,6 +4,94 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 29, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.83 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530">AC-16530: Shopping cart shows inconsistent prices after a scheduled catalog price rule update</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 28, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.84 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494">AC-15494: GraphQL products query returns HTML-escaped product names</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 27, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.84 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242">ACP2E-5242: GraphQL uses the store ID as the website ID during add-to-cart requests</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 26, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added detailed description of the QPT 1.1.84 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027">ACP2E-5027: Indexers don't finish when application locking uses the file lock provider</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d6f20dd3fe3dca1b8d61fd3afeb2e80bcaa9862">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 23, 2026
 
 <table style="table-layout:auto;">
@@ -466,28 +554,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update, new topic
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 26, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added detailed description of the QPT 1.1.82 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840: GraphQL products query returns null quantity for in-stock products on custom inventory stocks</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">commit</a></td>
     </tr>
   </tbody>
 </table>
