@@ -1,0 +1,38 @@
+---
+---
+# Cloud requirements table 2.4.10-alpha
+
+{%- assign version = "2.4.10-alpha" %}
+{%- assign requirements = site.data.system-requirements[version] %}
+{%- assign cloud_dependencies = "Composer,OpenSearch Cloud,MariaDB Cloud,New Relic Cloud,PHP,RabbitMQ Cloud,ActiveMQ Artemis Cloud,Redis Cloud,Valkey Cloud,nginx Cloud" | split: "," %}
+{%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,ActiveMQ Artemis,Redis,Valkey,nginx" | split: "," %}
+
+{%- if requirements %}
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>Software dependencies</th>
+      <th>{{version}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for dependency in cloud_dependencies %}
+    {%- assign value = requirements[dependency] %}
+    {%- unless value %}
+      {%- assign base_dependency = dependency | remove: " Cloud" %}
+      {%- if fallback_keys contains base_dependency %}
+        {%- assign value = requirements[base_dependency] %}
+      {%- endif %}
+    {%- endunless %}
+    {%- if value %}
+    <tr>
+      <td><span class="uicontrol">[!DNL {{dependency | remove: " Cloud"}}]</span></td>
+      <td>{{value}}</td>
+    </tr>
+    {%- endif %}
+    {%- endfor %}
+  </tbody>
+</table>
+
+{%- endif %}

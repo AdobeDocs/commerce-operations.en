@@ -5,6 +5,29 @@ feature: REST, B2B, Communications, Companies
 role: Admin
 exl-id: 4fc2ee54-d88b-4940-b6ac-e25ad61e5c66
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: e9004f3c-09ae-5d24-acd2-fa0987fdb66e
+    internal-label: Companies
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-42806: New company registration email is sent each time existing company is updated
 

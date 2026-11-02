@@ -4,6 +4,23 @@ description: This sub-section provides a detailed description of the issues fixe
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68
 
@@ -23,7 +40,6 @@ QPT v1.1.68 includes the following patches:
 1. **ACSD-66865**: Saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products.
 1. **ACSD-66889**: Error during inventory reindex in CLI.
 1. **ACSD-66963**: `estimateTotals` mutation returns *null* for discounts when a discount code is applied to a cart with virtual products.
-1. **ACSD-66965**: Print option on Requisition List page causes an error.
 1. **ACSD-66965**: **[!UICONTROL Print]** option on **[!UICONTROL Requisition List]** page causes an error.
 1. **ACSD-67039**: Customer records were not saved due to validation of the `rp_token` system attribute.
 

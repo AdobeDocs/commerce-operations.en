@@ -9,7 +9,8 @@
 {%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,ActiveMQ Artemis,Redis,Valkey,nginx" | split: "," %}
 
 {%- for minor_version in grouped_requirements %}
-{%- assign requirements = minor_version.items %}
+{%- assign requirements = minor_version.items | where_exp: "version", "version[0] != '2.4.10-alpha'" %}
+{%- if requirements.size > 0 %}
 
 <table style="table-layout:auto">
   <thead>
@@ -59,4 +60,5 @@
   </tbody>
 </table>
 
+{%- endif %}
 {%- endfor %}

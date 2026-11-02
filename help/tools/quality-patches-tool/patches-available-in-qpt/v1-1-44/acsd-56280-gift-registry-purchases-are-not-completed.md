@@ -5,6 +5,18 @@ feature: Checkout
 role: Admin
 exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-56280: Gift registry purchases are not completed
 

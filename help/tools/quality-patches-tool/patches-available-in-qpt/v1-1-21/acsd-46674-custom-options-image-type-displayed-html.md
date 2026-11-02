@@ -5,6 +5,20 @@ feature: Communications, Personalization
 role: Developer
 exl-id: 123ca7b5-02da-4573-897f-ff8adb184389
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-46674: custom options of image type displayed as HTML in customer emails
 

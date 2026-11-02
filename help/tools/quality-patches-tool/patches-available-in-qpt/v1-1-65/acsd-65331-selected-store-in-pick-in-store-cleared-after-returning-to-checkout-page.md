@@ -5,6 +5,20 @@ feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-65331: Selected store in **[!UICONTROL Pick in Store]** cleared after returning to checkout
 

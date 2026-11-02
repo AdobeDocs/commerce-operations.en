@@ -5,6 +5,22 @@ feature: Gift, Storefront
 role: Admin, Developer
 exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4fc0a729-4349-5307-bd06-1b4bfbaf5d0c
+    internal-label: Gift
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-62952: Gift Registry date displayed inaccurately on the storefront
 
