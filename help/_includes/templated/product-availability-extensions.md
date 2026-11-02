@@ -94,6 +94,19 @@
           </td>
       </tr>
       <tr>
+          <td>Catalog Enrichment</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>not supported</td>
+          <td>not supported</td>
+          <td>not supported</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
           <td>Data Connection</td>
           <td>3.6.1</td>
           <td>3.6.0</td>
