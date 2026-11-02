@@ -2,6 +2,17 @@
 title: Shared Responsibility Security and Operational Model
 description: Learn about the security responsibilities of each party involved in your Adobe Commerce on cloud infrastructure project.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Shared responsibility security and operational model
 
@@ -32,7 +43,6 @@ Merchants are responsible for the following:
 >See also:
 >
 >* [Software lifecycle policy](../release/lifecycle-policy.md) — end-of-support dates, extended support, and security-only transitional provisions
->* [Cloud version upgrade enforcement policy](../release/version-upgrade-enforcement-policy.md) — enforcement dates and required actions
 >* [Security and compliance notice](../release/security-enforcement-policy.md) — required actions and deadlines for Adobe Commerce on Cloud versions 2.4.4 through 2.4.9
 
 {{supported-versions-only}}

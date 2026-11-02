@@ -5,6 +5,25 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: ed510963-0b8c-4764-86f6-f3c7735bc334
+    internal-label: Page Builder
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-65127: JavaScript minification in production mode causes [!DNL TinyMCE] 6 errors in the browser
 
@@ -32,15 +51,15 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
 
 1. Set the configuration by running the below commands:
 
-  ```shell
-  bin/magento config:set --lock-config dev/js/minify_files 1
-  bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-  bin/magento config:set --lock-config dev/js/merge_files 1
-  ```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
-  >[!NOTE]
-  >
-  >Adobe does not recommend enabling **[!UICONTROL Merge JavaScript Files]**. See [Merge JS files (not recommended)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
+   >[!NOTE]
+   >
+   >Adobe does not recommend enabling **[!UICONTROL Merge JavaScript Files]**. See [Merge JS files (not recommended)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
 
 1. Enable production mode.
 

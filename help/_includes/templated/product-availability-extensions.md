@@ -17,7 +17,7 @@
   <tbody>
       <tr>
           <td>Adobe I/O Events for Adobe Commerce</td>
-          <td>1.22.1</td>
+          <td>1.23.0</td>
           <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -30,7 +30,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Admin UI SDK</td>
-          <td>4.2.1</td>
+          <td>5.0.0</td>
           <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -43,7 +43,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Webhooks</td>
-          <td>1.19.0</td>
+          <td>1.20.0</td>
           <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets Integration for Commerce</td>
-          <td>1.4.4</td>
+          <td>1.4.9</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
@@ -95,7 +95,7 @@
       </tr>
       <tr>
           <td>Data Connection</td>
-          <td>3.6.0</td>
+          <td>3.6.1</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
           <td>3.6.0</td>

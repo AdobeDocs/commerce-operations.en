@@ -2,6 +2,17 @@
 title: Tools
 description: Learn about essential tools to optimize your Adobe Commerce store performance. Discover how to use analysis tools, patches, and utilities for better site management.
 exl-id: e2770019-d879-4685-bcbe-791550f49cf0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Tools
 
@@ -14,6 +25,8 @@ This guide is designed for merchants, developers, and integrators to facilitate 
 ## What's in the guide?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
+* [[!DNL Commerce Version Tool]](../tools/commerce-version-tool/intro.md)
+* [[!DNL Patching Automation]](../tools/caps-tool/workflow.md)
 * [[!DNL Managed alerts for Adobe Commerce]](../tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
 * [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [`bin/magento` command-line tool](reference/commerce-on-premises.md)

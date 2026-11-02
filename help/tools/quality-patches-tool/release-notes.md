@@ -16,6 +16,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Release notes
 
@@ -28,6 +30,70 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >[!INFO]
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where attribute labels on the [!UICONTROL Compare Products] page display translations from a different store view instead of the current store view.
+* **ACP2E-5075** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where a fixed-amount cart price rule with a category condition incorrectly applied a discount to all children of a dynamic-price bundle product when the rule matched only the bundle parent product.
+* **ACP2E-5077** (for Adobe Commerce and Magento Open Source >=2.4.7-p7 <2.4.10) - Fixes the issue where concurrent `customerCart` GraphQL queries or `POST /V1/carts/mine REST` requests create duplicate active carts for customers who don't already have an active cart.
+* **ACP2E-5088** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where a customer's persistent shopping cart is cleared when their session expires.
+* **ACP2E-3991** (for Adobe Commerce >=2.4.7 <2.4.9) - Fixes the issue where the client IP address isn't determined correctly.
+* **ACP2E-5092** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where the [!UICONTROL Company Profile] page and the Admin [!UICONTROL Customer Edit] page display an error when a company address that's saved without a region, then later has a region added to its country.
+* **ACP2E-5124** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where the [!UICONTROL Import] button remains available in the validation results after validation fails when the [!UICONTROL Validation Strategy] is set to *Stop on Error*.
+* **AC-17456** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where editing the *[!UICONTROL Global]* scope on the [!UICONTROL Design Configuration] page in the Admin Panel returns a *HTTP 500* error on PHP 8.4 and 8.5.
+* **ACP2E-5212** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where [!UICONTROL Quick Order] accepts non-CSV files renamed with a `.csv` extension.
+* **ACP2E-5300** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where keyword searches for multiple space-separated or comma-separated order numbers in the Admin Panel [!UICONTROL Orders] grid return no matching orders.
+* **ACP2E-5354** (for Adobe Commerce, B2B >=1.5.3 <1.5.4) - Fixes the issue where updating a customer through the REST API causes a customer associated with a company account to appear multiple times in the Admin [!UICONTROL Customers] grid.
+* **ACP2E-5208** (for Adobe Commerce, B2B >=1.5.1 <1.5.4) - Fixes the issue where [!UICONTROL Requisition List] section reloads on every Storefront page navigation, even when no changes have been made.
+* Versions updated: **ACP2E-4894**
+* Replaced patches: **ACP2E-4626**
+
+## v1.1.84 {#v1-1-84}
+
+* **ACP2E-4913** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where shipping and invoicing operations fail due to a deadlock.
+* **ACP2E-5005** (for Adobe Commerce, B2B >=1.5.0 <1.5.4) - Fixes the issue where the quantity of a bundle product option in a negotiable quote reverts to its previous value when the bundle product is reconfigured in the Admin, and the quantity is edited.
+* **ACP2E-5009** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where data migration from Magento Open Source to Adobe Commerce doesn't correctly migrate category scheduled design changes and product Special Price scheduled updates, causing some scheduled updates to be missing or skipped during migration, and improves migration performance.
+* **ACP2E-5017** (for Adobe Commerce, B2B >=1.5.0 <1.5.4) - Fixes the issue where querying customer role through GraphQL returns an *Internal server error* when the customer isn't assigned to a company.
+* **ACP2E-5027** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.10) - Fixes the issue where indexers remain stuck in a loop and reindexing doesn't complete when file locking is enabled.
+* **ACP2E-5029** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.10) - Fixes the issue where changes to catalog price rules don't appear in [!DNL Live Search] until a manual resynchronization is performed.
+* **ACP2E-5041** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where saving a product during a scheduled update causes the storefront to show the regular price instead of the [!UICONTROL Special Price] after the update ends.
+* **ACP2E-5059** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where customers receive duplicate order confirmation emails for the same order.
+* **ACP2E-5122** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.10) - Fixes the issue where handled errors from GraphQL requests for the shopping cart are incorrectly recorded in exception logs as application errors.
+* **ACP2E-5143** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the GraphQL route query renders full CMS page content when only routing metadata is requested, increasing database queries for CMS pages that contain Page Builder widgets.
+* **ACP2E-5183** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.10) - Fixes the issue where static content deployment fails on PHP 8.5 while compiling a `LESS` file that uses the `@magento_import` directive.
+* **ACP2E-5242** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where checking product availability while adding items to the cart displays an error indicating that the website can't be found.
+* **ACP2E-5263** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where exporting products to a CSV file can stop before all products are included, resulting in an incomplete file.
+* **ACP2E-5034** (for Adobe Commerce, B2B >=1.5.0 <1.5.3) - Fixes the issue where negotiable quote management incorrectly resets totals to *zero* when recalculating a quote after selecting a shipping method, discards updates to bundle product option quantities made through the [!UICONTROL Configure] action in the Admin, and doesn't correctly reflect item-level discounts applied to dynamic price bundle products in quote subtotals.
+* **ACP2E-4741** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where a product disappears from the storefront after a product linked to it as a [!UICONTROL Related Product], [!UICONTROL Up-Sell], or Cross-Sell is saved while a non-default stock and source are in use.
+* **ACP2E-5079** (for Adobe Commerce >=2.4.4 <2.4.10) - Fixes the issue where evaluating a customer segment assigned to multiple websites returns matching customers only from the first website when customer accounts are shared globally.
+* **ACP2E-5127** (for Adobe Commerce, B2B >=1.3.3 <1.5.4) - Fixes the issue where editing a company account in the Admin panel with a non-default locale resets its [!UICONTROL Credit Limit] to *0*.
+* **AC-15494** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the products query returns product names with HTML-escaped special characters instead of their original characters.
+* Versions updated: **AC-18096**, **ACSD-60584**, **ACSD-65775**
+* Replaced patches: **ACP2E-4801**, **ACP2E-4194**
+* Updated patches: **ACP2E-4815**
+
+## v1.1.83 {#v1-1-83}
+
+* **AC-18128** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.8-p6) - Fixes the issue where order dates and order comment timestamps returned by GraphQL display incorrect calendar dates in non-English locale settings.
+* **AC-18096** (for Adobe Commerce and Magento Open Source >2.4.8 <=2.4.9-p1) - Fixes the issue where Sales GraphQL date fields return dates in a different format than previous releases by reverting the date format from slash-separated (`/`) to dash-separated (`-`).
+* **AC-17975** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes multiple PHP 8.5 compatibility issues affecting Admin workflows, checkout authentication, CAPTCHA processing, category management, configuration pages, and command-line operations in certain PHP environments.
+* **ACP2E-4639** (for Adobe Commerce, B2B >=1.3.4 <1.5.3) - Fixes the issue where the requisition list items type was misspelled in the GraphQL schema, while the older items field and `RequistionListItems` type remain available, but are deprecated.
+* **ACP2E-4838** (for Adobe Commerce >=2.4.4 <2.4.10) - Fixes the issue where an Admin user with restricted permissions can't delete customers from the Customers grid.
+* **ACP2E-4877** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where orders placed using **[!UICONTROL Payment on Account]** couldn't be edited in Admin while in *Pending* status.
+* **ACP2E-4908** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.10) - Fixes the issue where large catalogs cause excessive memory use in Redis or [!DNL Valkey] because separate layout cache entries were created for each product in each store view.
+* **AC-12854** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where reordering an order in the Admin creates a new order number with a *-1* suffix instead of assigning the next sequential order number.
+* **ACP2E-4977** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where invoice and credit memo grand totals for configurable products don't include **[!UICONTROL Fixed Product Tax]** (FPT), resulting in totals lower than the order total.
+* **AC-16530** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where the shopping cart didn't consistently reflect scheduled updates to catalog price rules.
+* **AC-11389** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where discounts, taxes, and order totals are calculated incorrectly in some rounding scenarios.
+* **ACP2E-4998** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the `POST /V1/products/tier-prices` REST API request failed for the entire request when one SKU in the payload didn't exist, preventing valid SKUs from being updated.
+* **ACP2E-5015** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where saving a shared catalog in the Admin unintentionally remove assigned products and pricing when the required catalog data is unavailable.
+* **AC-14940** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where clicking **[!UICONTROL Reset Password]** for a customer account in the Admin didn't send the password reset email in some store-related cases.
+* **ACP2E-5101** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where installing B2B module failed when indexers were set to *[!UICONTROL Update on Schedule]*.
+* **ACP2E-5205** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue when category loading takes a considerable amount of time or causes a timeout when a large number of categories and products are involved. Also, the product count is now properly displayed for each category leaf.
+* **ACP2E-3211** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where adding the same product to the cart at the same time on the Storefront creates separate items in the cart for the same SKU, instead of combining them into a single item.
+* **ACP2E-5223** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where the `Catalog Permissions` index includes websites that are excluded from a customer group.
+* Versions updated: **MDVA-42855-V2**, **ACSD-55100**, **ACSD-61845**, **ACP2E-4732**, **ACP2E-4156**
+* Replaced patches: **ACSD-67643**
 
 ## v1.1.82 {#v1-1-82}
 

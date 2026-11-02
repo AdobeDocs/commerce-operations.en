@@ -16,6 +16,11 @@ feature_v2:
     internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -24,6 +29,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -53,15 +60,15 @@ Commerce provides command-line options to configure the Valkey default and page 
 
 >[!TAB Zend Cache (2.4.8 and earlier)]
 
-- **Zend Cache (2.4.8 and earlier)** — Legacy Valkey backend for Commerce 2.4.8 and earlier:
-  - **Legacy Valkey backend** — Uses the full class path (`Magento\Framework\Cache\Backend\Valkey`)
+- **Zend Cache (2.4.8 and earlier)** — Valkey backend for Commerce 2.4.8 and earlier:
+  - **Zend-based Valkey backend** — Uses the full class path (`Magento\Framework\Cache\Backend\Valkey`)
   - **Preload keys** — Supports preloading frequently used cache keys
   - **Lua scripts** — Lua for garbage collection
   - **Compression** — Supports data compression
 
 >[!TAB Symfony Cache (2.4.9+)]
 
-- **Symfony Cache (2.4.9+)** — Starting with Commerce 2.4.9, Symfony Cache provides a modern, PSR-6 compliant caching implementation for Valkey with significant performance improvements:
+- **Symfony Cache (2.4.9+)** — Starting with Commerce 2.4.9, Symfony Cache provides a PSR-6 compliant caching implementation for Valkey with significant performance improvements:
   - **Automatic Valkey pipelining** — Batches multiple operations into single requests, reducing latency
   - **PSR-6 TagAwareAdapter** — Efficient tag-based cache invalidation with atomic operations
   - **Igbinary serialization** — Binary serialization reduces cache entry size by 45% and improves speed by 5-10%
@@ -283,7 +290,7 @@ When using the preload feature with an L2 cache, you must add the `:hash` suffix
 
 ### Parallel generation
 
-Starting with the Commerce 2.4.0 release, Adobe introduced the `allow_parallel_generation` option for users who want to eliminate waiting for locks. It is disabled by default, and Adobe recommends disabling it until you have excessive configurations and/or blocks.
+Adobe Commerce provides the `allow_parallel_generation` option for users who want to eliminate waiting for locks. It is disabled by default, and Adobe recommends disabling it until you have excessive configurations and/or blocks.
 
 **To enable parallel generation**:
 

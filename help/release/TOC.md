@@ -13,6 +13,7 @@ nudge: true
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
     - [Overview](release-notes/commerce/overview.md)
+    - [2.4.10](release-notes/commerce/2-4-10.md)
     - [2.4.9](release-notes/commerce/2-4-9.md)
     - [2.4.8](release-notes/commerce/2-4-8.md)
     - [2.4.7](release-notes/commerce/2-4-7.md)
@@ -25,6 +26,7 @@ nudge: true
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
     - [Overview](release-notes/open-source/overview.md)
+    - [2.4.10](release-notes/open-source/2-4-10.md)
     - [2.4.9](release-notes/open-source/2-4-9.md)
     - [2.4.8](release-notes/open-source/2-4-8.md)
     - [2.4.7](release-notes/open-source/2-4-7.md)
@@ -49,7 +51,7 @@ nudge: true
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
   - [Required actions and deadlines to secure Commerce environments](security-enforcement-policy.md)
-  - [Version upgrade enforcement policy](version-upgrade-enforcement-policy.md)
+  - [Monthly security isolated patching policy](monthly-isolated-security-patches.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)
 - [Features by version](features.md)
