@@ -132,6 +132,10 @@ Enabled production mode.
 
 ### Change to developer mode
 
+>[!NOTE]
+>
+>Developer mode is not supported in the Adobe Commerce Cloud environment and Adobe Commerce Support is unable to facilitate changing the application mode.
+
 When you change from production to developer mode, you should clear generated classes and Object Manager entities like proxies to prevent unexpected errors. After doing so, you can change modes. Use the following steps:
 
 1. If you are changing from production mode to developer mode, delete the contents of the `generated/code` and `generated/metadata` directories:
