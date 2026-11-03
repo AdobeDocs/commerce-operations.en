@@ -2,8 +2,52 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 23 15:56:48 2026
+updated: Fri Oct 30 15:56:51 2026
 entries:
+- description: 'Added detailed description of the QPT 1.1.83 fix for [AC-16530: Shopping
+    cart shows inconsistent prices after a scheduled catalog price rule update](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2222
+  merge_commit: 87bb58152a37d84e7ca9c4a882b014bf45224981
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [AC-15494: GraphQL
+    products query returns HTML-escaped product names](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2250
+  merge_commit: d8d3bfc8adf81046abf9d46ff2dba43c742e2945
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5242:
+    GraphQL uses the store ID as the website ID during add-to-cart requests](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 27, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2244
+  merge_commit: 9b84a4c224d31afe6452fd609f6202bc9ac7c1c8
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5027:
+    Indexers don''t finish when application locking uses the file lock provider](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027).'
+  versions: ''
+  type: new-topic, qpt
+  date: October 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2237
+  merge_commit: 7d6f20dd3fe3dca1b8d61fd3afeb2e80bcaa9862
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5263:
     Product CSV export stops early and omits products](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263).'
   versions: ''

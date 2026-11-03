@@ -1056,6 +1056,7 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [ACP2E-4908: Large catalogs cause excessive Redis or Valkey memory usage](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
            - [AC-17975: PHP 8.5 compatibility issues affect CLI commands, category editing, Design Configuration, and customer login](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
            - [AC-16530: Shopping cart shows inconsistent prices after a scheduled catalog price rule update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
            - [ACP2E-4977: Configurable product invoice and credit memo totals exclude Fixed Product Tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
@@ -1074,6 +1075,7 @@ color: red
            - [AC-12854: Admin reorder uses the original order number with a -1 suffix](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+           - [ACP2E-5183: Static content deployment fails on PHP 8.5 with `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
            - [AC-15494: GraphQL products query returns HTML-escaped product names](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
            - [ACP2E-5242: GraphQL uses the store ID as the website ID during add-to-cart requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
            - [ACP2E-5027: Indexers don't finish when application locking uses the file lock provider](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)

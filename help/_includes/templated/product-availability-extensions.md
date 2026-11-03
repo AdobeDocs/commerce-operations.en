@@ -56,7 +56,7 @@
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets Integration for Commerce</td>
-          <td>1.4.9</td>
+          <td>1.4.12</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
@@ -91,6 +91,19 @@
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Catalog Enrichment</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>not supported</td>
+          <td>not supported</td>
+          <td>not supported</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
