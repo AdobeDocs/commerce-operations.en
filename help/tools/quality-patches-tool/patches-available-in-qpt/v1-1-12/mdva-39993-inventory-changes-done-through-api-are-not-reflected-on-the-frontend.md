@@ -5,6 +5,27 @@ feature: REST, Inventory, Orders, Storefront
 role: Admin
 exl-id: 5fa13635-bd58-470b-a4d5-e50cda8a46e3
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-39993: Inventory changes done through API are not reflected on storefront
 

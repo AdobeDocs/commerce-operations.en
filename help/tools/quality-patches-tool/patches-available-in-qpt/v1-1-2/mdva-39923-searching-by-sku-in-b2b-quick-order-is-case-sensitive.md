@@ -5,6 +5,29 @@ feature: B2B, Catalog Management, Orders, Search
 role: Admin
 exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-39923: Search by SKU in B2B quick order functionality is case-sensitive
 

@@ -5,6 +5,25 @@ feature: Admin Workspace, Categories
 role: Admin
 exl-id: f278a90f-f30c-401f-a544-713c89eb208a
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-48866: Error when requesting RSS feed for categories
 

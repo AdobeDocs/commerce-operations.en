@@ -5,6 +5,22 @@ feature: Catalog Management, Orders, Price Rules
 role: Admin
 exl-id: 1d144bfc-c26b-43d0-a80c-26a9c2d8ef32
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-31763: Catalog price rules are reverted until manual reindex
 

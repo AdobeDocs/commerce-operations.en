@@ -4,6 +4,18 @@ description: Learn how to create and use an upgrade checklist to plan your Adobe
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Upgrade checklist best practices
 

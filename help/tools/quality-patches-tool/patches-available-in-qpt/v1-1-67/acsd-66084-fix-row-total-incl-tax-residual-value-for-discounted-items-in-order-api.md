@@ -5,6 +5,31 @@ feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 42e094d8-211b-5acf-b52f-d8979151ab30
+    internal-label: Taxes
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-66084: `row_total_incl_tax` returns near-zero instead of 0.00 for fully discounted items in order API
 

@@ -1,0 +1,13 @@
+---
+version: "2.4.10"
+product: "Adobe Commerce"
+---
+{%- assign data_path = page.version | replace: ".", "-" | prepend: "v" -%}
+{%- assign fixes = site.data.release.highlights[data_path] -%}
+# {{page.product}} highlights (v{{page.version}})
+
+## Highlights in v{{page.version}}-alpha1
+
+The following highlights apply to the {{page.product}} {{page.version}}-alpha1 release.
+
+{%- include release/fixed-issues.html -%}

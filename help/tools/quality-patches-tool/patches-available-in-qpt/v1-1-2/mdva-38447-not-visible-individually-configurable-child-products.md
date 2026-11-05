@@ -5,6 +5,35 @@ feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
 exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # MDVA-38447: "Not visible individually" configurable child products are returned in GraphQL response and slow MySQL query
 

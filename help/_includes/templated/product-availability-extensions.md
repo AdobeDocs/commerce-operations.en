@@ -17,7 +17,7 @@
   <tbody>
       <tr>
           <td>Adobe I/O Events for Adobe Commerce</td>
-          <td>1.22.2</td>
+          <td>1.23.0</td>
           <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -30,7 +30,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Admin UI SDK</td>
-          <td>5.0.0</td>
+          <td>5.1.0</td>
           <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -43,7 +43,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Webhooks</td>
-          <td>1.19.0</td>
+          <td>1.20.0</td>
           <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets Integration for Commerce</td>
-          <td>1.4.4</td>
+          <td>1.4.12</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
@@ -91,6 +91,19 @@
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Catalog Enrichment</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>not supported</td>
+          <td>not supported</td>
+          <td>not supported</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>

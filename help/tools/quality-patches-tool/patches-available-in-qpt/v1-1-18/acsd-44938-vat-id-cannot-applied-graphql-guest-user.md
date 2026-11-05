@@ -1,10 +1,29 @@
 ---
-title: "ACSD-44938: VAT_ID can't be applied in [!DNL GraphQL] request for guest user"
+title: 'ACSD-44938: VAT_ID can''t be applied in [!DNL GraphQL] request for guest user'
 description: The ACSD-44938 patch fixes the issue where the `VAT_ID` can't be applied in a [!DNL GraphQL] request for a guest user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-44938. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
 exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-44938: VAT_ID can't be applied in [!DNL GraphQL] request for guest user
 

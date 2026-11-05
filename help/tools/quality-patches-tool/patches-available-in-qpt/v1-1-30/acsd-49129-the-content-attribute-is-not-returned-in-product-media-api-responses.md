@@ -5,6 +5,29 @@ feature: REST, Attributes, Media, Page Content, Products
 role: Admin
 exl-id: 5235b7d1-4ebf-4cfb-8605-47614306a122
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 76cfaac4-e563-56dd-8938-708bf8b84956
+    internal-label: Attributes
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-49129: "Content" attribute not returned in product media API responses
 

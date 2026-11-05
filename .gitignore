@@ -12,3 +12,6 @@ Gemfile.lock
 .env
 .scout
 .vscode
+AGENTS.md
+.github/skills/
+*.log
