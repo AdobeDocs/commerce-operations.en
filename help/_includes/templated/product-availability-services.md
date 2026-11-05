@@ -43,7 +43,7 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.16.1</td>
+          <td>2.17.0</td>
           <td>2.16.1</td>
           <td>2.16.1</td>
           <td>2.16.1</td>
