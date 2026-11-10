@@ -2,6 +2,17 @@
 title: Adobe Commerce release notes
 description: Learn where to find information for specific Adobe Commerce releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 
 # Release notes for Adobe Commerce
@@ -33,7 +44,7 @@ The table below provides release notes and important information for Adobe Comme
             <li><a href="security/overview.md">Security patches</a></li>
             <li><a href="../lifecycle-policy.md">Software lifecycle policy</a></li>
             <li><a href="../security-enforcement-policy.md">Security and compliance notice</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
+            <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Adobe Security Bulletins and Advisories</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
           </ul>
         </td>
@@ -50,15 +61,18 @@ The table below provides release notes and important information for Adobe Comme
     </tr>
     <tr>
       <td><strong>Services for Adobe Commerce</strong>
-        <p>Learn about the latest improvements to innovative Commerce merchandising services.</p>
+        <p>Learn about the latest improvements and innovations in Commerce services.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Catalog Service</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">Catalog Service</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">Live Search</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">Payment Services</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration for Commerce/a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">Product Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS Data Export Service</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce Services Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live Search</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Payment Services</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Product Recommendations</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">Services Connector</a></li>
           </ul>
         </td>
       <td><strong>Tools</strong>
@@ -67,6 +81,7 @@ The table below provides release notes and important information for Adobe Comme
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh for Adobe APP Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events for Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Admin UI SDK</a></li>
+            <li><a href="../../tools/commerce-version-tool/release-notes.md">Commerce Version Tool</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Quality Patches Tool</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Site-Wide Analysis Tool</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
@@ -77,7 +92,7 @@ The table below provides release notes and important information for Adobe Comme
        <td><strong>Storefront Experience</strong>
         <p>Learn about the latest improvements to storefront technology that you can use to build unique experiences for your customers.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
+            <li><a href=https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>

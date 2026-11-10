@@ -1,7 +1,6 @@
 ---
 title: What's new in implementation best practices
-description: This page contains the changes made in the last 60 days. We exclude all
-  minor updates, such as copy editing, from this list.
+description: This page contains the changes made in the last 60 days. Minor updates, such as copy editing, are excluded from this list.
 updated: Mon Jan 5 14:39:05 2026
 entries:
 - description: Provided more details about  the [Set configuration values](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values).

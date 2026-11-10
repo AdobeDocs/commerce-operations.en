@@ -16,6 +16,19 @@ feature_v2:
     internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -29,9 +42,7 @@ QPT v1.1.81 includes the following patches:
 
 1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: Fixes the issue where the [!UICONTROL Scheduled Update Preview] of the [!UICONTROL Home Page] link with configurable products redirects to the [!UICONTROL maintenance page] instead of displaying the product list.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: Fixes the issue where changing a customer group in the Admin doesn't update catalog permissions on the storefront, causing the catalog and cart to reflect outdated permissions.
-1. **ACP2E-4401**: Fixes the issue where the [!UICONTROL Scheduled Update Preview] of the Home Page link with configurable products redirects to the maintenance page instead of displaying the product list.
-1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: Giftcard API product creation will now display an error if no amounts are specified for the global scope.
-1. **ACP2E-4468**: Fixes the issue where [!UICONTROL Admin] users with website scope permissions can't edit banner content.
+1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: Fixes the issue where the Gift Card API product creation does not display an error when no amounts are specified for the global scope.
 1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: Fixes the issue where Admin users with website scope permissions can't edit banner content.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: Fixes the issue where long product names with custom options overlap adjacent columns or items in multi-page Invoice, Shipment, Credit Memo, and Return PDFs after page breaks, making line items unreadable.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: Fixes the issue where non-salable or deleted products disappear from finalized negotiable quotes.

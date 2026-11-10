@@ -3,6 +3,17 @@ title: 'ACSD-50813: Admin unable to add bundled products containing a slash'
 description: Apply the ACSD-50813 patch to fix the Adobe Commerce performance issue where the admin cannot add bundled products containing a slash mark (`/`) in the SKU with the *Add Products by SKU* functionality to the admin order.
 exl-id: ff6fa673-bac1-4ef8-a427-60c2f56068f3
 type: Troubleshooting
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # ACSD-50813: Admin unable to add bundled products containing a slash
 
