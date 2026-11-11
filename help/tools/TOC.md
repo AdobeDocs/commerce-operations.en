@@ -1076,6 +1076,7 @@ color: red
            - [AC-12854: Admin reorder uses the original order number with a -1 suffix](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+           - [ACP2E-5034: B2B item discounts don't reduce dynamic-price bundle subtotals in negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)
            - [ACP2E-5041: Saving a stale product form expires the special price after a scheduled update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
            - [ACP2E-5183: Static content deployment fails on PHP 8.5 with `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
            - [AC-15494: GraphQL products query returns HTML-escaped product names](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
