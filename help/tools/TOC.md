@@ -1056,6 +1056,10 @@ color: red
            - [ACP2E-4875: Admin users logged out when opening customer accounts with large address books](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
         - v1.1.83 {#v1-1-83}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+           - [ACP2E-5205: Large catalogs cause slow category loading and timeouts in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205.md)
+           - [ACP2E-4908: Large catalogs cause excessive Redis or Valkey memory usage](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
+           - [AC-17975: PHP 8.5 compatibility issues affect CLI commands, category editing, Design Configuration, and customer login](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
+           - [AC-16530: Shopping cart shows inconsistent prices after a scheduled catalog price rule update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
            - [ACP2E-4977: Configurable product invoice and credit memo totals exclude Fixed Product Tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
            - [AC-11389: Order totals vary based on the order products are added to the cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
            - [ACP2E-4877: Edit button missing for pending Payment on Account orders in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
@@ -1073,6 +1077,11 @@ color: red
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
            - [ACP2E-5041: Saving a stale product form expires the special price after a scheduled update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
+           - [ACP2E-5183: Static content deployment fails on PHP 8.5 with `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
+           - [AC-15494: GraphQL products query returns HTML-escaped product names](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
+           - [ACP2E-5242: GraphQL uses the store ID as the website ID during add-to-cart requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
+           - [ACP2E-5027: Indexers don't finish when application locking uses the file lock provider](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
+           - [ACP2E-5263: Product CSV export stops early and omits products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
            - [ACP2E-5009: Content Staging migration creates invalid updates and slows setup:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
            - [ACP2E-5005: Bundle product quantities don't update in Admin negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
            - [ACP2E-5127: Saving a company with a non-English Admin locale resets Credit Limit to zero](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
