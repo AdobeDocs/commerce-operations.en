@@ -31,6 +31,35 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.86 {#v1-1-86}
+
+* **ACP2E-3094** (for Adobe Commerce >=2.4.5 <2.4.8) - Fixes the issue where viewing or editing Category Permissions for a category with many permissions can cause the browser to become unresponsive.
+* **ACP2E-5046** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where refreshing the page while creating an order in the Admin adds the same SKU multiple times.
+* **ACP2E-5050** (for Adobe Commerce >=2.4.6 <2.4.10) - Fixes the issue where viewing or saving an RMA in the Admin does not display the RMA number in the Action Logs report.
+* **ACP2E-5057** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where GraphQL queries for bundle products return global bundle option prices instead of website-specific prices when Catalog Price Scope is set to Website.
+* **ACP2E-5061** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where a category merchandising rule cannot combine AND conditions with a condition that matches any of several values.
+* **ACP2E-5071** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.10) - Fixes the issue where the stock unavailability message is not always displayed on the product page when the shopper's cart already contains the full available quantity.
+* **ACP2E-5094** (for Adobe Commerce and Magento Open Source >=2.4.6-p3 <2.4.7 || >=2.4.8 <2.4.10) - Fixes the issue where page loads are significantly slower when a MAGENTO_DC_* environment variable is set.
+* **ACP2E-5118** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where the Page Builder preview does not render when the Translations cache is disabled.
+* **ACP2E-5134** (for Adobe Commerce >=2.4.6 <2.4.10) - Fixes the issue where removing a product included in a bundle from a company's Shared Catalog leaves the bundle product in the shopping cart and causes an error in the cart and during checkout.
+* **ACP2E-5146** (for Adobe Commerce, B2B >=1.3.4 <1.5.4) - Fixes the issue where an Admin user restricted to specific websites cannot delete customers when a customer on another website has the same ID as the Admin user.
+* **ACP2E-5176** (for Adobe Commerce >=2.4.7 <2.4.10) - Fixes the issue where ecommerce events sent to Google Analytics 4 through Google Tag Manager use the Universal Analytics format and omit several checkout events.
+* **ACP2E-5185** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where moving a category in the category tree displays the error "There was a category move error" or takes several minutes to complete when the store has many URL rewrites.
+* **ACP2E-4191** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where certain REST API requests enter an infinite loop when the EAV types and attributes cache is disabled.
+* **ACP2E-4973** (for Adobe Commerce and Magento Open Source >=2.4.8-p1 <2.4.9) - Fixes the issue where switching from In-Store Delivery to another delivery method does not clear the associated store address from the cart.
+* **ACP2E-5221** (for Adobe Commerce, B2B >=1.5.3 <1.5.4) - Fixes the issue where the Catalog Product Permissions indexer takes significantly longer when Quick Order is enabled in installations with many stores and customer groups.
+* **ACP2E-5245** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where a newly registered customer who uses the same address for shipping and billing on their first order sees that address listed twice during their next checkout.
+* **ACP2E-5248** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where Admin users without the Edit Product Status permission see the "null as array offset" deprecation error when opening the Add Product page on PHP 8.5.
+* **ACP2E-5254** (for Adobe Commerce, B2B >=1.5.2 <1.5.4) - Fixes the issue where products added to a requisition list do not appear when a customer opens the list until the cache is cleared.
+* **ACP2E-5268** (for Adobe Commerce and Magento Open Source >=2.4.9 <2.4.10) - Fixes the issue where creating a configurable product fails when Enable Frontend Resize is set to No.
+* **ACP2E-3752** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where product import processing throws the error "Undefined array key "apply_to"" when many product import operations are created.
+* **ACP2E-5280** (for Adobe Commerce >=2.4.9 <2.4.10) - Fixes the issue where customers encounter an error when signing in while Category Permissions is enabled.
+* **ACP2E-5295** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where parallel product price reindexing fails with the error "Fail in child process" when run after the Inventory indexer in the same process.
+* **ACP2E-5298** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where Admin users with view-only access to cart price rules can generate or delete coupon codes.
+* **ACP2E-5333** (for Adobe Commerce >=2.4.5 <2.4.10) - Fixes the issue where refreshing a customer segment with a Total Number of Orders condition that uses the "is not" operator and a value of one or more fails with the error "Unknown operator specified.".
+* **ACP2E-5425** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where customers receive duplicate order confirmation emails for the same order.
+* Versions updated: **ACSD-63578**
+
 ## v1.1.85 {#v1-1-85}
 
 * **ACP2E-4929** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.10) - Fixes the issue where attribute labels on the [!UICONTROL Compare Products] page display translations from a different store view instead of the current store view.
