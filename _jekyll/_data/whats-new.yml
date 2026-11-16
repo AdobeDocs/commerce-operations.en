@@ -2,8 +2,42 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. Minor updates,
   such as copy editing, are excluded from this list.
-updated: Mon Nov 9 11:38:34 2026
+updated: Fri Nov 13 15:07:52 2026
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.86 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: qpt
+  date: '2026-11-13'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2311
+  merge_commit: 6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2
+  contributor: mrosmeteniuc_adobe
+  labels:
+  - qpt
+  - ai-reviewed
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5041:
+    Saving a stale product form expires the special price after a scheduled update](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041).'
+  versions: ''
+  type: new-topic, qpt
+  date: '2026-11-11'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2239
+  merge_commit: d2b8ba35c866be25a0fbbebceeb9a7c68ba37293
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
+- description: 'Added detailed description of the QPT 1.1.84 fix for [ACP2E-5034:
+    B2B item discounts don''t reduce dynamic-price bundle subtotals in negotiable
+    quotes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034).'
+  versions: ''
+  type: new-topic, qpt
+  date: '2026-11-11'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2246
+  merge_commit: 974c6238c0e0008eaa36851449de97218bfca949
+  contributor: jmenn_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: 'Added detailed description of the QPT 1.1.83 fix for [ACP2E-5205:
     Large catalogs cause slow category loading and timeouts in Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205).'
   versions: ''
