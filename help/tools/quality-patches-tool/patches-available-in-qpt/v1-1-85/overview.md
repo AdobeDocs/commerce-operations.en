@@ -13,7 +13,7 @@ QPT v1.1.85 includes the following patches:
 
 1. **ACP2E-4929**: Fixes the issue where attribute labels on the Compare Products page display translations from a different store view instead of the current store view.
 1. **ACP2E-5075**: Fixes the issue where a fixed-amount cart price rule with a category condition incorrectly applied a discount to all children of a dynamic-price bundle product when the rule matched only the bundle parent product.
-1. **ACP2E-5077**: Fixes the issue where concurrent customerCart GraphQL queries or POST /V1/carts/mine REST requests create duplicate active carts for customers who do not already have an active cart.
+1. **ACP2E-5077**: Fixes the issue where concurrent customerCart GraphQL queries or `POST` `/V1/carts/mine REST` requests create duplicate active carts for customers who do not already have an active cart.
 1. **ACP2E-5088**: Fixes the issue where a customer's persistent shopping cart is cleared when their session expires.
 1. **ACP2E-3991**: Fixes the issue where the client IP address is not determined correctly.
 1. **ACP2E-5092**: Fixes the issue where the Company Profile page and the Admin Customer Edit page display an error when a company address saved without a region later has a region added to its country.
