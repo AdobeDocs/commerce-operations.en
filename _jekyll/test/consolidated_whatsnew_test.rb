@@ -74,7 +74,7 @@ class ConsolidatedWhatsnewTest < Minitest::Test
   def test_global_order_suffix_routing_linked_titles_and_standardized_headers
     projects = [
       project('first.en', title: 'First [guide] & tools', website: 'https://example.com/guide(v2)'),
-      project('middle.en-tools', title: 'Developer guide'),
+      project('middle.en-tools', title: "Developer's guide"),
       project('last.en', title: 'Last guide')
     ]
     configure(*projects)
@@ -84,7 +84,7 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     headings = content.lines.select { |line| line.start_with?('## ') }
     assert_equal [
       "## [First \\[guide\\] &amp; tools](https://example.com/guide%28v2%29)\n",
-      "## [Developer guide](https://example.com/)\n",
+      "## [Developer&#39;s guide](https://example.com/)\n",
       "## [Last guide](https://example.com/)\n"
     ], headings
     assert_equal %w[help src/pages help], @calls.map { |url| url.split('/main/')[1].split('/_includes/')[0] }

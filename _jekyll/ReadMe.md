@@ -70,7 +70,13 @@ Projects with a recognized no-updates message are omitted. If every project has 
 
 The task does not schedule generation or update consuming pages.
 
-Run the focused tests from the repository root using the installed Ruby and Minitest, without Bundler:
+The focused test suite includes Rake entry-point tests that load the `_jekyll` Rakefile and run through Bundler. Install Bundler and the `_jekyll` bundle first:
+
+```sh
+cd _jekyll && bundle install
+```
+
+Then run the tests from the repository root:
 
 ```sh
 ruby _jekyll/test/consolidated_whatsnew_test.rb

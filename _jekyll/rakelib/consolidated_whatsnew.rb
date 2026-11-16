@@ -42,7 +42,7 @@ class ConsolidatedWhatsnew
       next if rows.nil?
 
       rows = rows.map { |row| row.gsub('\<br/\>', '<br/>') } unless exl
-      title = CGI.escapeHTML(project.fetch('title')).gsub(/[\\`*_\[\]{}()#!|]/) { |char| "\\#{char}" }
+      title = CGI.escapeHTML(project.fetch('title').gsub(/[\\`*_\[\]{}()#!|]/) { |char| "\\#{char}" })
       website = project.fetch('website').gsub(/[()]/) { |char| format('%%%02X', char.ord) }
       "## [#{title}](#{website})\n\n#{HEADER}\n#{rows.join("\n")}"
     end
