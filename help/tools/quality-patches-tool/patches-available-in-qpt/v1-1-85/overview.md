@@ -21,7 +21,7 @@ QPT v1.1.85 includes the following patches:
 1. **AC-17456**: Fixes the issue where editing the **[!UICONTROL Global]** scope on the **[!UICONTROL Design Configuration]** page in the Admin Panel returns an *HTTP 500* error on PHP 8.4 and 8.5.
 1. **ACP2E-5212**: Fixes the issue where **[!UICONTORL Quick Order]** accepts non-CSV files renamed with a .csv extension.
 1. **ACP2E-5300**: Fixes the issue where keyword searches for multiple space-separated or comma-separated order numbers in the Admin Panel Orders grid return no matching orders.
-1. **ACP2E-5354**: Fixes the issue where updating a customer through the `REST API` causes a customer associated with a company account to appear multiple times in the Admin Customers grid.
+1. **ACP2E-5354**: Fixes the issue where updating a customer through the `REST API` causes a customer associated with a company account to appear multiple times in the Admin **[!UICONTROL Customers]** grid.
 1. **ACP2E-5208**: Fixes the issue where Requisition List section reloads on every Storefront page navigation, even when no changes have been made.
 
 Use the menu on the left to navigate to a specific patch page.
