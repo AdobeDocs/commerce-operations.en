@@ -64,7 +64,7 @@ whatsnew_consolidated:
 
 Move entries to change section order. You can freely interleave projects from both platforms. Repository names ending with `.en` use the ExL source path, `help/_includes/templated/whats-new.md`. All other repositories use the DevSite source path, `src/pages/_includes/templated/whats-new.md`.
 
-The task fetches public `main` files from the `AdobeDocs` GitHub organization. It displays each project title as a heading linked to its website and uses `Description | Type | Date/source` table headers throughout. For DevSite projects only, escaped `\<br/\>` tags become `<br/>`. Otherwise, body rows, duplicates, links, and source row order remain unchanged. Each source defines its own time period.
+The task fetches public `main` files from the `AdobeDocs` GitHub organization. It displays each project title as a plain-text heading without a project website link and uses `Description | Type | Date/source` table headers throughout. For DevSite projects only, escaped `\<br/\>` tags become `<br/>`. Otherwise, body rows, duplicates, links, and source row order remain unchanged. Each source defines its own time period.
 
 Projects with a recognized no-updates message are omitted. If every project has no entries, the include contains one overall no-updates message. Configuration, fetch, parsing, or write failures fail the task without replacing an existing include.
 
@@ -92,7 +92,7 @@ bundle exec rake whatsnew_feedback
 
 The task matches `Feedback` as a complete, comma-separated Type value, ignoring case and surrounding whitespace. Combined types such as `Feedback, technical` are included. Mentions in descriptions, source links, or partial type names do not qualify.
 
-Matching rows, duplicates, linked project headings, and project and row order remain unchanged. Projects with no matching entries are omitted. If nothing matches, the output contains one overall no-feedback message.
+Matching rows, duplicates, plain-text project headings, and project and row order remain unchanged. Projects with no matching entries are omitted. If nothing matches, the output contains one overall no-feedback message.
 
 The input must already exist. Run `bundle exec rake whatsnew_consolidated` separately when you want to refresh it. The feedback task does not fetch remote content, read project configuration, or regenerate its input.
 

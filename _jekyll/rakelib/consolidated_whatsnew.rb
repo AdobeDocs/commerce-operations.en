@@ -43,8 +43,7 @@ class ConsolidatedWhatsnew
 
       rows = rows.map { |row| row.gsub('\<br/\>', '<br/>') } unless exl
       title = CGI.escapeHTML(project.fetch('title').gsub(/[\\`*_\[\]{}()#!|]/) { |char| "\\#{char}" })
-      website = project.fetch('website').gsub(/[()]/) { |char| format('%%%02X', char.ord) }
-      "## [#{title}](#{website})\n\n#{HEADER}\n#{rows.join("\n")}"
+      "## #{title}\n\n#{HEADER}\n#{rows.join("\n")}"
     end
 
     content = [TITLE]
@@ -72,7 +71,7 @@ class ConsolidatedWhatsnew
 
     sections = blocks.filter_map do |block|
       heading = block.first
-      unless heading.match?(/\A## \[(?:\\[^\n]|[^\]\\])+\]\(https?:\/\/[^()\s]+\)\z/i)
+      unless heading.match?(/\A## (?:\\[^\n]|[^\\\[\]])+\z/)
         raise Error, "#{input_path}: invalid project heading #{heading.inspect}"
       end
       begin

@@ -60,7 +60,7 @@ class ConsolidatedWhatsnewTest < Minitest::Test
   end
 
   def project_section(title, rows)
-    "## [#{title}](https://example.com/)\n\n#{ConsolidatedWhatsnew::HEADER}\n#{rows.join("\n")}"
+    "## #{title}\n\n#{ConsolidatedWhatsnew::HEADER}\n#{rows.join("\n")}"
   end
 
   def feedback_input(*sections)
@@ -71,7 +71,7 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     ConsolidatedWhatsnew.new(config_path: @config).filter_feedback(input_path: @input, output_path: @output)
   end
 
-  def test_global_order_suffix_routing_linked_titles_and_standardized_headers
+  def test_global_order_suffix_routing_plain_headings_without_project_links_and_standardized_headers
     projects = [
       project('first.en', title: 'First [guide] & tools', website: 'https://example.com/guide(v2)'),
       project('middle.en-tools', title: "Developer's guide"),
@@ -83,10 +83,13 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     content = File.read(@output)
     headings = content.lines.select { |line| line.start_with?('## ') }
     assert_equal [
-      "## [First \\[guide\\] &amp; tools](https://example.com/guide%28v2%29)\n",
-      "## [Developer&#39;s guide](https://example.com/)\n",
-      "## [Last guide](https://example.com/)\n"
+      "## First \\[guide\\] &amp; tools\n",
+      "## Developer&#39;s guide\n",
+      "## Last guide\n"
     ], headings
+    assert_includes content, "## First \\[guide\\] &amp; tools\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    assert_includes content, "## Developer&#39;s guide\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    refute content.lines.any? { |line| line.start_with?('[') }
     assert_equal %w[help src/pages help], @calls.map { |url| url.split('/main/')[1].split('/_includes/')[0] }
     assert_equal 3, content.scan(ConsolidatedWhatsnew::HEADER).length
     assert_equal 3, content.scan(ROW).length
@@ -113,7 +116,7 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     }
     generate
     content = File.read(@output)
-    assert_equal ["## [present](https://example.com/)\n"], content.lines.grep(/\A## /)
+    assert_equal ["## present\n"], content.lines.grep(/\A## /)
     refute_includes content, ConsolidatedWhatsnew::EMPTY_MESSAGE
     @responses['present'] = @responses['empty-dev']
     generate
@@ -131,8 +134,8 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     }
     generate
     content = File.read(@output)
-    assert_includes content, "## [devsite](https://example.com/)\n\n#{ConsolidatedWhatsnew::HEADER}\n#{expected_devsite_row}\n"
-    assert_includes content, "## [exl.en](https://example.com/)\n\n#{ConsolidatedWhatsnew::HEADER}\n#{source_row}\n"
+    assert_includes content, "## devsite\n\n#{ConsolidatedWhatsnew::HEADER}\n#{expected_devsite_row}\n"
+    assert_includes content, "## exl.en\n\n#{ConsolidatedWhatsnew::HEADER}\n#{source_row}\n"
   end
 
   def test_invalid_configuration_fails_before_fetching_and_preserves_output
@@ -242,7 +245,7 @@ class ConsolidatedWhatsnewTest < Minitest::Test
                                            chdir: File.expand_path('..', __dir__))
     assert status.success?, "#{stdout}\n#{stderr}"
     assert_includes stdout, @output
-    assert_includes File.read(@output), '## [a.en](https://example.com/)'
+    assert_includes File.read(@output), "## a.en\n\n#{ConsolidatedWhatsnew::HEADER}"
   end
 
   def test_feedback_filter_matches_only_complete_type_tokens_and_preserves_rows
@@ -256,15 +259,18 @@ class ConsolidatedWhatsnewTest < Minitest::Test
       project_section('Omitted', [ROW]),
       project_section('First \[guide\]', rows + [rows.first, special]),
       project_section('Also omitted', [rows[4]]),
-      project_section('Last guide', [special]).sub('https://', 'HTTPS://')
+      project_section('Last guide', [special])
     )
     File.write(@input, source)
     assert_equal @output, filter_feedback
     content = File.read(@output)
     assert_equal [
-      "## [First \\[guide\\]](https://example.com/)",
-      '## [Last guide](HTTPS://example.com/)'
+      "## First \\[guide\\]",
+      '## Last guide'
     ], content.lines.map(&:chomp).grep(/\A## /)
+    assert_includes content, "## First \\[guide\\]\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    assert_includes content, "## Last guide\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    refute content.lines.any? { |line| line.start_with?('[') }
     expected_tables = ConsolidatedWhatsnew::HEADER.lines.map(&:chomp) + rows.first(4) + [rows.first, special] +
                       ConsolidatedWhatsnew::HEADER.lines.map(&:chomp) + [special]
     assert_equal expected_tables, content.lines.map(&:chomp).grep(/\A\|/)
@@ -297,7 +303,8 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     invalid = [
       '', 'Not a consolidated include',
       feedback_input('| Orphaned | Feedback | source |'),
-      feedback_input("## Unlinked project\n\n#{ConsolidatedWhatsnew::HEADER}\n#{ROW}"),
+      feedback_input("## [Linked project](https://example.com/)\n\n#{ConsolidatedWhatsnew::HEADER}\n#{ROW}"),
+      feedback_input(project_section('Guide', [ROW]).sub("\n\n", "\n\n[Guide](https://example.com/)\n\n")),
       feedback_input(project_section('Unexpected prose', [ROW]).sub("\n\n", "\n\nUnexpected prose\n\n")),
       feedback_input(project_section('Bad header', [ROW]).sub('Description', 'Unexpected')),
       feedback_input(project_section('Bad separator', [ROW]).sub('| --- | --- | --- |', '| --- | --- |')),

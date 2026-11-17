@@ -2,7 +2,7 @@
 
 These documentation updates were made in response to feedback. Each project defines the time period covered by its source list.
 
-## [Adobe Commerce Services guides](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+## Adobe Commerce Services guides
 
 | Description | Type | Date/source |
 | --- | --- | --- |

@@ -29,8 +29,11 @@ Use the **[!UICONTROL All Docs Updates]** tab to browse the consolidated list, o
 >[!BEGINTABS]
 
 >[!TAB All Docs Updates]
+
 {{$include /help/_includes/automated/whatsnew/consolidated.md}}
 
 >[!TAB Feedback Updates]
+
 {{$include /help/_includes/automated/whatsnew/consolidated-feedback.md}}
+
 >[!ENDTABS]
