@@ -38,6 +38,66 @@ bundle exec rake whatsnew_bp
 bundle exec rake whatsnew_bp since="jul 4"
 ```
 
+### `whatsnew_consolidated`
+
+Consolidates published What's new tables from the configured Commerce documentation projects into `help/_includes/automated/whatsnew/consolidated.md`.
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+Configure projects under `whatsnew_consolidated.projects` in [`_config.yml`](_config.yml). Each entry requires a repository name, a project title, and an absolute HTTP(S) website URL:
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/en/docs/commerce
+```
+
+Move entries to change section order. You can freely interleave projects from both platforms. Repository names ending with `.en` use the ExL source path, `help/_includes/templated/whats-new.md`. All other repositories use the DevSite source path, `src/pages/_includes/templated/whats-new.md`.
+
+The task fetches public `main` files from the `AdobeDocs` GitHub organization. It displays each project title as a plain-text heading and introduces each table with a sentence linking the project title to the documentation home page configured in `website` as the source of the What's new updates. It uses `Description | Type | Date/source` table headers throughout. For DevSite projects only, escaped `\<br/\>` tags become `<br/>`. Otherwise, body rows, duplicates, links, and source row order remain unchanged. Each source defines its own time period.
+
+Projects with a recognized no-updates message are omitted. If every project has no entries, the include contains one overall no-updates message. Configuration, fetch, parsing, or write failures fail the task without replacing an existing include.
+
+The task does not schedule generation or update consuming pages.
+
+The focused test suite includes Rake entry-point tests that load the `_jekyll` Rakefile and run through Bundler. Install Bundler and the `_jekyll` bundle first:
+
+```sh
+cd _jekyll && bundle install
+```
+
+Then run the tests from the repository root:
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+Creates `help/_includes/automated/whatsnew/consolidated-feedback.md` by filtering the existing local `help/_includes/automated/whatsnew/consolidated.md` include.
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+The task matches `Feedback` as a complete, comma-separated Type value, ignoring case and surrounding whitespace. Combined types such as `Feedback, technical` are included. Mentions in descriptions, source links, or partial type names do not qualify.
+
+Matching rows, duplicates, plain-text project headings, source sentences when present, and project and row order remain unchanged. Projects with no matching entries are omitted. If nothing matches, the output contains one overall no-feedback message.
+
+The input must already exist. Run `bundle exec rake whatsnew_consolidated` separately when you want to refresh it. The feedback task does not fetch remote content, read project configuration, or regenerate its input.
+
+Missing or malformed input fails the task without replacing an existing filtered include. The input file is never modified, and the filtered output is published atomically.
+
 ### `get_released_versions`
 
 Gets the last 10 released versions from the `magento/magento2` repository. Requires [GitHub CLI](https://cli.github.com/) to be installed and authenticated.

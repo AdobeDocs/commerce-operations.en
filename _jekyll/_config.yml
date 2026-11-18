@@ -13,3 +13,57 @@ exclude:
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: none
+
+whatsnew_consolidated:
+  projects:
+    - repo: commerce.en
+      title: Adobe Commerce Services guides
+      website: https://experienceleague.adobe.com/en/docs/commerce/user-guides/home
+    - repo: commerce-admin.en
+      title: Adobe Commerce merchant guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+    - repo: commerce-on-cloud.en
+      title: Commerce on Cloud Infrastructure
+      website: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview
+    - repo: commerce-extensibility
+      title: Adobe Commerce extensibility
+      website: https://developer.adobe.com/commerce/extensibility/
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce-services
+      title: Adobe Commerce merchandising services
+      website: https://developer.adobe.com/commerce/services/
+    - repo: graphql-mesh-gateway
+      title: API Mesh for Adobe Developer App Builder
+      website: https://developer.adobe.com/graphql-mesh-gateway/
+    - repo: commerce-php
+      title: Adobe Commerce PHP extensions
+      website: https://developer.adobe.com/commerce/php/
+    - repo: commerce-business-intelligence.en
+      title: Adobe Commerce Intelligence
+      website: https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview
+    - repo: commerce-admin-developer
+      title: Adobe Commerce Admin development
+      website: https://developer.adobe.com/commerce/admin-developer/
+    - repo: commerce-cloud-tools
+      title: Adobe Commerce Cloud tools
+      website: https://developer.adobe.com/commerce/cloud-tools/
+    - repo: commerce-contributor
+      title: Adobe Commerce contributor guide
+      website: https://developer.adobe.com/commerce/contributor/
+    - repo: commerce-frontend-core
+      title: Adobe Commerce frontend development
+      website: https://developer.adobe.com/commerce/frontend-core/
+    - repo: commerce-marketplace
+      title: Adobe Commerce Marketplace
+      website: https://developer.adobe.com/commerce/marketplace/
+    - repo: commerce-pwa-studio
+      title: PWA Studio
+      website: https://developer.adobe.com/commerce/pwa-studio/
+    - repo: commerce-testing
+      title: Adobe Commerce testing
+      website: https://developer.adobe.com/commerce/testing/
