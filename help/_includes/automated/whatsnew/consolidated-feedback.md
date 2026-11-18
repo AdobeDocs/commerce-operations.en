@@ -4,6 +4,8 @@ These documentation updates were made in response to feedback. Each project defi
 
 ## Adobe Commerce Services guides
 
+These updates come from the *What's new* section of the [Adobe Commerce Services guides](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) home page.
+
 | Description | Type | Date/source |
 | --- | --- | --- |
 | Added information about how to [request an increase](https://experienceleague.adobe.com/en/docs/commerce/live-search/boundaries-limits) of the supported [!DNL Live Search] facet limit from 100 up to 500 facets through Adobe Support. | Feedback, technical | [October 29, 2026](https://github.com/AdobeDocs/commerce.en/commit/bcb4f6eefcd1a2d11e01a3bef92b1a0fb878f091) |

@@ -87,8 +87,11 @@ class ConsolidatedWhatsnewTest < Minitest::Test
       "## Developer&#39;s guide\n",
       "## Last guide\n"
     ], headings
-    assert_includes content, "## First \\[guide\\] &amp; tools\n\n#{ConsolidatedWhatsnew::HEADER}\n"
-    assert_includes content, "## Developer&#39;s guide\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    assert_includes content, "## First \\[guide\\] &amp; tools\n\nThese updates come from the *What's new* section of the " \
+                             "[First \\[guide\\] &amp; tools](https://example.com/guide(v2)) home page.\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    assert_includes content, "## Developer&#39;s guide\n\nThese updates come from the *What's new* section of the " \
+                             "[Developer&#39;s guide](https://example.com/) home page.\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    assert_equal 3, content.scan("These updates come from the *What's new* section").length
     refute content.lines.any? { |line| line.start_with?('[') }
     assert_equal %w[help src/pages help], @calls.map { |url| url.split('/main/')[1].split('/_includes/')[0] }
     assert_equal 3, content.scan(ConsolidatedWhatsnew::HEADER).length
@@ -134,8 +137,8 @@ class ConsolidatedWhatsnewTest < Minitest::Test
     }
     generate
     content = File.read(@output)
-    assert_includes content, "## devsite\n\n#{ConsolidatedWhatsnew::HEADER}\n#{expected_devsite_row}\n"
-    assert_includes content, "## exl.en\n\n#{ConsolidatedWhatsnew::HEADER}\n#{source_row}\n"
+    assert_includes content, "#{ConsolidatedWhatsnew::HEADER}\n#{expected_devsite_row}\n"
+    assert_includes content, "#{ConsolidatedWhatsnew::HEADER}\n#{source_row}\n"
   end
 
   def test_invalid_configuration_fails_before_fetching_and_preserves_output
@@ -245,7 +248,20 @@ class ConsolidatedWhatsnewTest < Minitest::Test
                                            chdir: File.expand_path('..', __dir__))
     assert status.success?, "#{stdout}\n#{stderr}"
     assert_includes stdout, @output
-    assert_includes File.read(@output), "## a.en\n\n#{ConsolidatedWhatsnew::HEADER}"
+    assert_includes File.read(@output), "## a.en\n\nThese updates come from the *What's new* section"
+  end
+
+  def test_feedback_filter_preserves_generated_source_sentences
+    configure(project('guide.en', website: 'https://example.com/guide(v2)'))
+    @responses['guide.en'] = table(rows: [ROW, ROW.sub('Technical', 'Feedback')])
+    generate
+    FileUtils.cp(@output, @input)
+    filter_feedback
+    content = File.read(@output)
+    assert_includes content, "## guide.en\n\nThese updates come from the *What's new* section of the " \
+                             "[guide.en](https://example.com/guide(v2)) home page.\n\n#{ConsolidatedWhatsnew::HEADER}\n"
+    assert_includes content, ROW.sub('Technical', 'Feedback')
+    refute_includes content, ROW
   end
 
   def test_feedback_filter_matches_only_complete_type_tokens_and_preserves_rows

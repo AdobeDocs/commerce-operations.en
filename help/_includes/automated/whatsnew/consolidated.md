@@ -4,6 +4,8 @@ These documentation updates come from Commerce projects. Each project defines th
 
 ## Adobe Commerce Services guides
 
+These updates come from the *What's new* section of the [Adobe Commerce Services guides](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) home page.
+
 | Description | Type | Date/source |
 | --- | --- | --- |
 | Updated the [facet limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) to reflect that the maximum configured facets can be increased through a support request. | Technical | [November 16, 2026](https://github.com/AdobeDocs/commerce.en/commit/d21c7401d0111c3e6b8dd1d65b26d4b480008011) |
@@ -41,6 +43,8 @@ These documentation updates come from Commerce projects. Each project defines th
 
 ## Adobe Commerce merchant guides
 
+These updates come from the *What's new* section of the [Adobe Commerce merchant guides](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) home page.
+
 | Description | Type | Date/source |
 | --- | --- | --- |
 | Added documentation for Merchandising Services with the Composable Catalog Data Model (CCDM) for Adobe Commerce as a Cloud Service:<br/>- Added the [Merchandising Services overview](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview) and the [Merchandising Services tasks by role](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/get-started-merchandising-ccdm) reference.<br/>- Added [Catalog views](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) and [Price books](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/pricebooks) topics.<br/>- Added notes to search, recommendations, catalog sync, and connector topics that direct CCDM users to Merchandising Services. | Major update, new topic | [November 11, 2026](https://github.com/AdobeDocs/commerce-admin.en/commit/f31ba4b981fb70f10cb0e1438dbd445550e6253b) |
@@ -55,6 +59,8 @@ These documentation updates come from Commerce projects. Each project defines th
 | Updated [Add a source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-add) to include the new Visible on Storefront toggle for Adobe Commerce as a Cloud Service. Each inventory source can now be individually flagged for storefront visibility. Sources are hidden by default. | Major update | [September 23, 2026](https://github.com/AdobeDocs/commerce-admin.en/commit/1b3beb5c914dae4c07dd591e9b975c0f35bb23cd) |
 
 ## Adobe Commerce operational guides
+
+These updates come from the *What's new* section of the [Adobe Commerce operational guides](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) home page.
 
 | Description | Type | Date/source |
 | --- | --- | --- |
@@ -102,11 +108,15 @@ These documentation updates come from Commerce projects. Each project defines th
 
 ## Commerce on Cloud Infrastructure
 
+These updates come from the *What's new* section of the [Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) home page.
+
 | Description | Type | Date/source |
 | --- | --- | --- |
 | Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference) and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference) after the ECE-Tools v2002.2.15 release. | Technical | [October 13, 2026](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d27cc83271459bb3c8cb718fe72a1810d2f5a3c5) |
 
 ## Adobe Commerce extensibility
+
+These updates come from the *What's new* section of the [Adobe Commerce extensibility](https://developer.adobe.com/commerce/extensibility/) home page.
 
 | Description | Type | Date/source |
 | --- | --- | --- |
@@ -117,6 +127,8 @@ These documentation updates come from Commerce projects. Each project defines th
 | Revised the extensibility [landing page](https://developer.adobe.com/commerce/extensibility) to feature today's development workstreams. | Major update | [September 21, 2026](https://github.com/AdobeDocs/commerce-extensibility/pull/607) |
 
 ## Adobe Commerce web APIs
+
+These updates come from the *What's new* section of the [Adobe Commerce web APIs](https://developer.adobe.com/commerce/webapi/) home page.
 
 | Description | Type | Date/source |
 | --- | --- | --- |
@@ -142,11 +154,15 @@ These documentation updates come from Commerce projects. Each project defines th
 
 ## API Mesh for Adobe Developer App Builder
 
+These updates come from the *What's new* section of the [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) home page.
+
 | Description | Type | Date/source |
 | --- | --- | --- |
 | Updated the API Mesh [release notes](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/). | Release notes | [September 29, 2026](https://github.com/AdobeDocs/graphql-mesh-gateway/pull/390) |
 
 ## Adobe Commerce testing
+
+These updates come from the *What's new* section of the [Adobe Commerce testing](https://developer.adobe.com/commerce/testing/) home page.
 
 | Description | Type | Date/source |
 | --- | --- | --- |

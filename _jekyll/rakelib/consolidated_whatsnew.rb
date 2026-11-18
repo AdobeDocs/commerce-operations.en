@@ -17,6 +17,7 @@ class ConsolidatedWhatsnew
   FEEDBACK_OUTPUT_PATH = File.expand_path('../../help/_includes/automated/whatsnew/consolidated-feedback.md', __dir__)
   TITLE = "# Consolidated What's new"
   INTRO = 'These documentation updates come from Commerce projects. Each project defines the time period covered by its source list.'
+  SOURCE_PREFIX = "These updates come from the *What's new* section of the "
   HEADER = "| Description | Type | Date/source |\n| --- | --- | --- |"
   EMPTY_MESSAGE = 'No significant documentation updates so far.'
 
@@ -43,7 +44,8 @@ class ConsolidatedWhatsnew
 
       rows = rows.map { |row| row.gsub('\<br/\>', '<br/>') } unless exl
       title = CGI.escapeHTML(project.fetch('title').gsub(/[\\`*_\[\]{}()#!|]/) { |char| "\\#{char}" })
-      "## #{title}\n\n#{HEADER}\n#{rows.join("\n")}"
+      source = "#{SOURCE_PREFIX}[#{title}](#{project.fetch('website')}) home page."
+      "## #{title}\n\n#{source}\n\n#{HEADER}\n#{rows.join("\n")}"
     end
 
     content = [TITLE]
@@ -77,6 +79,8 @@ class ConsolidatedWhatsnew
       begin
         body = block.drop(1)
         body.shift while body.first&.strip == ''
+        source = body.shift if body.first&.start_with?("#{SOURCE_PREFIX}[")
+        body.shift while body.first&.strip == ''
         raise Error, 'project section must start with a table' unless body.first&.start_with?('|')
 
         rows = table_rows(body.join("\n"))
@@ -89,7 +93,7 @@ class ConsolidatedWhatsnew
       end
       next if matching.empty?
 
-      "#{heading}\n\n#{HEADER}\n#{matching.join("\n")}"
+      [heading, source, "#{HEADER}\n#{matching.join("\n")}"].compact.join("\n\n")
     end
 
     content = ['# Feedback-driven documentation updates']
