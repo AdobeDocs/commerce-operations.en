@@ -43,7 +43,7 @@ If you suspect that your Adobe Commerce on cloud infrastructure project is impac
 - Audit all admin user account access
 - Enable advanced multi-factor authentication (MFA) controls
 - Preserve critical logs
-- Review security upgrades for your version of Adobe Commerce.
+- Review the [security patch release notes](../../../release/release-notes/security/overview.md) for your version of Adobe Commerce, and apply any required security patches.
 
 More recommendations are detailed below.
 
