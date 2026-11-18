@@ -80,7 +80,7 @@ To apply the monthly isolated security patch file and stay current on the latest
 
 1. **Confirm your baseline version.**
 
-   Isolated patches are only tested against the latest security-only `-p` release for your line. If you're behind on that baseline, apply it first.
+   Isolated patches are only tested against the latest security-only `-p` release for your line. If you're behind on that baseline, apply it first. See the [security patch upgrade example](../upgrade/implementation/perform-upgrade.md#example---security-patch) for instructions on specifying a security patch release during an upgrade.
 
 1. **Apply all missing patches in order.**
 
