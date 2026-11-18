@@ -21,7 +21,7 @@ QPT v1.1.86 includes the following patches:
 1. **ACP2E-5118**: Fixes the issue where the [!DNL Page Builder] preview does not render when the **[!UICONTROL Translations]** cache is disabled.
 1. **ACP2E-5134**: Fixes the issue where removing a bundle's component product from a company’s [!UICONTROL Shared Catalog] leaves the bundle product in the shopping cart, causing an error in the cart and during checkout.
 1. **ACP2E-5146**: Fixes the issue where an Admin user restricted to specific websites cannot delete customers when a customer on another website has the same ID as the Admin user.
-1. **ACP2E-5176**: Fixes the issue where ecommerce events sent to [!DNL Google Analytics 4] through [!DNL Google Tag Manager] use the [!DNL Universal Analytics] format and omit several checkout events.
+1. **[ACP2E-5176](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)**: Fixes the issue where ecommerce events sent to Google Analytics 4 through Google Tag Manager use the Universal Analytics format and omit several checkout events.
 1. **ACP2E-5185**: Fixes the issue where moving a category in the category tree displays the error `There was a category move error` or takes several minutes to complete when the store has many URL rewrites.
 1. **ACP2E-4191**: Fixes the issue where certain REST API requests enter an infinite loop when the **[!UICONTROL EAV types and attributes]** cache is disabled.
 1. **ACP2E-4973**: Fixes the issue where switching from **[!UICONTROL In-Store Delivery]** to another delivery method does not clear the associated store address from the cart.
