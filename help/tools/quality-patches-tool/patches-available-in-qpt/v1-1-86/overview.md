@@ -27,7 +27,7 @@ QPT v1.1.86 includes the following patches:
 1. **ACP2E-4973**: Fixes the issue where switching from **[!UICONTROL In-Store Delivery]** to another delivery method does not clear the associated store address from the cart.
 1. **ACP2E-5221**: Fixes the issue where the **[!UICONTROL Catalog Product Permissions]** indexer takes significantly longer when **[!UICONTROL Quick Order]** is enabled in installations with many stores and customer groups.
 1. **ACP2E-5245**: Fixes the issue where a newly registered customer who uses the same address for shipping and billing on their first order sees that address listed twice during their next checkout.
-1. **ACP2E-5248**: Fixes the issue where Admin users without the **[!UICONTROL Edit Product Status]** permission see the `null as array offset` deprecation error when opening the Add Product page on [!DNL PHP] 8.5.
+1. **ACP2E-5248**: Fixes the issue where Admin users without the **[!UICONTROL Edit Product Status]** permission see the `null as array offset` deprecation error when opening the **[!UICONTROL Add Product]** page on [!DNL PHP] 8.5.
 1. **ACP2E-5254**: Fixes the issue where products added to a requisition list do not appear when a customer opens the list until the cache is cleared.
 1. **ACP2E-5268**: Fixes the issue where creating a configurable product fails when **[!UICONTROL Enable Frontend Resize]** is set to **[!UICONTROL No]**.
 1. **ACP2E-3752**: Fixes the issue where product import processing throws the error `Undefined array key "apply_to"` when many product import operations are created.
