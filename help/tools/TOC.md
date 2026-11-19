@@ -1076,6 +1076,8 @@ color: red
            - [AC-12854: Admin reorder uses the original order number with a -1 suffix](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
         - v1.1.84 {#v1-1-84}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+           - [ACP2E-5034: B2B item discounts don't reduce dynamic-price bundle subtotals in negotiable quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)
+           - [ACP2E-5041: Saving a stale product form expires the special price after a scheduled update](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
            - [ACP2E-5183: Static content deployment fails on PHP 8.5 with `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
            - [AC-15494: GraphQL products query returns HTML-escaped product names](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
            - [ACP2E-5242: GraphQL uses the store ID as the website ID during add-to-cart requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
@@ -1092,6 +1094,10 @@ color: red
            - [ACP2E-5017: GraphQL customer role query fails for customers without a company](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
            - [ACP2E-5143: GraphQL route query renders unrequested CMS page content](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
            - [ACP2E-4741: Saving a linked product hides another product from the storefront with custom stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
+        - v1.1.85 {#v1-1-85}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+        - v1.1.86 {#v1-1-86}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

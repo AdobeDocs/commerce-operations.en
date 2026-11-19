@@ -101,6 +101,7 @@ See the following resources for information about available Adobe Commerce versi
 - [Security and compliance notice](../../../release/security-enforcement-policy.md) (Adobe Commerce on Cloud versions 2.4.4 through 2.4.9)
 - [Upgrade Guide](../../../upgrade/overview.md)
 - [How to apply patches](../../../upgrade/patches/overview.md)
+- For individual security patch files, see [How to apply a composer patch provided by Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in the _Adobe Support and Tools Guide_.
 
 >[!TIP]
 >
