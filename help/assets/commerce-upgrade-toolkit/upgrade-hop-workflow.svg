@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="645" viewBox="0 0 960 645" role="img" aria-labelledby="title description">
+  <title id="title">The /upgrade-hop command: planning mode and analysis mode</title>
+  <desc id="description">Planning mode runs without a version: project gate, environment detection, hop design, service plan, saving the state and printing the plan, and a roadmap report. Analysis mode runs with a target version: read the state, scan with the Upgrade Compatibility Tool, categorize findings, set the effort tier, write the findings, and produce a pre-hop report. Run planning mode first, then analysis mode for each hop in the roadmap.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="960" height="645" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#1f2937">
+    <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold">/upgrade-hop: two modes</text>
+
+    <rect x="40" y="62" width="520" height="28" rx="14" fill="#2563eb"/>
+    <text x="56" y="81" font-size="15" font-weight="bold" fill="#fff">Planning mode: run with no version</text>
+
+    <g stroke="#2563eb" stroke-width="2" fill="#eff6ff">
+      <rect x="40" y="106" width="280" height="86" rx="10"/>
+      <rect x="340" y="106" width="280" height="86" rx="10"/>
+      <rect x="640" y="106" width="280" height="86" rx="10"/>
+      <rect x="40" y="212" width="280" height="86" rx="10"/>
+      <rect x="340" y="212" width="280" height="86" rx="10"/>
+    </g>
+    <rect x="640" y="212" width="280" height="86" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <g fill="#2563eb">
+      <circle cx="66" cy="134" r="13"/><circle cx="366" cy="134" r="13"/><circle cx="666" cy="134" r="13"/>
+      <circle cx="66" cy="240" r="13"/><circle cx="366" cy="240" r="13"/>
+    </g>
+    <circle cx="666" cy="240" r="13" fill="#7c3aed"/>
+    <g font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">
+      <text x="66" y="139">1</text><text x="366" y="139">2</text><text x="666" y="139">3</text>
+      <text x="66" y="245">4</text><text x="366" y="245">5</text><text x="666" y="245">6</text>
+    </g>
+    <g font-size="16" font-weight="bold">
+      <text x="88" y="139" fill="#1e3a8a">Project gate</text>
+      <text x="388" y="139" fill="#1e3a8a">Detect</text>
+      <text x="688" y="139" fill="#1e3a8a">Design hops</text>
+      <text x="88" y="245" fill="#1e3a8a">Service plan</text>
+      <text x="388" y="245" fill="#1e3a8a">Save and show</text>
+      <text x="688" y="245" fill="#4c1d95">Roadmap report</text>
+    </g>
+    <g font-size="14" fill="#374151">
+      <text x="58" y="164">Headless, Luma, or Hyva sets</text><text x="58" y="182">the frontend checks</text>
+      <text x="358" y="164">Versions, edition, and local</text><text x="358" y="182">environment</text>
+      <text x="658" y="164">Read Adobe release notes and</text><text x="658" y="182">choose the hop stops</text>
+      <text x="58" y="270">PHP, database, search, and key</text><text x="58" y="288">changes for each hop</text>
+      <text x="358" y="270">Write the upgrade state and</text><text x="358" y="288">print the plan table</text>
+      <text x="658" y="270">Interactive HTML report of</text><text x="658" y="288">the roadmap</text>
+    </g>
+    <g fill="none" stroke="#374151" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M320 149 H336"/><path d="M620 149 H636"/>
+      <path d="M320 255 H336"/><path d="M620 255 H636"/>
+    </g>
+
+    <rect x="180" y="318" width="600" height="32" rx="16" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="480" y="339" text-anchor="middle" font-size="14" font-weight="bold" fill="#b91c1c">Then run /upgrade-hop with a version for each hop in the roadmap</text>
+
+    <rect x="40" y="372" width="560" height="28" rx="14" fill="#15803d"/>
+    <text x="56" y="391" font-size="15" font-weight="bold" fill="#fff">Analysis mode: run with a version, such as 2.4.8</text>
+
+    <g stroke="#15803d" stroke-width="2" fill="#f0fdf4">
+      <rect x="40" y="416" width="280" height="86" rx="10"/>
+      <rect x="340" y="416" width="280" height="86" rx="10"/>
+      <rect x="640" y="416" width="280" height="86" rx="10"/>
+      <rect x="40" y="522" width="280" height="86" rx="10"/>
+      <rect x="340" y="522" width="280" height="86" rx="10"/>
+    </g>
+    <rect x="640" y="522" width="280" height="86" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <g fill="#15803d">
+      <circle cx="66" cy="444" r="13"/><circle cx="366" cy="444" r="13"/><circle cx="666" cy="444" r="13"/>
+      <circle cx="66" cy="550" r="13"/><circle cx="366" cy="550" r="13"/>
+    </g>
+    <circle cx="666" cy="550" r="13" fill="#7c3aed"/>
+    <g font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">
+      <text x="66" y="449">1</text><text x="366" y="449">2</text><text x="666" y="449">3</text>
+      <text x="66" y="555">4</text><text x="366" y="555">5</text><text x="666" y="555">6</text>
+    </g>
+    <g font-size="16" font-weight="bold">
+      <text x="88" y="449" fill="#14532d">Read state</text>
+      <text x="388" y="449" fill="#14532d">Scan</text>
+      <text x="688" y="449" fill="#14532d">Categorize</text>
+      <text x="88" y="555" fill="#14532d">Effort tier</text>
+      <text x="388" y="555" fill="#14532d">Findings</text>
+      <text x="688" y="555" fill="#4c1d95">Pre-hop report</text>
+    </g>
+    <g font-size="14" fill="#374151">
+      <text x="58" y="474">Load the hop plan and the</text><text x="58" y="492">target version</text>
+      <text x="358" y="474">Run the Upgrade Compatibility</text><text x="358" y="492">Tool for the target version</text>
+      <text x="658" y="474">Group findings into six</text><text x="658" y="492">domains</text>
+      <text x="58" y="580">Minimal to Very High, and the</text><text x="58" y="598">recommended fix order</text>
+      <text x="358" y="580">Write the findings file and</text><text x="358" y="598">print the summary</text>
+      <text x="658" y="580">Interactive HTML report before</text><text x="658" y="598">the fixes start</text>
+    </g>
+    <g fill="none" stroke="#374151" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M320 459 H336"/><path d="M620 459 H636"/>
+      <path d="M320 565 H336"/><path d="M620 565 H636"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title description">
+  <title id="title">Commerce Upgrade Toolkit workflow</title>
+  <desc id="description">For each hop, assess the environment, plan the path, scan compatibility, analyze impact, and report findings. Confirm human approval and backups before executing dependency-ordered fixes. Validate and review the results before proceeding to the next hop. Stop and review failed gates or validation.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="960" height="600" fill="#fff"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#1f2937">
+    <text x="480" y="38" font-size="24" font-weight="bold">One upgrade hop</text>
+    <rect x="40" y="65" width="880" height="175" rx="12" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="480" y="98" font-size="20" font-weight="bold">Assessment</text>
+    <text x="480" y="134" font-size="17">Detect environment / Plan upgrade path / Scan compatibility</text>
+    <text x="480" y="168" font-size="17">Analyze impact / Report findings</text>
+    <text x="480" y="205" font-size="16">Review targets, blockers, dependencies, and scope</text>
+    <rect x="180" y="280" width="600" height="80" rx="12" fill="#fffbeb" stroke="#b45309"/>
+    <text x="480" y="311" font-size="20" font-weight="bold">Human approval and execution gates</text>
+    <text x="480" y="341" font-size="16">Confirm backups, baseline, key handling, and guardrails</text>
+    <rect x="40" y="400" width="880" height="130" rx="12" fill="#f0fdf4" stroke="#15803d"/>
+    <text x="480" y="434" font-size="20" font-weight="bold">Execute and validate</text>
+    <text x="480" y="469" font-size="16">Services / Schema / Backend / API / Frontend / Module decommission</text>
+    <text x="480" y="503" font-size="16">Validate chunks / Complete smoke tests / Review hop results</text>
+    <text x="480" y="580" font-size="17">Proceed to the next hop only after review; stop on failed gates or validation.</text>
+  </g>
+  <g fill="none" stroke="#374151" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M480 240 V276"/>
+    <path d="M480 360 V396"/>
+    <path d="M480 530 V548"/>
+  </g>
+</svg>
