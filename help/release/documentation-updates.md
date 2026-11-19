@@ -5,6 +5,7 @@ TQID: 'https://experienceleague.adobe.com/ZPz09-WXfFBUHpCGlYefQbg60BrE0rhV2bYbw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+last-update: 2026-11-18
 ---
 
 # Documentation updates
