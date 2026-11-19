@@ -39,6 +39,12 @@ topic: Administration, Commerce, Development, Upgrade
     - [Reports](upgrade-compatibility-tool/reports.md)
     - [Error messages](upgrade-compatibility-tool/error-messages.md)
   - [Related tools](upgrade-compatibility-tool/related-tools.md)
+- Commerce Upgrade Toolkit {#commerce-upgrade-toolkit}
+  - [Overview](commerce-upgrade-toolkit/overview.md)
+  - [Installation and setup](commerce-upgrade-toolkit/installation.md)
+  - [Usage](commerce-upgrade-toolkit/usage.md)
+  - [Troubleshooting](commerce-upgrade-toolkit/troubleshooting.md)
+  - [Limitations and considerations](commerce-upgrade-toolkit/limitations.md)
 - Contributing developers {#developer}
   - [Upgrade a git-based installation](developer/git-installs.md)
   - [Manage modules](developer/manage-modules.md)
