@@ -18,8 +18,8 @@ Feedback-driven changes address suggestions or issues raised by readers, such as
 
 Your feedback helps improve the documentation. You can contribute in the following ways:
 
-* On Experience League, use the feedback area at the bottom of a topic to rate its helpfulness and leave a comment. See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) for instructions on reporting issues and suggesting edits.
-* On Adobe Developer, use the public GitHub repository linked from the topic to report a documentation issue or propose an edit.
+* On Experience League, use the feedback area in the right sidebar or at the bottom of the page on narrow screens. Click the thumbs up or thumbs down button to rate the topic and reveal the optional comment field. To leave a comment, enter your feedback and click **[!UICONTROL Submit]**. See the [Adobe Docs Contributor Guide on Experience League](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) for instructions on reporting issues and suggesting edits.
+* On Adobe Developer, use the public GitHub repository linked from the topic to report a documentation issue or propose an edit. See [Documentation contributions on Adobe Developer](https://developer.adobe.com/commerce/contributor/guides/doc-contributions/) for instructions.
 
 Include the topic URL and describe what is unclear, missing, or incorrect so that the documentation team can understand your suggestion.
 
