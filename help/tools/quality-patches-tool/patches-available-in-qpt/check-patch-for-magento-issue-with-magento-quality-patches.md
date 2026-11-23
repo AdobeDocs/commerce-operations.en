@@ -69,4 +69,4 @@ Please refer to [Cloud for Adobe Commerce > Apply patches](https://experiencelea
 ## Related reading
 
 * [Quality Patches Tool release notes](/help/tools/quality-patches-tool/release-notes.md) in our developer documentation.
-* [How to apply composer patches provided by Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in the support knowledge base.
+* [How to apply composer patches provided by Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in the _Adobe Support and Tools Guide_.

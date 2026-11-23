@@ -14,6 +14,19 @@ require 'date'
 require 'json'
 require 'net/http'
 require 'uri'
+require_relative 'rakelib/consolidated_whatsnew'
+
+desc 'Consolidate published What\'s new tables from the configured Commerce projects'
+task :whatsnew_consolidated do
+  output = ConsolidatedWhatsnew.new(fetcher: method(:fetch_url)).generate
+  puts "Writing updates to #{output}"
+end
+
+desc 'Filter the local consolidated What\'s new include for feedback-driven updates'
+task :whatsnew_feedback do
+  output = ConsolidatedWhatsnew.new.filter_feedback
+  puts "Writing updates to #{output}"
+end
 
 # Fetches a URL, following redirects. Release notes pages are requested with a
 # ".md" suffix, which several ExL/developer.adobe.com doc platforms use to

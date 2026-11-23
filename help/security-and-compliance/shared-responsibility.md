@@ -81,7 +81,7 @@ Adobe also ensures the availability of the merchant's infrastructure as agreed u
 The merchant is responsible for following security best practices for their customized instance of the Adobe Commerce on cloud infrastructure solution:
 
 * Adding the necessary Adobe Commerce on cloud infrastructure configuration files to the repository
-* Applying security and other patches to their custom Adobe Commerce on cloud infrastructure solution immediately following their release by Adobe
+* Applying security and other patches to their custom Adobe Commerce on cloud infrastructure solution immediately following their release by Adobe. For individual security patch files, see [How to apply a composer patch provided by Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in the _Adobe Support and Tools Guide_.
 * Applying security and other patches to all custom extensions and code immediately following their release by the vendor
 * Creating, deploying, and testing custom Varnish VCL files
 * Designing, theming, installing, integrating, and securing the customized Adobe Commerce on cloud infrastructure solution, including all custom extensions and code
@@ -975,4 +975,3 @@ Storefront event collection drives the quality of Product Recommendations and Li
 | Monitoring vCPU usage against the limits | R |   |
 
 {style="table-layout:auto"}
-
