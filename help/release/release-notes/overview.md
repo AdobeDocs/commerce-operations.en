@@ -92,7 +92,7 @@ The table below provides release notes and important information for Adobe Comme
        <td><strong>Storefront Experience</strong>
         <p>Learn about the latest improvements to storefront technology that you can use to build unique experiences for your customers.</p>
           <ul>
-            <li><a href=https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
