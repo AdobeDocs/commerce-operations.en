@@ -2,8 +2,55 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. Minor updates,
   such as copy editing, are excluded from this list.
-updated: Fri Nov 13 15:07:52 2026
+updated: Fri Nov 20 15:07:47 2026
 entries:
+- description: Updated the [documentation feedback guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/release/documentation-updates#provide-feedback)
+    to explain where to find Experience League feedback controls on wider and narrow
+    screens, how to leave a comment, and where to find contribution instructions for
+    Experience League and Adobe Developer.
+  versions: ''
+  type: feedback, technical
+  date: '2026-11-20'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2363
+  merge_commit: def568dccb1ef329d82f8e7ea82c2611fbcc36f1
+  contributor: shevtsov_adobe
+  labels:
+  - feedback
+  - technical
+  - ai-reviewed
+- description: Added [Documentation updates](https://experienceleague.adobe.com/en/docs/commerce-operations/release/documentation-updates)
+    to bring together updates from Experience League and Adobe Developer, with a feedback-only
+    view and guidance on submitting documentation feedback.
+  versions: ''
+  type: new-topic
+  date: '2026-11-18'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2315
+  merge_commit: bf4c4051a3aafc67c71c8fc6d87f7862d1905204
+  contributor: shevtsov_adobe
+  labels:
+  - new-topic
+  - ai-reviewed
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.86](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: '2026-11-18'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2330
+  merge_commit: f9f1054293854bd3423eed5166527640360afc0f
+  contributor: barnato_adobe
+  labels:
+  - new-topic
+  - qpt
+  - ai-reviewed
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.85](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: '2026-11-17'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-operations.en/pull/2317
+  merge_commit: 01b82c10845afcd16db6c22563d65df24f48d340
+  contributor: barnato_adobe
+  labels:
+  - new-topic
+  - qpt
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.86 Quality Patches Tool (QPT) package release.
   versions: ''
