@@ -24,11 +24,15 @@ feature_v2:
     internal-label: Data Import/Export
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
 subfeature_v2:
   - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
     internal-label: B2B
   - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
     internal-label: REST API
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
