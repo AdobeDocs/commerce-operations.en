@@ -43,7 +43,7 @@ extensions:
       Release Notes: https://developer.adobe.com/commerce/extensibility/webhooks/release-notes
     support:
       - core: 2.4.9 (latest)
-        version: 1.21.0
+        version: 1.22.0
       - core: 2.4.8
         version: 1.5+
       - core: 2.4.7
