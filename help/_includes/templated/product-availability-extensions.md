@@ -43,7 +43,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Webhooks</td>
-          <td>1.21.0</td>
+          <td>1.22.0</td>
           <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
