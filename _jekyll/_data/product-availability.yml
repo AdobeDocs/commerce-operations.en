@@ -105,9 +105,9 @@ extensions:
         version: 1.3.4
       - core: 2.4.4
         version: 1.3.3
-  Catalog Enrichment:
+  AI Product Discovery:
     docs:
-      Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment
+      Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/prerequisites
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/release-notes
     support:
       - core: 2.4.9 (latest)
