@@ -18,7 +18,7 @@ QPT v1.1.86 includes the following patches:
 1. **ACP2E-5061**: Fixes the issue where a category merchandising rule cannot combine `AND` conditions with a condition that matches any of several values.
 1. **ACP2E-5071**: Fixes the issue where the stock unavailability message is not always displayed on the product page when the shopper's cart already contains the full available quantity.
 1. **ACP2E-5094**: Fixes the issue where page loads are significantly slower when a `MAGENTO_DC_*` environment variable is set.
-1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: Fixes the issue where the Page Builder preview does not render when the Translations cache is disabled.
+1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: Fixes the issue where the [!DNL Page Builder] preview does not render when the **[!UICONTROL Translations]** cache is disabled.
 1. **ACP2E-5134**: Fixes the issue where removing a bundle's component product from a company’s [!UICONTROL Shared Catalog] leaves the bundle product in the shopping cart, causing an error in the cart and during checkout.
 1. **ACP2E-5146**: Fixes the issue where an Admin user restricted to specific websites cannot delete customers when a customer on another website has the same ID as the Admin user.
 1. **ACP2E-5176**: Fixes the issue where ecommerce events sent to [!DNL Google Analytics 4] through [!DNL Google Tag Manager] use the [!DNL Universal Analytics] format and omit several checkout events.
