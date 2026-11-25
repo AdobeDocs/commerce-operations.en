@@ -95,7 +95,7 @@
       </tr>
       <tr>
           <td>AI Product Discovery</td>
-          <td>2.1.2</td>
+          <td>2.1.3</td>
           <td>2.1.2</td>
           <td>2.1.2</td>
           <td>not supported</td>
