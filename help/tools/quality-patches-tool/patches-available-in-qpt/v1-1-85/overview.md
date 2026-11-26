@@ -57,7 +57,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.85 includes the following patches:
 
-1. **ACP2E-4929**: Fixes the issue where attribute labels on the **[!UICONTROL Compare Products]** page display translations from a different store view instead of the current store view.
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)**: Fixes the issue where attribute labels on the Compare Products page display translations from a different store view instead of the current store view.
 1. **ACP2E-5075**: Fixes the issue where a fixed-amount cart price rule with a category condition incorrectly applied a discount to all children of a dynamic-price bundle product when the rule matched only the bundle parent product.
 1. **ACP2E-5077**: Fixes the issue where concurrent `customerCart` GraphQL queries or `POST /V1/carts/mine` REST requests create duplicate active carts for customers who do not already have an active cart.
 1. **ACP2E-5088**: Fixes the issue where a customer's persistent shopping cart is cleared when their session expires.

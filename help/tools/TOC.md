@@ -1096,6 +1096,7 @@ color: red
            - [ACP2E-4741: Saving a linked product hides another product from the storefront with custom stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
         - v1.1.85 {#v1-1-85}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+           - [ACP2E-4929: Attribute labels on the Compare Products page display translations from a different store view instead of the current one](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
         - v1.1.86 {#v1-1-86}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
            - [ACP2E-5245: New customer uses same address for shipping and billing on first order sees address listed twice at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
