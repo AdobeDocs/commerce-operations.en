@@ -1099,6 +1099,8 @@ color: red
         - v1.1.86 {#v1-1-86}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
            - [ACP2E-4973: Switching from In-Store Delivery to another delivery method does not clear store address from cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
+           - [ACP2E-5134: Removing bundled product from Shared Catalog leaves bundle in cart and causes errors at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
+           - [ACP2E-5118: Page Builder preview doesn't render when Translations cache disabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
            - [ACP2E-5061: Category merchandising rule can't combine AND conditions with condition that matches several values](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
            - [ACP2E-5046: Refreshing page while creating order in Admin adds same SKU multiple times](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
            - [ACP2E-3094: Viewing or editing Category Permissions for category with many permissions causes unresponsive browser](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)

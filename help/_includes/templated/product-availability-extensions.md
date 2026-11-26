@@ -94,16 +94,16 @@
           </td>
       </tr>
       <tr>
-          <td>Catalog Enrichment</td>
-          <td>2.1.2</td>
+          <td>AI Product Discovery</td>
+          <td>2.1.3</td>
           <td>2.1.2</td>
           <td>2.1.2</td>
           <td>not supported</td>
           <td>not supported</td>
           <td>not supported</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/prerequisites">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
