@@ -1098,6 +1098,7 @@ color: red
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
         - v1.1.86 {#v1-1-86}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+           - [ACP2E-5245: New customer uses same address for shipping and billing on first order sees address listed twice at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
            - [ACP2E-3752: Product import throws an undefined array key error when many import operations run](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
            - [ACP2E-4973: Switching from In-Store Delivery to another delivery method does not clear store address from cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
            - [ACP2E-5134: Removing bundled product from Shared Catalog leaves bundle in cart and causes errors at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
