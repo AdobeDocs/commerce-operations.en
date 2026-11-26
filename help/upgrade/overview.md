@@ -25,16 +25,16 @@ The guide provides an overview of the typical Adobe Commerce upgrade journey and
 The target audience for this guide includes:
 
 - **Ecommerce managers and technical directors**—Understand the upgrade journey, the importance of upgrading regularly, and how to best plan and prepare for an upgrade.
-- **Operations and development teams**—Learn the technical steps required to upgrade to the latest version of Adobe Commerce and the tools available that make the process easier, faster, and more affordable.
+- **Operations and development teams**—Learn the technical steps required to upgrade to the latest version of Adobe Commerce and about the tools available that make the process easier, faster, and more affordable.
 
 ## Upgrade process explained
 
-One of the reasons you chose Adobe Commerce likely includes: 
+One of the reasons you chose Adobe Commerce likely includes:
 
-- Broad out-of-the-box feature set
+- Broad standard feature set
 - SaaS features offered separate from the core code
 - Robust offering of Marketplace extensions
-- Unique ability to allow for infinite flexibility so that you can customize your site to best serve your business' and customers' needs
+- Unique ability to allow for infinite flexibility so that you can customize your site to best serve your business's and customers' needs
 
 The benefit of being a highly extensible and customizable product, however, can spur potential upgrade issues when customizations are not coded to best practices, leading to higher-than-expected upgrade costs.
 
@@ -47,9 +47,9 @@ Upgrading empowers your business to stay nimble in the fast-paced and ever-chang
 Security is one of the top reasons for upgrading because 83% of security incidents occur on outdated software. According to [IBM](https://www.ibm.com/reports/data-breach), the average cost of a data breach is $3.86 million—far greater than what it costs to mitigate this risk through upgrading. Adobe offers two ways to keep your store secure throughout the year:
 
 - **Patch releases**—Include security, performance, quality, and high-priority bug fixes.
-- **Security patch releases**—Include fixes and enhancements to keep your site secure and are easier to implement.
+- **[Security patch releases](implementation/perform-upgrade.md#example---security-patch)**—Include fixes and enhancements that help keep your site secure.
 
-If you are on Adobe Commerce on Cloud version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](../release/security-enforcement-policy.md) for required actions and deadlines to keep your environment secure and compliant.
+If you use Adobe Commerce on Cloud version 2.4.4 through 2.4.9, see the [Security and Compliance Notice](../release/security-enforcement-policy.md) for required actions and deadlines to keep your environment secure and compliant.
 
 ### Performance
 
@@ -59,9 +59,9 @@ Performance is another top reason for upgrading. According to [HubSpot](https://
 
 The case for delaying or deferring platform upgrades often comes down to the immediate cost. However, the real cost of running an outdated version of any software is much larger and can have a lasting impact on a business.
 
-It may seem counterintuitive, but performing regular platform updates requires less overall effort than performing infrequent updates due to the amount of accumulated technical debt that results from delaying. Adobe recently worked with a partner who has a retail merchant that used to conduct upgrades infrequently and inconsistently (annually or longer). By transforming how they approach upgrades and following an Adobe-recommended regular upgrade path over the course of 12 months, the partner was able to save the client four weeks' worth of cumulative development time, effort, and associated costs. These costs could then be redirected to initiatives to drive business growth.
- 
-When updates are performed regularly, changes are incremental and the corresponding upgrade effort reflects this. When platform updates are deferred for an extended period, they can become a much more involved process. Furthermore, the extensions you use from the [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) and other third-party integrations may also be impacted. Lastly, the time it takes to investigate, plan, and perform a delayed upgrade are all extended, which adds avoidable effort and costs.
+It may seem counterintuitive, but performing regular platform updates requires less overall effort than performing infrequent updates due to the amount of accumulated technical debt that results from delaying. Adobe recently worked with a partner who has a retail merchant that used to conduct upgrades infrequently and inconsistently (annually or longer). By transforming their upgrade approach and following an Adobe-recommended regular upgrade path for 12 months, the partner saved the client four weeks of development time, effort, and costs, allowing them to redirect these costs to other strategic initiatives.
+
+When updates are performed regularly, changes are incremental and the corresponding upgrade effort reflects this. When platform updates are deferred for an extended period, they can become a much more involved process. Furthermore, the extensions you use from the [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) and other third-party integrations may also be impacted. Lastly, the time it takes to investigate, plan, and perform a delayed upgrade is extended, which adds avoidable effort and costs.
 
 Some of the general factors that affect the level of effort to upgrade your project include, but are not limited to:
 
@@ -72,4 +72,4 @@ Some of the general factors that affect the level of effort to upgrade your proj
 | Number of integrations with third-parties (OMS, ERP)      | Your testing strategy                                        |
 | Coding to best practices                                  |                                                              |
 
-Continued growth in the digital commerce space has applied increased pressure on businesses to evolve faster, more often, and in unpredictable ways. Failure to keep up and anticipate customer purchasing behavior has leveled the playing field for even the biggest, most established brands. You must be able to provide robust, personalized experiences across all touchpoints, with no lapses in performance and uptime. You must be able to innovate faster, without limits, to stay ahead of global competitors. By upgrading, you're future proofing your business and setting yourself up to better service dynamic customer needs.
+Continued growth in the digital commerce space has applied increased pressure on businesses to evolve faster, more often, and in unpredictable ways. Failure to keep up and anticipate customer purchasing behavior has leveled the playing field for even the biggest, most established brands. You must be able to provide robust, personalized experiences across all touchpoints, with no lapses in performance and uptime. You must be able to innovate faster, without limits, to stay ahead of global competitors. By upgrading, you're preparing your business for future requirements and setting yourself up to better service dynamic customer needs.
