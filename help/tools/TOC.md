@@ -1100,6 +1100,7 @@ color: red
            - [ACP2E-4929: Attribute labels on the Compare Products page display translations from a different store view instead of the current one](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
         - v1.1.86 {#v1-1-86}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+           - [ACP2E-5248: Admin users without **[!UICONTROL Edit Product Status]** permission see deprecation error on **[!UICONTROL Add Product]** page on PHP 8.5](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5248.md)
            - [ACP2E-5425: Customers receive duplicate order confirmation emails for same order](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)
            - [ACP2E-5071: Stock unavailability message isn’t always displayed on product page when shopper’s cart contains full available quantity](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
            - [ACP2E-5176: Ecommerce events sent to Google Analytics 4 through Google Tag Manager use Universal Analytics format and omit checkout events](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
