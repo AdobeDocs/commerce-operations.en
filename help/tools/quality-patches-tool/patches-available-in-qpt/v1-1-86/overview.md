@@ -16,6 +16,8 @@ QPT v1.1.86 includes the following patches:
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: Fixes the issue where viewing or editing **[!UICONTROL Category Permissions]** for a category with many permissions can cause the browser to become unresponsive.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: Fixes the issue where viewing or saving an RMA in the Admin does not display the RMA number in the **[!UICONTROL Action Logs]** report.
 1. **ACP2E-5057**: Fixes the issue where [!DNL GraphQL] queries for bundle products return global bundle option prices instead of website-specific prices when **[!UICONTROL Catalog Price Scope]** is set to **[!UICONTROL Website]**.
+1. **ACP2E-5061**: Fixes the issue where a category merchandising rule cannot combine `AND` conditions with a condition that matches any of several values.
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**: Fixes the issue where the stock unavailability message is not always displayed on the product page when the shopper's cart already contains the full available quantity.
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: Fixes the issue where a category merchandising rule cannot combine AND conditions with a condition that matches any of several values.
 1. **ACP2E-5071**: Fixes the issue where the stock unavailability message is not always displayed on the product page when the shopper's cart already contains the full available quantity.
 1. **ACP2E-5094**: Fixes the issue where page loads are significantly slower when a `MAGENTO_DC_*` environment variable is set.
