@@ -1100,6 +1100,7 @@ color: red
            - [ACP2E-4929: Attribute labels on the Compare Products page display translations from a different store view instead of the current one](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
         - v1.1.86 {#v1-1-86}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+           - [ACP2E-5176: Ecommerce events sent to Google Analytics 4 through Google Tag Manager use Universal Analytics format and omit checkout events](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
            - [ACP2E-4191: REST API requests enter infinite loop when EAV types and attributes cache disabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
            - [ACP2E-5245: New customer uses same address for shipping and billing on first order sees address listed twice at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
            - [ACP2E-3752: Product import throws an undefined array key error when many import operations run](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
