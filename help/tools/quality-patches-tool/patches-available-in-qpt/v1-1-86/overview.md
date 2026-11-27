@@ -40,6 +40,6 @@ QPT v1.1.86 includes the following patches:
 1. **ACP2E-5295**: Fixes the issue where parallel product price reindexing fails with the error `Fail in child process` when run after the **[!UICONTROL Inventory]** indexer in the same process.
 1. **ACP2E-5298**: Fixes the issue where Admin users with view-only access to cart price rules can generate or delete coupon codes.
 1. **ACP2E-5333**: Fixes the issue where refreshing a customer segment with a **[!UICONTROL Total Number of Orders]** condition that uses the **[!UICONTROL is not]** operator and a value of one or more fails with the error `Unknown operator specified`.
-1. **ACP2E-5425**: Fixes the issue where customers receive duplicate order confirmation emails for the same order.
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**: Fixes the issue where customers receive duplicate order confirmation emails for the same order.
 
 Use the menu on the left to navigate to a specific patch page.
